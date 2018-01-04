@@ -1,0 +1,14 @@
+{
+  "description": {
+    "difficulty": 2.0,
+    "names": {
+      "en": "Polka Dot",
+      "nl": "Polka Dot"
+    }
+  },
+  "evaluation": {
+    "pythia_judge": "doctest"
+  },
+  "pythia_id": "PROG0636",
+  "visibility": "open"
+}
