@@ -1,0 +1,14 @@
+{
+  "description": {
+    "difficulty": 1.5,
+    "names": {
+      "en": "The Ghent University prime number",
+      "nl": "Het priemgetal van de UGent"
+    }
+  },
+  "evaluation": {
+    "pythia_judge": "output"
+  },
+  "pythia_id": "PROG0659",
+  "visibility": "open"
+}
