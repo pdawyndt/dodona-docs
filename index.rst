@@ -3,18 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Dodona's documentation!
-==================================
+Documentatie voor Dodona
+========================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Studenten
 
+   for_students
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Docenten
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   for_teachers
