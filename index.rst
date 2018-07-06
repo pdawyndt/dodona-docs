@@ -17,3 +17,10 @@ Documentatie voor Dodona
    :caption: Docenten
 
    for_teachers
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Referentie
+
+   list_of_judges
+   judge_output_format_schema
