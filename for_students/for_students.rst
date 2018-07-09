@@ -65,6 +65,45 @@ Wanneer je geregistreerd bent voor een cursus zal je homepagina er als volgt uit
 
 .. image:: homepage_after_registration.nl.png
 
+Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen
+deze ook op je homepagina te zien zijn.
+
 Een oefening indienen
 ---------------------
 
+Om een oefening in te dienen moet je natuurlijk eerst naar een oefening gaan. Op
+de pagina van een cursus kan je een oefening selecteren. Klik op de naam van de
+oefening om de pagina van de oefening te openen. Je komt dan op een pagina
+terecht die er zoals de volgende zal uitzien.
+
+.. image:: exercise_start.nl.png
+
+De pagina begint met een beschrijving van de oefening die je zal moeten
+oplossen. Lees deze grondig. Om de oefening op te lossen gebruik je best een
+apart programma (bvb. PyCharm voor Python of IntelliJ IDEA voor Java). Zo kan je
+zelf eerst al kort testen of je code werkt en kan je gebruikmaken van de extra
+hulp die zo'n programma's je aanbieden bij het schrijven van code.
+
+Wanneer je je code hebt geschreven en je er van overtuigd bent dat ze werkt kan
+je ze onderaan de pagina indienen. Normaal kan je de code gewoon kopiëren en
+plakken van je extern programma. Klik op de afspeelknop om in te dienen.
+
+.. image:: exercise_before_submit.nl.png
+
+Als je code correct is zal de feedback er ongeveer als volgt uitzien:
+
+.. image:: exercise_feedback_correct.nl.png
+
+In de eerste tabs (dit kunnen er meer dan 1 zijn) kan je de testgevallen zien
+die werden uitgevoerd. In de "Code" tab kan je de code die je hebt ingediend nog
+eens bekijken. Het kan zijn dat er hierbij enkele annotaties staan die hints
+geven over hoe je je code iets mooier had kunnen schrijven.
+
+Als je code niet correct is zal de feedback er ongeveer als volgt uitzien:
+
+.. image:: exercise_feedback_incorrect.nl.png
+
+Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
+juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
+verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
+in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
