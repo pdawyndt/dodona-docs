@@ -14,7 +14,7 @@ worden aan Dodona voor deze gebruikt kan worden voor oefeningen.
 .. _judge_repo_structure:
 
 Structuur van de judge repository
-----
+---------------------------------
 
 Het enige dat een judge repository moet hebben is een uitvoerbaar bestand ``run``
 in de *root* van de repository. Dit bestand zal uitgevoerd worden in een
@@ -27,7 +27,7 @@ in de *root*,
 .. _judge_interface:
 
 Judge interface
-----
+---------------
 
 Een judge is in feite het ``run`` programma en interageert met Dodona door zijn
 standaard input en standaard output.
@@ -35,7 +35,7 @@ standaard input en standaard output.
 .. _judge_interface_input:
 
 Input
-^^^^
+^^^^^
 
 Het ``run`` programma moet JSON object accepteren waar de volgende waarden zullen inzitten:
 
@@ -85,7 +85,7 @@ volgende *key-value* paren:
 Zie :ref:`creating_an_exercise` voor meer info over deze laatste mappen en bestanden.
 
 Output
-^^^^
+^^^^^^
 
 Het ``run`` programma moet JSON uitschrijven (naar de standaard output). Deze
 JSON zal door de feedback renderer geïnterpreteerd worden om de feedback tabel
@@ -95,7 +95,7 @@ tweede *partial* output schema moet meerdere kleine JSON objecten uitschrijven
 tijdens de evaluatie die de voortgang beschrijven.
 
 *Full* output
-""""
+"""""""""""""
 
 Het *full* output format wordt gespecifieerd door een
 :ref:`JSON schema <judge_output_format_schema_full>`. Een meer beknopte beschrijving kan
@@ -259,32 +259,33 @@ Een ``Status`` string geeft de status van de ingediende oplossing aan. Deze stat
 
 
 *Partial* output
-""""
+""""""""""""""""
 
 De *partial* output bestaat uit meerdere kleinere JSON objecten, gevalideerd
 door :ref:`dit JSON schema <judge_output_format_schema_partial>`. Elk JSON
 object beschrijft een deel van het testen. Een voorbeeld kan hieronder gevonden
 worden.
 ::
-    { "command": "start-judgement" }
-    { "command": "append-message", "message": "will be added to the judgement" }
-    { "command": "annotate", "row": 3, "column": 4, "text": "some info on the fourth line, fifth column of the source" }
-    { "command": "start-tab", "title": "Tab One" }
-    { "command": "start-context" }
-    { "command": "start-testcase", "description": "case 1" }
-    { "command": "start-test", "expected": "SOMETHING" }
-    { "command": "append-message", "message": "some more info about the test" }
-    { "command": "close-test", "generated": "SOMETHING", "status": { "enum": "correct", "human": "Correct" } }
-    { "command": "close-testcase" }
-    { "command": "close-context" }
-    { "command": "start-context" }
-    { "command": "start-testcase", "description": "case 2" }
-    { "command": "start-test", "expected": "SOMETHING" }
-    { "command": "close-test", "generated": "ELSE", "status": { "enum": "wrong", "human": "Wrong" } }
-    { "command": "close-testcase" }
-    { "command": "close-context" }
-    { "command": "close-tab" }
-    { "command": "close-judgement" }
+
+{ "command": "start-judgement" }
+{ "command": "append-message", "message": "will be added to the judgement" }
+{ "command": "annotate", "row": 3, "column": 4, "text": "some info on the fourth line, fifth column of the source" }
+{ "command": "start-tab", "title": "Tab One" }
+{ "command": "start-context" }
+{ "command": "start-testcase", "description": "case 1" }
+{ "command": "start-test", "expected": "SOMETHING" }
+{ "command": "append-message", "message": "some more info about the test" }
+{ "command": "close-test", "generated": "SOMETHING", "status": { "enum": "correct", "human": "Correct" } }
+{ "command": "close-testcase" }
+{ "command": "close-context" }
+{ "command": "start-context" }
+{ "command": "start-testcase", "description": "case 2" }
+{ "command": "start-test", "expected": "SOMETHING" }
+{ "command": "close-test", "generated": "ELSE", "status": { "enum": "wrong", "human": "Wrong" } }
+{ "command": "close-testcase" }
+{ "command": "close-context" }
+{ "command": "close-tab" }
+{ "command": "close-judgement" }
 
 Omdat het format in kleinere berichten is opgesplitst kan het gedeeltelijk
 geparsed worden. Dit betekent dat een judge die afgesloten wordt door de tijds-
@@ -296,7 +297,7 @@ wordt. ``Message`` objecten kunnen op elk niveau gezonden worden.
 .. _adding_a_judge:
 
 Een judge toevoegen
-----
+-------------------
 
 Als medewerker van Dodona kan je een Judge toevoegen. Ga naar de "Judges"
 pagina via de adminstrator dropdown. Klik op de ``+`` knop om een nieuwe judge
@@ -305,14 +306,14 @@ gedraaid moet worden, de git clone url, de feedback renderer en de submission
 runner in.
 
 Feedback renderers
-----
+------------------
 
 Momenteel zijn er twee mogelijke feedback renderers beschikbaar: de
 *FeedbackRenderer* en de *PythiaFeedbackRenderer*. De eerste wordt aangeraden
 aangezien de tweede enkele features bevat specifiek voor de Pythia judge.
 
 Submission renderers
-----
+--------------------
 
 Momenteel zijn er twee mogelijke submission renderers beschikbaar: de
 *SubmissionRunnner* en de *PythiaSubmissionRenderer*. De eerste wordt aangeraden

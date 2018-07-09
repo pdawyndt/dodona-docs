@@ -94,6 +94,7 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
    :
 
 .. _exercise_configuration:
+
 Configuratie
 ------------
 
@@ -154,6 +155,7 @@ Het configuratie bestand van een oefening moet de volgende velden bevatten:
   de oefening enkel beschikbaar via eenlink er naar toe.
 
 .. _describing_an_exercise:
+
 Beschrijving
 ------------
 
