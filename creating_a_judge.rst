@@ -298,13 +298,11 @@ wordt. ``Message`` objecten kunnen op elk niveau gezonden worden.
 Een judge toevoegen
 ----
 
-Als een medewerker van Dodona kan je een Judge toevoegen. Ga naar de "Judges"
+Als medewerker van Dodona kan je een Judge toevoegen. Ga naar de "Judges"
 pagina via de adminstrator dropdown. Klik op de ``+`` knop om een nieuwe judge
 toe te voegen. Geef een naam, de naam van de Docker image waar de judge in
-gedraaid moet worden, de git clone url, de padnaam (waar de repository moet
-opgeslagen worden op de server relatief tot de map waar alle judges in zitten,
-dit is meestal de naam van de repository maar moet uniek zijn), de feedback
-renderer en de submission runner in.
+gedraaid moet worden, de git clone url, de feedback renderer en de submission
+runner in.
 
 Feedback renderers
 ----
