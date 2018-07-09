@@ -172,7 +172,7 @@ stijl te geven.
 Afbeeldingen
 ````````````
 
-Dodona installeert automatisch lightbox ondersteuning op alle afbeeldingen in de bescrijving. Het is mogelijk om een caption te specifiëren voor een afbeelding en om een alternatieve bron in te stellen die in de lightbox getoond zal worden.
+Dodona installeert automatisch lightbox ondersteuning op alle afbeeldingen in de beschrijving. Het is mogelijk om een caption te specifiëren voor een afbeelding en om een alternatieve bron in te stellen die in de lightbox getoond zal worden.
 
 HTML
   Een caption kan ingesteld worden met het ``data-caption`` attribuut. Als er geen ``data-caption`` attribuut is zal Dodona als caption de eerste waarde van de volgende attributen nemen: ``alt`` en ``src``.
@@ -349,7 +349,7 @@ Markdown
 Code snippets
 `````````````
 HTML
-  Om broncode te tonen in de bescrijving maak je best gebruik van de
+  Om broncode te tonen in de beschrijving maak je best gebruik van de
   ``highlighter-rouge``, ``language-<lang>`` en ``highlight`` *classes*. Hierbij
   moet je ``<lang>`` vervangen door de naam van de programmeertaal waarvoor je
   syntax highlighting wilt. Dus bijvoorbeeld ``language-python`` voor Python.
@@ -446,3 +446,4 @@ Callouts zijn enkel mogelijk in HTML. Dit kan als volgt:
    </div>
 
 In plaats van ``callout-info`` kan ook ``callout-warning`` en ``callout-danger`` gebruikt worden.
+Je kan deze HTML natuurlijk gewoon in je Markdown plaatsen om hetzelfde effect te creëren.
