@@ -14,13 +14,34 @@ oefeningen correct te identificeren en parsen moet de repository aan een
 Een repository toevoegen
 ------------------------
 
-Alle medewerkers op Dodona hebben een "Repositories" link in hun "Admin"
-dropdown. Dit brengt je naar een overzicht van de repositories die Dodona
-gebruikt als bronnen voor oefeningen. Klik op de ``+`` knop om een nieuwe
-repository toe te voegen.
+Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
+aanmaken. Dit kan je doen op de `UGent GitHub <https://github.ugent.be>`_ of op
+de `publieke GitHub <https://github.com>`_.
+
+Daarna is het belangrijk om de account van Dodona toe te voegen als
+*collaborator* aan je repository. Op de UGent GitHub is dat **SA-GithubDodona**
+en op de publieke GitHub is dat **dodona-server**.
+
+De volgende stap is de repository op Dodona registreren. Alle medewerkers op
+Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je
+naar een overzicht van de repositories die Dodona gebruikt als bronnen voor
+oefeningen. Klik op de ``+`` knop om een nieuwe repository toe te voegen.
 
 Geef een naam, de git clone url en de standaard :ref:`judge <list_of_judges>` in
 en klik op de knop rechtsboven om een nieuwe repository toe te voegen.
+
+Als laatste moet je op GitHub een *webhook* instellen. De URL hiervoor kan je
+vinden op de detailpagina van je repository op Dodona. De *webhook* instellen
+kan je doen in de instellingen van he repository op GitHub.
+
+Moet ik mijn repository *private* of *public* maken?
+````````````````````````````````````````````````````
+
+Dit mag je zelf kiezen. Houd er wel rekening mee dat als je bijvoorbeeld
+voorbeeldoplossingen bij de oefeningen plaatst of als je de oefeningen voor
+examens gebruikt dat je de repository dan beter *private* maakt. Anders
+kunnen studenten de repository vinden en deze oplossingen of oefeningen
+bekijken.
 
 .. _predefined_structure:
 

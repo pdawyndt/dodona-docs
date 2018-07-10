@@ -8,13 +8,19 @@ Documentatie voor Dodona
 
 .. toctree::
    :maxdepth: 2
+   :caption: Inleiding
+
+   introduction
+
+.. toctree::
+   :maxdepth: 2
    :caption: Studenten
 
    for_students/for_students
 
 .. toctree::
    :maxdepth: 2
-   :caption: Docenten
+   :caption: Lesgevers
 
    for_teachers
 

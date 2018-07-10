@@ -5,8 +5,16 @@ Informatie voor studenten
 =========================
 
 
-Inloggen
---------
+Aanmelden
+---------
+
+.. note::
+
+   Om in te loggen moet je natuurlijk een account hebben. Dodona ondersteunt
+   verschillende generieke methoden om in te loggen (*SAML* en *OAuth*), maar
+   momenteel worden deze methoden enkel opengesteld voor partners in het
+   project. Neem contact met ons op als je je graag met je onderwijsinstelling
+   wil aansluiten.
 
 Om in te loggen op Dodona navigeer je naar
 `dodona.ugent.be <https://dodona.ugent.be>`_. Klik op "Aanmelden".
@@ -25,8 +33,10 @@ Nadat je succesvol ingelogd bent kom je op je persoonlijke homepagina aan.
 Inschrijven op een cursus
 -------------------------
 
-Als je ingelogd bent via een speciale link die je van je lesgever hebt
-gekregen ben je al ingeschreven en mag je deze stap overslaan.
+.. note::
+
+   Als je ingelogd bent via een speciale link die je van je lesgever hebt
+   gekregen ben je al ingeschreven en mag je deze stap overslaan.
 
 Als dit niet gebeurd is zal je je zelf moeten inschrijven op de cursus. Als
 voorbeeld zullen wij ons inschrijven op de cursus Scriptingtalen van het
