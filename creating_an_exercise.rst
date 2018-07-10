@@ -39,7 +39,7 @@ geen oefeningen gemist zijn tussen het moment dat je de respository toevoegde en
 de *webhook* instelde.
 
 Moet ik mijn repository *private* of *public* maken?
-````````````````````````````````````````````````````
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 Dit mag je zelf kiezen. Houd er wel rekening mee dat als je bijvoorbeeld
 voorbeeldoplossingen bij de oefeningen plaatst of als je de oefeningen voor
