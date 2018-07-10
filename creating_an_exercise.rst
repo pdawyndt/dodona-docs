@@ -34,6 +34,10 @@ Als laatste moet je op GitHub een *webhook* instellen. De URL hiervoor kan je
 vinden op de detailpagina van je repository op Dodona. De *webhook* instellen
 kan je doen in de instellingen van he repository op GitHub.
 
+Klik tenslotte nog eens op "Alle oefeningen herwerken". Zo ben je zeker dat er
+geen oefeningen gemist zijn tussen het moment dat je de respository toevoegde en
+de *webhook* instelde.
+
 Moet ik mijn repository *private* of *public* maken?
 ````````````````````````````````````````````````````
 
