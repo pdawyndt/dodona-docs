@@ -4,8 +4,8 @@ Inleiding
 =========
 
 Als lesgever kan je onbeperkt cursussen aanmaken op Dodona, en binnen die
-cursussen een leerpad uitstippelen met verschillende oefeningenreeksen. Voor het
-toevoegen van oefeningen die op een automatische manier de ingediende
+cursussen kan je een leerpad uitstippelen met verschillende oefeningenreeksen.
+Voor het toevoegen van oefeningen die op een automatische manier de ingediende
 oplossingen testen en van feedback voorzien, heb je een aantal verschillende
 opties:
 
