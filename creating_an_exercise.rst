@@ -490,5 +490,190 @@ Callouts zijn enkel mogelijk in HTML. Dit kan als volgt:
      <p>Tekst</p>
    </div>
 
-In plaats van ``callout-info`` kan ook ``callout-warning`` en ``callout-danger`` gebruikt worden.
-Je kan deze HTML natuurlijk gewoon in je Markdown plaatsen om hetzelfde effect te creëren.
+In plaats van ``callout-info`` kan ook ``callout-warning`` en ``callout-danger``
+gebruikt worden. Je kan deze HTML natuurlijk gewoon in je Markdown plaatsen om
+hetzelfde effect te creëren. Je moet dan wel het volledig element in HTML
+schrijven.
+
+
+Voorbeeld
+"""""""""
+
+Markdown
+
+  .. code-block:: text
+
+     Schrijf een natuurlijk getal op een blaadje papier:
+
+     > 886328712442992
+
+     Tel het aantal even en oneven cijfers, en ook het totaal aantal cijfers:
+
+     > 10 5 15
+
+     Vorm een nieuw getal door de cijfers van de voorgaande dree getallen samen te voegen:
+
+     > 10515
+
+     Voor dezelfde procedure nogmaals uit op het bekomen getal:
+
+     > 1 4 5 ⟶ 145
+
+     En blijf dit herhalen:
+
+     > 1 2 3 ⟶ 123
+
+     Je zal finaal altijd bij het getal 123 uitkomen.
+
+     <div class="callout callout-info">
+          <h4>Opmerking</h4>
+          <p>Bij het toepassen van de procedure om het volgende getal te bepalen,
+            dien je de voorloopnullen te laten vallen als er geen even cijfers in
+            het getal staan. Als we bijvoorbeeld vertrekken van het getal 111, dan
+            bepalen we het volgende getal als</p>
+          <blockquote>0 3 3 &#10230; 33 (en niet 033)</blockquote>
+          <p>Dat maakt een verschil omdat 33 geen even cijfers heeft (en bij een
+            volgende toepassing van de procedure 22 oplevert) en 033 wel een even
+            cijfer heeft (en bij een volgende toepassing van de procedure 123 zou
+            opleveren).</p>
+     </div>
+
+
+    ### Opgave
+
+     * Schrijf een functie `evenOneven` waaraan een getal $$n \in \mathbb{N}$$
+       moet doorgegeven worden. De functie moet een tuple met twee natuurlijke
+       getallen teruggeven, die repectievelijk aangeven hoeveel even en oneven
+       cijfers er in $$n$$ voorkomen.
+     * Schrijf een functie `volgende` waaraan een getal $$n \in \mathbb{N}$$
+       moet doorgegeven worden. De functie moet het getal teruggeven dat men
+       bekomt door de procedure uit de inleiding eenmaal toe te passen op $$n$$.
+     * Schrijf een functie `stappen` waaraan een getal $$n \in \mathbb{N}$$ moet
+       doorgegeven worden. De functie moet teruggeven hoe vaak we de procedure
+       uit de inleiding moeten toepassen voor we 123 bekomen, als we beginnen
+       bij $$n$$.
+
+    ### Voorbeeld
+
+    ```python
+    >>> evenOneven(886328712442992)
+    (10, 5)
+    >>> evenOneven(10515)
+    (1, 4)
+    >>> evenOneven(145)
+    (1, 2)
+
+    >>> volgende(886328712442992)
+    10515
+    >>> volgende(10515)
+    145
+    >>> volgende(145)
+    123
+
+    >>> stappen(886328712442992)
+    3
+    >>> stappen(1217637626188463187643618416764317864)
+    4
+    >>> stappen(0)
+    2
+    >>> stappen(1)
+    5
+    ```
+
+HTML
+
+  .. code-block:: html
+
+     <html>
+      <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      </head>
+      <body>
+        <p>Schrijf een natuurlijk getal op een blaadje papier:</p>
+        <blockquote>886328712442992</blockquote>
+        <p>Tel het aantal even en oneven cijfers, en ook het totaal aantal cijfers:</p>
+        <blockquote>10 5 15</blockquote>
+        <p>Vorm een nieuw getal door de cijfers van de voorgaande drie getallen
+          samen te voegen:</p>
+        <blockquote>10515</blockquote>
+        <p>Voer dezelfde procedure nogmaals uit op het bekomen getal:</p>
+        <blockquote>1 4 5 &#10230; 145</blockquote>
+        <p>En blijf dit herhalen:</p>
+        <blockquote>1 2 3 &#10230; 123</blockquote>
+        <p>Je zal finaal altijd bij het getal 123 uitkomen.</p>
+        <div class="callout callout-info">
+          <h4>Opmerking</h4>
+          <p>Bij het toepassen van de procedure om het volgende getal te bepalen,
+            dien je de voorloopnullen te laten vallen als er geen even cijfers in
+            het getal staan. Als we bijvoorbeeld vertrekken van het getal 111, dan
+            bepalen we het volgende getal als</p>
+          <blockquote>0 3 3 &#10230; 33 (en niet 033)</blockquote>
+          <p>Dat maakt een verschil omdat 33 geen even cijfers heeft (en bij een
+            volgende toepassing van de procedure 22 oplevert) en 033 wel een even
+            cijfer heeft (en bij een volgende toepassing van de procedure 123 zou
+            opleveren).</p>
+        </div>
+        <h3>Opgave</h3>
+        <ul>
+          <li>
+            <p>Schrijf een functie <samp>evenOneven</samp> waaraan een getal $$n
+              \in \mathbb{N}$$ moet doorgegeven worden. De functie moet een tuple
+              met twee natuurlijke getallen teruggeven, die respectievelijk aangeven
+              hoeveel even en oneven cijfers er in $$n$$ voorkomen.</p>
+          </li>
+          <li>
+            <p>Schrijf een functie <samp>volgende</samp> waaraan een getal $$n \in
+              \mathbb{N}$$ moet doorgegeven worden. De functie moet het getal
+              teruggeven dat men bekomt door de procedure uit de inleiding eenmaal
+              toe te passen op $$n$$.</p>
+          </li>
+          <li>
+            <p>Schrijf een functie <samp>stappen</samp> waaraan een getal $$n \in
+              \mathbb{N}$$ moet doorgegeven worden. De functie moet teruggeven hoe
+              vaak we de procedure uit de inleiding moeten toepassen vooraleer we
+              het getal 123 bekomen, als we beginnen bij $$n$$.</p>
+          </li>
+        </ul>
+        <h3>Voorbeeld</h3>
+        <div class="highlighter-rouge language-python">
+          <div class="syntax">
+            <pre><span class="gp">&gt;&gt;&gt; </span><span class="n">evenOneven</span><span
+    class="p">(</span><span class="mi">886328712442992</span><span class="p">)</span>
+    <span class="go">(10, 5)</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">evenOneven</span><span class="p">(</span><span
+    class="mi">10515</span><span class="p">)</span>
+    <span class="go">(1, 4)</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">evenOneven</span><span class="p">(</span><span
+    class="mi">145</span><span class="p">)</span>
+    <span class="go">(1, 2)</span>
+
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">volgende</span><span class="p">(</span><span
+    class="mi">886328712442992</span><span class="p">)</span>
+    <span class="go">10515</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">volgende</span><span class="p">(</span><span
+    class="mi">10515</span><span class="p">)</span>
+    <span class="go">145</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">volgende</span><span class="p">(</span><span
+    class="mi">145</span><span class="p">)</span>
+    <span class="go">123</span>
+
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">stappen</span><span class="p">(</span><span
+    class="mi">886328712442992</span><span class="p">)</span>
+    <span class="go">3</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">stappen</span><span class="p">(</span><span
+    class="mi">1217637626188463187643618416764317864</span><span class="p">)</span>
+    <span class="go">4</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">stappen</span><span class="p">(</span><span
+    class="mi">0</span><span class="p">)</span>
+    <span class="go">2</span>
+    <span class="gp">&gt;&gt;&gt; </span><span class="n">stappen</span><span class="p">(</span><span
+    class="mi">1</span><span class="p">)</span>
+    <span class="go">5</span>
+    </pre></div>
+        </div>
+      </body>
+    </html>
+
+Dit ziet er dan uiteindelijk als volgt uit:
+
+.. image:: description-example.nl.png
