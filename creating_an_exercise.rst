@@ -83,9 +83,11 @@ structuur:
   mappen).
 
   ``media``
-    Deze map bevat statische bestanden die vrij toegankelijk zijn op de
-    webserver (handig om bijvoorbeeld afbeeldingen in te voegen in de
-    beschrijving van de oefening).
+    Deze map bevat statische bestanden die toegankelijk zijn op de webserver
+    (handig om bijvoorbeeld afbeeldingen in te voegen in de beschrijving van de
+    oefening). De bestanden zijn even toegankelijk als de oefening, dus als de
+    oefening niet toegankelijk is voor studenten zullen deze bestanden dat ook
+    niet zijn.
   ``boilerplate``
     Deze map bevat standaardtekst die automatisch in de indienomgeving geplaatst
     wordt wanneer de oefening op de site geladen wordt. Deze files zijn van de
@@ -143,7 +145,7 @@ Het configuratie bestand van een oefening moet de volgende velden bevatten:
   Een JSON object met drie velden:
 
   ``difficulty``
-    Een numerieke inschatting van de moeilijkheid van de oefening.
+    Een optionele numerieke inschatting van de moeilijkheid van de oefening.
 
   ``handler``
     Momenteel is hier enkel ``default`` als waarde mogelijk.
@@ -189,9 +191,11 @@ Het configuratie bestand van een oefening moet de volgende velden bevatten:
     een enkele string als er maar één aanvaardbare programmeertaal is.)
 
 ``visibility``
-  Oftewel ``"open"`` of ``"closed"``. Als de waarde ``"open"`` is kan iedereen
-  de oefening vinden door er naar te zoeken. Als de waarde ``"closed"`` is, is
-  de oefening enkel beschikbaar via eenlink er naar toe.
+  Oftewel ``"open"``, ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is
+  kan iedereen de oefening vinden door er naar te zoeken. Als de waarde
+  ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe.
+  Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening
+  bekijken.
 
 .. _describing_an_exercise:
 
