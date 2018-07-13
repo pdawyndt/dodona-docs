@@ -60,6 +60,12 @@ bekijken.
 Structuur van de repository
 ---------------------------
 
+.. warning::
+
+   Denk op voorhand goed na over hoe je je repository wil organiseren. Dodona
+   kan er namelijk (nog) niet mee om dat oefeningen verplaatst of verwijderd
+   worden.
+
 In de repository mag je de mappen zelf organiseren zoals je wil. Om een map te
 markeren als een map waar een oefening in zit moet je er een ``config.json``
 bestand in plaatsen. Mappen waar oefeningen in zitten hebben een vaste
