@@ -50,3 +50,12 @@ Let er op bij het toevoegen van reeksen dat een nieuwe reeks telkens boven de
 bestaande reeksen zal toegevoegd worden en dat er momenteel nog geen manier
 bestaan om de reeksen te herordenen.
 
+Studenten automatisch laten registreren
+---------------------------------------
+
+Op Dodona kan je het proces voor studenten om zich te in te schrijven op je
+cursus vergemakkelijken. Als je hen een speciale link geeft zullen ze op het
+moment dat ze die volgen automatisch ingeschreven worden in je cursus. Deze link
+kan je op de cursuspagina vinden.
+
+.. image:: registration-link.nl.png
