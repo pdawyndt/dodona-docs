@@ -27,8 +27,9 @@ Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je
 naar een overzicht van de repositories die Dodona gebruikt als bronnen voor
 oefeningen. Klik op de ``+`` knop om een nieuwe repository toe te voegen.
 
-Geef een naam, de git clone url en de standaard :ref:`judge <list_of_judges>` in
-en klik op de knop rechtsboven om een nieuwe repository toe te voegen.
+Geef een naam, de git clone URL en de standaard :ref:`judge <list_of_judges>` in
+en klik op de knop rechtsboven om een nieuwe repository toe te voegen. Hierbij
+moet de git clone URL een SSH URL zijn.
 
 Als laatste moet je op GitHub een *webhook* instellen. De URL hiervoor kan je
 vinden op de detailpagina van je repository op Dodona. De *webhook* instellen
