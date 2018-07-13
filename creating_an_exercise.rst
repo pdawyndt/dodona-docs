@@ -4,6 +4,13 @@
 Een oefening maken
 ==================
 
+.. note::
+
+   Om oefeningen aan Dodona toe te voegen moet je `git <https://git-scm.org>`_
+   gebruiken. Als je hier weinig of geen ervaring mee hebt lees je best `dit
+   boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij
+   nuttig.
+
 Alle oefeningen in Dodona komen van een git repository. Ook lege repositories
 kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de
 oefeningen correct te identificeren en parsen moet de repository aan een
