@@ -25,9 +25,13 @@ Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
 aanmaken. Dit kan je doen op de `UGent GitHub <https://github.ugent.be>`_ of op
 de `publieke GitHub <https://github.com>`_.
 
+.. image:: create-repository.gif
+
 Daarna is het belangrijk om de account van Dodona toe te voegen als
 *collaborator* aan je repository. Op de UGent GitHub is dat **SA-GithubDodona**
 en op de publieke GitHub is dat **dodona-server**.
+
+.. image:: add-dodona-to-repository.gif
 
 De volgende stap is de repository op Dodona registreren. Alle medewerkers op
 Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je
@@ -40,7 +44,7 @@ moet de git clone URL een SSH URL zijn.
 
 Als laatste moet je op GitHub een *webhook* instellen. De URL hiervoor kan je
 vinden op de detailpagina van je repository op Dodona. De *webhook* instellen
-kan je doen in de instellingen van he repository op GitHub.
+kan je doen in de instellingen van je repository op GitHub.
 
 Klik tenslotte nog eens op "Alle oefeningen herwerken". Zo ben je zeker dat er
 geen oefeningen gemist zijn tussen het moment dat je de respository toevoegde en
