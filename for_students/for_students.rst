@@ -19,7 +19,7 @@ Als student kan je op Dodona registreren voor één of meer **cursussen** (modul
       * Sint-Bavohumaniora (Gent)
       * College Ieper
 
-    Voor authenticatie via bestaande gebruikersaccounts van externe partners ondersteunt Dodona zowel `SAML https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language`_als `OAuth https://nl.wikipedia.org/wiki/OAuth`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wil krijgen tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language`_als `OAuth https://nl.wikipedia.org/wiki/OAuth`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
 Aanmelden
 ---------
