@@ -1,8 +1,7 @@
 .. _for_students:
 
-=========================
 Dodona voor studenten
-=========================
+=====================
 
 Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die door Dodona automatisch van feedback voorzien worden. Deze acties vereisen echter dan je je eerst aanmeldt op Dodona.
 
@@ -25,18 +24,26 @@ Aanmelden
 ---------
 
 Om in te loggen op Dodona navigeer je naar
-`dodona.ugent.be <https://dodona.ugent.be>`_. Klik op "Aanmelden".
+`dodona.ugent.be <https://dodona.ugent.be>`_. Klik op **Aanmelden**.
 
 .. image:: login.nl.png
 
-Selecteer dan de onderwijsinstelling waar je aan verbonden bent. Dit zal je naar
-een inlogpagina van jouw onderwijsinstelling brengen.
+Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmelden op Dodona. Daar kan je de instellingsspecifieke aanmeldingsprocedure volgen.
 
 .. image:: institution.nl.png
 
-Nadat je succesvol ingelogd bent kom je op je persoonlijke homepagina aan.
+.. note::
+
+    Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
+
+Nadat je met succes bent aangemeld, krijg je je persoonlijke homepagina op Dodona te zien. In de navigatiebalk (bovenaan de pagina) zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
 
 .. image:: homepage.nl.png
+
+.. note::
+
+    Indien je beschikt over gebruikersaccounts bij verschillende externe instellingen, dan corresponderen deze gebruikersaccounts bij aanmelden met verschillende gebruikersaccount op Dodona.
+
 
 Inschrijven op een cursus
 -------------------------
