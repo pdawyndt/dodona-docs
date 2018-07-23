@@ -4,11 +4,11 @@
 Dodona voor studenten
 =========================
 
-Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die door Dodona automatisch beoordeeld en van feedback voorzien worden. Deze acties vereisen echter dan je je eerst aanmeldt op Dodona.
+Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die door Dodona automatisch van feedback voorzien worden. Deze acties vereisen echter dan je je eerst aanmeldt op Dodona.
 
 .. note::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Op dit moment kan je zelf geen gebruikersaccount aanmaken, maar maakt Dodona automatisch een gebruikersaccount aangemaakt als in aanmeldt via je gebruikersaccount van één van deze instellingen:
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Op dit moment kan je zelf geen gebruikersaccount aanmaken, maar maakt Dodona automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
       * Universiteit Gent (UGent)
       * Universiteit Hasselt (UHasselt)
@@ -19,10 +19,18 @@ Als student kan je op Dodona registreren voor één of meer **cursussen** (modul
       * Sint-Bavohumaniora (Gent)
       * College Ieper
 
-    Voor authenticatie via bestaande gebruikersaccounts van externe partners ondersteunt Dodona zowel `SAML https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language` als `OAuth https://nl.wikipedia.org/wiki/OAuth`. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wil krijgen tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie via bestaande gebruikersaccounts van externe partners ondersteunt Dodona zowel `SAML https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language`_als `OAuth https://nl.wikipedia.org/wiki/OAuth`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wil krijgen tot Dodona. Deze dienstverlening is gratis.
 
 Aanmelden
 ---------
+
+.. note::
+
+   Om in te loggen moet je natuurlijk een account hebben. Dodona ondersteunt
+   verschillende generieke methoden om in te loggen (*SAML* en *OAuth*), maar
+   momenteel worden deze methoden enkel opengesteld voor partners in het
+   project. Neem contact met ons op als je je graag met je onderwijsinstelling
+   wil aansluiten.
 
 Om in te loggen op Dodona navigeer je naar
 `dodona.ugent.be <https://dodona.ugent.be>`_. Klik op "Aanmelden".
