@@ -3,13 +3,16 @@
 Dodona voor studenten
 =====================
 
-Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een **gebruikersaccount** beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`**oplossingen** indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`**gebruikersaccount** <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
+
+.. _gebruikersaccount:
+
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je persoonlijk voorkeur voor de natuurlijke taal en de tijdzone instellen die door Dodona gebruikt worden.
+    Om te kunnen aanmelden moet je over een gebruikersaccount beschikken op Dodona. Via deze gebruikersaccount kan je je persoonlijk voorkeur instellen voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>: die door Dodona gebruikt worden.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -24,6 +27,7 @@ Als student kan je op Dodona registreren voor één of meer **cursussen** (modul
 
     Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met `team Dodona <https://dodona.ugent.be/nl/contact/>`_ als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
+.. _startpagina:
 .. _aanmelden:
 
 Aanmelden
@@ -35,7 +39,7 @@ Navigeer naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ en klik
 
 .. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
 
-Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daar kan je de instellingsspecifieke aanmeldingsprocedure volgen.
+Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure
 
 .. image:: institution.nl.png
 
@@ -56,17 +60,27 @@ Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke **homepagi
 .. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
 
+.. _afmelden:
+
 Afmelden
 --------
 
+Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het gebruikersmenu. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
+
+
+.. _taal instellen:
 
 Instellen van de taal
 ---------------------
 
 
+.. _tijdzone instellen:
+
 Instellen van de tijdzone
 -------------------------
 
+
+.. _cursus selecteren:
 
 Selecteren van een cursus
 -------------------------
@@ -101,7 +115,9 @@ Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cu
 
 .. Als voorbeeld zullen wij ons inschrijven op de cursus Scriptingtalen van het academiejaar 2017--2018.
 
-Na selectie van een cursus krijg je de **cursuspagina** van die cursus te zien.
+.. _cursuspagina:
+
+Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina** van die cursus te zien.
 
 .. image:: course.nl.png
 
@@ -109,6 +125,8 @@ Na selectie van een cursus krijg je de **cursuspagina** van die cursus te zien.
 
     Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de navigatiebalk. Door in de navigatiebalk op die naam van de cursus te klikken, navigeer je terug naar de cursuspagina.
 
+
+.. _registreren:
 
 Registreren voor een cursus
 ---------------------------
@@ -134,11 +152,15 @@ deze ook op je homepagina te zien zijn.
    gekregen ben je al ingeschreven en mag je deze stap overslaan.
 
 
+.. _uitschrijven:
+
 Uitschrijven uit een cursus
 ---------------------------
 
-xxx
+TODO
 
+
+.. _oplossing indienen:
 
 Indienen van een oplossing
 --------------------------
