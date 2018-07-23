@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die door Dodona automatisch van feedback voorzien worden. Deze acties vereisen echter dan je je eerst aanmeldt op Dodona.
+Als student kan je op Dodona registreren voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald **oplossingen** indienen die automatisch van feedback voorzien worden. Deze acties vereisen echter dan je je eerst aanmeldt op Dodona.
 
 .. important::
 
@@ -14,70 +14,84 @@ Als student kan je op Dodona registreren voor één of meer **cursussen** (modul
       * Hogeschool West-Vlaanderen (Howest)
       * Hogeschool Gent (HoGent)
       * Katholieke Universiteit Leuven (KU Leuven)
-      * College Waregem
-      * Sint-Bavohumaniora (Gent)
+      * H.-Hartcollege Waregem
+      * Sint-Bavohumaniora Gent
       * College Ieper
 
-    Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met `team Dodona <https://dodona.ugent.be/nl/contact/>`_ als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+
 
 Aanmelden
 ---------
 
-Navigeer naar `Dodona <https://dodona.ugent.be>`_ en klik op **Aanmelden**.
+Navigeer naar `Dodona <https://dodona.ugent.be>`_ en klik op **Aanmelden** in de navigatiebalk (bovenaan de pagina) of op de knop **Aanmelden** (midden op de pagina).
 
 .. image:: login.nl.png
 
-Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmelden op Dodona. Daar kan je de instellingsspecifieke aanmeldingsprocedure volgen.
+.. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
+
+Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daar kan je de instellingsspecifieke aanmeldingsprocedure volgen.
 
 .. image:: institution.nl.png
 
 .. note::
 
-    Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
+    Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
 
-Nadat je met succes bent aangemeld, krijg je je persoonlijke homepagina op Dodona te zien. In de navigatiebalk (bovenaan de pagina) zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
+Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke **homepagina**. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
 
 .. image:: homepage.nl.png
 
-.. note::
+.. important::
 
-    Indien je beschikt over gebruikersaccounts bij verschillende externe instellingen, dan corresponderen deze gebruikersaccounts bij aanmelden met verschillende gebruikersaccount op Dodona.
+    Indien je beschikt over gebruikersaccounts bij verschillende externe instellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
+
+.. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
 
-Inschrijven op een cursus
+Selecteren van een cursus
 -------------------------
 
+De linkerkant van je homepagina bevat kaartjes van alle cursussen waarvoor je reeds geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
+
+.. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
+
 .. note::
 
-   Als je ingelogd bent via een speciale link die je van je lesgever hebt
-   gekregen ben je al ingeschreven en mag je deze stap overslaan.
+    Vanop elke pagina kan je **naar je homepagina navigeren** door uiterst links in de navigatiebalk op **Dodona** te klikken.
 
-Als dit niet gebeurd is zal je je zelf moeten inschrijven op de cursus. Als
-voorbeeld zullen wij ons inschrijven op de cursus Scriptingtalen van het
-academiejaar 2017--2018. Klik hiervoor op de "Verken cursussen" knop. Deze knop
-zal niet aanwezig zijn wanneer je al ingeschreven bent op een cursus. In dat
-geval kan je de "Meer cursussen..." knop rechts onderaan de pagina gebruiken.
+Indien je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je homepagina. Je kan één van deze cursussen selecteren door op de naam van de cursus te klikken.
+
+.. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
+
+Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te klikken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je homepagina. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook klikken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je homepagina.
+
+.. TODO: optie "cursussen" zou beschikbaar moeten zijn in de tab van de gebruiker, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
 
 .. image:: explore_courses.nl.png
 
-Je komt nu op een pagina met een lijst van alle cursussen op Dodona. Deze staan
-eerst gesorteerd op academiejaar (met het huidige academiejaar eerst) en dan
-alfabetisch op naam.
+.. TODO: tweede pijl toevoegen naar knop **MEER CURSUSSEN...** aan de rechterkant van de homepagina
+
+Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
+
+.. TODO: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
 .. image:: courses.nl.png
 
-Vind de cursus waar je je op wil inschrijven. De naam van de cursus zal meestal
-dezelfde zijn als de naam van het vak dat je volgt. Als je niet zeker bent voor
-welke cursus je je moet inschrijven kan je ook gebruik maken van het lesgever
-veld om de juiste cursus te kiezen. Let er zeker op dat je je voor het juiste
-academiejaar inschrijft. Klik op de naam van de cursus om naar de cursuspagina
-te gaan. Wij zullen verdergaan met de cursus Scriptingtalen.
+.. TODO: afbeelding vervangen door een screenshot met de nieuwe layout van het cursusoverzicht; beschrijving van de functionaliteit van het cursusoverzicht moet eventueel bijgewerkt worden
 
-Je komt dan op een pagina terecht die er ongeveer als volgt uit ziet:
+.. Als voorbeeld zullen wij ons inschrijven op de cursus Scriptingtalen van het
+academiejaar 2017--2018.
+
+Na selectie van een cursus krijg je de **cursuspagina** van die cursus te zien:
 
 .. image:: course.nl.png
 
-Je kan je registreren via de de knop "Registreren".
+
+Registreren voor een cursus
+---------------------------
+
+Indien je navigeert naar de pagina van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een knop **REGISTREREN**. Druk op deze knop om de registratieprocedure te starten.
 
 .. image:: register.nl.png
 
@@ -92,8 +106,20 @@ Wanneer je geregistreerd bent voor een cursus zal je homepagina er als volgt uit
 Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen
 deze ook op je homepagina te zien zijn.
 
-Een oefening indienen
----------------------
+.. note::
+
+   Als je ingelogd bent via een speciale link die je van je lesgever hebt
+   gekregen ben je al ingeschreven en mag je deze stap overslaan.
+
+
+Uitschrijven uit een cursus
+---------------------------
+
+xxx
+
+
+Indienen van een oplossing
+--------------------------
 
 Om een oefening in te dienen moet je natuurlijk eerst naar een oefening gaan. Op
 de pagina van een cursus kan je een oefening selecteren. Klik op de naam van de
@@ -131,3 +157,5 @@ Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
 juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
 verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
 in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
+
+.. TODO: sectie met uitleg hoe contact op te nemen met team Dodona
