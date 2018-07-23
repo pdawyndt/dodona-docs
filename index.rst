@@ -28,5 +28,11 @@ Documentatie voor Dodona
    :maxdepth: 2
    :caption: Referentie
 
-   list_of_judges
    judge_output_format_schema
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Judges
+
+   list_of_judges
+   pythia_judge
