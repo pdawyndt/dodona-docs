@@ -1,7 +1,7 @@
 .. _for_teachers:
 
 =========================
-Informatie voor lesgevers
+Dodona voor lesgevers
 =========================
 
 .. note::

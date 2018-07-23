@@ -1,7 +1,7 @@
 .. _for_students:
 
 =========================
-Informatie voor studenten
+Dodona voor studenten
 =========================
 
 
