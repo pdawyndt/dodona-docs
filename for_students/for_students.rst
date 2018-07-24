@@ -164,7 +164,7 @@ Registreren voor een cursus
 Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
 * De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop **REGISTREREN** om je voor de cursus te registreren.
-  .. image:: register.nl.png
+.. image:: register.nl.png
 * De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je homepagina.
 * De cursus werkt met **gesloten registratie**, wat betekent dat je zelf geen registratieverzoek kan indienen voor de cursus.
 
