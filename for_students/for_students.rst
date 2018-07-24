@@ -331,7 +331,7 @@ Onder het paneel met de omschrijving van de oefening vind je een tweede paneel w
 
     Om een aantal redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een externe IDE. Voer je programmacode lokaal uit op een aantal testgevallen, om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik bijvoorbeeld enkele testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer logische fouten opsporen door gebruik te maken van de debugger van je IDE.
 
-     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
+    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
 
 .. note::
 
