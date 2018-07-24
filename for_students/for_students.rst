@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`**oplossingen** indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`**gebruikersaccount** <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
@@ -12,7 +12,7 @@ Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een gebruikersaccount beschikken op Dodona. Via deze gebruikersaccount kan je je persoonlijk voorkeur instellen voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>: die door Dodona gebruikt worden.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>: die door Dodona gebruikt worden.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -25,7 +25,7 @@ Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer
       * Sint-Bavohumaniora Gent
       * College Ieper
 
-    Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om contact op te nemen met `team Dodona <https://dodona.ugent.be/nl/contact/>`_ als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
 .. _startpagina:
 .. _aanmelden:
@@ -33,7 +33,7 @@ Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer
 Aanmelden
 ---------
 
-Navigeer naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ en klik op **Aanmelden** in de navigatiebalk (bovenaan de pagina) of op de knop **Aanmelden** centraal op de startpagina.
+Navigeer naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ en klik op **Aanmelden** in de navigatiebalk (bovenaan elke pagina) of op de knop **Aanmelden** centraal op de startpagina.
 
 .. image:: login.nl.png
 
@@ -49,7 +49,7 @@ Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmeld
 
     Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
 
-Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke **homepagina**. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
+Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`homepagina <homepagina>:. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
 
 .. image:: homepage.nl.png
 
@@ -65,7 +65,7 @@ Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke **homepagi
 Afmelden
 --------
 
-Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het gebruikersmenu. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
+Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het **gebruikersmenu**. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
 
 
 .. _taal instellen:
@@ -73,11 +73,14 @@ Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies h
 Instellen van de taal
 ---------------------
 
+In de navigatiebalk kan je uiterst links de natuurlijke taal instellen die door Dodona gebruikt wordt.
+
 
 .. _tijdzone instellen:
+.. _gebruikersprofiel instellen:
 
-Instellen van de tijdzone
--------------------------
+Instellen van het gebruikersprofiel
+-----------------------------------
 
 
 .. _cursus selecteren:
@@ -85,7 +88,11 @@ Instellen van de tijdzone
 Selecteren van een cursus
 -------------------------
 
-De linkerkant van je homepagina bevat kaartjes van alle cursussen waarvoor je reeds geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
+.. _homepagina:
+
+De linkerkant van je **homepagina** bevat kaartjes van alle cursussen waarvoor je reeds geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
+
+.. TODO: gebruikersmenu in de navigatiebalk bevat ook een lijst van de vakken waarvoor je geregistreerd bent, beperkt tot het laatste academiejaar
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
 
@@ -93,9 +100,13 @@ De linkerkant van je homepagina bevat kaartjes van alle cursussen waarvoor je re
 
     Vanop elke pagina kan je **naar je homepagina navigeren** door uiterst links in de navigatiebalk op **Dodona** te klikken.
 
+.. _paneel wachten op goedkeuring:
+
 Indien je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je homepagina. Je kan één van deze cursussen selecteren door op de naam van de cursus te klikken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
+
+.. _cursusoverzicht:
 
 Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te klikken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je homepagina. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook klikken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je homepagina.
 
@@ -203,3 +214,12 @@ verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
 in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
 
 .. TODO: sectie met uitleg hoe contact op te nemen met team Dodona
+
+.. _contact opnemen:
+
+Contact opnemen met team Dodona
+-------------------------------
+
+Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://naos.ugent.be/nl/contact/>`_ kan navigeren.
+
+.. TODO: screenshot van contactpagina toevoegen
