@@ -12,7 +12,7 @@ Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>: die door Dodona gebruikt worden.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -108,15 +108,15 @@ Selecteren van een cursus
 
 .. _homepagina:
 
-De linkerkant van je **homepagina** bevat kaartjes van alle cursussen waarvoor je reeds geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
-
-.. TODO: gebruikersmenu in de navigatiebalk bevat ook een lijst van de vakken waarvoor je geregistreerd bent, beperkt tot het laatste academiejaar
+De linkerkant van je **homepagina** bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
 
 .. note::
 
     Vanop elke pagina kan je **naar je homepagina navigeren** door uiterst links in de navigatiebalk op **Dodona** te klikken.
+
+Het gebruikersmenu aan de rechterkant van de navigatiebalk bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je homepagina moet navigeren.
 
 .. _paneel wachten op goedkeuring:
 
@@ -155,30 +155,34 @@ Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina
     Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de navigatiebalk. Door in de navigatiebalk op die naam van de cursus te klikken, navigeer je terug naar de cursuspagina.
 
 
+.. _manuele registratie:
 .. _registreren:
 
 Registreren voor een cursus
 ---------------------------
 
-Indien je navigeert naar de pagina van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een knop **REGISTREREN**. Druk op deze knop om de registratieprocedure te starten.
+Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
-.. image:: register.nl.png
+* De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop **REGISTREREN** om je voor de cursus te registreren.
+  .. image:: register.nl.png
+* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je homepagina.
+* De cursus werkt met **gesloten registratie**, wat betekent dat je zelf geen registratieverzoek kan indienen voor de cursus.
 
-Als hier "Registratieverzoek indienen" staat zal je moeten wachten tot de
-lesgever je verzoek goedkeurt. Nadat je er op geklikt hebt zal er de boodschap
-"Je staat al op de wachtlijst" staan.
+.. TODO: screenshot van cursuspagina met gemodereerde registratie
+.. TODO: screenshot van cursuspagina met gemodereerde registratie waarvoor registratieverzoek werd ingediend
+.. TODO: screenshot van cursuspagina met gesloten registratie
+.. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 
-Wanneer je geregistreerd bent voor een cursus zal je homepagina er als volgt uit zien:
+Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje voor die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
 
 .. image:: homepage_after_registration.nl.png
 
-Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen
-deze ook op je homepagina te zien zijn.
+.. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op je homepagina te zien zijn.
+.. TODO: behandeling van deadlines moet ergens ander staan.
 
-.. note::
+.. _registratielink:
 
-   Als je ingelogd bent via een speciale link die je van je lesgever hebt
-   gekregen ben je al ingeschreven en mag je deze stap overslaan.
+Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te klikken wordt de registratieprocedure opgestart voor een specifieke cursus. Deze procedure is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
 
 
 .. _uitschrijven:
