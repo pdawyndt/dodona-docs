@@ -49,7 +49,7 @@ Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmeld
 
     Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
 
-Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`homepagina <homepagina>:. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
+Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`homepagina <homepagina>`. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
 
 .. image:: homepage.nl.png
 
@@ -59,13 +59,15 @@ Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`home
 
 .. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
+.. TODO: omschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de omschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
+
 
 .. _afmelden:
 
 Afmelden
 --------
 
-Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het **gebruikersmenu**. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
+Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het **gebruikersmenu** aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
 
 
 .. _taal instellen:
@@ -94,12 +96,29 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 .. TODO: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
 
-.. _tijdzone instellen:
+.. _gebruikersprofiel:
 .. _gebruikersprofiel instellen:
 
 Instellen van het gebruikersprofiel
 -----------------------------------
 
+Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het gebruikersmenu aan de rechterkant van de navigatiebalk. Druk op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat om je gebruikersprofiel bij te werken.
+
+.. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
+
+.. _tijdzone instellen:
+
+In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je :ref:`een oplossing hebt ingediend <oplossing indienen>` of de deadline voor een oefeningenreeks).
+
+.. TODO: screenshot voor instellen van de tijdzone
+
+.. important::
+
+    Indien de tijdzone die je hebt ingesteld niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien om je erop te wijzen dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door  in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
+
+.. TODO: screenshot met waarschuwing van verkeerde tijdzone
+
+.. TODO: omschrijving van API token toevoegen van zodra deze feature beschikbaar wordt
 
 .. _cursus selecteren:
 
