@@ -21,12 +21,12 @@
 
 project = 'Dodona'
 copyright = '2018, Universiteit Gent'
-author = 'Universiteit Gent'
+author = 'Peter Dawyndt\nBart Mesuere\nEvert Van Petegem\nFelix Van der Jeugt'
 
 # The short X.Y version
-version = ''
+version = '2.3'
 # The full version, including alpha/beta/rc tags
-release = ''
+release = '2.3'
 
 
 # -- General configuration ---------------------------------------------------
@@ -130,20 +130,25 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'Dodona.tex', 'Dodona Documentation',
-     'Universiteit Gent', 'manual'),
-]
-
+latex_documents = [(
+    master_doc,
+    'dodona.tex',
+    'Handleiding Dodona',
+     'Peter Dawyndt\nBart Mesuere\nEvert Van Petegem\nFelix Van der Jeugt',
+    'manual'
+)]
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'dodona', 'Dodona Documentation',
-     [author], 1)
-]
+man_pages = [(
+    master_doc,
+    'dodona',
+    'Handleiding Dodona',
+    [author],
+    1
+)]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -151,11 +156,15 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'Dodona', 'Dodona Documentation',
-     author, 'Dodona', 'One line description of project.',
-     'Miscellaneous'),
-]
+texinfo_documents = [(
+    master_doc,
+    'dodona',
+    'Handleiding Dodona',
+     author,
+    'Dodona',
+    'online co-teacher voor programmeeropdrachten',
+     'programmeren'
+)]
 
 
 # -- Extension configuration -------------------------------------------------
