@@ -240,7 +240,7 @@ Onder de naam van de oefeningenreeks staat optioneel een beschrijving, met daaro
 
 .. _oefeningenreeks statistieken:
 
-De **statistieken** bestaan uit twee getallen $c/i$. Daarbij staat $i$ voor het aantal studenten dat in de cursus al minstens één oplossing heeft ingediend voor de oefening en staat $c$ voor het aantal studenten dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
+De **statistieken** bestaan uit twee getallen $$c/i$$. Daarbij staat $$i$$ voor het aantal studenten dat in de cursus al minstens één oplossing heeft ingediend voor de oefening en staat $$c$$ voor het aantal studenten dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
 
 .. _oefeningenreeks status:
 
