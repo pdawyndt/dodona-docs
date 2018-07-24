@@ -73,7 +73,25 @@ Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies h
 Instellen van de taal
 ---------------------
 
-In de navigatiebalk kan je uiterst links de natuurlijke taal instellen die door Dodona gebruikt wordt.
+In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijke taal kan instellen die door Dodona gebruikt wordt. Momenteel is het platform enkel beschikbaar in het Nederlands en in het Engels.
+
+.. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
+
+.. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt
+
+.. TODO: aangeven of de taalinstelling wel of geen deel uitmaakt van je gebruikersprofiel
+
+.. note::
+
+    De taalweergave van de vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) vallen onder de verantwoordelijkheid van het platform, en volgen altijd de instelling van de natuurlijke taal.
+
+    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de instelling van de natuurlijke taal, en de gebruikte natuurlijke taal werd gekozen door de lesgever die de cursus heeft opgesteld.
+
+.. TODO: nagaan of we deze componenten wel taalafhankelijk kunnen maken
+
+    De naam en de omschrijving van een oefening zijn afhankelijk van de instelling van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven. De taal die gebruikt wordt in de feedback is een gedeelde verantwoordelijkheid van de judge en de instellingen van de oefening, maar ook hierbij kan de feedback afhankelijk gemaakt worden van de instelling van de natuurlijke taal.
+
+.. TODO: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
 
 .. _tijdzone instellen:
@@ -217,8 +235,8 @@ in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
 
 .. _contact opnemen:
 
-Contact opnemen met team Dodona
--------------------------------
+Contact opnemen
+---------------
 
 Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://naos.ugent.be/nl/contact/>`_ kan navigeren.
 
