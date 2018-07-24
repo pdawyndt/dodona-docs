@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
@@ -12,7 +12,7 @@ Als student kan je op Dodona :ref:`registreren <registreren>` voor één of meer
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` worden — aan je gebruikersaccount gekoppeld.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -102,7 +102,7 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 Instellen van het gebruikersprofiel
 -----------------------------------
 
-Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het gebruikersmenu aan de rechterkant van de navigatiebalk. Druk op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat om je gebruikersprofiel bij te werken.
+Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het gebruikersmenu aan de rechterkant van de navigatiebalk. Om je gebruikersprofiel bij te werken, druk je op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat.
 
 .. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
 
@@ -111,6 +111,8 @@ Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in h
 In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je :ref:`een oplossing hebt ingediend <oplossing indienen>` of de deadline voor een oefeningenreeks).
 
 .. TODO: screenshot voor instellen van de tijdzone
+
+.. TODO: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
 
 .. important::
 
