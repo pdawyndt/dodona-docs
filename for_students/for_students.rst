@@ -250,6 +250,7 @@ Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je 
 | status                   | weergegeven als je                                                  |
 +--------------------------+---------------------------------------------------------------------+
 | geen oplossing           | geen oplossingen hebt ingediend (voorafgaand aan de deadline)       |
++--------------------------+---------------------------------------------------------------------+
 | status laatste oplossing | minstens één oplossing hebt ingediend (voorafgaand aan de deadline) |
 +--------------------------+---------------------------------------------------------------------+
 
