@@ -240,7 +240,7 @@ Onder de naam van de oefeningenreeks staat optioneel een beschrijving, met daaro
 
 .. _oefeningenreeks statistieken:
 
-De **statistieken** bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal studenten dat in de cursus al minstens één oplossing heeft ingediend voor de oefening en staat :math:`c` voor het aantal studenten dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
+De **statistieken** bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal studenten dat in de cursus al minstens één oplossing heeft ingediend voor de oefening en :math:`c` voor het aantal studenten dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
 
 .. _oefeningenreeks status:
 
@@ -249,11 +249,11 @@ Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je 
 +--------------------------+---------------------------------------+
 | status                   | weergegeven als je                    |
 +--------------------------+---------------------------------------+
-| geen oplossing           | geen oplossingen hebt ingediend       |
+| ``geen oplossing``       | geen oplossingen hebt ingediend       |
 |                          | (voorafgaand aan de deadline)         |
 +--------------------------+---------------------------------------+
-| status laatste oplossing | minstens één oplossing hebt ingediend |
-|                          | (voorafgaand aan de deadline)         |
+| status van laatst        | minstens één oplossing hebt ingediend |
+| ingediende oplossing     | (voorafgaand aan de deadline)         |
 +--------------------------+---------------------------------------+
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
