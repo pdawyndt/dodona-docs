@@ -69,7 +69,7 @@ Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`home
 Afmelden
 --------
 
-Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Kies hiervoor **Afmelden** in het **gebruikersmenu** aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
+Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Dit doe je door te kiezen voor **Afmelden** in het **gebruikersmenu** aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij de externe instelling geslaagd is.
 
 
 .. _taal instellen:
@@ -87,11 +87,13 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 
 .. note::
 
-    De taalweergave van de vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) vallen onder de verantwoordelijkheid van het platform, en volgen altijd de instelling van de natuurlijke taal.
+    De taalweergave van de vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) vallen volledig onder de verantwoordelijkheid van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
 
     De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de instelling van de natuurlijke taal, en de gebruikte natuurlijke taal werd gekozen door de lesgever die de cursus heeft opgesteld.
 
-    De naam en de omschrijving van een oefening zijn afhankelijk van de instelling van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven. De taal die gebruikt wordt in de feedback is een gedeelde verantwoordelijkheid van de judge en de instellingen van de oefening, maar ook hierbij kan de feedback afhankelijk gemaakt worden van de instelling van de natuurlijke taal.
+    De naam en de omschrijving van een oefening zijn afhankelijk van de instelling van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
+
+    De taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
 .. TODO: nagaan of we de cursusinhoud wel taalafhankelijk kunnen maken
 
