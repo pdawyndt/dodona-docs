@@ -351,7 +351,11 @@ Onder het paneel met de omschrijving van de oefening vind je een tweede paneel w
 
 .. TODO: na indien opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
 
-Na het indienen van een oplossing wordt de tab **Oplossingen** geselecteerd. Deze tab bevat een lijst van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat.
+Na het indienen van een oplossing wordt de tab **Oplossingen** geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
+
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status **In de wachtlijst...**. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status **Aan het uitvoeren...**.
+
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oefening zijn finale status en wordt de gedetailleerde feedback van de ingediende oplossing automatisch weergegeven in een nieuwe tab **Feedback**.
 
 .. note::
 
