@@ -228,7 +228,36 @@ Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`hom
 Selecteren van een oefening
 ---------------------------
 
-.. TODO: oefening selecteren op cursuspagina
+.. _oefeningenreeks:
+.. _oefeningenreeks deadline:
+.. oefening selecteren uit oefeningenreeks op cursuspagina
+
+Een :ref:`cursuspagina <cursuspagina>` bevat een reeks oefeningen die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven, rekening houdend met de :ref:`tijdzone <tijdzone instellen>` die je hebt ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel instellen>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze verstreken zijn.
+
+.. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
+
+Onder de naam van de oefeningenreeks staat optioneel een beschrijving, met daaronder de lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en een :ref:`status <oefeningenreeks status>`.
+
+.. _oefeningenreeks statistieken:
+
+De **statistieken** bestaan uit twee getallen $c/i$. Daarbij staat $i$ voor het aantal studenten dat in de cursus al minstens één oplossing heeft ingediend voor de oefening en staat $c$ voor het aantal studenten dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
+
+.. _oefeningenreeks status:
+
+Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Indien er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. De mogelijke weergaven van de status voorafgaand aan de deadline of als er geen deadline is ingesteld zijn:
+
++--------------------------+---------------------------------------------------------------------+
+| status                   | weergegeven als je                                                  |
++--------------------------+---------------------------------------------------------------------+
+| geen oplossing           | geen oplossingen hebt ingediend (voorafgaand aan de deadline)       |
+| status laatste oplossing | minstens één oplossing hebt ingediend (voorafgaand aan de deadline) |
++--------------------------+---------------------------------------------------------------------+
+
+
+
+
+
+
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
@@ -239,16 +268,18 @@ Selecteren van een oefening
 
 .. _oefeningpagina:
 
-Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de pagina van die oefening te zien.
+Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefeningpagina** van die oefening te zien.
 
 .. TODO: screenshot vervangen door oefening som van twee getallen
 .. image:: exercise_start.nl.png
+
+.. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
 .. note::
 
     Bij selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de navigatiebalk, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te klikken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te klikken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te klikken, navigeer je naar de cursuspagina.
 
-.. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
+.. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
 
 .. _oplossing indienen:
