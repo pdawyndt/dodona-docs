@@ -12,7 +12,7 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer **cursuss
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` worden — aan je gebruikersaccount gekoppeld.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -50,6 +50,8 @@ Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmeld
     Voor sommige instellingen moet je op het einde van de aanmeldingsprocedure expliciet toestemming geven voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts.
 
 Nadat je met succes bent aangemeld, kom je terecht op je persoonlijke :ref:`homepagina <homepagina>`. Rechts in de navigatiebalk zie je de naam van de gebruikersaccount waarmee je bent aangemeld. Indien dit de eerste keer is dat je bent aangemeld op Dodona, werd er een nieuwe gebruikersaccount voor je aangemaakt.
+
+.. TODO: overwegen om de term homepagina te vervangen door startpagina, waarbij je dan een andere startpagina te zien krijgt als je wel of niet bent aangemeld
 
 .. image:: homepage.nl.png
 
@@ -149,7 +151,9 @@ Indien je nog openstaande registraties voor curssusen hebt die wachten op goedke
 
 Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te klikken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je homepagina. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook klikken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je homepagina.
 
-.. TODO: optie "cursussen" zou beschikbaar moeten zijn in de tab van de gebruiker, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
+.. TODO: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
+
+.. TODO: vervang de tekst op de knop "MEER CURSUSSEN..." in de rechterkolom van de homepagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
 
 .. image:: explore_courses.nl.png
 
@@ -173,7 +177,7 @@ Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina
 
 .. note::
 
-    Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de navigatiebalk. Door in de navigatiebalk op die naam van de cursus te klikken, navigeer je terug naar de cursuspagina.
+    Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de navigatiebalk. Door in de navigatiebalk op de naam van de cursus te klikken, navigeer je terug naar de cursuspagina.
 
 
 .. _manuele registratie:
@@ -193,13 +197,14 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: screenshot van cursuspagina met gemodereerde registratie waarvoor registratieverzoek werd ingediend
 .. TODO: screenshot van cursuspagina met gesloten registratie
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
+.. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
 Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
 
 .. image:: homepage_after_registration.nl.png
 
-.. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op je homepagina te zien zijn.
 .. TODO: behandeling van deadlines moet ergens ander staan.
+.. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op je homepagina te zien zijn.
 
 .. _registratielink:
 
@@ -216,6 +221,34 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
 Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het gebruikersmenu aan de rechterkant van de navigatiebalk, dan verdwijnt de cursus ook uit die lijst.
+
+
+.. _oefening selecteren:
+
+Selecteren van een oefening
+---------------------------
+
+.. TODO: oefening selecteren op cursuspagina
+
+.. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
+
+.. TODO: oefening selecteren op homepagina (enkel voor reeksen met deadlines)
+
+.. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen
+
+
+.. _oefeningpagina:
+
+Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de pagina van die oefening te zien.
+
+.. TODO: screenshot vervangen door oefening som van twee getallen
+.. image:: exercise_start.nl.png
+
+.. note::
+
+    Bij selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de navigatiebalk, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te klikken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te klikken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te klikken, navigeer je naar de cursuspagina.
+
+.. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
 
 .. _oplossing indienen:
