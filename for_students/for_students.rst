@@ -43,7 +43,7 @@ Selecteer de instelling die de gebruikersaccount beheert waarmee je wilt aanmeld
 
 .. image:: institution.nl.png
 
-.. TODO: afbeelding met nieuwe layout van instellingen toevoegen
+.. TODO: screenshot met nieuwe layout van instellingen toevoegen
 
 .. note::
 
@@ -81,7 +81,7 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 
 .. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
 
-.. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt
+.. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
 .. TODO: aangeven of de taalinstelling wel of geen deel uitmaakt van je gebruikersprofiel
 
@@ -274,23 +274,39 @@ Mogelijke weergaven van de status nadat de deadline verstreken is:
 | status                   | weergegeven als je                    |
 +--------------------------+---------------------------------------+
 | **correct**              | je laatst ingediende oplossing        |
-|                          | voor de deadline correct is           |
+| (groen)                  | voor de deadline correct is           |
 +--------------------------+---------------------------------------+
 | **deadline gemist**      | je geen oplossingen hebt ingediend    |
-|                          | voor de deadline of je laatst         |
+| (rood)                   | voor de deadline of je laatst         |
 |                          | ingediende oplossing voor de deadline |
 |                          | niet correct                          |
 +--------------------------+---------------------------------------+
 
 .. TODO: nagaan of hier ook nog iets moet gezegd worden over de gebruikte iconen na de deadline
 
+.. _waarschuwingssymbool:
+
+.. important::
+
+    Als je **voor het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan de status van de oefening in de oefeningenreeks nog wijzigen omdat de status altijd gebaseerd is op de laatst ingediende oplossing voor het verstrijken van de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat de laatst ingediende oplossing voor de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+
+    Dodona toont een **waarschuwingssymbool** naast de status van de oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` als je laatst ingediende oplossing voor de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing die je daarvoor hebt ingediend. Je kan eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+
+    Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan zal de status van de oefening in de oefeningenreeks daardoor nooit wijzigen. De status van de oefening in de oefeningenreeks wordt immers bepaald op basis van de laatst ingediende oplossing voor het verstrijken van de deadline.
+
+.. TODO: screenshot van oefeningenreeks met oefening met waarschuwingssymbool naast status
+
+.. TODO: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
+
 Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te klikken. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit een oefeningenreeks door op het groter dan symbool te klikken aan de rechterkant van de oefening in de oefeningenreeks. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
 
 .. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
 
+.. TODO: omschrijving hoe je een geselecteerde oplossing kan bewerken en opnieuw kan indienen
+
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
-.. _homepagina recente oefeningen:
+.. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op homepagina
 
 Het bovenste paneel in de rechterkolom van je :ref:`homepagina <homepagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor hebt ingediend over alle cursussen heen. Selecteer een oefening uit de lijst door op de naam van de oefening te klikken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit de lijst door op het groter dan symbool te klikken aan de rechterkant van de oefening in de lijst. In de lijst zie je voor elke oefening ook een icoon dat correspondeert met de status van de laatst ingediende oplossing (voor de deadline).
@@ -333,6 +349,10 @@ Onder het paneel met de omschrijving van de oefening vind je een tweede paneel w
 
     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
 
+.. TODO: na indien opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
+
+Na het indienen van een oplossing wordt de tab **Oplossingen** geselecteerd. Deze tab bevat een lijst van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat.
+
 .. note::
 
     Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback die Dodona aangelevert <feedback bekijken>` om je oplossing steeds verder te verfijnen.
@@ -362,13 +382,11 @@ juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
 verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
 in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
 
-.. TODO: sectie met uitleg hoe contact op te nemen met team Dodona
-
 .. _contact opnemen:
 
 Contact opnemen
 ---------------
 
-Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://naos.ugent.be/nl/contact/>`_ kan navigeren.
+Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ kan navigeren.
 
 .. TODO: screenshot van contactpagina toevoegen
