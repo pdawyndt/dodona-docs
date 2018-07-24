@@ -173,7 +173,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: screenshot van cursuspagina met gesloten registratie
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 
-Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje voor die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
+Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
 
 .. image:: homepage_after_registration.nl.png
 
@@ -190,7 +190,11 @@ Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>
 Uitschrijven uit een cursus
 ---------------------------
 
-TODO
+Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je geregistreerd bent, dan zie je onder de omschrijving van de cursus een knop **UITSCHRIJVEN** waarmee je je kunt uitschrijven uit de cursus.
+
+.. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
+
+Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`homepagina <homepagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het gebruikersmenu aan de rechterkant van de navigatiebalk, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oplossing indienen:
