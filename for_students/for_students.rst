@@ -236,7 +236,7 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks oefeningen die gegroepeer
 
 .. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
 
-Onder de naam van de oefeningenreeks staat optioneel een beschrijving, met daaronder de lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en een :ref:`status <oefeningenreeks status>`.
+Onder de naam van de oefeningenreeks staat optioneel een beschrijving, met daaronder de lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en een :ref:`status <oefeningenreeks status>`. In de lijst zie je voor elke oefening ook een icoon dat correspondeert met de status van de laatst ingediende oplossing.
 
 .. _oefeningenreeks statistieken:
 
@@ -244,24 +244,54 @@ De **statistieken** bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`
 
 .. _oefeningenreeks status:
 
-Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Indien er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. De mogelijke weergaven van de status voorafgaand aan de deadline of als er geen deadline is ingesteld zijn:
+Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Indien er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline.
+
+Mogelijke weergaven van de status voor het verstrijken van de deadline of als er geen deadline is ingesteld:
 
 +--------------------------+---------------------------------------+
 | status                   | weergegeven als je                    |
 +--------------------------+---------------------------------------+
-| ``geen oplossing``       | geen oplossingen hebt ingediend       |
-|                          | (voorafgaand aan de deadline)         |
+| **geen oplossing**       | geen oplossingen hebt ingediend       |
+|                          | (voor de deadline)                    |
 +--------------------------+---------------------------------------+
 | status van laatst        | minstens één oplossing hebt ingediend |
-| ingediende oplossing     | (voorafgaand aan de deadline)         |
+| ingediende oplossing     | (voor de deadline)                    |
 +--------------------------+---------------------------------------+
+
+.. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
+
+.. TODO: nagaan of hier ook nog iets moet gezegd worden over de gebruikte iconen voor de deadline
+
+.. TODO: behandel nog de mogelijkheid dat er een melding staat dat je laatst ingediende oplossing een status heeft die minder goed is dan de status van een eerder ingediende oplossing
+
+Mogelijke weergaven van de status nadat de deadline verstreken is:
+
++--------------------------+---------------------------------------+
+| status                   | weergegeven als je                    |
++--------------------------+---------------------------------------+
+| **correct**              | je laatst ingediende oplossing        |
+|                          | voor de deadline correct is           |
++--------------------------+---------------------------------------+
+| **deadline gemist**      | je geen oplossingen hebt ingediend    |
+|                          | voor de deadline of je laatst         |
+|                          | ingediende oplossing voor de deadline |
+|                          | niet correct                          |
++--------------------------+---------------------------------------+
+
+.. TODO: nagaan of hier ook nog iets moet gezegd worden over de gebruikte iconen na de deadline
+
+Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te klikken. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit een oefeningenreeks door op het groter dan symbool te klikken aan de rechterkant van de oefening in de oefeningenreeks. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
+
+.. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
-.. TODO: oefening selecteren op homepagina (enkel voor reeksen met deadlines)
+.. _homepagina recente oefeningen:
+.. oefening uit reeksen met deadlines selecteren op homepagina
 
-.. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen
+Het bovenste paneel in de rechterkolom van je :ref:`homepagina <homepagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor hebt ingediend over alle cursussen heen. Selecteer een oefening uit de lijst door op de naam van de oefening te klikken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit de lijst door op het groter dan symbool te klikken aan de rechterkant van de oefening in de lijst. In de lijst zie je voor elke oefening ook een icoon dat correspondeert met de status van de laatst ingediende oplossing (voor de deadline).
 
+.. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
 .. _oefeningpagina:
 
