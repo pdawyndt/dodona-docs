@@ -301,7 +301,6 @@ Het bovenste paneel in de rechterkolom van je :ref:`homepagina <homepagina>` bev
 
 Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefeningpagina** van die oefening te zien.
 
-.. TODO: screenshot vervangen door oefening som van twee getallen
 .. image:: exercise_start.nl.png
 
 .. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
@@ -320,28 +319,23 @@ Indienen van een oplossing
 
 Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de navigatiebalk. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
 
+.. image:: exercise_start.nl.png
+
 Onder het paneel met de omschrijving van de oefening vind je een tweede paneel waar je een oplossing voor de oefening kan indienen. Druk op de tab **Indienen** als deze tab niet geselecteerd was, en plaats de programmacode van je oplossing in de editor. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
 
 .. image:: exercise_before_submit.nl.png
 
 .. important::
 
-    Doorgewinterde programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evengoed nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
+    Programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evengoed nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
+
+    Om een aantal redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een externe IDE. Voer je programmacode lokaal uit op een aantal testgevallen, om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik bijvoorbeeld enkele testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer logische fouten opsporen door gebruik te maken van de debugger van je IDE.
+
+     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
 
 .. note::
 
     Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback die Dodona aangelevert <feedback bekijken>` om je oplossing steeds verder te verfijnen.
-
-
-De pagina begint met een beschrijving van de oefening die je zal moeten
-oplossen. Lees deze grondig. Om de oefening op te lossen gebruik je best een
-apart programma (bvb. PyCharm voor Python of IntelliJ IDEA voor Java). Zo kan je
-zelf eerst al kort testen of je code werkt en kan je gebruikmaken van de extra
-hulp die zo'n programma's je aanbieden bij het schrijven van code.
-
-.. Wanneer je je code hebt geschreven en je er van overtuigd bent dat ze werkt kan
-je ze onderaan de pagina indienen. Normaal kan je de code gewoon kopiëren en
-plakken van je extern programma. Klik op de afspeelknop om in te dienen.
 
 .. TODO: eventueel ook nog een sectie "Selecteren van een oplossing"
 
