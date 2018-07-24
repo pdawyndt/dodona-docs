@@ -129,6 +129,8 @@ In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor
 Selecteren van een cursus
 -------------------------
 
+.. TODO: alternatieve titel: Navigeren naar een cursuspagina
+
 .. _homepagina:
 
 De linkerkant van je **homepagina** bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te klikken of door op de knop **GA NAAR DEZE CURSUS** te klikken.
@@ -228,6 +230,8 @@ Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`hom
 Selecteren van een oefening
 ---------------------------
 
+.. TODO: alternatieve titel: Navigeren naar een oefeningpagina
+
 .. _oefeningenreeks:
 .. _oefeningenreeks deadline:
 .. oefening selecteren uit oefeningenreeks op cursuspagina
@@ -314,12 +318,20 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 Indienen van een oplossing
 --------------------------
 
-Om een oefening in te dienen moet je natuurlijk eerst naar een oefening gaan. Op
-de pagina van een cursus kan je een oefening selecteren. Klik op de naam van de
-oefening om de pagina van de oefening te openen. Je komt dan op een pagina
-terecht die er zoals de volgende zal uitzien.
+Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de navigatiebalk. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
 
-.. image:: exercise_start.nl.png
+Onder het paneel met de omschrijving van de oefening vind je een tweede paneel waar je een oplossing voor de oefening kan indienen. Druk op de tab **Indienen** als deze tab niet geselecteerd was, en plaats de programmacode van je oplossing in de editor. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
+
+.. image:: exercise_before_submit.nl.png
+
+.. important::
+
+    Doorgewinterde programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evengoed nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
+
+.. note::
+
+    Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback die Dodona aangelevert <feedback bekijken>` om je oplossing steeds verder te verfijnen.
+
 
 De pagina begint met een beschrijving van de oefening die je zal moeten
 oplossen. Lees deze grondig. Om de oefening op te lossen gebruik je best een
@@ -327,11 +339,16 @@ apart programma (bvb. PyCharm voor Python of IntelliJ IDEA voor Java). Zo kan je
 zelf eerst al kort testen of je code werkt en kan je gebruikmaken van de extra
 hulp die zo'n programma's je aanbieden bij het schrijven van code.
 
-Wanneer je je code hebt geschreven en je er van overtuigd bent dat ze werkt kan
+.. Wanneer je je code hebt geschreven en je er van overtuigd bent dat ze werkt kan
 je ze onderaan de pagina indienen. Normaal kan je de code gewoon kopiëren en
 plakken van je extern programma. Klik op de afspeelknop om in te dienen.
 
-.. image:: exercise_before_submit.nl.png
+.. TODO: eventueel ook nog een sectie "Selecteren van een oplossing"
+
+.. _feedback bekijken:
+
+Bekijken van feedback
+---------------------
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
