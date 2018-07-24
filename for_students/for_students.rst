@@ -87,9 +87,9 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 
     De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de instelling van de natuurlijke taal, en de gebruikte natuurlijke taal werd gekozen door de lesgever die de cursus heeft opgesteld.
 
-.. TODO: nagaan of we deze componenten wel taalafhankelijk kunnen maken
-
     De naam en de omschrijving van een oefening zijn afhankelijk van de instelling van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven. De taal die gebruikt wordt in de feedback is een gedeelde verantwoordelijkheid van de judge en de instellingen van de oefening, maar ook hierbij kan de feedback afhankelijk gemaakt worden van de instelling van de natuurlijke taal.
+
+.. TODO: nagaan of we de cursusinhoud wel taalafhankelijk kunnen maken
 
 .. TODO: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
