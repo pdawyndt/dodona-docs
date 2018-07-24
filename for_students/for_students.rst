@@ -246,19 +246,15 @@ De **statistieken** bestaan uit twee getallen $c/i$. Daarbij staat $i$ voor het 
 
 Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Indien er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. De mogelijke weergaven van de status voorafgaand aan de deadline of als er geen deadline is ingesteld zijn:
 
-+--------------------------+---------------------------------------------------------------------+
-| status                   | weergegeven als je                                                  |
-+--------------------------+---------------------------------------------------------------------+
-| geen oplossing           | geen oplossingen hebt ingediend (voorafgaand aan de deadline)       |
-+--------------------------+---------------------------------------------------------------------+
-| status laatste oplossing | minstens één oplossing hebt ingediend (voorafgaand aan de deadline) |
-+--------------------------+---------------------------------------------------------------------+
-
-
-
-
-
-
++--------------------------+---------------------------------------+
+| status                   | weergegeven als je                    |
++--------------------------+---------------------------------------+
+| geen oplossing           | geen oplossingen hebt ingediend       |
+|                          | (voorafgaand aan de deadline)         |
++--------------------------+---------------------------------------+
+| status laatste oplossing | minstens één oplossing hebt ingediend |
+|                          | (voorafgaand aan de deadline)         |
++--------------------------+---------------------------------------+
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
