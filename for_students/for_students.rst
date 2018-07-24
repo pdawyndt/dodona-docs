@@ -112,17 +112,19 @@ Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in h
 
 .. _tijdzone instellen:
 
-In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je :ref:`een oplossing hebt ingediend <oplossing indienen>` of de deadline voor een oefeningenreeks).
+In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je :ref:`een oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
 
 .. TODO: screenshot voor instellen van de tijdzone
 
 .. TODO: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
 
-.. important::
+.. note::
 
-    Indien de tijdzone die je hebt ingesteld niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien om je erop te wijzen dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door  in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
+    Indien de tijdzone van je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
 
 .. TODO: screenshot met waarschuwing van verkeerde tijdzone
+
+.. TODO: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 
 .. TODO: omschrijving van API token toevoegen van zodra deze feature beschikbaar wordt
 
