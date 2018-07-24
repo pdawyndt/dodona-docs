@@ -134,7 +134,7 @@ latex_documents = [(
     master_doc,
     'dodona.tex',
     'Handleiding Dodona',
-     'Peter Dawyndt\nBart Mesuere\nEvert Van Petegem\nFelix Van der Jeugt',
+     'Peter Dawyndt\\\\Bart Mesuere\\\\Evert Van Petegem\\\\Felix Van der Jeugt',
     'manual'
 )]
 
