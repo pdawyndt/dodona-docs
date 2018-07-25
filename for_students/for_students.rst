@@ -484,7 +484,7 @@ TODO
 Contact opnemen
 ---------------
 
-Zit je tijdens het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ kan navigeren.
+Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ kan navigeren.
 
 .. TODO: screenshot van contactpagina toevoegen
 
