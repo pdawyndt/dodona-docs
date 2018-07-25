@@ -76,10 +76,6 @@ Druk op **Aanmelden** aan de rechterkant van de :ref:`navigatiebalk <navigatieba
 
 .. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
 
-.. tip::
-
-    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
-
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
 .. image:: institution.nl.png
@@ -110,6 +106,10 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 Als je aangemeld bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
 
+.. tip::
+
+    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
+
 Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je startpagina er op dit moment nog vrij kaal uit.
 
 .. image:: homepage.nl.png
@@ -133,6 +133,10 @@ Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rech
 Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
 
 .. TODO: screenshot van landingspagina
+
+.. tip::
+
+    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
 
 
 .. _gebruikersprofiel:
@@ -177,9 +181,9 @@ Selecteren van een cursus
 
 .. TODO: alternatieve titel: Navigeren naar een cursuspagina
 
-De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
+De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
 
-.. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
+.. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
 Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je startpagina moet navigeren.
 
