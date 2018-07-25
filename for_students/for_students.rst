@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback bekijken>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
@@ -284,7 +284,7 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 .. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
 
-Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoon dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
+Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
 
 .. _oefeningenreeks statistieken:
 
@@ -296,15 +296,15 @@ Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>`
 
 Mogelijke weergaven van je status voor het verstrijken van de deadline of als er geen deadline is ingesteld:
 
-+--------------------------+---------------------------------------+
-| status                   | weergegeven als je                    |
-+--------------------------+---------------------------------------+
-| **geen oplossing**       | geen oplossingen hebt ingediend       |
-|                          | (voor de deadline)                    |
-+--------------------------+---------------------------------------+
-| status van laatst        | minstens één oplossing hebt ingediend |
-| ingediende oplossing     | (voor de deadline)                    |
-+--------------------------+---------------------------------------+
++--------------------------+----------+---------------------------------------+
+| status                   | icoontje | weergegeven als je                    |
++--------------------------+----------+---------------------------------------+
+| **geen oplossing**       |          | geen oplossingen hebt ingediend       |
+|                          |          | (voor de deadline)                    |
++--------------------------+----------+---------------------------------------+
+| status van laatst        |          | minstens één oplossing hebt ingediend |
+| ingediende oplossing     |          | (voor de deadline)                    |
++--------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
 
@@ -312,17 +312,17 @@ Mogelijke weergaven van je status voor het verstrijken van de deadline of als er
 
 Mogelijke weergaven van je status nadat de deadline verstreken is:
 
-+--------------------------+---------------------------------------+
-| status                   | weergegeven als je                    |
-+--------------------------+---------------------------------------+
-| **correct**              | laatst ingediende oplossing           |
-| (groen)                  | voor de deadline correct is           |
-+--------------------------+---------------------------------------+
-| **deadline gemist**      | geen oplossingen hebt ingediend       |
-| (rood)                   | voor de deadline of als je laatst     |
-|                          | ingediende oplossing voor de deadline |
-|                          | niet correct                          |
-+--------------------------+---------------------------------------+
++--------------------------+----------+---------------------------------------+
+| status                   | icoontje | weergegeven als je                    |
++--------------------------+----------+---------------------------------------+
+| **correct**              |          | laatst ingediende oplossing           |
+| (groen)                  |          | voor de deadline correct is           |
++--------------------------+----------+---------------------------------------+
+| **deadline gemist**      |          | geen oplossingen hebt ingediend       |
+| (rood)                   |          | voor de deadline of als je laatst     |
+|                          |          | ingediende oplossing voor de deadline |
+|                          |          | niet correct                          |
++--------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
 
@@ -340,7 +340,7 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. TODO: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
-Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken. Bekijk een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening door op het groter dan symbool te drukken aan de rechterkant van de oefening in de oefeningenreeks. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
+Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken. Bekijk een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening door op het groter dan symbool te drukken aan de rechterkant van de oefening in de oefeningenreeks. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
 .. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
 
@@ -351,7 +351,7 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
-Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoon dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
 .. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
@@ -375,33 +375,37 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 Indienen van een oplossing
 --------------------------
 
-Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal selecteren>` in de :ref:`navigatiebalk <navigatiebalk>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
+Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
 .. image:: exercise_start.nl.png
 
-Onder het paneel met de omschrijving van de oefening vind je een tweede paneel waar je een oplossing voor de oefening kan indienen. Druk op de tab **Indienen** als deze tab niet geselecteerd was, en plaats de programmacode van je oplossing in de editor. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
+.. _code editor:
+
+Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina <oefeningpagina>` staat een tweede paneel waarmee je een oplossing kan indienen voor de oefening. Druk hiervoor op de tab **Indienen** als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
 
 .. image:: exercise_before_submit.nl.png
 
-.. important::
+.. tip::
 
-    Programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evengoed nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
+    Programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evenwel nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
 
-    Om een aantal redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een externe IDE. Voer je programmacode lokaal uit op een aantal testgevallen, om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik bijvoorbeeld enkele testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer logische fouten opsporen door gebruik te maken van de debugger van je IDE.
+    Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een externe IDE. Voer je programmacode lokaal uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
 
-    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
+    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze knippen en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere programmeeropdrachten dan de oefeningen uit Dodona.
 
 .. TODO: na indienen opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
 
-Na het indienen van een oplossing wordt de tab **Oplossingen** geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
+Na het indienen van een oplossing wordt automatisch de tab **Oplossingen** geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status **In de wachtlijst...**. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status **Aan het uitvoeren...**.
+.. _wachtlijst ingediende oplossingen:
 
-Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oefening zijn finale status en wordt de gedetailleerde feedback van de ingediende oplossing automatisch weergegeven in een nieuwe tab **Feedback**.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status **In de wachtlijst...**. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status **Aan het uitvoeren...**.
 
-.. note::
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale status en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab **Feedback**.
 
-    Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback die Dodona aangelevert <feedback bekijken>` om je oplossing steeds verder te verfijnen.
+.. tip::
+
+    Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback <feedback>` die Dodona aanlevert om je oplossing steeds verder te verfijnen.
 
 
 .. _oplossing selecteren:
@@ -409,18 +413,48 @@ Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oefening zi
 Selecteren van een oplossing
 ----------------------------
 
-TODO
+Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
-.. _oplossing opnieuw indienen:
+* Kies **Mijn oplossingen** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` voor een overzicht van al je ingediende oplossingen.
+* Selecteer de tab **Oplossingen** op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefeningpagina :ref:`geselecteerd hebt binnen een cursus <oefening selecteren>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+* Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
-TODO
+.. TODO: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
+
+.. TODO: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
+
+In het overzicht worden de ingediende oplossingen altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de status van de oplossing.
+
++---------------------------------+----------+-------------------------------------------------------------------------+
+| status                          | icoontje | betekenis                                                               |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Correct**                     |          | oplossing slaagt voor alle testen                                       |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Fout**                        |          | logische fout gevonden in minstens één test                             |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Uitvoeringsfout**             |          | onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Timeout**                     |          | tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het   |
+|                                 |          | testen; kan wijzen op slechte performantie of een oneindige lus         |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Geheugenlimiet overschreden** |          | geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens    |
+|                                 |          | het uitvoeren van minstens één test                                     |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Compilatiefout**              |          | ingediende oplossing bevat grammaticale fouten                          |
++---------------------------------+----------+-------------------------------------------------------------------------+
+| **Interne fout**                |          | oorzaak van fout tijdens het beoordelen ligt bij falen van een          |
+|                                 |          | component van het platform en niet bij de ingediende oplossing          |
++---------------------------------+----------+-------------------------------------------------------------------------+
+
+.. TODO: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
+
+In het overzicht kan je een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de gedetailleerde :ref:`feedback <feedback>` te zien die tijdens bij het beoordelen van de oplossing werd gegenereerd.
 
 
 .. _feedback:
-.. _feedback bekijken:
 
-Bekijken van feedback
----------------------
+Feedback
+--------
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
@@ -439,6 +473,11 @@ Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
 juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
 verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
 in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
+
+.. _oplossing opnieuw indienen:
+
+TODO
+
 
 .. _contact opnemen:
 
