@@ -101,7 +101,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 .. _gebruikersmenu:
 
-Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toen je nog niet aangemeld was.
+Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toen je nog niet aangemeld was.
 
 .. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
 
