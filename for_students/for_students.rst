@@ -50,6 +50,10 @@ Druk op **Aanmelden** aan de rechterkant van de **navigatiebalk** (bovenaan elke
 
 .. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
 
+.. note::
+
+    Vanop elke pagina kan je naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>: op **Dodona** te drukken.
+
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
 .. image:: institution.nl.png
@@ -99,6 +103,8 @@ Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Dit do
 
 Instellen van de taal
 ---------------------
+
+.. TODO: overwegen om deze sectie te verhuizen voor aanmelden, om expliciet aan te geven dat je niet hoeft aangemeld te zijn om de taal in te stellen en omdat dit meestal het eerste is wat je doet als Dodona bezoekt en je voorkeurstaal is niet automatisch ingesteld
 
 In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijke taal kan instellen die door Dodona gebruikt wordt. Momenteel is het platform enkel beschikbaar in het Nederlands en in het Engels.
 
@@ -164,10 +170,6 @@ Selecteren van een cursus
 De linkerkant van je **homepagina** bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je homepagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
-
-.. note::
-
-    Vanop elke pagina kan je **naar je homepagina navigeren** door uiterst links in de navigatiebalk op **Dodona** te drukken.
 
 Het gebruikersmenu aan de rechterkant van de navigatiebalk bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je homepagina moet navigeren.
 
