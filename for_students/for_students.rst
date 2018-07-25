@@ -237,7 +237,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 * De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop **REGISTREREN** om je voor de cursus te registreren.
 .. image:: register.nl.png
 * De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`.
-* De cursus werkt met **gesloten registratie**, wat betekent dat je zelf geen registratieverzoek kan indienen voor de cursus.
+* De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kan indienen voor de cursus.
 
 .. TODO: screenshot van cursuspagina met gemodereerde registratie
 .. TODO: screenshot van cursuspagina met gemodereerde registratie waarvoor registratieverzoek werd ingediend
@@ -245,7 +245,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
-Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
 
@@ -254,7 +254,7 @@ Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje v
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te drukken wordt de registratieprocedure opgestart voor een specifieke cursus. Deze procedure is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
+Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus, en hoef je de cursus dus niet meer zelf te selecteren. De registratieprocedure zelf is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
 
 
 .. _uitschrijven:
