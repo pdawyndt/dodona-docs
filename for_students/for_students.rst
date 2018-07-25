@@ -36,7 +36,6 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 Instellen van de taal
 ---------------------
 
-
 Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
 .. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
@@ -142,13 +141,17 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 Instellen van het gebruikersprofiel
 -----------------------------------
 
-Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Om je gebruikersprofiel bij te werken, druk je op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat.
+Je gebruikersprofiel bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
 
+.. TODO: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel
+
+Druk op de knop in de rechterbovenhoek van het paneel met je persoonlijke gegevens en voorkeuren om je gebruikersprofiel bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+
 .. _tijdzone instellen:
 
-In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je :ref:`een oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
+Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
 
 .. TODO: screenshot voor instellen van de tijdzone
 
@@ -162,7 +165,10 @@ In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor
 
 .. TODO: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 
+.. TODO: voorkeur voor natuurlijke taal zou ook moeten kunnen bijgewerkt worden in het gebruikersprofiel
+
 .. TODO: omschrijving van API token toevoegen van zodra deze feature beschikbaar wordt
+
 
 .. _cursus selecteren:
 
