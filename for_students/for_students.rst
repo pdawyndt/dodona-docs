@@ -28,85 +28,6 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
     Voor authenticatie via bestaande gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
-.. _startpagina:
-.. _aanmelden:
-
-Aanmelden
----------
-
-.. tip::
-
-    Je kunt enkel aanmelden als je momenteel nog niet :ref:`afgemeld <afmelden>` bent. Je herkent dat je niet aangemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam van de gebruikersaccount die momenteel aangemeld is.
-
-    Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
-
-.. _navigatiebalk:
-
-Druk op **Aanmelden** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina) of navigeer naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ en druk op de knop **Aanmelden** centraal op de startpagina.
-
-.. image:: login.nl.png
-
-.. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
-
-.. tip::
-
-    Vanop elke pagina kan je naar de **startpagina** van `Dodona <https://dodona.ugent.be>`_ navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
-
-Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
-
-.. image:: institution.nl.png
-
-.. TODO: screenshot met nieuwe layout van instellingen toevoegen
-
-.. important::
-
-    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts en wisselt deze informatie nooit uit met externe partijen.
-
-.. TODO: eventueel expliciet aangeven welke gegevens Dodona gebruikt/nodig heeft van de externe instelling en waarvoor die gebruikt worden
-
-Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die uitgewisseld werden met je externe onderwijs- of onderzoeksinstelling. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
-
-.. important::
-
-    Indien je beschikt over gebruikersaccounts bij verschillende externe onderwijs- of onderzoeksinstellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
-
-.. _gebruikersmenu:
-
-Als je aangemeld bent dan zie je aan de rechterkant van de navigatiebalk het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toe je nog niet aangemeld was.
-
-.. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
-
-.. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
-
-.. _startpagina aangemeld:
-
-Als je aangemeld bent dan verandert de :ref:`neutrale startpagina <startpagina afgemeld>` ook in een **gepersonaliseerde startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de startpagina herkennen of je al dan niet aangemeld bent.
-
-Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je gepersonaliseerde startpagina er op dat moment nog vrij kaal uit.
-
-.. image:: homepage.nl.png
-
-.. TODO: omschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de omschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
-
-
-.. _afmelden:
-
-Afmelden
---------
-
-.. tip::
-
-    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent, dan staat op dezelfde plaats **Aanmelden**.
-
-Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
-
-.. _startpagina afgemeld:
-
-Als je afgemeld bent dan verandert je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>` terug in een **neutrale startpagina** met algemene informatie over Dodona. Om je gepersonaliseerde startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
-
-
-.. _taal instellen:
-
 Instellen van de taal
 ---------------------
 
@@ -134,6 +55,84 @@ In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijk
 
 .. TODO: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
+
+.. _aanmelden:
+
+Aanmelden
+---------
+
+.. tip::
+
+    Je kunt enkel aanmelden als je momenteel nog niet :ref:`afgemeld <afmelden>` bent. Je herkent dat je niet aangemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam van de gebruikersaccount die momenteel aangemeld is.
+
+    Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
+
+.. _navigatiebalk:
+
+Druk op **Aanmelden** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina) of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop **Aanmelden** centraal op de landingspagina.
+
+.. image:: login.nl.png
+
+.. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
+
+.. tip::
+
+    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
+
+Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
+
+.. image:: institution.nl.png
+
+.. TODO: screenshot met nieuwe layout van instellingen toevoegen
+
+.. important::
+
+    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts en wisselt deze informatie nooit uit met externe partijen.
+
+.. TODO: eventueel expliciet aangeven welke gegevens Dodona gebruikt/nodig heeft van de externe instelling en waarvoor die gebruikt worden
+
+Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die uitgewisseld werden met je externe onderwijs- of onderzoeksinstelling. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
+
+.. important::
+
+    Indien je beschikt over gebruikersaccounts bij verschillende externe onderwijs- of onderzoeksinstellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
+
+.. _gebruikersmenu:
+
+Als je aangemeld bent dan zie je aan de rechterkant van de navigatiebalk het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toe je nog niet aangemeld was.
+
+.. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
+
+.. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
+
+.. _startpagina:
+
+Als je aangemeld bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
+
+Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je startpagina er op dit moment nog vrij kaal uit.
+
+.. image:: homepage.nl.png
+
+.. TODO: omschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de omschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
+
+
+.. _afmelden:
+
+Afmelden
+--------
+
+.. tip::
+
+    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent, dan staat op dezelfde plaats **Aanmelden**.
+
+Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
+
+.. _landingspagina:
+
+Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
+
+
+.. _taal instellen:
 
 .. _gebruikersprofiel:
 .. _gebruikersprofiel instellen:
@@ -170,23 +169,21 @@ Selecteren van een cursus
 
 .. TODO: alternatieve titel: Navigeren naar een cursuspagina
 
-.. _startpagina aangemeld:
-
-De linkerkant van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>` bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je :ref: gepersonaliseerde startpagina <startpagina aangemeld>` om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
+De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes van alle cursussen waarvoor je geregistreerd bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
 
-Het gebruikersmenu aan de rechterkant van de navigatiebalk bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar de startpagina moet navigeren.
+Het gebruikersmenu aan de rechterkant van de navigatiebalk bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je startpagina moet navigeren.
 
 .. _paneel wachten op goedkeuring:
 
-Indien je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+Indien je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
 
 .. _cursusoverzicht:
 
-Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>`. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op de startpagina.
+Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
 
 .. TODO: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
 
@@ -227,7 +224,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 
 * De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop **REGISTREREN** om je voor de cursus te registreren.
 .. image:: register.nl.png
-* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>`.
+* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`.
 * De cursus werkt met **gesloten registratie**, wat betekent dat je zelf geen registratieverzoek kan indienen voor de cursus.
 
 .. TODO: screenshot van cursuspagina met gemodereerde registratie
@@ -236,12 +233,12 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
-Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
+Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
 
 .. image:: homepage_after_registration.nl.png
 
 .. TODO: behandeling van deadlines moet ergens ander staan.
-.. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op je startpagina te zien zijn.
+.. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
 
 .. _registratielink:
 
@@ -257,7 +254,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
-Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het gebruikersmenu aan de rechterkant van de navigatiebalk, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het gebruikersmenu aan de rechterkant van de navigatiebalk, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oefening selecteren:
@@ -342,9 +339,9 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
 .. _recente oefeningen:
-.. oefening uit reeksen met deadlines selecteren op startpagina
+.. oefening uit reeksen met deadlines selecteren op de startpagina
 
-Het bovenste paneel in de rechterkolom van je :ref:`gepersonaliseerde startpagina <startpagina aangemeld>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor hebt ingediend over alle cursussen heen. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit de lijst door op het groter dan symbool te drukken aan de rechterkant van de oefening in de lijst. In de lijst zie je voor elke oefening ook een icoon dat correspondeert met de status van de laatst ingediende oplossing (voor de deadline).
+Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor hebt ingediend over alle cursussen heen. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt. Bekijk het overzicht van alle oplossingen die je in de cursus hebt ingediend voor een oefening uit de lijst door op het groter dan symbool te drukken aan de rechterkant van de oefening in de lijst. In de lijst zie je voor elke oefening ook een icoon dat correspondeert met de status van de laatst ingediende oplossing (voor de deadline).
 
 .. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
