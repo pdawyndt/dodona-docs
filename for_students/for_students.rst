@@ -479,15 +479,17 @@ in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
 TODO
 
 
+.. _voettekst:
+.. _contactpagina:
 .. _contact opnemen:
 
 Contact opnemen
 ---------------
 
-Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. In de voettekst onderaan elke pagina vind je een link **Contact** waarmee je naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ kan navigeren.
+Zit je bij het werken met Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. Navigeer naar de de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op **Contact** te drukken.
 
 .. TODO: screenshot van contactpagina toevoegen
 
-Vul de gegevens in het paneel **Contacteer ons**  aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
+Vul de gegevens in het paneel **Contacteer ons** aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
 
 .. TODO: voor aangemelde gebruikers zouden de naam en het emailadres al automatisch kunnen ingevuld worden op de contactpagina op basis van de gegevens uit het gebruikersprofiel
