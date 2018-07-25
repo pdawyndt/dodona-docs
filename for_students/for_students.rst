@@ -28,18 +28,20 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
     Voor authenticatie via bestaande gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
+
+.. _taalmenu:
+.. _taal instellen:
+
 Instellen van de taal
 ---------------------
 
-.. TODO: overwegen om deze sectie te verhuizen voor aanmelden, om expliciet aan te geven dat je niet hoeft aangemeld te zijn om de taal in te stellen en omdat dit meestal het eerste is wat je doet als Dodona bezoekt en je voorkeurstaal is niet automatisch ingesteld
-
-In de navigatiebalk vind je uiterst links een keuzemenu waarmee je de natuurlijke taal kan instellen die door Dodona gebruikt wordt. Momenteel is het platform enkel beschikbaar in het Nederlands en in het Engels.
+Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het **taalmenu** aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
 
 .. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
-.. TODO: aangeven of de taalinstelling wel of geen deel uitmaakt van je gebruikersprofiel
+Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent, dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`.
 
 .. note::
 
@@ -131,8 +133,6 @@ Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rech
 
 Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
 
-
-.. _taal instellen:
 
 .. _gebruikersprofiel:
 .. _gebruikersprofiel instellen:
