@@ -34,13 +34,11 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 Aanmelden
 ---------
 
-.. note::
+.. tip::
 
     Je kunt enkel aanmelden als je momenteel nog niet :ref:`afgemeld <afmelden>` bent. Je herkent dat je niet aangemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam van de gebruikersaccount die momenteel aangemeld is.
 
     Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
-
-.. TODO: eventueel ook aangeven dat je ook aan de startpagina kan herkennen of je al dan niet aangemeld bent
 
 .. _navigatiebalk:
 
@@ -82,7 +80,9 @@ Als je aangemeld bent dan zie je aan de rechterkant van de navigatiebalk het **g
 
 .. _startpagina aangemeld:
 
-Als je aangemeld bent dan verandert de neutrale startpagina ook in een **gepersonaliseerde startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend en dan ziet de gepersonaliseerde startpagina er nog vrij kaal uit.
+Als je aangemeld bent dan verandert de neutrale startpagina ook in een **gepersonaliseerde startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de startpagina herkennen of je al dan niet aangemeld bent.
+
+Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je gepersonaliseerde startpagina er op dat moment nog vrij kaal uit.
 
 .. image:: homepage.nl.png
 
@@ -96,7 +96,15 @@ Als je aangemeld bent dan verandert de neutrale startpagina ook in een **geperso
 Afmelden
 --------
 
-Je kan enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Dit doe je door te kiezen voor **Afmelden** in het gebruikersmenu aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
+.. tip::
+
+    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent, dan staat op dezelfde plaats **Aanmelden**.
+
+Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
+
+.. _startpagina afgemeld:
+
+Als je afgemeld bent dan verandert je gepersonaliseerde startpagina terug in een **neutrale startpagina** met algemene informatie over Dodona. Om je gepersonaliseerde startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
 
 
 .. _taal instellen:
