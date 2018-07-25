@@ -67,7 +67,7 @@ Aanmelden
 
 .. tip::
 
-    Je kunt enkel aanmelden als je momenteel nog niet :ref:`afgemeld <afmelden>` bent. Je herkent dat je niet aangemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam van de gebruikersaccount die momenteel aangemeld is.
+    Je kunt enkel aanmelden als je momenteel afgemeld bent. Je herkent dat je afgemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van de :ref:`gebruikersaccount <gebruikersaccount>` die momenteel aangemeld is.
 
     Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
@@ -93,7 +93,7 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
 .. TODO: eventueel expliciet aangeven welke gegevens Dodona gebruikt/nodig heeft van de externe instelling en waarvoor die gebruikt worden
 
-Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die uitgewisseld werden met je externe onderwijs- of onderzoeksinstelling. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
+Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
 
 .. important::
 
@@ -101,7 +101,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 .. _gebruikersmenu:
 
-Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toe je nog niet aangemeld was.
+Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toen je nog niet aangemeld was.
 
 .. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
 
@@ -132,6 +132,8 @@ Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rech
 .. _landingspagina:
 
 Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
+
+.. TODO: screenshot van landingspagina
 
 
 .. _gebruikersprofiel:
