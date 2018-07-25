@@ -13,7 +13,7 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
     Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
 
-    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
+    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je :ref:`aanmeldt <aanmelden>` via een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
 
       * Universiteit Gent (UGent)
       * Universiteit Hasselt (UHasselt)
@@ -30,18 +30,20 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 
 .. _taalmenu:
+.. _navigatiebalk:
 .. _taal instellen:
 
 Instellen van de taal
 ---------------------
 
-Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het **taalmenu** aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+
+Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
 .. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
 
 .. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
-Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent, dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`.
+Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent, dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal ingesteld.
 
 .. note::
 
@@ -69,9 +71,7 @@ Aanmelden
 
     Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
-.. _navigatiebalk:
-
-Druk op **Aanmelden** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina) of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop **Aanmelden** centraal op de landingspagina.
+Druk op **Aanmelden** aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop **Aanmelden** centraal op de landingspagina.
 
 .. image:: login.nl.png
 
@@ -101,7 +101,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 .. _gebruikersmenu:
 
-Als je aangemeld bent dan zie je aan de rechterkant van de navigatiebalk het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toe je nog niet aangemeld was.
+Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam van de gebruikersaccount die momenteel aangemeld is. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toe je nog niet aangemeld was.
 
 .. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
 
@@ -127,7 +127,7 @@ Afmelden
 
     Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent, dan staat op dezelfde plaats **Aanmelden**.
 
-Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de navigatiebalk. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
+Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
 .. _landingspagina:
 
@@ -140,7 +140,7 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 Instellen van het gebruikersprofiel
 -----------------------------------
 
-Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het gebruikersmenu aan de rechterkant van de navigatiebalk. Om je gebruikersprofiel bij te werken, druk je op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat.
+Navigeer naar je **gebruikersprofiel** door te kiezen voor **Mijn profiel** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Om je gebruikersprofiel bij te werken, druk je op de knop met het potlood in de rechterbovenhoek van het paneel dat je gegevens bevat.
 
 .. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
 
@@ -173,7 +173,7 @@ De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes van alle cu
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines
 
-Het gebruikersmenu aan de rechterkant van de navigatiebalk bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je startpagina moet navigeren.
+Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je startpagina moet navigeren.
 
 .. _paneel wachten op goedkeuring:
 
@@ -211,7 +211,7 @@ Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina
 
 .. note::
 
-    Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de navigatiebalk. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de cursuspagina.
+    Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de cursuspagina.
 
 
 .. _manuele registratie:
@@ -233,7 +233,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
-Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het gebruikersmenu  aan de rechterkant van de navigatiebalk.
+Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
 
@@ -254,7 +254,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
-Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het gebruikersmenu aan de rechterkant van de navigatiebalk, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oefening selecteren:
@@ -355,7 +355,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 
 .. note::
 
-    Bij selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de navigatiebalk, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
+    Bij selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
 
 .. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
@@ -365,7 +365,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 Indienen van een oplossing
 --------------------------
 
-Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de navigatiebalk. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
+Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de :ref:`navigatiebalk <navigatiebalk>`. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
 
 .. image:: exercise_start.nl.png
 
