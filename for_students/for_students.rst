@@ -49,11 +49,11 @@ Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent,
 
     De taalweergave van de vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) vallen volledig onder de verantwoordelijkheid van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
 
-    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de instelling van de natuurlijke taal, en de gebruikte natuurlijke taal werd gekozen door de lesgever die de cursus heeft opgesteld.
+    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal, en de gebruikte natuurlijke taal wordt volledig bepaald door de lesgever die de cursus heeft opgesteld.
 
-    De naam en de omschrijving van een oefening zijn afhankelijk van de instelling van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
+    De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
 
-    De taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
+    De natuurlijke taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
 .. TODO: nagaan of we de cursusinhoud wel taalafhankelijk kunnen maken
 
