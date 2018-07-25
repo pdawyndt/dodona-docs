@@ -3,16 +3,15 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer **cursussen** (modules). Elke cursus bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch beoordeeld worden en van feedback worden voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>:. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback bekijken>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
-
 
 .. _gebruikersaccount:
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met je persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
 
     Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je aanmeldt via een gebruikersaccount van één van deze instellingen:
 
@@ -24,6 +23,8 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer **cursuss
       * H.-Hartcollege Waregem
       * Sint-Bavohumaniora Gent
       * College Ieper
+
+.. note::
 
     Voor authenticatie via bestaande gebruikersaccounts van externe instellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je instelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
@@ -240,7 +241,7 @@ Selecteren van een oefening
 .. _oefeningenreeks deadline:
 .. oefening selecteren uit oefeningenreeks op cursuspagina
 
-Een :ref:`cursuspagina <cursuspagina>` bevat een reeks oefeningen die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven, rekening houdend met de :ref:`tijdzone <tijdzone instellen>` die je hebt ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel instellen>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze verstreken zijn.
+Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven, rekening houdend met de :ref:`tijdzone <tijdzone instellen>` die je hebt ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel instellen>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze verstreken zijn.
 
 .. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
 
@@ -367,6 +368,7 @@ Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oefening zi
 
 .. TODO: eventueel ook nog een sectie "Selecteren van een oplossing"
 
+.. _feedback:
 .. _feedback bekijken:
 
 Bekijken van feedback
