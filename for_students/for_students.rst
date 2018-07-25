@@ -43,7 +43,7 @@ Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het 
 
 .. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
-Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent, dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal ingesteld.
+Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal ingesteld.
 
 .. note::
 
@@ -51,7 +51,7 @@ Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent,
 
     De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal, en de gebruikte natuurlijke taal wordt volledig bepaald door de lesgever die de cursus heeft opgesteld.
 
-    De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
+    De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
 
     De natuurlijke taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
@@ -67,7 +67,7 @@ Aanmelden
 
 .. tip::
 
-    Je kunt enkel aanmelden als je momenteel afgemeld bent. Je herkent dat je afgemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent, dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van de :ref:`gebruikersaccount <gebruikersaccount>` die momenteel aangemeld is.
+    Je kunt enkel aanmelden als je momenteel afgemeld bent. Je herkent dat je afgemeld bent als je **Aanmelden** ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`.
 
     Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
@@ -97,7 +97,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 .. important::
 
-    Indien je beschikt over gebruikersaccounts bij verschillende externe onderwijs- of onderzoeksinstellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
+    Als je beschikt over gebruikersaccounts bij verschillende externe onderwijs- of onderzoeksinstellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
 
 .. _gebruikersmenu:
 
@@ -125,7 +125,7 @@ Afmelden
 
 .. tip::
 
-    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent, dan staat op dezelfde plaats **Aanmelden**.
+    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent dan staat op dezelfde plaats **Aanmelden**.
 
 Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
@@ -156,7 +156,7 @@ In je gebruikersprofiel kan je de **tijdzone** instellen die gebruikt wordt voor
 
 .. note::
 
-    Indien de tijdzone van je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
+    Als de tijdzone van je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
 
 .. TODO: screenshot met waarschuwing van verkeerde tijdzone
 
@@ -179,13 +179,13 @@ Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navig
 
 .. _paneel wachten op goedkeuring:
 
-Indien je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+Als je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
 
 .. _cursusoverzicht:
 
-Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Indien je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
+Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
 
 .. TODO: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
 
@@ -235,7 +235,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
-Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Van zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
 
@@ -256,7 +256,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
-Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Indien de cursus werd opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oefening selecteren:
@@ -282,7 +282,7 @@ De **statistieken** bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`
 
 .. _oefeningenreeks status:
 
-Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Indien er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline.
+Voor elke oefening wordt de **status** bepaald op basis van de oplossing die je als laatste in de cursus hebt ingediend voor deze oefening. Als er een deadline werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline.
 
 Mogelijke weergaven van de status voor het verstrijken van de deadline of als er geen deadline is ingesteld:
 
@@ -367,7 +367,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 Indienen van een oplossing
 --------------------------
 
-Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de :ref:`navigatiebalk <navigatiebalk>`. Indien bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
+Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de :ref:`navigatiebalk <navigatiebalk>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
 
 .. image:: exercise_start.nl.png
 
@@ -383,7 +383,7 @@ Onder het paneel met de omschrijving van de oefening vind je een tweede paneel w
 
     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat, kan je ze knippen en plakken in de Dodona editor, alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere toepassingen dan de oefeningen die je in Dodona vindt.
 
-.. TODO: na indien opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
+.. TODO: na indienen opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
 
 Na het indienen van een oplossing wordt de tab **Oplossingen** geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoon dat correspondeert met de status van de oplossing.
 
