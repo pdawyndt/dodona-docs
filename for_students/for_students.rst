@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>:. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback bekijken>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback bekijken>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
@@ -11,9 +11,9 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 .. important::
 
-    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
+    Om te kunnen aanmelden moet je over een **gebruikersaccount** beschikken op Dodona. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
 
-    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je :ref:`aanmeldt <aanmelden>` via een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
+    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je voor het eerst :ref:`aanmeldt <aanmelden>` met een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
 
       * Universiteit Gent (UGent)
       * Universiteit Hasselt (UHasselt)
@@ -26,31 +26,31 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 .. note::
 
-    Voor authenticatie via bestaande gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
 
 .. _taalmenu:
 .. _navigatiebalk:
-.. _taal instellen:
+.. _taal selecteren:
 
-Instellen van de taal
----------------------
+Selecteren van de natuurlijke taal
+----------------------------------
 
-Je kan de natuurlijke taal van Dodona instellen op Nederlands of Engels via het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
+Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels via het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
 .. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
 
 .. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
-Als je de natuurlijke taal instelt terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal ingesteld.
+Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
 
 .. note::
 
     De taalweergave van de vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) vallen volledig onder de verantwoordelijkheid van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
 
-    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal, en de gebruikte natuurlijke taal wordt volledig bepaald door de lesgever die de cursus heeft opgesteld.
+    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal. De taal van deze componenten wordt volledig bepaald door de lesgever die de cursus heeft opgesteld.
 
-    De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal worden weergegeven.
+    De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
     De natuurlijke taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
@@ -88,11 +88,11 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
 .. important::
 
-    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het uitwisselen van gebruikersinformatie tussen de instelling en Dodona. Vaak hoef je dit slechts éénmaal te doen voor elke computer waarmee je aanmeldt. Dodona gebruikt deze informatie enkel voor intern beheer van gebruikersaccounts en wisselt deze informatie nooit uit met externe partijen.
+    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het doorsturen van persoonlijke van de instelling naar Dodona. Vaak hoef je deze toestemming slechts éénmaal te geven op elke computer waarmee je aanmeldt. Dodona gebruikt deze persoonlijke gegevens enkel voor intern beheer van je :ref:`gebruikersprofiel <gebruikersprofiel>` en wisselt deze informatie nooit uit met externe partijen.
 
 .. TODO: eventueel expliciet aangeven welke gegevens Dodona gebruikt/nodig heeft van de externe instelling en waarvoor die gebruikt worden
 
-Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. Via deze gebruikersaccount kan je je :ref:`gebruikersprofiel instellen <gebruikersprofiel instellen>` met persoonlijke voorkeuren voor de :ref:`natuurlijke taal <taal instellen>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
+Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
 
 .. important::
 
@@ -124,7 +124,7 @@ Afmelden
 
 .. tip::
 
-    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je gebruikersprofiel. Als je afgemeld bent dan staat op dezelfde plaats **Aanmelden**.
+    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Als je afgemeld bent dan staat op dezelfde plaats **Aanmelden**.
 
 Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
@@ -138,8 +138,8 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 .. _gebruikersprofiel:
 .. _gebruikersprofiel instellen:
 
-Instellen van het gebruikersprofiel
------------------------------------
+Bijwerken van je gebruikersprofiel
+----------------------------------
 
 Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je gebruikersprofiel door te kiezen voor **Mijn profiel** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
@@ -276,7 +276,7 @@ Selecteren van een oefening
 .. _oefeningenreeks deadline:
 .. oefening selecteren uit oefeningenreeks op cursuspagina
 
-Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven, rekening houdend met de :ref:`tijdzone <tijdzone instellen>` die je hebt ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel instellen>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze verstreken zijn.
+Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven, rekening houdend met de :ref:`tijdzone <tijdzone instellen>` die je hebt ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze verstreken zijn.
 
 .. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
 
@@ -373,7 +373,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 Indienen van een oplossing
 --------------------------
 
-Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal instellen>` in de :ref:`navigatiebalk <navigatiebalk>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
+Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. Deze zijn afhankelijk van de :ref:`taal die je hebt ingesteld <taal selecteren>` in de :ref:`navigatiebalk <navigatiebalk>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de natuurlijke taal die je hebt ingesteld, dan zullen deze componenten van de oefeningen ook in die taal worden weergegeven.
 
 .. image:: exercise_start.nl.png
 
