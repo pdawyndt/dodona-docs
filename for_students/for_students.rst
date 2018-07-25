@@ -181,7 +181,7 @@ Selecteren van een cursus
 
 .. TODO: alternatieve titel: Navigeren naar een cursuspagina
 
-De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke curussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
+De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop **GA NAAR DEZE CURSUS** te drukken.
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
@@ -189,13 +189,13 @@ Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navig
 
 .. _paneel wachten op goedkeuring:
 
-Als je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je die in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+Als je nog openstaande registraties voor curssusen hebt die wachten op goedkeuring van één van de cursusbeheerders, dan vind je deze cursussen in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
 
 .. _cursusoverzicht:
 
-Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt registreren,gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
+Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
 
 .. TODO: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
 
@@ -205,7 +205,7 @@ Het **cursusoverzicht** bevat alle beschikbare cursussen waarvoor je kunt regist
 
 .. TODO: tweede pijl toevoegen naar knop **MEER CURSUSSEN...** aan de rechterkant van de startpagina
 
-Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van die cursus te drukken of door op de knop **GA NAAR DEZE CURSUS** te drukken.
+Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop **GA NAAR DEZE CURSUS** te drukken.
 
 .. TODO: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
@@ -217,13 +217,13 @@ Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cu
 
 .. _cursuspagina:
 
-Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina** van die cursus te zien.
+Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina** van de cursus te zien.
 
 .. image:: course.nl.png
 
-.. note::
+.. tip::
 
-    Bij selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de cursuspagina.
+    Na selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de :ref:`cursuspagina <cursuspagina>`.
 
 
 .. _manuele registratie:
@@ -365,9 +365,9 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 
 .. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
-.. note::
+.. tip::
 
-    Bij selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
+    Na selectie van een oefening of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de pagina van de oefening. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
 
 .. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
