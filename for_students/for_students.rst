@@ -384,7 +384,13 @@ In het menu van een oefeningenreeks vind je volgende opties:
 
 :guilabel:`Toon overzicht`
 
-    Toont een pagina waarop de opgaven van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke opgave staat ook je :ref:`status <oefeningenreeks status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+    Toont een overzicht waarin de titels en omschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke omschrijving staat ook je :ref:`status <oefeningenreeks status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+
+    .. _printbare versie oefeningenreeks:
+
+    .. tip::
+
+    Dit overzicht is handig als je een afgedrukte versie wil van alle oefeningen uit een oefeningenreeks. Dodona voorziet dezelfde verzorgde opmaak als bij het :ref:`afdrukken van een individuele oefening <printbare versie oefening>`.
 
 :guilabel:`Oplossingen downloaden`
 
@@ -429,7 +435,7 @@ Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam 
 
 .. tip::
 
-    Dodona voorziet een verzorgde layout bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>` waarbij sommige componenten die je in een browser te zien krijgt automatisch worden verborgen en enkel de titel en de omschrijving van de oefening worden afgedrukt.
+    Dodona voorziet een verzorgde opmaak bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>` waarbij sommige componenten die je in een browser te zien krijgt automatisch worden verborgen en enkel de titel en de omschrijving van de oefening worden afgedrukt.
 
     Bovendien is het mogelijk dat bij het opstellen van de oefening bepaalde componenten uit de omschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de omschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
 
