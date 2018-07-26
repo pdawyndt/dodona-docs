@@ -294,7 +294,7 @@ Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daar
 
 .. belangrijk::
 
-    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je steeds een :ref:`oplossing indient <oplossing indienen>` binnen een bepaalde cursus.
+    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je doorgaans :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
 
     Dezelfde oefening kan voorkomen in meerdere oefeningenreeksen van een cursus. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan voor alle oefeningenreeksen hetzelfde omdat ze bepaald worden per cursus en niet per oefeningenreeks.
 
@@ -304,18 +304,18 @@ De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenre
 
 .. _oefeningenreeks status:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline.
+Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing ingediend hebt op basis waarvan je status kon bepaald worden).
 
-Mogelijke weergaven van je status voor het verstrijken van de deadline of als er geen deadline is ingesteld:
+Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
 +-----------------------------+----------+---------------------------------------+
 | status                      | icoontje | weergegeven als je                    |
 +-----------------------------+----------+---------------------------------------+
 | :guilabel:`geen oplossing`  |          | geen oplossingen hebt ingediend       |
-|                             |          | (voor de deadline)                    |
+|                             |          | (vóór de deadline)                    |
 +-----------------------------+----------+---------------------------------------+
 | status van laatst           |          | minstens één oplossing hebt ingediend |
-| ingediende oplossing        |          | (voor de deadline)                    |
+| ingediende oplossing        |          | (vóór de deadline)                    |
 +-----------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
@@ -328,12 +328,12 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 | status                      | icoontje | weergegeven als je                    |
 +-----------------------------+----------+---------------------------------------+
 | :guilabel:`correct`         |          | laatst ingediende oplossing           |
-| (groen)                     |          | voor de deadline correct is           |
+| (groen)                     |          | vóór de deadline correct is           |
 +-----------------------------+----------+---------------------------------------+
 | :guilabel:`deadline gemist` |          | geen oplossingen hebt ingediend       |
-| (rood)                      |          | voor de deadline of als je laatst     |
-|                             |          | ingediende oplossing voor de deadline |
-|                             |          | niet correct                          |
+| (rood)                      |          | vóór de deadline of als je laatst     |
+|                             |          | ingediende oplossing vóór de deadline |
+|                             |          | niet correct is                       |
 +-----------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
@@ -342,9 +342,9 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. important::
 
-    Als je **voor het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je status voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Als je **vóór het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je status voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
-    Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
@@ -352,13 +352,12 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. TODO: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
-Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken. Bekijk een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening door op het groter dan symbool te drukken aan de rechterkant van de oefening in de oefeningenreeks. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je voor elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
+Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken.
 
-.. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
-
-.. TODO: omschrijving hoe je een geselecteerde oplossing kan bewerken en opnieuw kan indienen
+.. TODO: PDF version does not start a new paragraph at this position (bug ?)
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
+
 
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
