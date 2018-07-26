@@ -371,9 +371,9 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
-.. TODO:discuss-feature: bespreek mogelijkheid om oplossingen van een oefeningenreeks te downloaden
-.. TODO:discuss-feature: bespreek mogelijkheid om te navigeren naar de overzichtspagina van een oefeningenreeks
-.. TODO:discuss-feature: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
+.. TODO:feature-discuss: bespreek mogelijkheid om oplossingen van een oefeningenreeks te downloaden
+.. TODO:feature-discuss: bespreek mogelijkheid om te navigeren naar de overzichtspagina van een oefeningenreeks
+.. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
 
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
@@ -390,7 +390,7 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** va
 
 .. TODO:screenshot: bijschrift toevoegen aan figuur met link naar oefening op Dodona
 
-.. TODO:discuss-feature: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
+.. TODO:feature-discuss: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
 
 .. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
@@ -462,6 +462,22 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 
 Feedback
 --------
+
+.. TODO:feature-discuss: status per oplossing, tab, context, testcase en test; uitleggen hoe dit werkt
+.. TODO:feature-discuss: symbool én kleur geven aan of oefening correct is
+.. TODO:feature-discuss: bespreek badge count in tab
+.. TODO:feature-discuss: bespreek extra tab "Code" met annotaties op de code
+.. TODO:feature-discuss: openklappen van linkerrand context om grafische debugger te starten in Python judge
+.. TODO:feature-discuss: feedback van oefening "Curling" heeft twee tabs
+.. TODO:feature-discuss: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
+.. TODO:feature-discuss: voorbeeld van context met meerdere testgevallen
+.. TODO:feature-discuss: voorbeeld van test met een boodschap
+.. TODO:feature-discuss: voorbeeld van test met een grafische boodschap (Curling)
+
+.. TODO:feature-missing: toon enkel de contexten die fout zijn
+.. TODO:feature-missing: toon regelnummers in diff
+.. TODO:feature-missing: schakelen tussen unified/split in diff
+
 
 Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 

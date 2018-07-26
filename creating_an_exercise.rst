@@ -11,6 +11,8 @@ Een oefening maken
    boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij
    nuttig.
 
+.. TODO:feature-discuss: oefeningen worden niet rechtstreeks toegevoegd aan Dodona maar via git repository
+
 Alle oefeningen in Dodona komen van een git repository. Ook lege repositories
 kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de
 oefeningen correct te identificeren en parsen moet de repository aan een
@@ -137,6 +139,8 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
    |   |       `-- intlines.txt       # Een bestand beschikbaar voor de code van de student
    |   :
    :
+
+.. TODO:feature-discuss: public folder
 
 .. _exercise_configuration:
 
@@ -498,6 +502,9 @@ In plaats van ``callout-info`` kan ook ``callout-warning`` en ``callout-danger``
 gebruikt worden. Je kan deze HTML natuurlijk gewoon in je Markdown plaatsen om
 hetzelfde effect te creëren. Je moet dan wel het volledig element in HTML
 schrijven.
+
+.. TODO:feature-discuss: aangeven hoe je een deel van de omschrijving kan verbergen in de afdrukbare versie van een oefening of ze daar net zichtbaar te maken (bv. videofragment vervangen door afbeelding)
+
 
 
 Voorbeeld
