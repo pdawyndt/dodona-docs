@@ -40,9 +40,6 @@ Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels vi
 
 .. image:: choose_language.nl.png
 
-.. TODO:screenshot-update: zwarte pijl moeilijk zichtbaar in kleur en in zwart-wit
-.. TODO:screenshot-update: scrollbar standaard verbergen in alle screenshots
-.. TODO:screenshot-update: footer standaard verbergen in alle screenshots
 .. TODO:screenshot-update: overwegen om bijschriften toe te voegen aan afbeeldingen
 
 Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
@@ -79,8 +76,6 @@ Aanmelden
 Druk op :guilabel:`Aanmelden` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop :guilabel:`Aanmelden` centraal op de landingspagina.
 
 .. image:: login.nl.png
-
-.. TODO:screenshot-update: zwarte pijl naar navigatiebalk moeilijk zichtbaar in kleur en in zwart-wit
 
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
@@ -133,7 +128,7 @@ Afmelden
 
 Kies voor :guilabel:`Afmelden` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
-.. TODO:screenshot-missing: screenshot met pijl naar Afmelden in gebruikersmenu
+.. image:: sign_out.nl.png
 
 .. _landingspagina:
 
@@ -145,7 +140,7 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 
     Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
 
-.. TODO:screenshot-missing: screenshot met pijl naar Dodona in navigatiebalk
+.. image:: navigate_to_homepage.nl.png
 
 
 .. _gebruikersprofiel:
@@ -172,7 +167,7 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
     Als de tijdzone uit je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
 
-.. TODO:screenshot-missing: screenshot met waarschuwing van verkeerde tijdzone
+.. image:: wrong_timezone.nl.png
 
 .. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 .. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
@@ -194,7 +189,7 @@ De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle c
 
 Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
-.. TODO:screenshot-missing: screenshot van opengeklapt gebruikersmenu met pijl naar "Mijn vakken"
+.. image:: my_courses.nl.png
 
 .. _paneel wachten op goedkeuring:
 
@@ -266,7 +261,6 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
   .. image:: closed_registration.nl.png
 
 .. TODO:screenshot-update: screenshots van registratiepanelen beperken tot enkel de registratiepanelen om ruimte te sparen
-.. TODO:screenshot-update: pijl naar knop om registratieverzoek in te dienen
 
 .. TODO:feature-update: tekst van gemodereerde registratie vervangen door "Je moet een registratieverzoek indienen dat eerst moet goedgekeurd worden door een cursusbeheerder voor je toegang krijgt tot de cursus." (huidige term "vak" komt nergens anders voor op Dodona)
 .. TODO:feature-update: tekst van gemodereerde registratie na indienen van registratieverzoek vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus. Je krijgt toegang tot de cursus zodra dit registratieverzoek wordt goedgekeurd door een cursusbeheerder."
@@ -379,8 +373,6 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
     Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
-
-.. TODO:screenshot-missing: screenshot van oefeningenreeks met oefening die een waarschuwingssymbool naast de status heeft staan
 
 .. image:: deadline_series_warning.nl.png
 
