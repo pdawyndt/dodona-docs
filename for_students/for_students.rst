@@ -236,7 +236,7 @@ Na :ref:`selectie van een cursus <cursus>` krijg je de **cursuspagina** van de c
 Registreren voor een cursus
 ---------------------------
 
-Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
+Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
 * De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
 
@@ -381,7 +381,7 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** va
 Indienen van een oplossing
 --------------------------
 
-Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
+Als je :ref:`navigeert naar een oefening <oefening>` dan staat bovenaan de :ref:`oefeningpagina <oefeningpagina>` een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
 .. image:: exercise_start.nl.png
 
@@ -461,6 +461,8 @@ In het overzicht kan je een ingediende oplossing selecteren door op het groter d
 
 Feedback
 --------
+
+Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
