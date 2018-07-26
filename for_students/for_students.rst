@@ -334,6 +334,21 @@ Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>`
 
 Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
+.. list-table::
+  :header-rows: 1
+
+  * - status
+    - icoontje
+    - weergegeven als je
+
+  * - :guilabel:`geen oplossing`
+    - .. image::
+    - oplossing slaagt voor alle testen
+
+  * - :ref:`status <oplossing status>` van laatst ingediende oplossing
+    - .. image::
+    - minstens één oplossing hebt ingediend (vóór de deadline)
+
 +----------------------------------+----------+---------------------------------------+
 | status                           | icoontje | weergegeven als je                    |
 +----------------------------------+----------+---------------------------------------+
@@ -347,6 +362,21 @@ Mogelijke weergaven van je status vóór het verstrijken van de deadline of als 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
 Mogelijke weergaven van je status nadat de deadline verstreken is:
+
+.. list-table::
+  :header-rows: 1
+
+  * - status
+    - icoontje
+    - weergegeven als je
+
+  * - :guilabel:`correct` (groen)
+    - .. image::
+    - laatst ingediende oplossing vóór de deadline correct is
+
+  * - :guilabel:`deadline gemist` (rood)
+    - .. image::
+    - geen oplossingen hebt ingediend vóór de deadline of als je laatst ingediende oplossing vóór de deadline niet correct is
 
 +----------------------------------+----------+---------------------------------------+
 | status                           | icoontje | weergegeven als je                    |
@@ -495,27 +525,6 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 
 .. _oplossing status:
 
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| status                                  | icoontje | betekenis                                                               |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Correct`                     |          | oplossing slaagt voor alle testen                                       |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Fout`                        |          | logische fout gevonden in minstens één test                             |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Uitvoeringsfout`             |          | onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Timeout`                     |          | tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het   |
-|                                         |          | testen; kan wijzen op slechte performantie of een oneindige lus         |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Geheugenlimiet overschreden` |          | geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens    |
-|                                         |          | het uitvoeren van minstens één test                                     |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Compilatiefout`              |          | ingediende oplossing bevat grammaticale fouten                          |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-| :guilabel:`Interne fout`                |          | oorzaak van fout tijdens het beoordelen ligt bij falen van een          |
-|                                         |          | component van het platform en niet bij de ingediende oplossing          |
-+-----------------------------------------+----------+-------------------------------------------------------------------------+
-
 .. list-table::
   :header-rows: 1
 
@@ -524,31 +533,31 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
     - betekenis
 
   * - :guilabel:`Correct`
-    - .. image:: https://www.iconspng.com/images/primary-ok/primary-ok.jpg
+    - .. image::
     - oplossing slaagt voor alle testen
 
   * - :guilabel:`Fout`
-    -
+    - .. image::
     - logische fout gevonden in minstens één test
 
   * - :guilabel:`Uitvoeringsfout`
-    -
+    - .. image::
     - onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test
 
   * - :guilabel:`Timeout`
-    -
+    - .. image::
     - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
 
   * - :guilabel:`Geheugenlimiet overschreden`
-    -
+    - .. image::
     - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
 
   * - :guilabel:`Compilatiefout`
-    -
+    - .. image::
     - ingediende oplossing bevat grammaticale fouten
 
   * - :guilabel:`Interne fout`
-    -
+    - .. image::
     - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
 
 .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
