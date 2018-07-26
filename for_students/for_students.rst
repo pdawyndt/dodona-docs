@@ -392,7 +392,7 @@ In het menu van een oefeningenreeks vind je volgende opties:
 
     .. tip::
 
-    Dit overzicht is handig als je een afgedrukte versie wil van alle oefeningen uit een oefeningenreeks. Dodona voorziet dezelfde verzorgde opmaak als bij het :ref:`afdrukken van een individuele oefening <printbare versie oefening>`.
+        Dit overzicht is handig als je een afgedrukte versie wil van alle oefeningen uit een oefeningenreeks. Dodona voorziet dezelfde verzorgde opmaak als bij het :ref:`afdrukken van een individuele oefening <printbare versie oefening>`.
 
 :guilabel:`Oplossingen downloaden`
 
