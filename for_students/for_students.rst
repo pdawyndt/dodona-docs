@@ -38,7 +38,7 @@ Selecteren van de natuurlijke taal
 
 Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels via het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
-.. TODO: screenshot van navigatiebalk met uitgeklapt keuzemenu voor selectie van de natuurlijke taal
+.. image:: choose_language.nl.png
 
 .. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
 
@@ -74,8 +74,6 @@ Druk op :guilabel:`Aanmelden` aan de rechterkant van de :ref:`navigatiebalk <nav
 
 .. image:: login.nl.png
 
-.. TODO: tweede pijl toevoegen naar knop Aanmelden in de navigatiebalk
-
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
 .. image:: institution.nl.png
@@ -98,7 +96,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Het gebruikersmenu staat op de plaats waar voorheen :guilabel:`Aanmelden` stond toen je nog niet aangemeld was.
 
-.. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
+.. image:: user_menu.nl.png
 
 .. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
@@ -134,7 +132,7 @@ Kies voor :guilabel:`Afmelden` in het :ref:`gebruikersmenu <gebruikersmenu>` aan
 
 Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
 
-.. TODO: screenshot van landingspagina
+.. image:: landingpage.nl.png
 
 .. tip::
 
@@ -149,7 +147,7 @@ Bijwerken van je gebruikersprofiel
 
 Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je gebruikersprofiel door te kiezen voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
-.. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
+.. image:: edit_profile.nl.png
 
 .. TODO: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel
 
@@ -159,7 +157,7 @@ Druk op de editeerknop in de rechterbovenhoek van het paneel met je persoonlijke
 
 Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
 
-.. TODO: screenshot voor instellen van de tijdzone
+.. image:: edit_timezone.nl.png
 
 .. TODO: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
 
@@ -193,7 +191,7 @@ Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navig
 
 Als je nog :ref:`registratieverzoeken voor cursussen <registreren>` hebt openstaan hebt die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
-.. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
+.. image:: moderated_waiting.nl.png
 
 .. TODO: PDF version does not start a new paragraph at this position (bug ?)
 
@@ -206,8 +204,6 @@ Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academ
 .. TODO: vervang de tekst op de knop "MEER CURSUSSEN …" in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
 
 .. image:: explore_courses.nl.png
-
-.. TODO: tweede pijl toevoegen naar knop MEER CURSUSSEN … aan de rechterkant van de startpagina
 
 Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
@@ -245,9 +241,9 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 * De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
 * De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kan indienen voor de cursus.
 
-.. TODO: screenshot van cursuspagina met gemodereerde registratie
-.. TODO: screenshot van cursuspagina met gemodereerde registratie waarvoor registratieverzoek werd ingediend
-.. TODO: screenshot van cursuspagina met gesloten registratie
+.. image:: moderated_register.nl.png
+.. image:: moderated_waiting.nl.png
+.. image:: closed_registration.nl.png
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
@@ -270,7 +266,7 @@ Uitschrijven uit een cursus
 
 Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan, dan zie je op de :ref:`cursuspagina <cursuspagina>` onder de omschrijving van de cursus een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
-.. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
+.. image:: unregister.nl.png
 
 Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
@@ -288,7 +284,7 @@ Navigeren naar een oefening
 
 Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <tijdzone instellen>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
-.. TODO: screenshot van oefeningenreeks met een deadline; toon oefeningen met een verschillende status, gaande van niet ingediend tot correct
+.. image:: deadline_series.nl.png
 
 Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
 
@@ -348,7 +344,7 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
-.. TODO: screenshot van oefeningenreeks met oefening met waarschuwingssymbool naast status
+.. image:: deadline_series_warning.nl.png
 
 .. TODO: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
@@ -500,7 +496,7 @@ Contact opnemen
 
 Zit je bij het werken met of het verkennen van Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
 
-.. TODO: screenshot van contactpagina toevoegen
+.. image:: contact.nl.png
 
 Vul de gegevens in het paneel :guilabel:`Contacteer ons` aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
 
