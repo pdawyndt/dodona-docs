@@ -395,19 +395,19 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
     Programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evenwel nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
 
-    Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een externe IDE. Voer je programmacode lokaal uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
+    Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een IDE. Voer je programmacode eerst uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
 
-    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze knippen en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden ook toe te passen voor andere programmeeropdrachten dan de oefeningen uit Dodona.
+    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze knippen en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden generiek in te zetten voor het aanpakken andere programmeeropdrachten dan de oefeningen uit Dodona.
 
 .. TODO: na indienen opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
 
 Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
-.. _wachtlijst ingediende oplossingen:
+.. _wachtrij ingediende oplossingen:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status :guilabel:`In de wachtlijst …`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren …`.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
 
-Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale status en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. tip::
 
@@ -429,7 +429,18 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 
 .. TODO: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
 
-In het overzicht worden de ingediende oplossingen altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de status van de oplossing.
+Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de gedetailleerde :ref:`feedback <feedback>` te zien die tijdens bij het beoordelen van de oplossing werd gegenereerd.
+
+.. TODO: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt
+
+.. _feedback:
+
+Feedback
+--------
+
+Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
+
+.. _oplossing status:
 
 +-----------------------------------------+----------+-------------------------------------------------------------------------+
 | status                                  | icoontje | betekenis                                                               |
@@ -454,15 +465,6 @@ In het overzicht worden de ingediende oplossingen altijd opgelijst in omgekeerde
 
 .. TODO: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
-In het overzicht kan je een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de gedetailleerde :ref:`feedback <feedback>` te zien die tijdens bij het beoordelen van de oplossing werd gegenereerd.
-
-
-.. _feedback:
-
-Feedback
---------
-
-Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
