@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const Jimp = require('jimp');
 const process = require('process');
-const fs = require('fs');
 
 function Image(path) {
   this.path = path;
@@ -22,14 +21,14 @@ function Wizard() {
   this.elementsToBlock = [];
 
   this.launch = async function () {
-    this.browser = await puppeteer.launch({ headless: false, args: ['--no-sandbox', '--disable-setuid-sandbox'] });
+    this.browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
     this.page = await this.browser.newPage();
     await this.page.setViewport({ width: 1280, height: 720 });
     return this;
   };
 
   this.blockElement = function (selector, predicate) {
-    this.elementsToBlock.push({ selector, predicate });
+    this.elementsToBlock.push({ selector, predicate: predicate || (() => true) });
   };
 
   this.click = async function (selector) {
@@ -53,22 +52,30 @@ function Wizard() {
     await this.page.evaluate(elem => elem.scrollIntoViewIfNeeded(), element);
   };
 
+  this.scrollToBottom = async function () {
+    await this.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+  };
+
   this.screenshot = async function (savePath, elementSelectors, predicate) {
     elementSelectors = elementSelectors || [];
-    predicate = predicate || (e => true);
+    predicate = predicate || (() => true);
 
     await this.page.screenshot({ path: savePath });
     const locations = [];
     for (const selector of elementSelectors) {
-      elements = await this.page.$$(selector);
+      var used = false;
       for (const element of await this.page.$$(selector)) {
         if (await this.page.evaluate(predicate, element)) {
           const boxModel = await element.boxModel();
           // Make sure element is visible
           if (boxModel !== null) {
             locations.push(boxModel.content);
+            used = true;
           }
         }
+      }
+      if (!used) {
+        console.trace(`UNUSED SELECTOR: ${selector}`);
       }
     }
     const image = await new Image(savePath).load();
@@ -78,7 +85,7 @@ function Wizard() {
     await image.close();
   };
 
-  this.press = async function(selector, key) {
+  this.press = async function (selector, key) {
     const element = await this.page.$(selector);
     await element.press(key);
   };
@@ -104,7 +111,7 @@ function Wizard() {
 }
 
 function waitForInput() {
-  return new Promise(((resolve, reject) => {
+  return new Promise(((resolve) => {
     process.stdin.resume();
     process.stdin.once('data', function (data) {
       resolve(data);
@@ -124,6 +131,7 @@ function waitForInput() {
   wizard.blockElement('div.alert-info', elem => {
     return !!elem.querySelector('a[href$="stop_impersonating/"');
   });
+  wizard.blockElement('footer.footer');
 
   await wizard.navigate('https://dodona.ugent.be/nl');
   await wizard.screenshot('../for_students/landingpage.nl.png');
@@ -155,6 +163,8 @@ function waitForInput() {
 
   await wizard.screenshot('../for_students/homepage.nl.png');
 
+  await wizard.screenshot('../for_students/navigate_to_homepage.nl.png', ['a.navbar-brand']);
+
   await wizard.screenshot('../for_students/explore_courses.nl.png', ['a[href$="/courses/"]']);
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
@@ -164,9 +174,13 @@ function waitForInput() {
     elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
   );
 
+  await wizard.screenshot('../for_students/sign_out.nl.png', ['a[href*="/users/sign_out/"]']);
+
   await wizard.navigate('http://localhost:3000/?locale=en');
 
   await wizard.screenshot('../for_students/homepage.en.png');
+
+  await wizard.screenshot('../for_students/navigate_to_homepage.en.png', ['a.navbar-brand']);
 
   await wizard.screenshot('../for_students/explore_courses.en.png', ['a[href$="/courses/"]']);
 
@@ -176,6 +190,8 @@ function waitForInput() {
     ['li.dropdown ul.dropdown-menu'],
     elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
   );
+
+  await wizard.screenshot('../for_students/sign_out.en.png', ['a[href*="/users/sign_out/"]']);
 
   await wizard.navigate('http://localhost:3000/nl/users/3/');
   await wizard.screenshot(
@@ -203,6 +219,27 @@ function waitForInput() {
     ['select#user_time_zone'],
   );
 
+  await wizard.page.evaluate(() => {
+    document.querySelector('select#user_time_zone').value = "Seoul";
+  });
+
+  await wizard.click('button.btn-primary[form*="edit_user_"]');
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  await wizard.navigate('http://localhost:3000/?locale=nl');
+  await wizard.screenshot('../for_students/wrong_timezone.nl.png');
+
+  await wizard.navigate('http://localhost:3000/?locale=en');
+  await wizard.screenshot('../for_students/wrong_timezone.en.png');
+
+  await wizard.navigate('http://localhost:3000/en/users/3/edit/');
+  await wizard.page.evaluate(() => {
+    document.querySelector('select#user_time_zone').value = "Brussels";
+  });
+  await wizard.click('button.btn-primary[form*="edit_user_"]');
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
   await wizard.navigate('http://localhost:3000/nl/courses/');
   await wizard.screenshot('../for_students/courses.nl.png');
 
@@ -228,10 +265,10 @@ function waitForInput() {
   await wizard.screenshot('../for_students/unregister.en.png', ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]']);
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.nl.png', ['a[href$="/courses/2/subscribe"]']);
+  await wizard.screenshot('../for_students/moderated_register.nl.png', ['a[href$="/courses/2/subscribe/"]']);
 
   await wizard.navigate('http://localhost:3000/en/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.en.png', ['a[href$="/courses/2/subscribe"]']);
+  await wizard.screenshot('../for_students/moderated_register.en.png', ['a[href$="/courses/2/subscribe/"]']);
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/subscribe');
 
@@ -250,8 +287,14 @@ function waitForInput() {
   await wizard.navigate('http://localhost:3000/?locale=nl');
   await wizard.screenshot('../for_students/homepage_after_registration.nl.png');
 
+  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+  await wizard.screenshot('../for_students/my_courses.nl.png', ['li.dropdown-header'], elem => elem.textContent === 'Mijn vakken');
+
   await wizard.navigate('http://localhost:3000/?locale=en');
   await wizard.screenshot('../for_students/homepage_after_registration.en.png');
+
+  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+  await wizard.screenshot('../for_students/my_courses.en.png', ['li.dropdown-header'], elem => elem.textContent === 'My courses');
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
   const exerciseNamesToIDs = await wizard.page.evaluate(() => {
@@ -268,7 +311,7 @@ function waitForInput() {
   await wizard.navigate(`http://localhost:3000/nl/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
   await wizard.screenshot('../for_students/exercise_start.nl.png');
 
-  await wizard.scrollTo('footer.footer');
+  await wizard.scrollToBottom();
   await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
     'for i in range(1, 10):\n' +
     's += i * int(input())\n');
@@ -285,7 +328,7 @@ function waitForInput() {
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
   await wizard.screenshot('../for_students/exercise_start.en.png');
 
-  await wizard.scrollTo('footer.footer');
+  await wizard.scrollToBottom();
   await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
     'for i in range(1, 10):\n' +
     's += i * int(input())\n');
@@ -307,7 +350,6 @@ function waitForInput() {
 
   await wizard.screenshot('../for_students/exercise_feedback_incorrect.nl.png');
 
-
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
   await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
 
@@ -325,7 +367,7 @@ function waitForInput() {
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
   await wizard.screenshot('../for_students/exercise_start.en.png');
 
-  await wizard.scrollTo('footer.footer');
+  await wizard.scrollToBottom();
   await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
     'for i in range(1, 10):\n' +
     's += i * int(input())\n');
