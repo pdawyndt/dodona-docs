@@ -349,16 +349,6 @@ Mogelijke weergaven van je status vóór het verstrijken van de deadline of als 
     - .. image::
     - minstens één oplossing hebt ingediend (vóór de deadline)
 
-+----------------------------------+----------+---------------------------------------+
-| status                           | icoontje | weergegeven als je                    |
-+----------------------------------+----------+---------------------------------------+
-| :guilabel:`geen oplossing`       |          | geen oplossingen hebt ingediend       |
-|                                  |          | (vóór de deadline)                    |
-+----------------------------------+----------+---------------------------------------+
-| :ref:`status <oplossing status>` |          | minstens één oplossing hebt ingediend |
-| van laatst ingediende oplossing  |          | (vóór de deadline)                    |
-+----------------------------------+----------+---------------------------------------+
-
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
 Mogelijke weergaven van je status nadat de deadline verstreken is:
@@ -377,18 +367,6 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
   * - :guilabel:`deadline gemist` (rood)
     - .. image::
     - geen oplossingen hebt ingediend vóór de deadline of als je laatst ingediende oplossing vóór de deadline niet correct is
-
-+----------------------------------+----------+---------------------------------------+
-| status                           | icoontje | weergegeven als je                    |
-+----------------------------------+----------+---------------------------------------+
-| :guilabel:`correct`              |          | laatst ingediende oplossing           |
-| (groen)                          |          | vóór de deadline correct is           |
-+----------------------------------+----------+---------------------------------------+
-| :guilabel:`deadline gemist`      |          | geen oplossingen hebt ingediend       |
-| (rood)                           |          | vóór de deadline of als je laatst     |
-|                                  |          | ingediende oplossing vóór de deadline |
-|                                  |          | niet correct is                       |
-+----------------------------------+----------+---------------------------------------+
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
@@ -443,11 +421,14 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** va
 
 Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
+.. _printbare versie oefening:
+
 .. tip::
 
-    Als je een oefeningpagina afdrukt dan bevat de afgedrukte versie
+    Dodona voorziet een verzorgde layout bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>` waarbij sommige componenten die je in een browser te zien krijgt automatisch worden verborgen en enkel de titel en de omschrijving van de oefening worden afgedrukt.
 
-.. TODO:feature-discuss: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
+    Bovendien is het mogelijk dat bij het opstellen van de oefening bepaalde componenten uit de omschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de omschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
+
 .. TODO:feature-discuss: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
 
