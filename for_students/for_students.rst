@@ -109,7 +109,7 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. _startpagina:
 
-Als je aangemeld bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
+Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
 
 .. tip::
 
@@ -137,7 +137,7 @@ Kies voor :guilabel:`Afmelden` in het :ref:`gebruikersmenu <gebruikersmenu>` aan
 
 .. _landingspagina:
 
-Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
+Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
 
 .. image:: landingpage.nl.png
 
@@ -192,7 +192,7 @@ De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle c
 
 .. TODO:feature-discuss: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
-Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
+Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
 .. TODO:screenshot-missing: screenshot van opengeklapt gebruikersmenu met pijl naar "Mijn vakken"
 
@@ -303,13 +303,13 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd
 Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
 
+.. _oefeningenreeks:
+.. _oefeningenreeks deadline:
 .. _oefening:
 
 Navigeren naar een oefening
 ---------------------------
 
-.. _oefeningenreeks:
-.. _oefeningenreeks deadline:
 .. oefening selecteren uit oefeningenreeks op cursuspagina
 
 Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <tijdzone instellen>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
@@ -330,7 +330,7 @@ De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenre
 
 .. _oefeningenreeks status:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing ingediend hebt op basis waarvan je status kon bepaald worden).
+Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
 Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
@@ -378,21 +378,34 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
     Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
+    .. image:: deadline_series_warning.nl.png
+
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
-.. TODO:screenshot-missing: screenshot van oefeningenreeks met oefening die een waarschuwingssymbool naast de status heeft staan
-
-.. image:: deadline_series_warning.nl.png
+.. TODO:screenshot-update: screenshot met waarschuwingssymbool kan beperkt worden tot de oefeningenreeksen om plaats te besparen (deel boven de oefeningenreeksen tot aan de navigatiebalk mag weggeknipt worden)
 
 .. TODO:feature-discuss: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
+
+.. _oefeningenreeks menu:
+
+In het menu van een oefeningenreeks vind je volgende opties:
+
+:guilabel:`Toon overzicht`
+
+    Toont een pagina waarop de opgaven van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke opgave staat ook je :ref:`status <oefeningenreeks status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+
+:guilabel:`Oplossingen downloaden`
+
+    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks je ingediende oplossing bevat op basis waarvan je :ref:`status <oefeningenreeks status>` voor de oefening bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
+
+.. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
+
+.. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
+.. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
 
 Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken.
 
 .. TODO:feature-missing: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
-
-.. TODO:feature-discuss: bespreek mogelijkheid om oplossingen van een oefeningenreeks te downloaden
-.. TODO:feature-discuss: bespreek mogelijkheid om te navigeren naar de overzichtspagina van een oefeningenreeks
-.. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
 
 .. TODO:PDF-bug: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
