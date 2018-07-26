@@ -554,6 +554,8 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
     - .. image::
     - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
 
+.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
+
 .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
