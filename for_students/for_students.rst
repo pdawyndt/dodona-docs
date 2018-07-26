@@ -191,7 +191,7 @@ Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navig
 
 .. _paneel wachten op goedkeuring:
 
-Als je nog :ref:`openstaande registraties <registreren>` voor cursussen hebt die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+Als je nog :ref:`registratieverzoeken voor cursussen <registreren>` hebt openstaan hebt die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
 
@@ -242,7 +242,7 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
   .. image:: register.nl.png
 
-* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
+* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
 * De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kan indienen voor de cursus.
 
 .. TODO: screenshot van cursuspagina met gemodereerde registratie
@@ -260,7 +260,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus, en hoef je de cursus dus niet meer naar te cursus te navigeren. De registratieprocedure zelf is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
+Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar te cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuale registratie <manuale registratie>` wel afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
 
 
 .. _uitschrijven:
@@ -268,13 +268,13 @@ Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op
 Uitschrijven uit een cursus
 ---------------------------
 
-Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je geregistreerd bent, dan zie je onder de omschrijving van de cursus een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
+Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan, dan zie je op de :ref:`cursuspagina <cursuspagina>` onder de omschrijving van de cursus een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
 Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
-.. TODO: nagaan of je kunt uitschrijven uit een cursus waarvoor je nog op de wachtlijst staat; indien niet, dan moet de laatste zin uit de vorige paragraaf weg
+.. TODO: nagaan of je kunt uitschrijven uit een cursus waarvoor je nog op de wachtlijst staat; indien niet, dan moet de laatste zin uit de vorige paragraaf weg en moet ook de eerste zin van de sectie bijgewerkt worden
 
 
 .. _oefening:
