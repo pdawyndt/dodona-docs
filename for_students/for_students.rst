@@ -74,6 +74,8 @@ Druk op :guilabel:`Aanmelden` aan de rechterkant van de :ref:`navigatiebalk <nav
 
 .. image:: login.nl.png
 
+.. TODO: opnieuw ontwerpen van de landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
+
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
 .. image:: institution.nl.png
@@ -179,9 +181,9 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 Navigeren naar een cursus
 -------------------------
 
-.. TODO: alternatieve titel: Navigeren naar een cursuspagina
-
 De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
+
+.. TODO: academiejaar is terminologie die enkel in het hoger onderwijs gebruikt wordt; secundair onderwijs zou hier de term "schooljaar" gebruiken; zoeken naar generiekere oplossing in Dodona door bijvoorbeeld de begin- en einddatum van een module in te stellen, en dan een weergave te zien met modules die actief zijn, modules die afgelopen zijn en modules die in de toekomst zullen lopen
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
@@ -213,6 +215,8 @@ Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cu
 
 .. TODO: afbeelding vervangen door een screenshot met de nieuwe layout van het cursusoverzicht; beschrijving van de functionaliteit van het cursusoverzicht moet eventueel bijgewerkt worden
 
+.. TODO: uitleg over gebruikte symbolen op kaartje van een cursus in het cursusoverzicht en op je startpagina
+
 .. Als voorbeeld zullen wij ons inschrijven op de cursus Scriptingtalen van het academiejaar 2017--2018.
 
 .. _cursuspagina:
@@ -238,18 +242,31 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
   .. image:: register.nl.png
 
-* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
+* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
+
+  .. image:: moderated_register.nl.png
+
+  Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
+
+  .. image:: moderated_waiting.nl.png
+
 * De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kan indienen voor de cursus.
 
-.. image:: moderated_register.nl.png
-.. image:: moderated_waiting.nl.png
-.. image:: closed_registration.nl.png
-.. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
+  .. image:: closed_registration.nl.png
+
+.. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus dat nog wacht op afhandeling van een cursusbeheerder."
+
+.. TODO: aangeven wat er gebeurt als een cursusbeheerder de registratie goedkeurt/afkeurt; automatische email naar de student?
+
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
 Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
+
+.. TODO: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
+
+.. TODO: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
 
 .. TODO: behandeling van deadlines moet ergens ander staan.
 .. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
@@ -354,6 +371,10 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
+.. TODO:discuss-feature: bespreek mogelijkheid om oplossingen van een oefeningenreeks te downloaden
+.. TODO:discuss-feature: bespreek mogelijkheid om te navigeren naar de overzichtspagina van een oefeningenreeks
+.. TODO:discuss-feature: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
+
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
@@ -366,6 +387,10 @@ Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` b
 Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** van de oefening te zien.
 
 .. image:: exercise_start.nl.png
+
+.. TODO:screenshot: bijschrift toevoegen aan figuur met link naar oefening op Dodona
+
+.. TODO:discuss-feature: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
 
 .. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 

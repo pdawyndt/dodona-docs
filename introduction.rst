@@ -47,3 +47,7 @@ in het feit dat Dodona voortdurend feedback blijft geven op de weg die leidt van
 een initieel ingediende oplossing tot een oplossing die als volledig correct
 beoordeeld wordt.
 
+.. TODO: wat is Dodona
+.. TODO: wie zit er achter Dodona
+.. TODO: waarvoor werd Dodona opgezet
+.. TODO: leden van team Dodona
