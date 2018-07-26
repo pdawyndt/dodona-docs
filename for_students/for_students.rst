@@ -5,7 +5,7 @@ Dodona voor studenten
 
 Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
-.. TODO: overweeg om de term module te gebruiken in plaats van cursus
+.. TODO:tutorial-review: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
 
 .. _gebruikersaccount:
 
@@ -40,7 +40,10 @@ Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels vi
 
 .. image:: choose_language.nl.png
 
-.. TODO: eventueel nog uitleg geven hoe de initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
+.. TODO:screenshot-update: zwarte pijl moeilijk zichtbaar in kleur en in zwart-wit
+.. TODO:screenshot-update: scrollbar standaard verbergen in alle screenshots
+.. TODO:screenshot-update: footer standaard verbergen in alle screenshots
+.. TODO:screenshot-update: overwegen om bijschriften toe te voegen aan afbeeldingen
 
 Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt deze ook automatisch ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
 
@@ -54,9 +57,12 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De natuurlijke taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
-.. TODO: nagaan of we de cursusinhoud wel taalafhankelijk kunnen maken
-
-.. TODO: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
+.. TODO:feature-missing: nagaan of cursusinhoud taalafhankelijk kan gemaakt worden
+.. TODO:feature-update: standaardtaal instellen op Engels
+.. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
+.. TODO:feature-update: link naar oefeningen nodig in navigatiebalk op landingspagina?
+.. TODO:feature-discuss: eventueel uitleggen hoe initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
+.. TODO:feature-discuss: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
 
 .. _aanmelden:
@@ -74,19 +80,15 @@ Druk op :guilabel:`Aanmelden` aan de rechterkant van de :ref:`navigatiebalk <nav
 
 .. image:: login.nl.png
 
-.. TODO: opnieuw ontwerpen van de landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
+.. TODO:screenshot-update: zwarte pijl naar navigatiebalk moeilijk zichtbaar in kleur en in zwart-wit
 
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
 .. image:: institution.nl.png
 
-.. TODO: screenshot met nieuwe layout van instellingen toevoegen
-
 .. important::
 
     Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het doorsturen van persoonlijke van de instelling naar Dodona. Vaak hoef je deze toestemming slechts éénmaal te geven op elke computer waarmee je aanmeldt. Dodona gebruikt deze persoonlijke gegevens enkel voor intern beheer van je :ref:`gebruikersprofiel <gebruikersprofiel>` en wisselt deze informatie nooit uit met externe partijen.
-
-.. TODO: eventueel expliciet aangeven welke gegevens Dodona gebruikt/nodig heeft van de externe instelling en waarvoor die gebruikt worden
 
 Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
 
@@ -100,9 +102,10 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. image:: user_menu.nl.png
 
-.. TODO: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
+.. TODO:feature-update: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
-.. TODO: PDF version does not start a new paragraph at this position (bug ?)
+.. TODO:PDF-update: extra witruimte tussen vorige figuur en volgende paragraaf
+.. TODO:PDF-update: paragraaf dit volgt op vorige figuur heeft aan het begin van de eerste zin een klein beetje insprong die weg zou moeten
 
 .. _startpagina:
 
@@ -130,6 +133,8 @@ Afmelden
 
 Kies voor :guilabel:`Afmelden` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
+.. TODO:screenshot-missing: screenshot met pijl naar Afmelden in gebruikersmenu
+
 .. _landingspagina:
 
 Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in de **landingspagina** met algemene informatie over Dodona. Om je startpagina terug te krijgen moet je opnieuw :ref:`aanmelden <aanmelden>`.
@@ -139,6 +144,8 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 .. tip::
 
     Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
+
+.. TODO:screenshot-missing: screenshot met pijl naar Dodona in navigatiebalk
 
 
 .. _gebruikersprofiel:
@@ -151,8 +158,6 @@ Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam,
 
 .. image:: edit_profile.nl.png
 
-.. TODO: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel
-
 Druk op de editeerknop in de rechterbovenhoek van het paneel met je persoonlijke gegevens en voorkeuren om je gebruikersprofiel bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
 
 .. _tijdzone instellen:
@@ -161,19 +166,17 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 .. image:: edit_timezone.nl.png
 
-.. TODO: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
+.. TODO:feature-discuss: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
 
 .. tip::
 
     Als de tijdzone uit je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
 
-.. TODO: screenshot met waarschuwing van verkeerde tijdzone
+.. TODO:screenshot-missing: screenshot met waarschuwing van verkeerde tijdzone
 
-.. TODO: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
-
-.. TODO: voorkeur voor natuurlijke taal zou ook moeten kunnen bijgewerkt worden in het gebruikersprofiel
-
-.. TODO: omschrijving van API token toevoegen van zodra deze feature beschikbaar wordt
+.. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
+.. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
+.. TODO:feature-discuss: omschrijving van API tokens toevoegen
 
 
 .. _cursus:
@@ -317,7 +320,7 @@ De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenre
 
 .. _oefeningenreeks status:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing ingediend hebt op basis waarvan je status kon bepaald worden).
+Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing ingediend hebt op basis waarvan je status kon bepaald worden).
 
 Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
