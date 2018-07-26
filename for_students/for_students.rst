@@ -46,7 +46,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
 .. note::
 
-    De taal waarin vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, ...) worden weergegeven valt volledig onder de controle van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
+    De taal waarin vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, …) worden weergegeven valt volledig onder de controle van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
 
     De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal. De taal van deze componenten valt volledig onder de controle van de lesgever die de cursus heeft opgesteld.
 
@@ -66,15 +66,15 @@ Aanmelden
 
 .. tip::
 
-    Je kunt enkel aanmelden als je momenteel afgemeld bent. Je herkent dat je afgemeld bent als je **Aanmelden** :guilabel:`Aanmelden` ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`.
+    Je kunt enkel aanmelden als je momenteel afgemeld bent. Je herkent dat je afgemeld bent als je :guilabel:`Aanmelden` ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Als je aangemeld bent dan staat op dezelfde plaats het :ref:`gebruikersmenu <gebruikersmenu>` met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`.
 
     Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
-Druk op **Aanmelden** aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop **Aanmelden** centraal op de landingspagina.
+Druk op :guilabel:`Aanmelden` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of navigeer naar de :ref:`landingspagina <landingspagina>` en druk op de knop :guilabel:`Aanmelden` centraal op de landingspagina.
 
 .. image:: login.nl.png
 
-.. TODO: tweede pijl toevoegen naar knop **Aanmelden** in de navigatiebalk
+.. TODO: tweede pijl toevoegen naar knop Aanmelden in de navigatiebalk
 
 Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert waarmee je wilt aanmelden. Daarna volg je de instellingsspecifieke aanmeldingsprocedure.
 
@@ -96,7 +96,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een
 
 .. _gebruikersmenu:
 
-Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Het gebruikersmenu staat op de plaats waar voorheen **Aanmelden** stond toen je nog niet aangemeld was.
+Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het **gebruikersmenu** met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Het gebruikersmenu staat op de plaats waar voorheen :guilabel:`Aanmelden` stond toen je nog niet aangemeld was.
 
 .. TODO: screenshot met opengeklapt gebruikersmenu in de navigatiebalk
 
@@ -108,7 +108,7 @@ Als je aangemeld bent dan verandert de neutrale :ref:`landingspagina <landingspa
 
 .. tip::
 
-    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
+    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
 
 Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je startpagina er op dit moment nog vrij kaal uit.
 
@@ -124,9 +124,9 @@ Afmelden
 
 .. tip::
 
-    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Als je afgemeld bent dan staat op dezelfde plaats **Aanmelden**.
+    Je kunt enkel afmelden als je momenteel :ref:`aangemeld <aanmelden>` bent. Je herkent dat je aangemeld bent als je aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` het :ref:`gebruikersmenu <gebruikersmenu>` ziet staan met de naam uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Als je afgemeld bent dan staat op dezelfde plaats :guilabel:`Aanmelden`.
 
-Kies voor **Afmelden** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
+Kies voor :guilabel:`Afmelden` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Daarna ben je afgemeld op Dodona en opent de browser een extra tab/venster met een bevestiging die aangeeft of het afmelden ook bij je externe onderwijs- of onderzoeksinstelling geslaagd is.
 
 .. _landingspagina:
 
@@ -136,7 +136,7 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 
 .. tip::
 
-    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op **Dodona** te drukken.
+    Vanop elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
 
 
 .. _gebruikersprofiel:
@@ -145,7 +145,7 @@ Als je afgemeld bent dan verandert je :ref:`startpagina <startpagina>` terug in 
 Bijwerken van je gebruikersprofiel
 ----------------------------------
 
-Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je gebruikersprofiel door te kiezen voor **Mijn profiel** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je gebruikersprofiel door te kiezen voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. TODO: screenshot van gebruikersprofiel met pijl naar knop om gebruikersprofiel bij te werken
 
@@ -181,31 +181,31 @@ Selecteren van een cursus
 
 .. TODO: alternatieve titel: Navigeren naar een cursuspagina
 
-De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop **GA NAAR DEZE CURSUS** te drukken.
+De linkerkant van je :ref:`startpagina <startpagina>` bevat kaartjes voor alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
 .. TODO: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
-Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding **Mijn vakken** ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
+Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` ook een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
 .. _paneel wachten op goedkeuring:
 
-Als je nog :ref:`openstaande registraties <registreren>` voor cursussen hebt die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+Als je nog :ref:`openstaande registraties <registreren>` voor cursussen hebt die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
 .. TODO: hier eventueel nog een screenshot plaatsen van het paneel "Wachten op goedkeuring"
 
 .. _cursusoverzicht:
 
-Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop **MEER CURSUSSEN...** onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop **VERKEN CURSUSSEN** naast de afbeelding op je startpagina.
+Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus geregistreerd bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
 
 .. TODO: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanop elke pagina rechtstreeks toegang tot het cursusoverzicht
 
-.. TODO: vervang de tekst op de knop "MEER CURSUSSEN..." in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
+.. TODO: vervang de tekst op de knop "MEER CURSUSSEN …" in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
 
 .. image:: explore_courses.nl.png
 
-.. TODO: tweede pijl toevoegen naar knop **MEER CURSUSSEN...** aan de rechterkant van de startpagina
+.. TODO: tweede pijl toevoegen naar knop MEER CURSUSSEN … aan de rechterkant van de startpagina
 
-Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop **GA NAAR DEZE CURSUS** te drukken.
+Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
 .. TODO: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
@@ -223,7 +223,7 @@ Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina
 
 .. tip::
 
-    Na selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de :ref:`cursuspagina <cursuspagina>`.
+    Na selectie van een cursus of bij het uitvoeren van een actie binnen een cursus verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de :ref:`cursuspagina <cursuspagina>`.
 
 
 .. _manuele registratie:
@@ -234,9 +234,9 @@ Registreren voor een cursus
 
 Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de cursuspagina een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
-* De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop **REGISTREREN** om je voor de cursus te registreren.
+* De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
 .. image:: register.nl.png
-* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop **REGISTRATIEVERZOEK INDIENEN** om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`.
+* De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kan indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen. Zolang je registratiebezoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap *Je staat al op de wachtlijst.* en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
 * De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kan indienen voor de cursus.
 
 .. TODO: screenshot van cursuspagina met gemodereerde registratie
@@ -245,7 +245,7 @@ Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarv
 .. TODO: tekst "Je staat al op de wachtlijst." vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus."
 .. TODO: eventueel nog aangeven wanneer de oefeningenreeksen zichtbaar zijn op de cursuspagina van een cursus waarvoor je nog niet geregistreerd bent
 
-Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
 
@@ -262,11 +262,11 @@ Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>
 Uitschrijven uit een cursus
 ---------------------------
 
-Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je geregistreerd bent, dan zie je onder de omschrijving van de cursus een knop **UITSCHRIJVEN** waarmee je je kunt uitschrijven uit de cursus.
+Als je navigeert naar de :ref:`cursuspagina <cursuspagina>` van een cursus waarvoor je geregistreerd bent, dan zie je onder de omschrijving van de cursus een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
 .. TODO: screenshot van cursuspagina met pijl naar de knop UITSCHRIJVEN
 
-Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder **Mijn vakken** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel **Wachten op goedkeuring** in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
 .. TODO: nagaan of je kunt uitschrijven uit een cursus waarvoor je nog op de wachtlijst staat; indien niet, dan moet de laatste zin uit de vorige paragraaf weg
 
@@ -296,15 +296,15 @@ Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>`
 
 Mogelijke weergaven van je status voor het verstrijken van de deadline of als er geen deadline is ingesteld:
 
-+--------------------------+----------+---------------------------------------+
-| status                   | icoontje | weergegeven als je                    |
-+--------------------------+----------+---------------------------------------+
-| **geen oplossing**       |          | geen oplossingen hebt ingediend       |
-|                          |          | (voor de deadline)                    |
-+--------------------------+----------+---------------------------------------+
-| status van laatst        |          | minstens één oplossing hebt ingediend |
-| ingediende oplossing     |          | (voor de deadline)                    |
-+--------------------------+----------+---------------------------------------+
++-----------------------------+----------+---------------------------------------+
+| status                      | icoontje | weergegeven als je                    |
++-----------------------------+----------+---------------------------------------+
+| :guilabel:`geen oplossing`  |          | geen oplossingen hebt ingediend       |
+|                             |          | (voor de deadline)                    |
++-----------------------------+----------+---------------------------------------+
+| status van laatst           |          | minstens één oplossing hebt ingediend |
+| ingediende oplossing        |          | (voor de deadline)                    |
++-----------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
 
@@ -312,17 +312,17 @@ Mogelijke weergaven van je status voor het verstrijken van de deadline of als er
 
 Mogelijke weergaven van je status nadat de deadline verstreken is:
 
-+--------------------------+----------+---------------------------------------+
-| status                   | icoontje | weergegeven als je                    |
-+--------------------------+----------+---------------------------------------+
-| **correct**              |          | laatst ingediende oplossing           |
-| (groen)                  |          | voor de deadline correct is           |
-+--------------------------+----------+---------------------------------------+
-| **deadline gemist**      |          | geen oplossingen hebt ingediend       |
-| (rood)                   |          | voor de deadline of als je laatst     |
-|                          |          | ingediende oplossing voor de deadline |
-|                          |          | niet correct                          |
-+--------------------------+----------+---------------------------------------+
++-----------------------------+----------+---------------------------------------+
+| status                      | icoontje | weergegeven als je                    |
++-----------------------------+----------+---------------------------------------+
+| :guilabel:`correct`         |          | laatst ingediende oplossing           |
+| (groen)                     |          | voor de deadline correct is           |
++-----------------------------+----------+---------------------------------------+
+| :guilabel:`deadline gemist` |          | geen oplossingen hebt ingediend       |
+| (rood)                      |          | voor de deadline of als je laatst     |
+|                             |          | ingediende oplossing voor de deadline |
+|                             |          | niet correct                          |
++-----------------------------+----------+---------------------------------------+
 
 .. TODO: iconen toevoegen die corresponderen met elke status
 
@@ -351,7 +351,7 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
-Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst **RECENTE OEFENINGEN** met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
 .. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
@@ -365,7 +365,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 
 .. tip::
 
-    Na :ref:`selectie van een oefening <oefening selecteren>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast **Dodona** aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening selecteren>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
+    Na :ref:`selectie van een oefening <oefening selecteren>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening selecteren>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
 .. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
@@ -381,7 +381,7 @@ Bovenaan een :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam
 
 .. _code editor:
 
-Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina <oefeningpagina>` staat een tweede paneel waarmee je een oplossing kan indienen voor de oefening. Druk hiervoor op de tab **Indienen** als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
+Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina <oefeningpagina>` staat een tweede paneel waarmee je een oplossing kan indienen voor de oefening. Druk hiervoor op de tab :guilabel:`Indienen` als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
 
 .. image:: exercise_before_submit.nl.png
 
@@ -395,13 +395,13 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
 .. TODO: na indienen opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
 
-Na het indienen van een oplossing wordt automatisch de tab **Oplossingen** geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
+Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
 .. _wachtlijst ingediende oplossingen:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status **In de wachtlijst...**. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status **Aan het uitvoeren...**.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtlijst geplaatst. Zolang een oplossing in de wachtlijst staat heeft ze de status :guilabel:`In de wachtlijst …`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren …`.
 
-Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale status en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab **Feedback**.
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale status en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. tip::
 
@@ -415,8 +415,8 @@ Selecteren van een oplossing
 
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
-* Kies **Mijn oplossingen** in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` voor een overzicht van al je ingediende oplossingen.
-* Selecteer de tab **Oplossingen** op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefeningpagina :ref:`geselecteerd hebt binnen een cursus <oefening selecteren>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+* Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` voor een overzicht van al je ingediende oplossingen.
+* Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefeningpagina :ref:`geselecteerd hebt binnen een cursus <oefening selecteren>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
 .. TODO: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
@@ -425,26 +425,26 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 
 In het overzicht worden de ingediende oplossingen altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de status van de oplossing.
 
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| status                          | icoontje | betekenis                                                               |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Correct**                     |          | oplossing slaagt voor alle testen                                       |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Fout**                        |          | logische fout gevonden in minstens één test                             |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Uitvoeringsfout**             |          | onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Timeout**                     |          | tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het   |
-|                                 |          | testen; kan wijzen op slechte performantie of een oneindige lus         |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Geheugenlimiet overschreden** |          | geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens    |
-|                                 |          | het uitvoeren van minstens één test                                     |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Compilatiefout**              |          | ingediende oplossing bevat grammaticale fouten                          |
-+---------------------------------+----------+-------------------------------------------------------------------------+
-| **Interne fout**                |          | oorzaak van fout tijdens het beoordelen ligt bij falen van een          |
-|                                 |          | component van het platform en niet bij de ingediende oplossing          |
-+---------------------------------+----------+-------------------------------------------------------------------------+
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| status                                  | icoontje | betekenis                                                               |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Correct`                     |          | oplossing slaagt voor alle testen                                       |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Fout`                        |          | logische fout gevonden in minstens één test                             |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Uitvoeringsfout`             |          | onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Timeout`                     |          | tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het   |
+|                                         |          | testen; kan wijzen op slechte performantie of een oneindige lus         |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Geheugenlimiet overschreden` |          | geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens    |
+|                                         |          | het uitvoeren van minstens één test                                     |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Compilatiefout`              |          | ingediende oplossing bevat grammaticale fouten                          |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
+| :guilabel:`Interne fout`                |          | oorzaak van fout tijdens het beoordelen ligt bij falen van een          |
+|                                         |          | component van het platform en niet bij de ingediende oplossing          |
++-----------------------------------------+----------+-------------------------------------------------------------------------+
 
 .. TODO: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
@@ -486,10 +486,10 @@ TODO
 Contact opnemen
 ---------------
 
-Zit je bij het werken met of het verkennen van Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op **Contact** te drukken.
+Zit je bij het werken met of het verkennen van Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
 
 .. TODO: screenshot van contactpagina toevoegen
 
-Vul de gegevens in het paneel **Contacteer ons** aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
+Vul de gegevens in het paneel :guilabel:`Contacteer ons` aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
 
 .. TODO: voor aangemelde gebruikers zouden de naam en het emailadres al automatisch kunnen ingevuld worden op de contactpagina op basis van de gegevens uit het gebruikersprofiel
