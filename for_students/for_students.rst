@@ -358,7 +358,6 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 
 .. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
-
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
