@@ -215,7 +215,7 @@ Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academ
 
 Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
-.. TODO: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
+.. TODO:feature-discuss: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
 .. image:: courses.nl.png
 
@@ -275,17 +275,15 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
 .. note::
 
-    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de omschrijving en de oefeningenreeksen van de cursus zien als je voor de cursus geregistreerd bent of als de cursus werkt met open registratie.
+    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de omschrijving en de oefeningenreeksen zien als je voor de cursus :ref:`geregistreerd <registreren>` bent of als de cursus werkt met :ref:`open registratie <open registratie>`.
 
-Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van die cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: homepage_after_registration.nl.png
 
-.. TODO: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
-
-.. TODO: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
-
-.. TODO: behandeling van deadlines moet ergens ander staan.
+.. TODO:feature-discuss: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
+.. TODO:feature-discuss: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
+.. TODO:feature-discuss: behandeling van deadlines moet ergens ander staan.
 .. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
 
 .. _registratielink:
@@ -303,8 +301,6 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd
 .. image:: unregister.nl.png
 
 Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
-
-.. TODO: nagaan of je kunt uitschrijven uit een cursus waarvoor je nog op de wachtlijst staat; indien niet, dan moet de laatste zin uit de vorige paragraaf weg en moet ook de eerste zin van de sectie bijgewerkt worden
 
 
 .. _oefening:
@@ -338,35 +334,33 @@ Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>`
 
 Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
-+-----------------------------+----------+---------------------------------------+
-| status                      | icoontje | weergegeven als je                    |
-+-----------------------------+----------+---------------------------------------+
-| :guilabel:`geen oplossing`  |          | geen oplossingen hebt ingediend       |
-|                             |          | (vóór de deadline)                    |
-+-----------------------------+----------+---------------------------------------+
-| status van laatst           |          | minstens één oplossing hebt ingediend |
-| ingediende oplossing        |          | (vóór de deadline)                    |
-+-----------------------------+----------+---------------------------------------+
++----------------------------------+----------+---------------------------------------+
+| status                           | icoontje | weergegeven als je                    |
++----------------------------------+----------+---------------------------------------+
+| :guilabel:`geen oplossing`       |          | geen oplossingen hebt ingediend       |
+|                                  |          | (vóór de deadline)                    |
++----------------------------------+----------+---------------------------------------+
+| :ref:`status <oplossing status>` |          | minstens één oplossing hebt ingediend |
+| van laatst ingediende oplossing  |          | (vóór de deadline)                    |
++----------------------------------+----------+---------------------------------------+
 
-.. TODO: iconen toevoegen die corresponderen met elke status
-
-.. TODO: maak verwijzing naar overzicht van mogelijke statussen van een ingediende oplossing
+.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
 Mogelijke weergaven van je status nadat de deadline verstreken is:
 
-+-----------------------------+----------+---------------------------------------+
-| status                      | icoontje | weergegeven als je                    |
-+-----------------------------+----------+---------------------------------------+
-| :guilabel:`correct`         |          | laatst ingediende oplossing           |
-| (groen)                     |          | vóór de deadline correct is           |
-+-----------------------------+----------+---------------------------------------+
-| :guilabel:`deadline gemist` |          | geen oplossingen hebt ingediend       |
-| (rood)                      |          | vóór de deadline of als je laatst     |
-|                             |          | ingediende oplossing vóór de deadline |
-|                             |          | niet correct is                       |
-+-----------------------------+----------+---------------------------------------+
++----------------------------------+----------+---------------------------------------+
+| status                           | icoontje | weergegeven als je                    |
++----------------------------------+----------+---------------------------------------+
+| :guilabel:`correct`              |          | laatst ingediende oplossing           |
+| (groen)                          |          | vóór de deadline correct is           |
++----------------------------------+----------+---------------------------------------+
+| :guilabel:`deadline gemist`      |          | geen oplossingen hebt ingediend       |
+| (rood)                           |          | vóór de deadline of als je laatst     |
+|                                  |          | ingediende oplossing vóór de deadline |
+|                                  |          | niet correct is                       |
++----------------------------------+----------+---------------------------------------+
 
-.. TODO: iconen toevoegen die corresponderen met elke status
+.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
 .. _waarschuwingssymbool:
 
@@ -378,26 +372,30 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
+.. TODO:screenshot-missing: screenshot van oefeningenreeks met oefening die een waarschuwingssymbool naast de status heeft staan
+
 .. image:: deadline_series_warning.nl.png
 
-.. TODO: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
+.. TODO:feature-discuss: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
 Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken.
 
-.. TODO: PDF version does not start a new paragraph at this position (bug ?)
-
-.. TODO: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
+.. TODO:feature-missing: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
 .. TODO:feature-discuss: bespreek mogelijkheid om oplossingen van een oefeningenreeks te downloaden
 .. TODO:feature-discuss: bespreek mogelijkheid om te navigeren naar de overzichtspagina van een oefeningenreeks
 .. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
+
+.. TODO:PDF-bug: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
 Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
-.. TODO: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
+.. TODO:feature-discuss: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
+
+.. TODO:PDF-bug: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
 .. _oefeningpagina:
 
@@ -405,17 +403,16 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** va
 
 .. image:: exercise_start.nl.png
 
-.. TODO:screenshot: bijschrift toevoegen aan figuur met link naar oefening op Dodona
+.. TODO:screenshot-update: bijschrift toevoegen aan figuur met link naar oefening op Dodona
 
 .. TODO:feature-discuss: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
-
-.. TODO: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
+.. TODO:feature-discuss: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
 .. tip::
 
     Na :ref:`selectie van een oefening <oefening>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
-.. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
+.. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
 
 .. _oplossing indienen:
@@ -441,8 +438,6 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze knippen en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden generiek in te zetten voor het aanpakken andere programmeeropdrachten dan de oefeningen uit Dodona.
 
-.. TODO: na indienen opvolgen van status in lijst van ingediende oplossingen, en daarna opent de tab feedback
-
 Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
 .. _wachtrij ingediende oplossingen:
@@ -467,13 +462,12 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 * Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
-.. TODO: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
-
-.. TODO: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
+.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
+.. TODO:feature-missing: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
 
 Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de gedetailleerde :ref:`feedback <feedback>` te zien die tijdens bij het beoordelen van de oplossing werd gegenereerd.
 
-.. TODO: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt
+.. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt
 
 .. _feedback:
 
@@ -521,7 +515,7 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 |                                         |          | component van het platform en niet bij de ingediende oplossing          |
 +-----------------------------------------+----------+-------------------------------------------------------------------------+
 
-.. TODO: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
+.. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
@@ -560,4 +554,4 @@ Zit je bij het werken met of het verkennen van Dodona met vragen over hoe je het
 
 Vul de gegevens in het paneel :guilabel:`Contacteer ons` aan en druk daarna op de verzendknop in de rechterbovenhoek van het paneel.
 
-.. TODO: voor aangemelde gebruikers zouden de naam en het emailadres al automatisch kunnen ingevuld worden op de contactpagina op basis van de gegevens uit het gebruikersprofiel
+.. TODO:feature-update: voor aangemelde gebruikers zouden de naam en het emailadres al automatisch kunnen ingevuld worden op de contactpagina op basis van de gegevens uit het gebruikersprofiel
