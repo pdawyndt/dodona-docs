@@ -292,6 +292,12 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
 
+.. belangrijk::
+
+    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je steeds een :ref:`oplossing indient <oplossing indienen>` binnen een bepaalde cursus.
+
+    Dezelfde oefening kan voorkomen in meerdere oefeningenreeksen van een cursus. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan voor alle oefeningenreeksen hetzelfde omdat ze bepaald worden per cursus en niet per oefeningenreeks.
+
 .. _oefeningenreeks statistieken:
 
 De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal studenten en cursusbeheerders dat in de cursus al minstens één :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening en :math:`c` voor het aantal studenten en cursusbeheerders dat in de cursus al minstens één *correcte* :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening.
