@@ -405,26 +405,27 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** va
 
 .. TODO:screenshot-update: bijschrift toevoegen aan figuur met link naar oefening op Dodona
 
-.. TODO:feature-discuss: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
-.. TODO:feature-discuss: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
-
 .. tip::
 
     Na :ref:`selectie van een oefening <oefening>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
 .. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
+Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
+.. tip::
+
+    Als je een oefeningpagina afdrukt dan bevat de afgedrukte versie
+
+.. TODO:feature-discuss: tip die aangeeft dat er voorzieningen getroffen werden voor het afdrukken van een oefening (print CCS); er kunnen ook delen van de omschrijving weggelaten worden die niet afgedrukt worden, bijvoorbeeld de epiloog van een pagina of alternatieve content (bijvoorbeeld video vervangen door afbeelding)
+.. TODO:feature-discuss: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
+
+
+.. _code editor:
 .. _oplossing indienen:
 
 Indienen van een oplossing
 --------------------------
-
-Als je :ref:`navigeert naar een oefening <oefening>` dan staat bovenaan de :ref:`oefeningpagina <oefeningpagina>` een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
-
-.. image:: exercise_start.nl.png
-
-.. _code editor:
 
 Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina <oefeningpagina>` staat een tweede paneel waarmee je een oplossing kan indienen voor de oefening. Druk hiervoor op de tab :guilabel:`Indienen` als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de afspeelknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
 
@@ -515,8 +516,42 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
 |                                         |          | component van het platform en niet bij de ingediende oplossing          |
 +-----------------------------------------+----------+-------------------------------------------------------------------------+
 
-.. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
+.. list-table::
+  :header-rows: 1
 
+  * - status
+    - icoontje
+    - betekenis
+
+  * - :guilabel:`Correct`
+    -
+    - oplossing slaagt voor alle testen
+
+  * - :guilabel:`Fout`
+    -
+    - logische fout gevonden in minstens één test
+
+  * - :guilabel:`Uitvoeringsfout`
+    -
+    - onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test
+
+  * - :guilabel:`Timeout`
+    -
+    - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
+
+  * - :guilabel:`Geheugenlimiet overschreden`
+    -
+    - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
+
+  * - :guilabel:`Compilatiefout`
+    -
+    - ingediende oplossing bevat grammaticale fouten
+
+  * - :guilabel:`Interne fout`
+    -
+    - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
+
+.. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
