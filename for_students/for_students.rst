@@ -149,7 +149,7 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 Gebruikersprofiel
 -----------------
 
-Navigeer naar je **profielpagina** door te kiezen voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om de gebruikerervaring te personaliseren.
+Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om de gebruikerervaring te personaliseren.
 
 .. image:: edit_profile.nl.png
 
