@@ -524,7 +524,7 @@ Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
     - betekenis
 
   * - :guilabel:`Correct`
-    -
+    - .. image:: https://www.iconspng.com/images/primary-ok/primary-ok.jpg
     - oplossing slaagt voor alle testen
 
   * - :guilabel:`Fout`
