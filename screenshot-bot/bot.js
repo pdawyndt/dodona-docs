@@ -145,6 +145,12 @@ function waitForInput() {
   await wizard.navigate('https://dodona.ugent.be/en/sign_in');
   await wizard.screenshot('../for_students/institution.en.png', []);
 
+  await wizard.navigate('https://dodona.ugent.be/nl/contact/');
+  await wizard.screenshot('../for_students/contact.nl.png');
+
+  await wizard.navigate('https://dodona.ugent.be/en/contact/');
+  await wizard.screenshot('../for_students/contact.en.png');
+
   await wizard.navigate('http://localhost:3000/nl/users/3/impersonate');
 
   await wizard.screenshot('../for_students/homepage.nl.png');
@@ -334,12 +340,6 @@ function waitForInput() {
 
   await wizard.navigate('http://localhost:3000/en/courses/1/');
   await wizard.screenshot('../for_students/deadline_series_warning.en.png');
-
-  await wizard.navigate('http://localhost:3000/nl/contact/');
-  await wizard.screenshot('../for_students/contact.nl.png');
-
-  await wizard.navigate('http://localhost:3000/en/contact/');
-  await wizard.screenshot('../for_students/contact.en.png');
 
   await wizard.close();
 })();
