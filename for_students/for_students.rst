@@ -143,19 +143,21 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 .. image:: navigate_to_homepage.nl.png
 
 
+.. _profielpagina:
 .. _gebruikersprofiel:
-.. _gebruikersprofiel instellen:
 
 Bijwerken van je gebruikersprofiel
 ----------------------------------
 
-Je **gebruikersprofiel** bevat enkele **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die door Dodona gebruikt worden. Navigeer naar je gebruikersprofiel door te kiezen voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Navigeer naar je **profielpagina** door te kiezen voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om de gebruikerervaring te personaliseren.
 
 .. image:: edit_profile.nl.png
 
 .. TODO:feature-update: studentennummer is UGent-specifiek en hoort niet langer thuis in het gebruikersprofiel na de verruiming naar andere identity providers
 
-Druk op de editeerknop in de rechterbovenhoek van het paneel met je persoonlijke gegevens en voorkeuren om je gebruikersprofiel bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+.. _gebruikersprofiel bijwerken:
+
+Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
 
 .. _tijdzone instellen:
 
@@ -328,7 +330,7 @@ Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daar
 
 .. _oefeningenreeks statistieken:
 
-De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal studenten en cursusbeheerders dat in de cursus al minstens één :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening en :math:`c` voor het aantal studenten en cursusbeheerders dat in de cursus al minstens één *correcte* :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening.
+De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening.
 
 .. _oefeningenreeks status:
 
@@ -485,6 +487,8 @@ Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing h
 
 Navigeren naar een oplossing
 ----------------------------
+
+.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
