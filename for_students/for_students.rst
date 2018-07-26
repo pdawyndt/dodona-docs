@@ -3,7 +3,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus selecteren>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening selecteren>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO: overweeg om de term module te gebruiken in plaats van cursus
 
@@ -176,9 +176,9 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 .. TODO: omschrijving van API token toevoegen van zodra deze feature beschikbaar wordt
 
 
-.. _cursus selecteren:
+.. _cursus:
 
-Selecteren van een cursus
+Navigeren naar een cursus
 -------------------------
 
 .. TODO: alternatieve titel: Navigeren naar een cursuspagina
@@ -221,7 +221,7 @@ Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cu
 
 .. _cursuspagina:
 
-Na :ref:`selectie van een cursus <cursus selecteren>` krijg je de **cursuspagina** van de cursus te zien.
+Na :ref:`selectie van een cursus <cursus>` krijg je de **cursuspagina** van de cursus te zien.
 
 .. image:: course.nl.png
 
@@ -260,7 +260,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf een :ref:`cursus te selecteren <cursus selecteren>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus, en hoef je de cursus dus niet meer zelf te selecteren. De registratieprocedure zelf is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
+Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus, en hoef je de cursus dus niet meer naar te cursus te navigeren. De registratieprocedure zelf is net zoals bij :ref:`manuale registratie <manuale registratie>` afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
 
 
 .. _uitschrijven:
@@ -277,9 +277,9 @@ Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`star
 .. TODO: nagaan of je kunt uitschrijven uit een cursus waarvoor je nog op de wachtlijst staat; indien niet, dan moet de laatste zin uit de vorige paragraaf weg
 
 
-.. _oefening selecteren:
+.. _oefening:
 
-Selecteren van een oefening
+Navigeren naar een oefening
 ---------------------------
 
 .. _oefeningenreeks:
@@ -336,9 +336,9 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. important::
 
-    Als je **voor het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je status voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing selecteren>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Als je **voor het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je status voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
-    Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
@@ -363,7 +363,7 @@ Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` b
 
 .. _oefeningpagina:
 
-Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefeningpagina** van de oefening te zien.
+Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** van de oefening te zien.
 
 .. image:: exercise_start.nl.png
 
@@ -371,7 +371,7 @@ Na :ref:`selectie van een oefening <oefening selecteren>` krijg je de **oefening
 
 .. tip::
 
-    Na :ref:`selectie van een oefening <oefening selecteren>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening selecteren>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
+    Na :ref:`selectie van een oefening <oefening>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
 .. TODO: eventueel in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
@@ -414,15 +414,15 @@ Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing h
     Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback <feedback>` die Dodona aanlevert om je oplossing steeds verder te verfijnen.
 
 
-.. _oplossing selecteren:
+.. _oplossing:
 
-Selecteren van een oplossing
+Navigeren naar een oplossing
 ----------------------------
 
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
 * Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` voor een overzicht van al je ingediende oplossingen.
-* Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefeningpagina :ref:`geselecteerd hebt binnen een cursus <oefening selecteren>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+* Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
 .. TODO: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
