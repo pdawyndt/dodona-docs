@@ -2,6 +2,16 @@ const puppeteer = require('puppeteer');
 const Jimp = require('jimp');
 const process = require('process');
 
+const LANGUAGES = ['nl', 'en'];
+const TRANSLATIONS = {
+  'nl': {
+    'MY_COURSES': 'Mijn vakken',
+  },
+  'en': {
+    'MY_COURSES': 'My courses',
+  },
+};
+
 function Image(path) {
   this.path = path;
   this.load = async function () {
@@ -60,6 +70,7 @@ function Wizard() {
     options = Object.assign({
       pointToSelectors: [],
       pointPredicate: () => true,
+      pointPredicateArg: null,
       cropSelector: null,
       cropPredicate: () => true,
     }, options);
@@ -68,7 +79,7 @@ function Wizard() {
     for (const selector of options.pointToSelectors) {
       let used = false;
       for (const element of await this.page.$$(selector)) {
-        if (await this.page.evaluate(options.pointPredicate, element)) {
+        if (await this.page.evaluate(options.pointPredicate, element, options.pointPredicateArg)) {
           const boxModel = await element.boxModel();
           // Make sure element is visible
           if (boxModel !== null) {
@@ -145,6 +156,10 @@ function waitForInput() {
   }));
 }
 
+async function wait(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+
 (async () => {
 
   console.log('Make sure Dodona is running locally on port 3000 with a clean database\n' +
@@ -158,194 +173,146 @@ function waitForInput() {
   });
   wizard.blockElement('footer.footer');
 
-  await wizard.navigate('https://dodona.ugent.be/nl');
-  await wizard.screenshot('../for_students/landingpage.nl.png');
-  await wizard.screenshot('../for_students/login.nl.png', { pointToSelectors: ['a[href="/nl/sign_in/"]'] });
+  console.log('signed out pages');
 
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
-  await wizard.screenshot('../for_students/choose_language.nl.png', { pointToSelectors: ['ul.dropdown-menu'] });
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`https://dodona.ugent.be/${language}`);
+    await wizard.screenshot(`../for_students/landingpage.${language}.png`);
+    await wizard.screenshot(`../for_students/login.${language}.png`, { pointToSelectors: [`a[href="/${language}/sign_in/"]`] });
 
-  await wizard.navigate('https://dodona.ugent.be/nl/sign_in');
-  await wizard.screenshot('../for_students/institution.nl.png');
+    await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
+    await wait(20);
+    await wizard.screenshot(`../for_students/choose_language.${language}.png`, { pointToSelectors: ['ul.dropdown-menu'] });
 
-  await wizard.navigate('https://dodona.ugent.be/en');
-  await wizard.screenshot('../for_students/landingpage.en.png');
-  await wizard.screenshot('../for_students/login.en.png', { pointToSelectors: ['a[href="/en/sign_in/"]'] });
+    await wizard.navigate(`https://dodona.ugent.be/${language}/sign_in`);
+    await wizard.screenshot(`../for_students/institution.${language}.png`);
 
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
-  await wizard.screenshot('../for_students/choose_language.en.png', { pointToSelectors: ['ul.dropdown-menu'] });
-
-  await wizard.navigate('https://dodona.ugent.be/en/sign_in');
-  await wizard.screenshot('../for_students/institution.en.png');
-
-  await wizard.navigate('https://dodona.ugent.be/nl/contact/');
-  await wizard.screenshot('../for_students/contact.nl.png');
-
-  await wizard.navigate('https://dodona.ugent.be/en/contact/');
-  await wizard.screenshot('../for_students/contact.en.png');
+    await wizard.navigate(`https://dodona.ugent.be/${language}/contact/`);
+    await wizard.screenshot(`../for_students/contact.${language}.png`);
+  }
 
   await wizard.navigate('http://localhost:3000/nl/users/3/impersonate');
 
-  await wizard.screenshot('../for_students/homepage.nl.png');
+  console.log('homepage');
 
-  await wizard.screenshot('../for_students/navigate_to_homepage.nl.png', { pointToSelectors: ['a.navbar-brand'] });
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/?locale=${language}`);
 
-  await wizard.screenshot('../for_students/explore_courses.nl.png', { pointToSelectors: ['a[href$="/courses/"]'] });
+    await wizard.screenshot(`../for_students/homepage.${language}.png`);
 
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot('../for_students/user_menu.nl.png', {
-    pointToSelectors: ['li.dropdown ul.dropdown-menu'],
-    pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
-  });
+    await wizard.screenshot(`../for_students/navigate_to_homepage.${language}.png`, {
+      pointToSelectors: ['a.navbar-brand'],
+    });
 
-  await wizard.screenshot('../for_students/sign_out.nl.png', { pointToSelectors: ['a[href*="/users/sign_out/"]'] });
+    await wizard.screenshot(`../for_students/explore_courses.${language}.png`, {
+      pointToSelectors: ['a[href$="/courses/"]'],
+    });
 
-  await wizard.navigate('http://localhost:3000/?locale=en');
+    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+    await wizard.screenshot(`../for_students/user_menu.${language}.png`, {
+      pointToSelectors: ['li.dropdown ul.dropdown-menu'],
+      pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
+    });
 
-  await wizard.screenshot('../for_students/homepage.en.png');
+    await wizard.screenshot(`../for_students/sign_out.${language}.png`, {
+      pointToSelectors: ['a[href*="/users/sign_out/"]'],
+    });
 
-  await wizard.screenshot('../for_students/navigate_to_homepage.en.png', { pointToSelectors: ['a.navbar-brand'] });
+  }
 
-  await wizard.screenshot('../for_students/explore_courses.en.png', { pointToSelectors: ['a[href$="/courses/"]'] });
+  console.log('profile');
 
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot('../for_students/user_menu.en.png', {
-    pointToSelectors: ['li.dropdown ul.dropdown-menu'],
-    pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
-  });
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/users/3/`);
+    await wizard.screenshot(`../for_students/edit_profile.${language}.png`, {
+      pointToSelectors: ['a[href$="/users/3/edit/"]'],
+      pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
+    });
 
-  await wizard.screenshot('../for_students/sign_out.en.png', { pointToSelectors: ['a[href*="/users/sign_out/"]'] });
-
-  await wizard.navigate('http://localhost:3000/nl/users/3/');
-  await wizard.screenshot('../for_students/edit_profile.nl.png', {
-    pointToSelectors: ['a[href$="/users/3/edit/"]'],
-    pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
-  });
-
-  await wizard.navigate('http://localhost:3000/en/users/3/');
-  await wizard.screenshot('../for_students/edit_profile.en.png', {
-    pointToSelectors: ['a[href$="/users/3/edit/"]'],
-    pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
-  });
-
-  await wizard.navigate('http://localhost:3000/nl/users/3/edit/');
-  await wizard.screenshot('../for_students/edit_timezone.nl.png', { pointToSelectors: ['select#user_time_zone'] });
-
-  await wizard.navigate('http://localhost:3000/en/users/3/edit/');
-  await wizard.screenshot('../for_students/edit_timezone.en.png', { pointToSelectors: ['select#user_time_zone'] });
+    await wizard.navigate(`http://localhost:3000/${language}/users/3/edit/`);
+    await wizard.screenshot(`../for_students/edit_timezone.${language}.png`, { pointToSelectors: ['select#user_time_zone'] });
+  }
 
   await wizard.page.evaluate(() => {
     document.querySelector('select#user_time_zone').value = 'Seoul';
   });
 
   await wizard.click('button.btn-primary[form*="edit_user_"]');
-
-  await new Promise(resolve => setTimeout(resolve, 1000));
-
+  await wait(500);
   await wizard.navigate('http://localhost:3000/?locale=nl');
-  await wizard.screenshot('../for_students/wrong_timezone.nl.png');
 
-  await wizard.navigate('http://localhost:3000/?locale=en');
-  await wizard.screenshot('../for_students/wrong_timezone.en.png');
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/?locale=${language}`);
+    await wizard.screenshot(`../for_students/wrong_timezone.${language}.png`);
+  }
 
-  await wizard.navigate('http://localhost:3000/en/users/3/edit/');
+  await wizard.navigate(`http://localhost:3000/nl/users/3/edit/`);
   await wizard.page.evaluate(() => {
     document.querySelector('select#user_time_zone').value = 'Brussels';
   });
   await wizard.click('button.btn-primary[form*="edit_user_"]');
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await wait(500);
+  await wizard.navigate('http://localhost:3000/?locale=nl');
 
-  await wizard.navigate('http://localhost:3000/nl/courses/');
-  await wizard.screenshot('../for_students/courses.nl.png');
+  console.log('courses');
 
-  await wizard.navigate('http://localhost:3000/en/courses/');
-  await wizard.screenshot('../for_students/courses.en.png');
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/courses/`);
+    await wizard.screenshot(`../for_students/courses.${language}.png`);
 
-  await wizard.navigate('http://localhost:3000/nl/courses/1/');
-  await wizard.screenshot('../for_students/course.nl.png');
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
+    await wizard.screenshot(`../for_students/course.${language}.png`);
 
-  await wizard.screenshot('../for_students/register.nl.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/1/subscribe/"]'),
-  });
-
-  await wizard.navigate('http://localhost:3000/en/courses/1/');
-  await wizard.screenshot('../for_students/course.en.png');
-
-  await wizard.screenshot('../for_students/register.en.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/1/subscribe/"]'),
-  });
+    await wizard.screenshot(`../for_students/register.${language}.png`, {
+      cropSelector: ['div.col-sm-6.col-xs-12'],
+      cropPredicate: elem => !!elem.querySelector('a[href$="/courses/1/subscribe/"]'),
+    });
+  }
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/subscribe');
 
-  await wizard.navigate('http://localhost:3000/nl/courses/1/');
-  await wizard.screenshot('../for_students/unregister.nl.png', {
-    pointToSelectors: ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]'],
-  });
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
+    await wizard.screenshot(`../for_students/unregister.${language}.png`, {
+      pointToSelectors: ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]'],
+    });
 
-  await wizard.navigate('http://localhost:3000/en/courses/1/');
-  await wizard.screenshot('../for_students/unregister.en.png', {
-    pointToSelectors: ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]'],
-  });
-
-  await wizard.navigate('http://localhost:3000/nl/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.nl.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/2/subscribe/"]'),
-  });
-
-  await wizard.navigate('http://localhost:3000/en/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.en.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/2/subscribe/"]'),
-  });
+    await wizard.navigate(`http://localhost:3000/${language}/courses/2/`);
+    await wizard.screenshot(`../for_students/moderated_register.${language}.png`, {
+      cropSelector: ['div.col-sm-6.col-xs-12'],
+      cropPredicate: elem => !!elem.querySelector('a[href$="/courses/2/subscribe/"]'),
+    });
+  }
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/subscribe');
 
-  await wizard.navigate('http://localhost:3000/nl/courses/2/');
-  await wizard.screenshot('../for_students/moderated_waiting.nl.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
-  });
+  for (const language of LANGUAGES) {
 
-  await wizard.navigate('http://localhost:3000/en/courses/2/');
-  await wizard.screenshot('../for_students/moderated_waiting.en.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
-  });
+    await wizard.navigate(`http://localhost:3000/${language}/courses/2/`);
+    await wizard.screenshot(`../for_students/moderated_waiting.${language}.png`, {
+      cropSelector: ['div.col-sm-6.col-xs-12'],
+      cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+    });
 
-  await wizard.navigate('http://localhost:3000/nl/courses/4/');
-  await wizard.screenshot('../for_students/closed_registration.nl.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
-  });
+    await wizard.navigate(`http://localhost:3000/${language}/courses/4/`);
+    await wizard.screenshot(`../for_students/closed_registration.${language}.png`, {
+      cropSelector: ['div.col-sm-6.col-xs-12'],
+      cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+    });
 
-  await wizard.navigate('http://localhost:3000/en/courses/4/');
-  await wizard.screenshot('../for_students/closed_registration.en.png', {
-    cropSelector: ['div.col-sm-6.col-xs-12'],
-    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
-  });
+    await wizard.navigate(`http://localhost:3000/?locale=${language}`);
+    await wizard.screenshot(`../for_students/homepage_after_registration.${language}.png`);
 
-  await wizard.navigate('http://localhost:3000/?locale=nl');
-  await wizard.screenshot('../for_students/homepage_after_registration.nl.png');
+    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    await wizard.screenshot(`../for_students/my_courses.${language}.png`, {
+      pointToSelectors: ['li.dropdown-header'],
+      pointPredicate: (elem, content) => elem.textContent === content,
+      pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
+    });
+  }
 
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  await wizard.screenshot('../for_students/my_courses.nl.png', {
-    pointToSelectors: ['li.dropdown-header'],
-    pointPredicate: elem => elem.textContent === 'Mijn vakken',
-  });
-
-  await wizard.navigate('http://localhost:3000/?locale=en');
-  await wizard.screenshot('../for_students/homepage_after_registration.en.png');
-
-  await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await new Promise(resolve => setTimeout(resolve, 1000));
-  await wizard.screenshot('../for_students/my_courses.en.png', {
-    pointToSelectors: ['li.dropdown-header'],
-    pointPredicate: elem => elem.textContent === 'My courses',
-  });
+  console.log('exercises');
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
   const exerciseNamesToIDs = await wizard.page.evaluate(() => {
@@ -359,64 +326,63 @@ function waitForInput() {
     return result;
   });
 
-  await wizard.navigate(`http://localhost:3000/nl/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
-  await wizard.screenshot('../for_students/exercise_start.nl.png');
+  let submissions = 0;
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
+    await wizard.screenshot(`../for_students/exercise_start.${language}.png`);
 
-  await wizard.scrollToBottom();
-  await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
-    'for i in range(1, 10):\n' +
-    's += i * int(input())\n');
-  await wizard.press('textarea.ace_text-input', 'Backspace');
-  await wizard.typeIn('textarea.ace_text-input', 'print(s % 11)');
+    await wizard.scrollToBottom();
+    await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
+      'for i in range(1, 10):\n' +
+      's += i * int(input())\n');
+    await wizard.press('textarea.ace_text-input', 'Backspace');
+    await wizard.typeIn('textarea.ace_text-input', 'print(s % 11)');
 
-  await wizard.screenshot('../for_students/exercise_before_submit.nl.png', { pointToSelectors: ['#editor-process-btn'] });
+    await wizard.screenshot(`../for_students/exercise_before_submit.${language}.png`, {
+      pointToSelectors: ['#editor-process-btn'],
+    });
 
-  await wizard.click('#editor-process-btn');
-  await new Promise(resolve => setTimeout(resolve, 20000));
+    await wizard.click('#editor-process-btn');
+    await wait(10000);
+    submissions++;
 
-  await wizard.screenshot('../for_students/exercise_feedback_correct.nl.png');
+    await wizard.screenshot(`../for_students/exercise_feedback_correct_tab.${language}.png`);
+
+    await wizard.screenshot(`../for_students/exercise_submissions_tab.${language}.png`, {
+      pointToSelectors: ['a#exercise-submission-link'],
+    });
+
+    await wizard.navigate(`http://localhost:3000/${language}/submissions/${submissions}/`);
+    await wizard.screenshot(`../for_students/exercise_feedback_correct_page.${language}.png`);
+
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
+    await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
+
+    await wizard.click('#editor-process-btn');
+    await wait(10000);
+    submissions++;
+
+    await wizard.screenshot(`../for_students/exercise_feedback_incorrect_tab.${language}.png`);
+
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
+    await wizard.screenshot(`../for_students/deadline_series.${language}.png`);
+
+    await wizard.navigate(`http://localhost:3000/?locale=${language}`);
+    await wizard.screenshot(`../for_students/course_submissions.${language}.png`, {
+      pointToSelectors: ['a[href*="submissions/?course_id="]'],
+    });
+
+    await wizard.screenshot(`../for_students/exercise_submissions_page.${language}.png`, {
+      pointToSelectors: [`a[href="/${language}/exercises/${exerciseNamesToIDs['Echo']}/submissions/"]`],
+    });
+
+    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+    await wizard.screenshot(`../for_students/all_submissions.${language}.png`, {
+      pointToSelectors: [`a[href="/${language}/submissions/"]`],
+    });
+  }
 
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
-  await wizard.screenshot('../for_students/exercise_start.en.png');
-
-  await wizard.scrollToBottom();
-  await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
-    'for i in range(1, 10):\n' +
-    's += i * int(input())\n');
-  await wizard.press('textarea.ace_text-input', 'Backspace');
-  await wizard.typeIn('textarea.ace_text-input', 'print(s % 11)');
-
-  await wizard.screenshot('../for_students/exercise_before_submit.en.png', { pointToSelectors: ['#editor-process-btn'] });
-
-  await wizard.click('#editor-process-btn');
-  await new Promise(resolve => setTimeout(resolve, 20000));
-
-  await wizard.screenshot('../for_students/exercise_feedback_correct.en.png');
-
-  await wizard.navigate(`http://localhost:3000/nl/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
-  await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
-
-  await wizard.click('#editor-process-btn');
-  await new Promise(resolve => setTimeout(resolve, 20000));
-
-  await wizard.screenshot('../for_students/exercise_feedback_incorrect.nl.png');
-
-  await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
-  await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
-
-  await wizard.click('#editor-process-btn');
-  await new Promise(resolve => setTimeout(resolve, 20000));
-
-  await wizard.screenshot('../for_students/exercise_feedback_incorrect.en.png');
-
-  await wizard.navigate('http://localhost:3000/nl/courses/1/');
-  await wizard.screenshot('../for_students/deadline_series.nl.png');
-
-  await wizard.navigate('http://localhost:3000/en/courses/1/');
-  await wizard.screenshot('../for_students/deadline_series.en.png');
-
-  await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
-  await wizard.screenshot('../for_students/exercise_start.en.png');
 
   await wizard.scrollToBottom();
   await wizard.typeIn('textarea.ace_text-input', 's = 0\n' +
@@ -426,13 +392,12 @@ function waitForInput() {
   await wizard.typeIn('textarea.ace_text-input', 'print(8)');
 
   await wizard.click('#editor-process-btn');
-  await new Promise(resolve => setTimeout(resolve, 20000));
+  await wait(10000);
 
-  await wizard.navigate('http://localhost:3000/nl/courses/1/');
-  await wizard.screenshot('../for_students/deadline_series_warning.nl.png');
-
-  await wizard.navigate('http://localhost:3000/en/courses/1/');
-  await wizard.screenshot('../for_students/deadline_series_warning.en.png');
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
+    await wizard.screenshot(`../for_students/deadline_series_warning.${language}.png`);
+  }
 
   await wizard.navigate('http://localhost:3000/nl/submissions');
   await wizard.page.evaluate(() => {

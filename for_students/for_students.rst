@@ -478,9 +478,7 @@ Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen n
 
 Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
-.. image:: exercise_feedback_correct.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de tab-versie staan
+.. image:: exercise_feedback_correct_tab.nl.png
 
 .. tip::
 
@@ -495,11 +493,20 @@ Navigeren naar een oplossing
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
 * Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je ingediende oplossingen.
+
+  .. image:: all_submissions.nl.png
+
 * Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend.
+
+  .. image:: course_submissions.nl.png
+
 * Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+
+  .. image:: exercise_submissions_tab.nl.png
+
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
-.. TODO:screenshot-missing: screenshots toevoegen van alle bovenstaande gevallen
+  .. image:: exercise_submissions_page.nl.png
 
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-update: vervang
@@ -511,9 +518,7 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 
 Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing gegenereerd werd.
 
-.. image:: exercise_feedback_correct.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
+.. image:: exercise_feedback_correct_page.nl.png
 
 .. _feedbackpagina:
 .. _feedback:
@@ -523,9 +528,7 @@ Feedback
 
 De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
-.. image:: exercise_feedback_correct.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
+.. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
 
@@ -545,7 +548,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     .. note::
 
-    Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
+       Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
 
     .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
 
@@ -653,7 +656,7 @@ Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van 
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
-.. image:: exercise_feedback_correct.nl.png
+.. image:: exercise_feedback_correct_tab.nl.png
 
 In de eerste tabs (dit kunnen er meer dan 1 zijn) kan je de testgevallen zien
 die werden uitgevoerd. In de "Code" tab kan je de code die je hebt ingediend nog
@@ -662,7 +665,7 @@ geven over hoe je je code iets mooier had kunnen schrijven.
 
 Als je code niet correct is zal de feedback er ongeveer als volgt uitzien:
 
-.. image:: exercise_feedback_incorrect.nl.png
+.. image:: exercise_feedback_incorrect_tab.nl.png
 
 Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
 juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
