@@ -374,7 +374,7 @@ function waitForInput() {
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
 
-  await wizard.screenshot('../for_students/exercise_feedback_correct.nl.png');
+  await wizard.screenshot('../for_students/exercise_feedback_correct_tab.nl.png');
 
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
   await wizard.screenshot('../for_students/exercise_start.en.png');
@@ -391,7 +391,13 @@ function waitForInput() {
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
 
-  await wizard.screenshot('../for_students/exercise_feedback_correct.en.png');
+  await wizard.screenshot('../for_students/exercise_feedback_correct_tab.en.png');
+
+  await wizard.navigate('http://localhost:3000/nl/submissions/1/');
+  await wizard.screenshot('../for_students/exercise_feedback_correct_page.nl.png');
+
+  await wizard.navigate('http://localhost:3000/en/submissions/2/');
+  await wizard.screenshot('../for_students/exercise_feedback_correct_page.en.png');
 
   await wizard.navigate(`http://localhost:3000/nl/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
   await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
@@ -399,7 +405,7 @@ function waitForInput() {
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
 
-  await wizard.screenshot('../for_students/exercise_feedback_incorrect.nl.png');
+  await wizard.screenshot('../for_students/exercise_feedback_incorrect_tab.nl.png');
 
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['Echo']}/`);
   await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
@@ -407,7 +413,7 @@ function waitForInput() {
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
 
-  await wizard.screenshot('../for_students/exercise_feedback_incorrect.en.png');
+  await wizard.screenshot('../for_students/exercise_feedback_incorrect_tab.en.png');
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
   await wizard.screenshot('../for_students/deadline_series.nl.png');

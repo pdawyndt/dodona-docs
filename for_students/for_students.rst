@@ -478,9 +478,7 @@ Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen n
 
 Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
-.. image:: exercise_feedback_correct.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de tab-versie staan
+.. image:: exercise_feedback_correct_tab.nl.png
 
 .. tip::
 
@@ -512,7 +510,7 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 
 Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing gegenereerd werd.
 
-.. image:: exercise_feedback_correct.nl.png
+.. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
 
@@ -524,9 +522,7 @@ Feedback
 
 De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
-.. image:: exercise_feedback_correct.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
+.. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
 
@@ -654,7 +650,7 @@ Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van 
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
-.. image:: exercise_feedback_correct.nl.png
+.. image:: exercise_feedback_correct_tab.nl.png
 
 In de eerste tabs (dit kunnen er meer dan 1 zijn) kan je de testgevallen zien
 die werden uitgevoerd. In de "Code" tab kan je de code die je hebt ingediend nog
@@ -663,7 +659,7 @@ geven over hoe je je code iets mooier had kunnen schrijven.
 
 Als je code niet correct is zal de feedback er ongeveer als volgt uitzien:
 
-.. image:: exercise_feedback_incorrect.nl.png
+.. image:: exercise_feedback_incorrect_tab.nl.png
 
 Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
 juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
