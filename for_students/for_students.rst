@@ -26,7 +26,7 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 .. note::
 
-    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact op te nemen met team Dodona <contact opnemen>` als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contact opnemen>` op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
 
 .. _taalmenu:
@@ -48,11 +48,11 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De taal waarin vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, …) worden weergegeven valt volledig onder de controle van het platform. Deze componenten worden altijd weergegeven in de geselecteerde natuurlijke taal.
 
-    De naam en de inhoud van een cursus liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal. De taal van deze componenten valt volledig onder de controle van de lesgever die de cursus heeft opgesteld.
+    De naam en de inhoud van een :ref:`cursus <cursus>` liggen vast. Deze componenten zijn niet afhankelijk van de selectie van de natuurlijke taal. De taal van deze componenten valt volledig onder de controle van de lesgever die de cursus heeft opgesteld.
 
     De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De natuurlijke taal die gebruikt wordt in de :ref:`feedback <feedback>` op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
+    De natuurlijke taal die gebruikt wordt in de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je hebt ingediend voor een oefening is een gedeelde verantwoordelijkheid van de *judge* en de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
 .. TODO:feature-missing: nagaan of cursusinhoud taalafhankelijk kan gemaakt worden
 .. TODO:feature-update: standaardtaal instellen op Engels
@@ -476,13 +476,13 @@ Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossinge
 
 Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een *judge*. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
 
-Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
 .. tip::
 
-    Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback <feedback>` die Dodona aanlevert om je oplossing steeds verder te verfijnen.
+    Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback <feedback>` die de *judge* heeft aangeleverd om je oplossing steeds verder te verfijnen.
 
 
 .. _oplossing:
@@ -516,7 +516,7 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 
 .. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
 
-Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing gegenereerd werd.
+Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback over de oplossing.
 
 .. image:: exercise_feedback_correct_page.nl.png
 
@@ -636,7 +636,7 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 
 .. _oplossing opnieuw indienen:
 
-In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee downloadt je  een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
 .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
 
@@ -652,15 +652,14 @@ Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de 
 
 .. TODO:screenshot-missing: screenshot dat een voorbeeld geeft van i) twee of meer contexten, ii) twee of meer testgevallen en iii) twee of meer testen; de afbeelding hierboven is slechts een placeholder; misschien moeten we de individuele onderdelen van de feedback (tab, context, testgeval, test) ook expliciet aanduiden op de figuur; een bijschrift bij de figuur zal misschien ook wel nodig zijn in dit geval
 
-De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel weergegeven in een lichtgrijze rechthoek. In de rechterbovenhoek van de rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of niet geslaagd (rood kruisje).
+De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel weergegeven binnen een lichtgrijze rechthoek. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of niet geslaagd (rood kruisje).
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
 
-Alle testgevallen van eenzelfde context worden aan de linkerkant geconnecteerd met een gekleurde lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groen) of niet geslaagd (rood).
+Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant geconnecteerd met een gekleurde lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groen) of niet geslaagd (rood).
 
 .. TODO:feature-discuss: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
-.. TODO:feature-discuss: status per oplossing (DONE), tab (DONE), context, testcase en test; uitleggen hoe dit werkt
-.. TODO:feature-discuss: symbool én kleur geven aan of oefening correct is
+.. TODO:feature-discuss: status per oplossing (DONE), tab (DONE), context (DONE), testcase (DONE) en test; uitleggen hoe dit werkt
 .. TODO:feature-discuss: openklappen van linkerrand context om grafische debugger te starten in Python judge
 .. TODO:feature-discuss: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
 .. TODO:feature-discuss: voorbeeld van test met een boodschap
