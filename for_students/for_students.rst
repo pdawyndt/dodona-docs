@@ -5,7 +5,7 @@ Dodona voor studenten
 
 Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
-.. TODO:tutorial-review: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
+.. TODO:tutorial-update: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
 
 .. _gebruikersaccount:
 
@@ -99,8 +99,8 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. TODO:feature-update: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
-.. TODO:PDF-update: extra witruimte tussen vorige figuur en volgende paragraaf
-.. TODO:PDF-update: paragraaf dit volgt op vorige figuur heeft aan het begin van de eerste zin een klein beetje insprong die weg zou moeten
+.. TODO:tutorial-update: extra witruimte tussen vorige figuur en volgende paragraaf in HTML versie
+.. TODO:tutorial-update: paragraaf dit volgt op vorige figuur heeft aan het begin van de eerste zin een klein beetje insprong in de LaTeX versie die weg zou moeten
 
 .. _startpagina:
 
@@ -187,7 +187,7 @@ Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van all
 
 .. TODO:screenshot-missing: screenshot van startpagina met minstens vijf cursussen waarvoor gebruiker geregistreerd is (zodat zoekbalk getoond wordt)
 
-.. TODO:tutorial-review: academiejaar is terminologie die enkel in het hoger onderwijs gebruikt wordt; secundair onderwijs zou hier de term "schooljaar" gebruiken; zoeken naar generiekere oplossing in Dodona door bijvoorbeeld de begin- en einddatum van een module in te stellen, en dan een weergave te zien met modules die actief zijn, modules die afgelopen zijn en modules die in de toekomst zullen lopen
+.. TODO:feature-update: academiejaar is terminologie die enkel in het hoger onderwijs gebruikt wordt; secundair onderwijs zou hier de term "schooljaar" gebruiken; zoeken naar generiekere oplossing in Dodona door bijvoorbeeld de begin- en einddatum van een module in te stellen, en dan een weergave te zien met modules die actief zijn, modules die afgelopen zijn en modules die in de toekomst zullen lopen
 
 .. TODO:feature-discuss: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
@@ -414,7 +414,7 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 
 .. TODO:feature-missing: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
-.. TODO:PDF-bug: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
+.. TODO:tutorial-update: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
@@ -423,7 +423,7 @@ Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` b
 
 .. TODO:feature-discuss: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
-.. TODO:PDF-bug: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
+.. TODO:tutorial-update: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
 .. _oefeningpagina:
 
@@ -522,7 +522,7 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 Feedback
 --------
 
-Op de **feedbackpagina** vind je gedetailleerde feedback op een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
+De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
 .. image:: exercise_feedback_correct.nl.png
 
@@ -547,6 +547,8 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
     .. note::
 
     Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
+
+    .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
 
 :guilabel:`Ingediend`
 
@@ -579,13 +581,11 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
       * - :guilabel:`Timeout`
         - .. image::
-        - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen
+        - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
 
-          .. note::
+          .. TODO:tutorial-update: laatste zin van omschrijving zou beter als een tip worden weergegeven binnen de tabel; eerste poging om dit te doen is mislukt
 
-          Dit kan wijzen op slechte performantie of op een oneindige lus.
-
-      * - :guilabel:`Geheugenlimiet overschreden`
+      * - :guilabel:`Geheugenfout`
         - .. image::
         - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
 
@@ -601,7 +601,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
-    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Indien de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkoment, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
+    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Indien de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
 
 :guilabel:`Samenvatting`
 
@@ -611,12 +611,32 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
 .. TODO:feature-update: verwijder in de header van de feedbackpagina de gebruikersnaam (enkel de naam van de gebruiker weergeven) om de benaming consistent te maken met de benaming in de titelbalk op de profielpagina van de gebruiker
 
-.. TODO:feature-discuss: status per oplossing, tab, context, testcase en test; uitleggen hoe dit werkt
+.. _feedback tab:
+.. _feedback tab badge:
+
+Daaronder staat meer gedetailleerde feedback die mogelijk uitgesplitst werd over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant nog een *badge* staan met daarin een getal. Dat getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover gerapporteerd wordt in die tab. Het staat de *judge* vrij om te beslissen hoe deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde in de *badge* te bepalen.
+
+.. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
+
+.. _feedback tab code:
+
+De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook van invloed kunnen zijn op zijn beslissing over de status die aan de oplossing toegekend wordt.
+
+.. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
+
+.. TODO:feature-missing: een judge kan een tab al dan niet aanvaarden (accepted), maar dit wordt momenteel niet visueel weergegeven via een kleur of een symbool bij de tab zoals dat bij andere niveau's wel het geval is; nadenken of we dit toch niet moeten introduceren
+
+.. _oplossing opnieuw indienen:
+
+In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je ook op de downloadknop drukken om een bestand met de broncode te downloaden en open het bestand daarna in je IDE kan openen. In je IDE kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+
+.. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
+
+Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+
+.. TODO:feature-discuss: status per oplossing (DONE), tab (DONE), context, testcase en test; uitleggen hoe dit werkt
 .. TODO:feature-discuss: symbool én kleur geven aan of oefening correct is
-.. TODO:feature-discuss: bespreek badge count in tab
-.. TODO:feature-discuss: bespreek extra tab "Code" met annotaties op de code
 .. TODO:feature-discuss: openklappen van linkerrand context om grafische debugger te starten in Python judge
-.. TODO:feature-discuss: feedback van oefening "Curling" heeft twee tabs
 .. TODO:feature-discuss: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
 .. TODO:feature-discuss: voorbeeld van context met meerdere testgevallen
 .. TODO:feature-discuss: voorbeeld van test met een boodschap
@@ -625,8 +645,6 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn
 .. TODO:feature-missing: toon regelnummers in diff
 .. TODO:feature-missing: schakelen tussen unified/split in diff
-
-
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
@@ -645,10 +663,6 @@ Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
 juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
 verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
 in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
-
-.. _oplossing opnieuw indienen:
-
-Druk op de editeerknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`
 
 
 .. _voettekst:
