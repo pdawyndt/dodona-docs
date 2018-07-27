@@ -474,7 +474,7 @@ Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossinge
 
 .. _wachtrij ingediende oplossingen:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een *judge*. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
 
 Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
@@ -567,13 +567,13 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
         - icoontje
         - betekenis
 
-      * - :guilabel:`In de wachtrij...`
+      * - :guilabel:`In de wachtrij…`
         - .. image:: submission_icons/queued.png
-        - je oplossing is staat nog in  de wachtrij om getest te worden
+        - oplossing staat in de :ref:`wachtrij <wachtrij ingediende oplossingen>`
 
-      * - :guilabel:`Aan het uitvoeren...`
+      * - :guilabel:`Aan het uitvoeren…`
         - .. image:: submission_icons/running.png
-        - je oplossing wordt momenteel getest
+        - oplossing wordt momenteel beoordeeld door de *judge*
 
       * - :guilabel:`Correct`
         - .. image:: submission_icons/correct.png
