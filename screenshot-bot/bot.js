@@ -434,5 +434,30 @@ function waitForInput() {
   await wizard.navigate('http://localhost:3000/en/courses/1/');
   await wizard.screenshot('../for_students/deadline_series_warning.en.png');
 
+  await wizard.navigate('http://localhost:3000/nl/submissions');
+  await wizard.page.evaluate(() => {
+    document.querySelector('body').innerHTML =
+      '<p><span class="submission-status glyphicon glyphicon-minus colored-default"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-ok colored-correct"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-remove colored-wrong"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-time colored-wrong"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-hourglass colored-default"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-flash colored-wrong"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-wrench colored-wrong"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-hdd colored-wrong"></span></p>' +
+      '<p><span class="submission-status glyphicon glyphicon-alert colored-warning"></span></p>';
+  });
+
+  await wizard.screenshot('../for_students/submission_icons/default.png', { cropSelector: '.glyphicon-minus' });
+  await wizard.screenshot('../for_students/submission_icons/correct.png', { cropSelector: '.glyphicon-ok' });
+  await wizard.screenshot('../for_students/submission_icons/wrong.png', { cropSelector: '.glyphicon-remove' });
+  await wizard.screenshot('../for_students/submission_icons/time_limit_exceeded.png', { cropSelector: '.glyphicon-time' });
+  await wizard.screenshot('../for_students/submission_icons/running.png', { cropSelector: '.glyphicon-hourglass' });
+  await wizard.screenshot('../for_students/submission_icons/queued.png', { cropSelector: '.glyphicon-hourglass' });
+  await wizard.screenshot('../for_students/submission_icons/runtime_error.png', { cropSelector: '.glyphicon-flash' });
+  await wizard.screenshot('../for_students/submission_icons/compilation_error.png', { cropSelector: '.glyphicon-wrench' });
+  await wizard.screenshot('../for_students/submission_icons/memory_limit_exceeded.png', { cropSelector: '.glyphicon-hdd' });
+  await wizard.screenshot('../for_students/submission_icons/internal_error.png', { cropSelector: '.glyphicon-alert' });
+
   await wizard.close();
 })();

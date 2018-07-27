@@ -290,7 +290,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar te cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuale registratie <manuale registratie>` wel afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
+Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar te cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratie>` wel afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
 
 
 .. _uitschrijven:
@@ -570,37 +570,45 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
         - icoontje
         - betekenis
 
+      * - :guilabel:`In de wachtrij...`
+        - .. image:: submission_icons/queued.png
+        - je oplossing is staat nog in  de wachtrij om getest te worden
+
+      * - :guilabel:`Aan het uitvoeren...`
+        - .. image:: submission_icons/running.png
+        - je oplossing wordt momenteel getest
+
       * - :guilabel:`Correct`
-        - .. image::
+        - .. image:: submission_icons/correct.png
         - oplossing is geslaagd voor alle testen
 
       * - :guilabel:`Fout`
-        - .. image::
+        - .. image:: submission_icons/wrong.png
         - logische fout gevonden in minstens één test
 
       * - :guilabel:`Uitvoeringsfout`
-        - .. image::
+        - .. image:: submission_icons/runtime_error.png
         - onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test
 
       * - :guilabel:`Timeout`
-        - .. image::
+        - .. image:: submission_icons/time_limit_exceeded.png
         - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
 
           .. TODO:tutorial-update: laatste zin van omschrijving zou beter als een tip worden weergegeven binnen de tabel; eerste poging om dit te doen is mislukt
 
+          Dit kan wijzen op slechte performantie of op een oneindige lus.
+
       * - :guilabel:`Geheugenfout`
-        - .. image::
+        - .. image:: submission_icons/memory_limit_exceeded.png
         - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
 
       * - :guilabel:`Compilatiefout`
-        - .. image::
+        - .. image:: submission_icons/compilation_error.png
         - ingediende oplossing bevat grammaticale fouten
 
       * - :guilabel:`Interne fout`
-        - .. image::
+        - .. image:: submission_icons/internal_error.png
         - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
-
-    .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
