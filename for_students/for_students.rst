@@ -470,7 +470,7 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
     Voor het schrijven van software maken programmeurs gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evenwel nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en om administratie bij te houden die grote softwareprojecten met zich meebrengen.
 
-    Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een IDE. Voer je programmacode eerst uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
+    Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een IDE. Voer je programmacode eerst uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
 
     Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze selecteren en knippen uit de code editor van je IDE en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je je programmeervaardigheden generiek in te zetten om andere programmeeropdrachten aan te pakken dan enkel de oefeningen uit Dodona.
 
@@ -508,15 +508,20 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 
   .. image:: exercise_submissions_tab.nl.png
 
+  .. TODO:screenshot-update: zorg ervoor dat de tab "Oplossingen" geselecteerd, zodat je meteen ook het overzicht van de oplossingen ziet
+
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
   .. image:: exercise_submissions_page.nl.png
 
+  .. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven
+
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
-.. TODO:feature-update: vervang
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 
 Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
+
+.. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
 
 .. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
 
@@ -524,6 +529,9 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 
 .. image:: exercise_feedback_correct_page.nl.png
 
+.. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven; moet een afbeelding zijn van een oplossingenpagina met een pijl naar het groter dan symbool waarmee je naar de feedbackpagina kan navigeren
+
+.. _judge:
 .. _feedbackpagina:
 .. _feedback:
 
@@ -595,13 +603,13 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
       * - :guilabel:`Timeout`
         - .. image:: submission_icons/time_limit_exceeded.png
-        - tijdslimiet vastgelegd voor de oefening werd overschred tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
+        - tijdslimiet vastgelegd voor de oefening werd overschreden tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
 
           .. TODO:tutorial-update: laatste zin van omschrijving zou beter als een tip worden weergegeven binnen de tabel; eerste poging om dit te doen is mislukt
 
       * - :guilabel:`Geheugenfout`
         - .. image:: submission_icons/memory_limit_exceeded.png
-        - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
+        - geheugenlimiet vastgelegd voor de oefening werd overschreden tijdens het uitvoeren van minstens één test
 
       * - :guilabel:`Compilatiefout`
         - .. image:: submission_icons/compilation_error.png
