@@ -28,7 +28,7 @@ function Wizard() {
   };
 
   this.blockElement = function (selector, predicate) {
-    this.elementsToBlock.push({ selector, predicate: predicate || (() => true) });
+    this.elementsToBlock.push({ selector, pointPredicate: predicate || (() => true) });
   };
 
   this.click = async function (selector) {
@@ -40,7 +40,7 @@ function Wizard() {
     await this.page.goto(url);
     for (const toBlock of this.elementsToBlock) {
       for (const element of await this.page.$$(toBlock.selector)) {
-        if (await this.page.evaluate(toBlock.predicate, element)) {
+        if (await this.page.evaluate(toBlock.pointPredicate, element)) {
           await this.page.evaluate(elem => {elem.remove();}, element);
         }
       }
@@ -56,16 +56,19 @@ function Wizard() {
     await this.page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
   };
 
-  this.screenshot = async function (savePath, elementSelectors, predicate) {
-    elementSelectors = elementSelectors || [];
-    predicate = predicate || (() => true);
+  this.screenshot = async function (savePath, options) {
+    options = Object.assign({
+      pointToSelectors: [],
+      pointPredicate: () => true,
+      cropSelector: null,
+      cropPredicate: () => true,
+    }, options);
 
-    await this.page.screenshot({ path: savePath });
     const locations = [];
-    for (const selector of elementSelectors) {
-      var used = false;
+    for (const selector of options.pointToSelectors) {
+      let used = false;
       for (const element of await this.page.$$(selector)) {
-        if (await this.page.evaluate(predicate, element)) {
+        if (await this.page.evaluate(options.pointPredicate, element)) {
           const boxModel = await element.boxModel();
           // Make sure element is visible
           if (boxModel !== null) {
@@ -75,9 +78,31 @@ function Wizard() {
         }
       }
       if (!used) {
-        console.trace(`UNUSED SELECTOR: ${selector}`);
+        console.warn(`UNUSED SELECTOR: ${selector}`);
       }
     }
+
+    let clip = undefined;
+    if (options.cropSelector) {
+      let found = 0;
+      for (const element of await this.page.$$(options.cropSelector)) {
+        if (await this.page.evaluate(options.cropPredicate, element)) {
+          const box = await element.boundingBox();
+          if (box !== null) {
+            clip = box;
+            found++;
+          }
+        }
+      }
+      if (found === 0) {
+        console.warn(`UNUSED CROP SELECTOR: ${options.cropSelector}`);
+      } else if (found > 1) {
+        console.warn(`CROP SELECTOR OCCURED ${found} TIMES: ${options.cropSelector}`);
+      }
+    }
+
+    await this.page.screenshot({ path: savePath, clip });
+
     const image = await new Image(savePath).load();
     for (const location of locations) {
       await image.drawArrow(location[3].x, location[3].y);
@@ -135,23 +160,23 @@ function waitForInput() {
 
   await wizard.navigate('https://dodona.ugent.be/nl');
   await wizard.screenshot('../for_students/landingpage.nl.png');
-  await wizard.screenshot('../for_students/login.nl.png', ['a[href="/nl/sign_in/"]']);
+  await wizard.screenshot('../for_students/login.nl.png', { pointToSelectors: ['a[href="/nl/sign_in/"]'] });
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
-  await wizard.screenshot('../for_students/choose_language.nl.png', ['ul.dropdown-menu']);
+  await wizard.screenshot('../for_students/choose_language.nl.png', { pointToSelectors: ['ul.dropdown-menu'] });
 
   await wizard.navigate('https://dodona.ugent.be/nl/sign_in');
-  await wizard.screenshot('../for_students/institution.nl.png', []);
+  await wizard.screenshot('../for_students/institution.nl.png');
 
   await wizard.navigate('https://dodona.ugent.be/en');
   await wizard.screenshot('../for_students/landingpage.en.png');
-  await wizard.screenshot('../for_students/login.en.png', ['a[href="/en/sign_in/"]']);
+  await wizard.screenshot('../for_students/login.en.png', { pointToSelectors: ['a[href="/en/sign_in/"]'] });
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
-  await wizard.screenshot('../for_students/choose_language.en.png', ['ul.dropdown-menu']);
+  await wizard.screenshot('../for_students/choose_language.en.png', { pointToSelectors: ['ul.dropdown-menu'] });
 
   await wizard.navigate('https://dodona.ugent.be/en/sign_in');
-  await wizard.screenshot('../for_students/institution.en.png', []);
+  await wizard.screenshot('../for_students/institution.en.png');
 
   await wizard.navigate('https://dodona.ugent.be/nl/contact/');
   await wizard.screenshot('../for_students/contact.nl.png');
@@ -163,64 +188,54 @@ function waitForInput() {
 
   await wizard.screenshot('../for_students/homepage.nl.png');
 
-  await wizard.screenshot('../for_students/navigate_to_homepage.nl.png', ['a.navbar-brand']);
+  await wizard.screenshot('../for_students/navigate_to_homepage.nl.png', { pointToSelectors: ['a.navbar-brand'] });
 
-  await wizard.screenshot('../for_students/explore_courses.nl.png', ['a[href$="/courses/"]']);
+  await wizard.screenshot('../for_students/explore_courses.nl.png', { pointToSelectors: ['a[href$="/courses/"]'] });
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot(
-    '../for_students/user_menu.nl.png',
-    ['li.dropdown ul.dropdown-menu'],
-    elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
-  );
+  await wizard.screenshot('../for_students/user_menu.nl.png', {
+    pointToSelectors: ['li.dropdown ul.dropdown-menu'],
+    pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
+  });
 
-  await wizard.screenshot('../for_students/sign_out.nl.png', ['a[href*="/users/sign_out/"]']);
+  await wizard.screenshot('../for_students/sign_out.nl.png', { pointToSelectors: ['a[href*="/users/sign_out/"]'] });
 
   await wizard.navigate('http://localhost:3000/?locale=en');
 
   await wizard.screenshot('../for_students/homepage.en.png');
 
-  await wizard.screenshot('../for_students/navigate_to_homepage.en.png', ['a.navbar-brand']);
+  await wizard.screenshot('../for_students/navigate_to_homepage.en.png', { pointToSelectors: ['a.navbar-brand'] });
 
-  await wizard.screenshot('../for_students/explore_courses.en.png', ['a[href$="/courses/"]']);
+  await wizard.screenshot('../for_students/explore_courses.en.png', { pointToSelectors: ['a[href$="/courses/"]'] });
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot(
-    '../for_students/user_menu.en.png',
-    ['li.dropdown ul.dropdown-menu'],
-    elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
-  );
+  await wizard.screenshot('../for_students/user_menu.en.png', {
+    pointToSelectors: ['li.dropdown ul.dropdown-menu'],
+    pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
+  });
 
-  await wizard.screenshot('../for_students/sign_out.en.png', ['a[href*="/users/sign_out/"]']);
+  await wizard.screenshot('../for_students/sign_out.en.png', { pointToSelectors: ['a[href*="/users/sign_out/"]'] });
 
   await wizard.navigate('http://localhost:3000/nl/users/3/');
-  await wizard.screenshot(
-    '../for_students/edit_profile.nl.png',
-    ['a[href$="/users/3/edit/"]'],
-    elem => !!elem.querySelector('span.glyphicon-pencil'),
-  );
+  await wizard.screenshot('../for_students/edit_profile.nl.png', {
+    pointToSelectors: ['a[href$="/users/3/edit/"]'],
+    pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
+  });
 
   await wizard.navigate('http://localhost:3000/en/users/3/');
-  await wizard.screenshot(
-    '../for_students/edit_profile.en.png',
-    ['a[href$="/users/3/edit/"]'],
-    elem => !!elem.querySelector('span.glyphicon-pencil'),
-  );
+  await wizard.screenshot('../for_students/edit_profile.en.png', {
+    pointToSelectors: ['a[href$="/users/3/edit/"]'],
+    pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
+  });
 
   await wizard.navigate('http://localhost:3000/nl/users/3/edit/');
-  await wizard.screenshot(
-    '../for_students/edit_timezone.nl.png',
-    ['select#user_time_zone'],
-  );
+  await wizard.screenshot('../for_students/edit_timezone.nl.png', { pointToSelectors: ['select#user_time_zone'] });
 
   await wizard.navigate('http://localhost:3000/en/users/3/edit/');
-  await wizard.screenshot(
-    '../for_students/edit_timezone.en.png',
-    ['select#user_time_zone'],
-  );
+  await wizard.screenshot('../for_students/edit_timezone.en.png', { pointToSelectors: ['select#user_time_zone'] });
 
   await wizard.page.evaluate(() => {
-    document.querySelector('select#user_time_zone').value = "Seoul";
+    document.querySelector('select#user_time_zone').value = 'Seoul';
   });
 
   await wizard.click('button.btn-primary[form*="edit_user_"]');
@@ -235,7 +250,7 @@ function waitForInput() {
 
   await wizard.navigate('http://localhost:3000/en/users/3/edit/');
   await wizard.page.evaluate(() => {
-    document.querySelector('select#user_time_zone').value = "Brussels";
+    document.querySelector('select#user_time_zone').value = 'Brussels';
   });
   await wizard.click('button.btn-primary[form*="edit_user_"]');
   await new Promise(resolve => setTimeout(resolve, 1000));
@@ -249,52 +264,88 @@ function waitForInput() {
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
   await wizard.screenshot('../for_students/course.nl.png');
 
-  await wizard.screenshot('../for_students/register.nl.png', ['a[href$="/courses/1/subscribe/"]']);
+  await wizard.screenshot('../for_students/register.nl.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/1/subscribe/"]'),
+  });
 
   await wizard.navigate('http://localhost:3000/en/courses/1/');
   await wizard.screenshot('../for_students/course.en.png');
 
-  await wizard.screenshot('../for_students/register.en.png', ['a[href$="/courses/1/subscribe/"]']);
+  await wizard.screenshot('../for_students/register.en.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/1/subscribe/"]'),
+  });
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/subscribe');
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
-  await wizard.screenshot('../for_students/unregister.nl.png', ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]']);
+  await wizard.screenshot('../for_students/unregister.nl.png', {
+    pointToSelectors: ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]'],
+  });
 
   await wizard.navigate('http://localhost:3000/en/courses/1/');
-  await wizard.screenshot('../for_students/unregister.en.png', ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]']);
+  await wizard.screenshot('../for_students/unregister.en.png', {
+    pointToSelectors: ['form[action$="/courses/1/unsubscribe/"] input[type="submit"]'],
+  });
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.nl.png', ['a[href$="/courses/2/subscribe/"]']);
+  await wizard.screenshot('../for_students/moderated_register.nl.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/2/subscribe/"]'),
+  });
 
   await wizard.navigate('http://localhost:3000/en/courses/2/');
-  await wizard.screenshot('../for_students/moderated_register.en.png', ['a[href$="/courses/2/subscribe/"]']);
+  await wizard.screenshot('../for_students/moderated_register.en.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('a[href$="/courses/2/subscribe/"]'),
+  });
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/subscribe');
 
   await wizard.navigate('http://localhost:3000/nl/courses/2/');
-  await wizard.screenshot('../for_students/moderated_waiting.nl.png');
+  await wizard.screenshot('../for_students/moderated_waiting.nl.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+  });
 
   await wizard.navigate('http://localhost:3000/en/courses/2/');
-  await wizard.screenshot('../for_students/moderated_waiting.en.png');
+  await wizard.screenshot('../for_students/moderated_waiting.en.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+  });
 
   await wizard.navigate('http://localhost:3000/nl/courses/4/');
-  await wizard.screenshot('../for_students/closed_registration.nl.png');
+  await wizard.screenshot('../for_students/closed_registration.nl.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+  });
 
   await wizard.navigate('http://localhost:3000/en/courses/4/');
-  await wizard.screenshot('../for_students/closed_registration.en.png');
+  await wizard.screenshot('../for_students/closed_registration.en.png', {
+    cropSelector: ['div.col-sm-6.col-xs-12'],
+    cropPredicate: elem => !!elem.querySelector('div.card') && !!elem.querySelector('div.card').querySelector('p'),
+  });
 
   await wizard.navigate('http://localhost:3000/?locale=nl');
   await wizard.screenshot('../for_students/homepage_after_registration.nl.png');
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot('../for_students/my_courses.nl.png', ['li.dropdown-header'], elem => elem.textContent === 'Mijn vakken');
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  await wizard.screenshot('../for_students/my_courses.nl.png', {
+    pointToSelectors: ['li.dropdown-header'],
+    pointPredicate: elem => elem.textContent === 'Mijn vakken',
+  });
 
   await wizard.navigate('http://localhost:3000/?locale=en');
   await wizard.screenshot('../for_students/homepage_after_registration.en.png');
 
   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  await wizard.screenshot('../for_students/my_courses.en.png', ['li.dropdown-header'], elem => elem.textContent === 'My courses');
+  await new Promise(resolve => setTimeout(resolve, 1000));
+  await wizard.screenshot('../for_students/my_courses.en.png', {
+    pointToSelectors: ['li.dropdown-header'],
+    pointPredicate: elem => elem.textContent === 'My courses',
+  });
 
   await wizard.navigate('http://localhost:3000/nl/courses/1/');
   const exerciseNamesToIDs = await wizard.page.evaluate(() => {
@@ -318,7 +369,7 @@ function waitForInput() {
   await wizard.press('textarea.ace_text-input', 'Backspace');
   await wizard.typeIn('textarea.ace_text-input', 'print(s % 11)');
 
-  await wizard.screenshot('../for_students/exercise_before_submit.nl.png', ['#editor-process-btn']);
+  await wizard.screenshot('../for_students/exercise_before_submit.nl.png', { pointToSelectors: ['#editor-process-btn'] });
 
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
@@ -335,7 +386,7 @@ function waitForInput() {
   await wizard.press('textarea.ace_text-input', 'Backspace');
   await wizard.typeIn('textarea.ace_text-input', 'print(s % 11)');
 
-  await wizard.screenshot('../for_students/exercise_before_submit.en.png', ['#editor-process-btn']);
+  await wizard.screenshot('../for_students/exercise_before_submit.en.png', { pointToSelectors: ['#editor-process-btn'] });
 
   await wizard.click('#editor-process-btn');
   await new Promise(resolve => setTimeout(resolve, 20000));
