@@ -493,16 +493,24 @@ Navigeren naar een oplossing
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
 * Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je ingediende oplossingen.
+
+  .. image:: all_submissions.nl.png
+
 * Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend.
+
+  .. image:: course_submissions.nl.png
+
 * Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+
+  .. image:: exercise_submissions_tab.nl.png
+
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
-.. TODO:screenshot-missing: screenshots toevoegen van alle bovenstaande gevallen
+  .. image:: exercise_submissions_page.nl.png
 
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-update: vervang
-.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende
-oplossingen ontbreekt
+.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 
 Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
@@ -511,8 +519,6 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing gegenereerd werd.
 
 .. image:: exercise_feedback_correct_page.nl.png
-
-.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
 
 .. _feedbackpagina:
 .. _feedback:
@@ -542,7 +548,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     .. note::
 
-    Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
+       Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
 
     .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
 
