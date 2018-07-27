@@ -294,7 +294,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar te cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratie>` wel afhankelijk van het feit of de cursus werkt met open, gemodereerde of gesloten registratie.
+Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar te cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratie>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <open registratie>` of :ref:`gesloten registratie <open registratie>`.
 
 
 .. _uitschrijven:
