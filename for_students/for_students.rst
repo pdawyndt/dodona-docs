@@ -675,24 +675,6 @@ Alle testgevallen van eenzelfde context worden aan de linkerkant geconnecteerd m
 .. TODO:feature-missing: toon regelnummers in diff
 .. TODO:feature-missing: schakelen tussen unified/split in diff
 
-Als je code correct is zal de feedback er ongeveer als volgt uitzien:
-
-
-In de eerste tabs (dit kunnen er meer dan 1 zijn) kan je de testgevallen zien
-die werden uitgevoerd. In de "Code" tab kan je de code die je hebt ingediend nog
-eens bekijken. Het kan zijn dat er hierbij enkele annotaties staan die hints
-geven over hoe je je code iets mooier had kunnen schrijven.
-
-Als je code niet correct is zal de feedback er ongeveer als volgt uitzien:
-
-.. image:: exercise_feedback_incorrect_tab.nl.png
-
-Via de kleuren bij de testgevallen kan je makkelijk zien welke testgevallen
-juist zijn en welke fout zijn. Voor foute testgevallen kan je ook makkelijk het
-verschil zien tussen de output van jouw code en de verwachte output. Het cijfer
-in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
-
-
 .. _voettekst:
 .. _contactpagina:
 .. _contact opnemen:
