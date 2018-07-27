@@ -320,13 +320,15 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 .. image:: deadline_series.nl.png
 
+.. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een ingediende oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
+
 Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
 
 .. belangrijk::
 
     Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je doorgaans :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
 
-    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening niet noodzakelijk voor alle oefeningenreeksen hetzelfde omdat de status afhangt van de deadlines van de oefeningenreeksen. Als er geen deadline werd ingesteld voor de oefeningenreeksen of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening per definitie wel hetzelfde.
+    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening niet noodzakelijk hetzelfde omdat de status afhangt van de deadlines van de oefeningenreeksen. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening per definitie wel hetzelfde.
 
 .. _oefeningenreeks statistieken:
 
