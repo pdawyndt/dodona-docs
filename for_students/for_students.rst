@@ -506,8 +506,7 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-update: vervang
-.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende
-oplossingen ontbreekt
+.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 
 Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
@@ -561,7 +560,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
 :guilabel:`Status`
 
-    Status die de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen die de judge aan de oplossing kan toekennen:
+    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
@@ -608,7 +607,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
       * - :guilabel:`Interne fout`
         - .. image:: submission_icons/internal_error.png
-        - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
+        - *judge* is gecrashed tijdens het beoordelen van de oplossing; oorzaak van fout ligt dus niet bij de ingediende oplossing maar bij het falen van de *judge*
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
@@ -625,13 +624,13 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 .. _feedback tab:
 .. _feedback tab badge:
 
-Daaronder staat meer gedetailleerde feedback die mogelijk uitgesplitst werd over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant nog een *badge* staan met daarin een getal. Dat getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover gerapporteerd wordt in die tab. Het staat de *judge* vrij om te beslissen hoe deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde in de *badge* te bepalen.
+Daaronder staat meer gedetailleerde feedback die mogelijk uitgesplitst werd over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de *judge* vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
 
 .. _feedback tab code:
 
-De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook van invloed kunnen zijn op zijn beslissing over de status die aan de oplossing toegekend wordt.
+De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde status aan de oplossing toegekend heeft.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
 
@@ -639,7 +638,7 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 
 .. _oplossing opnieuw indienen:
 
-In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je ook op de downloadknop drukken om een bestand met de broncode te downloaden en open het bestand daarna in je IDE kan openen. In je IDE kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee downloadt je  een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
 .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
 
