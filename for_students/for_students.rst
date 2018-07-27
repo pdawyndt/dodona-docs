@@ -560,7 +560,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
 :guilabel:`Status`
 
-    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen aan de oplossing kunnen toegekend worden:
+    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
@@ -642,11 +642,27 @@ In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je 
 
 Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
+.. _test:
+.. _testgeval:
+.. _context:
+
+Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de code onderworpen heeft. Gerelateerde testen worden gegroepeerd in een **testgeval** en testgevallen die van elkaar afhankelijk zijn worden gegroepeerd in een **context**.
+
+.. image:: exercise_feedback_correct_tab.nl.png
+
+.. TODO:screenshot-missing: screenshot dat een voorbeeld geeft van i) twee of meer contexten, ii) twee of meer testgevallen en iii) twee of meer testen; de afbeelding hierboven is slechts een placeholder; misschien moeten we de individuele onderdelen van de feedback (tab, context, testgeval, test) ook expliciet aanduiden op de figuur; een bijschrift bij de figuur zal misschien ook wel nodig zijn in dit geval
+
+De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel weergegeven in een lichtgrijze rechthoek. In de rechterbovenhoek van de rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of niet geslaagd (rood kruisje).
+
+.. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
+
+Alle testgevallen van eenzelfde context worden aan de linkerkant geconnecteerd met een gekleurde lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groen) of niet geslaagd (rood).
+
+.. TODO:feature-discuss: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
 .. TODO:feature-discuss: status per oplossing (DONE), tab (DONE), context, testcase en test; uitleggen hoe dit werkt
 .. TODO:feature-discuss: symbool én kleur geven aan of oefening correct is
 .. TODO:feature-discuss: openklappen van linkerrand context om grafische debugger te starten in Python judge
 .. TODO:feature-discuss: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
-.. TODO:feature-discuss: voorbeeld van context met meerdere testgevallen
 .. TODO:feature-discuss: voorbeeld van test met een boodschap
 .. TODO:feature-discuss: voorbeeld van test met een grafische boodschap (Curling)
 
@@ -656,7 +672,6 @@ Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van 
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
-.. image:: exercise_feedback_correct_tab.nl.png
 
 In de eerste tabs (dit kunnen er meer dan 1 zijn) kan je de testgevallen zien
 die werden uitgevoerd. In de "Code" tab kan je de code die je hebt ingediend nog
