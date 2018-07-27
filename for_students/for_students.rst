@@ -268,8 +268,6 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
   .. image:: closed_registration.nl.png
 
-.. TODO:screenshot-update: screenshots van registratiepanelen beperken tot enkel de registratiepanelen om ruimte te sparen
-
 .. TODO:feature-update: tekst van gemodereerde registratie vervangen door "Je moet een registratieverzoek indienen dat eerst moet goedgekeurd worden door een cursusbeheerder voor je toegang krijgt tot de cursus." (huidige term "vak" komt nergens anders voor op Dodona)
 .. TODO:feature-update: tekst van gemodereerde registratie na indienen van registratieverzoek vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus. Je krijgt toegang tot de cursus zodra dit registratieverzoek wordt goedgekeurd door een cursusbeheerder."
 .. TODO:feature-update: tekst "Je staat al op de wachtlijst." weglaten omdat bovenstaande tekst al aangeeft dat er niet nog eens een registratieverzoek kan ingediend worden; in plaats daarvan moet de student de kans krijgen om zich uit te schrijven uit de cursus (als goedkeuring van het registratieverzoek bijvoorbeeld te lang op zich laat wachten)
@@ -283,7 +281,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. image:: homepage_after_registration.nl.png
 
-.. TODO:screenshot-update: gebruikersmenu uitklappen en Mijn vakken aanwijzen
+.. image:: my_courses.nl.png
 
 .. TODO:feature-discuss: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
 .. TODO:feature-discuss: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
