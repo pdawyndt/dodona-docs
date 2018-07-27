@@ -226,7 +226,7 @@ Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cu
 
 .. _cursuspagina:
 
-Na :ref:`selectie van een cursus <cursus>` krijg je de **cursuspagina** van de cursus te zien.
+Na :ref:`selectie van een cursus <cursus>` krijg je de **cursuspagina** te zien.
 
 .. image:: course.nl.png
 
@@ -432,7 +432,7 @@ Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` b
 
 .. _oefeningpagina:
 
-Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** van de oefening te zien.
+Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** te zien.
 
 .. image:: exercise_start.nl.png
 
@@ -483,6 +483,10 @@ Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen n
 
 Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
+.. image:: exercise_feedback_correct.nl.png
+
+.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de tab-versie staan
+
 .. tip::
 
     Er zit geen beperking op het aantal keer dat je een oplossing kan indienen voor een oefening. Gebruik de :ref:`feedback <feedback>` die Dodona aanlevert om je oplossing steeds verder te verfijnen.
@@ -493,26 +497,124 @@ Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing h
 Navigeren naar een oplossing
 ----------------------------
 
-.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
-
 Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
-* Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` voor een overzicht van al je ingediende oplossingen.
+* Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je ingediende oplossingen.
+* Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend.
 * Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
 
-.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
-.. TODO:feature-missing: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
+.. TODO:screenshot-missing: screenshots toevoegen van alle bovenstaande gevallen
 
-Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing werd gegenereerd.
+.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
+.. TODO:feature-update: vervang
+.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende
+oplossingen ontbreekt
 
-.. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt
+Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
+
+.. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
+
+Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing gegenereerd werd.
+
+.. image:: exercise_feedback_correct.nl.png
+
+.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
 
 .. _feedbackpagina:
 .. _feedback:
 
 Feedback
 --------
+
+Op de **feedbackpagina** vind je gedetailleerde feedback op een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
+
+.. image:: exercise_feedback_correct.nl.png
+
+.. TODO:screenshot-update: in benaming van bestand onderscheid maken tussen het feit dat de feedback in de tab "Feedback" wordt weergegeven (bijvoorbeeld door _tab in de naamgeving te zetten) of dat de feedbackpagina op een afzonderlijke pagina wordt weergegeven (bijvoorbeeld door _page in de naamgeving te zetten); hier moet dan de page-versie staan
+
+.. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
+
+Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens over de :ref:`ingediende oplossing <oplossing indienen>`:
+
+:guilabel:`Opgave`
+
+    .. TODO:feature-update: inconsistentie in de terminologie: in de header van de feedbackpagina wordt de term "Opgave" gebruikt, waar elders de term "Oefening" gebruikt wordt; we spreken ook van een oefeningenreeks
+
+    Naam van de oefening waarvoor je de oplossing hebt ingediend. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
+
+:guilabel:`Cursus`
+
+    Naam van de cursus waarbinnen je de oplossing hebt ingediend. Druk op de naam om naar de :ref:`cursuspagina <oefeningpagina>` te navigeren.
+
+    .. TODO:feature-update: vermeld in de header van de feedbackpagina naast de naam van de cursus ook het academiejaar om de benaming consistent te maken met de benaming in de titelbalk op de cursuspagina van de cursus
+
+    .. note::
+
+    Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
+
+:guilabel:`Ingediend`
+
+    Tijdstip waarop je de oplossing hebt ingediend. Dit tijdstip wordt op een gebruiksvriendelijke manier weergegeven, bijvoorbeeld :guilabel:`ongeveer 2 uur geleden`. Als je de muiswijzer boven het tijdstip plaatst dan krijg je de gedetailleerde weergave van het tijdstip te zien.
+
+.. _oplossing status:
+
+:guilabel:`Status`
+
+    Status die de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen die de judge aan de oplossing kan toekennen:
+
+    .. list-table::
+      :header-rows: 1
+
+      * - status
+        - icoontje
+        - betekenis
+
+      * - :guilabel:`Correct`
+        - .. image::
+        - oplossing is geslaagd voor alle testen
+
+      * - :guilabel:`Fout`
+        - .. image::
+        - logische fout gevonden in minstens één test
+
+      * - :guilabel:`Uitvoeringsfout`
+        - .. image::
+        - onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test
+
+      * - :guilabel:`Timeout`
+        - .. image::
+        - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen
+
+          .. note::
+
+          Dit kan wijzen op slechte performantie of op een oneindige lus.
+
+      * - :guilabel:`Geheugenlimiet overschreden`
+        - .. image::
+        - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
+
+      * - :guilabel:`Compilatiefout`
+        - .. image::
+        - ingediende oplossing bevat grammaticale fouten
+
+      * - :guilabel:`Interne fout`
+        - .. image::
+        - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
+
+    .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
+
+    .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
+
+    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Indien de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkoment, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
+
+:guilabel:`Samenvatting`
+
+    Korte motivering van de *judge* bij de status die hij aan de oplossing heeft toegekend.
+
+.. TODO:feature-missing: vanuit de feedbackpagina op een aparte pagina zou je ook makkelijk naar een overzicht moeten kunnen navigeren van alle oplossingen die de gebruiker heeft ingediend voor die oefening, eventueel binnen de context van een cursus (als de oplossing zelf binnen een cursus werd ingediend); als de feedbackpagina in een tab wordt weergegeven, dan hoeft dit niet, want dan staat daarnaast al een tab "Oplossingen"
+
+.. TODO:feature-update: verwijder in de header van de feedbackpagina de gebruikersnaam (enkel de naam van de gebruiker weergeven) om de benaming consistent te maken met de benaming in de titelbalk op de profielpagina van de gebruiker
 
 .. TODO:feature-discuss: status per oplossing, tab, context, testcase en test; uitleggen hoe dit werkt
 .. TODO:feature-discuss: symbool én kleur geven aan of oefening correct is
@@ -530,48 +632,6 @@ Feedback
 .. TODO:feature-missing: schakelen tussen unified/split in diff
 
 
-Als je :ref:`navigeert naar een oplossing <oplossing>` dan ...
-
-.. _oplossing status:
-
-.. list-table::
-  :header-rows: 1
-
-  * - status
-    - icoontje
-    - betekenis
-
-  * - :guilabel:`Correct`
-    - .. image::
-    - oplossing slaagt voor alle testen
-
-  * - :guilabel:`Fout`
-    - .. image::
-    - logische fout gevonden in minstens één test
-
-  * - :guilabel:`Uitvoeringsfout`
-    - .. image::
-    - onverwachte fout opgeworpen tijdens het uitvoeren van minstens één test
-
-  * - :guilabel:`Timeout`
-    - .. image::
-    - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
-
-  * - :guilabel:`Geheugenlimiet overschreden`
-    - .. image::
-    - geheugenlimiet vastgelegd voor de oefening werd overschreven tijdens het uitvoeren van minstens één test
-
-  * - :guilabel:`Compilatiefout`
-    - .. image::
-    - ingediende oplossing bevat grammaticale fouten
-
-  * - :guilabel:`Interne fout`
-    - .. image::
-    - oorzaak van fout tijdens het beoordelen ligt bij falen van een component van het platform en niet bij de ingediende oplossing
-
-.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
-
-.. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student
 
 Als je code correct is zal de feedback er ongeveer als volgt uitzien:
 
@@ -593,7 +653,7 @@ in de bol naast de naam van de tab geeft aan hoeveel testgevallen fout waren.
 
 .. _oplossing opnieuw indienen:
 
-TODO
+Druk op de editeerknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`
 
 
 .. _voettekst:
