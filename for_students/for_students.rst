@@ -326,7 +326,7 @@ Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daar
 
     Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je doorgaans :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
 
-    Dezelfde oefening kan voorkomen in meerdere oefeningenreeksen van een cursus. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan voor alle oefeningenreeksen hetzelfde omdat ze bepaald worden per cursus en niet per oefeningenreeks.
+    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening niet noodzakelijk voor alle oefeningenreeksen hetzelfde omdat de status afhangt van de deadlines van de oefeningenreeksen. Als er geen deadline werd ingesteld voor de oefeningenreeksen of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening per definitie wel hetzelfde.
 
 .. _oefeningenreeks statistieken:
 
