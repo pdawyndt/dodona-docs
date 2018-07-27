@@ -238,7 +238,8 @@ async function wait(ms) {
   });
 
   await wizard.click('button.btn-primary[form*="edit_user_"]');
-  await wait(200);
+  await wait(500);
+  await wizard.navigate('http://localhost:3000/?locale=nl');
 
   for (const language of LANGUAGES) {
     await wizard.navigate(`http://localhost:3000/?locale=${language}`);
@@ -250,7 +251,8 @@ async function wait(ms) {
     document.querySelector('select#user_time_zone').value = 'Brussels';
   });
   await wizard.click('button.btn-primary[form*="edit_user_"]');
-  await wait(200);
+  await wait(500);
+  await wizard.navigate('http://localhost:3000/?locale=nl');
 
   console.log('courses');
 
@@ -341,10 +343,14 @@ async function wait(ms) {
     });
 
     await wizard.click('#editor-process-btn');
-    await wait(5000);
+    await wait(10000);
     submissions++;
 
     await wizard.screenshot(`../for_students/exercise_feedback_correct_tab.${language}.png`);
+
+    await wizard.screenshot(`../for_students/exercise_submissions_tab.${language}.png`, {
+      pointToSelectors: ['a#exercise-submission-link'],
+    });
 
     await wizard.navigate(`http://localhost:3000/${language}/submissions/${submissions}/`);
     await wizard.screenshot(`../for_students/exercise_feedback_correct_page.${language}.png`);
@@ -353,13 +359,27 @@ async function wait(ms) {
     await wizard.typeIn('textarea.ace_text-input', 'print(input() + "incorrect")');
 
     await wizard.click('#editor-process-btn');
-    await wait(5000);
+    await wait(10000);
     submissions++;
 
     await wizard.screenshot(`../for_students/exercise_feedback_incorrect_tab.${language}.png`);
 
     await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
     await wizard.screenshot(`../for_students/deadline_series.${language}.png`);
+
+    await wizard.navigate(`http://localhost:3000/?locale=${language}`);
+    await wizard.screenshot(`../for_students/course_submissions.${language}.png`, {
+      pointToSelectors: ['a[href*="submissions/?course_id="]'],
+    });
+
+    await wizard.screenshot(`../for_students/exercise_submissions_page.${language}.png`, {
+      pointToSelectors: [`a[href="/${language}/exercises/${exerciseNamesToIDs['Echo']}/submissions/"]`],
+    });
+
+    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+    await wizard.screenshot(`../for_students/all_submissions.${language}.png`, {
+      pointToSelectors: [`a[href="/${language}/submissions/"]`],
+    });
   }
 
   await wizard.navigate(`http://localhost:3000/en/courses/1/exercises/${exerciseNamesToIDs['ISBN']}/`);
@@ -372,7 +392,7 @@ async function wait(ms) {
   await wizard.typeIn('textarea.ace_text-input', 'print(8)');
 
   await wizard.click('#editor-process-btn');
-  await wait(5000);
+  await wait(10000);
 
   for (const language of LANGUAGES) {
     await wizard.navigate(`http://localhost:3000/${language}/courses/1/`);
