@@ -592,7 +592,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
       * - :guilabel:`Timeout`
         - .. image:: submission_icons/time_limit_exceeded.png
-        - tijdslimiet vastgelegd voor de oefening werd overschreven tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
+        - tijdslimiet vastgelegd voor de oefening werd overschred tijdens het testen; kan wijzen op slechte performantie of een oneindige lus
 
           .. TODO:tutorial-update: laatste zin van omschrijving zou beter als een tip worden weergegeven binnen de tabel; eerste poging om dit te doen is mislukt
 
