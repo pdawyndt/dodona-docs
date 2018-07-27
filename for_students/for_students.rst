@@ -151,15 +151,19 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 Gebruikersprofiel
 -----------------
 
-Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om de gebruikerervaring te personaliseren.
+Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
 
 .. image:: edit_profile.nl.png
+
+.. TODO:missing-image: bovenstaande screenshot moet vervangen worden door een screenshot van het selecteren van mijn profiel in het gebruikersmenu; de figuur die hier staat werd verplaatst na onderstaande paragraaf
 
 .. TODO:feature-update: studentennummer is UGent-specifiek en hoort niet langer thuis in het gebruikersprofiel na de verruiming naar andere identity providers
 
 .. _gebruikersprofiel bijwerken:
 
 Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+
+.. image:: edit_profile.nl.png
 
 .. _tijdzone instellen:
 
