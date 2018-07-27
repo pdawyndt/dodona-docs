@@ -285,8 +285,6 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
 Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
-.. image:: homepage_after_registration.nl.png
-
 .. image:: my_courses.nl.png
 
 .. TODO:feature-discuss: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
