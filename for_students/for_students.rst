@@ -52,7 +52,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De naam en de omschrijving van een oefening zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De natuurlijke taal die gebruikt wordt in de feedback op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
+    De natuurlijke taal die gebruikt wordt in de :ref:`feedback <feedback>` op een ingediende oplossing voor een oefening is een gedeelde verantwoordelijkheid van de judge en de configuratie van de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
 .. TODO:feature-missing: nagaan of cursusinhoud taalafhankelijk kan gemaakt worden
 .. TODO:feature-update: standaardtaal instellen op Engels
@@ -322,7 +322,7 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 .. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een ingediende oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
-Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
+Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst met alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
 
 .. belangrijk::
 
@@ -347,9 +347,9 @@ Mogelijke weergaven van je status vóór het verstrijken van de deadline of als 
     - icoontje
     - weergegeven als je
 
-  * - :guilabel:`geen oplossing`
+  * - :guilabel:`niet opgelost`
     - .. image::
-    - oplossing slaagt voor alle testen
+    - geen oplossing hebt ingediend (vóór de deadline)
 
   * - :ref:`status <oplossing status>` van laatst ingediende oplossing
     - .. image::
@@ -392,7 +392,7 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. _oefeningenreeks menu:
 
-In het menu van een oefeningenreeks vind je volgende opties:
+In het menu van een oefeningenreeks vind je de volgende opties:
 
 :guilabel:`Toon overzicht`
 
@@ -406,7 +406,7 @@ In het menu van een oefeningenreeks vind je volgende opties:
 
 :guilabel:`Oplossingen downloaden`
 
-    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks je ingediende oplossing bevat op basis waarvan je :ref:`status <oefeningenreeks status>` voor de oefening bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
+    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat op basis waarvan je :ref:`status <oefeningenreeks status>` voor de oefening bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
 
 .. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
 .. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
@@ -466,19 +466,19 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
 .. tip::
 
-    Programmeurs maken voor het schrijven van software gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evenwel nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en administratie bij te houden die grote softwareprojecten met zich meebrengen.
+    Voor het schrijven van software maken programmeurs gebruik van een geavanceerde ontwikkelingsomgeving: een zogenaamde `Integrated Development Environment <https://nl.wikipedia.org/wiki/Integrated_development_environment>`_ of kortweg IDE. Voorbeelden hiervan zijn `PyCharm <https://www.jetbrains.com/pycharm/specials/pycharm/pycharm.html>`_ voor `Python <https://www.python.org/>`_ of `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_ voor `Java <https://java.com/>`_. Let wel, het schrijven van programma's in dergelijke omgevingen moet evenwel nog altijd door een programmeur gebeuren. Alleen zijn er heel wat extra hulpmiddelen om het schrijven van programmacode te ondersteunen en om administratie bij te houden die grote softwareprojecten met zich meebrengen.
 
     Om een aantal belangrijke redenen **raden we ten stelligste af om rechtstreeks programmacode te schrijven in de code editor van Dodona**. In plaats daarvan adviseren we om programmacode eerst te schrijven en te testen in een IDE. Voer je programmacode eerst uit op een aantal testgevallen om na te gaan dat ze geen grammaticale en logische fouten meer bevat. Gebruik daarvoor bijvoorbeeld de testgevallen die in de omschrijving van de oefening gegeven werden. Aangezien zelfs de meest doorgewinterde programmeur bijna nooit programmacode schrijft die meteen kan uitgevoerd worden, zonder fouten te produceren, bieden IDEs heel wat ondersteuning voor het debuggen van programmacode. Leer werken met de debugger van je IDE om daarmee logische fouten te leren opsporen in je programmacode.
 
-    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze knippen en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je om je programmeervaardigheden generiek in te zetten voor het aanpakken andere programmeeropdrachten dan de oefeningen uit Dodona.
+    Pas wanneer je ervan overtuigd bent dat de programmacode geen fouten meer bevat en je de programmacode wilt uittesten op een groter aantal testgevallen, kan je ze selecteren en knippen uit de code editor van je IDE en plakken in de code editor van Dodona alvorens ze in te dienen. Op die manier leer je je programmeervaardigheden generiek in te zetten om andere programmeeropdrachten aan te pakken dan enkel de oefeningen uit Dodona.
 
-Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de status en een korte samenvatting van de feedback. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
+Na het indienen van een oplossing wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. In het overzicht zie je vóór elke ingediende oplossing ook een icoontje dat correspondeert met de status van de oplossing.
 
 .. _wachtrij ingediende oplossingen:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet noodzakelijk onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een wachtrij geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en beoordeeld. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
 
-Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de gedetailleerde :ref:`feedback <feedback>` van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
+Zodra de beoordeling van de ingediende oplossing klaar is, krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback van de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. tip::
 
@@ -501,10 +501,11 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 .. TODO:feature-missing: mogelijkheid om te zoeken naar alle oefeningen die binnen een cursus ingediend werden ontbreekt
 
-Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de feedback. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de gedetailleerde :ref:`feedback <feedback>` te zien die tijdens bij het beoordelen van de oplossing werd gegenereerd.
+Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan). Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback die tijdens bij het beoordelen van de oplossing werd gegenereerd.
 
 .. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt
 
+.. _feedbackpagina:
 .. _feedback:
 
 Feedback
