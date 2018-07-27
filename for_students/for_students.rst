@@ -104,11 +104,13 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. _startpagina:
 
-Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
+Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` ook in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, hun oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
 
 .. tip::
 
     Vanaf elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
+
+    .. image:: navigate_to_homepage.nl.png
 
 Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je startpagina er op dit moment nog vrij kaal uit.
 
@@ -140,7 +142,7 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 
     Vanaf elke pagina kan je naar de :ref:`landingspagina <landingspagina>` (als je afgemeld bent) of naar je :ref:`startpagina <startpagina>` (als je aangemeld bent) navigeren door uiterst links in de :ref:`navigatiebalk <navigatiebalk>` op :guilabel:`Dodona` te drukken.
 
-.. image:: navigate_to_homepage.nl.png
+    .. image:: navigate_to_homepage.nl.png
 
 
 .. _profielpagina:
