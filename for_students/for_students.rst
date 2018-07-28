@@ -762,7 +762,7 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
     .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
     .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
 
-.. TODO:tutorial-missing: aangeven waar de mededelingen worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test (DONE); in plaast van mededelingen spreken we van feedback
+De *judge* kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat tussen de gegevens van de oplossing en de balk met de tabs. De algemene feedback over een tab staat boven de weergave van de contexten van de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
 
