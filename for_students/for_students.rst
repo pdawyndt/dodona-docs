@@ -326,11 +326,11 @@ Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op
 Uitschrijven uit een cursus
 ---------------------------
 
-Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan, dan zie je op de :ref:`cursuspagina <cursuspagina>` onder de omschrijving van de cursus een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
+Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan, dan zie je onder de omschrijving van de cursus op de :ref:`cursuspagina <cursuspagina>` een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
 .. image:: unregister.nl.png
 
-Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus niet langer opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oefeningenreeks:
