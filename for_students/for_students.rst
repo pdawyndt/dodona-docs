@@ -12,8 +12,8 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 .. _navigatiebalk:
 .. _taal selecteren:
 
-Selecteren van de natuurlijke taal
-----------------------------------
+Natuurlijke taal selecteren
+---------------------------
 
 Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels. Gebruik hiervoor het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
@@ -151,8 +151,8 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 .. _persoonlijke gegevens:
 .. _gebruikersprofiel:
 
-Beheren van je gebruikersprofiel
---------------------------------
+Gebruikersprofiel beheren
+-------------------------
 
 Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren.
 
@@ -558,8 +558,8 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 .. _feedbackpagina:
 .. _feedback:
 
-Interpreteren van feedback
---------------------------
+Feedback interpreteren
+----------------------
 
 De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
