@@ -522,7 +522,7 @@ Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen n
 
     Je kan het beoordelen van een ingediende oplossing niet annuleren. Terwijl een oplossing in de wachtrij staat en terwijl de *judge* bezig is om de oplossing te beoordelen, wordt de indienknop op de :ref:`oefeningpagina <oefeningpagina>` buiten werking gesteld en kan je geen nieuwe :ref:`oplossing indienen <oplossing indienen>`. Ook dit is een maatregel om overbelasting van het platform tegen te gaan. Nog een reden dus om te wachten met :ref:`indienen <oplossing indienen>` tot je jezelf ervan vergewist hebt dat je oplossing geen fouten meer bevat.
 
-    .. TODO:feature-missing: mogelijkheid aanbieden om het beoordelingsproces van een ingediende oplossing te annuleren; als dit gebeurt wordt de oplossing terug geopend in de code editor op de oefeningpagina; vereist een nieuwe status "beoordeling geannuleerd" met eventueel in de korte samenvatting een aanduiding wie de beoordeling heeft geannuleerd (student of lesgever) en wanneer dit gebeurd is
+    .. TODO:feature-missing: mogelijkheid aanbieden om het beoordelingsproces van een ingediende oplossing te annuleren; als dit gebeurt wordt de oplossing terug geopend in de code editor op de oefeningpagina; vereist een nieuwe status "beoordeling geannuleerd" met eventueel in de korte samenvatting een aanduiding wie de beoordeling heeft geannuleerd (student of lesgever) en wanneer dit gebeurd is; een lesgever zou eventueel zelf ook een korte samenvatting kunnen geven waarom hij de ingediende oplossing geannuleerd heeft; bij uitbreiding zou deze status ook kunnen gebruikt worden om een oplossing die volledig beoordeeld was toch nog te annuleren, bijvoorbeeld omwille van plagiaat; daarmee stappen we dus in een scenario waarbij een cursusbeheerder achteraf (na het judgen) de status van een oplossing nog zou kunnen wijzigen
 
 Zodra de *judge* klaar is met het beoordelen van je ingediende oplossing krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
@@ -563,7 +563,7 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 
-Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tjidstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
+Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tijdstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
 .. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
 
@@ -588,7 +588,7 @@ De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <op
 
 .. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
 
-Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens over de :ref:`ingediende oplossing <oplossing indienen>`:
+Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens over de :ref:`oplossing <oplossing indienen>`:
 
 .. _oplossing opgave:
 
@@ -623,7 +623,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
 :guilabel:`Status`
 
-    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert ook een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
+    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden voor de *judge* toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
@@ -703,7 +703,7 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 
 .. _oplossing opnieuw indienen:
 
-In de tab :guilabel:`Code` van de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
 .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
 
@@ -723,7 +723,7 @@ De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel w
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
 
-Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant geconnecteerd met een gekleurde lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groen) of niet geslaagd (rood).
+Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant geconnecteerd met een dunne vertikale lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of niet geslaagd (rode lijn).
 
 .. TODO:tutorial-missing: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
 .. TODO:tutorial-missing: status per oplossing (DONE), tab (DONE), context (DONE), testcase (DONE) en test; uitleggen hoe dit werkt
@@ -743,7 +743,7 @@ Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` word
 Contact opnemen
 ---------------
 
-Zit je bij het werken met of het verkennen van Dodona met vragen over hoe je het platform kan gebruiken, of heb je suggesties of commentaar over hoe we het platform zouden kunnen verbeteren of uitgebreiden, neem dan contact op met team Dodona. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
+Als je met vragen zit over de werking van Dodona of als er interessante ideeën opborrelen over hoe we het platform zouden kunnen verbeteren of uitbreiden, neem dan gerust contact met ons op. Alle commentaren en suggesties zijn meer dan welkom. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
 
 .. image:: contact.nl.png
 
