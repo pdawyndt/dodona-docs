@@ -85,7 +85,9 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
     Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contact opnemen>` op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
-Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden.
+.. _uitwisseling persoonlijke gegevens:
+
+Als dit de eerste keer is dat je aanmeldt op Dodona dan wordt er automatisch een nieuwe gebruikersaccount aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
 
 .. important::
 
@@ -146,26 +148,35 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 
 
 .. _profielpagina:
+.. _persoonlijke gegevens:
 .. _gebruikersprofiel:
 
 Beheren van je gebruikersprofiel
 --------------------------------
 
-Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren. Op je profielpagina staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
+Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren.
+
+.. TODO:screenshot-missing: screenshot van het selecteren van mijn profiel in het gebruikersmenu
+
+Op je :ref:`profielpagina <profielpagina>` staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
 
 .. image:: edit_profile.nl.png
 
-.. TODO:missing-image: bovenstaande screenshot moet vervangen worden door een screenshot van het selecteren van mijn profiel in het gebruikersmenu; de figuur die hier staat werd verplaatst na onderstaande paragraaf
+.. TODO:screenshot-update: bovenstaande screenshot moet vervangen worden door een screenshot van het selecteren van mijn profiel in het gebruikersmenu; de figuur die hier staat werd verplaatst na onderstaande paragraaf
 
 .. TODO:feature-update: studentennummer is UGent-specifiek en hoort niet langer thuis in het gebruikersprofiel na de verruiming naar andere identity providers
+.. TODO:feature-update: lijst alle cursussen van de gebruiker op in een afzonderlijk paneel (tab) waarin de listview voor de cursussen gebruikt wordt
+.. TODO:feature-update: lijst alle oefeningen waaraan gebruiker gewerkt heeft op in een afzonderlijk paneel waarin een listview voor de oefeningen gebruikt wordt; gebruik tabs of filtering zodat de gebruiker snel kan zien welke oefeningen afgewerkt zijn en aan welke zij nog moet werken; eventueel aanvullen met statistieken over aantal opgeloste oefeningen
+.. TODO:feature-update: lijst alle ingediende oplossingen van de gebruijer op in een afzonderlijk paneel waarin een listview voor de ingediende oplossingen gebruikt wordt; laat toe om te zoeken in de ingediende oplossingen; eventueel aanvullen met statistieken over aantal ingediende oplossingen
+.. TODO:feature-update: algemene learning analytics van gebruiker toevoegen aan gebruikersprofiel
 
 .. _gebruikersprofiel bijwerken:
 
-Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je persoonlijke gegevens kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de gegevens die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonlijke gegevens <persoonlijke gegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de :ref:`gegevens <uitwisseling persoonlijke gegevens>` die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
 
 .. image:: edit_profile.nl.png
 
-.. _tijdzone instellen:
+.. _gebruikersprofiel tijdzone:
 
 Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
 
@@ -175,9 +186,11 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 .. tip::
 
-    Als de tijdzone uit je gebruikersprofiel niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone. Je kan deze mededeling enkel weghalen door in je gebruikersprofiel de tijdzone in te stellen op de lokale tijdzone.
+    Als de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>` niet overeenkomt met de lokale tijdzone zoals die door je browser gedecteerd wordt, dan krijg je bovenaan elke pagina een mededeling te zien die erop wijst dat alle tijdsaanduidingen op het platform niet overeenkomen met de lokale tijdzone.
 
     .. image:: wrong_timezone.nl.png
+
+    Je kan deze mededeling enkel weghalen door in je :ref:`gebruikersprofiel <gebruikersprofiel>` de :ref:`tijdzone <gebruikersprofiel tijdzone>` in te stellen op de lokale tijdzone. Merk op dat de mededeling een link bevat waarmee je rechtstreeks naar je :ref:`profielpagina <profielpagina>` kan navigeren.
 
 .. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 .. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
@@ -320,7 +333,7 @@ Navigeren naar een oefening
 
 .. oefening selecteren uit oefeningenreeks op cursuspagina
 
-Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <tijdzone instellen>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
+Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 .. image:: deadline_series.nl.png
 
@@ -536,8 +549,8 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 .. _feedbackpagina:
 .. _feedback:
 
-Feedback
---------
+Interpreteren van feedback
+--------------------------
 
 De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
