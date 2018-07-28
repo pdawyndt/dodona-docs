@@ -99,6 +99,8 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. image:: user_menu.nl.png
 
+.. TODO:screenshot-update: alle screenshots van acties/views die een aangemelde gebruiker kan uitvoeren zouden best geprefixed worden met de rol van de gebruiker, omdat verschillende rollen vaak ook een andere weergave krijgen; de naamgeving wordt dan <action/view>.<lang>.png voor screenshots waar geen gebruiker aangemeld is of waarvan de actie/view niet afhangt van de rol van de gebruiker, student.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol student, staff.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol staff, course-admin.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol course-admin en zeus.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol zeus
+
 .. TODO:feature-update: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
 .. TODO:tutorial-update: extra witruimte tussen vorige figuur en volgende paragraaf in HTML versie
@@ -178,7 +180,7 @@ Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profie
 
 .. _gebruikersprofiel tijdzone:
 
-Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline voor een oefeningenreeks <oefeningenreeks deadline>`).
+Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline <oefeningenreeks deadline>` voor een oefeningenreeks).
 
 .. image:: edit_timezone.nl.png
 
@@ -348,13 +350,13 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 .. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een ingediende oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
-Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst met alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefening status>` voor de oefening.
+Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst met alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. In de lijst zie je vóór elke oefening ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening.
 
 .. belangrijk::
 
     Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je telkens :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
 
-    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening niet noodzakelijk hetzelfde omdat de status afhangt van de :ref:`deadlines van de oefeningenreeksen <oefeningenreeks deadline>`. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening per definitie wel hetzelfde.
+    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening niet noodzakelijk hetzelfde omdat de :ref:`status <oefening status>` afhangt van de :ref:`deadlines <oefeningenreeks deadline>` van de oefeningenreeksen. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening per definitie wel hetzelfde.
 
 .. _oefeningenreeks statistieken:
 
@@ -365,7 +367,7 @@ De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenre
 
 Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
-Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
+Mogelijke weergaven van je status vóór het verstrijken van de :ref:`deadline <oefeningenreeks deadline>` of als er geen deadline is ingesteld:
 
 .. list-table::
   :header-rows: 1
@@ -376,15 +378,15 @@ Mogelijke weergaven van je status vóór het verstrijken van de deadline of als 
 
   * - :guilabel:`niet opgelost`
     - .. image::
-    - geen oplossing hebt ingediend (vóór de deadline)
+    - geen oplossing hebt ingediend (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
   * - :ref:`status <oplossing status>` van laatst ingediende oplossing
     - .. image::
-    - minstens één oplossing hebt ingediend (vóór de deadline)
+    - minstens één oplossing hebt ingediend (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
-Mogelijke weergaven van je status nadat de deadline verstreken is:
+Mogelijke weergaven van je status nadat de :ref:`deadline <oefeningenreeks deadline>` verstreken is:
 
 .. list-table::
   :header-rows: 1
@@ -395,11 +397,11 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
   * - :guilabel:`correct` (groen)
     - .. image::
-    - laatst ingediende oplossing vóór de deadline correct is
+    - laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>` correct is
 
   * - :guilabel:`deadline gemist` (rood)
     - .. image::
-    - geen oplossingen hebt ingediend vóór de deadline of als je laatst ingediende oplossing vóór de deadline niet correct is
+    - geen oplossingen hebt ingediend vóór de :ref:`deadline <oefeningenreeks deadline>` of als je laatst ingediende oplossing vóór de deadline niet correct is
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
@@ -409,11 +411,11 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
     Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
-    Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Dodona toont een **waarschuwingssymbool** naast je :ref:`status <oefening status>` van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline <oefeningenreeks deadline>` van de oefeningenreeks een :ref:`status <oefening status>` heeft die slechter is dan de :ref:`status <oefening status>` van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     .. image:: deadline_series_warning.nl.png
 
-    Als je **na het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`.
+    Als je **na het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je :ref:`status <oefening status>` voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`.
 
 .. TODO:screenshot-update: screenshot met waarschuwingssymbool kan beperkt worden tot de oefeningenreeksen om plaats te besparen (deel boven de oefeningenreeksen tot aan de navigatiebalk mag weggeknipt worden)
 
@@ -444,6 +446,8 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
 Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening te drukken.
 
+.. TODO:screenshot-missing: screenshot van oefeningenreeks met pijl naar naam van oefening waarop je kan klikken
+
 .. TODO:feature-missing: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
 .. TODO:tutorial-update: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
@@ -451,7 +455,11 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
-Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+
+.. image:: exercise_submissions_page.nl.png
+
+.. TODO:screenshot-update: naam van dit screenshot moet beter gekozen worden
 
 .. TODO:tutorial-missing: oefening selecteren uit de lijst met alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
@@ -504,11 +512,11 @@ Onder het paneel met de omschrijving van de oefening op een :ref:`oefeningpagina
 
 .. TODO:tutorial-update: bespreken van de mogelijkheid om een plugin te gebruiken of ontwikkelen voor je IDE waarmee je rechtstreeks vanuit de IDE broncode kan indienen op Dodona (voor een bepaalde oefening en in een bepaalde cursus)
 
-Na het :ref:`indienen van een oplossing <oplossing indienen>` wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. In het overzicht zie je vóór elke ingediende oplossing ook een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing.
+Na het :ref:`indienen van een oplossing <oplossing indienen>` wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tijdstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. In het overzicht zie je vóór elke ingediende oplossing ook een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing.
 
 .. _oplossing wachtrij:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de status :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een *judge*. Tijdens het beoordelen van een oplossing heeft ze de status :guilabel:`Aan het uitvoeren…`.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de :ref:`status <oplossing status>` :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een *judge*. Tijdens het beoordelen van een oplossing heeft ze de :ref:`status <oplossing status>` :guilabel:`Aan het uitvoeren…`.
 
 .. note::
 
@@ -555,7 +563,7 @@ Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`in
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
 
-Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`status <oplossing status>` en een korte samenvatting van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een icoontje dat correspondeert met de :ref:`status van de oplossing <oplossing status>`. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
+Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tjidstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
 .. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
 
@@ -582,11 +590,15 @@ De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <op
 
 Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens over de :ref:`ingediende oplossing <oplossing indienen>`:
 
+.. _oplossing opgave:
+
 :guilabel:`Opgave`
 
     .. TODO:feature-update: inconsistentie in de terminologie: in de header van de feedbackpagina wordt de term "Opgave" gebruikt, waar elders de term "Oefening" gebruikt wordt; we spreken ook van een oefeningenreeks
 
     Naam van de oefening waarvoor je de oplossing hebt ingediend. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
+
+.. _oplossing cursus:
 
 :guilabel:`Cursus`
 
@@ -599,6 +611,8 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
        Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
 
     .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
+
+.. _oplossing tijdstip:
 
 :guilabel:`Ingediend`
 
@@ -662,9 +676,11 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Indien de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
 
+.. _oplossing samenvatting:
+
 :guilabel:`Samenvatting`
 
-    Korte motivering van de *judge* bij de status die hij aan de oplossing heeft toegekend.
+    Korte motivering van de *judge* bij de :ref:`status <oplossing status>` die hij aan de oplossing heeft toegekend.
 
 .. TODO:feature-missing: vanuit de feedbackpagina op een aparte pagina zou je ook makkelijk naar een overzicht moeten kunnen navigeren van alle oplossingen die de gebruiker heeft ingediend voor die oefening, eventueel binnen de context van een cursus (als de oplossing zelf binnen een cursus werd ingediend); als de feedbackpagina in een tab wordt weergegeven, dan hoeft dit niet, want dan staat daarnaast al een tab "Oplossingen"
 
@@ -679,7 +695,7 @@ Daaronder staat meer gedetailleerde feedback die mogelijk uitgesplitst werd over
 
 .. _feedback tab code:
 
-De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde status aan de oplossing toegekend heeft.
+De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
 
