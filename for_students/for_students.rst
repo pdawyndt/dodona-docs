@@ -367,7 +367,7 @@ De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenre
 .. _oefening status:
 .. _oefening icoontje:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
 Mogelijke weergaven van je status vóór het verstrijken van de :ref:`deadline <oefeningenreeks deadline>` of als er geen deadline is ingesteld:
 
@@ -427,7 +427,7 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
 :guilabel:`Toon overzicht`
 
-    Toont een overzicht waarin de titels en omschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke omschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+    Toont een overzicht waarin de titels en omschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke omschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
     .. _printbare versie oefeningenreeks:
 
@@ -437,7 +437,7 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
 :guilabel:`Oplossingen downloaden`
 
-    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
+    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
 
 .. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
@@ -670,7 +670,7 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
-    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Indien de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
+    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Als de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
 
 .. _oplossing samenvatting:
 
@@ -717,33 +717,31 @@ Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de 
 
 .. _feedback context visueel:
 
-Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant visueel met elkaar verbonden door een dunne vertikale lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
+Visueel worden alle :ref:`testgevallen <testgeval>` van een :ref:`context <context>` met elkaar verbonden via een dunne vertikale lijn aan de linkerkant. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
 
 .. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee contexten met meerdere testgevallen, waarvan er minstens één geslaagd is (groene lijn) en minstens één niet (rode lijn)
 
 .. _feedback testgeval visueel:
 
-De omschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
+Aan de rechterkant van de dunne vertikale lijn worden de testgevallen van de context onder elkaar weergegeven. De omschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur die over de volledige breedte loopt. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
 .. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge; dit kan eventueel aangekaart worden in de handleiding van de Python judge zelf
 
 .. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee testgevallen waarvan er minstens één geslaagd is en minstens één niet
 
-Als een testgeval bijkomend rapporteert over individuele testen, dan worden die opgelijst onder de rechthoek met lichtgrijze achtergrond waarin de omschrijving van het testgeval staat. Om visueel onderscheid te maken met de weergave van het testgeval, wordt elke test weergegeven met een kleine marge aan de linker- en rechterkant. De weergave van een test bestaat zelf uit de volgende optionele componenten die onder elkaar worden weergegeven:
+Als een testgeval bijkomend rapporteert over individuele testen, dan worden die opgelijst onder de rechthoek met lichtgrijze achtergrond waarin de omschrijving van het testgeval staat. Om visueel onderscheid te maken met de weergave van het testgeval, wordt elke test weergegeven met een kleine marge links en rechts. De weergave van een test bestaat zelf uit de volgende optionele componenten die onder elkaar worden weergegeven:
 
 * .. _feedback testgeval omschrijving:
 
-  Een omschrijving van de uitgevoerde test. Deze omschrijving wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur.
+  Een omschrijving van de uitgevoerde test. Deze omschrijving wordt weergegeven binnen een rechthoek met dezelfde lichtgrijze achtergrondkleur als bij de omschrijving van een testgeval.
 
-  .. TODO:feature-missing: op dit moment is er geen visuele weergave van de eigenschap "accepted" (boolean) van een individuele test; voorstel is om ofwel te werken met dezelfde gekleurde symbolen als bij de testgevallen of om de omschrijving in een groene of rode rechthoek te plaatsen in plaats van in een grijze rechthoek zoals experimenteel toegepast in de JavaScript judge
+  .. TODO:feature-missing: op dit moment is er geen visuele weergave van de eigenschap "accepted" (boolean) van een individuele test; voorstel is om ofwel te werken met dezelfde gekleurde symbolen als bij de testgevallen of om de omschrijving in een groene of rode rechthoek te plaatsen in plaats van in een grijze rechthoek zoals experimenteel toegepast in de JavaScript judge; er kan eventueel ook gespeeld worden met een gekleurde lijn aan de rechterkant in plaats van met een gekleurd symbool, naar analogie met de lijn die door de context gebruikt wordt; in dezelfde stijl zou dan ook de lijn onder een tab kunnen gebruikt worden om de "accepted" toestand van de tab aan te duiden
   .. TODO:feature-missing: in de JavaScript judge werd geëxperimenteerd met de mogelijkheid om in plaats van enkel een boolean te gebruiken als status voor een tab/context/testgeval/test, nog een tweede boolean te gebruiken om aan te geven of de beoordeling effectief gebeurd is voor die component; op die manier kan gerapporteerd worden over testen die niet beoordeeld werden (skipped; bijvoorbeeld omdat de tijdlimiet overschreden werd op een bepaald moment)
 
 * .. _feedback testgeval diff:
 
-  Een visuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing.
-
-  .. TODO:tutorial-missing: bespreking van enkele eigenschappen van de diff: i) aligneren van overeenkomstige regels, ii) overeenkomstige regels die verschillen worden aangeduid met een lichtgroene en lichtrode achtergrondkleur en gelijke met een transparante achtergrondkleur, iii) individuele karakters die verschillen binnen overeenkomstige regels worden aangeduid met donkerdere achtergrondkleuren (groen voor verwachte waarde en rood voor gegenereerde waarde)
+  Een tekstuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing. Als minstens één van beide waarden uit meerdere regels bestaat, dan worden de overeenkomstige regels tegenover elkaar uitgelijnd. Identieke overeenkomstige regels worden weergegeven met een transparante achtergrondkleur. Als overeenkomstige regels van elkaar verschillen dan worden ze weergegeven met een lichtgekleurde achtergrondkleur (groen voor de waarde en rood voor de gekleurde waarde). Individuele karakters die verschillen binnen overeenkomstige regels worden weergegeven met een donkerder achtergrondkleur (groen voor de waarde en rood voor de gekleurde waarde).
 
   .. TODO:feature-missing: schakelen tussen unified/split in diff (www.diffchecker.com)
   .. TODO:feature-missing: schakelen tussen word/character in diff (www.diffchecker.com)
@@ -758,8 +756,7 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
     .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
     .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
 
-.. TODO:tutorial-missing: aangeven waar de mededelingen worden weergegeven die
-toegekend worden aan de oplossing, een tab, een context, een testcase en een test (DONE); in plaast van mededelingen spreken we van feedback
+.. TODO:tutorial-missing: aangeven waar de mededelingen worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test (DONE); in plaast van mededelingen spreken we van feedback
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
 
