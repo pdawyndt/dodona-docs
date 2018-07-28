@@ -1,5 +1,7 @@
 .. _for_students:
 
+.. TODO:tutorial-update: overwegen om hoofdstuk op te bouwen rond de componenten van Dodona (landingspagina, startpagina, cursusoverzicht, cursuspagina, oefeningpagina, feedbackpagina) in plaats van rond de acties die een gebruiker op het platform kan doen; zou het misschien ook iets eenvoudiger maken om per component op te lijsten wat de extra's zijn voor admins, stafleden en cursusbeheerders
+
 Dodona voor studenten
 =====================
 
@@ -709,32 +711,64 @@ In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je d
 
 Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
-.. _test:
-.. _testgeval:
-.. _context:
+.. _feedback context:
+.. _feedback testgeval:
+.. _feedback test:
 
-Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de code onderworpen heeft. Gerelateerde testen worden gegroepeerd in een **testgeval** en testgevallen die van elkaar afhankelijk zijn worden gegroepeerd in een **context**.
+Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de code onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
-.. TODO:screenshot-missing: screenshot dat een voorbeeld geeft van i) twee of meer contexten, ii) twee of meer testgevallen en iii) twee of meer testen; de afbeelding hierboven is slechts een placeholder; misschien moeten we de individuele onderdelen van de feedback (tab, context, testgeval, test) ook expliciet aanduiden op de figuur; een bijschrift bij de figuur zal misschien ook wel nodig zijn in dit geval
+.. TODO:screenshot-update: screenshot dat een voorbeeld geeft van i) twee of meer contexten, ii) twee of meer testgevallen en iii) twee of meer testen; de afbeelding hierboven is slechts een placeholder; misschien moeten we de individuele onderdelen van de feedback (tab, context, testgeval, test) ook expliciet aanduiden op de figuur; een bijschrift bij de figuur zal misschien ook wel nodig zijn in dit geval; screenshot dat hierboven staat is maar een dummy (wordt nog op een andere plaats gebruikt)
 
-De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel weergegeven binnen een lichtgrijze rechthoek. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of niet geslaagd (rood kruisje).
+.. _feedback context visueel:
+
+Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant visueel met elkaar verbonden door een dunne vertikale lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
+
+.. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee contexten met meerdere testgevallen, waarvan er minstens één geslaagd is (groene lijn) en minstens één niet (rode lijn)
+
+.. _feedback testgeval visueel:
+
+De omschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
+.. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge; dit kan eventueel aangekaart worden in de handleiding van de Python judge zelf
 
-Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant geconnecteerd met een dunne vertikale lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of niet geslaagd (rode lijn).
+.. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee testgevallen waarvan er minstens één geslaagd is en minstens één niet
 
-.. TODO:tutorial-missing: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
-.. TODO:tutorial-missing: status per oplossing (DONE), tab (DONE), context (DONE), testcase (DONE) en test; uitleggen hoe dit werkt
-.. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge
-.. TODO:tutorial-missing: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
-.. TODO:tutorial-missing: voorbeeld van test met een boodschap
-.. TODO:tutorial-missing: voorbeeld van test met een grafische boodschap (Curling)
+Als een testgeval bijkomend rapporteert over individuele testen, dan worden die opgelijst onder de rechthoek met lichtgrijze achtergrond waarin de omschrijving van het testgeval staat. Om visueel onderscheid te maken met de weergave van het testgeval, wordt elke test weergegeven met een kleine marge aan de linker- en rechterkant. De weergave van een test bestaat zelf uit de volgende optionele componenten die onder elkaar worden weergegeven:
 
-.. TODO:feature-missing: toon enkel de contexten die fout zijn
-.. TODO:feature-missing: toon regelnummers in diff
-.. TODO:feature-missing: schakelen tussen unified/split in diff
+* .. _feedback testgeval omschrijving:
+
+  Een omschrijving van de uitgevoerde test. Deze omschrijving wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur.
+
+  .. TODO:feature-missing: op dit moment is er geen visuele weergave van de eigenschap "accepted" (boolean) van een individuele test; voorstel is om ofwel te werken met dezelfde gekleurde symbolen als bij de testgevallen of om de omschrijving in een groene of rode rechthoek te plaatsen in plaats van in een grijze rechthoek zoals experimenteel toegepast in de JavaScript judge
+  .. TODO:feature-missing: in de JavaScript judge werd geëxperimenteerd met de mogelijkheid om in plaats van enkel een boolean te gebruiken als status voor een tab/context/testgeval/test, nog een tweede boolean te gebruiken om aan te geven of de beoordeling effectief gebeurd is voor die component; op die manier kan gerapporteerd worden over testen die niet beoordeeld werden (skipped; bijvoorbeeld omdat de tijdlimiet overschreden werd op een bepaald moment)
+
+* .. _feedback testgeval diff:
+
+  Een visuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing.
+
+  .. TODO:tutorial-missing: bespreking van enkele eigenschappen van de diff: i) aligneren van overeenkomstige regels, ii) overeenkomstige regels die verschillen worden aangeduid met een lichtgroene en lichtrode achtergrondkleur en gelijke met een transparante achtergrondkleur, iii) individuele karakters die verschillen binnen overeenkomstige regels worden aangeduid met donkerdere achtergrondkleuren (groen voor verwachte waarde en rood voor gegenereerde waarde)
+
+  .. TODO:feature-missing: schakelen tussen unified/split in diff (www.diffchecker.com)
+  .. TODO:feature-missing: schakelen tussen word/character in diff (www.diffchecker.com)
+  .. TODO:feature-missing: weergave regelnummers in/uit schakelen in diff (www.diffchecker.com)
+
+* .. _feedback testgeval mededelingen:
+
+  Algemene feedback over de uitgevoerde test. Voor deze feedback heeft de *judge* alle vrijheid wat betreft de vormgeving, waardoor hij zowel tekstuele als grafische feedback kan aanleveren.
+
+    .. TODO:tutorial-comment: technisch gezien kunnen hier meerdere mededelingen onder elkaar staan; Dodona gebruikt echter geen visuele manier om deze mededelingen van elkaar te onderscheiden, waardoor gebruikers geen verschil zien tussen één of meerdere mededelingen; omwille van de eenvoud spreken we hier dus slechts van één optionele mededeling, en we benoemen die met de term "feedback"
+
+    .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
+    .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
+
+.. TODO:tutorial-missing: aangeven waar de mededelingen worden weergegeven die
+toegekend worden aan de oplossing, een tab, een context, een testcase en een test (DONE); in plaast van mededelingen spreken we van feedback
+
+.. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
+
 
 .. _voettekst:
 .. _contactpagina:
