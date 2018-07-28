@@ -625,7 +625,7 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
     .. list-table::
       :header-rows: 1
-      :widths 35 15 50
+      :widths: 35 15 50
 
       * - status
         - icoontje
