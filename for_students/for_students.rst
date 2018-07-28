@@ -348,21 +348,21 @@ Een :ref:`cursuspagina <cursuspagina>` bevat een reeks **oefeningen** die gegroe
 
 .. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een ingediende oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
-Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst met alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening.
+Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een lijst met alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefening status>` voor de oefening.
 
 .. belangrijk::
 
-    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je doorgaans :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
+    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je telkens :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
 
-    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening niet noodzakelijk hetzelfde omdat de status afhangt van de deadlines van de oefeningenreeksen. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefeningenreeks status>` voor de oefening per definitie wel hetzelfde.
+    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening niet noodzakelijk hetzelfde omdat de status afhangt van de :ref:`deadlines van de oefeningenreeksen <oefeningenreeks deadline>`. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening per definitie wel hetzelfde.
 
 .. _oefeningenreeks statistieken:
 
 De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening.
 
-.. _oefeningenreeks status:
+.. _oefening status:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
 Mogelijke weergaven van je status vóór het verstrijken van de deadline of als er geen deadline is ingesteld:
 
@@ -406,13 +406,13 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
 .. important::
 
-    Als je **vóór het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je status voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de deadline. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     Dodona toont een **waarschuwingssymbool** naast je status van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline van de oefeningenreeks <oefeningenreeks deadline>` een status heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     .. image:: deadline_series_warning.nl.png
 
-    Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
+    Als je **na het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`.
 
 .. TODO:tutorial-missing: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
@@ -422,7 +422,7 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
 :guilabel:`Toon overzicht`
 
-    Toont een overzicht waarin de titels en omschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke omschrijving staat ook je :ref:`status <oefeningenreeks status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` op basis waarvan je status bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+    Toont een overzicht waarin de titels en omschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke omschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
     .. _printbare versie oefeningenreeks:
 
@@ -432,7 +432,7 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
 :guilabel:`Oplossingen downloaden`
 
-    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat op basis waarvan je :ref:`status <oefeningenreeks status>` voor de oefening bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
+    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
 
 .. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
@@ -446,7 +446,7 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 .. _recente oefeningen:
 .. oefening uit reeksen met deadlines selecteren op de startpagina
 
-Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
 .. TODO:tutorial-missing: oefening selecteren uit de lijst met alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
@@ -462,9 +462,9 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** te
 
 .. tip::
 
-    Na :ref:`selectie van een oefening <oefening>` of bij het uitvoeren van een actie op een oefening verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
+    Als je op een :ref:`oefeningpagina <oefeningpagina>` aan het werken bent of als je een actie aan het uitvoeren bent op een oefening dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je terug naar de bovenkant van de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
-.. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
+    .. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
 Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de omschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
@@ -472,7 +472,7 @@ Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam 
 
 .. tip::
 
-    Dodona voorziet een verzorgde opmaak bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>` waarbij sommige componenten die je in een browser te zien krijgt automatisch worden verborgen en enkel de titel en de omschrijving van de oefening worden afgedrukt.
+    Dodona voorziet een verzorgde opmaak bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>`. Daarbij worden sommige componenten die je in een browser te zien krijgt automatisch verborgen bij het afdrukken. Enkel de titel en de omschrijving van de oefening worden afgedrukt.
 
     Bovendien is het mogelijk dat bij het opstellen van de oefening bepaalde componenten uit de omschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de omschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
 
