@@ -580,13 +580,13 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 Feedback interpreteren
 ----------------------
 
-De **feedbackpagina** toont gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
+Op de **feedbackpagina** staat gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
 
 .. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
 
-Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens over de :ref:`oplossing <oplossing indienen>`:
+Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende gegevens over de :ref:`oplossing <oplossing indienen>`:
 
 .. _oplossing opgave:
 
@@ -594,19 +594,19 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
     .. TODO:feature-update: inconsistentie in de terminologie: in de header van de feedbackpagina wordt de term "Opgave" gebruikt, waar elders de term "Oefening" gebruikt wordt; we spreken ook van een oefeningenreeks
 
-    Naam van de oefening waarvoor je de oplossing hebt ingediend. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
+    Naam van de oefening waarvoor de oplossing werd ingediend. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
 
 .. _oplossing cursus:
 
 :guilabel:`Cursus`
 
-    Naam van de cursus waarbinnen je de oplossing hebt ingediend. Druk op de naam om naar de :ref:`cursuspagina <oefeningpagina>` te navigeren.
+    Naam van de cursus waarbinnen de oplossing werd ingediend. Druk op de naam om naar de :ref:`cursuspagina <oefeningpagina>` te navigeren.
 
     .. TODO:feature-update: vermeld in de header van de feedbackpagina naast de naam van de cursus ook het academiejaar om de benaming consistent te maken met de benaming in de titelbalk op de cursuspagina van de cursus
 
     .. note::
 
-       Dit informatieveld ontbreekt als je de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus hebt ingediend.
+       Dit informatieveld ontbreekt als de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus werd ingediend.
 
     .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
 
@@ -614,17 +614,18 @@ Bovenaan de :ref:`feedbackpagina <feedbackpagina>` vind je de volgende gegevens 
 
 :guilabel:`Ingediend`
 
-    Tijdstip waarop je de oplossing hebt ingediend. Dit tijdstip wordt op een gebruiksvriendelijke manier weergegeven, bijvoorbeeld :guilabel:`ongeveer 2 uur geleden`. Als je de muiswijzer boven het tijdstip plaatst dan krijg je de gedetailleerde weergave van het tijdstip te zien.
+    Tijdstip waarop de oplossing werd ingediend. Dit tijdstip wordt op een gebruiksvriendelijke manier weergegeven, bijvoorbeeld :guilabel:`ongeveer 2 uur geleden`. Als je de muiswijzer boven het tijdstip plaatst dan krijg je de gedetailleerde weergave van het tijdstip te zien.
 
 .. _oplossing status:
 .. _oplossing icoontje:
 
 :guilabel:`Status`
 
-    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden voor de *judge* toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
+    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden door de *judge* toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
+      :widths 35 15 50
 
       * - status
         - icoontje
