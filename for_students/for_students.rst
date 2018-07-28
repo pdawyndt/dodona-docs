@@ -685,7 +685,7 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 .. _feedback tab:
 .. _feedback tab badge:
 
-Daaronder staat meer gedetailleerde feedback die mogelijk uitgesplitst werd over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de *judge* vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
+Daaronder staat meer gedetailleerde feedback die de *judge* kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de *judge* vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
 
@@ -697,13 +697,15 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 
 .. TODO:feature-missing: een judge kan een tab al dan niet aanvaarden (accepted), maar dit wordt momenteel niet visueel weergegeven via een kleur of een symbool bij de tab zoals dat bij andere niveau's wel het geval is; nadenken of we dit toch niet moeten introduceren
 
-.. _oplossing opnieuw indienen:
+.. tip::
 
-In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+    .. _oplossing opnieuw indienen:
 
-.. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
+    In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
-Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+    .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
+
+    Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
 .. _feedback context:
 .. _feedback testgeval:
@@ -741,7 +743,7 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
 
 * .. _feedback testgeval diff:
 
-  Een tekstuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing. Als minstens één van beide waarden uit meerdere regels bestaat, dan worden de overeenkomstige regels tegenover elkaar uitgelijnd. Identieke overeenkomstige regels worden weergegeven met een transparante achtergrondkleur. Als overeenkomstige regels van elkaar verschillen dan worden ze weergegeven met een lichtgekleurde achtergrondkleur (groen voor de waarde en rood voor de gekleurde waarde). Individuele karakters die verschillen binnen overeenkomstige regels worden weergegeven met een donkerder achtergrondkleur (groen voor de waarde en rood voor de gekleurde waarde).
+  Een tekstuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing. Als minstens één van beide waarden uit meerdere regels bestaat, dan worden de overeenkomstige regels tegenover elkaar uitgelijnd. Identieke overeenkomstige regels worden weergegeven met een transparante achtergrondkleur. Als overeenkomstige regels van elkaar verschillen dan worden ze weergegeven met een lichtgekleurde achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde). Individuele karakters die verschillen binnen overeenkomstige regels worden weergegeven met een donkerder achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde).
 
   .. TODO:feature-missing: schakelen tussen unified/split in diff (www.diffchecker.com)
   .. TODO:feature-missing: schakelen tussen word/character in diff (www.diffchecker.com)
@@ -756,7 +758,7 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
     .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
     .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
 
-De *judge* kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat tussen de gegevens van de oplossing en de balk met de tabs. De algemene feedback over een tab staat boven de weergave van de contexten van de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
+De *judge* kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
 
@@ -768,7 +770,7 @@ De *judge* kan niet enkel algemene feedback geven over individuele testen, maar 
 Contact opnemen
 ---------------
 
-Als je met vragen zit over de werking van Dodona of als er interessante ideeën opborrelen over hoe we het platform zouden kunnen verbeteren of uitbreiden, neem dan gerust contact met ons op. Alle commentaren en suggesties zijn meer dan welkom. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
+Als je met vragen zit over de werking van Dodona of als er interessante ideeën bij je opborrelen over hoe we het platform zouden kunnen verbeteren of uitbreiden, neem dan gerust contact met ons op. Alle commentaren en suggesties zijn meer dan welkom. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
 
 .. image:: contact.nl.png
 
