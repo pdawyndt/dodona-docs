@@ -7,27 +7,6 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 .. TODO:tutorial-update: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
 
-.. _gebruikersaccount:
-
-.. important::
-
-    Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je persoonlijke voorkeuren instellen voor de :ref:`natuurlijke taal <taal selecteren>` en de :ref:`tijdzone <tijdzone instellen>` die door Dodona gebruikt worden. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
-
-    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je voor het eerst :ref:`aanmeldt <aanmelden>` met een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
-
-      * Universiteit Gent (UGent)
-      * Universiteit Hasselt (UHasselt)
-      * Hogeschool West-Vlaanderen (Howest)
-      * Hogeschool Gent (HoGent)
-      * Katholieke Universiteit Leuven (KU Leuven)
-      * H.-Hartcollege Waregem
-      * Sint-Bavohumaniora Gent
-      * College Ieper
-
-.. note::
-
-    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contact opnemen>` op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
-
 
 .. _taalmenu:
 .. _navigatiebalk:
@@ -58,14 +37,37 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 .. TODO:feature-update: standaardtaal instellen op Engels
 .. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
 .. TODO:feature-update: link naar oefeningen nodig in navigatiebalk op landingspagina?
-.. TODO:feature-discuss: eventueel uitleggen hoe initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
-.. TODO:feature-discuss: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
+
+.. TODO:tutorial-missing: eventueel uitleggen hoe initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
+.. TODO:tutorial-missing: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
 
 .. _aanmelden:
 
 Aanmelden
 ---------
+
+.. _gebruikersaccount:
+
+    Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
+
+.. important::
+
+    Je kan zelf geen gebruikersaccount aanmaken. Dodona maakt automatisch een gebruikersaccount aan als je voor het eerst :ref:`aanmeldt <aanmelden>` met een gebruikersaccount van één van deze externe onderwijs- of onderzoeksinstellingen:
+
+      * Universiteit Gent (UGent)
+      * Universiteit Hasselt (UHasselt)
+      * Hogeschool West-Vlaanderen (Howest)
+      * Hogeschool Gent (HoGent)
+      * Katholieke Universiteit Leuven (KU Leuven)
+      * H.-Hartcollege Waregem
+      * Sint-Bavohumaniora Gent
+      * College Ieper
+
+.. note::
+
+    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contact opnemen>` op te nemen met team Dodona als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+
 
 .. tip::
 
@@ -116,7 +118,7 @@ Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voo
 
 .. image:: homepage.nl.png
 
-.. TODO:feature-discuss: omschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de omschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
+.. TODO:tutorial-missing: omschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de omschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
 
 
 .. _afmelden:
@@ -171,7 +173,7 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 .. image:: edit_timezone.nl.png
 
-.. TODO:feature-discuss: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
+.. TODO:tutorial-missing: eventueel aangeven op welke manier de tijdzone werd ingesteld bij het aanmaken van je gebruikersaccount
 
 .. tip::
 
@@ -181,7 +183,8 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 .. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 .. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
-.. TODO:feature-discuss: omschrijving van API tokens toevoegen
+
+.. TODO:tutorial-missing: omschrijving van API tokens toevoegen
 
 
 .. _cursus:
@@ -195,13 +198,13 @@ Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van all
 
 .. TODO:feature-update: academiejaar is terminologie die enkel in het hoger onderwijs gebruikt wordt; secundair onderwijs zou hier de term "schooljaar" gebruiken; zoeken naar generiekere oplossing in Dodona door bijvoorbeeld de begin- en einddatum van een module in te stellen, en dan een weergave te zien met modules die actief zijn, modules die afgelopen zijn en modules die in de toekomst zullen lopen
 
-.. TODO:feature-discuss: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
+.. TODO:tutorial-missing: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
 Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst van alle cursussen waarvoor je geregistreerd bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
 .. image:: my_courses.nl.png
 
-.. TODO:feature-discuss: gebruikersmenu is niet opengeklapt waardoor pijl in het luchtledige wijst
+.. TODO:screenshot-update: gebruikersmenu is niet opengeklapt waardoor pijl in het luchtledige wijst
 
 .. _paneel wachten op goedkeuring:
 
@@ -222,13 +225,13 @@ Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academ
 
 Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
-.. TODO:feature-discuss: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
+.. TODO:tutorial-missing: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
 .. image:: courses.nl.png
 
 .. TODO:screenshot-update: werk met volwaardige cursussen in plaats van dummy cursussen
 
-.. TODO:feature-discuss: uitleg over gebruikte symbolen op kaartje van een cursus in het cursusoverzicht en op je startpagina
+.. TODO:tutorial-missing: uitleg over gebruikte symbolen op kaartje van een cursus in het cursusoverzicht en op je startpagina
 
 .. _cursuspagina:
 
@@ -277,7 +280,8 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 .. TODO:feature-update: tekst van gemodereerde registratie vervangen door "Je moet een registratieverzoek indienen dat eerst moet goedgekeurd worden door een cursusbeheerder voor je toegang krijgt tot de cursus." (huidige term "vak" komt nergens anders voor op Dodona)
 .. TODO:feature-update: tekst van gemodereerde registratie na indienen van registratieverzoek vervangen door "Je hebt al een registratieverzoek ingediend voor deze cursus. Je krijgt toegang tot de cursus zodra dit registratieverzoek wordt goedgekeurd door een cursusbeheerder."
 .. TODO:feature-update: tekst "Je staat al op de wachtlijst." weglaten omdat bovenstaande tekst al aangeeft dat er niet nog eens een registratieverzoek kan ingediend worden; in plaats daarvan moet de student de kans krijgen om zich uit te schrijven uit de cursus (als goedkeuring van het registratieverzoek bijvoorbeeld te lang op zich laat wachten)
-.. TODO:feature-discuss: aangeven wat er gebeurt als een cursusbeheerder de registratie goedkeurt/afkeurt; automatische email naar de student?
+
+.. TODO:tutorial-missing: aangeven wat er gebeurt als een cursusbeheerder de registratie goedkeurt/afkeurt; automatische email naar de student?
 
 .. note::
 
@@ -287,9 +291,9 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er ook een kaartje van d
 
 .. image:: my_courses.nl.png
 
-.. TODO:feature-discuss: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
-.. TODO:feature-discuss: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
-.. TODO:feature-discuss: behandeling van deadlines moet ergens ander staan.
+.. TODO:tutorial-missing: aangeven wat de statistieken betekenen op het kaartje van de nieuw aangemaakte cursus
+.. TODO:tutorial-missing: aangeven wat de statistieken betekenen in het paneel aan de rechterkant van de startpagina
+.. TODO:tutorial-missing: behandeling van deadlines moet ergens ander staan.
 .. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
 
 .. _registratielink:
@@ -390,7 +394,7 @@ Mogelijke weergaven van je status nadat de deadline verstreken is:
 
     Als je **na het verstrijken van de deadline** van een oefeningenreeks een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je status voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de deadline.
 
-.. TODO:feature-discuss: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
+.. TODO:tutorial-missing: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
 .. _oefeningenreeks menu:
 
@@ -410,7 +414,6 @@ In het menu van een oefeningenreeks vind je de volgende opties:
 
     Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat op basis waarvan je :ref:`status <oefeningenreeks status>` voor de oefening bepaald werd (indien je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
 
-.. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
 .. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
 
@@ -425,7 +428,7 @@ Selecteer een oefening uit een oefeningenreeks door op de naam van de oefening t
 
 Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een icoontje dat correspondeert met je :ref:`status <oefeningenreeks status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
-.. TODO:feature-discuss: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
+.. TODO:tutorial-missing: oefening selecteren uit de lijst van alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
 .. TODO:tutorial-update: in PDF zijn vorige en volgende paragraaf niet van elkaar gescheiden
 
@@ -453,7 +456,7 @@ Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam 
 
     Bovendien is het mogelijk dat bij het opstellen van de oefening bepaalde componenten uit de omschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de omschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
 
-.. TODO:feature-discuss: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
+.. TODO:tutorial-missing: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
 
 .. _code editor:
@@ -523,7 +526,7 @@ Het overzicht bevat voor elke oplossing het tijdstip van indienen, de :ref:`stat
 
 .. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
 
-.. TODO:feature-discuss: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
+.. TODO:tutorial-missing: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
 
 Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback over de oplossing.
 
@@ -670,12 +673,12 @@ De omschrijving van een :ref:`testgeval <testgeval>` wordt in de feedbacktabel w
 
 Alle :ref:`testgevallen <testgeval>` van eenzelfde :ref:`context <context>` worden aan de linkerkant geconnecteerd met een gekleurde lijn. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groen) of niet geslaagd (rood).
 
-.. TODO:feature-discuss: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
-.. TODO:feature-discuss: status per oplossing (DONE), tab (DONE), context (DONE), testcase (DONE) en test; uitleggen hoe dit werkt
-.. TODO:feature-discuss: openklappen van linkerrand context om grafische debugger te starten in Python judge
-.. TODO:feature-discuss: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
-.. TODO:feature-discuss: voorbeeld van test met een boodschap
-.. TODO:feature-discuss: voorbeeld van test met een grafische boodschap (Curling)
+.. TODO:tutorial-missing: aangeven waar de "messages" worden weergegeven die toegekend worden aan de oplossing, een tab, een context, een testcase en een test
+.. TODO:tutorial-missing: status per oplossing (DONE), tab (DONE), context (DONE), testcase (DONE) en test; uitleggen hoe dit werkt
+.. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge
+.. TODO:tutorial-missing: rode/groene kleur in diff, met extra aanduidingen binnen een regel (verwachte uitvoer vs gegenereerde uitvoer)
+.. TODO:tutorial-missing: voorbeeld van test met een boodschap
+.. TODO:tutorial-missing: voorbeeld van test met een grafische boodschap (Curling)
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn
 .. TODO:feature-missing: toon regelnummers in diff
