@@ -21,7 +21,7 @@ Voor de natuurlijke taal van Dodona kan je kiezen tussen Nederlands of Engels. G
 
 .. TODO:screenshot-update: overwegen om bijschriften toe te voegen aan afbeeldingen
 
-Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
+Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij :ref:`aanmelden <aanmelden>` automatisch je voorkeurstaal geselecteerd.
 
 .. note::
 
@@ -31,7 +31,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De naam en de omschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de omschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De natuurlijke taal die gebruikt wordt in de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je hebt ingediend voor een :ref:`oefening <oefening>` is een gedeelde verantwoordelijkheid van de *judge* en de oefening. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
+    De natuurlijke taal die gebruikt wordt in de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je hebt ingediend voor een :ref:`oefening <oefening>` is een gedeelde verantwoordelijkheid van de oefening en de *judge* waaraan de oefening gekoppeld is. Hierbij kan de feedback afhankelijk gemaakt worden van de geselecteerde natuurlijke taal.
 
 .. TODO:feature-missing: nagaan of cursusinhoud taalafhankelijk kan gemaakt worden
 .. TODO:feature-update: standaardtaal instellen op Engels
@@ -42,14 +42,13 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 .. TODO:tutorial-missing: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de omschrijving van de oefening voor de natuurlijke taal die werd ingesteld
 
 
+.. _gebruikersaccount:
 .. _aanmelden:
 
 Aanmelden
 ---------
 
-.. _gebruikersaccount:
-
-    Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
+Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
 
 .. important::
 
