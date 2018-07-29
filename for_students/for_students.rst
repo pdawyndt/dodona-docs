@@ -450,7 +450,7 @@ Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`star
 Navigeren naar een oefening
 ---------------------------
 
-Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge** gekoppeld wordt. Als je een :ref:`oplossing indient <oplossing indienen> voor een oefening dan wordt de oplossing automatisch beoordeeld door de daaraan gekoppelde judge. Hierbij kan de judge gedetailleerde :ref:`feedback <feedback>` geven om zijn beoordeling van de oplossing te motiveren.
+Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge** gekoppeld wordt. Als je een :ref:`oplossing indient <oplossing indienen>` voor een oefening dan wordt de oplossing automatisch beoordeeld door de daaraan gekoppelde judge. Hierbij kan de judge gedetailleerde :ref:`feedback <feedback>` geven om zijn beoordeling van de oplossing te motiveren.
 
 Er zijn verschillende plaatsen waar je een oefening kunt selecteren:
 
