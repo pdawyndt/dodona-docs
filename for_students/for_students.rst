@@ -359,7 +359,7 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 
 :guilabel:`Toon overzicht`
 
-    Toont een overzicht waarin de namen en beschrijvingen van alle :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefenigenreeks>` netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan je status kon bepaald worden).
+    Toont een overzicht waarin de namen en beschrijvingen van alle :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefenigenreeks>` netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om de status te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan de status kon bepaald worden).
 
     .. _oefeningenreeks afdrukken:
 
@@ -369,7 +369,7 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 
 :guilabel:`Oplossingen downloaden`
 
-    Downloadt een ZIP-bestand dat voor elke :ref:`oefening <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` de :ref:`oplossing <oplossing>` bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan je status kon bepaald worden voor de oefening).
+    Downloadt een ZIP-bestand dat voor elke :ref:`oefening <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` de :ref:`oplossing <oplossing>` bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan de status kon bepaald worden).
 
 .. TODO:feature-discuss: bespreek mogelijkheid om overzichtspagina van een oefeningenreeks af te drukken
 
@@ -383,7 +383,7 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 Registreren voor een cursus
 ---------------------------
 
-Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan **registreren**. Hierbij zijn er drie mogelijkheden:
+Je moet je eerst voor een :ref:`cursus <cursus>` **registreren** voordat je :ref:`oplossingen <oplossing>` kan :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus. Als je navigeert naar een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
