@@ -35,7 +35,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De naam en beschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De natuurlijke taal van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je ingedient voor een :ref:`oefening <oefening>` valt volledig onder de controle van de *judge* waaraan de oefening gekoppeld is. Deze feedback kan afhankelijk gemaakt worden van de geselecteerde natuurlijke taal op het ogenblik waarop je de :ref:`oplossing indient <oplossing indienen>`.
+    De natuurlijke taal van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je ingedient voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. Deze feedback kan afhankelijk gemaakt worden van de geselecteerde natuurlijke taal op het ogenblik waarop je de :ref:`oplossing indient <oplossing indienen>`.
 
 .. TODO:feature-update: standaardtaal instellen op Engels
 .. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
@@ -211,7 +211,7 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 Navigeren naar een cursus
 -------------------------
 
-Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd registreren` bent dan kan je voor de :ref:`oefeningen <oefening>` binnen de cursus ook :ref:`oplossingen indienen <oplossing indienen>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
+Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen indienen <oplossing indienen>` voor oefeningen. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
 * Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
@@ -449,11 +449,9 @@ Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`star
 Navigeren naar een oefening
 ---------------------------
 
-Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge** gekoppeld wordt. Als je een :ref:`oplossing indient <oplossing indienen>` voor een oefening dan wordt de oplossing automatisch beoordeeld door de daaraan gekoppelde judge. Hierbij kan de judge gedetailleerde :ref:`feedback <feedback>` geven om zijn beoordeling van de oplossing te motiveren.
+Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge** gekoppeld wordt. Als je een :ref:`oplossing indient <oplossing indienen>` voor een oefening dan wordt de oplossing automatisch beoordeeld door de daaraan gekoppelde judge. Hierbij kan de judge gedetailleerde :ref:`feedback <feedback>` geven om zijn beoordeling van de oplossing te motiveren. Er zijn verschillende plaatsen waar je een oefening kunt selecteren:
 
-Er zijn verschillende plaatsen waar je een oefening kunt selecteren:
-
-* Op een :ref:`cursuspagina <cursuspagina>` kan je een :ref:`oefening selecteren uit een :ref:`oefeningenreeks <oefeningenreeks>` door op de naam van de oefening te drukken.
+* Op een :ref:`cursuspagina <cursuspagina>` kan je een :ref:`oefening <oefening>` selecteren uit een :ref:`oefeningenreeks <oefeningenreeks>` door op de naam van de oefening te drukken.
 
   .. TODO:screenshot-missing: screenshot van oefeningenreeks met pijl naar naam van oefening waarop je kan klikken
 
@@ -525,21 +523,21 @@ Na het :ref:`indienen van een oplossing <oplossing indienen>` wordt automatisch 
 
 .. _oplossing wachtrij:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de :ref:`status <oplossing status>` :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een *judge*. Tijdens het beoordelen van een oplossing heeft ze de :ref:`status <oplossing status>` :guilabel:`Aan het uitvoeren…`.
+Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de :ref:`status <oplossing status>` :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een :ref:`judge <judge>`. Tijdens het beoordelen van een oplossing heeft ze de :ref:`status <oplossing status>` :guilabel:`Aan het uitvoeren…`.
 
 .. note::
 
-    Je kan het beoordelen van een ingediende oplossing niet annuleren. Terwijl een oplossing in de wachtrij staat en terwijl de *judge* bezig is om de oplossing te beoordelen, wordt de indienknop op de :ref:`oefeningpagina <oefeningpagina>` buiten werking gesteld en kan je geen nieuwe :ref:`oplossing indienen <oplossing indienen>`. Ook dit is een maatregel om overbelasting van het platform tegen te gaan. Nog een reden dus om te wachten met :ref:`indienen <oplossing indienen>` tot je jezelf ervan vergewist hebt dat je oplossing geen fouten meer bevat.
+    Je kan het beoordelen van een ingediende oplossing niet annuleren. Terwijl een oplossing in de wachtrij staat en terwijl de :ref:`judge <judge>` bezig is om de oplossing te beoordelen, wordt de indienknop op de :ref:`oefeningpagina <oefeningpagina>` buiten werking gesteld en kan je geen nieuwe :ref:`oplossing indienen <oplossing indienen>`. Ook dit is een maatregel om overbelasting van het platform tegen te gaan. Nog een reden dus om te wachten met :ref:`indienen <oplossing indienen>` tot je jezelf ervan vergewist hebt dat je oplossing geen fouten meer bevat.
 
     .. TODO:feature-missing: mogelijkheid aanbieden om het beoordelingsproces van een ingediende oplossing te annuleren; als dit gebeurt wordt de oplossing terug geopend in de code editor op de oefeningpagina; vereist een nieuwe status "beoordeling geannuleerd" met eventueel in de korte samenvatting een aanduiding wie de beoordeling heeft geannuleerd (student of lesgever) en wanneer dit gebeurd is; een lesgever zou eventueel zelf ook een korte samenvatting kunnen geven waarom hij de ingediende oplossing geannuleerd heeft; bij uitbreiding zou deze status ook kunnen gebruikt worden om een oplossing die volledig beoordeeld was toch nog te annuleren, bijvoorbeeld omwille van plagiaat; daarmee stappen we dus in een scenario waarbij een cursusbeheerder achteraf (na het judgen) de status van een oplossing nog zou kunnen wijzigen
 
-Zodra de *judge* klaar is met het beoordelen van je ingediende oplossing krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
+Zodra de :ref:`judge <judge>` klaar is met het beoordelen van je ingediende oplossing krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
 .. tip::
 
-    Er zit geen beperking op het aantal keer dat je een oplossing kan :ref:`indienen <oplossing indienen>` voor een :ref:`oefening <oefening>`. Gebruik de :ref:`feedback <feedback>` die de *judge* heeft aangeleverd om je oplossing te corrigeren of verder te verfijnen.
+    Er zit geen beperking op het aantal keer dat je een oplossing kan :ref:`indienen <oplossing indienen>` voor een :ref:`oefening <oefening>`. Gebruik de :ref:`feedback <feedback>` die de :ref:`judge <judge>` heeft aangeleverd om je oplossing te corrigeren of verder te verfijnen.
 
 
 .. _oplossing:
@@ -547,7 +545,7 @@ Zodra de *judge* klaar is met het beoordelen van je ingediende oplossing krijgt 
 Navigeren naar een oplossing
 ----------------------------
 
-Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
+Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossing indienen>` voor de oefeningen uit de cursus. Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
 
 * Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je ingediende oplossingen.
 
@@ -591,7 +589,7 @@ Je kan een ingediende oplossing selecteren door op het groter dan symbool te dru
 Feedback interpreteren
 ----------------------
 
-Op de **feedbackpagina** staat gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de *judge* die aan de oefening gekoppeld is.
+Op de **feedbackpagina** staat gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de :ref:`judge <judge>` die aan de oefening gekoppeld is.
 
 .. image:: exercise_feedback_correct_page.nl.png
 
@@ -632,7 +630,7 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
 :guilabel:`Status`
 
-    Status die Dodona of de *judge* aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden door de *judge* toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
+    Status die Dodona of de :ref:`judge <judge>` aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden door de judge toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
@@ -647,7 +645,7 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
       * - :guilabel:`Aan het uitvoeren…`
         - .. image:: submission_icons/running.png
-        - oplossing wordt momenteel beoordeeld door de *judge*
+        - oplossing wordt momenteel beoordeeld door de :ref:`judge <judge>`
 
       * - :guilabel:`Correct`
         - .. image:: submission_icons/correct.png
@@ -679,17 +677,17 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
       * - :guilabel:`Interne fout`
         - .. image:: submission_icons/internal_error.png
-        - *judge* is gecrashed tijdens het beoordelen van de oplossing; oorzaak van fout ligt dus niet bij de ingediende oplossing maar bij het falen van de *judge*
+        - :ref:`judge <judge>` is gecrashed tijdens het beoordelen van de oplossing; oorzaak van fout ligt dus niet bij de ingediende oplossing maar bij het falen van de judge
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
-    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Als de *judge* bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
+    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Als de :ref:`judge <judge>` bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
 
 .. _oplossing samenvatting:
 
 :guilabel:`Samenvatting`
 
-    Korte motivering van de *judge* bij de :ref:`status <oplossing status>` die hij aan de oplossing heeft toegekend.
+    Korte motivering van de :ref:`judge <judge>` bij de :ref:`status <oplossing status>` die hij aan de oplossing heeft toegekend.
 
 .. TODO:feature-missing: vanuit de feedbackpagina op een aparte pagina zou je ook makkelijk naar een overzicht moeten kunnen navigeren van alle oplossingen die de gebruiker heeft ingediend voor die oefening, eventueel binnen de context van een cursus (als de oplossing zelf binnen een cursus werd ingediend); als de feedbackpagina in een tab wordt weergegeven, dan hoeft dit niet, want dan staat daarnaast al een tab "Oplossingen"
 
@@ -698,13 +696,13 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 .. _feedback tab:
 .. _feedback tab badge:
 
-Daaronder staat meer gedetailleerde feedback die de *judge* kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de *judge* gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de *judge* vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de *judge* voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
+Daaronder staat meer gedetailleerde feedback die de :ref:`judge <judge>` kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de judge gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de judge vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
 
 .. _feedback tab code:
 
-De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de *judge* opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
+De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de :ref:`judge <judge>` opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
 
@@ -724,7 +722,7 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 .. _feedback testgeval:
 .. _feedback test:
 
-Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de code onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
+Onder een tab rapporteert de :ref:`judge <judge>` over individuele **testen** waaraan hij de code onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
@@ -732,13 +730,13 @@ Onder een tab rapporteert de *judge* over individuele **testen** waaraan hij de 
 
 .. _feedback context visueel:
 
-Visueel worden alle :ref:`testgevallen <testgeval>` van een :ref:`context <context>` met elkaar verbonden via een dunne vertikale lijn aan de linkerkant. De kleur van die lijn geeft aan of de *judge* de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
+Visueel worden alle :ref:`testgevallen <testgeval>` van een :ref:`context <context>` met elkaar verbonden via een dunne vertikale lijn aan de linkerkant. De kleur van die lijn geeft aan of de :ref:`judge <judge>` de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
 
 .. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee contexten met meerdere testgevallen, waarvan er minstens één geslaagd is (groene lijn) en minstens één niet (rode lijn)
 
 .. _feedback testgeval visueel:
 
-Aan de rechterkant van de dunne vertikale lijn worden de testgevallen van de context onder elkaar weergegeven. De beschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur die over de volledige breedte loopt. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de *judge* het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
+Aan de rechterkant van de dunne vertikale lijn worden de testgevallen van de context onder elkaar weergegeven. De beschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur die over de volledige breedte loopt. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de :ref:`judge <judge>` het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
 .. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge; dit kan eventueel aangekaart worden in de handleiding van de Python judge zelf
@@ -764,14 +762,14 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
 
 * .. _feedback testgeval mededelingen:
 
-  Algemene feedback over de uitgevoerde test. Voor deze feedback heeft de *judge* alle vrijheid wat betreft de vormgeving, waardoor hij zowel tekstuele als grafische feedback kan aanleveren.
+  Algemene feedback over de uitgevoerde test. Voor deze feedback heeft de :ref:`judge <judge>` alle vrijheid wat betreft de vormgeving, waardoor hij zowel tekstuele als grafische feedback kan aanleveren.
 
     .. TODO:tutorial-comment: technisch gezien kunnen hier meerdere mededelingen onder elkaar staan; Dodona gebruikt echter geen visuele manier om deze mededelingen van elkaar te onderscheiden, waardoor gebruikers geen verschil zien tussen één of meerdere mededelingen; omwille van de eenvoud spreken we hier dus slechts van één optionele mededeling, en we benoemen die met de term "feedback"
 
     .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
     .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
 
-De *judge* kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
+De :ref:`judge <judge>` kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
 .. TODO:feature-missing: JSON met feedback bevat optioneel ook tijds- en geheugenmetingen voor de individuele testen, testgevallen, contexten, tabs en de volledige oplossing; de judge bepaalt of en hoe de tijd- en geheugenmetingen uitgevoerd worden; geheugenmetingen zijn iets moeilijker weer te geven, maar we zouden in ieder geval al kunnen nagaan hoe de tijdsmetingen kunnen weergegeven worden op de verschillende niveau's
