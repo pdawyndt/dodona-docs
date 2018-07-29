@@ -206,11 +206,12 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 
 .. _cursus:
+.. _oefeningenreeks:
 
 Navigeren naar een cursus
 -------------------------
 
-Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
+Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd registreren` bent dan kan je voor de :ref:`oefeningen <oefening>` binnen de cursus ook :ref:`oplossingen indienen <oplossing indienen>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
 * Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
@@ -265,15 +266,13 @@ Na :ref:`selectie van een cursus <cursus>` navigeer je naar de **cursuspagina**.
 
 .. image:: deadline_series.nl.png
 
-.. _cursus beschrijving:
-.. _oefeningenreeks:
 .. _oefeningenreeks deadline:
 
-Aan de bovenkant van de cursuspagina staat een beschrijving van de cursus. Daaronder staan de :ref:`oefeningen <oefening>` van de cursus die gegroepeerd zijn in **oefeningenreeksen**. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
+Aan de bovenkant van de cursuspagina staat een beschrijving van de cursus. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 .. tip::
 
-    Als je op een :ref:`cursuspagina <cursuspagina>` aan het werken bent of als je binnen een cursus een actie aan het uitvoeren bent dan verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de bovenkant van de :ref:`cursuspagina <cursuspagina>`.
+    Als je binnen een cursus aan het werken bent dan verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de bovenkant van de :ref:`cursuspagina <cursuspagina>`.
 
   .. TODO:screenshot-missing: screenshot van navigatiebalk met naam van cursus in breadcrumb
 
@@ -482,7 +481,7 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** te
 
 .. tip::
 
-    Als je op een :ref:`oefeningpagina <oefeningpagina>` aan het werken bent of als je een actie aan het uitvoeren bent op een oefening dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de cursus en de naam van de oefeningenreeks waaruit je de :ref:`oefening geselecteerd <oefening>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je terug naar de bovenkant van de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de :ref:`oefeningenreeks <oefeningenreeks>` op de cursuspagina. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
+    Als je een actie aan het uitvoeren bent op een :ref:`oefening <oefening>` dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de :ref:`cursus <cursus>` en de naam van de :ref:`oefeningenreeks <oefeningenreeks>` waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de bovenkant van de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
 
     .. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
