@@ -188,7 +188,7 @@ Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profie
 
 .. _gebruikersprofiel tijdzone:
 
-Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld het :ref:`tijdstip <oplossing tijdstip>` waarop je een :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` of de :ref:`deadline <oefeningenreeks deadline>` voor een :ref:`oefeningenreeks <oefeningenreeks>`).
+In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld het :ref:`tijdstip <oplossing tijdstip>` waarop je een :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` of de :ref:`deadline <oefeningenreeks deadline>` voor een :ref:`oefeningenreeks <oefeningenreeks>`).
 
 .. image:: edit_timezone.nl.png
 
@@ -217,7 +217,7 @@ Navigeren naar een cursus
 
 Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
-* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
+* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan de startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
   .. TODO:screenshot-missing: screenshot van startpagina met minstens vijf cursussen waarvoor gebruiker geregistreerd is (zodat zoekbalk getoond wordt)
 
@@ -225,17 +225,17 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
   .. TODO:tutorial-missing: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
-* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
-
-  .. image:: my_courses.nl.png
-
-  .. TODO:screenshot-update: gebruikersmenu is niet opengeklapt waardoor pijl in het luchtledige wijst
-
 * .. _paneel wachten op goedkeuring:
 
   Als je nog :ref:`registratieverzoeken <registratieverzoek>` voor :ref:`cursussen <cursus>` hebt openstaan die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
   .. TODO:screenshot-missing: screenshot van startpagina met pijl naar paneel met cursussen die wachten op goedkeuring
+
+* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
+
+  .. image:: my_courses.nl.png
+
+  .. TODO:screenshot-update: gebruikersmenu is niet opengeklapt waardoor pijl in het luchtledige wijst
 
 * Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
@@ -254,7 +254,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
   .. TODO:screenshot-update: blijft de feature met "cursussen" in de navigatiebalk behouden? indien niet, dan moet de pijl weg in de screenshot; anders moet deze optie ook in de tekst besproken worden
 
-  Gebruik de zoekbalk bovenaan het cursusoverzicht om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
+  Gebruik de zoekbalk bovenaan het :ref:`cursusoverzicht <cursusoverzicht>` om te zoeken naar specifieke :ref:`cursussen <cursus>` op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
   .. TODO:tutorial-missing: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
 
@@ -266,13 +266,9 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 .. _cursuspagina:
 
-Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer je naar de **cursuspagina**.
+Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer je naar de **cursuspagina**. Aan de bovenkant van de :ref:`cursuspagina <cursuspagina>` staat een beschrijving van de :ref:`cursus <cursus>`. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus.
 
 .. image:: deadline_series.nl.png
-
-.. _oefeningenreeks deadline:
-
-Aan de bovenkant van de :ref:`cursuspagina <cursuspagina>` staat een beschrijving van de :ref:`cursus <cursus>`. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 .. tip::
 
@@ -280,7 +276,9 @@ Aan de bovenkant van de :ref:`cursuspagina <cursuspagina>` staat een beschrijvin
 
   .. TODO:screenshot-missing: screenshot van navigatiebalk met naam van cursus in breadcrumb
 
-.. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
+.. _oefeningenreeks deadline:
+
+Voor elke :ref:`oefeningenreeks <oefeningenreeks>` kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 Onder de naam van een :ref:`oefeningenreeks <oefeningenreeks>` staat optioneel een beschrijving, met daaronder een oplijsting van alle :ref:`oefeningen <oefening>` uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. Vóór elke oefening in de lijst staat ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je status voor de oefening.
 
@@ -317,6 +315,8 @@ Mogelijke weergaven van je :ref:`status <oefening status>` vóór het verstrijke
     - minstens één :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
+
+.. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
 Mogelijke weergaven van je :ref:`status <oefening status>` nadat de :ref:`deadline <oefeningenreeks deadline>` verstreken is:
 
