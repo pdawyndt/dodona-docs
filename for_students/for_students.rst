@@ -382,7 +382,7 @@ Je moet je eerst voor een :ref:`cursus <cursus>` **registreren** voordat je :ref
 
 .. _manuele registratieprocedure:
 
-Als je navigeert naar een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
+Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`geregistreerd <registreren>` bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
