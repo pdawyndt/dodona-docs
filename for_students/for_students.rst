@@ -266,7 +266,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 .. _cursuspagina:
 
-Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer je naar de **cursuspagina**. Aan de bovenkant staat een beschrijving van de :ref:`cursus <cursus>`. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus.
+Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer je naar de **cursuspagina**. Aan de bovenkant staat een beschrijving van de cursus. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus.
 
 .. image:: deadline_series.nl.png
 
