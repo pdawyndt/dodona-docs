@@ -5,7 +5,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>` (modules). Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO:tutorial-update: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
 
@@ -35,7 +35,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 
     De naam en beschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de natuurlijke taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De natuurlijke taal van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing indienen>` die je ingedient voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. Deze feedback kan afhankelijk gemaakt worden van de geselecteerde natuurlijke taal op het ogenblik waarop je de :ref:`oplossing indient <oplossing indienen>`.
+    De natuurlijke taal van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing>` die je :ref:`ingedient <oplossing indienen>` voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. Deze feedback kan afhankelijk gemaakt worden van de geselecteerde natuurlijke taal op het ogenblik waarop je de oplossing indient.
 
 .. TODO:feature-update: standaardtaal instellen op Engels
 .. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
@@ -51,7 +51,7 @@ Als je een natuurlijke taal selecteert terwijl je :ref:`aangemeld <aanmelden>` b
 Aanmelden
 ---------
 
-Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren voor cursussen <registreren>` of het :ref:`indienen van oplossingen <oplossing indienen>` — aan je gebruikersaccount gekoppeld.
+Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` of het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` — aan je gebruikersaccount gekoppeld.
 
 .. important::
 
@@ -84,7 +84,7 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
 .. note::
 
-    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contact opnemen>` met ons op te nemen als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
+    Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contactpagina>` met ons op te nemen als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
 .. _uitwisseling persoonlijke gegevens:
 
@@ -109,7 +109,7 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. _startpagina:
 
-Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` in een gepersonaliseerde **startpagina** met een overzicht van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, hun oefeningenreeksen met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen van oplossingen <oplossing indienen>` voor oefeningen. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
+Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` in een gepersonaliseerde **startpagina** met een overzicht van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, hun :ref:`oefeningenreeksen <oefeningenreeks>` met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` voor :ref:`oefeningen <oefening>`. Je kan dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
 
 .. tip::
 
@@ -117,13 +117,13 @@ Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landing
 
     .. image:: navigate_to_homepage.nl.png
 
-Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele cursus geregistreerd en heb je nog geen enkele oplossing ingediend. Daardoor ziet je startpagina er op dit moment nog vrij kaal uit.
+Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` en heb je nog geen enkele :ref:`oplossing <oplossing>` :ref:`ingediend <oplossing indienen>`. Daardoor ziet je :ref:`startpagina <startpagina>` er op dit moment nog vrij kaal uit.
 
 .. image:: homepage.nl.png
 
 .. tip::
 
-    Als je wilt schakelen naar een andere gebruikersaccount dan deze die momenteel aangemeld is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
+    Als je wilt schakelen naar een andere :ref:`gebruikersaccount <gebruikersaccount>` dan deze die momenteel :ref:`aangemeld <aanmelden>` is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
 .. TODO:tutorial-missing: beschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de beschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
 
@@ -155,8 +155,6 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 
 
 .. _profielpagina:
-.. _persoonlijke gegevens:
-.. _gebruikersprofiel:
 
 Gebruikersprofiel beheren
 -------------------------
@@ -164,6 +162,9 @@ Gebruikersprofiel beheren
 Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren.
 
 .. TODO:screenshot-missing: screenshot van het selecteren van mijn profiel in het gebruikersmenu
+
+.. _persoonlijke gegevens:
+.. _gebruikersprofiel:
 
 Op je :ref:`profielpagina <profielpagina>` staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (natuurlijke taal en tijdzone) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
 
@@ -174,7 +175,7 @@ Op je :ref:`profielpagina <profielpagina>` staan je **persoonlijke gegevens** (g
 .. TODO:feature-update: studentennummer is UGent-specifiek en hoort niet langer thuis in het gebruikersprofiel na de verruiming naar andere identity providers
 .. TODO:feature-update: lijst alle cursussen van de gebruiker op in een afzonderlijk paneel (tab) waarin de listview voor de cursussen gebruikt wordt
 .. TODO:feature-update: lijst alle oefeningen waaraan gebruiker gewerkt heeft op in een afzonderlijk paneel waarin een listview voor de oefeningen gebruikt wordt; gebruik tabs of filtering zodat de gebruiker snel kan zien welke oefeningen afgewerkt zijn en aan welke zij nog moet werken; eventueel aanvullen met statistieken over aantal opgeloste oefeningen
-.. TODO:feature-update: lijst alle ingediende oplossingen van de gebruijer op in een afzonderlijk paneel waarin een listview voor de ingediende oplossingen gebruikt wordt; laat toe om te zoeken in de ingediende oplossingen; eventueel aanvullen met statistieken over aantal ingediende oplossingen
+.. TODO:feature-update: lijst alle oplossingen van de gebruiker op in een afzonderlijk paneel waarin een listview voor de oplossingen gebruikt wordt; laat toe om te zoeken in de oplossingen; eventueel aanvullen met statistieken over aantal oplossingen
 .. TODO:feature-update: algemene learning analytics van gebruiker toevoegen aan gebruikersprofiel
 
 .. _gebruikersprofiel bijwerken:
@@ -185,7 +186,7 @@ Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profie
 
 .. _gebruikersprofiel tijdzone:
 
-Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld de tijd waarop je een :ref:`oplossing hebt ingediend <oplossing indienen>` of de :ref:`deadline <oefeningenreeks deadline>` voor een oefeningenreeks).
+Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle tijdsaanduidingen op het platform (bijvoorbeeld het :ref:`tijdstip <oplossing tijdstip>` waarop je een :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` of de :ref:`deadline <oefeningenreeks deadline>` voor een :ref:`oefeningenreeks <oefeningenreeks>`).
 
 .. image:: edit_timezone.nl.png
 
@@ -206,14 +207,15 @@ Je kan de **tijdzone** instellen die gebruikt wordt voor het weergeven van alle 
 
 
 .. _cursus:
+.. _cursus selecteren:
 .. _oefeningenreeks:
 
 Navigeren naar een cursus
 -------------------------
 
-Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen indienen <oplossing indienen>` voor oefeningen. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
+Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
-* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
+* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan je startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
   .. TODO:screenshot-missing: screenshot van startpagina met minstens vijf cursussen waarvoor gebruiker geregistreerd is (zodat zoekbalk getoond wordt)
 
@@ -221,7 +223,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
   .. TODO:tutorial-missing: ergens moeten we ook een plaats zoeken om de volledige uitleg te geven van de cards voor de cursussen; welke onderdelen vind een gebruiker terug op zo een card: naam cursus, academiejaar, naam lesgever(s), statistieken (aantal ingezonden oplossingen, aantal oefeningen correct opgelost), oefeningenreeksen met nakende deadlines; misschien moet dit in een nieuwe sectie "Voortgang en deadlines opvolgen"
 
-* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus :ref:`geregistreerd <registreren>` bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
+* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
   .. image:: my_courses.nl.png
 
@@ -229,11 +231,11 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 * .. _paneel wachten op goedkeuring:
 
-  Als je nog :ref:`registratieverzoeken voor cursussen <registreren>` hebt openstaan die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+  Als je nog :ref:`registratieverzoeken <registratieverzoek>` voor :ref:`cursussen <cursus>` hebt openstaan die wachten op goedkeuring van een cursusbeheerder, dan vind je deze cursussen in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
   .. TODO:screenshot-missing: screenshot van startpagina met pijl naar paneel met cursussen die wachten op goedkeuring
 
-* Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle cursussen waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
+* Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kan één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
   .. TODO:screenshot-missing: screenshot van profielpagina met lijst van cursussen
 
@@ -241,7 +243,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 * .. _cursusoverzicht:
 
-  Het **cursusoverzicht** bevat alle beschikbare cursussen, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je :ref:`startpagina <startpagina>`.
+  Het **cursusoverzicht** bevat alle beschikbare :ref:`cursussen <cursus>`, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
 
   .. TODO:feature-update: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanaf elke pagina rechtstreeks toegang tot het cursusoverzicht
   .. TODO:feature-update: vervang de tekst op de knop "MEER CURSUSSEN …" in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
@@ -262,40 +264,40 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 .. _cursuspagina:
 
-Na :ref:`selectie van een cursus <cursus>` navigeer je naar de **cursuspagina**.
+Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer je naar de **cursuspagina**.
 
 .. image:: deadline_series.nl.png
 
 .. _oefeningenreeks deadline:
 
-Aan de bovenkant van de cursuspagina staat een beschrijving van de cursus. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
+Aan de bovenkant van de :ref:`cursuspagina <cursuspagina>` staat een beschrijving van de :ref:`cursus <cursus>`. Daaronder staan de :ref:`oefeningenreeksen <oefeningenreeks>` met de :ref:`oefeningen <oefening>` van de cursus. Voor elke oefeningenreeks kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 .. tip::
 
-    Als je binnen een cursus aan het werken bent dan verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de bovenkant van de :ref:`cursuspagina <cursuspagina>`.
+    Als je binnen een :ref:`cursus <cursus>` aan het werken bent dan verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de bovenkant van de :ref:`cursuspagina <cursuspagina>`.
 
   .. TODO:screenshot-missing: screenshot van navigatiebalk met naam van cursus in breadcrumb
 
-.. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een ingediende oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
+.. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
-Onder de naam van een oefeningenreeks staat optioneel een beschrijving, met daaronder een oplijsting van alle oefeningen uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. Vóór elke oefening in de lijst staat ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening.
+Onder de naam van een :ref:`oefeningenreeks <oefeningenreeks>` staat optioneel een beschrijving, met daaronder een oplijsting van alle :ref:`oefeningen <oefening>` uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. Vóór elke oefening in de lijst staat ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je status voor de oefening.
 
 .. belangrijk::
 
-    Dezelfde oefening kan voorkomen in meerdere cursussen. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je telkens :ref:`oplossingen indient <oplossing indienen>` binnen een bepaalde cursus.
+    Dezelfde :ref:`oefening <oefening>` kan voorkomen in meerdere :ref:`cursussen <cursus>`. De :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening zijn dan doorgaans niet hetzelfde omdat ze voor elke cursus afzonderlijk bepaald worden en je telkens :ref:`oplossingen <oplossing>` :ref:`indient <oplossing indienen>` binnen een bepaalde cursus.
 
-    Dezelfde oefening kan ook voorkomen in meerdere oefeningenreeksen van een cursus. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening niet noodzakelijk hetzelfde omdat de :ref:`status <oefening status>` afhangt van de :ref:`deadlines <oefeningenreeks deadline>` van de oefeningenreeksen. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening per definitie wel hetzelfde.
+    Dezelfde :ref:`oefening <oefening>` kan ook voorkomen in meerdere :ref:`oefeningenreeksen <oefeningenreeks>` van een :ref:`cursus <cursus>`. Ook dan zijn de :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>` voor de oefening niet noodzakelijk hetzelfde omdat de status afhangt van de :ref:`deadlines <oefeningenreeks deadline>` van de oefeningenreeksen. Als er geen deadline werd ingesteld of als dezelfde deadline werd ingesteld voor de oefeningenreeksen, dan zijn de statistieken en je status voor de oefening per definitie wel hetzelfde.
 
 .. _oefeningenreeks statistieken:
 
-De **statistieken** van een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* :ref:`oplossing <oplossing indienen>` heeft ingediend voor de oefening.
+De **statistieken** van een :ref:`oefening <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
 
 .. _oefening status:
 .. _oefening icoontje:
 
-Je **status** voor een oefening uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing indienen>` die je als laatste in de cursus hebt ingediend voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+Je **status** voor een :ref:`oefening <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>` wordt bepaald op basis van de :ref:`oplossing <oplossing>` die je als laatste in de :ref:`cursus <cursus>` hebt :ref:`ingediend <oplossing indienen>` voor de oefening. Als er een :ref:`deadline <oefeningenreeks deadline>` werd ingesteld voor de oefeningenreeks, dan is dit de laatst ingediende oplossing voorafgaand aan de deadline. Als je in een oefeningenreeks drukt op je status voor een oefening, dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
 
-Mogelijke weergaven van je status vóór het verstrijken van de :ref:`deadline <oefeningenreeks deadline>` of als er geen deadline is ingesteld:
+Mogelijke weergaven van je :ref:`status <oefening status>` vóór het verstrijken van de :ref:`deadline <oefeningenreeks deadline>` of als er geen deadline is ingesteld:
 
 .. list-table::
   :header-rows: 1
@@ -306,15 +308,15 @@ Mogelijke weergaven van je status vóór het verstrijken van de :ref:`deadline <
 
   * - :guilabel:`niet opgelost`
     - .. image::
-    - geen oplossing hebt ingediend (vóór de :ref:`deadline <oefeningenreeks deadline>`)
+    - geen :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
-  * - :ref:`status <oplossing status>` van laatst ingediende oplossing
+  * - :ref:`status <oplossing status>` van laatst ingediende :ref:`oplossing <oplossing>`
     - .. image::
-    - minstens één oplossing hebt ingediend (vóór de :ref:`deadline <oefeningenreeks deadline>`)
+    - minstens één :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
-Mogelijke weergaven van je status nadat de :ref:`deadline <oefeningenreeks deadline>` verstreken is:
+Mogelijke weergaven van je :ref:`status <oefening status>` nadat de :ref:`deadline <oefeningenreeks deadline>` verstreken is:
 
 .. list-table::
   :header-rows: 1
@@ -325,81 +327,82 @@ Mogelijke weergaven van je status nadat de :ref:`deadline <oefeningenreeks deadl
 
   * - :guilabel:`correct` (groen)
     - .. image::
-    - laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>` correct is
+    - laatst :ref:`ingediende <oplossing indienen>` :ref:`oplossing <oplossing>` vóór de :ref:`deadline <oefeningenreeks deadline>` correct is
 
   * - :guilabel:`deadline gemist` (rood)
     - .. image::
-    - geen oplossingen hebt ingediend vóór de :ref:`deadline <oefeningenreeks deadline>` of als je laatst ingediende oplossing vóór de deadline niet correct is
+    - geen :ref:`oplossingen <oplossing>` hebt :ref:`ingediend <oplossing indienen>` vóór de :ref:`deadline <oefeningenreeks deadline>` of als je laatst ingediende oplossing vóór de deadline niet correct is
 
 .. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
 
-.. _waarschuwingssymbool:
-
 .. important::
 
-    Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing <oplossing>` selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
-    Dodona toont een **waarschuwingssymbool** naast je :ref:`status <oefening status>` van een oefening in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst ingediende oplossing voor de oefening vóór de :ref:`deadline <oefeningenreeks deadline>` van de oefeningenreeks een :ref:`status <oefening status>` heeft die slechter is dan de :ref:`status <oefening status>` van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande :ref:`oplossing selecteren <oplossing>` en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    .. _waarschuwingssymbool:
+
+    Dodona toont een **waarschuwingssymbool** naast je :ref:`status <oefening status>` van een :ref:`oefening <oefening>` in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst :ref:`ingediende <oplossing indienen>` :ref:`oplossing <oplossing>` voor de oefening vóór de :ref:`deadline <oefeningenreeks deadline>` van de oefeningenreeks een :ref:`status <oefening status>` heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kan eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     .. image:: deadline_series_warning.nl.png
 
-    Als je **na het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing indient <oplossing indienen>` voor een oefening uit een oefeningenreeks, dan zal je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je :ref:`status <oefening status>` voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`.
+    Als je **na het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>`, dan zal je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks daardoor nooit wijzigen. Je status voor een oefening in een oefeningenreeks wordt immers bepaald op basis van je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`.
 
 .. TODO:tutorial-missing: aangeven wat er expliciet bedoeld wordt met "een status die slechter is dan"
 
 .. _oefeningenreeks menu:
 
-In het menu van een oefeningenreeks vind je de volgende opties:
+In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende opties:
 
 :guilabel:`Toon overzicht`
 
-    Toont een overzicht waarin de titels en beschrijvingen van alle oefeningen uit de oefeningenreeks netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan :ref:`navigeer je naar de oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden).
+    Toont een overzicht waarin de namen en beschrijvingen van alle :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefenigenreeks>` netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`status <oefening status>` voor de oefening. Als je op de status drukt dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om je status te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan je status kon bepaald worden).
 
-    .. _printbare versie oefeningenreeks:
+    .. _oefeningenreeks afdrukken:
 
     .. tip::
 
-        Dit overzicht is handig als je een afgedrukte versie wil van alle oefeningen uit een oefeningenreeks. Dodona voorziet dezelfde verzorgde opmaak als bij het :ref:`afdrukken van een individuele oefening <printbare versie oefening>`.
+        Dit overzicht is handig als je een afgedrukte versie wil van alle :ref:`oefeningen <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>`. Dodona voorziet dezelfde verzorgde opmaak als bij het :ref:`afdrukken <oefening afdrukken>` van een individuele oefening.
 
 :guilabel:`Oplossingen downloaden`
 
-    Downloadt een ZIP-bestand dat voor elke oefening uit de oefeningenreeks de ingediende oplossing bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (als je effectief een oplossing hebt ingediend op basis waarvan je status kon bepaald worden voor de oefening).
+    Downloadt een ZIP-bestand dat voor elke :ref:`oefening <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` de :ref:`oplossing <oplossing>` bevat die gebruikt werd om je :ref:`status <oefening status>` voor de oefening te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan je status kon bepaald worden voor de oefening).
 
 .. TODO:feature-update: gedownload ZIP-bestand bevat (lege) bestanden voor alle oefeningen waarvoor geen oplossing werd ingediend; deze bestanden zouden niet mogen voorkomen in het ZIP-bestand
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
 
 
-.. _manuele registratie:
+.. _manuele registratieprocedure:
 .. _registreren:
 
 Registreren voor een cursus
 ---------------------------
 
-Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
+Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan **registreren**. Hierbij zijn er drie mogelijkheden:
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
 * .. _open registratie:
 
-  De cursus werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
+  De :ref:`cursus <cursus>` werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
 
   .. image:: register.nl.png
 
   .. TODO:screenshot-update: overal zelfde marge laten rond (boven, onder, links en rechts) de rand van mededeling; kan de screenshot-bot automatisch een bepaalde component uitknippen uit een webpagina, waarbij je ook de marge kan instellen?
 
 * .. _gemodereerde registratie:
+  .. _registratieverzoek:
 
-  De cursus werkt met **gemodereerde registratie**, wat betekent dat je een registratieverzoek kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
+  De :ref:`cursus <cursus>` werkt met **gemodereerde registratie**, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
 
   .. image:: moderated_register.nl.png
 
-  Zolang je registratieverzoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de cursuspagina de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
+  Zolang je registratieverzoek nog niet werd goedgekeurd of afgekeurd door een cursusbeheerder, verschijnt in het paneel bovenaan de :ref:`cursuspagina <cursuspagina>` de boodschap :guilabel:`Je staat al op de wachtlijst.` en wordt de cursus opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`.
 
   .. image:: moderated_waiting.nl.png
 
 * .. _gesloten registratie:
 
-  De cursus werkt met **gesloten registratie**, wat betekent dat je geen registratieverzoek kunt indienen voor de cursus.
+  De :ref:`cursus <cursus>` werkt met **gesloten registratie**, wat betekent dat je geen :ref:`registratieverzoek <registratieverzoek>` kunt indienen voor de cursus.
 
   .. image:: closed_registration.nl.png
 
@@ -411,9 +414,9 @@ Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je nog niet geregistre
 
 .. note::
 
-    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de beschrijving en de oefeningenreeksen zien als je voor de cursus :ref:`geregistreerd <registreren>` bent of als de cursus werkt met :ref:`open registratie <open registratie>`.
+    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de beschrijving en de :ref:`oefeningenreeksen <oefeningenreeks>` zien als je voor de :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent of als de cursus werkt met :ref:`open registratie <open registratie>`.
 
-Zodra je voor een cursus geregistreerd bent, verschijnt er een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent, verschijnt er een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: my_courses.nl.png
 
@@ -424,7 +427,7 @@ Zodra je voor een cursus geregistreerd bent, verschijnt er een kaartje van de cu
 
 .. _registratielink:
 
-Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratie>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <gemodereerde registratie>` of :ref:`gesloten registratie <gesloten registratie>`.
+Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <gemodereerde registratie>` of :ref:`gesloten registratie <gesloten registratie>`.
 
 
 .. _uitschrijven:
@@ -432,20 +435,20 @@ Naast de mogelijkheid om zelf :ref:`naar een cursus te navigeren <cursus>` en op
 Uitschrijven uit een cursus
 ---------------------------
 
-Als je :ref:`navigeert naar een cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registreren>` hebt openstaan, dan zie je onder de beschrijving van de cursus op de :ref:`cursuspagina <cursuspagina>` een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
+Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan, dan zie je onder de beschrijving van de cursus op de :ref:`cursuspagina <cursuspagina>` een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
 .. image:: unregister.nl.png
 
-Hierdoor verdwijnt het kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus niet langer opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
+Hierdoor verdwijnt het kaartje van de :ref:`cursus <cursus>` aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus niet langer opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus werd opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`, dan verdwijnt de cursus ook uit die lijst. Als de cursus werd opgelijst in het paneel :guilabel:`Wachten op goedkeuring` in de rechterkolom van je :ref:`startpagina <startpagina>`, dan verdwijnt de cursus ook uit die lijst.
 
 
 .. _oefening:
-.. _judge:
+.. _oefening selecteren:
 
 Navigeren naar een oefening
 ---------------------------
 
-Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge** gekoppeld wordt. Als je een :ref:`oplossing indient <oplossing indienen>` voor een oefening dan wordt de oplossing automatisch beoordeeld door de daaraan gekoppelde judge. Hierbij kan de judge gedetailleerde :ref:`feedback <feedback>` geven om zijn beoordeling van de oplossing te motiveren. Er zijn verschillende plaatsen waar je een oefening kunt selecteren:
+Lesgevers kunnen **oefeningen** opstellen waarvoor je :ref:`oplossingen <oplossing>` kunt :ref:`indienen <oplossing indienen>`. Cursusbeheerders kunnen deze oefeningen aan hun :ref:`cursussen <cursus>` toevoegen. Daardoor zijn er verschillende plaatsen waar je een oefening kunt selecteren:
 
 * Op een :ref:`cursuspagina <cursuspagina>` kan je een :ref:`oefening <oefening>` selecteren uit een :ref:`oefeningenreeks <oefeningenreeks>` door op de naam van de oefening te drukken.
 
@@ -457,7 +460,7 @@ Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge*
 
   .. oefening uit reeksen met deadlines selecteren op de startpagina
 
-  Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf oefeningen waar je het laatst oplossingen voor ingediend hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
+  Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf :ref:`oefeningen <oefening>` waar je het laatst :ref:`oplossingen <oplossing>` voor :ref:`ingediend <oplossing indienen>` hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
   .. image:: exercise_submissions_page.nl.png
 
@@ -467,7 +470,7 @@ Lesgevers kunnen **oefeningen** opstellen waarbij elke oefening aan een **judge*
 
 .. _oefeningpagina:
 
-Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** te zien.
+Na :ref:`selectie <oefening selecteren>` van een :ref:`oefening <oefening>` krijg je de **oefeningpagina** te zien.
 
 .. image:: exercise_start.nl.png
 
@@ -475,19 +478,19 @@ Na :ref:`selectie van een oefening <oefening>` krijg je de **oefeningpagina** te
 
 .. tip::
 
-    Als je een actie aan het uitvoeren bent op een :ref:`oefening <oefening>` dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de :ref:`cursus <cursus>` en de naam van de :ref:`oefeningenreeks <oefeningenreeks>` waaruit je de oefening geselecteerd hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de bovenkant van de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de :ref:`cursuspagina <cursuspagina>`.
+    Als je een actie aan het uitvoeren bent op een :ref:`oefening <oefening>` dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de :ref:`cursus <cursus>` en de naam van de :ref:`oefeningenreeks <oefeningenreeks>` waaruit je de oefening :ref:`geselecteerd <oefening selecteren>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de bovenkant van de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
 
     .. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
 
-Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de beschrijving van de oefening. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde natuurlijk taal <taal selecteren>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
+Bovenaan de :ref:`oefeningpagina <oefeningpagina>` staat een paneel met de naam en de beschrijving van de :ref:`oefening <oefening>`. De weergave van deze componenten is afhankelijk van de :ref:`geselecteerde <taal selecteren>` natuurlijk taal. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-.. _printbare versie oefening:
+.. _oefening afdrukken:
 
 .. tip::
 
-    Dodona voorziet een verzorgde opmaak bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>`. Daarbij worden sommige componenten die je in een browser te zien krijgt automatisch verborgen bij het afdrukken. Enkel de naam en de beschrijving van de oefening worden afgedrukt.
+    Dodona voorziet een verzorgde opmaak bij het afdrukken van een :ref:`oefeningpagina <oefeningpagina>`. Daarbij worden sommige componenten die je in een browser te zien krijgt automatisch verborgen bij het afdrukken. Enkel de naam en de beschrijving van de :ref:`oefening <oefening>` worden afgedrukt.
 
-    Bovendien is het mogelijk dat bij het opstellen van de oefening bepaalde componenten uit de beschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de beschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
+    Bovendien is het mogelijk dat bij het opstellen van de :ref:`oefening <oefening>` bepaalde componenten uit de beschrijving expliciet werden verboren in de afdrukbare versie (bijvoorbeeld interactieve componenten zoals afspeelbare videofragmenten) of dat er extra componenten aan de beschrijving werden toegevoegd die enkel zichtbaar zijn in de afdrukbare versie (bijvoorbeeld een statische afbeelding als alternatief voor een videofragment).
 
 .. TODO:tutorial-missing: eenmaal de sidebar beschikbaar is, moeten we ook aangeven hoe je makkelijk andere oefeningen van dezelfde oefeningenreeks kan selecteren
 
@@ -501,7 +504,7 @@ Indienen van een oplossing
 .. TODO:tutorial-update: omschrijven wat er gebeurt als je een oplossing wilt indienen zonder dat je aangemeld bent
 .. TODO:tutorial-update: omschrijven wat er gebeurt als je een oplossing wilt indienen voor een cursus met open registratie waarvoor je nog niet geregistreerd bent
 
-Onder het paneel met de beschrijving van de oefening op een :ref:`oefeningpagina <oefeningpagina>` staat een tweede paneel waarmee je een oplossing kan indienen voor de oefening. Druk hiervoor op de tab :guilabel:`Indienen` als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de indienknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
+Op een :ref:`oefeningpagina <oefeningpagina>` staat onder het paneel met de beschrijving van de :ref:`oefening <oefening>` een tweede paneel waarmee je een :ref:`oplossing <oplossing>` kan indienen voor de oefening. Druk hiervoor op de tab :guilabel:`Indienen` als deze tab niet geselecteerd was en plaats de programmacode van je oplossing in de **code editor**. Druk daarna op de indienknop in de rechtbovenhoek van het paneel om je oplossing in te dienen.
 
 .. image:: exercise_before_submit.nl.png
 
@@ -515,83 +518,87 @@ Onder het paneel met de beschrijving van de oefening op een :ref:`oefeningpagina
 
 .. TODO:tutorial-update: bespreken van de mogelijkheid om een plugin te gebruiken of ontwikkelen voor je IDE waarmee je rechtstreeks vanuit de IDE broncode kan indienen op Dodona (voor een bepaalde oefening en in een bepaalde cursus)
 
-Na het :ref:`indienen van een oplossing <oplossing indienen>` wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de cursus hebt ingediend voor de oefening. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tijdstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. In het overzicht zie je vóór elke ingediende oplossing ook een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing.
+Na het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` wordt automatisch de tab :guilabel:`Oplossingen` geselecteerd. Deze tab bevat een overzicht van alle oplossingen die je in de :ref:`cursus <cursus>` hebt ingediend voor de :ref:`oefening <oefening>`. Deze oplossingen worden in het overzicht opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan), waardoor de oplossing die je net hebt ingediend helemaal bovenaan staat. Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tijdstip>`, de :ref:`status <oplossing status>` en een korte :ref:`samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. In het overzicht zie je vóór elke oplossing ook een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing.
 
 .. _oplossing wachtrij:
+.. _oplossing beoordelingsproces:
 
-Om overbelasting van het platform tegen te gaan, worden ingediende oplossingen niet onmiddellijk beoordeeld maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de :ref:`status <oplossing status>` :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een :ref:`judge <judge>`. Tijdens het beoordelen van een oplossing heeft ze de :ref:`status <oplossing status>` :guilabel:`Aan het uitvoeren…`.
+Om overbelasting van het platform tegen te gaan, worden :ref:`oplossingen <oplossing>` niet onmiddellijk beoordeeld na het :ref:`indienen <oplossing indienen>` maar worden ze eerst in een **wachtrij** geplaatst. Zolang een oplossing in de wachtrij staat heeft ze de :ref:`status <oplossing status>` :guilabel:`In de wachtrij…`. Van zodra het platform klaar is om een oplossing te beoordelen, wordt de eerst ingediende oplossing uit de wachtrij (*first-in-first-out*) geselecteerd en :ref:`beoordeeld <feedback>` door een :ref:`judge <judge>`. Tijdens het beoordelen heeft een oplossing de status :guilabel:`Aan het uitvoeren…`.
 
 .. note::
 
-    Je kan het beoordelen van een ingediende oplossing niet annuleren. Terwijl een oplossing in de wachtrij staat en terwijl de :ref:`judge <judge>` bezig is om de oplossing te beoordelen, wordt de indienknop op de :ref:`oefeningpagina <oefeningpagina>` buiten werking gesteld en kan je geen nieuwe :ref:`oplossing indienen <oplossing indienen>`. Ook dit is een maatregel om overbelasting van het platform tegen te gaan. Nog een reden dus om te wachten met :ref:`indienen <oplossing indienen>` tot je jezelf ervan vergewist hebt dat je oplossing geen fouten meer bevat.
+    Je kan het :ref:`beoordelingsproces <oplossing beoordelingsproces>` van een :ref:`oplossing <oplossing>` niet annuleren. Terwijl een oplossing in de :ref:`wachtrij <oplossing wachtrij>` staat en terwijl de :ref:`judge <judge>` bezig is om de oplossing te beoordelen, wordt de indienknop op de :ref:`oefeningpagina <oefeningpagina>` buiten werking gesteld en kan je geen nieuwe :ref:`oplossing indienen <oplossing indienen>`. Ook dit is een maatregel om overbelasting van het platform tegen te gaan. Nog een reden dus om te wachten met :ref:`indienen <oplossing indienen>` tot je jezelf ervan vergewist hebt dat je oplossing geen fouten meer bevat.
 
-    .. TODO:feature-missing: mogelijkheid aanbieden om het beoordelingsproces van een ingediende oplossing te annuleren; als dit gebeurt wordt de oplossing terug geopend in de code editor op de oefeningpagina; vereist een nieuwe status "beoordeling geannuleerd" met eventueel in de korte samenvatting een aanduiding wie de beoordeling heeft geannuleerd (student of lesgever) en wanneer dit gebeurd is; een lesgever zou eventueel zelf ook een korte samenvatting kunnen geven waarom hij de ingediende oplossing geannuleerd heeft; bij uitbreiding zou deze status ook kunnen gebruikt worden om een oplossing die volledig beoordeeld was toch nog te annuleren, bijvoorbeeld omwille van plagiaat; daarmee stappen we dus in een scenario waarbij een cursusbeheerder achteraf (na het judgen) de status van een oplossing nog zou kunnen wijzigen
+    .. TODO:feature-missing: mogelijkheid aanbieden om het beoordelingsproces van een oplossing te annuleren; als dit gebeurt wordt de oplossing terug geopend in de code editor op de oefeningpagina; vereist een nieuwe status "beoordeling geannuleerd" met eventueel in de korte samenvatting een aanduiding wie de beoordeling heeft geannuleerd (student of lesgever) en wanneer dit gebeurd is; een lesgever zou eventueel zelf ook een korte samenvatting kunnen geven waarom hij de oplossing geannuleerd heeft; bij uitbreiding zou deze status ook kunnen gebruikt worden om een oplossing die volledig beoordeeld was toch nog te annuleren, bijvoorbeeld omwille van plagiaat; daarmee stappen we dus in een scenario waarbij een cursusbeheerder achteraf (na het judgen) de status van een oplossing nog zou kunnen wijzigen
 
-Zodra de :ref:`judge <judge>` klaar is met het beoordelen van je ingediende oplossing krijgt de oplossing haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met de gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
+Zodra de :ref:`judge <judge>` klaar is met het beoordelen van je :ref:`oplossing <oplossing>` krijgt ze haar finale :ref:`status <oplossing status>` en wordt de :ref:`feedbackpagina <feedbackpagina>` met gedetailleerde feedback over de oplossing automatisch weergegeven in een nieuwe tab :guilabel:`Feedback`.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
 .. tip::
 
-    Er zit geen beperking op het aantal keer dat je een oplossing kan :ref:`indienen <oplossing indienen>` voor een :ref:`oefening <oefening>`. Gebruik de :ref:`feedback <feedback>` die de :ref:`judge <judge>` heeft aangeleverd om je oplossing te corrigeren of verder te verfijnen.
+    Er zit geen beperking op het aantal keer dat je een :ref:`oplossing <oplossing>` kan :ref:`indienen <oplossing indienen>` voor een :ref:`oefening <oefening>`. Gebruik de :ref:`feedback <feedback>` die de :ref:`judge <judge>` heeft aangeleverd om je oplossing te corrigeren of verder te verfijnen.
 
 
 .. _oplossing:
+.. _oplossingenoverzicht:
 
 Navigeren naar een oplossing
 ----------------------------
 
-Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossing indienen>` voor de oefeningen uit de cursus. Er zijn verschillende plaatsen waar je een overzicht kan krijgen van je :ref:`ingediende oplossingen <oplossing indienen>`:
+Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus. Er zijn verschillende plaatsen waar je een **overzicht** kunt krijgen van je oplossingen:
 
-* Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je ingediende oplossingen.
+* Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je :ref:`oplossingen <oplossing>`.
 
   .. image:: all_submissions.nl.png
 
-* Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend.
+* Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle :ref:`oplossingen <oplossing>` die je binnen de :ref:`cursus <cursus>` hebt :ref:`ingediend <oplossing indienen>`.
 
   .. image:: course_submissions.nl.png
 
-* Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle oefeningen die je hebt ingediend voor de oefening. Als je de oefening :ref:`geselecteerd hebt binnen een cursus <oefening>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
+* Selecteer de tab :guilabel:`Oplossingen` op een :ref:`oefeningpagina <oefeningpagina>` voor een overzicht van alle :ref:`oplossingen <oplossing>` die je hebt :ref:`ingediend <oplossing indienen>` voor de :ref:`oefening <oefening>`. Als je de oefening :ref:`geselecteerd <cursus selecteren>` hebt binnen een :ref:`cursus <cursus>`, dan is het overzicht bijkomend beperkt tot alle oplossingen die je binnen de cursus hebt ingediend.
 
   .. image:: exercise_submissions_tab.nl.png
 
   .. TODO:screenshot-update: zorg ervoor dat de tab "Oplossingen" geselecteerd, zodat je meteen ook het overzicht van de oplossingen ziet
 
-* Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een oefening voor een overzicht van alle oplossingen die je binnen de cursus hebt ingediend voor de oefening.
+* Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een :ref:`oefening <oefening>` voor een overzicht van alle :ref:`oplossingen <oplossing>` die je binnen de :ref:`cursus <cursus>` hebt :ref:`ingediend <oplossing indienen>` voor de oefening.
 
   .. image:: exercise_submissions_page.nl.png
 
   .. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven
 
-.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor ingediende oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
-.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van ingediende oplossingen ontbreekt
+.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
+.. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van oplossingen ontbreekt
 
-Het overzicht bevat voor elke oplossing het :ref:`tijdstip van indienen <oplossing tijdstip>`, de :ref:`status <oplossing status>` en een :ref:`korte samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke ingediende oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. De ingediende oplossingen worden altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
+Een :ref:`oplossingenoverzicht <oplossingenoverzicht>` bevat voor elke :ref:`oplossing <oplossing>` het :ref:`tijdstip <oplossing tijdstip>` van :ref:`indienen <oplossing indienen>`, de :ref:`status <oplossing status>` en een korte :ref:`samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. In het overzicht worden je oplossingen altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
 .. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
 
 .. TODO:tutorial-missing: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
 
-Je kan een ingediende oplossing selecteren door op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor krijg je de :ref:`feedbackpagina <feedbackpagina>` te zien met de gedetailleerde feedback over de oplossing.
+.. _oplossing selecteren:
+.. _feedbackpagina:
+
+Je kan een :ref:`oplossing <oplossing>` selecteren door in een :ref:`oplossingenoverzicht <oplossingenoverzicht>` op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor navigeer je naar de **feedbackpagina** met de gedetailleerde :ref:`feedback <feedback>` over de oplossing.
 
 .. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven; moet een afbeelding zijn van een oplossingenpagina met een pijl naar het groter dan symbool waarmee je naar de feedbackpagina kan navigeren
 
 .. _judge:
-.. _feedbackpagina:
 .. _feedback:
 
 Feedback interpreteren
 ----------------------
 
-Op de **feedbackpagina** staat gedetailleerde feedback over een :ref:`oplossing <oplossing>` die voor een oefening werd :ref:`ingediend <oplossing indienen>`. Deze feedback werd automatisch gegenereerd door de :ref:`judge <judge>` die aan de oefening gekoppeld is.
+Op de :ref:`feedbackpagina <feedbackpagina>` staat gedetailleerde **feedback** over een :ref:`oplossing <oplossing>` die je :ref:`ingediend <oplossing indienen>` hebt voor een :ref:`oefening <oefening>`. Zo snel mogelijk na het indienen wordt de oplossing automatisch beoordeeld door een **judge** die aan de oefening gekoppeld is. Als motivatie van zijn beoordeling voorziet de judge gedetailleerde feedback over de oplossing.
 
 .. image:: exercise_feedback_correct_page.nl.png
 
 .. TODO:feature-update: de titelbalk van een oplossing zou enkel de term "Oplossing" mogen bevatten; de naam van de oefeningen en de naam van de cursus vormen hier niet echt een meerwaarde
 
-Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende gegevens over de :ref:`oplossing <oplossing indienen>`:
+Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende gegevens over de :ref:`oplossing <oplossing>`:
 
 .. _oplossing opgave:
 
@@ -599,19 +606,19 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
     .. TODO:feature-update: inconsistentie in de terminologie: in de header van de feedbackpagina wordt de term "Opgave" gebruikt, waar elders de term "Oefening" gebruikt wordt; we spreken ook van een oefeningenreeks
 
-    Naam van de oefening waarvoor de oplossing werd ingediend. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
+    De naam van de :ref:`oefening <oefening>` waarvoor de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. Druk op de naam om naar de :ref:`oefeningpagina <oefeningpagina>` te navigeren.
 
 .. _oplossing cursus:
 
 :guilabel:`Cursus`
 
-    Naam van de cursus waarbinnen de oplossing werd ingediend. Druk op de naam om naar de :ref:`cursuspagina <oefeningpagina>` te navigeren.
+    De naam van de :ref:`cursus <cursus>` waarbinnen de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. Druk op de naam om naar de :ref:`cursuspagina <oefeningpagina>` te navigeren.
 
     .. TODO:feature-update: vermeld in de header van de feedbackpagina naast de naam van de cursus ook het academiejaar om de benaming consistent te maken met de benaming in de titelbalk op de cursuspagina van de cursus
 
     .. note::
 
-       Dit informatieveld ontbreekt als de :ref:`oplossing <oplossing indienen>` niet binnen de context van een cursus werd ingediend.
+       Dit informatieveld ontbreekt als de :ref:`oplossing <oplossing>` niet binnen de context van een :ref:`cursus <cursus>` werd :ref:`ingediend <oplossing indienen>`.
 
     .. TODO:tutorial-update: bovenstaande opmerking wordt niet als note weergegeven
 
@@ -619,14 +626,14 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
 :guilabel:`Ingediend`
 
-    Tijdstip waarop de oplossing werd ingediend. Dit tijdstip wordt op een gebruiksvriendelijke manier weergegeven, bijvoorbeeld :guilabel:`ongeveer 2 uur geleden`. Als je de muiswijzer boven het tijdstip plaatst dan krijg je de gedetailleerde weergave van het tijdstip te zien.
+    Het **tijdstip** waarop de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. Dit tijdstip wordt op een gebruiksvriendelijke manier weergegeven, bijvoorbeeld :guilabel:`ongeveer 2 uur geleden`. Als je de muiswijzer boven het tijdstip plaatst dan krijg je de gedetailleerde weergave van het tijdstip te zien.
 
 .. _oplossing status:
 .. _oplossing icoontje:
 
 :guilabel:`Status`
 
-    Status die Dodona of de :ref:`judge <judge>` aan de oplossing heeft toegekend. Met elke status correspondeert een icoontje dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden door de judge toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
+    De **status** die Dodona of de :ref:`judge <judge>` aan de :ref:`oplossing <oplossing>` heeft toegekend. Met elke status correspondeert een **icoontje** dat in elke oplijsting van de :ref:`oplossing <oplossing>` wordt weergegeven. Statussen met zwarte of gele icoontjes worden door Dodona toegekend. Statussen met groene of rode icoontjes worden door de judge toegekend. Betekenis van de mogelijke statussen die aan de oplossing kunnen toegekend worden:
 
     .. list-table::
       :header-rows: 1
@@ -637,15 +644,15 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
       * - :guilabel:`In de wachtrij…`
         - .. image:: submission_icons/queued.png
-        - oplossing staat in de :ref:`wachtrij <oplossing wachtrij>`
+        - :ref:`oplossing <oplossing>` staat in de :ref:`wachtrij <oplossing wachtrij>`
 
       * - :guilabel:`Aan het uitvoeren…`
         - .. image:: submission_icons/running.png
-        - oplossing wordt momenteel beoordeeld door de :ref:`judge <judge>`
+        - :ref:`oplossing <oplossing>` wordt momenteel beoordeeld door de :ref:`judge <judge>`
 
       * - :guilabel:`Correct`
         - .. image:: submission_icons/correct.png
-        - oplossing is geslaagd voor alle testen
+        - :ref:`oplossing <oplossing>` is geslaagd voor alle testen
 
       * - :guilabel:`Fout`
         - .. image:: submission_icons/wrong.png
@@ -663,25 +670,25 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
       * - :guilabel:`Geheugenfout`
         - .. image:: submission_icons/memory_limit_exceeded.png
-        - geheugenlimiet vastgelegd voor de oefening werd overschreden tijdens het uitvoeren van minstens één test
+        - geheugenlimiet vastgelegd voor de :ref:`oefening <oefening>` werd overschreden tijdens het uitvoeren van minstens één test
 
       * - :guilabel:`Compilatiefout`
         - .. image:: submission_icons/compilation_error.png
-        - ingediende oplossing bevat grammaticale fouten
+        - :ref:`oplossing <oplossing>` bevat grammaticale fouten
 
       * - :guilabel:`Interne fout`
         - .. image:: submission_icons/internal_error.png
-        - :ref:`judge <judge>` is gecrashed tijdens het beoordelen van de oplossing; oorzaak van fout ligt dus niet bij de ingediende oplossing maar bij het falen van de judge
+        - :ref:`judge <judge>` is gecrashed tijdens het beoordelen van de :ref:`oplossing <oplossing>`; oorzaak van fout ligt dus niet bij de oplossing maar bij het falen van de judge
 
     .. TODO:feature-missing: tijdslimiet en geheugenlimiet van een oefening niet zichtbaar voor student; deze zouden ook als informatievelden kunnen opgenomen worden in de header van de oplossing (voorafgaand aan de status)
 
-    Hoe lager de status in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Als de :ref:`judge <judge>` bij het beoordelen van de oplossing verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
+    Hoe lager de :ref:`status <oplossing status>` in bovenstaande tabel wordt opgelijst, hoe zwaarder het soort fout dat ermee correspondeert. Als de :ref:`judge <judge>` bij het beoordelen van de :ref:`oplossing <oplossing>` verschillende soorten fouten tegenkomt, dan staat het hem vrij te beslissen welke status hij aan de oplossing toekent. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de status van de oplossing te bepalen.
 
 .. _oplossing samenvatting:
 
 :guilabel:`Samenvatting`
 
-    Korte motivering van de :ref:`judge <judge>` bij de :ref:`status <oplossing status>` die hij aan de oplossing heeft toegekend.
+    Korte motivering van de :ref:`judge <judge>` bij de :ref:`status <oplossing status>` die hij aan de :ref:`oplossing <oplossing>` heeft toegekend.
 
 .. TODO:feature-missing: vanuit de feedbackpagina op een aparte pagina zou je ook makkelijk naar een overzicht moeten kunnen navigeren van alle oplossingen die de gebruiker heeft ingediend voor die oefening, eventueel binnen de context van een cursus (als de oplossing zelf binnen een cursus werd ingediend); als de feedbackpagina in een tab wordt weergegeven, dan hoeft dit niet, want dan staat daarnaast al een tab "Oplossingen"
 
@@ -690,13 +697,13 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 .. _feedback tab:
 .. _feedback tab badge:
 
-Daaronder staat meer gedetailleerde feedback die de :ref:`judge <judge>` kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een *badge* staan met daarin een getal. Het getal geeft aan hoeveel fouten de judge gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de judge vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
+Daaronder staat meer gedetailleerde :ref:`feedback <feedback>` die de :ref:`judge <judge>` kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een **badge** staan met daarin een getal. Het getal geeft aan hoeveel fouten de judge gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de judge vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de *badge* te bepalen.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
 
 .. _feedback tab code:
 
-De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`ingediende oplossing <oplossing indienen>`. Op bepaalde plaatsen in de broncode kan de :ref:`judge <judge>` opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
+De laatste :ref:`tab <feedback tab>` heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`oplossing <oplossing>`. Op bepaalde plaatsen in de broncode kan de :ref:`judge <judge>` opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
 
 .. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
 
@@ -706,17 +713,17 @@ De laatste tab heeft altijd de naam :guilabel:`Code` en bevat de broncode van de
 
     .. _oplossing opnieuw indienen:
 
-    In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de oplossing niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+    In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de :ref:`oplossing <oplossing>` niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
     .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
 
-    Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`pagina van de oefening <oefeningpagina>` waarvoor de oplossing werd ingediend. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
+    Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`oefening <oefening>` waarvoor de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode wel bewerken en daarna eventueel opnieuw indienen.
 
-.. _feedback context:
-.. _feedback testgeval:
 .. _feedback test:
+.. _feedback testgeval:
+.. _feedback context:
 
-Onder een tab rapporteert de :ref:`judge <judge>` over individuele **testen** waaraan hij de code onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
+Onder een :ref:`tab <feedback tab>` rapporteert de :ref:`judge <judge>` over individuele **testen** waaraan hij de code onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
@@ -724,31 +731,31 @@ Onder een tab rapporteert de :ref:`judge <judge>` over individuele **testen** wa
 
 .. _feedback context visueel:
 
-Visueel worden alle :ref:`testgevallen <testgeval>` van een :ref:`context <context>` met elkaar verbonden via een dunne vertikale lijn aan de linkerkant. De kleur van die lijn geeft aan of de :ref:`judge <judge>` de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
+Visueel worden alle :ref:`testgevallen <feedback testgeval>` van een :ref:`context <feedback context>` met elkaar verbonden via een dunne vertikale lijn aan de linkerkant. De kleur van die lijn geeft aan of de :ref:`judge <judge>` de volledige context beoordeelt als geslaagd (groene lijn) of als niet geslaagd (rode lijn).
 
 .. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee contexten met meerdere testgevallen, waarvan er minstens één geslaagd is (groene lijn) en minstens één niet (rode lijn)
 
 .. _feedback testgeval visueel:
 
-Aan de rechterkant van de dunne vertikale lijn worden de testgevallen van de context onder elkaar weergegeven. De beschrijving van een :ref:`testgeval <testgeval>` wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur die over de volledige breedte loopt. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de :ref:`judge <judge>` het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
+Aan de rechterkant van de dunne vertikale lijn worden de :ref:`testgevallen <feedback testgeval>` van de :ref:`context <feedback context>` onder elkaar weergegeven. De beschrijving van een testgeval wordt weergegeven binnen een rechthoek met lichtgrijze achtergrondkleur die over de volledige breedte loopt. In de rechterbovenhoek van die rechthoek staat een gekleurd symbool dat aangeeft of de :ref:`judge <judge>` het volledige testgeval beoordeelt als geslaagd (groen vinkje) of als niet geslaagd (rood kruisje).
 
 .. TODO:tutorial-update: nagaan of we effectief afbeeldingen van het groen vinkje en het rood kruisje kunnen opnemen in voorgaande paragraaf
 .. TODO:tutorial-missing: openklappen van linkerrand context om grafische debugger te starten in Python judge; dit kan eventueel aangekaart worden in de handleiding van de Python judge zelf
 
 .. TODO:screenshot-missing: screenshot met voorbeeld van minstens twee testgevallen waarvan er minstens één geslaagd is en minstens één niet
 
-Als een testgeval bijkomend rapporteert over individuele testen, dan worden die opgelijst onder de rechthoek met lichtgrijze achtergrond waarin de beschrijving van het testgeval staat. Om visueel onderscheid te maken met de weergave van het testgeval, wordt elke test weergegeven met een kleine marge links en rechts. De weergave van een test bestaat zelf uit de volgende optionele componenten die onder elkaar worden weergegeven:
+Als een :ref:`testgeval <feedback testgeval>` bijkomend rapporteert over individuele :ref:`testen <feedback test>`, dan worden die opgelijst onder de rechthoek met lichtgrijze achtergrond waarin de beschrijving van het testgeval staat. Om visueel onderscheid te maken met de weergave van het testgeval, wordt elke test weergegeven met een kleine marge links en rechts. De weergave van een test bestaat zelf uit de volgende optionele componenten die onder elkaar worden weergegeven:
 
 * .. _feedback testgeval beschrijving:
 
-  Een beschrijving van de uitgevoerde test. Deze beschrijving wordt weergegeven binnen een rechthoek met dezelfde lichtgrijze achtergrondkleur als bij de beschrijving van een testgeval.
+  Een beschrijving van de uitgevoerde :ref:`test <feedback test>`. Deze beschrijving wordt weergegeven binnen een rechthoek met dezelfde lichtgrijze achtergrondkleur als bij de beschrijving van een testgeval.
 
   .. TODO:feature-missing: op dit moment is er geen visuele weergave van de eigenschap "accepted" (boolean) van een individuele test; voorstel is om ofwel te werken met dezelfde gekleurde symbolen als bij de testgevallen of om de beschrijving in een groene of rode rechthoek te plaatsen in plaats van in een grijze rechthoek zoals experimenteel toegepast in de JavaScript judge; er kan eventueel ook gespeeld worden met een gekleurde lijn aan de rechterkant in plaats van met een gekleurd symbool, naar analogie met de lijn die door de context gebruikt wordt; in dezelfde stijl zou dan ook de lijn onder een tab kunnen gebruikt worden om de "accepted" toestand van de tab aan te duiden
   .. TODO:feature-missing: in de JavaScript judge werd geëxperimenteerd met de mogelijkheid om in plaats van enkel een boolean te gebruiken als status voor een tab/context/testgeval/test, nog een tweede boolean te gebruiken om aan te geven of de beoordeling effectief gebeurd is voor die component; op die manier kan gerapporteerd worden over testen die niet beoordeeld werden (skipped; bijvoorbeeld omdat de tijdlimiet overschreden werd op een bepaald moment)
 
 * .. _feedback testgeval diff:
 
-  Een tekstuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de ingediende oplossing. Als minstens één van beide waarden uit meerdere regels bestaat, dan worden de overeenkomstige regels tegenover elkaar uitgelijnd. Identieke overeenkomstige regels worden weergegeven met een transparante achtergrondkleur. Als overeenkomstige regels van elkaar verschillen dan worden ze weergegeven met een lichtgekleurde achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde). Individuele karakters die verschillen binnen overeenkomstige regels worden weergegeven met een donkerder achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde).
+  Een tekstuele vergelijking tussen een verwachte waarde en een waarde die gegenereerd werd aan de hand van de oplossing. Als minstens één van beide waarden uit meerdere regels bestaat, dan worden de overeenkomstige regels tegenover elkaar uitgelijnd. Identieke overeenkomstige regels worden weergegeven met een transparante achtergrondkleur. Als overeenkomstige regels van elkaar verschillen dan worden ze weergegeven met een lichtgekleurde achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde). Individuele karakters die verschillen binnen overeenkomstige regels worden weergegeven met een donkerder achtergrondkleur (groen voor de verwachte waarde en rood voor de gegenereerde waarde).
 
   .. TODO:feature-missing: schakelen tussen unified/split in diff (www.diffchecker.com)
   .. TODO:feature-missing: schakelen tussen word/character in diff (www.diffchecker.com)
@@ -756,14 +763,14 @@ Als een testgeval bijkomend rapporteert over individuele testen, dan worden die 
 
 * .. _feedback testgeval mededelingen:
 
-  Algemene feedback over de uitgevoerde test. Voor deze feedback heeft de :ref:`judge <judge>` alle vrijheid wat betreft de vormgeving, waardoor hij zowel tekstuele als grafische feedback kan aanleveren.
+  Algemene feedback over de uitgevoerde :ref:`test <feedback test>`. Voor deze feedback heeft de :ref:`judge <judge>` alle vrijheid wat betreft de vormgeving, waardoor hij zowel tekstuele als grafische feedback kan aanleveren.
 
     .. TODO:tutorial-comment: technisch gezien kunnen hier meerdere mededelingen onder elkaar staan; Dodona gebruikt echter geen visuele manier om deze mededelingen van elkaar te onderscheiden, waardoor gebruikers geen verschil zien tussen één of meerdere mededelingen; omwille van de eenvoud spreken we hier dus slechts van één optionele mededeling, en we benoemen die met de term "feedback"
 
     .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
     .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
 
-De :ref:`judge <judge>` kan niet enkel algemene feedback geven over individuele testen, maar ook over individuele testgevallen, individuele contexten en de volledige oplossing. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
+De :ref:`judge <judge>` kan niet enkel algemene :ref:`feedback <feedback>` geven over individuele :ref:`testen <feedback test>`, maar ook over individuele :ref:`testgevallen <feedback testgeval>`, individuele :ref:`contexten <feedback context>` en de volledige :ref:`oplossing <oplossing>`. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
 
 .. TODO:feature-missing: toon enkel de contexten die fout zijn; wat met testgevallen of testen die fout zijn? als enkele foute testgevallen zouden getoond worden, dan lijk je de context te verliezen om de interpretatie te doen; correcte testen verbergen lijkt dan weer wel zinvol te zijn
 .. TODO:feature-missing: JSON met feedback bevat optioneel ook tijds- en geheugenmetingen voor de individuele testen, testgevallen, contexten, tabs en de volledige oplossing; de judge bepaalt of en hoe de tijd- en geheugenmetingen uitgevoerd worden; geheugenmetingen zijn iets moeilijker weer te geven, maar we zouden in ieder geval al kunnen nagaan hoe de tijdsmetingen kunnen weergegeven worden op de verschillende niveau's
@@ -771,12 +778,11 @@ De :ref:`judge <judge>` kan niet enkel algemene feedback geven over individuele 
 
 .. _voettekst:
 .. _contactpagina:
-.. _contact opnemen:
 
 Contact opnemen
 ---------------
 
-Als je met vragen zit over de werking van Dodona of als er interessante ideeën bij je opborrelen over hoe we het platform zouden kunnen verbeteren of uitbreiden, neem dan gerust contact met ons op. Alle commentaren en suggesties zijn meer dan welkom. Navigeer daarvoor naar de `contactpagina <https://dodona.ugent.be/nl/contact/>`_ door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
+Als je met vragen zit over de werking van Dodona of als er interessante ideeën bij je opborrelen over hoe we het platform zouden kunnen verbeteren of uitbreiden, neem dan gerust contact met ons op. Alle commentaren en suggesties zijn meer dan welkom. Navigeer daarvoor naar de **contactpagina** door in de **voettekst** (onderaan elke pagina) op :guilabel:`Contact` te drukken.
 
 .. image:: contact.nl.png
 
