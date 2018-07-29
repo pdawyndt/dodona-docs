@@ -290,7 +290,7 @@ Onder de naam van een :ref:`oefeningenreeks <oefeningenreeks>` staat optioneel e
 
 .. _oefeningenreeks statistieken:
 
-De **statistieken** van een :ref:`oefening <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
+De **statistieken** van een :ref:`oefening <oefening>` uit een :ref:`oefeningenreeks <oefeningenreeks>` bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de :ref:`cursus <cursus>` al minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` voor de oefening en :math:`c` voor het aantal gebruikers (studenten en cursusbeheerders) dat in de cursus al minstens één *correcte* oplossing heeft ingediend voor de oefening.
 
 .. _oefening status:
 .. _oefening icoontje:
@@ -339,7 +339,7 @@ Mogelijke weergaven van je :ref:`status <oefening status>` nadat de :ref:`deadli
 
 .. important::
 
-    Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening in de oefeningenreeks nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande :ref:`oplossing <oplossing>` selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Als je **vóór het verstrijken van de deadline** van een :ref:`oefeningenreeks <oefeningenreeks>` een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` uit de oefeningenreeks, dan kan je :ref:`status <oefening status>` voor de oefening nog wijzigen omdat die status altijd gebaseerd is op je laatst ingediende oplossing vóór de :ref:`deadline <oefeningenreeks deadline>`. Het is dus je eigen verantwoordelijkheid om ervoor te zorgen dat je laatst ingediende oplossing vóór de deadline ook je meest correcte oplossing is. Je kan eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     .. _waarschuwingssymbool:
 
@@ -711,9 +711,9 @@ De laatste :ref:`tab <feedback tab>` heeft altijd de naam :guilabel:`Code` en be
 
 .. TODO:feature-missing: een judge kan een tab al dan niet aanvaarden (accepted), maar dit wordt momenteel niet visueel weergegeven via een kleur of een symbool bij de tab zoals dat bij andere niveau's wel het geval is; nadenken of we dit toch niet moeten introduceren
 
-.. tip::
+.. _oplossing opnieuw indienen:
 
-    .. _oplossing opnieuw indienen:
+.. tip::
 
     In de tab :guilabel:`Code` op de :ref:`feedbackpagina <feedbackpagina>` kan je de broncode van de :ref:`oplossing <oplossing>` niet wijzigen. Als je op de broncode drukt dan wordt die volledig geselecteerd. Kopieer de broncode naar het klembord en plak die in je IDE. Als alternatief kan je op de downloadknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>`. Daarmee download je een bestand met de broncode, dat je dan kan openen in je IDE. In je IDE kan je de broncode bewerken en daarna eventueel opnieuw :ref:`indienen <oplossing indienen>`.
 
