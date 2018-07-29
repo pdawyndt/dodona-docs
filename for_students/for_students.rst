@@ -377,13 +377,16 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
 
 
-.. _manuele registratieprocedure:
 .. _registreren:
 
 Registreren voor een cursus
 ---------------------------
 
-Je moet je eerst voor een :ref:`cursus <cursus>` **registreren** voordat je :ref:`oplossingen <oplossing>` kan :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus. Als je navigeert naar een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
+Je moet je eerst voor een :ref:`cursus <cursus>` **registreren** voordat je :ref:`oplossingen <oplossing>` kan :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus.
+
+.. _manuele registratieprocedure:
+
+Als je navigeert naar een cursus waarvoor je nog niet geregistreerd bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
