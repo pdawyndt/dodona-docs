@@ -53,6 +53,9 @@ Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cu
 
 .. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
+.. TODO:feature-missing: kopiëren van een bestaande cursus
+
+
 .. _cursusbeheerpagina:
 .. _cursuseigenschappen instellen:
 
@@ -113,10 +116,13 @@ Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursus
 
     xxx
 
-Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om de cursuseigenschappen effectief in te stellen. Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>`.
+Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om de cursuseigenschappen effectief in te stellen.
+
+Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` van kracht.
 
 .. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te beheren op de cursuspagina (toevoegen, verwijderen, verplaatsen van oefeningenreeksen en bewerken van individuele oefeningenreeksen)
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op de cursusbeheerpagina
+
 
 .. _cursusgebruikers beheren:
 
@@ -155,6 +161,7 @@ doen.
 De kleur van de cursus bepaalt met welke kleur je cursus op de homepagina van je
 studenten getoond zal worden.
 
+
 .. _oefeningenreeksen beheren:
 
 Beheren van oefeningenreeksen
@@ -173,8 +180,9 @@ Let er op bij het toevoegen van reeksen dat een nieuwe reeks telkens boven de
 bestaande reeksen zal toegevoegd worden en dat er momenteel nog geen manier
 bestaan om de reeksen te herordenen.
 
-Studenten automatisch laten registreren
----------------------------------------
+
+Werken met een registratielink
+------------------------------
 
 Op Dodona kan je het proces voor studenten om zich te in te schrijven op je
 cursus vergemakkelijken. Als je hen een speciale link geeft zullen ze op het
@@ -182,3 +190,6 @@ moment dat ze die volgen automatisch ingeschreven worden in je cursus. Deze link
 kan je op de cursuspagina vinden.
 
 .. image:: registration-link.nl.png
+
+.. TODO:feature-missing: toekennen van labels aan gebruikers binnen de cursus
+.. TODO:feature-missing: learning analytics van gebruikers binnen de cursus
