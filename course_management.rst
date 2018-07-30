@@ -3,13 +3,13 @@
 Cursusbeheer
 ============
 
-Als :ref:`lesgever <lesgever>` kan je onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` die je beheert samen met andere :ref:`cursusbeheerders <cursusbeheerder>`.
+Als :ref:`lesgever <lesgever>` kan je onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en kan je andere gebruikers van de cursus aanduiden als :ref:`cursusbeheerder <cursusbeheerder>` om samen de cursus te beheren.
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen, die het uiterste :ref:`tijdstip <oefeningenreeks tijdstip>` aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`studenten <student>` indienen voor oefeningen uit de oefeningenreeks.
+Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`studenten <student>` indienen voor oefeningen uit de oefeningenreeks.
 
 .. important::
 
-    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die je aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` wilt toevoegen reeds beschikbaar zijn op het platform. In :ref:`oefeningen toevoegen` bespreken we hoe oefeningen aan het platform toegevoegd worden.
+    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die je aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` wilt toevoegen reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe je oefeningen aan Dodona kunt toevoegen.
 
 
 .. _cursus aanmaken:
