@@ -51,7 +51,7 @@ Als je een :ref:`natuurlijke taal <natuurlijke taal>` selecteert terwijl je :ref
 Aanmelden
 ---------
 
-Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerervaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` of het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` — aan je gebruikersaccount gekoppeld.
+Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerservaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` of het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` — aan je gebruikersaccount gekoppeld.
 
 .. important::
 
@@ -88,13 +88,17 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
     Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contactpagina>` met ons op te nemen als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
-.. _uitwisseling persoonsgegevens:
+.. _persoonsgegevens doorsturen:
 
-Als dit de eerste keer is dat je :ref:`aanmeldt <aanmelden>` op Dodona dan wordt er automatisch een nieuwe :ref:`gebruikersaccount <gebruikersaccount>` aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je :ref:`persoonlijke voorkeuren <persoonlijke voorkeuren>` instellen voor de :ref:`natuurlijke taal <natuurlijke taal>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
+Als dit de eerste keer is dat je :ref:`aanmeldt <aanmelden>` op Dodona dan wordt er automatisch een nieuwe :ref:`gebruikersaccount <gebruikersaccount>` aangemaakt op basis van de :ref:`persoonsgegevens <persoonsgegevens>` die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je :ref:`persoonlijke voorkeuren <persoonlijke voorkeuren>` instellen voor de :ref:`natuurlijke taal <natuurlijke taal>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
 
 .. important::
 
     Als je beschikt over gebruikersaccounts bij verschillende externe onderwijs- of onderzoeksinstellingen, dan corresponderen deze elk met een afzonderlijke gebruikersaccount op Dodona.
+
+.. tip::
+
+    Als je wilt schakelen naar een andere :ref:`gebruikersaccount <gebruikersaccount>` dan deze die momenteel :ref:`aangemeld <aanmelden>` is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
 .. _gebruikersmenu:
 
@@ -122,10 +126,6 @@ Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landing
 Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` en heb je nog geen enkele :ref:`oplossing <oplossing>` :ref:`ingediend <oplossing indienen>`. Daardoor ziet je :ref:`startpagina <startpagina>` er op dit moment nog vrij kaal uit.
 
 .. image:: homepage.nl.png
-
-.. tip::
-
-    Als je wilt schakelen naar een andere :ref:`gebruikersaccount <gebruikersaccount>` dan deze die momenteel :ref:`aangemeld <aanmelden>` is, dan moet je eerst :ref:`afmelden <afmelden>` en daarna terug aanmelden met de andere gebruikersaccount.
 
 .. TODO:tutorial-missing: beschrijving van speciale manier van aanmelden voor gebruikers met een tijdelijk account, inclusief de medeling voor gebruikers die over een tijdelijk account beschikken; nu we werken met meerdere identity providers moet de beschrijving van die boodschap ook bijgewerkt worden (verwijst nu nog naar UGent)
 
@@ -166,9 +166,10 @@ Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>`
 .. TODO:screenshot-missing: screenshot van het selecteren van mijn profiel in het gebruikersmenu
 
 .. _persoonsgegevens:
+.. _persoonlijke voorkeuren:
 .. _gebruikersprofiel:
 
-Op je :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
+Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voornaam, familienaam, gebruikersnaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerservaring te personaliseren.
 
 .. image:: edit_profile.nl.png
 
@@ -182,7 +183,7 @@ Op je :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (gebrui
 
 .. _gebruikersprofiel bijwerken:
 
-Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonsgegevens <persoonsgegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de :ref:`gegevens <uitwisseling persoonsgegevens>` die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonsgegevens <persoonsgegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de persoonsgegevens die tijdens het :ref:`aanmelden <aanmelden>` door je externe onderwijs- of onderzoeksinstelling :ref:`doorgestuurd <persoonsgegevens doorsturen>` worden naar Dodona.
 
 .. image:: edit_profile.nl.png
 
@@ -200,7 +201,7 @@ In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instel
 
     .. image:: wrong_timezone.nl.png
 
-    Je kunt deze mededeling enkel weghalen door in je :ref:`gebruikersprofiel <gebruikersprofiel>` de :ref:`tijdzone <gebruikersprofiel tijdzone>` in te stellen op de lokale tijdzone. Merk op dat de mededeling een link bevat waarmee je rechtstreeks naar je :ref:`profielpagina <profielpagina>` kan navigeren.
+    Je kunt deze mededeling enkel weghalen door in je :ref:`gebruikersprofiel <gebruikersprofiel>` de :ref:`tijdzone <gebruikersprofiel tijdzone>` in te stellen op de lokale tijdzone. Merk op dat de mededeling een link bevat waarmee je rechtstreeks naar je :ref:`profielpagina <profielpagina>` kunt navigeren.
 
 .. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 .. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
