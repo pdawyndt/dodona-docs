@@ -10,6 +10,7 @@ Handleiding: Dodona
    :caption: Inleiding
 
    introduction
+   for_teachers_introduction
 
 .. toctree::
    :maxdepth: 2
@@ -21,8 +22,9 @@ Handleiding: Dodona
    :maxdepth: 2
    :caption: Lesgevers
 
-   creating_a_course
-   for_teachers
+   course_management
+   exercise_specification
+   judge_specification
 
 .. toctree::
    :maxdepth: 2
