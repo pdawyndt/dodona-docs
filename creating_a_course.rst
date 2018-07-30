@@ -1,8 +1,7 @@
 .. _creating_a_course:
 
-===================
-Een cursus aanmaken
-===================
+Cursusbeheer
+============
 
 Om een cursus aan te maken moet je als medewerker geregistreerd staan binnen
 Dodona. Ga naar de cursussen pagina (via de knop "Meer cursussen..."
