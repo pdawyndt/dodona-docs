@@ -49,9 +49,9 @@ Je krijgt de :ref:`cursusbeheerpagina <cursusbeheerpagina>` te zien waarin je de
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
-Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je wordt meteen ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de nieuwe cursus.
+Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je komt automatisch op :ref:`cursuspagina` van de nieuwe cursus terecht, waar je kan vastsellen dat je meteen ook als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus bent aangeduid.
 
-.. TODO:screenshot-missing: screenshot van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
+.. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
 .. _cursus beheren:
 .. _cursusbeheerpagina:
