@@ -53,13 +53,13 @@ Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cu
 
 .. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
-.. _cursus beheren:
 .. _cursusbeheerpagina:
+.. _cursuseigenschappen instellen:
 
-Beheren van een cursus
-----------------------
+Instellen van cursuseigenschappen
+---------------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kun je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kan zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kunt zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
 
 .. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een bestaande cursus
 
@@ -67,9 +67,13 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kun je op de **cursusbeheerpagina**
 
 Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursuseigenschappen** instellen:
 
+.. _cursus naam:
+
 :guilabel:`Naam`
 
     De naam van de cursus.
+
+.. _cursus lesgever:
 
 :guilabel:`Lesgever`
 
@@ -78,12 +82,16 @@ Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursus
     .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
     .. TODO:feature-update: overwegen om cursusgebruikers te selecteren als lesgevers van een cursus; dan kunnen hun namen aan hun profielpagina gekoppeld worden
 
+.. _cursus academiejaar:
+
 :guilabel:`Academiejaar`
 
     Het academiejaar waarin de cursus wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina` en in het :ref:`cursusoverzicht`. Op Dodona wordt de naam van een cursus altijd in één adem genoemd met het academiejaar waarin de cursus wordt aangeboden.
 
     .. TODO:feature-update: verplaats academiejaar boven lesgever, omdat de naam en het academiejaar altijd in één adem genoemd worden
     .. TODO:feature-update: vervang academiejaar (typisch voor cursusaanbod in hoger onderwijs in België) door meer generieke oplossing: optionele start- en einddatum waarbinnen de cursus wordt aangeboden; de starpagina en het cursusoverzicht kunnen dan ingedeeld worden volgens lopende cursussen, toekomstige cursussen en afgelopen cursussen; zonder startdatum wordt de cursus altijd aangeboden voor de einddatum; zonder einddatum wordt de cursus altijd aangeboden na de startdatum; zonder start- en einddatum wordt de cursus altijd aangeboden
+
+.. _cursus zichtbaarheid:
 
 :guilabel:`Zichtbaarheid`
 
@@ -93,9 +101,13 @@ Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursus
 
     .. TODO:feature-update: op Dodona staat dat de inhoud van een zichtbare cursus toegankelijk is voor iedereen, maar dat is niet zo; de omschrijving en oefeningenreeksen zijn enkel zichtbaar voor geregistreerde gebruikers of voor cursussen die werken met open registratie
 
+.. _cursus registratie:
+
 :guilabel:`Registratie`
 
     xxx
+
+.. _cursus beschrijving:
 
 :guilabel:`Beschrijving`
 
@@ -117,11 +129,6 @@ Om een cursus aan te maken moet je als medewerker geregistreerd staan binnen
 Dodona. Ga naar de cursussen pagina (via de knop "Meer cursussen..."
 linksonderaan je homepagina). Klik daar op de ``+`` knop rechtsbovenaan de
 lijst.
-
-.. _oefeningenreeksen beheren:
-
-Beheren van cursusgebruikers
-----------------------------
 
 Vul nu de naam van de cursus (best de naam van het vak waarvoor de cursus
 gebruikt zal worden), je eigen naam (en evt. de naam van je medelesgevers) en
@@ -148,8 +155,10 @@ doen.
 De kleur van de cursus bepaalt met welke kleur je cursus op de homepagina van je
 studenten getoond zal worden.
 
-Een reeks toevoegen
--------------------
+.. _oefeningenreeksen beheren:
+
+Beheren van oefeningenreeksen
+-----------------------------
 
 Wanneer je de cursus aangemaakt hebt zal je naar de cursuspagina gebracht
 worden. Daar kan je bij oefeningenreeksen nu een reeks toevoegen via de ``+``
