@@ -23,7 +23,7 @@ Als **natuurlijke taal** voor Dodona kan je kiezen tussen Nederlands of Engels. 
 
 .. TODO:screenshot-update: overwegen om bijschriften toe te voegen aan afbeeldingen
 
-Als je een :ref:`natuurlijke taal <natuurlijke taal>` selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij :ref:`aanmelden <aanmelden>` automatisch je voorkeurstaal geselecteerd.
+Als je een :ref:`natuurlijke taal <natuurlijke taal>` selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
 
 .. note::
 
@@ -35,7 +35,7 @@ Als je een :ref:`natuurlijke taal <natuurlijke taal>` selecteert terwijl je :ref
 
     De naam en beschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de :ref:`natuurlijke taal <natuurlijke taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De :ref:`natuurlijke taal <natuurlijke taal>` van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing>` die je :ref:`ingedient <oplossing indienen>` voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. De judge kan de natuurlijke taal van deze feedback laten afhangen van de natuurlijke taal die geselecteerd is op het ogenblik waarop de oplossing wordt ingediend.
+    De :ref:`natuurlijke taal <natuurlijke taal>` van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing>` die je :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. De judge kan de natuurlijke taal van deze feedback laten afhangen van de natuurlijke taal die geselecteerd is op het ogenblik waarop de oplossing wordt ingediend.
 
 .. TODO:feature-update: standaardtaal instellen op Engels
 .. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
@@ -82,13 +82,13 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
 .. important::
 
-    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het doorsturen van enkele :ref:`persoonlijke gegevens <persoonlijke gegevens>` naar Dodona. Vaak hoef je deze toestemming slechts één keer te geven op elke computer waarmee je aanmeldt. Dodona gebruikt deze persoonlijke gegevens enkel voor intern beheer van je :ref:`gebruikersprofiel <gebruikersprofiel>` en wisselt deze informatie nooit uit met externe partijen.
+    Sommige onderwijs- of onderzoeksinstellingen vragen op het einde van de aanmeldingsprocedure expliciet jouw toestemming voor het doorsturen van enkele :ref:`persoonsgegevens <persoonsgegevens>` naar Dodona. Vaak hoef je deze toestemming slechts één keer te geven op elke computer waarmee je aanmeldt. Dodona gebruikt deze persoonsgegevens enkel voor intern beheer van je :ref:`gebruikersprofiel <gebruikersprofiel>` en wisselt deze informatie nooit uit met externe partijen.
 
 .. note::
 
     Voor authenticatie met gebruikersaccounts van externe onderwijs- of onderzoeksinstellingen ondersteunt Dodona zowel `SAML <https://nl.wikipedia.org/wiki/Security_Assertion_Markup_Language>`_ als `OAuth <https://nl.wikipedia.org/wiki/OAuth>`_. Vraag een ICT-beheerder of lesgever van je onderwijs- of onderzoeksinstelling om :ref:`contact <contactpagina>` met ons op te nemen als je graag alle gebruikersaccounts van je instelling toegang wilt geven tot Dodona. Deze dienstverlening is gratis.
 
-.. _uitwisseling persoonlijke gegevens:
+.. _uitwisseling persoonsgegevens:
 
 Als dit de eerste keer is dat je :ref:`aanmeldt <aanmelden>` op Dodona dan wordt er automatisch een nieuwe :ref:`gebruikersaccount <gebruikersaccount>` aangemaakt op basis van de gegevens die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je :ref:`persoonlijke voorkeuren <persoonlijke voorkeuren>` instellen voor de :ref:`natuurlijke taal <natuurlijke taal>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
 
@@ -165,10 +165,10 @@ Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>`
 
 .. TODO:screenshot-missing: screenshot van het selecteren van mijn profiel in het gebruikersmenu
 
-.. _persoonlijke gegevens:
+.. _persoonsgegevens:
 .. _gebruikersprofiel:
 
-Op je :ref:`profielpagina <profielpagina>` staan je **persoonlijke gegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
+Op je :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (gebruikersnaam, voornaam, familienaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerervaring te personaliseren.
 
 .. image:: edit_profile.nl.png
 
@@ -182,7 +182,7 @@ Op je :ref:`profielpagina <profielpagina>` staan je **persoonlijke gegevens** (g
 
 .. _gebruikersprofiel bijwerken:
 
-Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonlijke gegevens <persoonlijke gegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de :ref:`gegevens <uitwisseling persoonlijke gegevens>` die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
+Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonsgegevens <persoonsgegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de :ref:`gegevens <uitwisseling persoonsgegevens>` die tijdens het :ref:`aanmelden <aanmelden>` doorgestuurd worden door je externe onderwijs- of onderzoeksinstelling.
 
 .. image:: edit_profile.nl.png
 
