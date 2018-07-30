@@ -19,23 +19,108 @@ Aanmaken van een cursus
 
 .. _beheersrechten:
 .. _beheersmenu:
-.. _lesgever:
-.. _student:
 .. _gebruikersoverzicht:
 
 .. important::
 
-    Je hebt **beheersrechten** nodig om een :ref:`cursus <cursus>` te kunnen aanmaken. Je herkent dat je beheersrechten hebt als je het **beheersmenu** (menu met naam :guilabel:`Admin`) ziet staan links van het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. In Dodona gebruiken we de term **lesgever** voor een gebruiker met beheersrechten en de term **student** voor een gebruiker zonder beheersrechten.
+    Je hebt **beheersrechten** nodig om een :ref:`cursus <cursus>` te kunnen aanmaken. Je herkent dat je beheersrechten hebt als je het **beheersmenu** (menu :guilabel:`Admin`) ziet staan links van het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
-    Het **gebruikersoverzicht** toont een overzicht met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Navigeer naar het gebruikersoverzicht door :guilabel:`Gebruikers` te selecteren in het :ref:`beheersmenu <beheersmenu>`. Gebruik de zoekbalk bovenaan het gebruikersoverzicht om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres. Druk in het gebruikersoverzicht op de editeerknop aan de rechterkant van een student of een lesgever om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
+    .. TODO:screenshot-missing: screenshot van navigatiebalk waarin beheersmenu is aangeduid
 
-    Met beheersrechten kan je andere gebruikers beheersrechten geven door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Staff` in de :ref:`profielpagina <profielpagina>` van de gebruiker. Je kunt ook beheersrechten ontnemen van gebruikers met beheersrechten (inclusief jezelf) door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Student` in de profielpagina van de gebruiker.
+    Het **gebruikersoverzicht** toont een overzicht met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Navigeer naar het gebruikersoverzicht door :guilabel:`Gebruikers` te selecteren in het :ref:`beheersmenu <beheersmenu>`.
 
+    .. TODO:screenshot-missing: screenshot van opengeklapt beheersmenu waarin het menu-item Gebruikers is aangeduid
+
+    Gebruik de zoekbalk bovenaan het gebruikersoverzicht om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres. Druk in het gebruikersoverzicht op de editeerknop aan de rechterkant van een student of een lesgever om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
+
+    .. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin zoekbalk gebruikt wordt om naar gebruikers te zoeken en editeerknop aangeduid wordt
+
+    Met :ref:`beheersrechten <beheersrechten>` kan je andere gebruikers beheersrechten geven door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Staff` in de :ref:`profielpagina <profielpagina>` van de gebruiker. Je kunt ook beheersrechten ontnemen van gebruikers met beheersrechten (inclusief jezelf) door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Student` in de profielpagina van de gebruiker. In Dodona gebruiken we de term **lesgever** voor een gebruiker met beheersrechten en de term **student** voor een gebruiker zonder beheersrechten. Als :ref:`lesgever <lesgever>` bepaal je dus mee wie de andere lesgevers zijn op Dodona.
+
+    .. TODO:screenshot-missing: screenshot van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
+
+Druk in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` om een nieuwe cursus aan te maken.
+
+.. TODO:screenshot-missing: screenshot van cursusoverzicht waarop knop "nieuwe cursus" aangeduid is
+
+Je krijgt de :ref:`cursusbeheerpagina <cursusbeheerpagina>` te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt instellen.
+
+.. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een nieuwe cursus
+
+.. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
+
+Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je wordt meteen ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de nieuwe cursus.
+
+.. TODO:screenshot-missing: screenshot van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
+
+.. _cursus beheren:
+.. _cursusbeheerpagina:
+
+Beheren van een cursus
+----------------------
+
+Als :ref:`cursusbeheerder <cursusbeheerder>` kun je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kan zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
+
+.. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een bestaande cursus
+
+.. _cursuseigenschappen:
+
+Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursuseigenschappen** instellen:
+
+:guilabel:`Naam`
+
+    De naam van de cursus.
+
+:guilabel:`Lesgever`
+
+    De naam van de lesgever van de cursus. Gebruik een komma om de namen te scheiden als er meerdere lesgevers zijn.
+
+    .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
+
+:guilabel:`Academiejaar`
+
+    Het academiejaar waarin de cursus wordt aangeboden. Gebruik het formaat `jjjj-jjjj` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina` en in het :ref:`cursusoverzicht`.
+
+    .. TODO:feature-update: verplaats academiejaar boven lesgever, omdat de naam en het academiejaar altijd in één adem genoemd worden
+    .. TODO:feature-update: vervang academiejaar (typisch voor cursusaanbod in hoger onderwijs in België) door meer generieke oplossing: optionele start- en einddatum waarbinnen de cursus wordt aangeboden; de starpagina en het cursusoverzicht kunnen dan ingedeeld worden volgens lopende cursussen, toekomstige cursussen en afgelopen cursussen; zonder startdatum wordt de cursus altijd aangeboden voor de einddatum; zonder einddatum wordt de cursus altijd aangeboden na de startdatum; zonder start- en einddatum wordt de cursus altijd aangeboden
+
+:guilabel:`Zichtbaarheid`
+
+    xxx
+
+    .. TODO:tutorial-missing: besprerking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
+
+    .. TODO:feature-update: op Dodona staat dat de inhoud van een zichtbare cursus toegankelijk is voor iedereen, maar dat is niet zo; de omschrijving en oefeningenreeksen zijn enkel zichtbaar voor geregistreerde gebruikers of voor cursussen die werken met open registratie
+
+:guilabel:`Registratie`
+
+    xxx
+
+:guilabel:`Beschrijving`
+
+    xxx
+
+Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om de cursuseigenschappen effectief in te stellen. Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>`.
+
+.. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te beheren op de cursuspagina (toevoegen, verwijderen, verplaatsen van oefeningenreeksen en bewerken van individuele oefeningenreeksen)
+.. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op de cursusbeheerpagina
+
+.. _cursusgebruikers beheren:
+
+Beheren van cursusgebruikers
+----------------------------
+
+.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursuspagina
 
 Om een cursus aan te maken moet je als medewerker geregistreerd staan binnen
 Dodona. Ga naar de cursussen pagina (via de knop "Meer cursussen..."
 linksonderaan je homepagina). Klik daar op de ``+`` knop rechtsbovenaan de
 lijst.
+
+.. _oefeningenreeksen beheren:
+
+Beheren van cursusgebruikers
+----------------------------
 
 Vul nu de naam van de cursus (best de naam van het vak waarvoor de cursus
 gebruikt zal worden), je eigen naam (en evt. de naam van je medelesgevers) en
