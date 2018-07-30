@@ -59,7 +59,7 @@ Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cu
 Beheren van een cursus
 ----------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kun je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kan zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kun je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kan zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
 
 .. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een bestaande cursus
 
