@@ -1,7 +1,17 @@
-.. _creating_a_course:
+.. _course_management:
 
 Cursusbeheer
 ============
+
+Als :ref:`lesgever <lesgever>` kan je onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` die je beheert samen met andere :ref:`cursusbeheerders <cursusbeheerder>`.
+
+Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeksen>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline> instellen, die het uiterste :ref:`tijdstip <oefeningenreeks tijdstip>` aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`studenten <student>` indienen voor oefeningen uit de oefeningenreeks.
+
+.. important::
+
+    In :ref:`course_management` gaan we ervan uit dat de oefeningen die je aan een oefeningenreeks van een oefening wilt toevoegen reeds beschikbaar gesteld zijn op het platform.
+
+Als lesgever kan je onbeperkt cursussen aanmaken op Dodona, en binnen die cursussen kan je een leerpad uitstippelen met verschillende oefeningenreeksen. Voor het toevoegen van oefeningen die op een automatische manier de ingediende oplossingen testen en van feedback voorzien, heb je een aantal verschillende opties:
 
 .. note::
 
