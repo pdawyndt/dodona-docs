@@ -1,4 +1,4 @@
-.. _creating_an_exercise:
+.. _oefeningen toevoegen:
 
 ==================
 Een oefening maken
