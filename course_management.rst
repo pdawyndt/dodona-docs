@@ -39,6 +39,8 @@ Aanmaken van een cursus
 
     .. TODO:screenshot-missing: screenshot van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
 
+    .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
+
 Druk in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` om een nieuwe cursus aan te maken.
 
 .. TODO:screenshot-missing: screenshot van cursusoverzicht waarop knop "nieuwe cursus" aangeduid is
@@ -49,7 +51,7 @@ Je krijgt de :ref:`cursusbeheerpagina <cursusbeheerpagina>` te zien waarin je de
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
-Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je komt automatisch op :ref:`cursuspagina` van de nieuwe cursus terecht, waar je kan vastsellen dat je meteen ook als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus bent aangeduid.
+Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je komt automatisch op :ref:`cursuspagina` van de nieuwe cursus terecht. Daar kan je vaststellen dat je meteen ook als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus bent aangeduid.
 
 .. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
