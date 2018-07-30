@@ -176,6 +176,7 @@ Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voorna
 .. TODO:feature-update: lijst alle oefeningen waaraan gebruiker gewerkt heeft op in een afzonderlijk paneel waarin een listview voor de oefeningen gebruikt wordt; gebruik tabs of filtering zodat de gebruiker snel kan zien welke oefeningen afgewerkt zijn en aan welke zij nog moet werken; eventueel aanvullen met statistieken over aantal opgeloste oefeningen
 .. TODO:feature-update: lijst alle oplossingen van de gebruiker op in een afzonderlijk paneel waarin een listview voor de oplossingen gebruikt wordt; laat toe om te zoeken in de oplossingen; eventueel aanvullen met statistieken over aantal oplossingen
 .. TODO:feature-update: algemene learning analytics van gebruiker toevoegen aan gebruikersprofiel
+.. TODO:feature-missing: vermoedelijk maakt "onderwijs- of onderzoeksinstelling" nu deel uit van de persoonsgegevens, maar wordt dit informatieveld nog niet weergegeven op de profielpagina (niet instelbaar voor studenten); staff of zeus zouden dit dan eventueel kunnen wijzigen als een gebruiker verandert naar een andere instelling (vermoedelijk moet dan ook het emailadres mee aanpasbaar zijn)
 
 .. _gebruikersprofiel bijwerken:
 
@@ -240,7 +241,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 * .. _cursusoverzicht:
 
-  Het **cursusoverzicht** bevat alle beschikbare :ref:`cursussen <cursus>`, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
+  Het **cursusoverzicht** toont alle beschikbare :ref:`cursussen <cursus>`, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
 
   .. TODO:feature-update: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanaf elke pagina rechtstreeks toegang tot het cursusoverzicht
   .. TODO:feature-update: vervang de tekst op de knop "MEER CURSUSSEN …" in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
@@ -430,6 +431,8 @@ Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent
 .. _registratielink:
 
 Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <gemodereerde registratie>` of :ref:`gesloten registratie <gesloten registratie>`.
+
+.. TODO:feature-update: in de registratielink wordt standaard de geselecteerde natuurlijk taal ingesteld; meestal is dit wat een lesgever ook wil (als alle studenten dezelfde taal hebben), maar soms wil hij ook een taal-agnostische versie van de registratielink verspreiden als hij de voorkeurstaal die de gebruikers hebben ingesteld niet wil overrulen; we zouden dus ook kunnen overwegen om een optie te maken waarmee de lesgever een taal-agnostische versie van de registratielink kan genereren (als alternatief voor het handmatig wissen van de taal uit de URL)
 
 
 .. _uitschrijven:
@@ -718,6 +721,8 @@ De laatste :ref:`tab <feedback tab>` heeft altijd de naam :guilabel:`Code` en be
 .. _feedback context:
 
 Onder een :ref:`tab <feedback tab>` rapporteert de :ref:`judge <judge>` over individuele **testen** waaraan hij de broncode onderworpen heeft. Daarbij worden gerelateerde testen gegroepeerd in een **testgeval** en worden testgevallen die van elkaar afhankelijk zijn gegroepeerd in een **context**.
+
+.. TODO:tutorial-update: vervang de term "context" door de term "scope"
 
 .. image:: exercise_feedback_correct_tab.nl.png
 
