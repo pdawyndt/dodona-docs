@@ -21,6 +21,7 @@ Handleiding: Dodona
    :maxdepth: 2
    :caption: Lesgevers
 
+   creating_a_course
    for_teachers
 
 .. toctree::

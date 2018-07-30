@@ -12,10 +12,9 @@ Dodona voor lesgevers
    links naast je naam (rechtsboven) een menu "Admin" verschijnt.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    for_teachers_introduction
-   creating_a_course
    creating_an_exercise
    creating_a_judge
 
