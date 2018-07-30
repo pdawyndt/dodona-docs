@@ -5,20 +5,31 @@ Cursusbeheer
 
 Als :ref:`lesgever <lesgever>` kan je onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` die je beheert samen met andere :ref:`cursusbeheerders <cursusbeheerder>`.
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeksen>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen, die het uiterste :ref:`tijdstip <oefeningenreeks tijdstip>` aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`studenten <student>` indienen voor oefeningen uit de oefeningenreeks.
+Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen, die het uiterste :ref:`tijdstip <oefeningenreeks tijdstip>` aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`studenten <student>` indienen voor oefeningen uit de oefeningenreeks.
 
 .. important::
 
     In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die je aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` wilt toevoegen reeds beschikbaar zijn op het platform. In :ref:`oefeningen toevoegen` bespreken we hoe oefeningen aan het platform toegevoegd worden.
 
-Als lesgever kan je onbeperkt cursussen aanmaken op Dodona, en binnen die cursussen kan je een leerpad uitstippelen met verschillende oefeningenreeksen. Voor het toevoegen van oefeningen die op een automatische manier de ingediende oplossingen testen en van feedback voorzien, heb je een aantal verschillende opties:
 
-.. note::
+.. _cursus aanmaken:
 
-   Om de volgende instructies te kunnen volgen moet je medewerker (*staff*) zijn
-   op Dodona. Neem contact met ons op als je lesgever bent maar nog geen
-   medewerker op Dodona. Je kan zien of je medewerker bent op Dodona als er
-   links naast je naam (rechtsboven) een menu "Admin" verschijnt.
+Aanmaken van een cursus
+-----------------------
+
+.. _beheersrechten:
+.. _beheersmenu:
+.. _lesgever:
+.. _student:
+.. _gebruikersoverzicht:
+
+.. important::
+
+    Je hebt **beheersrechten** nodig om een :ref:`cursus <cursus>` te kunnen aanmaken. Je herkent dat je :ref:`beheersrechten <beheersrechten>` hebt als je links van het :ref:`gebruikersmenu` het **beheersmenu** (menu met label :guilabel:`Admin`) ziet staan aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`. In de context van Dodona gebruiken we de term **lesgever** voor een gebruiker met beheersrechten en de term **student** voor een gebruiker zonder beheersrechten.
+
+    Het **gebruikersoverzicht** toont een overzicht met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken van alle gebruikers. Navigeer naar het gebruikersoverzicht door :guilabel:`Gebruikers` te selecteren in het :ref:`beheersmenu <beheersmenu>`. Gebruik de zoekbalk bovenaan het gebruikersoverzicht om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres. Druk in het gebruikersoverzicht op de editeerknop aan de rechterkant van een student of een lesgever om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
+
+    Met beheersrechten kan je andere gebruikers beheersrechten geven door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Staff` in de :ref:`profielpagina <profielpagina>` van de gebruiker. Je kunt ook beheersrechten ontnemen van gebruikers met beheersrechten (inclusief jezelf) door het veld:guilabel:`Rechten` in te stellen op :guilabel:`Student` in de :ref:`profielpagina <profielpagina>` van de gebruiker.
 
 
 Om een cursus aan te maken moet je als medewerker geregistreerd staan binnen
