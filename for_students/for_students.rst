@@ -163,17 +163,13 @@ Gebruikersprofiel beheren
 
 Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren.
 
-.. TODO:screenshot-missing: screenshot van het selecteren van mijn profiel in het gebruikersmenu
-
 .. _persoonsgegevens:
 .. _persoonlijke voorkeuren:
 .. _gebruikersprofiel:
 
 Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voornaam, familienaam, gebruikersnaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerservaring te personaliseren.
 
-.. image:: edit_profile.nl.png
-
-.. TODO:screenshot-update: bovenstaande screenshot moet vervangen worden door een screenshot van het selecteren van mijn profiel in het gebruikersmenu; de figuur die hier staat werd verplaatst na onderstaande paragraaf
+.. image:: user_menu_my_profile.nl.png
 
 .. TODO:feature-update: studentennummer is UGent-specifiek en hoort niet langer thuis in het gebruikersprofiel na de verruiming naar andere identity providers
 .. TODO:feature-update: lijst alle cursussen van de gebruiker op in een afzonderlijk paneel (tab) waarin de listview voor de cursussen gebruikt wordt
@@ -236,11 +232,9 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
   .. image:: my_courses.nl.png
 
-  .. TODO:screenshot-update: gebruikersmenu is niet opengeklapt waardoor pijl in het luchtledige wijst
-
 * Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kunt één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
-  .. TODO:screenshot-missing: screenshot van profielpagina met lijst van cursussen
+  .. image:: profile_courses.nl.png
 
   .. TODO:feature-missing: listview op profielpagina met cursussen waarvoor de gebruiker geregistreerd is en cursussen waarvoor de gebruiker nog een registratieverzoek heeft openstaan.
 
@@ -393,8 +387,6 @@ Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`gere
 
   .. image:: register.nl.png
 
-  .. TODO:screenshot-update: overal zelfde marge laten rond (boven, onder, links en rechts) de rand van mededeling; kan de screenshot-bot automatisch een bepaalde component uitknippen uit een webpagina, waarbij je ook de marge kan instellen?
-
 * .. _gemodereerde registratie:
   .. _registratieverzoek:
 
@@ -458,7 +450,7 @@ Lesgevers kunnen **oefeningen** opstellen waarvoor je :ref:`oplossingen <oplossi
 
 * Op een :ref:`cursuspagina <cursuspagina>` kan je een :ref:`oefening <oefening>` selecteren uit een :ref:`oefeningenreeks <oefeningenreeks>` door op de naam van de oefening te drukken.
 
-  .. TODO:screenshot-missing: screenshot van oefeningenreeks met pijl naar naam van oefening waarop je kunt klikken
+  .. image:: course_exercise_selection.png
 
   .. TODO:feature-missing: voorzien dat studenten binnen een cursus nog extra oefeningen kunnen selecteren, waarbij de submissions dan ook aan die cursus gelinkt zijn; deze oefeningen moeten dan ook op één of andere manier zichtbaar gemaakt worden op de cursuspagina; kunnen deze extra oefeningen enkel aan de cursus gelinkt worden, of kunnen ze ook aan een specifieke reeks in de cursus gelinkt worden?
 
@@ -468,9 +460,7 @@ Lesgevers kunnen **oefeningen** opstellen waarvoor je :ref:`oplossingen <oplossi
 
   Het bovenste paneel in de rechterkolom van je :ref:`startpagina <startpagina>` bevat een lijst :guilabel:`RECENTE OEFENINGEN` met maximaal vijf :ref:`oefeningen <oefening>` waar je het laatst :ref:`oplossingen <oplossing>` voor :ref:`ingediend <oplossing indienen>` hebt over alle cursussen heen. In de lijst zie je vóór elke oefening ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je :ref:`status <oefening status>` voor de oefening. Selecteer een oefening uit de lijst door op de naam van de oefening te drukken. Op die manier kan je snel oefeningen selecteren waaraan je recent gewerkt hebt.
 
-  .. image:: exercise_submissions_page.nl.png
-
-  .. TODO:screenshot-update: naam van dit screenshot moet beter gekozen worden
+  .. image:: exercise_all_submissions_page.nl.png
 
 .. TODO:tutorial-missing: oefening selecteren uit de lijst met alle beschikbare oefeningen; hiervoor moeten we eerst nog nagaan op welke manier studenten deze lijst te zien krijgen
 
@@ -554,7 +544,7 @@ Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossi
 
 * Kies :guilabel:`Mijn oplossingen` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` of druk op de statistiek :guilabel:`Inzendingen` in het paneel in de rechterkolom van je :ref:`startpagina <startpagina>` voor een overzicht van al je :ref:`oplossingen <oplossing>`.
 
-  .. image:: all_submissions.nl.png
+  .. image:: all_submissions_link.nl.png
 
 * Druk op de statistiek :guilabel:`Inzendingen` in het kaartje van een cursus op je :ref:`startpagina <startpagina>` of op de :ref:`cursuspagina <cursuspagina>` voor een overzicht van alle :ref:`oplossingen <oplossing>` die je binnen de :ref:`cursus <cursus>` hebt :ref:`ingediend <oplossing indienen>`.
 
@@ -564,20 +554,16 @@ Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossi
 
   .. image:: exercise_submissions_tab.nl.png
 
-  .. TODO:screenshot-update: zorg ervoor dat de tab "Oplossingen" geselecteerd, zodat je meteen ook het overzicht van de oplossingen ziet
-
 * Druk in een :ref:`oefeningenreeks <oefeningenreeks>` op het groter dan symbool aan de rechterkant van een :ref:`oefening <oefening>` voor een overzicht van alle :ref:`oplossingen <oplossing>` die je binnen de :ref:`cursus <cursus>` hebt :ref:`ingediend <oplossing indienen>` voor de oefening.
 
-  .. image:: exercise_submissions_page.nl.png
-
-  .. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven
+  .. image:: exercise_course_submissions_page.nl.png
 
 .. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van oplossingen ontbreekt
 
 Een :ref:`oplossingenoverzicht <oplossingenoverzicht>` bevat voor elke :ref:`oplossing <oplossing>` het :ref:`tijdstip <oplossing tijdstip>` van :ref:`indienen <oplossing indienen>`, de :ref:`status <oplossing status>` en een korte :ref:`samenvatting <oplossing samenvatting>` van de :ref:`feedback <feedback>`. Vóór elke oplossing staat ook nog een :ref:`icoontje <oplossing icoontje>` dat correspondeert met de :ref:`status <oplossing status>` van de oplossing. In het overzicht worden je oplossingen altijd opgelijst in omgekeerde chronologische volgorde (meest recente bovenaan).
 
-.. TODO:screenshot-missing: toon een oplossingenpagina, bijvoorbeeld alle oplossingen over alle cursussen heen van een student
+.. image:: all_submissions.nl.png
 
 .. TODO:tutorial-missing: aangeven dat op de oplossingpagina ook extra de naam van de oefening vermeld wordt; OPMERKING: voor studenten is de gebruikersnaam nooit zichtbaar, omdat de lijst altijd beperkt is tot hun eigen inzendingen
 
@@ -586,9 +572,7 @@ Een :ref:`oplossingenoverzicht <oplossingenoverzicht>` bevat voor elke :ref:`opl
 
 Je kunt een :ref:`oplossing <oplossing>` selecteren door in een :ref:`oplossingenoverzicht <oplossingenoverzicht>` op het groter dan symbool te drukken aan rechterkant van de oplossing. Hierdoor navigeer je naar de **feedbackpagina** met de gedetailleerde :ref:`feedback <feedback>` over de oplossing.
 
-.. image:: exercise_feedback_correct_page.nl.png
-
-.. TODO:screenshot-update: dit is niet de juiste afbeelding die hoort bij de tekst erboven; moet een afbeelding zijn van een oplossingenpagina met een pijl naar het groter dan symbool waarmee je naar de feedbackpagina kan navigeren
+.. image:: submissions_to_exercise_feedback.nl.png
 
 .. _judge:
 .. _feedback:
