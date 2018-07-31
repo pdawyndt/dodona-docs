@@ -8,7 +8,7 @@ Gebruikersbeheer
 .. _lesgever:
 .. _beheerder:
 
-Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebruikersprofiel <gebruikersprofiel>` beheren. Voor het uitvoeren van sommige acties heb je echter bijkomende :ref:`beheersrechten <beheersrechten>` nodig. Onder gebruikers onderscheiden we daarom **studenten**, **lesgevers** en **beheerders** afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor Dodona. Als :ref:`beheerder <beheerder>` bepaal je mee wie de andere beheerders zijn. Als :ref:`lesgever <lesgever>` of als :ref:`beheerder <lesgever>` bepaald je mee wie de andere lesgevers zijn.
+Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebruikersprofiel <gebruikersprofiel>` beheren. Voor sommige acties op Dodona heb je echter bijkomende :ref:`beheersrechten <beheersrechten>` nodig. Onder gebruikers onderscheiden we daarom **studenten**, **lesgevers** en **beheerders** afhankelijk van de beheersrechten die aan hen :ref:`toegewezen <beheersrechten toewijzen>` werden. Als lesgever kan je zelf ook andere lesgevers aanduiden.
 
 .. _beheersmenu:
 
@@ -111,4 +111,5 @@ Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`
 
     Als je jezelf als lesgever degradeert tot student, dan kan je jezelf daarna niet terug promoveren tot lesgever.
 
+.. TODO:feature-update: zou het niet logischer zijn dat een lesgever wel studenten kan promoveren tot lesgever, maar geen andere lesgevers kan degraderen tot student (inclusief zichzelf); analoog voor beheerders; dan vervalt ook bovenstaande opmerking
 .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
