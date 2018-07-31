@@ -14,10 +14,10 @@ opties:
  3. zelf een nieuwe judge met bijbehorende oefeningen ontwikkelen en delen
 
 Elke mogelijkheid uit bovenstaande lijst vraagt telkens meer inspanning, maar
-geeft hem telkens ook meer flexibiliteit om de oefeningen naar je hand te
+geeft telkens ook meer flexibiliteit om de oefeningen naar je hand te
 zetten. De meeste lesgevers beginnen dan ook eenvoudigweg met het toevoegen van
 bestaande oefeningen aan hun cursussen, vooraleer ze zelf oefeningen en judges
-beginnen op te stellen. We gaan hieronder wat meer in detail in op de
+beginnen op te stellen. We gaan hieronder in wat meer detail in op de
 verschillende mogelijkheden.
 
 Oefeningen selecteren die andere lesgevers opgesteld en gedeeld hebben
@@ -85,7 +85,7 @@ Zelf nieuwe judges ontwikkelen
 Is er nog geen judge voorhanden die ondersteuning biedt voor de programmeertaal
 of het platform waarmee je wil werken, dan biedt Dodona de mogelijk om zelf een
 judge te ontwikkelen. Judges worden opgesteld in een GitHub repository, en na
-een commit automatisch gesynchroniseerd op Dodona. Hoe de beoordeling van
+elke commit automatisch gesynchroniseerd op Dodona. Hoe de beoordeling van
 ingediende oplossingen gebeurt heb je volledig zelf in handen. The sky is the
 limit. Via het aanmaken van een docker container kan je zelf de omgeving bepalen
 waarin het uitvoeren en beoordelen van de ingediende oplossingen moet gebeuren.
