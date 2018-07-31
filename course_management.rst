@@ -100,7 +100,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
       * - :guilabel:`Gesloten`
         - geen enkele gebruikers kan zich nog voor de :ref:`cursus <cursus>` :ref:`registreren <registreren>`
 
-        .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
+          .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
     .. important::
 
