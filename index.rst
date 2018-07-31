@@ -16,7 +16,7 @@ Handleiding: Dodona
    :maxdepth: 2
    :caption: Studenten
 
-   for_students/for_students
+   for_students
 
 .. toctree::
    :maxdepth: 2
