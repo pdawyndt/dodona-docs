@@ -7,7 +7,7 @@ Inleiding
 Dodona is een online leerplatform dat aan de Universiteit Gent wordt ontwikkeld
 en gebruikt met het oog op het automatiseren van de *feedback loop* voor
 complexe opdrachten met open antwoorden, waarbij we in eerste instantie focussen
-op programmeeropdrachten. Specifiek aan dit soor opdrachten is dat het antwoord
+op programmeeropdrachten. Specifiek aan dit soort opdrachten is dat het antwoord
 doorgaans niet bestaat uit de oplossing van een bepaald probleem, maar uit de
 implementatie in programmacode van een generieke methode (een algoritme) om een
 bepaald soort problemen op te lossen. Dit maakt dat het beoordelen van de
