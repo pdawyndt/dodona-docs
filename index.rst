@@ -22,6 +22,7 @@ Handleiding: Dodona
    :maxdepth: 2
    :caption: Lesgevers
 
+   user_management
    course_management
    exercise_specification
    judge_specification

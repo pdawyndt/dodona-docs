@@ -11,7 +11,7 @@ Voor gebruikers van Dodona maken we onderscheid tussen **lesgevers** en **studen
 
 Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` aanmaken en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus :ref:`aanduiden <cursusbeheerder aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
 
-Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die gebruikers indienen voor de oefeningen uit de oefeningenreeks.
+Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die gebruikers :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks.
 
 .. important::
 
@@ -51,20 +51,19 @@ Druk in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuw
 
 .. TODO:screenshot-missing: screenshot van cursusoverzicht waarop knop "nieuwe cursus" aangeduid is
 
-Je krijgt de :ref:`cursusbeheerpagina <cursusbeheerpagina>` te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt instellen.
+Je krijgt een formulier te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt :ref:`instellen <cursuseigenschappen instellen>`.
 
 .. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een nieuwe cursus
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
-Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om effectief de :ref:`cursus <cursus>` aan te maken. Je komt automatisch op :ref:`cursuspagina` van de nieuwe cursus terecht. Daar kan je vaststellen dat je meteen ook als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus bent aangeduid.
+Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daarbij navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch als gebruiker van de cursus :ref:`geregistreerd <registreren>` bent en dat je meteen als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus :ref:`aangeduid <cursusbeheerder aanduiden>` bent.
 
 .. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
 .. TODO:feature-missing: kopiëren van een bestaande cursus
 
 
-.. _cursusbeheerpagina:
 .. _cursuseigenschappen instellen:
 
 Instellen van cursuseigenschappen
@@ -133,9 +132,10 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 
 
 .. _cursusbeheerder aanduiden:
+.. _gebruikers beheren:
 
-Aanduiden van cursusbeheerders
-------------------------------
+Beheren van gebruikers
+----------------------
 
 Voor gebruikers van Dodona maken we onderscheid tussen lesgevers en studenten als gebruikers met en zonder beheersrechten op het platform. Voor geregistreerde gebruikers van een cursus maken we onderscheid tussen cursusbeheerders en studenten als gebruikers met en zonder beheersrechten voor de cursus.
 
