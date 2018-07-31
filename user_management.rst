@@ -35,9 +35,11 @@ Als :ref:`lesgever <lesgever>` navigeer je naar het :ref:`gebruikersoverzicht <g
 
 .. _gebruikersoverzicht:
 
-In het **gebruikersoverzicht** vind je een lijst met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke gebruiker in de lijst staat ook een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
+In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke lesgever en beheerder staat een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
 
 .. image:: images/staff.users.nl.png
+
+.. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
 
 Gebruik de zoekbalk bovenaan het :ref:`gebruikersoverzicht <gebruikersoverzicht>` om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres.
 
@@ -119,3 +121,5 @@ Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`
 
 .. TODO:feature-update: zou het niet logischer zijn dat een lesgever wel studenten kan promoveren tot lesgever, maar geen andere lesgevers kan degraderen tot student (inclusief zichzelf); analoog voor beheerders; dan vervalt ook bovenstaande opmerking
 .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
+
+.. TODO:tutorial-missing: uitleggen hoe de account van een gebruiker kan overgenomen worden en wat daarvan de gevaren zijn als je onder het mom van de gebruiker registreert voor cursussen of oplossingen indient voor oefeningen
