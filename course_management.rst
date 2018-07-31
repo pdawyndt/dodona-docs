@@ -104,7 +104,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     .. important::
 
-        Als je dit informatieveld aanpast dan blijven bestaande :ref:`registraties <registreren>` voor de :ref:`cursus <cursus>` altijd gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
+        Als je dit informatieveld aanpast dan blijven bestaande :ref:`registraties <registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
@@ -112,7 +112,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving van de cursus die bovenaan de :ref:`cursuspagina` komt te staan. Voor het opmaken van de beschrijving kan je gebruik maken van `Markdown https://en.wikipedia.org/wiki/Markdown`_.
+    Een optionele beschrijving van de cursus die bovenaan de :ref:`cursuspagina` komt te staan. Voor het opmaken van de beschrijving kan je gebruik maken van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_.
 
     .. TODO:tutorial-missing: ergens in de handleiding (inleiding) moet vermeld worden dat Dodona gebruik maakt van kramdown (https://kramdown.gettalong.org) voor het opmaken van Markdown; dan kan de Markdown-link in bovenstaande sectie vervangen worden door een link naar die sectie
 
