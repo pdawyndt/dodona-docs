@@ -5,10 +5,31 @@ const process = require('process');
 const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   'nl': {
+    'ADMIN': 'Admin',
+    'COURSE_DESCRIPTION_INPUT': 'Welkom op de Dodona-cursus van het opleidingsonderdeel **Programmeren**. Deze cursus ' +
+      'bevat een groot aantal Python programmeeroefeningen die voorzien zijn van automatische feedback. De oefeningen ' +
+      'zijn per programmeertechniek ingedeeld in tien reeksen.\n\n' +
+      'Onderstaand overzicht bevat een lijst van opdrachten die je wekelijks moet afwerken. Dit omvat onder meer de ' +
+      'hoofdstukken uit het handboek die als voorbereiding op de hoorcolleges moeten gelezen worden, extra opdrachten ' +
+      'als voorbereiding op het oplossen van de programmeeroefeningen, tips & tricks die je kunt gebruiken bij het ' +
+      'oplossen van de oefeningen, en een lijst van opgelegde oefeningen die wekelijks moeten ingediend worden voor ' +
+      '**dinsdagavond 22:00**. Hou zelf het overzicht in de gaten om te zien voor welke opgelegde oefeningen je reeds ' +
+      'een (correcte) oplossing hebt ingediend.\n',
+    'COURSE_NAME_INPUT': 'Programmeren',
     'COURSES': 'Cursussen',
     'MY_COURSES': 'Mijn vakken',
   },
   'en': {
+    'ADMIN': 'Admin',
+    'COURSE_DESCRIPTION_INPUT': 'Welcome to the Dodona page of the **Programming** course. This page contains a number ' +
+      'of Python programming assignments with automatic feedback. The assignments are divided by programming technique ' +
+      'into ten series.\n\n' +
+      'The following overview contains a list of assigments that need to be finished weekly. This includes the chapters ' +
+      'from the syllabus that you are required to read as preparation for the lectures, extra assignments as preparation ' +
+      'for solving the assignments, tips & tricks you can use to solve the assignments and a list of required exercises' +
+      'that need to be submitted weekly before **tuesday evening at 22:00**. Keep an eye on the overview yourself to see ' +
+      'for which required exercises you have submitted a (correct) solution.',
+    'COURSE_NAME_INPUT': 'Programming',
     'COURSES': 'Courses',
     'MY_COURSES': 'My courses',
   },
@@ -43,13 +64,19 @@ function Wizard() {
     this.elementsToBlock.push({ selector, pointPredicate: predicate || (() => true) });
   };
 
-  this.click = async function (selector) {
-    const element = await this.page.$(selector);
-    await element.click();
+  this.click = async function (selector, predicate, predicateArg) {
+    predicate = predicate || (() => true);
+    const elements = await this.page.$$(selector);
+    for (const element of elements) {
+      if (this.page.evaluate(predicate, element, predicateArg)) {
+        await element.click();
+        return;
+      }
+    }
+    console.warn(`UNUSED CLICK SELECTOR: ${selector}`);
   };
 
-  this.navigate = async function (url) {
-    await this.page.goto(url);
+  this.removeBlockedElements = async function () {
     for (const toBlock of this.elementsToBlock) {
       for (const element of await this.page.$$(toBlock.selector)) {
         if (await this.page.evaluate(toBlock.pointPredicate, element)) {
@@ -57,6 +84,11 @@ function Wizard() {
         }
       }
     }
+  };
+
+  this.navigate = async function (url) {
+    await this.page.goto(url);
+    await this.removeBlockedElements();
   };
 
   this.scrollTo = async function (selector) {
@@ -134,27 +166,16 @@ function Wizard() {
   };
 
   this.typeIn = async function (selector, text) {
-    const element = await this.page.$(selector);
-    await element.type(text);
+    await this.page.type(selector, text);
   };
 
   this.close = async function () {
     await this.browser.close();
   };
-
-  this.click = async function (selector, predicate) {
-    predicate = predicate || (() => true);
-
-    for (const element of await this.page.$$(selector)) {
-      if (await this.page.evaluate(predicate, element)) {
-        element.click();
-      }
-    }
-  };
 }
 
-function waitForInput() {
-  return new Promise(((resolve) => {
+async function waitForInput() {
+  await new Promise(((resolve) => {
     process.stdin.resume();
     process.stdin.once('data', function (data) {
       resolve(data);
@@ -168,7 +189,6 @@ async function wait(ms) {
 }
 
 (async () => {
-
   console.log('Make sure Dodona is running locally on port 3000 with a clean database\n' +
     'and the production stylesheet and that the user is logged in by default (as admin).\n' +
     'Press ENTER to continue');
@@ -179,6 +199,10 @@ async function wait(ms) {
     return !!elem.querySelector('a[href$="stop_impersonating/"');
   });
   wizard.blockElement('footer.footer');
+
+  // =========================================================
+  // SIGNED OUT
+  // =========================================================
 
   console.log('signed out pages');
 
@@ -197,6 +221,105 @@ async function wait(ms) {
     await wizard.navigate(`https://dodona.ugent.be/${language}/contact/`);
     await wizard.screenshot(`../images/contact.${language}.png`);
   }
+
+  // =========================================================
+  // STAFF
+  // =========================================================
+
+  await wizard.navigate('http://localhost:3000/nl/users/2/impersonate');
+
+  console.log(`staff user management`);
+
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/`);
+
+    await wizard.screenshot(`../images/staff.admin_menu.${language}.png`, {
+      pointToSelectors: [`a.dropdown-toggle`],
+      pointPredicate: (elem, content) => elem.innerText === content + ' ',
+      pointPredicateArg: TRANSLATIONS[language]['ADMIN'],
+    });
+
+    await wizard.click('li.dropdown',
+      (elem, content) =>
+        !!elem.querySelector('a.dropdown-toggle') && elem.querySelector('a.dropdown-toggle').innerText === content + ' ',
+      TRANSLATIONS[language]['ADMIN'],
+    );
+
+    await wizard.screenshot(`../images/staff.admin_menu_users.${language}.png`, {
+      pointToSelectors: [`a[href$="/users/"]`],
+    });
+
+    await wizard.navigate(`http://localhost:3000/${language}/users/`);
+
+    await wizard.screenshot(`../images/staff.users.${language}.png`);
+
+    await wizard.typeIn(`input#filter-query`, 'rebecca');
+
+    await wait(2000);
+
+    await wizard.screenshot(`../images/staff.users_filtered.${language}.png`);
+    await wizard.screenshot(`../images/staff.users_filtered_link.${language}.png`, {
+      pointToSelectors: [`a[href$="/users/3/"]`],
+    });
+    await wizard.screenshot(`../images/staff.users_filtered_edit_link.${language}.png`, {
+      pointToSelectors: [`a[href$="/users/3/edit/"]`],
+    });
+
+    await wizard.navigate(`http://localhost:3000/${language}/users/3/`);
+    await wizard.screenshot(`../images/staff.user_edit_link.${language}.png`, {
+      pointToSelectors: [`a[href$="/users/3/edit/"]`],
+    });
+
+    await wizard.navigate(`http://localhost:3000/${language}/users/3/edit/`);
+
+    await wizard.screenshot(`../images/staff.user_edit_permission.${language}.png`, {
+      pointToSelectors: ['select#user_permission'],
+    });
+  }
+
+  await wizard.navigate(`http://localhost:3000/nl/users/`);
+  await wizard.page.evaluate(() => {
+    document.querySelector('body').innerHTML =
+      '<p><span class="glyphicon glyphicon-king"></span></p>' +
+      '<p><span class="glyphicon glyphicon-queen"></span></p>';
+  });
+
+  await wizard.screenshot('../images/role_icons/zeus.png', { cropSelector: '.glyphicon-king' });
+  await wizard.screenshot('../images/role_icons/staff.png', { cropSelector: '.glyphicon-queen' });
+
+  console.log('staff course management');
+
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`http://localhost:3000/${language}/courses/`);
+
+    await wizard.screenshot(`../images/staff.courses_new_link.${language}.png`, {
+      pointToSelectors: ['a[href$="/courses/new/"]'],
+    });
+
+    await wizard.navigate(`http://localhost:3000/${language}/courses/new/`);
+
+    await wizard.screenshot(`../images/staff.new_course.${language}.png`);
+
+    await wizard.typeIn('input#course_name', TRANSLATIONS[language]['COURSE_NAME_INPUT']);
+    await wizard.typeIn('input#course_teacher', 'Laura Esgever');
+    await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['COURSE_DESCRIPTION_INPUT']);
+
+    await wizard.click(`button[form="new_course"]`);
+    await wizard.page.waitForNavigation();
+    await wizard.removeBlockedElements();
+
+    const course_url = wizard.page.target().url();
+
+    await wizard.screenshot(`../images/staff.created_course.${language}.png`);
+
+    await wizard.navigate(course_url + 'edit/');
+
+    await wizard.screenshot(`../images/staff.course_edit.${language}.png`);
+  }
+
+  // =========================================================
+  // STUDENT
+  // =========================================================
 
   await wizard.navigate('http://localhost:3000/nl/users/3/impersonate');
 

@@ -15,7 +15,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 
     Je herkent dat je :ref:`lesgever <lesgever>` bent als je het **beheersmenu** (menu :guilabel:`Admin`) ziet staan links van het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
-    .. TODO:screenshot-missing: screenshot van navigatiebalk waarin beheersmenu is aangeduid
+    .. image:: images/staff.admin_menu.nl.png
 
 .. important::
 
@@ -31,21 +31,21 @@ Navigeren naar een gebruiker
 
 Als :ref:`lesgever <lesgever>` navigeer je naar het :ref:`gebruikersoverzicht <gebruikersoverzicht>` door :guilabel:`Gebruikers` te selecteren in het :ref:`beheersmenu <beheersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
-.. TODO:screenshot-missing: screenshot van opengeklapt beheersmenu waarin het menu-item Gebruikers is aangeduid
+.. image:: images/staff.admin_menu_users.nl.png
 
 .. _gebruikersoverzicht:
 
 In het **gebruikersoverzicht** vind je een lijst met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke gebruiker in de lijst staat ook een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
 
-.. TODO:screenshot-missing: screenshot van gebruikersoverzicht
+.. image:: images/staff.users.nl.png
 
 Gebruik de zoekbalk bovenaan het :ref:`gebruikersoverzicht <gebruikersoverzicht>` om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres.
 
-.. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin zoekbalk gebruikt wordt om naar gebruikers te zoeken
+.. image:: images/staff.users_filtered.nl.png
 
 Druk op een gebruikersnaam om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
 
-.. TODO:screenshot-missing: screenshot van gebruikersoverzicht met verwijzing naar naam van gebruiker
+.. image:: images/staff.users_filtered_link.nl.png
 
 
 .. _gebruikersprofiel bewerken:
@@ -55,11 +55,11 @@ Bewerken van het gebruikersprofiel
 
 Als :ref:`lesgever <lesgever>` kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van :ref:`studenten <student>` en andere lesgevers bewerken. Druk daarvoor op de editeerknop aan de rechterbovenkant van de :ref:`profielpagina <profielpagina>` van een gebruiker om het :ref:`gebruikersprofiel <gebruikersprofiel>` te bewerken.
 
-.. TODO:screenshot-missing: screenshot van profielpagina waarin de editeerknop wordt aangeduid
+.. image:: images/staff.user_edit_link.nl.png
 
 Als alternatief kan je in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` ook drukken op de editeerknop aan de rechterkant van een gebruiker om onmiddellijk het :ref:`gebruikersprofiel <gebruikersprofiel>` van de gebruiker te bewerken.
 
-.. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin editeerknop aangeduid wordt
+.. image:: images/staff.users_filtered_edit_link.nl.png
 
 
 .. _beheersrechten toewijzen:
@@ -69,7 +69,7 @@ Toewijzen van beheersrechten
 
 Als :ref:`lesgever <lesgever>` zie je aan het informatieveld :guilabel:`Rechten` op de :ref:`profielpagina <profielpagina>` van een gebruiker welke :ref:`beheersrechten <beheersrechten>` aan haar toegewezen werden.
 
-.. TODO:screenshot-missing: screenshot van profielpagina waarin beheersrechten aangewezen worden
+.. image:: images/staff.user_edit_permission.nl.png
 
 .. _beheersrechten:
 .. _beheersrechten icoontje:
@@ -84,24 +84,22 @@ Aan gebruikers kunnen de volgende **beheersrechten** toegewezen worden:
     - permissies
 
   * - :guilabel:`Student`
-    - .. image::
+    -
     - :ref:`studenten <student>` kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bewerken <gebruikersprofiel bewerken>`, kunnen zich :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
 
   * - :guilabel:`Staff`
-    - .. image::
+    - .. image:: images/role_icons/staff.png
     - :ref:`lesgevers <lesgever>` krijgen alle permissies van :ref:`studenten <student>` en kunnen bovendien ook lesgevers aanduiden, het :ref:`gebruikersprofiel <gebruikersprofiel>` van studenten en lesgevers :ref:`bewerken <gebruikersprofiel bewerken>`, :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`, :ref:`oefeningen <oefening>` :ref:`toevoegen <oefening toevoegen>` en :ref:`judges <judge>` :ref:`toevoegen <judge toevoegen>`
 
       .. TODO:feature-update: misschien zouden lesgevers enkel de rechten mogen instellen van studenten en lesgevers en mogen enkel cursusbeheerders gebruikers beheren die voor hun cursussen geregistreerd zijn
       .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komt de term "lesgever" in aanmerking om deze rol te beschrijven; die naam staat tegenover de rol "student"
 
   * - :guilabel:`Zeus`
-    - .. image::
+    - .. image:: images/role_icons/zeus.png
     - :ref:`beheerders <beheerder>` krijgen alle permissies van :ref:`lesgevers <lesgever>` en cursusbeheerders en kunnen bovendien ook alle :ref:`beheersrechten <beheersrechten>` (inclusief cursusbeheerders) toewijzen, het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers :ref:`bewerken <gebruikersprofiel bewerken>`, alle :ref:`cursussen <cursus>` :ref:`bewerken <cursus bewerken>`, alle :ref:`oefeningen <oefening>` :ref:`bewerken <oefening bewerken>` en alle :ref:`judges <judge>` :ref:`bewerken <judge bewerken>`
 
       .. TODO:tutorial-update: nagaan of beheerders effectief cursussen, oefeningen en judges kunnen bewerken; vraag is of dit logisch is als ze geen toegang hebben tot de repo
       .. TODO:feature-update: kies meer generieke naam voor "Zeus"; op basis van de handleiding komt de term "beheerder" in aanmerking om deze rol te beschrijven; de naam staat tegenover de rol "lesgever"
-
-.. TODO:screenshot-missing: screenshot van icoontjes voor gebruikersrechten toevoegen
 
 .. _student:
 .. _lesgever:
@@ -111,7 +109,9 @@ Een gebruiker waarvoor de :ref:`beheersrechten <beheersrechten>` ingesteld zijn 
 
 Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`bewerkt <gebruikersprofiel bewerken>` dan kan je daar de :ref:`beheersrechten <beheersrechten>` van de gebruiker instellen. Als :ref:`lesgever <lesgever>` kan je enkel de beheersrechten :guilabel:`Student` en :guilabel:`Staff` toekennen aan gebruikers (inclusief jezelf). Op die manier kan je een gebruiker promoveren tot lesgever of degraderen tot :ref:`student <student>`.
 
-.. TODO:screenshot-missing: screenshot van bewerken van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
+.. Screenshot van opgengeklapte select is niet mogelijk: dit wordt door het OS gerenderd, niet door de browser.
+
+.. image:: images/staff.user_edit_permission.nl.png
 
 .. important::
 

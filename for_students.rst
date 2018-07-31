@@ -106,8 +106,6 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. image:: images/student.user_menu.nl.png
 
-.. TODO:screenshot-update: alle screenshots van acties/views die een aangemelde gebruiker kan uitvoeren zouden best geprefixed worden met de rol van de gebruiker, omdat verschillende rollen vaak ook een andere weergave krijgen; de naamgeving wordt dan <action/view>.<lang>.png voor screenshots waar geen gebruiker aangemeld is of waarvan de actie/view niet afhangt van de rol van de gebruiker, student.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol student, staff.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol staff, course-admin.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol course-admin en zeus.<action/view>.<lang>.png voor een screenshot van een aangemelde gebruiker met de rol zeus
-
 .. TODO:feature-update: nagaan of we onder de naam van de gebruiker in de navigatiebalk in het klein ook de naam van de instelling kunnen zetten waaraan de gebruiker verbonden is; op die manier kan een gebruiker met accounts van meerdere instellingen zien met welke account hij momenteel is ingelogd
 
 .. TODO:tutorial-update: extra witruimte tussen vorige figuur en volgende paragraaf in HTML versie
