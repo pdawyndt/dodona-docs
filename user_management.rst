@@ -22,7 +22,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 
     Onder :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de beheersrechten die ze gekregen hebben voor de cursus. Binnen een cursus kunnen sommige acties enkel door cursusbeheerders uitgevoerd worden. In :ref:`cursusbeheer` bespreken we hoe de gebruikers van een cursus beheerd worden.
 
-.. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel beheren naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers
+.. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers
 
 
 .. _gebruiker selecteren:
@@ -49,12 +49,12 @@ Druk op de gebruikersnaam van een gebruiker om naar de :ref:`profielpagina <prof
 .. TODO:screenshot-missing: screenshot van gebruikersoverzicht met verwijzing naar naam van gebruiker
 
 
-.. _gebruikers beheren:
+.. _gebruikersprofiel bewerken:
 
-Beheren van een gebruiker
--------------------------
+Bewerken van het gebruikersprofiel
+----------------------------------
 
-Als lesgevers kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` beheren van studenten en andere lesgevers. Daarvoor druk je op de editeerknop aan de rechterbovenkant van de :ref:`profielpagina <profielpagina>` van een gebruiker om het :ref:`gebruikersprofiel <gebruikersprofiel>` te bewerken.
+Als lesgevers kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van studenten en andere lesgevers bewerken. Daarvoor druk je op de editeerknop aan de rechterbovenkant van de :ref:`profielpagina <profielpagina>` van een gebruiker om het :ref:`gebruikersprofiel <gebruikersprofiel>` te bewerken.
 
 .. TODO:screenshot-missing: screenshot van profielpagina waarin de editeerknop wordt aangeduid
 
@@ -68,21 +68,13 @@ Als alternatief kan je in het :ref:`gebruikersoverzicht` ook drukken op de edite
 Toewijzen van beheersrechten
 ----------------------------
 
-Als lesgever zie je op
-Bij het :ref:`bewerken <gebruikers beheren>` van de :ref:`profielpagina <profielpagina>` van een gebruiker kan je de eigenschap :guilabel:`Rechten`
+Als lesgever zie je aan het informatieveld :guilabel:`Rechten` op de :ref:`profielpagina <profielpagina>` van een gebruiker welke :ref:`beheersrechten <beheersrechten>` aan haar toegewezen werden.
 
-Met :ref:`beheersrechten <beheersrechten>` kan je andere gebruikers beheersrechten geven door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Staff` in de :ref:`profielpagina <profielpagina>` van de gebruiker. Je kunt ook beheersrechten ontnemen van gebruikers met beheersrechten (inclusief jezelf) door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Student` in de profielpagina van de gebruiker. In Dodona gebruiken we de term **lesgever** voor een gebruiker met beheersrechten en de term **student** voor een gebruiker zonder beheersrechten. Als :ref:`lesgever <lesgever>` bepaal je dus mee wie de andere lesgevers zijn op Dodona.
-
-.. TODO:screenshot-missing: screenshot van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
-
-.. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
-
-
-.. _gebruikersoverzicht:
+.. TODO:screenshot-missing: screenshot van profielpagina waarin beheersrechten aangewezen worden
 
 .. _beheersrechten:
 
-Gebruikers kunnen de volgende **beheersrechten** toegewezen krijgen:
+Aan gebruikers kunnen de volgende **beheersrechten** toegewezen worden:
 
 .. list-table::
   :header-rows: 1
@@ -93,19 +85,30 @@ Gebruikers kunnen de volgende **beheersrechten** toegewezen krijgen:
 
   * - :guilabel:`Student`
     - .. image::
-    - studenten kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`beheren <gebruikersprofiel beheren>`, kunnen zich :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
+    - studenten kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bewerken <gebruikersprofiel bewerken>`, kunnen zich :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
 
   * - :guilabel:`Staff`
     - .. image::
-    - lesgevers krijgen alle permissies van studenten en kunnen bovendien ook lesgevers aanduiden, het :ref:`gebruikersprofiel <gebruikersprofiel>` van studenten en lesgevers beheren, :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`, :ref:`oefeningen <oefening>` :ref:`toevoegen <oefening toevoegen>` en :ref:`judges <judge>` :ref:`toevoegen <judge toevoegen>`
+    - lesgevers krijgen alle permissies van studenten en kunnen bovendien ook lesgevers aanduiden, het :ref:`gebruikersprofiel <gebruikersprofiel>` van studenten en lesgevers :ref:`bewerken <gebruikersprofiel bewerken>`, :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`, :ref:`oefeningen <oefening>` :ref:`toevoegen <oefening toevoegen>` en :ref:`judges <judge>` :ref:`toevoegen <judge toevoegen>`
 
     .. TODO:feature-update: misschien zouden lesgevers enkel de rechten mogen instellen van studenten en lesgevers en mogen enkel cursusbeheerders gebruikers beheren die voor hun cursussen geregistreerd zijn
     .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komt de term "lesgever" in aanmerking om deze rol te beschrijven; die naam staat tegenover de rol "student"
 
   * - :guilabel:`Zeus`
     - .. image::
-    - beheerders krijgen alle permissies van lesgevers en cursusbeheerders en kunnen bovendien ook alle beheersrechten (inclusief cursusbeheerders) toewijzen, het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers beheren, alle :ref:`cursussen <cursus>` :ref:`beheren <cursus beheren>`, alle :ref:`oefeningen <oefening>` :ref:`beheren <oefening beheren>` en alle :ref:`judges <judge>` :ref:`beheren <judge beheren>`
+    - beheerders krijgen alle permissies van lesgevers en cursusbeheerders en kunnen bovendien ook alle beheersrechten (inclusief cursusbeheerders) toewijzen, het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers :ref:`bewerken <gebruikersprofiel bewerken>`, alle :ref:`cursussen <cursus>` :ref:`bewerken <cursus bewerken>`, alle :ref:`oefeningen <oefening>` :ref:`bewerken <oefening bewerken>` en alle :ref:`judges <judge>` :ref:`bewerken <judge bewerken>`
 
+    .. TODO:tutorial-update: nagaan of beheerders effectief cursussen, oefeningen en judges kunnen bewerken; vraag is of dit logisch is als ze geen toegang hebben tot de repo
     .. TODO:feature-update: kies meer generieke naam voor "Zeus"; op basis van de handleiding komt de term "beheerder" in aanmerking om deze rol te beschrijven; de naam staat tegenover de rol "lesgever"
 
 .. TODO:screenshot-missing: screenshot van icoontjes voor gebruikersrechten toevoegen
+
+Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`bewerkt <gebruikersprofiel bewerken>` dan kan je daar de :ref:`beheersrechten <beheersrechten>` van de gebruiker instellen. Als lesgever kan je enkel de beheersrechten :guilabel:`Student` en :guilabel:`Staff` toekennen aan gebruikers (inclusief jezelf). Op die manier kan je een gebruiker promoveren tot :ref:`lesgever <lesgever>` of degraderen tot :ref:`student <student>`.
+
+.. TODO:screenshot-missing: screenshot van bewerken van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
+
+.. important::
+
+    Als je jezelf als lesgever degradeert tot student, dan kan je jezelf daarna niet terug promoveren tot lesgever.
+
+.. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
