@@ -3,19 +3,9 @@
 Cursusbeheer
 ============
 
-.. _lesgever:
-.. _student:
-.. _cursusbeheerder:
-
-Voor gebruikers van Dodona maken we onderscheid tussen **lesgevers** en **studenten** als gebruikers met en zonder beheersrechten op het platform. Voor :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` maken we onderscheid tussen **cursusbeheerders** en studenten als gebruikers met en zonder beheersrechten voor de cursus.
-
-Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` aanmaken en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus :ref:`aanduiden <cursusbeheerder aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere gebruikers van een cursus :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te :ref:`beheren <cursuseigenschappen instellen>`. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
 
 Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die gebruikers :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks.
-
-.. important::
-
-    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` toegevoegd worden reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe oefeningen aan Dodona toegevoegd worden.
 
 
 .. _cursus aanmaken:
@@ -23,41 +13,19 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <c
 Aanmaken van een cursus
 -----------------------
 
-.. _beheersrechten:
-.. _beheersmenu:
-.. _gebruikersoverzicht:
-
-.. important::
-
-    Je hebt **beheersrechten** nodig om een :ref:`cursus <cursus>` te kunnen aanmaken. Je herkent dat je beheersrechten hebt als je het **beheersmenu** (menu :guilabel:`Admin`) ziet staan links van het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
-
-    .. TODO:screenshot-missing: screenshot van navigatiebalk waarin beheersmenu is aangeduid
-
-    Het **gebruikersoverzicht** toont een overzicht met de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Navigeer naar het gebruikersoverzicht door :guilabel:`Gebruikers` te selecteren in het :ref:`beheersmenu <beheersmenu>`.
-
-    .. TODO:screenshot-missing: screenshot van opengeklapt beheersmenu waarin het menu-item Gebruikers is aangeduid
-
-    Gebruik de zoekbalk bovenaan het gebruikersoverzicht om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres. Druk in het gebruikersoverzicht op de editeerknop aan de rechterkant van een student of een lesgever om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
-
-    .. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin zoekbalk gebruikt wordt om naar gebruikers te zoeken en editeerknop aangeduid wordt
-
-    Met :ref:`beheersrechten <beheersrechten>` kan je andere gebruikers beheersrechten geven door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Staff` in de :ref:`profielpagina <profielpagina>` van de gebruiker. Je kunt ook beheersrechten ontnemen van gebruikers met beheersrechten (inclusief jezelf) door het veld :guilabel:`Rechten` in te stellen op :guilabel:`Student` in de profielpagina van de gebruiker. In Dodona gebruiken we de term **lesgever** voor een gebruiker met beheersrechten en de term **student** voor een gebruiker zonder beheersrechten. Als :ref:`lesgever <lesgever>` bepaal je dus mee wie de andere lesgevers zijn op Dodona.
-
-    .. TODO:screenshot-missing: screenshot van gebruikersprofiel waarin selectiemenu van eigenschap Rechten opengeklapt wordt en aangeduid is
-
-    .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
-
-Druk in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` om een nieuwe cursus aan te maken.
+Als lesgever maak je een nieuwe cursus aan door in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` te drukken.
 
 .. TODO:screenshot-missing: screenshot van cursusoverzicht waarop knop "nieuwe cursus" aangeduid is
 
+.. _cursus aanmaken formulier:
+
 Je krijgt een formulier te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt :ref:`instellen <cursuseigenschappen instellen>`.
 
-.. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een nieuwe cursus
+.. TODO:screenshot-missing: screenshot van formulier voor opgeven van cursuseigenschappen van een nieuwe cursus
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
-Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daarbij navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch als gebruiker van de cursus :ref:`geregistreerd <registreren>` bent en dat je meteen als de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursus :ref:`aangeduid <cursusbeheerder aanduiden>` bent.
+Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch voor de cursus :ref:`geregistreerd <registreren>` bent en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>` van de cursus.
 
 .. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
 
@@ -69,13 +37,13 @@ Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref
 Instellen van cursuseigenschappen
 ---------------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je op de **cursusbeheerpagina** de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` instellen. Je navigeert automatisch naar de cursusbeheerpagina als je een nieuwe cursus :ref:`aanmaakt <cursus aanmaken>` of je kunt zelf naar de cursusbeheerpagina van een bestaande cursus navigeren door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
 
 .. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een bestaande cursus
 
 .. _cursuseigenschappen:
 
-Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursuseigenschappen** instellen:
+Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** kunt instellen:
 
 .. _cursus naam:
 
@@ -105,37 +73,68 @@ Op de :ref:`cursusbeheerpagina <cursusbeheerpagina>` kan je de volgende **cursus
 
 :guilabel:`Zichtbaarheid`
 
-    xxx
+    Dit informatieveld bepaalt of :ref:`niet-geregistreerde <registreren>` gebruikers al dan niet zelf naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren door de :ref:`cursus <cursus>` te :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` om de cursus wel of niet wilt te laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen niet-geregistreerde gebruikers zich enkel registreren voor de cursus als je hen een :ref:`registratielink <registratielink>` bezorgt.
 
-    .. TODO:tutorial-missing: besprerking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
+    .. TODO:tutorial-missing: bespreking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
 
-    .. TODO:feature-update: op Dodona staat dat de inhoud van een zichtbare cursus toegankelijk is voor iedereen, maar dat is niet zo; de omschrijving en oefeningenreeksen zijn enkel zichtbaar voor geregistreerde gebruikers of voor cursussen die werken met open registratie
+    .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
 .. _cursus registratie:
 
 :guilabel:`Registratie`
 
-    xxx
+    Dit informatieveld bepaalt of en hoe gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <registreren>`:
+
+    .. list-table::
+      :header-rows: 1
+
+      * - registratie
+        - betekenis
+
+      * - :guilabel:`Open`
+        - alle gebruikers kunnen zich voor de :ref:`cursus <cursus>` :ref:`registreren <registreren>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
+
+      * - :guilabel:`Gemodereerd`
+        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas geregistreerd als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
+
+      * - :guilabel:`Gesloten`
+        - geen enkele gebruikers kan zich nog voor de :ref:`cursus <cursus>` :ref:`registreren <registreren>`
+
+        .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
+
+    .. important::
+
+        Als je dit informatieveld aanpast dan blijven bestaande :ref:`registraties <registreren>` voor de :ref:`cursus <cursus>` altijd gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
+
+    .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
 .. _cursus beschrijving:
 
 :guilabel:`Beschrijving`
 
-    xxx
+    Een optionele beschrijving van de cursus die bovenaan de :ref:`cursuspagina` komt te staan. Voor het opmaken van de beschrijving kan je gebruik maken van `Markdown https://en.wikipedia.org/wiki/Markdown`_.
 
-Druk op de afwerkknop in de rechterbovenhoek van de :ref:`cursusbeheerpagina <cursusbeheerpagina>` om de cursuseigenschappen effectief in te stellen.
+    .. TODO:tutorial-missing: ergens in de handleiding (inleiding) moet vermeld worden dat Dodona gebruik maakt van kramdown (https://kramdown.gettalong.org) voor het opmaken van Markdown; dan kan de Markdown-link in bovenstaande sectie vervangen worden door een link naar die sectie
+
+Druk op de afwerkknop in de rechterbovenhoek van het formulier om de cursuseigenschappen effectief in te stellen.
+
+.. TODO:screenshot-missing: screenshot van formulier met cursuseigenschappen met aanduiding van afwerkknop
+
+.. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
 Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` van kracht.
 
-.. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te beheren op de cursuspagina (toevoegen, verwijderen, verplaatsen van oefeningenreeksen en bewerken van individuele oefeningenreeksen)
-.. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op de cursusbeheerpagina
+.. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
 
 
-.. _cursusbeheerder aanduiden:
-.. _gebruikers beheren:
+.. _cursusbeheerders aanduiden:
+.. _cursusgebruikers beheren:
 
-Beheren van gebruikers
-----------------------
+Beheren van cursusgebruikers
+----------------------------
+
+.. _cursusbeheerder:
+.. _registratieverzoek goedkeuren:
 
 Voor gebruikers van Dodona maken we onderscheid tussen lesgevers en studenten als gebruikers met en zonder beheersrechten op het platform. Voor geregistreerde gebruikers van een cursus maken we onderscheid tussen cursusbeheerders en studenten als gebruikers met en zonder beheersrechten voor de cursus.
 
@@ -178,6 +177,13 @@ studenten getoond zal worden.
 
 Beheren van oefeningenreeksen
 -----------------------------
+
+.. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te beheren op de cursuspagina (toevoegen, verwijderen, verplaatsen van oefeningenreeksen en bewerken van individuele oefeningenreeksen)
+
+.. important::
+
+    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` toegevoegd worden reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe oefeningen aan Dodona toegevoegd worden.
+
 
 Wanneer je de cursus aangemaakt hebt zal je naar de cursuspagina gebracht
 worden. Daar kan je bij oefeningenreeksen nu een reeks toevoegen via de ``+``
