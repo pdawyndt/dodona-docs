@@ -12,37 +12,37 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 
 .. _taalmenu:
 .. _navigatiebalk:
-.. _natuurlijke taal:
+.. _taal:
 
-Natuurlijke taal selecteren
----------------------------
+Taal selecteren
+---------------
 
-Als **natuurlijke taal** voor Dodona kan je kiezen tussen Nederlands of Engels. Gebruik hiervoor het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
+Als **taal** voor Dodona kan je kiezen tussen Nederlands of Engels. Gebruik hiervoor het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
 .. image:: images/choose_language.nl.png
 
 .. TODO:screenshot-update: overwegen om bijschriften toe te voegen aan afbeeldingen
 
-Als je een :ref:`natuurlijke taal <natuurlijke taal>` selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
+Als je een :ref:`taal <taal>` selecteert terwijl je :ref:`aangemeld <aanmelden>` bent dan wordt die ook als voorkeurstaal ingesteld in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Op die manier wordt bij aanmelden automatisch je voorkeurstaal geselecteerd.
 
 .. note::
 
-    De taal waarin vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, …) worden weergegeven, valt volledig onder de controle van het platform. Deze componenten worden altijd weergegeven in de geselecteerde :ref:`natuurlijke taal <natuurlijke taal>`.
+    De taal waarin vaste componenten van Dodona (menubalken, cursusstructuur, mededelingen, …) worden weergegeven, valt volledig onder de controle van het platform. Deze componenten worden altijd weergegeven in de geselecteerde :ref:`taal <taal>`.
 
-    De naam en beschrijving van een :ref:`cursus <cursus>` liggen vast, net zoals namen en beschrijvingen van :ref:`oefeningenreeksen <oefeningenreeks>` binnen een cursus. Deze componenten zijn niet afhankelijk van de selectie van de :ref:`natuurlijke taal <natuurlijke taal>`. De taal van deze componenten valt volledig onder de controle van de cursusbeheerders die de cursus hebben opgesteld.
+    De naam en beschrijving van een :ref:`cursus <cursus>` liggen vast, net zoals namen en beschrijvingen van :ref:`oefeningenreeksen <oefeningenreeks>` binnen een cursus. Deze componenten zijn niet afhankelijk van de selectie van de :ref:`taal <taal>`. De taal van deze componenten valt volledig onder de controle van de cursusbeheerders die de cursus hebben opgesteld.
 
     .. TODO:feature-missing: nagaan of cursusinhoud taalafhankelijk kan gemaakt worden
 
-    De naam en beschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de :ref:`natuurlijke taal <natuurlijke taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
+    De naam en beschrijving van een :ref:`oefening <oefening>` zijn afhankelijk van de selectie van de :ref:`taal <taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-    De :ref:`natuurlijke taal <natuurlijke taal>` van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing>` die je :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. De judge kan de natuurlijke taal van deze feedback laten afhangen van de natuurlijke taal die geselecteerd is op het ogenblik waarop de oplossing wordt ingediend.
+    De :ref:`taal <taal>` van de :ref:`feedback <feedback>` over een :ref:`oplossing <oplossing>` die je :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` valt volledig onder de controle van de :ref:`judge <judge>` waaraan de oefening gekoppeld is. De judge kan de taal van deze feedback laten afhangen van de taal die geselecteerd is op het ogenblik waarop de oplossing wordt ingediend.
 
 .. TODO:feature-update: standaardtaal instellen op Engels
 .. TODO:feature-update: restyling van landingspagina; tekst bevat zelfs nog een expliciete verwijzing naar UGent
 .. TODO:feature-update: link naar oefeningen nodig in navigatiebalk op landingspagina?
 
 .. TODO:tutorial-missing: eventueel uitleggen hoe initiële instelling van de taal gebeurt; eventueel heuristiek hiervoor verfijnen indien nodig
-.. TODO:tutorial-missing: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de beschrijving van de oefening voor de natuurlijke taal die werd ingesteld
+.. TODO:tutorial-missing: aangeven waarop wordt teruggevallen indien geen vertaling voorhanden is van de naam en de beschrijving van de oefening voor de taal die werd ingesteld
 
 
 .. _gebruikersaccount:
@@ -90,7 +90,7 @@ Selecteer de onderwijs- of onderzoeksinstelling die de gebruikersaccount beheert
 
 .. _persoonsgegevens doorsturen:
 
-Als dit de eerste keer is dat je :ref:`aanmeldt <aanmelden>` op Dodona dan wordt er automatisch een nieuwe :ref:`gebruikersaccount <gebruikersaccount>` aangemaakt op basis van de :ref:`persoonsgegevens <persoonsgegevens>` die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je :ref:`persoonlijke voorkeuren <persoonlijke voorkeuren>` instellen voor de :ref:`natuurlijke taal <natuurlijke taal>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
+Als dit de eerste keer is dat je :ref:`aanmeldt <aanmelden>` op Dodona dan wordt er automatisch een nieuwe :ref:`gebruikersaccount <gebruikersaccount>` aangemaakt op basis van de :ref:`persoonsgegevens <persoonsgegevens>` die doorgestuurd werden door je externe onderwijs- of onderzoeksinstelling. In het :ref:`gebruikersprofiel <gebruikersprofiel>` van deze gebruikersaccount kan je :ref:`persoonlijke voorkeuren <persoonlijke voorkeuren>` instellen voor de :ref:`taal <taal>` en de :ref:`tijdzone <gebruikersprofiel tijdzone>` die door Dodona gebruikt worden.
 
 .. important::
 
@@ -167,7 +167,7 @@ Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>`
 .. _persoonlijke voorkeuren:
 .. _gebruikersprofiel:
 
-Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voornaam, familienaam, gebruikersnaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`natuurlijke taal <natuurlijke taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerservaring te personaliseren.
+Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voornaam, familienaam, gebruikersnaam en emailadres) en enkele **persoonlijke voorkeuren** (:ref:`taal <taal>` en :ref:`tijdzone <gebruikersprofiel tijdzone>`) die samen je **gebruikersprofiel** vormen. Dodona gebruikt het gebruikersprofiel om je gebruikerservaring te personaliseren.
 
 .. image:: images/student.user_menu_my_profile.nl.png
 
@@ -201,7 +201,7 @@ In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instel
     Je kunt deze mededeling enkel weghalen door in je :ref:`gebruikersprofiel <gebruikersprofiel>` de :ref:`tijdzone <gebruikersprofiel tijdzone>` in te stellen op de lokale tijdzone. Merk op dat de mededeling een link bevat waarmee je rechtstreeks naar je :ref:`profielpagina <profielpagina>` kunt navigeren.
 
 .. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
-.. TODO:feature-missing: voorkeur voor natuurlijke taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
+.. TODO:feature-missing: voorkeur voor taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
 
 .. TODO:tutorial-missing: beschrijving van API tokens toevoegen
 
@@ -428,7 +428,7 @@ Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent
 
 Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <gemodereerde registratie>` of :ref:`gesloten registratie <gesloten registratie>`.
 
-.. TODO:feature-update: in de registratielink wordt standaard de geselecteerde natuurlijk taal ingesteld; meestal is dit wat een lesgever ook wil (als alle studenten dezelfde taal hebben), maar soms wil hij ook een taal-agnostische versie van de registratielink verspreiden als hij de voorkeurstaal die de gebruikers hebben ingesteld niet wil overrulen; we zouden dus ook kunnen overwegen om een optie te maken waarmee de lesgever een taal-agnostische versie van de registratielink kan genereren (als alternatief voor het handmatig wissen van de taal uit de URL)
+.. TODO:feature-update: in de registratielink wordt standaard de geselecteerde taal ingesteld; meestal is dit wat een lesgever ook wil (als alle studenten dezelfde taal hebben), maar soms wil hij ook een taal-agnostische versie van de registratielink verspreiden als hij de voorkeurstaal die de gebruikers hebben ingesteld niet wil overrulen; we zouden dus ook kunnen overwegen om een optie te maken waarmee de lesgever een taal-agnostische versie van de registratielink kan genereren (als alternatief voor het handmatig wissen van de taal uit de URL)
 
 
 .. _uitschrijven:
@@ -469,7 +469,7 @@ Lesgevers kunnen **oefeningen** opstellen waarvoor je :ref:`oplossingen <oplossi
 
 .. _oefeningpagina:
 
-Na :ref:`selectie <oefening selecteren>` van een :ref:`oefening <oefening>` navigeer je naar de **oefeningpagina**. Bovenaan staat een paneel met de naam en de beschrijving van de oefening. De weergave van deze componenten is afhankelijk van de geselecteerde :ref:`natuurlijk taal <natuurlijke taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde natuurlijke taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
+Na :ref:`selectie <oefening selecteren>` van een :ref:`oefening <oefening>` navigeer je naar de **oefeningpagina**. Bovenaan staat een paneel met de naam en de beschrijving van de oefening. De weergave van deze componenten is afhankelijk van de geselecteerde :ref:`taal <taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
 .. image:: images/student.exercise_start.nl.png
 
