@@ -3,13 +3,19 @@
 Cursusbeheer
 ============
 
-Als :ref:`lesgever <lesgever>` kan je onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en kan je andere gebruikers aanduiden als :ref:`cursusbeheerder <cursusbeheerder>` om samen met jou een cursus te beheren.
+.. _lesgever:
+.. _student:
+.. _cursusbeheerder:
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` stippel je binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die je groepeert in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die gebruikers indienen voor oefeningen uit de oefeningenreeks.
+Voor gebruikers van Dodona maken we onderscheid tussen **lesgevers** en **studenten** als gebruikers met en zonder beheersrechten op het platform. Voor :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` maken we onderscheid tussen **cursusbeheerders** en studenten als gebruikers met en zonder beheersrechten voor de cursus.
+
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` aanmaken en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus :ref:`aanduiden <cursusbeheerder aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
+
+Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die gebruikers indienen voor de oefeningen uit de oefeningenreeks.
 
 .. important::
 
-    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die je aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` wilt toevoegen reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe je oefeningen aan Dodona kunt toevoegen.
+    In :ref:`cursusbeheer` veronderstellen we dat de :ref:`oefeningen <oefening>` die aan een :ref:`oefeningenreeks <oefeningenreeks>` van een :ref:`cursus <cursus>` toegevoegd worden reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe oefeningen aan Dodona toegevoegd worden.
 
 
 .. _cursus aanmaken:
@@ -126,10 +132,14 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op de cursusbeheerpagina
 
 
-.. _cursusgebruikers beheren:
+.. _cursusbeheerder aanduiden:
 
-Beheren van cursusgebruikers
-----------------------------
+Aanduiden van cursusbeheerders
+------------------------------
+
+Voor gebruikers van Dodona maken we onderscheid tussen lesgevers en studenten als gebruikers met en zonder beheersrechten op het platform. Voor geregistreerde gebruikers van een cursus maken we onderscheid tussen cursusbeheerders en studenten als gebruikers met en zonder beheersrechten voor de cursus.
+
+Een lesgever kan cursussen aanmaken en wordt automatisch ook de eerste cursusbeheerder van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus aanduiden om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
 
 .. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursuspagina
 
