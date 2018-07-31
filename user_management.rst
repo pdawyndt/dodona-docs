@@ -2,7 +2,6 @@
 
 .. TODO:tutorial-update: overwegen om te spreken van toegangsniveau's als we het hebben over het onderscheid tussen studenten, lesgevers en beheerders
 
-
 Gebruikersbeheer
 ================
 
@@ -22,7 +21,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 
     Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor de cursus. Enkel cursusbeheerders kunnen een cursus beheren. In :ref:`cursusbeheer` bespreken we hoe cursussen beheerd worden, inclusief het aanduiden van cursusbeheerders.
 
-.. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers
+.. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers; als we dat doen, dan moeten we in de inleiding best ook twee paragrafen voorzien: één voor het gebruikersbeheer van studenten en één voor het gebruikersbeheer van lesgevers; de rest van "Dodona voor studenten" kunnen we dan eventueel opsplitsen in "werken met cursussen", "werken met oefeningen" en eventueel "werken met oplossingen" al kan dit laatste misschien ook in "werken" met oefeningen"
 
 
 .. _gebruiker selecteren:
