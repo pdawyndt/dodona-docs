@@ -84,7 +84,7 @@ Aan gebruikers kunnen de volgende **beheersrechten** toegewezen worden:
     - permissies
 
   * - :guilabel:`Student`
-    - .. image::
+    - *geen*
     - :ref:`studenten <student>` kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bewerken <gebruikersprofiel bewerken>`, kunnen zich :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
 
   * - :guilabel:`Staff`
