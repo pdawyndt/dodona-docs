@@ -200,11 +200,8 @@ Elke tab heeft afzonderlijke actieknoppen om de registratie van gebruikers te be
     - .. image::
     - afkeuren van het :ref:`registratieverzoek <registratieverzoek>` waardoor de gebruiker :ref:`uitgeschreven <uitschrijven>` wordt voor de cursus
 
-.. import::
+.. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht met aanduiding van actieknoppen voor het beheren van gebruikersregistratie
 
-    Een cursusbeheerder die zichzelf uitschrijft uit een cursus verliest zijn status van cursusbeheerder. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
-
-.. TODO:update-feature: het bovenstaande statement is op dit moment niet het geval in Dodona, maar zou wel zo moeten zijn
 .. TODO:update-feature: cursusbeheerder mogelijkheid geven om een reden op te geven waarom een registratieverzoek wordt afgekeurd
 .. TODO:update-feature: notification/email sturen naar de gebruiker wanneer een registratieverzoek wordt goedgekeurd/afgekeurd
 
@@ -219,16 +216,30 @@ Aanduiden van cursusbeheerders
 
 Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel de cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
 
-In het :ref:`cursusgebruikersoverzicht`
+In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
 
-.. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
+.. list-table::
+  :header-rows: 1
 
+  * - knop
+    - actie
 
-Voor gebruikers van Dodona maken we onderscheid tussen lesgevers en studenten als gebruikers met en zonder beheersrechten op het platform. Voor geregistreerde gebruikers van een cursus maken we onderscheid tussen cursusbeheerders en studenten als gebruikers met en zonder beheersrechten voor de cursus.
+  * - .. image::
+    - student promoveren tot cursusbeheerder
 
-Een lesgever kan cursussen aanmaken en wordt automatisch ook de eerste cursusbeheerder van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus aanduiden om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
+  * - .. image::
+    - cursusbeheerder degraderen tot student
+
+.. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht met aanduiding van actieknoppen voor aanduiden van cursusbeheerders
+
+.. import::
+
+    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
+
+.. TODO:update-feature: het bovenstaande statement is op dit moment niet het geval voor wat betreft het feit dat een cursusbeheerder zijn status verliest als hij zich uitschrijft in Dodona, maar dat zou wel zo moeten zijn
 
 .. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursusbeheerspagina
+
 
 .. _oefeningenreeksen beheren:
 
