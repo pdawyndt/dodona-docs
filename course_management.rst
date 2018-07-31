@@ -15,19 +15,19 @@ Aanmaken van een cursus
 
 Als lesgever maak je een nieuwe cursus aan door in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` te drukken.
 
-.. TODO:screenshot-missing: screenshot van cursusoverzicht waarop knop "nieuwe cursus" aangeduid is
+.. image:: images/staff.courses_new_link.nl.png
 
 .. _cursus aanmaken formulier:
 
 Je krijgt een formulier te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt :ref:`instellen <cursuseigenschappen instellen>`.
 
-.. TODO:screenshot-missing: screenshot van formulier voor opgeven van cursuseigenschappen van een nieuwe cursus
+.. image:: images/staff.new_course.nl.png
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
 Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch voor de cursus :ref:`geregistreerd <registreren>` bent en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>` van de cursus.
 
-.. TODO:screenshot-missing: screenshot van cursuspagina van nieuw aangemaakte cursus met één gebruiker die ook de cursusbeheerder is
+.. image:: images/staff.created_course.nl.png
 
 .. TODO:feature-missing: kopiëren van een bestaande cursus
 
@@ -39,7 +39,7 @@ Instellen van cursuseigenschappen
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
 
-.. TODO:screenshot-missing: screenshot van cursusbeheerspagina van een bestaande cursus
+.. image:: images/staff.course_edit.nl.png
 
 .. _cursuseigenschappen:
 
