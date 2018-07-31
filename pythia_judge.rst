@@ -426,7 +426,7 @@ om hun werking en parameters uit te leggen. In het algemeen:
      einde van de gegenereerde (en de verwachte) uitvoer weggehaald moeten
      worden.
 
-``ImaageRenderer``
+``ImageRenderer``
   Deze output processr rendert 2-dimensionale matrices als gekleurde
   afbeeldingen. Als de output correct is zal de matrix getoond worden in de
   feedbacktabel.
@@ -478,9 +478,9 @@ structuur van de standaard processoren:
        def process_stdout(self, block, expected_output, generated_output, **kwargs):
            retval = super().process_stdout(self, block, expected_output, generated_output, **kwargs)
            if block.status == 'AC':
-               block.addMessage('That's a job nice done!')
+               block.addMessage("That's a job nice done!")
            else:
-               block.addMessage('Nice try, but it's not entirely correct.')
+               block.addMessage("Nice try, but it's not entirely correct.")
            return retval
    </DEFINITION>
    hello

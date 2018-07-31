@@ -127,51 +127,46 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 .. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
 
 
-.. _cursusbeheerders aanduiden:
+.. _cursusgebruikersoverzicht:
 .. _cursusgebruikers beheren:
 
 Beheren van cursusgebruikers
 ----------------------------
 
+Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` vind je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin alle gebruikers van de cursus opgelijst worden. Daarin kun je cursusbeheerders :ref:`aanduiden <cursusbeheerders aanduiden>` en de registratie van gebruikers :ref:`beheren <gebruikersregistratie beheren>`, inclusief het :ref:`afhandelen <registratieverzoeken afhandelen>` van openstaande :ref:`registratieverzoeken <registratieverzoek>`.
+
+.. _cursusbeheerders aanduiden:
+
+Aanduiden van cursusbeheerders
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. _cursusbeheerder:
-.. _registratieverzoek goedkeuren:
+
+Binnen een :ref:`cursus <cursus>` onderscheiden we onder de :ref:`geregistreerde <registreren>` gebruikers van een  onderscheiden we studenten en **cursusbeheerders**, waarbij enkel de cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
+
+.. _cursusgebruikersoverzicht:
+
+
+.. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
+
+
+.. _gebruikersregistratie beheren:
+
+Gebruikersregistratie beheren
+-----------------------------
+
+
+
+.. _registratieverzoeken afhandelen:
+
+Afhandelen van registratieverzoeken
+-----------------------------------
 
 Voor gebruikers van Dodona maken we onderscheid tussen lesgevers en studenten als gebruikers met en zonder beheersrechten op het platform. Voor geregistreerde gebruikers van een cursus maken we onderscheid tussen cursusbeheerders en studenten als gebruikers met en zonder beheersrechten voor de cursus.
 
 Een lesgever kan cursussen aanmaken en wordt automatisch ook de eerste cursusbeheerder van die cursussen. Als cursusbeheerder kan hij andere gebruikers van de cursus aanduiden om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren die door andere lesgevers aangemaakt werden en waarvoor hij niet als cursusbeheerder werd aangeduid.
 
-.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursuspagina
-
-Om een cursus aan te maken moet je als medewerker geregistreerd staan binnen
-Dodona. Ga naar de cursussen pagina (via de knop "Meer cursussen..."
-linksonderaan je homepagina). Klik daar op de ``+`` knop rechtsbovenaan de
-lijst.
-
-Vul nu de naam van de cursus (best de naam van het vak waarvoor de cursus
-gebruikt zal worden), je eigen naam (en evt. de naam van je medelesgevers) en
-het academiejaar waarin de cursus gebruikt zal worden. Het academiejaar vul je
-best als ``jjjj-jjjj`` in, zodat je cursus juist gesorteerd wordt in de lijst
-van cursussen.
-
-Verder moet je ook de zichtbaarheid van je vak instellen. Als
-"Zichtbaar" wordt ingesteld kan iedereen de cursus vinden via het
-cursusoverzicht. Als "Verborgen" wordt ingesteld zal de cursus niet opduiken in
-het cursusoverzicht maar zal je een speciale link moeten sturen naar al je
-studenten waarmee ze dan automatisch geregistreerd zullen worden op de cursus.
-
-Daarnaast kan je ook kiezen welke studenten zich mogen registreren voor de
-cursus. Bij "Open" registratie wordt elke registratie automatisch geaccepteerd.
-Bij "Gemodereerd" zal een cursusbeheerder elke student die een registratie
-aanvraagt moeten toelaten of afwijzen. Bij "Gesloten" zal geen enkele student
-zich kunnen registreren.
-
-In het vak Beschrijving kan je HTML of Markdown schrijven. Zie
-:ref:`describing_an_exercise` voor documentatie over wat je hierin allemaal kan
-doen.
-
-De kleur van de cursus bepaalt met welke kleur je cursus op de homepagina van je
-studenten getoond zal worden.
-
+.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursusbeheerspagina
 
 .. _oefeningenreeksen beheren:
 
