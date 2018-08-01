@@ -125,6 +125,12 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     .. TODO:tutorial-missing: ergens in de handleiding (inleiding) moet vermeld worden dat Dodona gebruik maakt van kramdown (https://kramdown.gettalong.org) voor het opmaken van Markdown; dan kan de Markdown-link in bovenstaande sectie vervangen worden door een link naar die sectie
 
+.. _cursuseigenschap registratielink:
+
+:guilabel:`Registratielink`
+
+    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursuseigenschap zichtbaarheid>` nadat de registratielink gedeeld werd.
+
 Druk op de afwerkknop in de rechterbovenhoek van het formulier om de :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
 
 .. TODO:screenshot-missing: screenshot van formulier met cursuseigenschappen met aanduiding van afwerkknop
@@ -142,7 +148,7 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 Uitnodigen van cursusgebruikers
 -------------------------------
 
-Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **registratielink** gegenereerd. De registratielink kan met gebruikers gedeeld worden om hen uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als ze de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Bovendien wordt de :ref:`registratieprocedure <registratieprocedure>` automatisch voor hen uitgevoerd als ze nog niet voor de cursus geregistreerd waren. Op die manier verloopt de :ref:`open <gemodereerde registratieprocedure>` registratieprocedure zelfs volledig transparant voor de uitgenodigde gebruikers.
+Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **registratielink** met een willekeurig token gegenereerd. De registratielink kan met gebruikers gedeeld worden om hen uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als ze de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Bovendien wordt de :ref:`registratieprocedure <registratieprocedure>` automatisch voor hen uitgevoerd als ze nog niet voor de cursus geregistreerd waren. Op die manier verloopt de :ref:`open <gemodereerde registratieprocedure>` registratieprocedure zelfs volledig transparant voor de uitgenodigde gebruikers.
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
 
@@ -164,7 +170,7 @@ Een :ref:`verborgen <cursuseigenschap zichtbaarheid>` :ref:`cursus <cursus>` kan
 
 .. TODO:screenshot-update: screenshot van formulier waar cursuseigenschappen ingesteld worden, met aanduiding van de vernieuwknop naast de registratielink
 
-.. TODO:feature-update: omdat de identifiers oplopend genummerd worden en ook gebruikt worden in de URL van een cursus, is het vrij eenvoudig om verborgen cursussen te vinden; heeft het vernieuwen van een registratielink dan wel zin als een manier om de cursus opnieuw te verbergen?
+.. TODO:feature-update: omdat de identifiers oplopend genummerd worden en ook gebruikt worden in de URL van een cursus, is het vrij eenvoudig om verborgen cursussen te vinden; heeft het vernieuwen van een registratielink dan wel zin als een manier om de cursus opnieuw te verbergen? ofwel mis ik nog iets om te begrijpen waardoor het opnieuw genereren van de registratielink de cursus opnieuw verbergt
 
 
 .. _cursusgebruiker:
