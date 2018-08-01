@@ -148,7 +148,7 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 Uitnodigen van cursusgebruikers
 -------------------------------
 
-Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **registratielink** met een willekeurig token gegenereerd. De registratielink kan met gebruikers gedeeld worden om hen uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als ze de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Bovendien wordt de :ref:`registratieprocedure <registratieprocedure>` automatisch voor hen uitgevoerd als ze nog niet voor de cursus geregistreerd waren. Op die manier verloopt de :ref:`open <gemodereerde registratieprocedure>` registratieprocedure zelfs volledig transparant voor de uitgenodigde gebruikers.
+Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt voor de cursus automatisch een **registratielink** met een willekeurig token gegenereerd. De registratielink kan met gebruikers gedeeld worden om hen uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als ze de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Bovendien wordt de :ref:`registratieprocedure <registratieprocedure>` automatisch voor hen uitgevoerd als ze nog niet voor de cursus geregistreerd waren. Op die manier verloopt de :ref:`open <gemodereerde registratieprocedure>` registratieprocedure zelfs volledig transparant voor de uitgenodigde gebruikers.
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
 
@@ -189,7 +189,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie 
 .. _cursusbeheersrechten icoontje:
 .. _cursusgebruiker voortgangsstatistieken:
 
-Het :ref`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
+Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
 
 .. TODO:screenshot-missing: screenshot met verwijzing naar het icoontje van cursusbeheerders
 
@@ -222,7 +222,7 @@ In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :r
 
 .. _registratieverzoeken afhandelen:
 
-Elke tab heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers te beheren:
+Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers te beheren:
 
 .. list-table::
   :header-rows: 1
