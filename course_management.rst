@@ -195,13 +195,13 @@ Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` e
 
 .. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
 
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>` en de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`beheren <registratiestatus beheren>`, waaronder ook het :ref:`afhandelen <registratieverzoeken afhandelen>` van openstaande :ref:`registratieverzoeken <registratieverzoek>`.
+In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
 
 .. _registratiestatus:
-.. _registratiestatus beheren:
+.. _registratiestatus aanpassen:
 
-Beheren van de registratiestatus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aanpassen van de registratiestatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :ref:`cursusgebruikers <cursusgebruiker>` gegroepeerd op basis van hun **registratiestatus**. De cursusgebruikers van elke groep worden in een afzonderlijke tab opgelijst:
 
