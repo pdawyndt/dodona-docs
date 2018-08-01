@@ -131,7 +131,7 @@ Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`
 Overnemen van een gebruikersaccount
 -----------------------------------
 
-Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een cursus of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
+Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een :ref:`cursus <cursus>` of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
 
 .. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de editeerknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
 
@@ -139,18 +139,18 @@ Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebr
 
 .. important::
 
-    Als je :ref:`registreert <registreren>` voor een cursus of  een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het overnemen bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees er dus bewust van of je deze acties in naam van de student wilt uitvoeren of dat je eerst wil :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om de acties onder eigen naam uit te voeren.
+    Als je :ref:`registreert <registreren>` voor een :ref:`cursus <cursus>` of een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees je er dus van bewust of je deze acties in naam van de student wilt uitvoeren of dat je eerst wilt :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om daarna de acties onder eigen naam uit te voeren.
 
 Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar gebruikersaccount tijdelijk over te nemen.
 
 .. TODO:screenshot-missing: screenshot van profielpagina waarin de knop "account overnemen" aangeduid is
 
-Als alternatief kan je de gebruikersaccount van een student ook tijdelijk overnemen door aan de rechterkant van een student in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` te drukken op de actieknop voor het overnemen van gebruikersaccounts.
+Als alternatief kan je de gebruikersaccount van een student ook tijdelijk overnemen door in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` aan de rechterkant van een student te drukken op de actieknop voor het overnemen van gebruikersaccounts.
 
 .. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin de actieknop voor het overnemen van gebruikersaccounts is aangeduid
 
 .. _eigen gebruikersaccount herstellen:
 
-Terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het overnemen bent, wordt bovenaan elke pagina een mededeling getoond om je daaraan te herinneren. De mededeling bevat een link waarmee je kunt terugkeren naar je eigen gebruikersaccount.
+Terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, wordt bovenaan elke pagina een mededeling getoond om je daaraan te herinneren. De mededeling bevat een link waarmee je kunt terugkeren naar je eigen gebruikersaccount.
 
 .. TODO:screenshot-missing: screenshot van mededeling waarin de link wordt aangeduid om terug te keren naar je eigen gebruikersaccount
