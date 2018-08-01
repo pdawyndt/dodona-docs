@@ -24,7 +24,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 .. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers; als we dat doen, dan moeten we in de inleiding best ook twee paragrafen voorzien: één voor het gebruikersbeheer van studenten en één voor het gebruikersbeheer van lesgevers; de rest van "Dodona voor studenten" kunnen we dan eventueel opsplitsen in "werken met cursussen", "werken met oefeningen" en eventueel "werken met oplossingen" al kan dit laatste misschien ook in "werken" met oefeningen"
 
 
-.. _gebruiker selecteren:
+.. _gebruiker navigeren:
 
 Navigeren naar een gebruiker
 ----------------------------
@@ -39,11 +39,15 @@ In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres
 
 .. image:: images/staff.users.nl.png
 
+.. _gebruiker zoeken:
+
 Gebruik de zoekbalk bovenaan het :ref:`gebruikersoverzicht <gebruikersoverzicht>` om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres.
 
 .. image:: images/staff.users_filtered.nl.png
 
-Druk op een gebruikersnaam om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
+.. _gebruiker selecteren:
+
+Druk op een gebruikersnaam om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te :ref:`navigeren <gebruiker navigeren>`.
 
 .. image:: images/staff.users_filtered_link.nl.png
 
@@ -57,13 +61,13 @@ De **voortgangsstatistieken** van een gebruiker bestaan uit twee getallen :math:
 Bewerken van een gebruikersprofiel
 ----------------------------------
 
-Als :ref:`lesgever <lesgever>` kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van :ref:`studenten <student>` en andere lesgevers bewerken. Druk daarvoor op de editeerknop in de rechterbovenhoek van de :ref:`profielpagina <profielpagina>` van de gebruiker.
+Als :ref:`lesgever <lesgever>` kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van :ref:`studenten <student>` en andere lesgevers bewerken. Druk daarvoor op de bewerkknop in de rechterbovenhoek van de :ref:`profielpagina <profielpagina>` van de gebruiker.
 
 .. TODO:feature-update: mag ik als lesgever het gebruikersprofiel van andere lesgevers kunnen bewerken? het enige dat ik zou mogen kunnen doen is een student promoveren tot lesgever of een lesgever degraderen tot student via specifieke actieknoppen in het gebruikersoverzicht; voor de rest moet een lesgever geen wijzigingen kunnen aanbrengen in het gebruikersprofiel van een andere lesgever; met andere woorden, het toewijzen van beheersrechten op het platform zou analoog moeten gebeuren als het toewijzen van beheersrechten binnen een cursus; we zouden zelfs kunnen overwegen om het gebruikersoverzicht te splitsen in drie tabs: studenten, lesgevers en beheerders
 
 .. image:: images/staff.user_edit_link.nl.png
 
-Als alternatief kan je in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` ook drukken op de editeerknop aan de rechterkant van een gebruiker om onmiddellijk het :ref:`gebruikersprofiel <gebruikersprofiel>` van de gebruiker te bewerken.
+Als alternatief kan je in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` ook drukken op de bewerkknop aan de rechterkant van een gebruiker om onmiddellijk het :ref:`gebruikersprofiel <gebruikersprofiel>` van de gebruiker te bewerken.
 
 .. image:: images/staff.users_filtered_edit_link.nl.png
 
@@ -133,7 +137,7 @@ Overnemen van een gebruikersaccount
 
 Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een :ref:`cursus <cursus>` of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
 
-.. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de editeerknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
+.. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de bewerkknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
 
 .. TODO:screenshot-missing: screenshot van lesgever die tijdelijk het profiel van een gebruiker heeft overgenomen
 

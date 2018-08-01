@@ -13,7 +13,7 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <c
 Aanmaken van een cursus
 -----------------------
 
-Als lesgever maak je een nieuwe cursus aan door in het :ref:`cursusoverzicht <cursusoverzicht>` op de knop :guilabel:`nieuwe cursus` te drukken.
+Als lesgever maak je een nieuwe cursus aan door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
 .. image:: images/staff.courses_new_link.nl.png
 
@@ -39,7 +39,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref
 Instellen van cursuseigenschappen
 ---------------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de editeerknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
 
 .. image:: images/staff.course_edit.nl.png
 
@@ -51,13 +51,13 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
 :guilabel:`Naam`
 
-    De naam van de cursus.
+    De naam van de :ref:`cursus <cursus>`.
 
 .. _cursus lesgever:
 
 :guilabel:`Lesgever`
 
-    De namen van de lesgevers van de cursus. Gebruik een komma om namen te scheiden als er meerdere lesgevers zijn.
+    De namen van de lesgevers van de :ref:`cursus <cursus>`. Gebruik een komma om namen te scheiden als er meerdere lesgevers zijn.
 
     .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
     .. TODO:feature-update: overwegen om cursusgebruikers te selecteren als lesgevers van een cursus; dan kunnen hun namen aan hun profielpagina gekoppeld worden
@@ -66,7 +66,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
 :guilabel:`Academiejaar`
 
-    Het academiejaar waarin de cursus wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina` en in het :ref:`cursusoverzicht`. Op Dodona wordt de naam van een cursus altijd in één adem genoemd met het academiejaar waarin de cursus wordt aangeboden.
+    Het academiejaar waarin de :ref:`cursus <cursus>` wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina <startpagina>` en in het :ref:`cursusoverzicht <cursusoverzicht>`. Op Dodona wordt de naam van een cursus altijd in één adem genoemd met het academiejaar waarin de cursus wordt aangeboden.
 
     .. TODO:feature-update: verplaats academiejaar boven lesgever, omdat de naam en het academiejaar altijd in één adem genoemd worden
     .. TODO:feature-update: vervang academiejaar (typisch voor cursusaanbod in hoger onderwijs in België) door meer generieke oplossing: optionele start- en einddatum waarbinnen de cursus wordt aangeboden; de starpagina en het cursusoverzicht kunnen dan ingedeeld worden volgens lopende cursussen, toekomstige cursussen en afgelopen cursussen; zonder startdatum wordt de cursus altijd aangeboden voor de einddatum; zonder einddatum wordt de cursus altijd aangeboden na de startdatum; zonder start- en einddatum wordt de cursus altijd aangeboden
@@ -75,9 +75,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
 :guilabel:`Zichtbaarheid`
 
-    Dit informatieveld bepaalt of :ref:`niet-geregistreerde <registreren>` gebruikers al dan niet zelf naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren door de :ref:`cursus <cursus>` te :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` om de cursus wel of niet wilt te laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen niet-geregistreerde gebruikers zich enkel registreren voor de cursus als je hen een :ref:`registratielink <registratielink>` bezorgt.
-
-    .. TODO:tutorial-missing: bespreking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
+    Dit informatieveld bepaalt of :ref:`niet-geregistreerde <registreren>` gebruikers zelf de :ref:`cursus <cursus>` kunnen :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` als je de cursus wel of niet wilt laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen niet-geregistreerde gebruikers zich enkel registreren voor de cursus als je hen :ref:`uitnodigt <cursusgebruikers uitnodigen>` met een :ref:`registratielink <registratielink>`.
 
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
@@ -94,13 +92,13 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
         - betekenis
 
       * - :guilabel:`Open`
-        - alle gebruikers kunnen zich voor de :ref:`cursus <cursus>` :ref:`registreren <registreren>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
+        - alle gebruikers kunnen zich :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
 
       * - :guilabel:`Gemodereerd`
-        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas geregistreerd als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
+        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
 
       * - :guilabel:`Gesloten`
-        - geen enkele gebruikers kan zich nog voor de :ref:`cursus <cursus>` :ref:`registreren <registreren>`
+        - gebruikers kunnen zich niet meer :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>`
 
           .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
@@ -136,47 +134,51 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 Beheren van cursusgebruikers
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` vind je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
+Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
 
 .. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht
 
 .. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
 
 .. _cursusbeheersrechten icoontje:
+.. _cursusgebruiker voortgangsstatistieken:
 
-Het zoeken van, navigeren naar en bewerken van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
+Het :ref`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
 
 .. TODO:screenshot-missing: screenshot met verwijzing naar het icoontje van cursusbeheerders
 
 .. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
 
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>` en de registratie van gebruikers :ref:`beheren <gebruikersregistratie beheren>`, inclusief het :ref:`afhandelen <registratieverzoeken afhandelen>` van openstaande :ref:`registratieverzoeken <registratieverzoek>`.
+In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>` en de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`beheren <registratiestatus beheren>`, waaronder ook het :ref:`afhandelen <registratieverzoeken afhandelen>` van openstaande :ref:`registratieverzoeken <registratieverzoek>`.
 
-.. _gebruikersregistratie beheren:
+.. _registratiestatus:
+.. _registratiestatus beheren:
 
-Beheren van gebruikersregistratie
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beheren van registratiestatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` lijst alle :ref:`cursusgebruikers <cursusgebruiker>` op een aantal tabs:
+In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :ref:`cursusgebruikers <cursusgebruiker>` gegroepeerd op basis van hun **registratiestatus**. De cursusgebruikers van elke groep worden in een afzonderlijke tab opgelijst:
 
 .. list-table::
   :header-rows: 1
 
   * - tab
-    - bevat
+    - groep
 
   * - :guilabel:`Geregistreerd`
-    - alle gebruikers die voor de :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` zijn
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <registreren>` zijn voor de :ref:`cursus <cursus>`
 
   * - :guilabel:`Uitgeschreven`
-    - alle gebruikers die ooit voor de :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` waren, maar die ondertussen :ref:`uitgeschreven <uitschrijven>` zijn
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <uitschrijven>` zijn voor de cursus
 
-  * - :guilabel:`Registratieverzoeken`
-    - alle gebruikers waarvoor nog een :ref:`registratieverzoek <registratieverzoek>` openstaat voor de :ref:`cursus <cursus>` dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
+  * - :guilabel:`Op de wachtlijst`
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
 
+.. _registratieverzoeken goedkeuren:
+.. _registratieverzoeken afkeuren:
 .. _registratieverzoeken afhandelen:
 
-Elke tab heeft afzonderlijke actieknoppen om de registratie van gebruikers te beheren:
+Elke tab heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers te beheren:
 
 .. list-table::
   :header-rows: 1
@@ -208,10 +210,13 @@ Elke tab heeft afzonderlijke actieknoppen om de registratie van gebruikers te be
 
 .. TODO:tutorial-missing: wat zijn de regels voor het uitschrijven als de laatste cursusbeheerder zich uit een cursus wil uitschrijven
 
-.. _registratielink gebruiken:
+.. _registratielink:
+.. _cursusgebruikers uitnodigen:
 
-Gebruiken van een registratielink
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Uitnodigen van cursusgebruikers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. TODO:tutorial-missing: bespreking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
 
 Op Dodona kan je het proces voor studenten om zich te in te schrijven op je
 cursus vergemakkelijken. Als je hen een speciale link geeft zullen ze op het
