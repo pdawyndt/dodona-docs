@@ -19,7 +19,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 
 .. important::
 
-    Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor de cursus. Enkel cursusbeheerders kunnen een cursus beheren. In :ref:`cursusbeheer` bespreken we hoe cursussen beheerd worden, inclusief het aanduiden van cursusbeheerders.
+    Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor de cursus. Enkel cursusbeheerders kunnen een cursus beheren. Het :ref:`beheren <cursusgebruikers beheren>` van :ref:`cursusgebruikers <cursusgebruiker>` en het :ref:`aanduiden <cursusbeheerders aanduiden>` van cursusbeheerders wordt behandeld in :ref:`cursusbeheer`.
 
 .. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers; als we dat doen, dan moeten we in de inleiding best ook twee paragrafen voorzien: één voor het gebruikersbeheer van studenten en één voor het gebruikersbeheer van lesgevers; de rest van "Dodona voor studenten" kunnen we dan eventueel opsplitsen in "werken met cursussen", "werken met oefeningen" en eventueel "werken met oplossingen" al kan dit laatste misschien ook in "werken" met oefeningen"
 
@@ -35,11 +35,9 @@ Als :ref:`lesgever <lesgever>` navigeer je naar het :ref:`gebruikersoverzicht <g
 
 .. _gebruikersoverzicht:
 
-In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke lesgever en beheerder staat een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
+In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <gebruiker voortgangsstatistieken>` opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke :ref:`lesgever <lesgever>` en :ref:`beheerder <beheerder>` staat een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
 
 .. image:: images/staff.users.nl.png
-
-.. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
 
 Gebruik de zoekbalk bovenaan het :ref:`gebruikersoverzicht <gebruikersoverzicht>` om te zoeken naar specifieke gebruikers op basis van een gebruikersnaam, een naam of een emailadres.
 
@@ -49,13 +47,19 @@ Druk op een gebruikersnaam om naar de :ref:`profielpagina <profielpagina>` van d
 
 .. image:: images/staff.users_filtered_link.nl.png
 
+.. _gebruiker voortgangsstatistieken:
+
+De **voortgangsstatistieken** van een gebruiker bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal :ref:`oefeningen <oefening>` waarvoor de gebruiker al minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` en :math:`c` voor het aantal oefeningen waarvoor de gebruiker al minstens één *correcte* oplossing heeft ingediend.
+
 
 .. _gebruikersprofiel bewerken:
 
-Bewerken van het gebruikersprofiel
+Bewerken van een gebruikersprofiel
 ----------------------------------
 
-Als :ref:`lesgever <lesgever>` kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van :ref:`studenten <student>` en andere lesgevers bewerken. Druk daarvoor op de editeerknop aan de rechterbovenkant van de :ref:`profielpagina <profielpagina>` van een gebruiker om het :ref:`gebruikersprofiel <gebruikersprofiel>` te bewerken.
+Als :ref:`lesgever <lesgever>` kan je het :ref:`gebruikersprofiel <gebruikersprofiel>` van :ref:`studenten <student>` en andere lesgevers bewerken. Druk daarvoor op de editeerknop in de rechterbovenhoek van de :ref:`profielpagina <profielpagina>` van de gebruiker.
+
+.. TODO:feature-update: mag ik als lesgever het gebruikersprofiel van andere lesgevers kunnen bewerken? het enige dat ik zou mogen kunnen doen is een student promoveren tot lesgever of een lesgever degraderen tot student via specifieke actieknoppen in het gebruikersoverzicht; voor de rest moet een lesgever geen wijzigingen kunnen aanbrengen in het gebruikersprofiel van een andere lesgever; met andere woorden, het toewijzen van beheersrechten op het platform zou analoog moeten gebeuren als het toewijzen van beheersrechten binnen een cursus; we zouden zelfs kunnen overwegen om het gebruikersoverzicht te splitsen in drie tabs: studenten, lesgevers en beheerders
 
 .. image:: images/staff.user_edit_link.nl.png
 
@@ -122,4 +126,31 @@ Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`
 .. TODO:feature-update: zou het niet logischer zijn dat een lesgever wel studenten kan promoveren tot lesgever, maar geen andere lesgevers kan degraderen tot student (inclusief zichzelf); analoog voor beheerders; dan vervalt ook bovenstaande opmerking
 .. TODO:feature-update: zoek vertaling van de rol "Staff" in het nederlands; op basis van de handleiding komen de termen "beheerder" of "lesgever" in aanmerking om deze rol te beschrijven; de laatste staat beter tegenover de rol "student", de eerste is de meer generieke naam voor die rol
 
-.. TODO:tutorial-missing: uitleggen hoe de account van een gebruiker kan overgenomen worden en wat daarvan de gevaren zijn als je onder het mom van de gebruiker registreert voor cursussen of oplossingen indient voor oefeningen
+.. _gebruikersaccount overnemen:
+
+Overnemen van een gebruikersaccount
+-----------------------------------
+
+Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een cursus of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
+
+.. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de editeerknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
+
+.. TODO:screenshot-missing: screenshot van lesgever die tijdelijk het profiel van een gebruiker heeft overgenomen
+
+.. important::
+
+    Als je :ref:`registreert <registreren>` voor een cursus of  een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het overnemen bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees er dus bewust van of je deze acties in naam van de student wilt uitvoeren of dat je eerst wil :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om de acties onder eigen naam uit te voeren.
+
+Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar gebruikersaccount tijdelijk over te nemen.
+
+.. TODO:screenshot-missing: screenshot van profielpagina waarin de knop "account overnemen" aangeduid is
+
+Als alternatief kan je de gebruikersaccount van een student ook tijdelijk overnemen door aan de rechterkant van een student in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` te drukken op de actieknop voor het overnemen van gebruikersaccounts.
+
+.. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin de actieknop voor het overnemen van gebruikersaccounts is aangeduid
+
+.. _eigen gebruikersaccount herstellen:
+
+Terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het overnemen bent, wordt bovenaan elke pagina een mededeling getoond om je daaraan te herinneren. De mededeling bevat een link waarmee je kunt terugkeren naar je eigen gebruikersaccount.
+
+.. TODO:screenshot-missing: screenshot van mededeling waarin de link wordt aangeduid om terug te keren naar je eigen gebruikersaccount

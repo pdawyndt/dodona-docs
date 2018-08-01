@@ -129,13 +129,14 @@ Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nie
 .. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
 
 
+.. _cursusgebruikers:
 .. _cursusgebruikersoverzicht:
 .. _cursusgebruikers beheren:
 
 Beheren van cursusgebruikers
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` vind je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht**. Daarin worden de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers die ooit voor de cursus geregistreerd geweest zijn.
+Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` vind je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en voortgangsstatistieken opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
 
 .. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht
 
@@ -153,10 +154,10 @@ In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je :ref:
 
 .. _gebruikersregistratie beheren:
 
-Gebruikersregistratie beheren
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beheren van gebruikersregistratie
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` geeft alle gebruikers die ooit voor de cursus geregistreerd geweest zijn weer onder een aantal tabs:
+Het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` lijst alle :ref:`cursusgebruikers <cursusgebruiker>` op een aantal tabs:
 
 .. list-table::
   :header-rows: 1
@@ -207,6 +208,18 @@ Elke tab heeft afzonderlijke actieknoppen om de registratie van gebruikers te be
 
 .. TODO:tutorial-missing: wat zijn de regels voor het uitschrijven als de laatste cursusbeheerder zich uit een cursus wil uitschrijven
 
+.. _registratielink gebruiken:
+
+Gebruiken van een registratielink
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Op Dodona kan je het proces voor studenten om zich te in te schrijven op je
+cursus vergemakkelijken. Als je hen een speciale link geeft zullen ze op het
+moment dat ze die volgen automatisch ingeschreven worden in je cursus. Deze link
+kan je op de cursuspagina vinden.
+
+.. image:: registration-link.nl.png
+
 .. _cursusbeheerders aanduiden:
 
 Aanduiden van cursusbeheerders
@@ -216,7 +229,7 @@ Aanduiden van cursusbeheerders
 
 Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel de cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
 
-In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
+In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
 
 .. list-table::
   :header-rows: 1
@@ -266,16 +279,6 @@ Let er op bij het toevoegen van reeksen dat een nieuwe reeks telkens boven de
 bestaande reeksen zal toegevoegd worden en dat er momenteel nog geen manier
 bestaan om de reeksen te herordenen.
 
-
-Werken met een registratielink
-------------------------------
-
-Op Dodona kan je het proces voor studenten om zich te in te schrijven op je
-cursus vergemakkelijken. Als je hen een speciale link geeft zullen ze op het
-moment dat ze die volgen automatisch ingeschreven worden in je cursus. Deze link
-kan je op de cursuspagina vinden.
-
-.. image:: registration-link.nl.png
 
 .. TODO:feature-missing: toekennen van labels aan gebruikers binnen de cursus
 .. TODO:feature-missing: learning analytics van gebruikers binnen de cursus
