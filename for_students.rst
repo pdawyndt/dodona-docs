@@ -13,9 +13,10 @@ Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cur
 .. _taalmenu:
 .. _navigatiebalk:
 .. _taal:
+.. _taal selecteren:
 
-Taal selecteren
----------------
+Selecteren van de taal
+----------------------
 
 Als **taal** voor Dodona kan je kiezen tussen Nederlands of Engels. Gebruik hiervoor het **taalmenu** aan de rechterkant van de **navigatiebalk** (bovenaan elke pagina).
 
@@ -155,9 +156,10 @@ Als je :ref:`afgemeld <afmelden>` bent dan verandert je :ref:`startpagina <start
 
 
 .. _profielpagina:
+.. _persoonlijke voorkeuren instellen:
 
-Gebruikersprofiel beheren
--------------------------
+Instellen van persoonlijke voorkeuren
+-------------------------------------
 
 Kies voor :guilabel:`Mijn profiel` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` om naar je **profielpagina** te navigeren.
 
@@ -176,9 +178,9 @@ Op de :ref:`profielpagina <profielpagina>` staan je **persoonsgegevens** (voorna
 .. TODO:feature-update: algemene learning analytics van gebruiker toevoegen aan gebruikersprofiel
 .. TODO:feature-missing: vermoedelijk maakt "onderwijs- of onderzoeksinstelling" nu deel uit van de persoonsgegevens, maar wordt dit informatieveld nog niet weergegeven op de profielpagina (niet instelbaar voor studenten); staff of zeus zouden dit dan eventueel kunnen wijzigen als een gebruiker verandert naar een andere instelling (vermoedelijk moet dan ook het emailadres mee aanpasbaar zijn)
 
-.. _gebruikersprofiel bijwerken:
+.. _gebruikersprofiel bewerken:
 
-Druk op de editeerknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` bij te werken. Je :ref:`persoonsgegevens <persoonsgegevens>` kan je niet zelf bijwerken. Deze worden automatisch bijgewerkt op basis van de persoonsgegevens die tijdens het :ref:`aanmelden <aanmelden>` door je externe onderwijs- of onderzoeksinstelling :ref:`doorgestuurd <persoonsgegevens doorsturen>` worden naar Dodona.
+Druk op de bewerkknop in de rechterbovenhoek van je :ref:`profielpagina <profielpagina>` om je :ref:`gebruikersprofiel <gebruikersprofiel>` te bewerken. Je :ref:`persoonsgegevens <persoonsgegevens>` kan je niet zelf aanpassen. Deze worden automatisch aangepast op basis van de persoonsgegevens die tijdens het :ref:`aanmelden <aanmelden>` door je externe onderwijs- of onderzoeksinstelling :ref:`doorgestuurd <persoonsgegevens doorsturen>` worden naar Dodona.
 
 .. image:: images/student.edit_profile.nl.png
 
@@ -198,15 +200,16 @@ In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instel
 
     Je kunt deze mededeling enkel weghalen door in je :ref:`gebruikersprofiel <gebruikersprofiel>` de :ref:`tijdzone <gebruikersprofiel tijdzone>` in te stellen op de lokale tijdzone. Merk op dat de mededeling een link bevat waarmee je rechtstreeks naar je :ref:`profielpagina <profielpagina>` kunt navigeren.
 
-.. TODO:feature-missing: feature toevoegen waarmee je bij het bijwerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
+.. TODO:feature-missing: feature toevoegen waarmee je bij het bewerken van het gebruikersprofiel meteen de tijdzone kan instellen op de lokale tijdzone zoals die door je browser gedetecteerd wordt
 .. TODO:feature-missing: voorkeur voor taal zou ook moeten weergegeven worden in het gebruikersprofiel; die voorkeur zou daar ook moeten kunnen bijgewerkt worden
 
 .. TODO:tutorial-missing: beschrijving van API tokens toevoegen
 
 
 .. _cursus:
-.. _cursus selecteren:
 .. _oefeningenreeks:
+.. _cursus selecteren:
+.. _cursus navigeren:
 
 Navigeren naar een cursus
 -------------------------
@@ -392,6 +395,7 @@ Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`gere
 
 * .. _gemodereerde registratie:
   .. _registratieverzoek:
+  .. _registratieverzoek indienen:
 
   De :ref:`cursus <cursus>` werkt met **gemodereerde registratie**, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
 
@@ -447,6 +451,7 @@ Hierdoor verdwijnt het kaartje van de :ref:`cursus <cursus>` aan de linkerkant v
 
 .. _oefening:
 .. _oefening selecteren:
+.. _oefening navigeren:
 
 Navigeren naar een oefening
 ---------------------------
@@ -541,6 +546,7 @@ Zodra de :ref:`judge <judge>` klaar is met het beoordelen van je :ref:`oplossing
 
 .. _oplossing:
 .. _oplossingenoverzicht:
+.. _oplossing navigeren:
 
 Navigeren naar een oplossing
 ----------------------------
@@ -712,7 +718,7 @@ De laatste :ref:`tab <feedback tab>` heeft altijd de naam :guilabel:`Code` en be
 
     .. TODO:feature-update: in plaats van de feature die de volledige code selecteert als je erop klikt (en die verhindert dat je stukken van de code zou kunnen selecteren en naar het klembord kopiëren) zouden we beter een knop voorzien waarmee de volledige code naar het klembord kan gekopieerd worden
 
-    Als alternatief kan je ook op de editeerknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`oefening <oefening>` waarvoor de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode bewerken en daarna eventueel opnieuw indienen.
+    Als alternatief kan je ook op de bewerkknop drukken in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om te navigeren naar de :ref:`oefening <oefening>` waarvoor de :ref:`oplossing <oplossing>` werd :ref:`ingediend <oplossing indienen>`. De broncode van de oplossing werd daarbij ingevoegd in de :ref:`code editor <code editor>` aan de onderkant van de :ref:`oefeningpagina <oefeningpagina>`. Daar kan je de broncode bewerken en daarna eventueel opnieuw indienen.
 
 .. _feedback test:
 .. _feedback testgeval:
