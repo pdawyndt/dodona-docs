@@ -72,19 +72,19 @@ Als alternatief kan je in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` o
 .. image:: images/staff.users_filtered_edit_link.nl.png
 
 
-.. _beheersrechten toewijzen:
+.. _beheersrechten:
 
-Toewijzen van beheersrechten
+Instellen van beheersrechten
 ----------------------------
 
-Als :ref:`lesgever <lesgever>` zie je aan het informatieveld :guilabel:`Rechten` op de :ref:`profielpagina <profielpagina>` van een gebruiker welke :ref:`beheersrechten <beheersrechten>` aan haar toegewezen werden.
+Om sommige acties te kunnen uitvoeren op Dodona heb je bijkomende **beheersrechten** nodig. Als :ref:`lesgever <lesgever>` kan je aan de eigenschap :guilabel:`Rechten` op de :ref:`profielpagina <profielpagina>` van een gebruiker zien welke beheersrechten de gebruiker heeft.
 
 .. image:: images/staff.user_edit_permission.nl.png
 
 .. _beheersrechten:
 .. _beheersrechten icoontje:
 
-Aan gebruikers kunnen de volgende **beheersrechten** toegewezen worden:
+Aan gebruikers kunnen de volgende :ref:`beheersrechten <beheersrechten>` toegekend worden:
 
 .. list-table::
   :header-rows: 1
@@ -116,6 +116,8 @@ Aan gebruikers kunnen de volgende **beheersrechten** toegewezen worden:
 .. _beheerder:
 
 Een gebruiker waarvoor de :ref:`beheersrechten <beheersrechten>` ingesteld zijn op :guilabel:`Student` noemen we een **student**. Een gebruiker waarvoor de beheersrechten ingesteld zijn op :guilabel:`Staff` noemen we een **lesgever**. Een gebruiker waarvoor de beheersrechten ingesteld zijn op :guilabel:`Zeus` noemen we een **beheerder**.
+
+.. _beheersrechten instellen:
 
 Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`bewerkt <gebruikersprofiel bewerken>` dan kan je daar de :ref:`beheersrechten <beheersrechten>` van de gebruiker instellen. Als :ref:`lesgever <lesgever>` kan je enkel de beheersrechten :guilabel:`Student` en :guilabel:`Staff` toekennen aan gebruikers (inclusief jezelf). Op die manier kan je een gebruiker promoveren tot lesgever of degraderen tot :ref:`student <student>`.
 
