@@ -13,7 +13,7 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <c
 Aanmaken van een cursus
 -----------------------
 
-Als lesgever maak je een nieuwe cursus aan door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` maak je een nieuwe cursus aan door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
 .. image:: images/staff.courses_new_link.nl.png
 
