@@ -220,6 +220,8 @@ In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :r
   * - :guilabel:`Op de wachtlijst`
     - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
 
+.. _registratieverzoek afkeuren:
+.. _registratieverzoek goedkeuren:
 .. _registratieverzoeken afhandelen:
 
 Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers te beheren:
@@ -242,13 +244,11 @@ Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` he
     - .. image::
     - cursusgebruiker terug registreren voor de cursus
 
-  * .. _registratieverzoek goedkeuren:
-    - :guilabel:`Registratieverzoeken`
+  * - :guilabel:`Registratieverzoeken`
     - .. image::
     - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <registreren>` wordt voor de cursus
 
-  * .. _registratieverzoek afkeuren:
-    - :guilabel:`Registratieverzoeken`
+  * - :guilabel:`Registratieverzoeken`
     - .. image::
     - afkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`uitgeschreven <cursus uitschrijven>` wordt uit de cursus
 
