@@ -5,7 +5,7 @@
 Dodona voor studenten
 =====================
 
-Als student kan je :ref:`registreren <registreren>` voor één of meer :ref:`cursussen <cursus>`. Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
+Als student kan je :ref:`registreren <cursus registreren>` voor één of meer :ref:`cursussen <cursus>`. Elke cursus bevat een reeks :ref:`oefeningen <oefening>` die gegroepeerd zijn in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefening kan je herhaald :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` die automatisch worden beoordeeld en van :ref:`feedback <feedback>` voorzien. Deze acties vereisen echter dat je over een :ref:`gebruikersaccount <gebruikersaccount>` beschikt en dat je :ref:`aangemeld <aanmelden>` bent op Dodona.
 
 .. TODO:tutorial-update: overweeg om de meer neutrale term "module" te gebruiken in plaats van de term "cursus"
 
@@ -52,7 +52,7 @@ Als je een :ref:`taal <taal>` selecteert terwijl je :ref:`aangemeld <aanmelden>`
 Aanmelden
 ---------
 
-Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerservaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` of het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` — aan je gebruikersaccount gekoppeld.
+Om te kunnen :ref:`aanmelden <aanmelden>`, moet je over een **gebruikersaccount** beschikken op Dodona. In het daaraan gekoppelde :ref:`gebruikersprofiel <gebruikersprofiel>` kan je persoonlijke voorkeuren instellen om je gebruikerservaring op het platform te personaliseren. Daarnaast worden alle acties die je op het platform uitvoert — zoals het :ref:`registreren <cursus registreren>` voor :ref:`cursussen <cursus>` of het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` — aan je gebruikersaccount gekoppeld.
 
 .. important::
 
@@ -114,7 +114,7 @@ Als je aangemeld bent dan zie je aan de rechterkant van de :ref:`navigatiebalk <
 
 .. _startpagina:
 
-Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` in een gepersonaliseerde **startpagina** met een overzicht van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, hun :ref:`oefeningenreeksen <oefeningenreeks>` met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` voor :ref:`oefeningen <oefening>`. Je kunt dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
+Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landingspagina <landingspagina>` in een gepersonaliseerde **startpagina** met een overzicht van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent, hun :ref:`oefeningenreeksen <oefeningenreeks>` met nakende :ref:`deadlines <oefeningenreeks deadline>` en je voortgang bij het :ref:`indienen <oplossing indienen>` van :ref:`oplossingen <oplossing>` voor :ref:`oefeningen <oefening>`. Je kunt dus ook makkelijk aan de landingspagina of aan je startpagina herkennen of je al dan niet aangemeld bent.
 
 .. tip::
 
@@ -122,7 +122,7 @@ Als je :ref:`aangemeld <aanmelden>` bent dan verandert de neutrale :ref:`landing
 
     .. image:: images/student.navigate_to_homepage.nl.png
 
-Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` en heb je nog geen enkele :ref:`oplossing <oplossing>` :ref:`ingediend <oplossing indienen>`. Daardoor ziet je :ref:`startpagina <startpagina>` er op dit moment nog vrij kaal uit.
+Als dit de eerste keer is dat je aanmeldt op Dodona dan ben je uiteraard nog voor geen enkele :ref:`cursus <cursus>` :ref:`geregistreerd <cursus registreren>` en heb je nog geen enkele :ref:`oplossing <oplossing>` :ref:`ingediend <oplossing indienen>`. Daardoor ziet je :ref:`startpagina <startpagina>` er op dit moment nog vrij kaal uit.
 
 .. image:: images/student.homepage.nl.png
 
@@ -214,9 +214,9 @@ In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instel
 Navigeren naar een cursus
 -------------------------
 
-Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
+Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <cursus registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
-* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan de startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
+* Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan de startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
   .. TODO:screenshot-missing: screenshot van startpagina met minstens vijf cursussen waarvoor gebruiker geregistreerd is (zodat zoekbalk getoond wordt)
 
@@ -230,11 +230,11 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
   .. TODO:screenshot-missing: screenshot van startpagina met pijl naar paneel met cursussen die wachten op goedkeuring
 
-* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
+* Het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>` bevat onder de hoofding :guilabel:`Mijn vakken` een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent. Deze lijst is beperkt tot de cursussen van het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent. Omdat de navigatiebalk op elke pagina beschikbaar is, vormt dit een snelle manier om één van de cursussen uit deze lijst te selecteren zonder dat je eerst naar je :ref:`startpagina <startpagina>` moet navigeren.
 
   .. image:: images/student.my_courses.nl.png
 
-* Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kunt één van deze cursussen selecteren door op de naam van de cursus te drukken.
+* Op je :ref:`profielpagina <profielpagina>` staat een lijst met alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan dat wacht op goedkeuring van een cursusbeheerder. Je kunt één van deze cursussen selecteren door op de naam van de cursus te drukken.
 
   .. image:: images/student.profile_courses.nl.png
 
@@ -242,7 +242,7 @@ Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` 
 
 * .. _cursusoverzicht:
 
-  Het **cursusoverzicht** toont alle beschikbare :ref:`cursussen <cursus>`, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
+  Het **cursusoverzicht** toont alle beschikbare :ref:`cursussen <cursus>`, gegroepeerd per academiejaar. Navigeer naar het cursusoverzicht door te drukken op de knop :guilabel:`MEER CURSUSSEN …` onderaan in de rechterkolom op je :ref:`startpagina <startpagina>`. Als je nog voor geen enkele cursus :ref:`geregistreerd <cursus registreren>` bent, dan kan je als alternatief ook drukken op de knop :guilabel:`VERKEN CURSUSSEN` naast de afbeelding op je startpagina.
 
   .. TODO:feature-update: optie "cursussen" of "cursusoverzicht" zou beschikbaar moeten zijn in het gebruikersmenu, in plaats van de tab "Admin" zoals nu het geval is; op die manier krijgt de student vanaf elke pagina rechtstreeks toegang tot het cursusoverzicht
   .. TODO:feature-update: vervang de tekst op de knop "MEER CURSUSSEN …" in de rechterkolom van de startpagina door de tekst "CURSUSOVERZICHT"; misschien wordt deze knop zelfs overbodig als er een item wordt toegevoegd aan het gebruikersmenu
@@ -374,30 +374,27 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 .. TODO:feature-update: gedownload ZIP-bestand bevat bestanden met de extensie .txt voor JavaScript oplossingen en bestanden met de extensie .py voor Python oplossingen; geef JavaScript oplossingen de gebruikelijke extensie .js
 
 
-.. _registreren:
+.. _cursus registreren:
 
 Registreren voor een cursus
 ---------------------------
 
-Je moet je eerst voor een :ref:`cursus <cursus>` **registreren** voordat je :ref:`oplossingen <oplossing>` kan :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus.
+Je moet geregistreerd zijn voor een :ref:`cursus <cursus>` voordat je :ref:`oplossingen <oplossing>` kan :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>` uit de cursus.
 
 .. _manuele registratieprocedure:
 
-Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`geregistreerd <registreren>` bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan registreren. Hierbij zijn er drie mogelijkheden:
+Als je :ref:`navigeert <cursus navigeren>` naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`geregistreerd <cursus registreren>` bent, dan zie je bovenaan de :ref:`cursuspagina <cursuspagina>` een paneel dat aangeeft of en hoe je je voor de cursus kan :ref:`registreren <cursus registreren>`. Hierbij zijn er drie mogelijkheden:
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
-* .. _open registratie:
-
-  De :ref:`cursus <cursus>` werkt met **open registratie**, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
+* De :ref:`cursus <cursus>` werkt met een :ref:`open <open registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
 
   .. image:: images/register.nl.png
 
-* .. _gemodereerde registratie:
-  .. _registratieverzoek:
+* .. _registratieverzoek:
   .. _registratieverzoek indienen:
 
-  De :ref:`cursus <cursus>` werkt met **gemodereerde registratie**, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
+  De :ref:`cursus <cursus>` werkt met een :ref:`gemodereerde <gemodereerde registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
 
   .. image:: images/moderated_register.nl.png
 
@@ -405,9 +402,7 @@ Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`gere
 
   .. image:: images/moderated_waiting.nl.png
 
-* .. _gesloten registratie:
-
-  De :ref:`cursus <cursus>` werkt met **gesloten registratie**, wat betekent dat je geen :ref:`registratieverzoek <registratieverzoek>` kunt indienen voor de cursus.
+* De :ref:`cursus <cursus>` werkt met een :ref:`gesloten <gesloten registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat je geen :ref:`registratieverzoek <registratieverzoek>` kunt indienen voor de cursus.
 
   .. image:: images/closed_registration.nl.png
 
@@ -419,9 +414,9 @@ Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je nog niet :ref:`gere
 
 .. note::
 
-    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de beschrijving en de :ref:`oefeningenreeksen <oefeningenreeks>` zien als je voor de :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent of als de cursus werkt met :ref:`open registratie <open registratie>`.
+    Op een :ref:`cursuspagina <cursuspagina>` kan je enkel de beschrijving en de :ref:`oefeningenreeksen <oefeningenreeks>` zien als je voor de :ref:`cursus <cursus>` :ref:`geregistreerd <cursus registreren>` bent of als de cursus werkt met :ref:`open registratie <open registratie>`.
 
-Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent, verschijnt er een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
+Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <cursus registreren>` bent, verschijnt er een kaartje van de cursus aan de linkerkant van je :ref:`startpagina <startpagina>` en wordt de cursus opgelijst op je :ref:`profielpagina <profielpagina>`. Als de cursus wordt aangeboden in het meest recente academiejaar waarvoor je voor een cursus geregistreerd bent, dan wordt de cursus ook opgelijst onder :guilabel:`Mijn vakken` in het :ref:`gebruikersmenu <gebruikersmenu>` aan de rechterkant van de :ref:`navigatiebalk <navigatiebalk>`.
 
 .. image:: images/student.my_courses.nl.png
 
@@ -430,19 +425,19 @@ Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <registreren>` bent
 .. TODO:tutorial-missing: behandeling van deadlines moet ergens ander staan.
 .. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
 
-.. _registratielink:
+.. _registratielink volgen:
 
-Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de registratieprocedure te doorlopen, bestaat ook de mogelijkheid dat je een **registratielink** ontvangt (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met :ref:`open registratie <open registratie>`, :ref:`gemodereerde registratie <gemodereerde registratie>` of :ref:`gesloten registratie <gesloten registratie>`.
+Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de :ref:`registratieprocedure <registratieprocedure>` te doorlopen, bestaat ook de mogelijkheid dat je een :ref:`registratielink <registratielink>` ontvangt van een :ref:`cursusbeheerder` (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met een :ref:`open <open registratieprocedure>`, een :ref:`gemodereerde <gemodereerde registratieprocedure>` of een :ref:`gesloten <gesloten registratieprocedure>` registratieprocedure.
 
 .. TODO:feature-update: in de registratielink wordt standaard de geselecteerde taal ingesteld; meestal is dit wat een lesgever ook wil (als alle studenten dezelfde taal hebben), maar soms wil hij ook een taal-agnostische versie van de registratielink verspreiden als hij de voorkeurstaal die de gebruikers hebben ingesteld niet wil overrulen; we zouden dus ook kunnen overwegen om een optie te maken waarmee de lesgever een taal-agnostische versie van de registratielink kan genereren (als alternatief voor het handmatig wissen van de taal uit de URL)
 
 
-.. _uitschrijven:
+.. _cursus uitschrijven:
 
 Uitschrijven uit een cursus
 ---------------------------
 
-Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je :ref:`geregistreerd <registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan, dan zie je onder de beschrijving van de cursus op de :ref:`cursuspagina <cursuspagina>` een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
+Als je navigeert naar een :ref:`cursus <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent of waarvoor je nog een :ref:`registratieverzoek <registratieverzoek>` hebt openstaan, dan zie je onder de beschrijving van de cursus op de :ref:`cursuspagina <cursuspagina>` een knop :guilabel:`UITSCHRIJVEN` waarmee je je kunt uitschrijven uit de cursus.
 
 .. image:: images/student.unregister.nl.png
 
@@ -588,8 +583,8 @@ Je kunt een :ref:`oplossing <oplossing>` selecteren door in een :ref:`oplossinge
 .. _judge:
 .. _feedback:
 
-Feedback interpreteren
-----------------------
+Interpreteren van feedback
+--------------------------
 
 Op de :ref:`feedbackpagina <feedbackpagina>` staat gedetailleerde **feedback** over een :ref:`oplossing <oplossing>` die je :ref:`ingediend <oplossing indienen>` hebt voor een :ref:`oefening <oefening>`. Zo snel mogelijk na het indienen wordt de oplossing automatisch beoordeeld door een **judge** die aan de oefening gekoppeld is. Als motivatie van zijn beoordeling voorziet de judge gedetailleerde feedback over de oplossing.
 
