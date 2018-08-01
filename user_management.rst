@@ -49,7 +49,7 @@ Druk op een gebruikersnaam om naar de :ref:`profielpagina <profielpagina>` van d
 
 .. _gebruiker voortgangsstatistieken:
 
-De **voortgangsstatistieken** van een gebruiker bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal :ref:`oefeningen <oefening>` waarvoor de gebruiker al minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` en :math:`c` voor het aantal oefeningen waarvoor de gebruiker al minstens één *correcte* oplossing heeft ingediend.
+De **voortgangsstatistieken** van een gebruiker bestaan uit twee getallen :math:`c/i`. Daarbij staat :math:`i` voor het aantal :ref:`oefeningen <oefening>` waarvoor de gebruiker minstens één :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>` en :math:`c` voor het aantal oefeningen waarvoor de gebruiker minstens één *correcte* oplossing heeft ingediend.
 
 
 .. _gebruikersprofiel bewerken:
