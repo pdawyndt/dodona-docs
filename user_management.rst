@@ -141,11 +141,11 @@ Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebr
 
     Als je :ref:`registreert <registreren>` voor een :ref:`cursus <cursus>` of een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees je er dus van bewust of je deze acties in naam van de student wilt uitvoeren of dat je eerst wilt :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om daarna de acties onder eigen naam uit te voeren.
 
-Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar gebruikersaccount tijdelijk over te nemen.
+Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar :ref:`gebruikersaccount <gebruikersaccount>` tijdelijk :ref:`over te nemen <gebruikersaccount overnemen>`.
 
 .. TODO:screenshot-missing: screenshot van profielpagina waarin de knop "account overnemen" aangeduid is
 
-Als alternatief kan je de gebruikersaccount van een student ook tijdelijk overnemen door in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` aan de rechterkant van een student te drukken op de actieknop voor het overnemen van gebruikersaccounts.
+Als alternatief kan je de :ref:`gebruikersaccount <gebruikersaccount>` van een student ook tijdelijk overnemen door in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` aan de rechterkant van een student te drukken op de actieknop voor het :ref:`overnemen <gebruikersaccount overnemen>` van gebruikersaccounts.
 
 .. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin de actieknop voor het overnemen van gebruikersaccounts is aangeduid
 
