@@ -143,7 +143,7 @@ Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebr
 
 .. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de bewerkknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
 
-.. TODO:screenshot-missing: screenshot van lesgever die tijdelijk het profiel van een gebruiker heeft overgenomen
+.. image:: images/staff.impersonating.nl.png
 
 .. important::
 
@@ -151,14 +151,14 @@ Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebr
 
 Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar :ref:`gebruikersaccount <gebruikersaccount>` tijdelijk :ref:`over te nemen <gebruikersaccount overnemen>`.
 
-.. TODO:screenshot-missing: screenshot van profielpagina waarin de knop "account overnemen" aangeduid is
+.. image:: images/staff.user_impersonate_link.nl.png
 
 Als alternatief kan je de :ref:`gebruikersaccount <gebruikersaccount>` van een student ook tijdelijk overnemen door in het :ref:`gebruikersoverzicht <gebruikersoverzicht>` aan de rechterkant van een student te drukken op de actieknop voor het :ref:`overnemen <gebruikersaccount overnemen>` van gebruikersaccounts.
 
-.. TODO:screenshot-missing: screenshot van gebruikersoverzicht waarin de actieknop voor het overnemen van gebruikersaccounts is aangeduid
+.. image:: images/staff.users_filtered_impersonate_link.nl.png
 
 .. _eigen gebruikersaccount herstellen:
 
 Terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, wordt bovenaan elke pagina een mededeling getoond om je daaraan te herinneren. De mededeling bevat een link waarmee je kunt terugkeren naar je eigen gebruikersaccount.
 
-.. TODO:screenshot-missing: screenshot van mededeling waarin de link wordt aangeduid om terug te keren naar je eigen gebruikersaccount
+.. image:: images/staff.stop_impersonating_link.nl.png
