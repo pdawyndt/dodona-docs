@@ -92,6 +92,10 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt de **registratieprocedure** waarmee gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <registreren>`:
 
+    .. _open registratieprocedure:
+    .. _gemodereerde registratieprocedure:
+    .. _gesloten registratieprocedure:
+
     .. list-table::
       :header-rows: 1
 
@@ -99,18 +103,18 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
         - registratieprocedure
         - beschrijving
 
-      * .. _open registratieprocedure:
-        - :guilabel:`Open`
+
+      * - :guilabel:`Open`
         - open
         - alle gebruikers kunnen zich :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
 
-      * .. _gemodereerde registratieprocedure:
-        - :guilabel:`Gemodereerd`
+
+      * - :guilabel:`Gemodereerd`
         - gemodereerd
         - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
 
-      * .. _gesloten registratieprocedure:
-        - :guilabel:`Gesloten`
+
+      * - :guilabel:`Gesloten`
         - gesloten
         - gebruikers kunnen zich niet meer :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>`
 
@@ -237,7 +241,7 @@ Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` he
     - actie
 
   * - :guilabel:`Geregistreerd`
-    - .. image::
+    - .. image:: images/staff_registration_icons/unregister.png
     - cursusgebruiker uitschrijven uit de cursus
 
       .. TODO:feature-missing: cursusbeheerders kunnen geen (andere) cursusbeheerders uitschrijven uit de cursus; is dat de bedoeling, of zou dat wel moeten kunnen zolang op die manier niet de laatste cursusbeheerder uit de cursus verdwijnt als een cursusbeheerder zichzelf uitschrijft
@@ -283,7 +287,7 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
   * - .. image:: images/staff_registration_icons/make_student.png
     - cursusbeheerder degraderen tot student
 
-.. import::
+.. important::
 
     Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
 

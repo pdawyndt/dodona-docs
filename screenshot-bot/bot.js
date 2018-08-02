@@ -403,7 +403,8 @@ async function wait(ms) {
             '<p><span class="glyphicon glyphicon-education"></span></p>' +
             '<p><span class="glyphicon glyphicon-ok"></span></p>' +
             '<p><span class="glyphicon glyphicon-remove"></span></p>' +
-            '<p><span class="glyphicon glyphicon-log-in"></span></p>';
+            '<p><span class="glyphicon glyphicon-log-in"></span></p>' +
+            '<p><span class="glyphicon glyphicon-log-out"></span></p>';
     });
 
     await wizard.screenshot('../images/staff_registration_icons/make_course_admin.png', {
@@ -416,6 +417,10 @@ async function wait(ms) {
 
     await wizard.screenshot('../images/staff_registration_icons/register.png', {
         cropSelector: '.glyphicon-log-in'
+    });
+
+    await wizard.screenshot('../images/staff_registration_icons/unregister.png', {
+        cropSelector: '.glyphicon-log-out'
     });
 
     await wizard.screenshot('../images/staff_registration_icons/approve.png', {
