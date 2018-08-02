@@ -81,7 +81,6 @@ Om sommige acties te kunnen uitvoeren op Dodona heb je bijkomende **beheersrecht
 
 .. image:: images/staff.user_edit_permission.nl.png
 
-.. _beheersrechten:
 .. _beheersrechten icoontje:
 
 Aan gebruikers kunnen de volgende :ref:`beheersrechten <beheersrechten>` toegekend worden:
