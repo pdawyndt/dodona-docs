@@ -28,8 +28,6 @@ Je krijgt een formulier te zien waarin je de :ref:`cursuseigenschappen <cursusei
 
 .. image:: images/staff.new_course.nl.png
 
-.. TODO:screenshot-update: effectief de informatievelden van de cursus aanmaken en dan deze cursus verder gebruiken in de handleiding
-
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
 Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch voor de cursus :ref:`geregistreerd <registreren>` bent en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>` van de cursus.
@@ -94,6 +92,10 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt de **registratieprocedure** waarmee gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <registreren>`:
 
+    .. _open registratieprocedure:
+    .. _gemodereerde registratieprocedure:
+    .. _gesloten registratieprocedure:
+
     .. list-table::
       :header-rows: 1
 
@@ -101,18 +103,18 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
         - registratieprocedure
         - beschrijving
 
-      * .. _open registratieprocedure:
-        - :guilabel:`Open`
+
+      * - :guilabel:`Open`
         - open
         - alle gebruikers kunnen zich :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
 
-      * .. _gemodereerde registratieprocedure:
-        - :guilabel:`Gemodereerd`
+
+      * - :guilabel:`Gemodereerd`
         - gemodereerd
         - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
 
-      * .. _gesloten registratieprocedure:
-        - :guilabel:`Gesloten`
+
+      * - :guilabel:`Gesloten`
         - gesloten
         - gebruikers kunnen zich niet meer :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>`
 
@@ -140,13 +142,13 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
 Druk op de afwerkknop in de rechterbovenhoek van het formulier om de :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
 
-.. TODO:screenshot-missing: screenshot van formulier met cursuseigenschappen met aanduiding van afwerkknop
+.. image:: images/staff.course_edit_submit_link.nl.png
 
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
 Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` van kracht.
 
-.. TODO:screenshot-missing: screenshot van cursuspagina na bijwerken
+.. image:: images/staff.course_after_edit.nl.png
 
 
 .. _registratielink:
@@ -159,15 +161,13 @@ Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt v
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
 
-.. image:: registration-link.nl.png
-
-.. TODO:screenshot-update: screenshot van cursuspagina waarop de registratielink wordt aangeduid; dit was nog een manueel gegenereerde afbeelding
+.. image:: images/staff.registration_link.nl.png
 
 .. _registratielink kopiëren:
 
 Druk op de kopieerknop naast de :ref:`registratielink <registratielink>` om de link naar het klembord te kopiëren.
 
-.. TODO:screenshot-missing: screenshot van cursuspagina waarop de kopieerknop registratielink wordt aangeduid
+.. image:: images/staff.registration_link_copy.nl.png
 
 .. TODO:tutorial-missing: bespreking van registratielink op de cursuspagina en instellen van een nieuwe registratielink op de cursusbeheerpagina
 
@@ -175,7 +175,7 @@ Druk op de kopieerknop naast de :ref:`registratielink <registratielink>` om de l
 
 Een :ref:`verborgen <cursuseigenschap zichtbaarheid>` :ref:`cursus <cursus>` kan enkel gevonden worden door gebruikers die de :ref:`registratielink <registratielink>` kennen. Nadat de registratielink gedeeld werd kan je bij het :ref:`instellen <cursuseigenschappen instellen>` van de :ref:`eigenschappen <cursuseigenschappen>` van de cursus echter een nieuwe registratielink laten genereren om daarmee de cursus opnieuw te verbergen. Druk daarvoor op de vernieuwknop naast de registratielink.
 
-.. TODO:screenshot-update: screenshot van formulier waar cursuseigenschappen ingesteld worden, met aanduiding van de vernieuwknop naast de registratielink
+.. image:: images/registration_link_renew.nl.png
 
 .. TODO:feature-update: omdat de identifiers oplopend genummerd worden en ook gebruikt worden in de URL van een cursus, is het vrij eenvoudig om verborgen cursussen te vinden; heeft het vernieuwen van een registratielink dan wel zin als een manier om de cursus opnieuw te verbergen? ofwel mis ik nog iets om te begrijpen waardoor het opnieuw genereren van de registratielink de cursus opnieuw verbergt
 
@@ -189,7 +189,7 @@ Beheren van cursusgebruikers
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
 
-.. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht
+.. image:: images/staff.course_users.nl.png
 
 .. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
 
@@ -198,7 +198,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie 
 
 Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
 
-.. TODO:screenshot-missing: screenshot met verwijzing naar het icoontje van cursusbeheerders
+.. image:: images/staff.course_users_admin.nl.png
 
 .. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
 
@@ -241,25 +241,23 @@ Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` he
     - actie
 
   * - :guilabel:`Geregistreerd`
-    - .. image::
+    - .. image:: images/staff_registration_icons/unregister.png
     - cursusgebruiker uitschrijven uit de cursus
 
       .. TODO:feature-missing: cursusbeheerders kunnen geen (andere) cursusbeheerders uitschrijven uit de cursus; is dat de bedoeling, of zou dat wel moeten kunnen zolang op die manier niet de laatste cursusbeheerder uit de cursus verdwijnt als een cursusbeheerder zichzelf uitschrijft
       .. TODO:feature-missing: als cursusbeheerder kan je enkel bestaande cursusgebruikers registreren, en heb je niet de mogelijkheid om andere gebruikers te registren voor een cursus, behalve dan het gebruikersaccount van de gebruiker overnemen en in naam van de gebruiker de registratie uitvoeren (als dit kan); dit zou eventueel een manier zijn om als cursusbeheerder een gebruiker in te schrijven voor een cursus die werkt met gesloten registratie
 
   * - :guilabel:`Uitgeschreven`
-    - .. image::
+    - .. image:: images/staff_registration_icons/register.png
     - cursusgebruiker terug registreren voor de cursus
 
   * - :guilabel:`Registratieverzoeken`
-    - .. image::
+    - .. image:: images/staff_registration_icons/approve.png
     - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <registreren>` wordt voor de cursus
 
   * - :guilabel:`Registratieverzoeken`
-    - .. image::
+    - .. image:: images/staff_registration_icons/decline.png
     - afkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`uitgeschreven <cursus uitschrijven>` wordt uit de cursus
-
-.. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht met aanduiding van actieknoppen voor het beheren van de registratiestatus
 
 .. TODO:update-feature: cursusbeheerder mogelijkheid geven om een reden op te geven waarom een registratieverzoek wordt afgekeurd
 .. TODO:update-feature: notification/email sturen naar de gebruiker wanneer een registratieverzoek wordt goedgekeurd/afgekeurd
@@ -283,15 +281,13 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
   * - knop
     - actie
 
-  * - .. image::
+  * - .. image:: images/staff_registration_icons/make_course_admin.png
     - student promoveren tot cursusbeheerder
 
-  * - .. image::
+  * - .. image:: images/staff_registration_icons/make_student.png
     - cursusbeheerder degraderen tot student
 
-.. TODO:screenshot-missing: screenshot van cursusgebruikersoverzicht met aanduiding van actieknoppen voor aanduiden van cursusbeheerders
-
-.. import::
+.. important::
 
     Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
 

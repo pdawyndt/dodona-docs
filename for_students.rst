@@ -247,8 +247,6 @@ Cursusbeheerders kunnen :ref:`cursussen <cursus>` opbouwen uit :ref:`oefeningen 
 
   .. image:: images/student.explore_courses.nl.png
 
-  .. TODO:screenshot-update: blijft de feature met "cursussen" in de navigatiebalk behouden? indien niet, dan moet de pijl weg in de screenshot; anders moet deze optie ook in de tekst besproken worden
-
   Gebruik de zoekbalk bovenaan het :ref:`cursusoverzicht <cursusoverzicht>` om te zoeken naar specifieke :ref:`cursussen <cursus>` op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
   .. TODO:tutorial-missing: uitleggen hoe studenten kunnen zien welke cursussen open staan voor registratie, en voor welke cursussen een registratieverzoek moet ingediend worden; op die ogenblik lijkt dit nog niet te zien in het cursusoverzicht
@@ -269,7 +267,7 @@ Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer j
 
     Als je binnen een :ref:`cursus <cursus>` aan het werken bent dan verschijnt de naam van de cursus naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je terug naar de :ref:`cursuspagina <cursuspagina>`.
 
-  .. TODO:screenshot-missing: screenshot van navigatiebalk met naam van cursus in breadcrumb
+  .. image:: images/student.breadcrumb_course.nl.png
 
 .. _oefeningenreeks deadline:
 
@@ -304,14 +302,17 @@ Mogelijke weergaven van je :ref:`status <oefening status>` vóór het verstrijke
     - weergegeven als je
 
   * - :guilabel:`niet opgelost`
-    - .. image::
+    - 
     - geen :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` (vóór de :ref:`deadline <oefeningenreeks deadline>`)
 
-  * - :ref:`status <oplossing status>` van laatst ingediende :ref:`oplossing <oplossing>`
-    - .. image::
-    - minstens één :ref:`oplossing <oplossing>` hebt :ref:`ingediend <oplossing indienen>` (vóór de :ref:`deadline <oefeningenreeks deadline>`)
+  * - :guilabel:`verkeerd`
+    - .. image:: images/course_exercise_status_icons/red_cross.png
+    - laatste :ref:`oplossing <oplossing>` die je :ref:`indiende <oplossing indienen>` verkeerd was
 
-.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
+  * - :guilabel:`correct`
+    - .. image:: images/course_exercise_status_icons/green_check.png
+    - laatste :ref:`oplossing <oplossing>` die je :ref:`indiende <oplossing indienen>` correct was (vóór de :ref:`deadline <oefeningenreeks deadline>`)
+
 
 .. TODO:feature-update: Blijkbaar is de terminologie die gebruikt wordt voor de status voor een gebruiker van een oefening in een oefeningenreeks en voor de status van een oplossing niet dezelfde, terwijl de eerst doorgaans toch van de tweede wordt afgeleid; zo zien we bijvoorbeeld de combinatie correct/Correct (let op het verschil in hoofdletter) en verkeerd/Fout. We kunnen deze terminologie beter consistent maken.
 
@@ -325,14 +326,20 @@ Mogelijke weergaven van je :ref:`status <oefening status>` nadat de :ref:`deadli
     - weergegeven als je
 
   * - :guilabel:`correct` (groen)
-    - .. image::
+    - .. image:: images/course_exercise_status_icons/green_check.png
     - laatst :ref:`ingediende <oplossing indienen>` :ref:`oplossing <oplossing>` vóór de :ref:`deadline <oefeningenreeks deadline>` correct is
 
   * - :guilabel:`deadline gemist` (rood)
-    - .. image::
-    - geen :ref:`oplossingen <oplossing>` hebt :ref:`ingediend <oplossing indienen>` vóór de :ref:`deadline <oefeningenreeks deadline>` of als je laatst ingediende oplossing vóór de deadline niet correct is
+    - 
+    - geen :ref:`oplossingen <oplossing>` hebt :ref:`ingediend <oplossing indienen>`
 
-.. TODO:screenshot-missing: iconen toevoegen die corresponderen met elke status
+  * - :guilabel:`deadline gemist` (rood)
+    - .. image:: images/course_exercise_status_icons/red_cross.png
+    - als je laatst ingediende oplossing niet correct is
+
+  * - :guilabel:`deadline gemist` (rood)
+    - .. image:: images/course_exercise_status_icons/red_check.png
+    - als je na de :ref:`deadline <oefeningenreeeks deadline>` een correcte oplossing hebt ingediend
 
 .. important::
 
@@ -477,7 +484,7 @@ Na :ref:`selectie <oefening selecteren>` van een :ref:`oefening <oefening>` navi
 
     Als je een actie aan het uitvoeren bent op een :ref:`oefening <oefening>` dan verschijnt de naam van de oefening naast :guilabel:`Dodona` aan de linkerkant van de :ref:`navigatiebalk <navigatiebalk>`, eventueel voorafgegaan door de naam van de :ref:`cursus <cursus>` en de naam van de :ref:`oefeningenreeks <oefeningenreeks>` waaruit je de oefening :ref:`geselecteerd <oefening selecteren>` hebt. Door in de navigatiebalk op de naam van de oefening te drukken, navigeer je naar de :ref:`oefeningpagina <oefeningpagina>`. Door in de navigatiebalk op de naam van de oefeningenreeks te drukken, navigeer je naar de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Door in de navigatiebalk op de naam van de cursus te drukken, navigeer je naar de cursuspagina.
 
-    .. TODO:screenshot-missing: in notitie screenshot met breadcrumbs toevoegen, met pijlen naar de verschillende onderdelen van de breadcrumb
+    .. image:: images/student.exercise_crumbs.nl.png
 
 .. _oefening afdrukken:
 
