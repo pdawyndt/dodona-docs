@@ -7,6 +7,8 @@ Gebruikersbeheer
 
 .. _gebruiker:
 
+.. TODO:tutorial-update: eigenlijk moet hier eerst en vooral de uitleg staan van wat een gebruiker is; dit is dan ook de definitie waar de term "cursus" naar linkt in de handleiding van Dodona
+
 Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebruikersprofiel <gebruikersprofiel>` beheren. Voor sommige acties heb je echter bijkomende :ref:`beheersrechten <beheersrechten>` nodig. Onder gebruikers onderscheiden we daarom :ref:`studenten <student>`, :ref:`lesgevers <lesgever>` en :ref:`beheerders <beheerder>` afhankelijk van de beheersrechten die aan hen :ref:`toegewezen <beheersrechten toewijzen>` werden. Als lesgever kan je zelf ook andere lesgevers aanduiden.
 
 .. _beheersmenu:
