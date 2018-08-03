@@ -206,15 +206,13 @@ In je :ref:`gebruikersprofiel <gebruikersprofiel>` kan je de **tijdzone** instel
 .. TODO:tutorial-missing: beschrijving van API tokens toevoegen
 
 
-.. _cursus:
-.. _oefeningenreeks:
 .. _cursus selecteren:
 .. _cursus navigeren:
 
 Navigeren naar een cursus
 -------------------------
 
-Cursusbeheerders kunnen **cursussen** opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in **oefeningenreeksen**. Als je voor een cursus :ref:`geregistreerd <cursus registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
+Cursusbeheerders kunnen :ref:`cursussen <cursus>` opbouwen uit :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Als je voor een cursus :ref:`geregistreerd <cursus registreren>` bent dan kan je binnen de cursus ook :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor de :ref:`oefeningen <oefening>`. Er zijn verschillende plaatsen waar je een cursus kunt selecteren:
 
 * Aan de linkerkant van je :ref:`startpagina <startpagina>` staan kaartjes van alle :ref:`cursussen <cursus>` waarvoor je :ref:`geregistreerd <cursus registreren>` bent, gegroepeerd per academiejaar. Gebruik de zoekbalk bovenaan de startpagina om te zoeken naar specifieke cursussen op basis van een cursusnaam, een naam van een lesgever of een academiejaar. Selecteer een cursus door op de gekleurde titelbalk van het kaartje van de cursus te drukken of door onderaan het kaartje op de knop :guilabel:`GA NAAR DEZE CURSUS` te drukken.
 
@@ -278,6 +276,8 @@ Na :ref:`selectie <cursus selecteren>` van een :ref:`cursus <cursus>` navigeer j
 Voor elke :ref:`oefeningenreeks <oefeningenreeks>` kan er door een cursusbeheerder optioneel een **deadline** ingesteld zijn die dan naast de naam van de oefening wordt weergegeven. Bij weergave van de deadline wordt rekening gehouden met de :ref:`tijdzone <gebruikersprofiel tijdzone>` uit je :ref:`gebruikersprofiel <gebruikersprofiel>`. Deadlines worden in het groen weergegeven als ze nog niet verstreken zijn, en in het rood als ze reeds verstreken zijn.
 
 Onder de naam van een :ref:`oefeningenreeks <oefeningenreeks>` staat optioneel een beschrijving, met daaronder een oplijsting van alle :ref:`oefeningen <oefening>` uit de reeks. De lijst toont voor elke oefening :ref:`statistieken <oefeningenreeks statistieken>` en je :ref:`status <oefening status>`. Vóór elke oefening in de lijst staat ook een :ref:`icoontje <oefening icoontje>` dat correspondeert met je status voor de oefening.
+
+.. TODO:feature-update: status van oefening waarvan de laatst ingediende oplossing nog in de wachtlijst staat of nog aan het uitvoeren is staat op verkeerd
 
 .. belangrijk::
 
