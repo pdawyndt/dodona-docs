@@ -131,7 +131,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     Een optionele beschrijving die gebruikers te zien krijgen bovenaan de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruik maken van :ref:`Markdown <markdown>`.
 
-    .. _mardown:
+    .. _markdown:
 
     .. important::
 
@@ -171,7 +171,7 @@ Als :ref:`cursusbeheer <cursusbeheerder>` kan je de :ref:`registratielink <regis
 
 .. TODO:screenshot-missing: screenshot van registratieverzoek dat gebruiker te zien krijgt als hij de registratielink volgt voor een cursus waarvoor hij nog niet geregistreerd was
 
-Als :ref:cursusbeheer <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
+Als :ref:`cursusbeheer <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
 
 .. image:: images/staff.registration_link.nl.png
 
@@ -350,7 +350,7 @@ Voor een oefeningenreeks kunnen de volgende eigenschappen ingesteld worden:
 
     Als er geen deadline wordt ingesteld voor de :ref:`oefeningenreeks <oefeningenreeks>` dan wordt er blijvend rekening gehouden met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` uit de oefeningenreeks.
 
-    Klik op het invulveld of druk op de kalenderknop om de datum en het tijdstip van de deadline in te stellen. Selecteer de deadline in de :ref:`tijdzone <gebruikersprofiel tijdzone>` die je hebt `ingesteld <gebruikersprofiel instellen>` in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Andere gebruikers krijgen de deadline te zien in de tijdzone die ze in hun gebruikersprofiel hebben ingesteld.
+    Klik op het invulveld of druk op de kalenderknop om de datum en het tijdstip van de deadline in te stellen. Selecteer de deadline in de :ref:`tijdzone <gebruikersprofiel tijdzone>` die je hebt :ref:`ingesteld <gebruikersprofiel instellen>` in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Andere gebruikers krijgen de deadline te zien in de tijdzone die ze in hun gebruikersprofiel hebben ingesteld.
 
     .. TODO:screenshot-missing: screenshot van uitgeklapte date picker waarbij de kalenderknop wordt aangeduid
 
