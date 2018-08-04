@@ -37,7 +37,7 @@ Als :ref:`lesgever <lesgever>` navigeer je naar het :ref:`gebruikersoverzicht <g
 
 .. _gebruikersoverzicht:
 
-In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <gebruiker voortgangsstatistieken>` opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke :ref:`lesgever <lesgever>` en :ref:`beheerder <beheerder>` staat een :ref:`icoontje <beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
+In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <gebruiker voortgangsstatistieken>` opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke :ref:`lesgever <lesgever>` en :ref:`beheerder <beheerder>` staat een :ref:`icoontje <gebruiker beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
 
 .. image:: images/staff.users.nl.png
 
@@ -83,7 +83,7 @@ Om sommige acties te kunnen uitvoeren op Dodona heb je bijkomende **beheersrecht
 
 .. image:: images/staff.user_edit_permission.nl.png
 
-.. _beheersrechten icoontje:
+.. _gebruiker beheersrechten icoontje:
 
 Aan gebruikers kunnen de volgende :ref:`beheersrechten <beheersrechten>` toegekend worden:
 
