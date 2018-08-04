@@ -538,8 +538,7 @@ In het :ref:`menu <oefeningenreeks menu>` van de :ref:`oefeningenreeks <oefening
     .. TODO:feature-update: bij elke student actieknop toevoegen om overzicht te krijgen van alle oplossingen die student in deze cursus heeft ingediend voor de oefeningen uit de oefeningenreeks
     .. TODO:feature-update: ellipsis toevoegen aan weergave van de namen van studenten en oefeningen
     .. TODO:feature-update: bij elke oefening actieknop toevoegen om overzicht te krijgen van alle oplossingen die studenten in deze cursus hebben ingediend voor deze oefening
-    .. TODO:feature-update: filteroptie toevoegen: alle gebruikers die geen oplossingen
-    ingediend hebben te verbergen
+    .. TODO:feature-update: filteroptie toevoegen: alle gebruikers die geen oplossingen ingediend hebben te verbergen
     .. TODO:feature-update: filteroptie toevoegen: cursusbeheerders verbergen
     .. TODO:feature-update: filteroptie toevoegen: wel/geen rekening houden met deadline van oefeningenreeks
     .. TODO:feature-update: sorteeroptie toevoegen: studenten alfabetisch rangschikken
