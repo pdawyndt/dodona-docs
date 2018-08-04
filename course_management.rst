@@ -1,10 +1,9 @@
+.. _cursus:
+.. _oefeningenreeks:
 .. _cursusbeheer:
 
 Cursusbeheer
 ============
-
-.. _cursus:
-.. _oefeningenreeks:
 
 Een **cursus** vormt een leerpad van :ref:`oefeningen` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
 
@@ -168,7 +167,7 @@ Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt a
 
 .. TODO:screenshot-missing: screenshot van de cursuspagina van een gesloten cursus die bezocht wordt zonder token
 
-Als :ref:cursusbeheer <cursusbeheerder>` kan je de :ref:`registratielink <registratielink>` delen om gebruikers uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als gebruikers de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Als ze nog niet geregistereerd waren dan krijgen ze bovendien meteen een verzoek om de zich voor de cursus te registreren.
+Als :ref:`cursusbeheer <cursusbeheerder>` kan je de :ref:`registratielink <registratielink>` delen om gebruikers uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als gebruikers de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Als ze nog niet geregistereerd waren dan krijgen ze bovendien meteen een verzoek om de zich voor de cursus te registreren.
 
 .. TODO:screenshot-missing: screenshot van registratieverzoek dat gebruiker te zien krijgt als hij de registratielink volgt voor een cursus waarvoor hij nog niet geregistreerd was
 
@@ -586,7 +585,7 @@ Het overzicht heeft nu ook een :ref:`menu <oefeningenreeks menu>` met filters en
 
     .. TODO:feature-missing: waarom ook geen filter voor meest recente oplossing per gebruiker (niet noodzakelijk correct); op zich lijkt de filter die nu aangeboden wordt een vrij vreemde keuze als enige filter
     .. TODO:feature-missing: waarom ook niet oplossingen voor de deadline van de oefeningenreeks wegfilteren
-    .. TODO:feature-missing: zorg ervoor dat de filtercriteria weergegeven worden bovenaan een overzicht; een aantal filtercriteria zullen vastliggen door de actie die naar het overzicht geleid heeft; daarbovenop kan de gebruiker bijkomende filters toepassen die mee in het filtergedeelte aangeboden worden; de zoekbalk kan dan mee opgenomen worden in het filtergedeelte
+    .. TODO:feature-missing: zorg ervoor dat de filtercriteria weergegeven worden bovenaan een overzicht; een aantal filtercriteria zullen vastliggen door de actie die naar het overzicht geleid heeft; daarbovenop kan de gebruiker bijkomende filters toepassen die mee in het filtergedeelte aangeboden worden; de zoekbalk kan dan mee opgenomen worden in het filtergedeelte; filteropties moeten dan niet meer via het menu aangeboden worden
 
 
 .. _overzicht oplossingen filter recentste correcte:
