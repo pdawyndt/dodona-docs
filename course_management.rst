@@ -134,9 +134,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
 
-Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren. Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
+Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
 
-.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop en de knop "Dodona" worden aangeduid
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de knop "Dodona" wordt aangeduid
+
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
+
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
 
 Na het aanmaken van de nieuwe cursus navigeer je naar de :ref:`cursuspagina`, waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker <cursusgebruiker>` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
 
@@ -144,23 +148,30 @@ Na het aanmaken van de nieuwe cursus navigeer je naar de :ref:`cursuspagina`, wa
 
 .. TODO:feature-missing: kopiëren van een bestaande cursus
 
+.. TODO:tutorial-missing: gebruikers herkennen dat ze een cursus kunnen beheren als ze het icoontje van cursusbeheerder zien staan in het kaartje van de cursus op hun startpagina of in het cursusoverzicht
 
-.. _cursuseigenschappen bewerken:
 
-Bewerken van een cursus
------------------------
+.. _cursus bewerken:
+.. _cursuseigenschappen aanpassen:
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
+Aanpassen van cursuseigenschappen
+---------------------------------
 
-.. image:: images/staff.course_edit.nl.png
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`cursuseigenschappen <cursuseigenschappen>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
 
-Druk op de afwerkknop in de rechterbovenhoek van het paneel om de :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
+.. TODO:screenshot-missing: screenshot van cursuspagina waarop de bewerkknop wordt aangeduid
+
+Druk op de :ref:`cursus` in de :ref:`navigatiebalk` om het aanpassen te annuleren.
+
+.. TODO:screenshot-missing: screenshot van cursus bewerken waarbij de cursus in de navigatiebalk wordt aangeduid
+
+Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
 
 .. image:: images/staff.course_edit_submit_link.nl.png
 
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
-Daardoor keer je terug naar de :ref:`cursuspagina` waar je kunt vaststellen dat de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` daar onmiddellijk van kracht zijn.
+Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar de :ref:`cursuspagina`, waar je kunt vaststellen dat de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` daar onmiddellijk van kracht zijn.
 
 .. image:: images/staff.course_after_edit.nl.png
 
