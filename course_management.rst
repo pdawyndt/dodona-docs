@@ -161,7 +161,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`cursuseigenschappen
 
 .. TODO:screenshot-missing: screenshot van cursuspagina waarop de bewerkknop wordt aangeduid
 
-Druk op de :ref:`cursus` in de :ref:`navigatiebalk` om het aanpassen te annuleren.
+Druk op de :ref:`cursus <cursus>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
 
 .. TODO:screenshot-missing: screenshot van cursus bewerken waarbij de cursus in de navigatiebalk wordt aangeduid
 
@@ -171,7 +171,7 @@ Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om 
 
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
-Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar de :ref:`cursuspagina`, waar je kunt vaststellen dat de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` daar onmiddellijk van kracht zijn.
+Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar de :ref:`cursuspagina`, waar je kunt vaststellen dat de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` onmiddellijk van toepassing zijn.
 
 .. image:: images/staff.course_after_edit.nl.png
 
