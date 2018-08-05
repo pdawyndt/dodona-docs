@@ -337,8 +337,8 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus
 
 .. _oefeningenreeks toevoegen:
 
-Toevoegen van een oefeningenreeks
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Toevoegen van oefeningenreeksen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`REEKS TOEVOEGEN` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
 
@@ -428,7 +428,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. TODO:feature-update: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
 
-.. _oefeningenreeks geheime link gebruiken:
+    .. _oefeningenreeks geheime link gebruiken:
 
     Als :ref:`cursusgebruikers <cursusgebruiker>` de :ref:`geheime link <oefeningenreeks geheime link>` van een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` gebruiken dan krijgen ze de oefeningenreeks toch te zien.
 
@@ -436,8 +436,8 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stuk van de oefeningenreeks
 
-.. _oefeningenreeks token vernieuwen:
-.. _oefeningenreeks geheime link vernieuwen:
+    .. _oefeningenreeks token vernieuwen:
+    .. _oefeningenreeks geheime link vernieuwen:
 
     Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd. Daardoor wordt een nieuw :ref:`token <oefeningenreeks token>` gegenereerd voor de oefeningenreeks en wordt het oude token onbruikbaar gemaakt. De geheime link wordt meteen ook aangepast aan het nieuwe token.
 
