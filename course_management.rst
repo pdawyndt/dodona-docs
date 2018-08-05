@@ -600,11 +600,11 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht
 
-    Druk op de naam van de gebruiker om naar haar profielpagina te navigeren. Druk op het icoontje
+    Druk op de naam van een gebruiker om naar de profielpagina van de gebruiker te navigeren.
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht waarop naam van gebruiker wordt aangeduid
 
-    Druk op een :ref:`icoontje <oefeningenreeks oefening indienstatus icoontje>` om te navigeren naar de :ref:`oplossing <oplossing>` die gebruikt werd om de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` te bepalen (als de gebruiker effectief een oplossing heeft :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
+    Druk op het :ref:`icoontje <oefeningenreeks oefening indienstatus icoontje>` van een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` om naar de :ref:`oplossing <oplossing>` te navigeren die gebruikt werd om de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` te bepalen (als de gebruiker effectief een oplossing heeft :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht waarop icoontje wordt aangeduid
 
@@ -629,13 +629,13 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 :guilabel:`Oplossingen herevalueren`
 
-    Herevalueert alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` voor die oplossingen opnieuw uitgevoerd zonder dat ze opnieuw ingediend worden. Daardoor behouden ze hun :ref:`tijdstip <oplossing tijdstip>` van indienen maar krijgen ze eventueel een nieuwe :ref:`status <oplossing status>`. Dat laatste kan zich bijvoorbeeld voordoen als ondertussen de configuratie van de oefeningen aangepast werd.
+    Herevalueert alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` voor die oplossingen opnieuw uitgevoerd zonder dat ze opnieuw ingediend worden. Daardoor behouden ze hun :ref:`tijdstip <oplossing tijdstip>` van indienen maar krijgen ze eventueel een nieuwe :ref:`status <oplossing status>`. Dat laatste kan zich voordoen als de configuratie van een oefening aangepast werd sinds de vorige beoordeling van een oplossing die voor de oefening ingediend werd.
 
     .. important::
 
-    Bij het :ref:`herevalueren <oefeningenreeks oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren zelf wel enige tijd duren.
+        Bij het :ref:`herevalueren <oefeningenreeks oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren zelf wel enige tijd duren.
 
-    Gebruikers krijgen geen melding van het platform dat hun oplossingen opnieuw geëvalueerd werden. Als je beslist om oplossingen te herevalueren is het dus belangrijk om gebruikers erop te wijzen dat de status kan gewijzigd zijn van oplossingen die ze eerder ingediend hadden.
+        Gebruikers krijgen geen melding van het platform dat hun oplossingen opnieuw geëvalueerd werden. Als je beslist om oplossingen te herevalueren is het dus belangrijk om gebruikers erop te wijzen dat de status kan gewijzigd zijn van oplossingen die ze eerder ingediend hadden.
 
 .. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden
 
@@ -677,3 +677,5 @@ Het overzicht heeft nu ook een :ref:`menu <oefeningenreeks menu>` met filters en
 
 .. TODO:feature-missing: toekennen van labels aan gebruikers binnen de cursus of binnen het plaform
 .. TODO:feature-missing: learning analytics van gebruikers binnen de cursus
+
+.. TODO:tutorial-missing: ergens moet nog vermeld worden dat cursusbeheerders individuele oplossingen die binnen de cursus ingediend werden kunnen laten herevalueren door op de oplossingspagina op de knop herevalueren te drukken; dit zou kunnen vervangen/aangevuld worden door een actieknop op een overzicht
