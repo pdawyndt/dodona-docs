@@ -629,36 +629,57 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 :guilabel:`Oplossingen herevalueren`
 
-    Herevalueert alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` voor die oplossingen opnieuw uitgevoerd zonder dat ze opnieuw ingediend worden. Daardoor behouden ze hun :ref:`tijdstip <oplossing tijdstip>` van indienen maar krijgen ze eventueel een nieuwe :ref:`status <oplossing status>`. Dat laatste kan zich voordoen als de configuratie van een oefening aangepast werd sinds de vorige beoordeling van een oplossing die voor de oefening ingediend werd.
+    :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
+
+.. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden; dit maak het vorige menu-item overbodig, omdat de oplossingen dan via het menu van het overzicht kunnen geherevalueerd worden
+
+
+.. _oplossingen beheren:
+
+Beheren van oplossingen
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _oplossing herevalueren:
+
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je een :ref:`oplossing <oplossing>` herevalueren als ze binnen de :ref:`cursus <cursus>` werd :ref:`ingediend <oplossing indienen>` voor een :ref:`oefening <oefening>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw ingediend wordt. Op die manier blijft het :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
+
+Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om de :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`.
+
+.. TODO:screenshot-missing: weergave van feedbackpagina waarop de herhaalknop wordt aangeduid
 
     .. important::
 
-        Bij het :ref:`herevalueren <oefeningenreeks oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren zelf wel enige tijd duren.
+        Bij het :ref:`herevalueren <oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren wel langer duren.
 
-        Gebruikers krijgen geen melding van het platform dat hun oplossingen opnieuw geëvalueerd werden. Als je beslist om oplossingen te herevalueren is het dus belangrijk om gebruikers erop te wijzen dat de status kan gewijzigd zijn van oplossingen die ze eerder ingediend hadden.
+        Gebruikers krijgen geen melding van het platform als hun :ref:`oplossingen <oplossing>` :ref:`geherevalueerd <oplossingen herevalueren>` worden. Als je beslist om oplossingen te herevalueren, is het belangrijk om gebruikers te informeren dat er zowel wijzigingen kunnen zijn van de :ref:`status <oplossing status>` van :ref:`oplossingen <oplossing>` die ze vroeger :ref:`ingediend <oplossing indienen>` hebben als van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` in de :ref:`oefeningenreeksen <oefeningenreeks>` van de cursus.
 
-.. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden
+.. _cursusbeheerder oplossingen overzicht:
 
-Als je als :ref:`cursusbeerder <cursusbeerder>` op de oplossingenknop drukt aan de rechterkant van een :ref:`oefening <oefening>` in de :ref:`oefeningenreeks <oefeningenreeks>`, dan krijg je een overzicht van alle :ref:`oplossingen <oplossing>` die door cursusgebruikers :ref:`ingediend <oplossing indienen>` werden voor de oefening.
+.. TODO:feature-missing: link in sidebar die overzicht geeft van alle oplossingen die ingediend werden (bij cursusgebruikers zijn dit hun eigen oplossingen over alle cursussen heen, bij cursusbeheerders wordt dit aangevuld met oplossingen van alle gebruikers van cursussen die ze beheren; bij zeus zijn dit alle oplossingen)
+.. TODO:feature-missing: link in navigatiebalk van cursus die overzicht geeft van alle oplossingen die in cursus ingediend werden (bij cursusgebruikers zijn dit enkel hun eigen oplossingen)
+.. TODO:feature-missing: link in menu van oefeningenreeks die overzicht geeft van alle oplossingen die ingediend werden voor oefeningen uit de oefeningenreeks (bij cursusgebruikers zijn dit enkel hun eigen oplossingen); duid op één of andere manier aan welke oefeningen voor/na de deadline werden ingediend, bijvoorbeeld door oplossingen die na de deadline ingediend werden in het grijs te zetten
+.. TODO:feature-update: link aan rechterkant van oefening in oefeningenreeks die overzicht geeft van alle oplossingen die ingediend werden voor die oefening (bij cursusgebruikers zijn dit enkel hun eigen oplossingen); duid op één of andere manier aan welke oefeningen voor/na de deadline werden ingediend, bijvoorbeeld door oplossingen die na de deadline ingediend werden in het grijs te zetten
 
-.. TODO:screenshot-missing: weergave van oefeningenreeks met aanduiding van de oplossingenknop
+Als :ref:`cursusbeheerder <cursusbeheerder>` zie je de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>` in elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de :ref:`cursus <cursus>`. Daarom bevat het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
-Het overzicht bevat een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Als je de zoekbalk aan de bovenkant van het overzicht gebruikt om te zoeken naar specifieke oplossingen, dan wordt ook gezocht gebruikersnamen.
+.. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
 
-.. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de zoekbalk gebruikt wordt om te zoeken naar oplossingen van een gebruiker
+.. TODO:feature-update: vervang de gebruikersnaam in het overzicht door de naam van de gebruiker; eigenlijk kunnen we in alle overzichten de gebruikersnamen vervangen door de namen van de gebruikers (met ellipsis bij de weergave); op die manier worden gebruikersnamen vermoedelijk niet meer gebruikt in Dodona, wat natuurlijke evolutie is van de migratie naar meerdere identity providers; gebruikersnamen hebben immers enkel lokaal binnen de onderwijs- of onderzoeksinstelling een betekenis; elke object (gebruiker, cursus, oefeningenreeks, oplossing (met icoontje)) zou een korte omschrijving moeten hebben op basis van de eigenschappen (bv. naam, academiejaar, ...) die kan gebruikt worden om naar het object te linken en die een link toevoegt naar het object als de gebruiker gemachtigd is om het te zien
 
-.. TODO:feature-update: vervang de gebruikersnaam in het overzicht door de naam van de gebruiker; eigenlijk kunnen we in alle overzichten de gebruikersnamen vervangen door de namen van de gebruikers (met ellipsis bij de weergave); op die manier worden gebruikersnamen vermoedelijk niet meer gebruikt in Dodona, wat natuurlijke evolutie is van de migratie naar meerdere identity providers; gebruikersnamen hebben immers enkel lokaal binnen de onderwijs- of onderzoeksinstelling een betekenis
+Als je gebruikmaakt van de zoekbalk aan de bovenkant van het :ref:`overzicht <cursusbeheerder oplossingen overzicht>` om te zoeken naar specifieke :ref:`oplossingen <oplossing>`, dan wordt ook gezocht op de :ref:`naam <gebruiker eigenschappen>` van gebruikers.
+
+.. TODO:screenshot-missing: weergave van overzicht van oplossingen uit een cursus waarin de zoekbalk gebruikt wordt om te zoeken naar oplossingen met de naam van een gebruiker
+
 .. TODO:feature-update: nagaan of zowel op gebruikersnaam als op de naam van de gebruiker gezocht wordt
 
-.. TODO:tutorial-missing: weergave van alle ingediende oplossingen voor een oefening heeft extra filteropties
-.. TODO:feature-update: term "Filter opties" moet in één woord geschreven worden; kan misschien beperkt worden tot "Filters" omwille van de consistentie, want anders zou er ook moeten staan "Actie-opties"
-.. TODO:feature-update: menu met filteropties en acties wordt maar deels weergegeven als er bijvoorbeeld nog geen oplossingen ingediend zijn voor de oefening; Z-level van menu verhogen
-
-.. _overzicht oplossingen menu cursusbeheerder:
+.. _cursusbeheerder oplossingen overzicht menu:
 
 Het overzicht heeft nu ook een :ref:`menu <oefeningenreeks menu>` met filters en acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`:
 
-.. _overzicht oplossingen filter recentste correcte:
+.. TODO:feature-update: term "Filter opties" moet in één woord geschreven worden; kan misschien beperkt worden tot "Filters" omwille van de consistentie, want anders zou er ook moeten staan "Actie-opties"
+.. TODO:feature-update: menu met filteropties en acties wordt maar deels weergegeven als er bijvoorbeeld nog geen oplossingen ingediend zijn voor de oefening; Z-level van menu verhogen
+
+.. _cursusbeheerder oplossingen overzicht filter recentste correcte:
 
 :guilabel:`Meest recente correcte oplossing per gebruiker` (filter)
 
@@ -668,14 +689,11 @@ Het overzicht heeft nu ook een :ref:`menu <oefeningenreeks menu>` met filters en
     .. TODO:feature-missing: waarom ook niet oplossingen voor de deadline van de oefeningenreeks wegfilteren
     .. TODO:feature-missing: zorg ervoor dat de filtercriteria weergegeven worden bovenaan een overzicht; een aantal filtercriteria zullen vastliggen door de actie die naar het overzicht geleid heeft; daarbovenop kan de gebruiker bijkomende filters toepassen die mee in het filtergedeelte aangeboden worden; de zoekbalk kan dan mee opgenomen worden in het filtergedeelte; filteropties moeten dan niet meer via het menu aangeboden worden
 
-
-.. _overzicht oplossingen filter recentste correcte:
+.. _cursusbeheerder oplossingen herevalueren:
 
 :guilabel:`Oplossingen herevalueren` (actie)
 
-    Herevalueert alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor de :ref:`oefeningen <oefening>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` voor die oplossingen opnieuw uitgevoerd zonder dat ze opnieuw ingediend worden. Daardoor behouden ze hun :ref:`tijdstip <oplossing tijdstip>` van indienen maar krijgen ze eventueel een nieuwe :ref:`status <oplossing status>`. Dat laatste kan zich bijvoorbeeld voordoen als ondertussen de configuratie van de oefeningen aangepast werd.
+    Herevalueert alle :ref:`oplossingen <oplossing>` uit het overzicht.
 
 .. TODO:feature-missing: toekennen van labels aan gebruikers binnen de cursus of binnen het plaform
 .. TODO:feature-missing: learning analytics van gebruikers binnen de cursus
-
-.. TODO:tutorial-missing: ergens moet nog vermeld worden dat cursusbeheerders individuele oplossingen die binnen de cursus ingediend werden kunnen laten herevalueren door op de oplossingspagina op de knop herevalueren te drukken; dit zou kunnen vervangen/aangevuld worden door een actieknop op een overzicht
