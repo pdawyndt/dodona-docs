@@ -1,15 +1,16 @@
-.. _cursus:
-.. _oefeningenreeks:
 .. _cursusbeheer:
 
 Cursusbeheer
 ============
 
-Een **cursus** vormt een leerpad van :ref:`oefeningen` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
+.. _cursus:
+.. _oefeningenreeks:
 
-Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`. Hij wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van een nieuwe cursus. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
+Een **cursus** wordt :ref:`opgebouwd <leerpad opbouwen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
 
-Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <cursus>` een leerpad uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die cursusgebruikers :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`. Hij wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursussen die hij aanmaakt. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
+
+Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad opbouwen>` binnen een :ref:`cursus <cursus>` een :ref:`leerpad <leerpad>` uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die cursusgebruikers :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
 
 
 .. _cursus aanmaken:
@@ -17,54 +18,31 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` stippelt binnen een :ref:`cursus <c
 Aanmaken van een cursus
 -----------------------
 
-Als :ref:`lesgever <lesgever>` maak je een nieuwe :ref:`cursus <cursus>` aan door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` maak je een nieuwe :ref:`cursus <cursus>` door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+
+.. TODO:feature-missing: lesgevers zouden evengoed ook een nieuwe cursus kunnen aanmaken vanop hun startpagina; deze ziet er bovendien in de toekomst vrij gelijkaardig uit aan het cursusoverzicht
 
 .. image:: images/staff.courses_new_link.nl.png
 
-.. _cursus aanmaken formulier:
+.. _cursuseigenschappen instellen:
 
-Je krijgt een formulier te zien waarin je de :ref:`cursuseigenschappen <cursuseigenschappen>` van de nieuwe cursus kunt :ref:`instellen <cursuseigenschappen instellen>`.
+In het paneel :guilabel:`Nieuwe cursus` kan je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` opgeven.
 
 .. image:: images/staff.new_course.nl.png
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
-Druk op de afwerkknop in de rechterbovenhoek van het formulier om de nieuwe :ref:`cursus <cursus>` effectief aan te maken. Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch voor de cursus :ref:`geregistreerd <registreren>` bent en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>` van de cursus.
-
-.. image:: images/staff.created_course.nl.png
-
-.. TODO:feature-missing: kopiëren van een bestaande cursus
-
-
-.. _cursuseigenschappen instellen:
-
-Instellen van cursuseigenschappen
----------------------------------
-
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
-
-.. image:: images/staff.course_edit.nl.png
-
 .. _cursuseigenschappen:
 
-Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** kunt instellen:
+Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worden:
 
-.. _cursuseigenschap naam:
+.. _cursus naam:
 
 :guilabel:`Naam`
 
     De naam van de :ref:`cursus <cursus>`.
 
-.. _cursuseigenschap lesgever:
-
-:guilabel:`Lesgever`
-
-    De namen van de lesgevers van de :ref:`cursus <cursus>`. Gebruik een komma om namen te scheiden als er meerdere lesgevers zijn.
-
-    .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
-    .. TODO:feature-update: overwegen om cursusgebruikers te selecteren als lesgevers van een cursus; dan kunnen hun namen aan hun profielpagina gekoppeld worden
-
-.. _cursuseigenschap academiejaar:
+.. _cursus academiejaar:
 
 :guilabel:`Academiejaar`
 
@@ -73,7 +51,16 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
     .. TODO:feature-update: verplaats academiejaar boven lesgever, omdat de naam en het academiejaar altijd in één adem genoemd worden
     .. TODO:feature-update: vervang academiejaar (typisch voor cursusaanbod in hoger onderwijs in België) door meer generieke oplossing: optionele start- en einddatum waarbinnen de cursus wordt aangeboden; de starpagina en het cursusoverzicht kunnen dan ingedeeld worden volgens lopende cursussen, toekomstige cursussen en afgelopen cursussen; zonder startdatum wordt de cursus altijd aangeboden voor de einddatum; zonder einddatum wordt de cursus altijd aangeboden na de startdatum; zonder start- en einddatum wordt de cursus altijd aangeboden
 
-.. _cursuseigenschap zichtbaarheid:
+.. _cursus lesgever:
+
+:guilabel:`Lesgever`
+
+    De namen van de lesgevers van de :ref:`cursus <cursus>`. Gebruik een komma om namen te scheiden als er meerdere lesgevers zijn.
+
+    .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
+    .. TODO:feature-update: overwegen om cursusgebruikers te selecteren als lesgevers van een cursus; dan kunnen hun namen aan hun profielpagina gekoppeld worden
+
+.. _cursus zichtbaarheid:
 
 :guilabel:`Zichtbaarheid`
 
@@ -84,8 +71,8 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
     .. TODO:tutorial-update: verborgen cursussen vereisen een token om naar de cursuspagina te kunnen navigeren; zonder dit token wordt een waarschuwing getoond die we hier ook moeten omschrijven; dit token zit bijvoorbeeld in de registratielink
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
-.. _registratieprocedure:
-.. _cursuseigenschap registratie:
+.. _cursus registratie:
+.. _cursus registratieprocedure:
 
 :guilabel:`Registratie`
 
@@ -102,16 +89,13 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
         - registratieprocedure
         - beschrijving
 
-
       * - :guilabel:`Open`
         - open
         - alle gebruikers kunnen zich :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
 
-
       * - :guilabel:`Gemodereerd`
         - gemodereerd
         - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
-
 
       * - :guilabel:`Gesloten`
         - gesloten
@@ -125,7 +109,7 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
-.. _cursuseigenschap beschrijving:
+.. _cursus beschrijving:
 
 :guilabel:`Beschrijving`
 
@@ -140,19 +124,39 @@ Je krijgt een formulier te zien waarin je de volgende **cursuseigenschappen** ku
 
     De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
-.. _cursuseigenschap registratielink:
+.. _cursus registratielink:
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursuseigenschap zichtbaarheid>` nadat de registratielink gedeeld werd.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
 
-Druk op de afwerkknop in de rechterbovenhoek van het formulier om de :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
+
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
+
+Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <registreren>` bent als :ref:`cursusgebruiker` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
+
+.. image:: images/staff.created_course.nl.png
+
+.. TODO:feature-missing: kopiëren van een bestaande cursus
+
+
+.. _cursuseigenschappen bewerken:
+
+Instellen van cursuseigenschappen
+---------------------------------
+
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
+
+.. image:: images/staff.course_edit.nl.png
+
+Druk op de afwerkknop in de rechterbovenhoek van het paneel om de :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
 
 .. image:: images/staff.course_edit_submit_link.nl.png
 
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
-Daarna keer je terug naar de :ref:`cursuspagina <cursuspagina>` en worden de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` van kracht.
+Daardoor keer je terug naar de :ref:`cursuspagina` waar je kunt vaststellen dat de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` daar onmiddellijk van kracht zijn.
 
 .. image:: images/staff.course_after_edit.nl.png
 
@@ -183,7 +187,7 @@ Druk op de kopieerknop naast de :ref:`registratielink <registratielink>` om de l
 
 .. _registratielink vernieuwen:
 
-Een :ref:`verborgen <cursuseigenschap zichtbaarheid>` :ref:`cursus <cursus>` kan enkel gevonden worden door gebruikers die de :ref:`registratielink <registratielink>` kennen. Nadat de registratielink gedeeld werd kan je bij het :ref:`instellen <cursuseigenschappen instellen>` van de :ref:`eigenschappen <cursuseigenschappen>` van de cursus echter een nieuwe registratielink laten genereren om daarmee de cursus opnieuw te verbergen. Druk daarvoor op de vernieuwknop naast de registratielink.
+Een :ref:`verborgen <cursus zichtbaarheid>` :ref:`cursus <cursus>` kan enkel gevonden worden door gebruikers die de :ref:`registratielink <registratielink>` kennen. Nadat de registratielink gedeeld werd kan je bij het :ref:`instellen <cursuseigenschappen instellen>` van de :ref:`eigenschappen <cursuseigenschappen>` van de cursus echter een nieuwe registratielink laten genereren om daarmee de cursus opnieuw te verbergen. Druk daarvoor op de vernieuwknop naast de registratielink.
 
 .. image:: images/registration_link_renew.nl.png
 
@@ -416,7 +420,7 @@ Voor een oefeningenreeks kunnen de volgende eigenschappen ingesteld worden:
 .. _oefeningenreeks token vernieuwen:
 .. _oefeningenreeks geheime link vernieuwen:
 
-    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursuseigenschap zichtbaarheid verborgen>` nadat de geheime link gedeeld werd.
+    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd.
 
     .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
 
