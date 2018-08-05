@@ -6,11 +6,11 @@ Cursusbeheer
 .. _cursus:
 .. _oefeningenreeks:
 
-Een **cursus** wordt :ref:`opgebouwd <leerpad opbouwen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
+Een **cursus** wordt :ref:`opgebouwd <leerpad opbouwen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen <oefeningen>` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
 
-Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>`. Hij wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van de cursussen die hij aanmaakt. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
 
-Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad opbouwen>` binnen een :ref:`cursus <cursus>` een :ref:`leerpad <leerpad>` uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die cursusgebruikers :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
+Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad opbouwen>` binnen een :ref:`cursus <cursus>` een :ref:`leerpad <leerpad>` uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
 
 
 .. _cursus aanmaken:
@@ -26,7 +26,7 @@ Als :ref:`lesgever <lesgever>` maak je een nieuwe :ref:`cursus <cursus>` door op
 
 .. _cursuseigenschappen instellen:
 
-In het paneel :guilabel:`Nieuwe cursus` kan je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` opgeven.
+In het paneel :guilabel:`Nieuwe cursus` kan je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` instellen.
 
 .. image:: images/staff.new_course.nl.png
 
@@ -46,7 +46,11 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Academiejaar`
 
-    Het academiejaar waarin de :ref:`cursus <cursus>` wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina <startpagina>` en in het :ref:`cursusoverzicht <cursusoverzicht>`. Op Dodona wordt de naam van een cursus altijd in één adem genoemd met het academiejaar waarin de cursus wordt aangeboden.
+    Het academiejaar waarin de :ref:`cursus <cursus>` wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina <startpagina>` en in het :ref:`cursusoverzicht <cursusoverzicht>`.
+
+     .. tip::
+
+        Als op het platform naar een :ref:`cursus <cursus>` wordt verwezen dan wordt de :ref:`naam <cursus naam>` van de cursus altijd in één adem genoemd met het :ref:`academiejaar <cursus academiejaar>` waarin de cursus wordt aangeboden. Op die manier kunnen cursussen die jaarlijks aangeboden worden makkelijk van elkaar onderscheiden worden.
 
     .. TODO:feature-update: verplaats academiejaar boven lesgever, omdat de naam en het academiejaar altijd in één adem genoemd worden
     .. TODO:feature-update: vervang academiejaar (typisch voor cursusaanbod in hoger onderwijs in België) door meer generieke oplossing: optionele start- en einddatum waarbinnen de cursus wordt aangeboden; de starpagina en het cursusoverzicht kunnen dan ingedeeld worden volgens lopende cursussen, toekomstige cursussen en afgelopen cursussen; zonder startdatum wordt de cursus altijd aangeboden voor de einddatum; zonder einddatum wordt de cursus altijd aangeboden na de startdatum; zonder start- en einddatum wordt de cursus altijd aangeboden
@@ -64,7 +68,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Zichtbaarheid`
 
-    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt of :ref:`niet-geregistreerde <registreren>` gebruikers zelf de :ref:`cursus <cursus>` kunnen :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` als je de cursus wel of niet wilt laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen gebruikers zich enkel voor de cursus registreren als je hen :ref:`uitnodigt <cursusgebruikers uitnodigen>` met een :ref:`registratielink <registratielink>`.
+    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt of :ref:`niet-geregistreerde <cursus registreren>` gebruikers zelf de :ref:`cursus <cursus>` kunnen :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` als je de cursus wel of niet wilt laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen gebruikers zich enkel voor de cursus registreren als je hen :ref:`uitnodigt <cursusgebruikers uitnodigen>` met een :ref:`registratielink <registratielink>`.
 
     .. TODO:tutorial-update: hier moet uitleg die correspondeert met de bescherming om naar een cursus te navigeren zonder tokenlink
     .. TODO:tutorial-update: wie kan de cursus wel/niet zien in het cursusoverzicht? kunnen lesgevers verborgen cursussen zien?
@@ -76,7 +80,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratie`
 
-    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt de **registratieprocedure** waarmee gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <registreren>`:
+    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt de **registratieprocedure** waarmee gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`:
 
     .. _open registratieprocedure:
     .. _gemodereerde registratieprocedure:
@@ -91,21 +95,21 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
       * - :guilabel:`Open`
         - open
-        - alle gebruikers kunnen zich :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
+        - alle gebruikers kunnen zich :ref:`registreren <cursus registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
 
       * - :guilabel:`Gemodereerd`
         - gemodereerd
-        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
+        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <cursus registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
 
       * - :guilabel:`Gesloten`
         - gesloten
-        - gebruikers kunnen zich niet meer :ref:`registreren <registreren>` voor de :ref:`cursus <cursus>`
+        - gebruikers kunnen zich niet meer :ref:`registreren <cursus registreren>` voor de :ref:`cursus <cursus>`
 
           .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
     .. important::
 
-        Als je deze :ref:`cursuseigenschap <cursuseigenschap>` aanpast dan blijven bestaande :ref:`registraties <registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
+        Als je deze :ref:`cursuseigenschap <cursuseigenschap>` aanpast dan blijven bestaande :ref:`registraties <cursus registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
@@ -113,16 +117,16 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die gebruikers te zien krijgen bovenaan de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruik maken van :ref:`Markdown <markdown>`.
+    Een optionele beschrijving die gebruikers te zien krijgen bovenaan de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
     .. _markdown:
 
     .. important::
 
-    Markdown
-    ^^^^^^^^
+        Markdown
+        ^^^^^^^^
 
-    De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
+        De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
 .. _cursus registratielink:
 
@@ -134,7 +138,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cu
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
 
-Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <registreren>` bent als :ref:`cursusgebruiker` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
+Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
 
 .. image:: images/staff.created_course.nl.png
 
@@ -201,7 +205,7 @@ Een :ref:`verborgen <cursus zichtbaarheid>` :ref:`cursus <cursus>` kan enkel gev
 Beheren van cursusgebruikers
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
+Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
 
 .. image:: images/staff.course_users.nl.png
 
@@ -233,10 +237,10 @@ In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :r
     - groep
 
   * - :guilabel:`Geregistreerd`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <registreren>` zijn voor de :ref:`cursus <cursus>`
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <cursus registreren>` zijn voor de :ref:`cursus <cursus>`
 
   * - :guilabel:`Uitgeschreven`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn voor de cursus
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <cursus registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn voor de cursus
 
   * - :guilabel:`Op de wachtlijst`
     - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
@@ -267,7 +271,7 @@ Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` he
 
   * - :guilabel:`Registratieverzoeken`
     - .. image:: images/staff_registration_icons/approve.png
-    - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <registreren>` wordt voor de cursus
+    - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <cursus registreren>` wordt voor de cursus
 
   * - :guilabel:`Registratieverzoeken`
     - .. image:: images/staff_registration_icons/decline.png
@@ -285,7 +289,7 @@ Aanduiden van cursusbeheerders
 
 .. _cursusbeheerder:
 
-Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
+Onder de :ref:`geregistreerde <cursus registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
 
 In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
 
@@ -434,7 +438,7 @@ Voor een oefeningenreeks kunnen de volgende eigenschappen ingesteld worden:
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruik maken van :ref:`Markdown <markdown>`.
+    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
 Druk op de afwerkknop in de rechterbovenhoek van het :ref:`formulier <oefeningenreeks eigenschappen instellen>` om effectief de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
 
