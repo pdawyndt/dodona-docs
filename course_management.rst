@@ -119,6 +119,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
+.. _markdown:
 .. _cursus beschrijving:
 
 :guilabel:`Beschrijving`
@@ -126,8 +127,6 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
     Een optionele beschrijving die bovenaan de :ref:`cursuspagina <cursuspagina>` wordt weergegeven. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
     .. important::
-
-        .. _markdown:
 
         De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
@@ -413,6 +412,8 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     :guilabel:`Verborgen`
 
+        .. _oefeningenreeks weergave verborgen:
+
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
 
         .. TODO:screenshot-missing: screenshot van weergave van verborgen oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
@@ -420,6 +421,8 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
     .. _oefeningenreeks zichtbaarheid gesloten:
 
     :guilabel:`Gesloten`
+
+        .. _oefeningenreeks weergave gesloten:
 
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
 
@@ -466,7 +469,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
+    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks in het :ref:`leerpad <leerpad>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oefeningenreeks` om de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` effectief aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
 
@@ -535,7 +538,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel om de koppeling van 
 
 .. TODO:screenshot-missing: screenshot van formulier voor het bewerken van de oefeningen van een oefeningenreeks waarin de afwerkknop wordt aangeduid
 
-Na het afwerken navigeer je terug naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
+Na het afwerken navigeer je terug naar de ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
 
 
 .. _oefeningenreeks beheren:
@@ -545,11 +548,32 @@ Beheren van oefeningenreeksen
 
 .. _oefeningenreeks menu cursusbeheerder:
 
-In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeningenreeks>` vinden :ref:`cursusbeheerders <cursusbeheerder>` enkele bijkomende opties die corresponderen met acties die voor hen voorbehouden zijn:
+In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeningenreeks>` staan enkele bijkomende opties die corresponderen met acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`:
 
 .. _oefeningenreeks bewerken:
+.. _oefeningenreeks eigenschappen aanpassen:
 
-    Toont een pagina waarop je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de :ref:`oefeningenreeks <oefeningenreeks>` kunt :ref:`instellen <oefeningenreeks eigenschappen instellen>` en de :ref:`oefeningen <oefening>` die aan de oefeningenreeks :ref:`gekoppeld <oefeningenreeks oefeningen> zijn kunt :ref:`aanpassen <oefeningenreeks oefeningen koppelen>`.
+:guilabel:`Reeks bewerken`
+
+    Toont een pagina waarop de :ref:`eigenschappen <oefeningenreeks eigenschappen>` en de :ref:`koppeling <oefeningenreeks oefeningen koppelen>` van :ref:`oefeningen <oefening>` kunnen aangepast worden.
+
+    .. TODO:screenshot-missing: screenshot van pagina waarop instellingen van oefeningenreeks kunnen gewijzigd worden
+
+    .. TODO:feature-update: ook hier zou het instellen van de eigenschappen en het koppelen van oefeningen moeten ontkoppeld worden
+
+    .. _oefeningenreeks eigenschappen aanpassen annuleren:
+
+    Druk op de :ref:`oefeningenreeks <oefeningenreeks>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
+
+    .. TODO:screenshot-missing: screenshot van oefeningenreeks bewerken waarbij de oefeningenreeks in de navigatiebalk wordt aangeduid
+
+    .. _oefeningenreeks eigenschappen aanpassen afwerken:
+
+    Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om de nieuwe :ref:`eigenschappen <oefeningenreeks eigenschappen>` effectief in te stellen.
+
+    .. TODO:screenshot-missing: screenshot van oefeningenreeks bewerken waarbij de afwerkknop wordt aangeduid
+
+    Na het :ref:`aanpassen <oefeningenreeks eigenschappen aanpassen>` navigeer je terug naar de :ref:`oefeningenreeks` in het :ref:`leerpad <leerpad>`, waar de nieuwe :ref:`eigenschappen <oefeningenreeks eigenschappen>` onmiddellijk van toepassing zijn.
 
 .. _oefeningenreeks verwijderen:
 
@@ -615,7 +639,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 .. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden
 
-Als je als :ref:`cursusbeerder <cursusbeerder>` op de oplossingenknop drukt aan de rechterkant van een :ref:`oefening <oefening>` in de :ref:`weergave <oefeningenreeks weergeven>` van een :ref:`oefeningenreeks <oefeningenreeks>`, dan krijg je een overzicht van alle :ref:`oplossingen <oplossing>` die door cursusgebruikers :ref:`ingediend <oplossing indienen>` werden voor de oefening.
+Als je als :ref:`cursusbeerder <cursusbeerder>` op de oplossingenknop drukt aan de rechterkant van een :ref:`oefening <oefening>` in de :ref:`oefeningenreeks <oefeningenreeks>`, dan krijg je een overzicht van alle :ref:`oplossingen <oplossing>` die door cursusgebruikers :ref:`ingediend <oplossing indienen>` werden voor de oefening.
 
 .. TODO:screenshot-missing: weergave van oefeningenreeks met aanduiding van de oplossingenknop
 
