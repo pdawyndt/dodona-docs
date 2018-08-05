@@ -152,12 +152,13 @@ Na het aanmaken van de nieuwe cursus navigeer je naar de :ref:`cursuspagina`, wa
 
 
 .. _cursus bewerken:
+
+Bewerken van een cursus
+-----------------------
+
 .. _cursuseigenschappen aanpassen:
 
-Aanpassen van cursuseigenschappen
----------------------------------
-
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`cursuseigenschappen <cursuseigenschappen>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
 
 .. TODO:screenshot-missing: screenshot van cursuspagina waarop de bewerkknop wordt aangeduid
 
@@ -326,24 +327,31 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 
 
 .. _leerpad:
+.. _leerpad weergave:
 .. _leerpad uitstippelen:
 
 Uitstippelen van een leerpad
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je een **leerpad** uitstippelen voor de :ref:`cursus <cursus>`. Het leerpad bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor de :ref:`oefeningen <oefeningen>` uit de oefeningenreeks.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`. Het leerpad wordt op de :ref:`cursuspagina <cursuspagina>` weergegeven onder de hoofding :guilabel:`Oefeningenreeksen`.
+
+.. TODO:tutorial-missing: plaats hier de info over de manier waarop de oefeningenreeksen worden weergegeven
+.. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
+
+Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor :ref:`oefeningen <oefening>` uit de oefeningenreeks.
 
 .. _oefeningenreeks toevoegen:
 
-De :ref:`oefeningenreeksen <oefeningenreeks>` van een :ref:`cursus <cursus>` worden opgelijst onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Druk op de knop :guilabel:`REEKS TOEVOEGEN` om een nieuwe oefeningenreeks aan het :ref:`leerpad <leerpad>` toe te voegen.
+Toevoegen van een oefeningenreeks
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
+Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`REEKS TOEVOEGEN` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
 
 .. TODO:screenshot-missing: screenshot van cursuspagina waarop al een aantal oefeningenreeksen te zien zijn, en waar de knop "REEKS TOEVOEGEN" wordt aangeduid
 
 .. _oefeningenreeks eigenschappen instellen:
 
-Je krijgt het formulier :guilabel:`Nieuwe oefeningenreeks` te zien waarin je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` kunt instellen.
+In het paneel :guilabel:`Nieuwe oefeningenreeks` stel je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` in.
 
 .. TODO:feature-update: vervang de titel "Reeks aanmaken" door de titel "Nieuwe oefeningenreeks"
 
@@ -351,7 +359,7 @@ Je krijgt het formulier :guilabel:`Nieuwe oefeningenreeks` te zien waarin je de 
 
 .. _oefeningenreeks eigenschappen:
 
-Voor een oefeningenreeks kunnen de volgende eigenschappen ingesteld worden:
+Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschappen ingesteld worden:
 
 .. TODO:feature-update: cursus waaraan een oefeningenreeks gekoppeld is kan op dit moment nog ingesteld worden, maar dat zou niet mogen; deze eigenschap kan eventueel wel read-only weergegeven worden in het formulier zodat je ziet aan welke cursus de reeks gekoppeld is
 
