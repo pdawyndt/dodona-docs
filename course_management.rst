@@ -74,11 +74,32 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Zichtbaarheid`
 
-    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt of :ref:`niet-geregistreerde <cursus registreren>` gebruikers zelf de :ref:`cursus <cursus>` kunnen :ref:`selecteren <cursus selecteren>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Kies :guilabel:`Zichtbaar` of :guilabel:`Verborgen` als je de cursus wel of niet wilt laten oplijsten in het cursusoverzicht. Als je :guilabel:`Verborgen` kiest dan kunnen gebruikers zich enkel voor de cursus registreren als je hen :ref:`uitnodigt <cursusgebruikers uitnodigen>` met een :ref:`registratielink <registratielink>`.
+    De zichtbaarheid bepaalt of :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursus <cursus>` kunnen zien. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
 
-    .. TODO:tutorial-update: hier moet uitleg die correspondeert met de bescherming om naar een cursus te navigeren zonder tokenlink
-    .. TODO:tutorial-update: wie kan de cursus wel/niet zien in het cursusoverzicht? kunnen lesgevers verborgen cursussen zien?
-    .. TODO:tutorial-update: verborgen cursussen vereisen een token om naar de cursuspagina te kunnen navigeren; zonder dit token wordt een waarschuwing getoond die we hier ook moeten omschrijven; dit token zit bijvoorbeeld in de registratielink
+    .. TODO:tutorial-update: nagaan of bovenstaande geldt voor alle gebruikers of enkel voor niet-geregistreerde gebruikers
+
+    .. _cursus zichtbaar:
+
+    :guilabel:`Zichtbaar`
+
+        Alle gebruikers zien de :ref:`cursus <cursus>` in het :ref:`cursusoverzicht <cursusoverzicht>` en kunnen de :ref:`cursuspagina <cursuspagina>` zien.
+
+    .. _cursus verborgen:
+
+    :guilabel:`Verborgen`
+
+        Alleen :ref:`cursusbeheerders <cursusbeheerders>` zien de :ref:`cursus <cursus>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Er staat een icoontje bij om hen er op te wijzen dat andere gebruikers de cursus daar niet kunnen zien.
+
+        .. TODO:tutorial-update: nagaan wie een verborgen cursus kan zien in het cursusoverzicht: enkel geregistreerde gebruikers? enkel cursusbeheerders? vermoedelijk zien geregistreerde gebruikers de cursus wel in hun startpagina? gebruikt die dan een token-link om naar de cursus te navigeren of wordt de vereiste voor de token-link niet gebruikt voor geregistreerde gebruikers?
+
+        .. TODO:screenshot-missing: screenshot van verborgen cursus in het cursusoverzicht van een cursusbeheerder, waarbij het icoontje wordt aangeduid
+
+        Alleen geregistreerde gebruikers kunnen de :ref:`cursuspagina <cursuspagina>` zien. :ref:`Cursusbeheerders <cursusbeheerders>` zien een duidelijke mededeling op hun cursuspagina om hen er op te wijzen dat niet-geregistreerde gebruikers de cursuspagina enkel kunnen zien als ze de :ref:`registratielink <cursus registratielink>` gebruiken.
+
+        .. TODO:screenshot-missing: screenshot van cursuspagina voor verborgen cursus waarop cursusbeheerder een mededeling ziet
+
+        .. TODO:screenshot-missing: screenshot van cursuspagina voor verborgen cursus waarop niet-geregistreerde gebruiker een mededeling ziet
+
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
 .. _cursus registratie:
@@ -130,11 +151,14 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
         De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
+.. _cursus token:
 .. _cursus registratielink:
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd. Als de cursus :ref:`verborgen <cursus verborgen>` werd dan kunnen gebruikers de cursus enkel zien door het token te gebruiken.
+
+:ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
 
@@ -414,7 +438,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
         .. _oefeningenreeks weergave verborgen:
 
-        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
+        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
 
         .. TODO:screenshot-missing: screenshot van weergave van verborgen oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
 
@@ -424,7 +448,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
         .. _oefeningenreeks weergave gesloten:
 
-        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
+        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
 
     .. TODO:screenshot-missing: screenshot van weergave van gesloten oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
 
@@ -459,9 +483,9 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
 
-    Als :ref:`cursusgebruikers <cursusgebruiker>` een :ref:`geheime link <oefeningenreeks geheime link>` met een verouderd :ref:`token <oefeningenreeks token>` gebruiken, dan krijgen ze een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` niet te zien.
+    Als :ref:`cursusgebruikers <cursusgebruiker>` naar een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` navigeren zonder het nieuwste :ref:`token <oefeningenreeks token>` te gebruiken, dan krijgen ze de oefeningenreeks niet te zien.
 
-    .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een verouderd token gebruikt
+    .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een ongeldig token gebruikt
 
     .. TODO:feature-update: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
 
