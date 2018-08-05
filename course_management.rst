@@ -18,7 +18,7 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad opbouwen>` 
 Aanmaken van een cursus
 -----------------------
 
-Als :ref:`lesgever <lesgever>` maak je een nieuwe :ref:`cursus <cursus>` door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
 .. TODO:feature-missing: lesgevers zouden evengoed ook een nieuwe cursus kunnen aanmaken vanop hun startpagina; deze ziet er bovendien in de toekomst vrij gelijkaardig uit aan het cursusoverzicht
 
@@ -26,7 +26,7 @@ Als :ref:`lesgever <lesgever>` maak je een nieuwe :ref:`cursus <cursus>` door op
 
 .. _cursuseigenschappen instellen:
 
-In het paneel :guilabel:`Nieuwe cursus` kan je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` instellen.
+In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` in.
 
 .. image:: images/staff.new_course.nl.png
 
@@ -117,7 +117,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die gebruikers te zien krijgen bovenaan de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
+    Een optionele beschrijving die bovenaan de :ref:`cursuspagina <cursuspagina>` wordt weergegeven. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
     .. _markdown:
 
@@ -134,9 +134,9 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
 
-Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren. Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
 
-.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop en de knop "Dodona" worden aangeduid
 
 Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
 
