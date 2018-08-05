@@ -156,9 +156,34 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd. Als de cursus :ref:`verborgen <cursus verborgen>` werd dan kunnen gebruikers de cursus enkel zien door het token te gebruiken.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd. Niet-geregistreerde gebruiker kunnen de cursuspagina van een :ref:`verborgen <cursus verborgen>` cursus enkel zien door het token te gebruiken.
 
-:ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
+    .. _cursus registratielink kopiëren:
+
+    Het token zit vervat in de **registratielink** voor de cursus. Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de registratielink enkel te delen met :ref:`niet-geregistreerde <cursus registreren>` gebruikers die de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus mogen zien. Druk op de kopieerknop naast de registratielink om de link naar het klembord te kopiëren.
+
+    .. TODO:feature-update: eigenlijk zou dit een "geheime registratielink" moeten heten, met de opties om er enkel een "geheime link" of enkel een "registratielink" van te maken, en ook om de taal uit de link te schrappen indien je die niet wilt opleggen aan de gebruikers die je uitnodigt
+
+    .. TODO:screenshot-missing: screenshot van cursuseigenschappen van een verborgen cursus, waarbij de kopieerknop naast registratielink wordt aangeduid
+
+    .. _cursus registratielink gebruiken:
+
+    Als niet-geregistreerde gebruikers de :ref:`registratielink <cursus registratielink>` van een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` gebruiken dan krijgen ze de cursus toch te zien.
+
+    .. TODO:screenshot-missing: screenshot van cursusgebruiker die verborgen cursus zichtbaar gemaakt heeft met behulp van de registratielink
+
+    .. TODO:feature-update: niet-geregistreerdee cursusgebruikers zouden ook een stub op de cursuspagina kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de cursuspagina wel weergegeven (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van tokenlink heeft dan hetzelfde effect als het invullen van het token bij de stub van de cursus
+
+    .. _cursus token vernieuwen:
+    .. _cursus registratielink vernieuwen:
+
+    Druk op de vernieuwknop naast de :ref:`registratielink <cursus registratielink>` om de :ref:`cursus <cursus>` opnieuw te :ref:`verbergen <cursus verborgen>` nadat de registratielink gedeeld werd. Daardoor wordt een nieuw :ref:`token <cursus token>` gegenereerd voor de cursus en wordt het oude token onbruikbaar gemaakt. De registratielink wordt meteen ook aangepast aan het nieuwe token.
+
+    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van cursus worden ingesteld, waarbij vernieuwknop naast registratielink wordt aangeduid
+
+    Als niet-geregistreerde gebruikers naar de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` navigeren zonder het nieuwste :ref:`token <oefeningenreeks token>` te gebruiken, dan krijgen ze de cursus niet te zien.
+
+    .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een ongeldig token gebruikt
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
 
@@ -466,7 +491,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Het token zit vervat in de **geheime link** voor de oefeningenreeks. Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de geheime link enkel te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop naast de geheime link om de link naar het klembord te kopiëren.
 
-    .. TODO:feature-update: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
+    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
 
     .. _oefeningenreeks geheime link gebruiken:
 
@@ -474,7 +499,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. TODO:screenshot-missing: screenshot van cursusgebruiker die verborgen oefeningenreeks zichtbaar gemaakt heeft met behulp van de geheime link
 
-    .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stuk van de oefeningenreeks
+    .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
 
     .. _oefeningenreeks token vernieuwen:
     .. _oefeningenreeks geheime link vernieuwen:
@@ -486,8 +511,6 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
     Als :ref:`cursusgebruikers <cursusgebruiker>` naar een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` navigeren zonder het nieuwste :ref:`token <oefeningenreeks token>` te gebruiken, dan krijgen ze de oefeningenreeks niet te zien.
 
     .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een ongeldig token gebruikt
-
-    .. TODO:feature-update: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
 
 .. _oefeningenreeks beschrijving:
 
