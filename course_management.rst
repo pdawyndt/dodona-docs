@@ -6,11 +6,11 @@ Cursusbeheer
 .. _cursus:
 .. _oefeningenreeks:
 
-Een **cursus** wordt :ref:`opgebouwd <leerpad opbouwen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen <oefeningen>` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
+Een **cursus** wordt :ref:`opgebouwd <leerpad uitstippelen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen <oefeningen>` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
 
 Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
 
-Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad opbouwen>` binnen een :ref:`cursus <cursus>` een :ref:`leerpad <leerpad>` uit met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
+Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippelen>` een :ref:`leerpad <leerpad>` uit voor de :ref:`cursus <cursus>`, met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
 
 
 .. _cursus aanmaken:
@@ -326,12 +326,12 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 
 
 .. _leerpad:
-.. _leerpad opbouwen:
+.. _leerpad uitstippelen:
 
 Uitstippelen van een leerpad
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je binnen een :ref:`cursus <cursus>` een **leerpad** uitstippelen dat bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` instellen die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` voor de oefeningen uit de oefeningenreeks.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je een **leerpad** uitstippelen voor de :ref:`cursus <cursus>`. Het leerpad bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor de :ref:`oefeningen <oefeningen>` uit de oefeningenreeks.
 
 .. _oefeningenreeks toevoegen:
 
