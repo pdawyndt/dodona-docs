@@ -637,7 +637,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 .. _oplossingen beheren:
 
 Beheren van oplossingen
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 .. _oplossing herevalueren:
 
