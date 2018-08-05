@@ -480,7 +480,7 @@ Koppelen van oefeningen
 
 Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`instellen <oefeningenreeks eigenschappen instellen>` van :ref:`eigenschappen <oefeningenreeks eigenschappen>` ook oefeningen kunt koppelen aan de :ref:`oefeningenreeks <oefeningenreeks>`.
 
-.. TODO:feature-update: instellen van eigenschappen voor oefeningenreeks zou op een andere pagina moeten gebeuren dan de pagina waar er oefeningen aan de oefeningenreeks gekoppeld worden; dit kan dan later uitgebreid worden met een pagina voor de oefeningenreeks waarop de learning analytics voor de oefeningenreeks te zien zijn
+.. TODO:feature-update: instellen van eigenschappen voor oefeningenreeks zou op een andere pagina moeten gebeuren dan de pagina waar er oefeningen aan de oefeningenreeks gekoppeld worden; dit kan dan later uitgebreid worden met een pagina voor de oefeningenreeks waarop de learning analytics voor de oefeningenreeks te zien zijn; dan kan deze sectie helemaal losgekoppeld worden van de vorige sectie, en kan er aangegeven worden hoe je de oefeningen van een oefeningenreeks begint te bewerken
 
 .. important::
 
@@ -493,8 +493,7 @@ Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle 
 
 .. TODO:tutorial-update: aangeven wat er bedoeld wordt met "alle beschikbare oefeningen"
 
-.. TODO:feature-update: verdeel alle beschikbare oefeningen over drie tabs met
-hoofdingen "standaard" (beschikbare oefeningen die als standaardoefeningen zijn opgenomen in de oefeningenreeks), "extra" (beschikbare oefeningen die als extra oefeningen zijn opgenomen in de oefeningenreeks)" en "beschikbaar" (beschikbare oefeningen die niet opgenomen zijn in de oefeningenreeks); op die manier is er meer ruimte om de oefeningen met wat bijkomende info weer te geven (bijvoorbeeld programmeertaal); zoek beschikbare oefeningen op in de tab "beschikbaar" en voeg die via actieknopppen toe aan de standaard of extra oefeningen; gebruik actieknoppen om oefeningen tussen de tabs te verplaatsen; gebruik dynamische queries om oefeningen aan de verschillende tabs toe te wijzen, bijvoorbeeld "alle 'Python'-oefeningen uit repository 'xxx' met tag 'lussen' of uit pad 'reeks04/moeilijk'"
+.. TODO:feature-update: verdeel alle beschikbare oefeningen over drie tabs met hoofdingen "standaard" (beschikbare oefeningen die als standaardoefeningen zijn opgenomen in de oefeningenreeks), "extra" (beschikbare oefeningen die als extra oefeningen zijn opgenomen in de oefeningenreeks)" en "beschikbaar" (beschikbare oefeningen die niet opgenomen zijn in de oefeningenreeks); op die manier is er meer ruimte om de oefeningen met wat bijkomende info weer te geven (bijvoorbeeld programmeertaal); zoek beschikbare oefeningen op in de tab "beschikbaar" en voeg die via actieknopppen toe aan de standaard of extra oefeningen; gebruik actieknoppen om oefeningen tussen de tabs te verplaatsen; gebruik dynamische queries om oefeningen aan de verschillende tabs toe te wijzen, bijvoorbeeld "alle 'Python'-oefeningen uit repository 'xxx' met tag 'lussen' of uit pad 'reeks04/moeilijk'"
 .. TODO:feature-update: mogelijk bieden om te zoeken in de beschrijving van de oefening (traag, zeker als verplaatst naar bestandssysteem)
 
 .. TODO:screenshot-missing: screenshot waarin gezocht wordt naar oefeningen
