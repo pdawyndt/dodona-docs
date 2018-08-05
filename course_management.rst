@@ -333,12 +333,10 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 Uitstippelen van een leerpad
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`. Het leerpad wordt op de :ref:`cursuspagina <cursuspagina>` weergegeven onder de hoofding :guilabel:`Oefeningenreeksen`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat weergegeven wordt onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Het leerpad bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`.
 
 .. TODO:tutorial-missing: plaats hier de info over de manier waarop de oefeningenreeksen worden weergegeven
 .. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
-
-Voor elke oefeningenreeks kan je een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor :ref:`oefeningen <oefening>` uit de oefeningenreeks.
 
 .. _oefeningenreeks toevoegen:
 
@@ -367,7 +365,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Naam`
 
-    De naam van de :ref:`oefeningenreeks <oefeningenreeks>`. Binnen een cursus kunnen verschillende oefeningenreeksen dezelfde naam hebben. Het is echter aangeraden om alle oefeningenreeksen binnen een cursus een unieke naam te geven.
+    De naam van de :ref:`oefeningenreeks <oefeningenreeks>`. Binnen een :ref:`leerpad <leerpad>` kunnen verschillende oefeningenreeksen dezelfde naam hebben. Het is echter aangeraden om alle oefeningenreeksen van het leerpad een unieke naam te geven.
 
 .. _oefeningenreeks deadline:
 
