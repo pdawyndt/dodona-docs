@@ -32,6 +32,12 @@ In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursusei
 
 .. TODO:feature-update: vervang titelbalk van cursusbeheerpagina van nieuwe cursus door "Nieuwe cursus", en voeg het academiejaar toe aan de titelbalk van cursusbeheerpagina als het om een bestaande cursus gaat. Het laatst omwille van de consistentie met de cursuspagina waarin naast de naam ook het academiejaar staat.
 
+.. _cursuseigenschappen instellen annuleren:
+
+Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
+
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de knop "Dodona" wordt aangeduid
+
 .. _cursuseigenschappen:
 
 Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worden:
@@ -131,10 +137,6 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een :ref:`registratielink <registratielink>` met een willekeurig token gegenereerd. Druk op de vernieuwknop naast de registratielink om de cursus opnieuw te :ref:`verbergen <cursus zichtbaarheid>` nadat de registratielink gedeeld werd.
 
-Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
-
-.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de knop "Dodona" wordt aangeduid
-
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
@@ -159,9 +161,13 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <curs
 
 .. TODO:screenshot-missing: screenshot van cursuspagina waarop de bewerkknop wordt aangeduid
 
+.. _cursuseigenschappen aanpassen annuleren:
+
 Druk op de :ref:`cursus <cursus>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
 
 .. TODO:screenshot-missing: screenshot van cursus bewerken waarbij de cursus in de navigatiebalk wordt aangeduid
+
+.. _cursuseigenschappen aanpassen afwerken:
 
 Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` effectief in te stellen.
 
@@ -352,6 +358,12 @@ In het paneel :guilabel:`Nieuwe oefeningenreeks` stel je de :ref:`eigenschappen 
 
 .. TODO:screenshot-missing: screenshot van formulier "Nieuwe oefeningenreeks"
 
+.. _oefeningenreeks eigenschappen instellen annuleren:
+
+Druk op de :ref:`cursus <cursus>` in de :ref:`navigatiebalk <navigatiebalk>` om het :ref:`toevoegen <oefeningenreeks toevoegen>` van de oefeningenreeks te annuleren.
+
+.. TODO:screenshot-missing: screenshot van formulier voor nieuwe oefeningenreeks waarin de cursus in navigatiebalk wordt aangeduid
+
 .. _oefeningenreeks eigenschappen:
 
 Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschappen ingesteld worden:
@@ -455,26 +467,34 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks op de :ref:`cursuspagina <cursuspagina>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown>`.
 
-Druk op de afwerkknop in de rechterbovenhoek van het :ref:`formulier <oefeningenreeks eigenschappen instellen>` om effectief de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oefeningenreeks` om de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` effectief aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
 
 .. TODO:screenshot-missing: screenshot van formulier voor nieuwe cursus waarin de afwerkknop wordt aangeduid
 
+
 .. _oefeningenreeks oefeningen:
-.. _oefeningenreeks oefeningen aanpassen:
+.. _oefeningenreeks oefeningen koppelen:
 
-Je ziet nu een uitgebreide versie van het formulier waarin je naast het :ref:`instellen <oefeningenreeks eigenschappen instellen>` van :ref:`eigenschappen <oefeningenreeks eigenschappen>` ook oefeningen kunt koppelen aan de :ref:`oefeningenreeks <oefeningenreeks>`.
+Koppelen van oefeningen
+^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO:feature-update: verschillende secties maken voor de oefeningenreeks: eigenschappen, oefeningen, statistieken, ...
+Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`instellen <oefeningenreeks eigenschappen instellen>` van :ref:`eigenschappen <oefeningenreeks eigenschappen>` ook oefeningen kunt koppelen aan de :ref:`oefeningenreeks <oefeningenreeks>`.
+
+.. TODO:feature-update: instellen van eigenschappen voor oefeningenreeks zou op een andere pagina moeten gebeuren dan de pagina waar er oefeningen aan de oefeningenreeks gekoppeld worden; dit kan dan later uitgebreid worden met een pagina voor de oefeningenreeks waarop de learning analytics voor de oefeningenreeks te zien zijn
 
 .. important::
 
     We veronderstellen hier dat de :ref:`oefeningen <oefening>` die aan de :ref:`oefeningenreeks <oefeningenreeks>` moeten gekoppeld worden reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe het toevoegen van :ref:`oefeningen <oefening>` verloopt.
 
+.. _oefeningenoverzicht:
 .. _oefeningenreeks oefeningen zoeken:
 
-Gebruik de zoekbalk onder de hoofding :guilabel:`Oefeningen toevoegen` om te zoeken naar specifieke :ref:`oefeningen <oefening>` op basis van een naam of een padnaam. Hierbij wordt gezocht in alle beschikbare vertalingen voor de naam van de oefeningen.
+Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle beschikbare oefeningen. Gebruik de zoekbalk om te zoeken naar specifieke :ref:`oefeningen <oefening>` op basis van een naam of een padnaam. Hierbij wordt gezocht in alle beschikbare vertalingen voor de naam van de oefeningen.
 
-.. TODO:feature-update: verdeel alle beschikbare oefeningen over drie tabs met hoofdingen "standaard" (beschikbare oefeningen die als standaardoefeningen zijn opgenomen in de oefeningenreeks), "extra" (beschikbare oefeningen die als extra oefeningen zijn opgenomen in de oefeningenreeks)" en "beschikbaar" (beschikbare oefeningen die niet opgenomen zijn in de oefeningenreeks); op die manier is er meer ruimte om de oefeningen met wat bijkomende info weer te geven (bijvoorbeeld programmeertaal); zoek beschikbare oefeningen op in de tab "beschikbaar" en voeg die via actieknopppen toe aan de standaard of extra oefeningen; gebruik actieknoppen om oefeningen tussen de tabs te verplaatsen; gebruik dynamische queries om oefeningen aan de verschillende tabs toe te wijzen, bijvoorbeeld "alle 'Python'-oefeningen uit repository 'xxx' met tag 'lussen' of uit pad 'reeks04/moeilijk'"
+.. TODO:tutorial-update: aangeven wat er bedoeld wordt met "alle beschikbare oefeningen"
+
+.. TODO:feature-update: verdeel alle beschikbare oefeningen over drie tabs met
+hoofdingen "standaard" (beschikbare oefeningen die als standaardoefeningen zijn opgenomen in de oefeningenreeks), "extra" (beschikbare oefeningen die als extra oefeningen zijn opgenomen in de oefeningenreeks)" en "beschikbaar" (beschikbare oefeningen die niet opgenomen zijn in de oefeningenreeks); op die manier is er meer ruimte om de oefeningen met wat bijkomende info weer te geven (bijvoorbeeld programmeertaal); zoek beschikbare oefeningen op in de tab "beschikbaar" en voeg die via actieknopppen toe aan de standaard of extra oefeningen; gebruik actieknoppen om oefeningen tussen de tabs te verplaatsen; gebruik dynamische queries om oefeningen aan de verschillende tabs toe te wijzen, bijvoorbeeld "alle 'Python'-oefeningen uit repository 'xxx' met tag 'lussen' of uit pad 'reeks04/moeilijk'"
 .. TODO:feature-update: mogelijk bieden om te zoeken in de beschrijving van de oefening (traag, zeker als verplaatst naar bestandssysteem)
 
 .. TODO:screenshot-missing: screenshot waarin gezocht wordt naar oefeningen
@@ -515,7 +535,7 @@ In het :ref:`menu <oefeningenreeks menu>` van de :ref:`oefeningenreeks <oefening
 
 .. _oefeningenreeks bewerken:
 
-    Toont een pagina waarop je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de :ref:`oefeningenreeks <oefeningenreeks>` kunt :ref:`instellen <oefeningenreeks eigenschappen instellen>` en de :ref:`oefeningen <oefening>` die aan de oefeningenreeks :ref:`gekoppeld <oefeningenreeks oefeningen> zijn kunt :ref:`aanpassen <oefeningenreeks oefeningen aanpassen>`.
+    Toont een pagina waarop je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de :ref:`oefeningenreeks <oefeningenreeks>` kunt :ref:`instellen <oefeningenreeks eigenschappen instellen>` en de :ref:`oefeningen <oefening>` die aan de oefeningenreeks :ref:`gekoppeld <oefeningenreeks oefeningen> zijn kunt :ref:`aanpassen <oefeningenreeks oefeningen koppelen>`.
 
 .. _oefeningenreeks verwijderen:
 
