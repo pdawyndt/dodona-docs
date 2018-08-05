@@ -1,4 +1,4 @@
-.. _cursusbeheer:
+.. _cursus beheren:
 
 Cursusbeheer
 ============
@@ -297,6 +297,7 @@ Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` he
 
 .. TODO:tutorial-missing: wat zijn de regels voor het uitschrijven als de laatste cursusbeheerder zich uit een cursus wil uitschrijven
 
+
 .. _cursusbeheerders aanduiden:
 
 Aanduiden van cursusbeheerders
@@ -338,8 +339,8 @@ Uitstippelen van een leerpad
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat weergegeven wordt onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Het leerpad bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`.
 
-.. TODO:tutorial-missing: plaats hier de info over de manier waarop de oefeningenreeksen worden weergegeven
 .. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
+
 
 .. _oefeningenreeks toevoegen:
 
@@ -471,6 +472,14 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oe
 
 .. TODO:screenshot-missing: screenshot van formulier voor nieuwe cursus waarin de afwerkknop wordt aangeduid
 
+Na het afwerken navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Daarbij zie je dat de nieuwe oefeningenreeks aan de bovenkant van het leerpad toegevoegd werd. Op die manier wordt het leerpad in omgekeerde chronologische volgorde (eerste oefeningenreeks onderaan) aangeboden op de cursuspagina.
+
+.. TODO:feature-missing: cursuseigenschap toevoegen die weergave van oefeningenreeksen op cursuspagina bepaalt (eerste onderaan of eerste bovenaan)
+.. TODO:feature-missing: mogelijkheid aanbieden om een oefeningenreeks op een willekeurige plaats aan te maken in het leerpad (bovenaan, onderaan of in het midden), bijvoorbeeld door de knop "REEKS TOEVOEGEN" zowel bovenaan als onderaan te zetten, en tussen twee panelen de knop ook dynamisch weer te geven als er over gehooverd wordt
+.. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te verplaatsen binnen het leerpad
+
+.. TODO:tutorial-missing: plaats hier de info over de manier waarop de oefeningenreeksen worden weergegeven en het feit dat je hier de oefeningenreeks kunt bewerken, oefeningen kunt koppelen, ...
+
 
 .. _oefeningenreeks oefeningen:
 .. _oefeningenreeks oefeningen koppelen:
@@ -500,37 +509,43 @@ Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle 
 
 .. _oefeningenreeks oefening toevoegen:
 
-Druk op de toevoegknop aan de rechterkant om een :ref:`oefeningen <oefening>` aan de :ref:`oefeningenreeks <oefeningenreeks>` toe te voegen.
+Druk op de toevoegknop aan de rechterkant van een :ref:`oefeningen <oefening>` om de oefening aan de :ref:`oefeningenreeks <oefeningenreeks>` toe te voegen.
 
 .. TODO:screenshot-missing: screenshot waarin het toevoegen van een oefening aan een oefeningenreeks geïllustreerd wordt
 
 .. _oefeningenreeks oefening verwijderen:
 
-Druk op de verwijderknop aan de rechterkant om een :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
+Druk op de verwijderknop aan de rechterkant van een :ref:`oefeningen <oefening>` om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
 
 .. TODO:screenshot-missing: screenshot waarin het verwijderen van een oefening uit een oefeningenreeks geïllustreerd wordt
 
 .. _oefeningenreeks oefeningen herschikken:
 
-Gebruik de verplaatsknop aan de linkerkant om :ref:`oefeningen <oefening>` binnen een :ref:`oefeningenreeks <oefeningenreeks>` te rangschikken. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
+Gebruik de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` hun volgorde aan te passen. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
 
 .. TODO:screenshot-missing: screenshot waarin het verplaatsen van oefeningen in een oefeningenreeks geïllustreerd wordt
 
 .. TODO:feature-missing: mogelijkheid bieden om oefeningen in een vaste volgorde aan te bieden of in een dynamische volgorde (bijvoorbeeld alfabetisch, stijgende moeilijkheidsgraad, ...)
 
-Druk op de afwerkknop in de rechterbovenhoek van het formulier om het bewerken van de oefeningenreeks af te sluiten.
+.. _oefeningenreeks oefeningen afwerken:
+
+Druk op de afwerkknop in de rechterbovenhoek van het paneel om de koppeling van :ref:`oefeningen <oefening>` aan de :ref:`oefeningenreeks <oefeningenreeks>` af te werken.
+
+.. TODO:feature-update: de vorige zin zou eigenlijk moeten eindigen met "... effectief in te stellen"
 
 .. TODO:screenshot-missing: screenshot van formulier voor het bewerken van de oefeningen van een oefeningenreeks waarin de afwerkknop wordt aangeduid
 
-Daardoor navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` op de :ref:`cursuspagina <cursuspagina>`, waarbij je ziet dat de oefeningenreeks aan de bovenkant van het leerpad toegevoegd werd. Op die manier wordt het leerpad in omgekeerde chronologische volgorde (eerste oefeningenreeks onderaan) aangeboden op de cursuspagina.
+Na het afwerken navigeer je terug naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
 
-.. TODO:feature-missing: cursuseigenschap toevoegen die weergave van oefeningenreeksen op cursuspagina bepaalt (eerste onderaan of eerste bovenaan)
-.. TODO:feature-missing: mogelijkheid aanbieden om een oefeningenreeks op een willekeurige plaats aan te maken in het leerpad (bovenaan, onderaan of in het midden), bijvoorbeeld door de knop "REEKS TOEVOEGEN" zowel bovenaan als onderaan te zetten, en tussen twee panelen de knop ook dynamisch weer te geven als er over gehooverd wordt
-.. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te verplaatsen binnen het leerpad
+
+.. _oefeningenreeks beheren:
+
+Beheren van oefeningenreeksen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _oefeningenreeks menu cursusbeheerder:
 
-In het :ref:`menu <oefeningenreeks menu>` van de :ref:`oefeningenreeks <oefeningenreeks>` vind je enkele bijkomende opties die corresponderen met acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`:
+In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeningenreeks>` vinden :ref:`cursusbeheerders <cursusbeheerder>` enkele bijkomende opties die corresponderen met acties die voor hen voorbehouden zijn:
 
 .. _oefeningenreeks bewerken:
 
