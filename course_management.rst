@@ -123,9 +123,6 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. important::
 
-        Markdown
-        ^^^^^^^^
-
         De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
 .. _cursus registratielink:
@@ -373,7 +370,11 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Een optionele deadline die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`. :ref:`Cursusgebruikers <cursusgebruiker>` kunnen na de deadline onbeperkt oplossingen blijven indienen voor oefeningen uit de oefeningenreeks en blijven daar nog steeds een beoordeling en feedback voor ontvangen. Er wordt met deze oplossingen echter geen rekening meer gehouden bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor oefeningen uit de oefeningenreeks.
 
-    Als er geen deadline wordt ingesteld voor de :ref:`oefeningenreeks <oefeningenreeks>` dan wordt er blijvend rekening gehouden met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`.
+    Zonder deadline wordt er blijvend rekening gehouden met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`.
+
+    .. important::
+
+        Als de deadline aangepast wordt dan krijgen cursusgebruikers meteen een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor oefeningen uit de oefeningenreeks die aangepast is aan de nieuwe deadline.
 
     Klik op het invulveld of druk op de kalenderknop om de datum en het tijdstip van de deadline in te stellen. Selecteer de deadline in de :ref:`tijdzone <gebruikersprofiel tijdzone>` die je hebt :ref:`ingesteld <gebruikersprofiel instellen>` in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Andere gebruikers krijgen de deadline te zien in de tijdzone die ze in hun gebruikersprofiel hebben ingesteld.
 
@@ -382,10 +383,6 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
     Druk op de verwijderknop om een ingestelde deadline te wissen.
 
     .. TODO:screenshot-missing: screenshot van ingestelde deadline waarbij de verwijderknop wordt aangeduid
-
-    .. important::
-
-        Als de deadline aangepast wordt dan krijgen cursusgebruikers meteen een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor de oefeningen uit de oefeningenreeks die aangepast wordt aan de nieuwe instelling.
 
 .. _oefeningenreeks zichtbaarheid:
 
@@ -397,13 +394,13 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     :guilabel:`Open`
 
-        Alle gebruikers zien de oefeningenreeks onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`.
+        Alle gebruikers zien de oefeningenreeks in het :ref:`leerpad <leerpad>`.
 
     .. _oefeningenreeks zichtbaarheid verborgen:
 
     :guilabel:`Verborgen`
 
-        Enkel :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Om hen erop te wijzen dat andere gebruikers de oefeningenreeks pas kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` kennen, staat er een duidelijke mededeling bij.
+        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
 
         .. TODO:screenshot-missing: screenshot van weergave van verborgen oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
 
@@ -411,7 +408,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     :guilabel:`Gesloten`
 
-        Enkel :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Om hen erop te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien, staat er een duidelijke mededeling bij.
+        Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen erop te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
 
     .. TODO:screenshot-missing: screenshot van weergave van gesloten oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
 
@@ -420,19 +417,20 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Geheime link`
 
-    Bij het :ref:`aanmaken <oefeningenreeks aanmaken>` van de :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd waarmee de  oefeningenreeks :ref:`zichtbaar <oefeningenreeks zichtbaarheid>` kan gemaakt worden als ze :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` werd. Dit token zit vervat in de **geheime link** voor de oefeningenreeks.
+    Bij het :ref:`aanmaken <oefeningenreeks aanmaken>` van de :ref:`oefeningenreeks <oefeningenreeks>` werd automatisch een **token** gegenereerd. Als de oefeningenreeks :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` werd dan kunnen gebruikers de oefeningenreeks enkel zien door het token te gebruiken.
 
+    .. TODO:feature-update: overwegen om al een token te genereren op het moment dat het aanmaken van een cursus geïnitieerd wordt; dan kan de geheime link meteen weergegeven worden in het paneel "Nieuwe cursus"
     .. TODO:feature-update: inconsistentie tussen de "registratielink" voor cursussen die genereerd wordt op het moment dat de cursus aangemaakt en de "geheime link" voor oefeningenreeksen die aangemaakt wordt op het moment dat de oefeningenreeks op verborgen gezet wordt; oplossing voor cursussen lijkt beter, omdat het token behouden blijft als de zichtbaarheid van de cursus aangepast wordt en expliciet opnieuw kan gegenereerd worden; nu gaat bij het (tijdelijk) aanpassen van de zichtbaarheid van een cursus het token verloren; op die manier staat de geheime link ook altijd op het formulier en kunnen we die hier ook beter bespreken
 
     .. _oefeningenreeks geheime link kopiëren:
 
-    Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de :ref:`geheime link <oefeningenreeks geheime link>` te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop om de geheime link naar het klembord te kopiëren.
+    Het token zit vervat in de **geheime link** voor de oefeningenreeks. Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de geheime link enkel te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop naast de geheime link om de link naar het klembord te kopiëren.
 
     .. TODO:feature-update: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
 
 .. _oefeningenreeks geheime link gebruiken:
 
-    Als :ref:`cursusgebruikers <cursusgebruiker>` de geheime link van een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` gebruiken dan krijgen ze de oefeningenreeks toch te zien.
+    Als :ref:`cursusgebruikers <cursusgebruiker>` de :ref:`geheime link <oefeningenreeks geheime link>` van een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` gebruiken dan krijgen ze de oefeningenreeks toch te zien.
 
     .. TODO:screenshot-missing: screenshot van cursusgebruiker die verborgen oefeningenreeks zichtbaar gemaakt heeft met behulp van de geheime link
 
@@ -441,11 +439,11 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 .. _oefeningenreeks token vernieuwen:
 .. _oefeningenreeks geheime link vernieuwen:
 
-    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd.
+    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd. Daardoor wordt een nieuw :ref:`token <oefeningenreeks token>` gegenereerd voor de oefeningenreeks en wordt het oude token onbruikbaar gemaakt. De geheime link wordt meteen ook aangepast aan het nieuwe token.
 
     .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
 
-    Daardoor wordt een nieuw token gegenereerd voor de oefeningenreeks en wordt het oude token onbruikbaar gemaakt. Als :ref:`cursusgebruikers <cursusgebruiker>` een geheime link met een verouderd token gebruiken, dan krijgen ze een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` niet te zien.
+    Als :ref:`cursusgebruikers <cursusgebruiker>` een :ref:`geheime link <oefeningenreeks geheime link>` met een verouderd :ref:`token <oefeningenreeks token>` gebruiken, dan krijgen ze een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` niet te zien.
 
     .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een verouderd token gebruikt
 
