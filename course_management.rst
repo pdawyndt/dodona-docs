@@ -138,7 +138,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cu
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop en de knop "Dodona" worden aangeduid
 
-Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
+Na het aanmaken van de nieuwe cursus navigeer je naar de :ref:`cursuspagina`, waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker <cursusgebruiker>` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
 
 .. image:: images/staff.created_course.nl.png
 
@@ -147,8 +147,8 @@ Daardoor navigeer je naar de :ref:`cursuspagina` waar je kunt vaststellen dat je
 
 .. _cursuseigenschappen bewerken:
 
-Instellen van cursuseigenschappen
----------------------------------
+Bewerken van een cursus
+-----------------------
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een bestaande :ref:`cursus <cursus>` instellen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
 

@@ -572,7 +572,7 @@ Binnen een :ref:`cursus <cursus>` kun je **oplossingen** :ref:`indienen <oplossi
 
   .. image:: images/student.exercise_course_submissions_page.nl.png
 
-.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruik gemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
+.. TODO:feature-update: Dodona is inconsistent in zijn vertaling van de term "submission" voor oplossingen; in gebruikersmenu en in de tab op de oefeningpagina wordt de term "oplossingen" gebruikt; in de kaartjes van de cursussen wordt voor de statistieken gebruikgemaakt van de term "inzendingen"; voorstel is om overal de term "inzendingen" te vervangen door "oplossingen"
 .. TODO:feature-missing: mogelijkheid om te zoeken in een overzicht van oplossingen ontbreekt
 .. TODO:feature-missing: omdat alle oplossing chronologisch gerangschikt worden, zou in het overzicht van alle oplossingen die ingediend werden voor een oefening uit een oefeningenreeks met een deadline een visueel onderscheid kunnen gemaakt worden tussen oefeningen die ingediend werden voor en na de deadline
 
