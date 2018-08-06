@@ -309,27 +309,27 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     De zichtbaarheid bepaalt of gebruikers de :ref:`oefeningenreeks <oefeningenreeks>` kunnen zien. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
 
-    .. _oefeningenreeks zichtbaarheid open:
+    .. _oefeningenreeks open:
 
     :guilabel:`Open`
 
         Alle gebruikers zien de oefeningenreeks in het :ref:`leerpad <leerpad>`.
 
-    .. _oefeningenreeks zichtbaarheid verborgen:
+    .. _oefeningenreeks verborgen:
 
     :guilabel:`Verborgen`
 
-        .. _oefeningenreeks weergave verborgen:
+        .. _oefeningenreeks verborgen weergave:
 
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
 
         .. TODO:screenshot-missing: screenshot van weergave van verborgen oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
 
-    .. _oefeningenreeks zichtbaarheid gesloten:
+    .. _oefeningenreeks gesloten:
 
     :guilabel:`Gesloten`
 
-        .. _oefeningenreeks weergave gesloten:
+        .. _oefeningenreeks gesloten weergave:
 
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
 
@@ -340,35 +340,34 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Geheime link`
 
-    Bij het :ref:`aanmaken <oefeningenreeks aanmaken>` van de :ref:`oefeningenreeks <oefeningenreeks>` werd automatisch een **token** gegenereerd. Als de oefeningenreeks :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` werd dan kunnen gebruikers de oefeningenreeks enkel zien door het token te gebruiken.
+    Bij het :ref:`aanmaken <oefeningenreeks aanmaken>` van de :ref:`oefeningenreeks <oefeningenreeks>` werd automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
+
+    .. TODO:screenshot-missing: weergave van verborgen oefeningenreeks als gebruikers er zonder geldig token naar navigeren
+
+    .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
+    .. TODO:screenshot-update: indien we een stub zouden tonen voor een verborgen oefeningenreeks, dan kan hier een screenshot geplaatst worden van hoe die stub wordt weergegeven
 
     .. TODO:feature-update: overwegen om al een token te genereren op het moment dat het aanmaken van een cursus geïnitieerd wordt; dan kan de geheime link meteen weergegeven worden in het paneel "Nieuwe cursus"
     .. TODO:feature-update: inconsistentie tussen de "registratielink" voor cursussen die genereerd wordt op het moment dat de cursus aangemaakt en de "geheime link" voor oefeningenreeksen die aangemaakt wordt op het moment dat de oefeningenreeks op verborgen gezet wordt; oplossing voor cursussen lijkt beter, omdat het token behouden blijft als de zichtbaarheid van de cursus aangepast wordt en expliciet opnieuw kan gegenereerd worden; nu gaat bij het (tijdelijk) aanpassen van de zichtbaarheid van een cursus het token verloren; op die manier staat de geheime link ook altijd op het formulier en kunnen we die hier ook beter bespreken
 
-    .. _oefeningenreeks geheime link kopiëren:
-
-    Het token zit vervat in de **geheime link** voor de oefeningenreeks. Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de geheime link enkel te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop naast de geheime link om de geheime link naar het klembord te kopiëren.
-
-    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
-
     .. _oefeningenreeks geheime link gebruiken:
 
-    Als :ref:`cursusgebruikers <cursusgebruiker>` de :ref:`geheime link <oefeningenreeks geheime link>` van een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` gebruiken dan krijgen ze de oefeningenreeks toch te zien.
+    Daarom zit het :ref:`token <oefeningenreeks token>` vervat in een **geheime link** waarmee gebruikers de oefeningenreeks ook te zien krijgen als die verborgen werd.
 
     .. TODO:screenshot-missing: screenshot van cursusgebruiker die verborgen oefeningenreeks zichtbaar gemaakt heeft met behulp van de geheime link
 
-    .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
+    .. _oefeningenreeks geheime link kopiëren:
+
+    Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de geheime link enkel te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop naast de geheime link om de geheime link naar het klembord te kopiëren.
+
+    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
 
     .. _oefeningenreeks token vernieuwen:
     .. _oefeningenreeks geheime link vernieuwen:
 
-    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd. Daardoor wordt een nieuw :ref:`token <oefeningenreeks token>` gegenereerd voor de oefeningenreeks en wordt het oude token onbruikbaar gemaakt. De geheime link wordt meteen ook aangepast aan het nieuwe token.
+    Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <cursus zichtbaarheid verborgen>` nadat de geheime link gedeeld werd. Daardoor wordt een nieuw :ref:`token <oefeningenreeks token>` gegenereerd en wordt het oude token onbruikbaar gemaakt. De geheime link wordt meteen ook aangepast aan het nieuwe token.
 
     .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
-
-    Als :ref:`cursusgebruikers <cursusgebruiker>` naar een :ref:`verborgen <oefeningenreeks zichtbaarheid verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` navigeren zonder het nieuwste :ref:`token <oefeningenreeks token>` te gebruiken, dan krijgen ze de oefeningenreeks niet te zien.
-
-    .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een cursusgebruiker een ongeldig token gebruikt
 
 .. _oefeningenreeks beschrijving:
 
