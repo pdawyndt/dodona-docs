@@ -6,11 +6,11 @@ Cursusbeheer
 .. _cursus:
 .. _oefeningenreeks:
 
-Een **cursus** wordt :ref:`opgebouwd <leerpad uitstippelen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen <oefening>` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin :ref:`cursusgebruikers <cursusgebruiker>` de oefeningen kunnen :ref:`oplossen <oplossing indienen>`.
+Een **cursus** wordt :ref:`opgebouwd <leerpad uitstippelen>` als een :ref:`leerpad <leerpad>` met :ref:`oefeningen <oefening>` die gebundeld worden in **oefeningenreeksen**. De opeenvolging van oefeningenreeksen impliceert een mogelijke volgorde waarin de oefeningen kunnen :ref:`opgelost <oplossing indienen>` worden.
 
 Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`cursussen <cursus>` :ref:`aanmaken <cursus aanmaken>` en wordt automatisch ook de eerste :ref:`cursusbeheerder <cursusbeheerder>` van die cursussen. Als cursusbeheerder kan hij andere :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanduiden <cursusbeheerders aanduiden>` om samen met hem de cursus te beheren. Hij kan echter geen cursussen beheren waarvoor hij geen cursusbeheerder is.
 
-Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippelen>` een :ref:`leerpad <leerpad>` uit voor de :ref:`cursus <cursus>`, met :ref:`oefeningen <oefening>` die gegroepeerd worden in :ref:`oefeningenreeksen <oefeningenreeks>`. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor de oefeningen uit de oefeningenreeks. Cursusgebruikers kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
+Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippelen>` voor de :ref:`cursus <cursus>` een :ref:`leerpad <leerpad>` uit  met :ref:`oefeningenreeksen <oefeningenreeks>` waaraan :ref:`oefeningen <oefening>` :ref:`gekoppeld <oefeningenreeks oefeningen koppelen>` worden. Voor elke oefeningenreeks kan hij een :ref:`deadline <oefeningenreeks deadline>` :ref:`instellen <oefeningenreeks eigenschappen instellen>` die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor de oefeningen uit de oefeningenreeks. :ref:`Cursusgebruikers <cursusgebruiker>` kunnen na de deadline echter onbeperkt oplossingen blijven indienen voor de oefeningen uit de oefeningenreeks en blijven daar nog steeds feedback voor ontvangen.
 
 
 .. _cursus aanmaken:
@@ -133,7 +133,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. important::
 
-        Als je de registratieprocedure aanpast dan blijven bestaande :ref:`registraties <cursus registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
+        Als je de registratieprocedure aanpast dan blijven bestaande :ref:`registraties <cursus registreren>` voor de :ref:`cursus <cursus>` gelden en blijven :ref:`registratieverzoeken <registratieverzoek>` voor de cursus openstaan. Je moet zelf de bestaande :ref:`registratiestatus <cursusgebruiker registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanpassen <cursusgebruiker registratiestatus aanpassen>`.
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
@@ -145,7 +145,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. _beschrijving markdown:
 
-    .. important::
+    .. tip::
 
         De beschrijving van eigenschappen die aangeduid worden met het Markdown-logo kan geschreven worden met behulp van `Markdown <https://en.wikipedia.org/wiki/Markdown>`_. Dodona maakt voor de weergave van Markdown gebruik van `kramdown <https://kramdown.gettalong.org>`_ waardoor heel wat uitbreidingen van de standaard Markdown ondersteund worden.
 
@@ -154,13 +154,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
 
     .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een niet-geregistreerde gebruiker geen of een ongeldig token gebruikt om naar de cursuspagina te navigeren
 
     .. _cursus registratielink gebruiken:
 
-    Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee alle gebruikers naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor :ref:`niet-geregistreerde <cursus registreren>` gebruikers. Het gebruik van de registratielink heeft dus als voordeel dat gebruikers de cursus niet zelf moeten opzoeken in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te registreren als ze dat nog niet gedaan hadden.
+    Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee gebruikers altijd naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor :ref:`niet-geregistreerde <cursus registreren>` gebruikers. Het gebruik van de registratielink heeft dus als voordeel dat gebruikers de cursus niet zelf moeten opzoeken in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te registreren als ze dat nog niet gedaan hadden.
 
     .. TODO:screenshot-missing: screenshot van niet-geregistreerde gebruiker waarvoor automatisch de registratieprocedure voor de cursus wordt opgestart bij gebruik van de registratielink
 
@@ -544,7 +544,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 Beheren van cursusgebruikers
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle **cursusgebruikers**. Dit zijn de gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben. Je kunt hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bekijken <cursusgebruikers navigeren>`, hun :ref:`gebruikersaccount <gebruikersaccount>` :ref:`overnemen <gebruikersaccount overnemen>`, hun :ref:`registratiestatus <registratiestatus>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle **cursusgebruikers**. Dit zijn de gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben. Je kunt hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bekijken <cursusgebruikers navigeren>`, hun :ref:`gebruikersaccount <gebruikersaccount>` :ref:`overnemen <gebruikersaccount overnemen>`, hun :ref:`registratiestatus <cursusgebruiker registratiestatus>` :ref:`aanpassen <cursusgebruiker registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
 
 
 .. _cursusgebruikersoverzicht:
@@ -569,8 +569,8 @@ Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` e
 .. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
 
 
-.. _registratiestatus:
-.. _registratiestatus aanpassen:
+.. _cursusgebruiker registratiestatus:
+.. _cursusgebruiker registratiestatus aanpassen:
 
 Aanpassen van de registratiestatus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -594,7 +594,7 @@ In het :ref:`overzicht <cursusgebruikersoverzicht>` van alle :ref:`cursusgebruik
 .. _registratieverzoek goedkeuren:
 .. _registratieverzoeken afhandelen:
 
-Elke tab heeft eigen actieknoppen aan de rechterkant van de cursusgebruikers waarmee je hun :ref:`registratiestatus <registratiestatus>` kunt aanpassen.
+Elke tab heeft eigen actieknoppen aan de rechterkant van de cursusgebruikers waarmee je hun :ref:`registratiestatus <cursusgebruiker registratiestatus>` kunt aanpassen.
 
 .. list-table::
   :header-rows: 1
