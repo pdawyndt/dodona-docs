@@ -138,6 +138,8 @@ Als je het :ref:`gebruikersprofiel <gebruikersprofiel>` van een gebruiker :ref:`
 Overnemen van een gebruikersaccount
 -----------------------------------
 
+.. TODO:feature-update: misschien mogen enkel cursusbeheerders de account van een cursusgebruiker overnemen, en dan nog alleen maar binnen de context van de cursus
+
 Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een :ref:`cursus <cursus>` of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
 
 .. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de bewerkknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
