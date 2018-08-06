@@ -663,19 +663,23 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 Beheren van oplossingen
 -----------------------
 
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben binnen de context van de :ref:`cursus <cursus>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
+
+
 .. _oplossing herevalueren:
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je een :ref:`oplossing <oplossing>` herevalueren als ze binnen de :ref:`cursus <cursus>` werd :ref:`ingediend <oplossing indienen>` voor een :ref:`oefening <oefening>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw ingediend wordt. Op die manier blijft het :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
+Herevalueren van oplossingen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om de :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`.
+Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om een :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw ingediend wordt. Op die manier blijft het :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
 
 .. TODO:screenshot-missing: weergave van feedbackpagina waarop de herhaalknop wordt aangeduid
 
-    .. important::
+.. important::
 
-        Bij het :ref:`herevalueren <oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren wel langer duren.
+    Bij het :ref:`herevalueren <oplossingen herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren wel langer duren.
 
-        Gebruikers krijgen geen melding van het platform als hun :ref:`oplossingen <oplossing>` :ref:`geherevalueerd <oplossingen herevalueren>` worden. Als je beslist om oplossingen te herevalueren, is het belangrijk om gebruikers te informeren dat er zowel wijzigingen kunnen zijn van de :ref:`status <oplossing status>` van :ref:`oplossingen <oplossing>` die ze vroeger :ref:`ingediend <oplossing indienen>` hebben als van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` in de :ref:`oefeningenreeksen <oefeningenreeks>` van de cursus.
+    Gebruikers krijgen geen melding van het platform als hun :ref:`oplossingen <oplossing>` :ref:`geherevalueerd <oplossingen herevalueren>` worden. Als je beslist om oplossingen te herevalueren, is het belangrijk om gebruikers te informeren dat er zowel wijzigingen kunnen zijn van de :ref:`status <oplossing status>` van :ref:`oplossingen <oplossing>` die ze vroeger :ref:`ingediend <oplossing indienen>` hebben als van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` in de :ref:`oefeningenreeksen <oefeningenreeks>` van de cursus.
 
 .. _cursusbeheerder oplossingen overzicht:
 
@@ -684,7 +688,13 @@ Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedb
 .. TODO:feature-missing: link in menu van oefeningenreeks die overzicht geeft van alle oplossingen die ingediend werden voor oefeningen uit de oefeningenreeks (bij cursusgebruikers zijn dit enkel hun eigen oplossingen); duid op één of andere manier aan welke oefeningen voor/na de deadline werden ingediend, bijvoorbeeld door oplossingen die na de deadline ingediend werden in het grijs te zetten
 .. TODO:feature-update: link aan rechterkant van oefening in oefeningenreeks die overzicht geeft van alle oplossingen die ingediend werden voor die oefening (bij cursusgebruikers zijn dit enkel hun eigen oplossingen); duid op één of andere manier aan welke oefeningen voor/na de deadline werden ingediend, bijvoorbeeld door oplossingen die na de deadline ingediend werden in het grijs te zetten
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` zie je de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>` in elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de :ref:`cursus <cursus>`. Daarom bevat het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
+
+.. _cursusbeheerder oplossingen navigeren:
+
+Navigeren naar oplossingen
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de context van de :ref:`cursus <cursus>` bevat de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom bevat het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
 .. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
 
