@@ -540,28 +540,35 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 
 .. _cursusgebruiker:
-.. _cursusgebruikersoverzicht:
 .. _cursusgebruikers beheren:
 
 Beheren van cursusgebruikers
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle **cursusgebruikers**. Dit zijn de gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben. Je kunt hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bekijken <cursusgebruikers navigeren>`, hun :ref:`gebruikersaccount <gebruikersaccount>` :ref:`overnemen <cursusgebruiker overnemen>`, hun :ref:`registratiestatus <registratiestatus>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
+
+
+.. _cursusgebruikersoverzicht:
+.. _cursusgebruikers navigeren:
+
+Navigeren naar cursusgebruikers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Aan de onderkant van de :ref:`cursuspagina <cursuspagina>` zie je onder de hoofding :guilabel:`Gebruikers` een overzicht waarin alle :ref:`cursusgebruikers <cursusgebruiker>` opgelijst worden met hun gebruikersnaam, naam, emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>`.
 
 .. image:: images/staff.course_users.nl.png
-
-.. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
 
 .. _cursus beheersrechten icoontje:
 .. _cursusgebruiker voortgangsstatistieken:
 
-Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <gebruiker beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
+.. TODO: tutorial-update: vermoedelijk moet op termijn de bespreking van het gebruikersoverzicht naar hier verhuizen, als lesgevers geen toegang meer krijgen tot alle gebruikers (enkel zeus zou dit mogen kunnen); het gebruikersoverzicht is dan alleen nog toegankelijk voor cursusbeheerdes die daar alle gebruikers over al hun cursussen heen terugvinden
+
+Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van :ref:`cursusgebruikers <cursusgebruiker>` verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Cursusgebruikers die de :ref:`cursus <cursus>` kunnen :ref:`beheren <cursus beheren>` worden aangeduid met een icoontje aan de linkerkant van het overzicht.
 
 .. image:: images/staff.course_users_admin.nl.png
 
 .. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
 
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
 
 .. _registratiestatus:
 .. _registratiestatus aanpassen:
@@ -569,28 +576,26 @@ In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de :r
 Aanpassen van de registratiestatus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :ref:`cursusgebruikers <cursusgebruiker>` gegroepeerd op basis van hun **registratiestatus**. De cursusgebruikers van elke groep worden in een afzonderlijke tab opgelijst:
+In het :ref:`overzicht <cursusgebruikersoverzicht>` van alle :ref:`cursusgebruikers <cursusgebruiker>` worden de cursusgebruikers in tabs gegroepeerd volgens hun **registratiestatus** voor de :ref:`cursus <cursus>`.
 
-.. list-table::
-  :header-rows: 1
+:guilabel:`Geregistreerd`
 
-  * - tab
-    - groep
+    Alle :ref:`cursusgebruikers <cursusgebruiker>` die momenteel :ref:`geregistreerd <cursus registreren>` zijn.
 
-  * - :guilabel:`Geregistreerd`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <cursus registreren>` zijn voor de :ref:`cursus <cursus>`
+:guilabel:`Uitgeschreven`
 
-  * - :guilabel:`Uitgeschreven`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <cursus registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn voor de cursus
+    Alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <cursus registreren>` waren, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn.
 
-  * - :guilabel:`Op de wachtlijst`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
+:guilabel:`Op de wachtlijst`
+
+    Alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`.
+
 
 .. _registratieverzoek afkeuren:
 .. _registratieverzoek goedkeuren:
 .. _registratieverzoeken afhandelen:
 
-Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers aan te passen:
+Elke tab heeft eigen actieknoppen aan de rechterkant van de cursusgebruikers waarmee je hun :ref:`registratiestatus <registratiestatus>` kunt aanpassen.
 
 .. list-table::
   :header-rows: 1
