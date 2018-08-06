@@ -243,7 +243,7 @@ Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar d
 Uitstippelen van een leerpad
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat weergegeven wordt onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Het leerpad bestaat uit een opeenvolging van :ref:`oefeningenreeksen <oefeningenreeks>`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat weergegeven wordt onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Aan het leerpad kan je :ref:`oefeningenreeksen <oefeningenreeks>` :ref:`toevoegen <oefeningenreeks toevoegen>` en aan oefeningenreeksen kan je :ref:`oefeningen <oefening>` :ref:`koppelen <oefeningenreeks oefeningen koppelen>`.
 
 .. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
 
@@ -289,7 +289,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Een optionele deadline die aangeeft tot wanneer er rekening gehouden wordt met :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` worden voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`. :ref:`Cursusgebruikers <cursusgebruiker>` kunnen na de deadline onbeperkt oplossingen blijven indienen voor oefeningen uit de oefeningenreeks en blijven daar nog steeds een beoordeling en feedback voor ontvangen. Er wordt met deze oplossingen echter geen rekening meer gehouden bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor oefeningen uit de oefeningenreeks.
 
-    Zonder deadline wordt er blijvend rekening gehouden met :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`indienen <oplossing indienen>` bij het bepalen van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`.
+    Zonder deadline wordt er bij het bepalen van de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` van :ref:`cursusgebruikers <cursusgebruiker>` blijvend rekening gehouden met :ref:`oplossingen <oplossing>` die ze :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>`
 
     .. important::
 
@@ -340,7 +340,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Geheime link`
 
-    Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van de :ref:`oefeningenreeks <oefeningenreeks>` werd automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
+    Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van een :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
 
     .. TODO:screenshot-missing: weergave van verborgen oefeningenreeks als gebruikers er zonder geldig token naar navigeren
 
@@ -416,19 +416,19 @@ Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle 
 
 .. _oefeningenreeks oefening toevoegen:
 
-Druk op de toevoegknop aan de rechterkant van een :ref:`oefeningen <oefening>` om de oefening aan de :ref:`oefeningenreeks <oefeningenreeks>` toe te voegen.
+Druk op de toevoegknop aan de rechterkant van een :ref:`oefening <oefening>` om de oefening aan de :ref:`oefeningenreeks <oefeningenreeks>` toe te voegen.
 
 .. TODO:screenshot-missing: screenshot waarin het toevoegen van een oefening aan een oefeningenreeks geïllustreerd wordt
 
 .. _oefeningenreeks oefening verwijderen:
 
-Druk op de verwijderknop aan de rechterkant van een :ref:`oefeningen <oefening>` om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
+Druk op de verwijderknop aan de rechterkant van een :ref:`oefening <oefening>` om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
 
 .. TODO:screenshot-missing: screenshot waarin het verwijderen van een oefening uit een oefeningenreeks geïllustreerd wordt
 
 .. _oefeningenreeks oefeningen herschikken:
 
-Gebruik de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` hun volgorde aan te passen. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
+Gebruik de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` om hun volgorde aan te passen. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
 
 .. TODO:screenshot-missing: screenshot waarin het verplaatsen van oefeningen in een oefeningenreeks geïllustreerd wordt
 
@@ -442,7 +442,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel om de koppeling van 
 
 .. TODO:screenshot-missing: screenshot van formulier voor het bewerken van de oefeningen van een oefeningenreeks waarin de afwerkknop wordt aangeduid
 
-Na het afwerken navigeer je terug naar de ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
+Na het afwerken navigeer je terug naar de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
 
 
 .. _oefeningenreeks beheren:
@@ -504,11 +504,11 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht
 
-    Druk op de naam van een gebruiker om naar de profielpagina van de gebruiker te navigeren.
+    Druk op de naam van een cursusgebruiker om naar de profielpagina van de gebruiker te navigeren.
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht waarop naam van gebruiker wordt aangeduid
 
-    Druk op het :ref:`icoontje <oefeningenreeks oefening indienstatus icoontje>` van een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` om naar de :ref:`oplossing <oplossing>` te navigeren die gebruikt werd om de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` te bepalen (als de gebruiker effectief een oplossing heeft :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
+    Druk op het :ref:`icoontje <oefeningenreeks oefening indienstatus icoontje>` van een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` om naar de :ref:`oplossing <oplossing>` te navigeren die gebruikt werd om de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` te bepalen (als de cursusgebruiker effectief een oplossing heeft :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht waarop icoontje wordt aangeduid
 
@@ -533,7 +533,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 :guilabel:`Oplossingen herevalueren`
 
-    :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
+    :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` hebben :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
 
 .. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden; dit maak het vorige menu-item overbodig, omdat de oplossingen dan via het menu van het overzicht kunnen geherevalueerd worden
 
@@ -562,11 +562,7 @@ Aan de onderkant van de :ref:`cursuspagina <cursuspagina>` zie je onder de hoofd
 
 .. TODO: tutorial-update: vermoedelijk moet op termijn de bespreking van het gebruikersoverzicht naar hier verhuizen, als lesgevers geen toegang meer krijgen tot alle gebruikers (enkel zeus zou dit mogen kunnen); het gebruikersoverzicht is dan alleen nog toegankelijk voor cursusbeheerdes die daar alle gebruikers over al hun cursussen heen terugvinden
 
-Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van :ref:`cursusgebruikers <cursusgebruiker>` verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Cursusgebruikers die de :ref:`cursus <cursus>` kunnen :ref:`beheren <cursus beheren>` worden aangeduid met een icoontje aan de linkerkant van het overzicht.
-
-.. image:: images/staff.course_users_admin.nl.png
-
-.. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
+Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van :ref:`cursusgebruikers <cursusgebruiker>` verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`.
 
 
 .. _cursusgebruiker registratiestatus:
@@ -635,9 +631,19 @@ Aanduiden van cursusbeheerders
 
 .. _cursusbeheerder:
 
-Onder de :ref:`geregistreerde <cursus registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
+Een **cursusbeheerder** is een :ref:`geregistreerde <cursus registreren>` :ref:`cursusgebruiker` met beheersrechten voor de :ref:`cursus <cursus>`. Een :ref:`lesgever <lesgever>` die een nieuwe cursus aanmaakt wordt er automatisch voor geregistreerd en wordt er meteen ook de eerste cursusbeheerder van. Lesgever hebben voor het beheren van cursussen echter geen bijkomende rechten ten opzichte van andere :ref:`cursusbeheerders` en kunnen ook geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
 
-In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
+.. _cursusbeheerder icoontje:
+
+In de tab :guilabel:`Geregistreerd` van het :ref:`overzicht <cursusgebruikersoverzicht>` met alle :ref:`cursusgebruikers <cursusgebruiker>` kan je de cursusbeheerders herkennen aan het icoontje in de linkermarge.
+
+.. image:: images/staff.course_users_admin.nl.png
+
+.. TODO:update-feature: icoontjes met beheersrechten op platformniveau zijn hier niet zinvol, en moeten dus niet weergegeven worden
+
+.. TODO:update-feature: zeus-cursusgebruikers krijgen altijd een icoontje van cursusbeheerder, ook al zijn ze niet expliciet aangeduid als cursusbeheerder; dit zou niet het geval mogen zijn; is zeker verwarrend om te zien dat zeus-cursusgebruikers een icoontje krijgen als ze uitgeschreven zijn
+
+In de tab kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
 
 .. list-table::
   :header-rows: 1
@@ -646,18 +652,20 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
     - actie
 
   * - .. image:: images/staff_registration_icons/make_course_admin.png
-    - student promoveren tot cursusbeheerder
+    - cursusgebruiker promoveren tot cursusbeheerder
 
   * - .. image:: images/staff_registration_icons/make_student.png
-    - cursusbeheerder degraderen tot student
+    - cursusbeheerder degraderen tot cursusgebruiker zonder beheersrechten voor de cursus
+
+.. TODO:update-feature: in plaats van een doorstreept icoontje zouden we een quasi doorzichtig icoontje kunnen gebruiken om een cursusgebruiker te promoveren en een zwart icoontje om een cursusbeheerder te degraderen (zoals dat ook in Indianio gebeurt); op die manier worden de icoontjes in de linkermarge wellicht ook overbodig
 
 .. important::
 
-    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
+    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit de :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder.
 
-.. TODO:update-feature: het bovenstaande statement is op dit moment niet het geval voor wat betreft het feit dat een cursusbeheerder zijn status verliest als hij zich uitschrijft in Dodona, maar dat zou wel zo moeten zijn
+    Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven en kan hij zichzelf ook niet degraderen tot cursusgebruiker zonder beheersrechten voor de cursus.
 
-.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursusbeheerspagina
+    Na het aanmaken van een cursus kan een lesgever zich uitschrijven als hij andere cursusbeheerders aangeduid heeft. Hij kan door andere cursusbeheerders ook gedegradeerd worden tot cursusgebruiker zonder beheersrechten voor de cursus.
 
 
 .. _oplossingen beheren:
@@ -665,7 +673,7 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 Beheren van oplossingen
 -----------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot de :ref:`oplossingen <oplossing>` die alle :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben binnen de context van de :ref:`cursus <cursus>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle :ref:`oplossingen <oplossing>` die de :ref:`cursusgebruikers <cursusgebruiker>` hebben :ref:`ingediend <oplossing indienen>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
 
 
 .. _oplossing herevalueren:
@@ -673,9 +681,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot de :ref:`oplos
 Herevalueren van oplossingen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om een :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`. Daarbij wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw ingediend wordt. Op die manier blijft het :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
-
-.. TODO:screenshot-missing: weergave van feedbackpagina waarop de herhaalknop wordt aangeduid
+Bij het herevalueren van een oplossing wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw :ref:`ingediend <oplossing indienen>` moet worden. Op die manier blijft het originele :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
 
 .. important::
 
@@ -683,7 +689,9 @@ Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedb
 
     Gebruikers krijgen geen melding van het platform als hun :ref:`oplossingen <oplossing>` :ref:`geherevalueerd <oplossing herevalueren>` worden. Als je beslist om oplossingen te herevalueren, is het belangrijk om gebruikers te informeren dat er zowel wijzigingen kunnen zijn van de :ref:`status <oplossing status>` van :ref:`oplossingen <oplossing>` die ze vroeger :ref:`ingediend <oplossing indienen>` hebben als van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` in de :ref:`oefeningenreeksen <oefeningenreeks>` van de cursus.
 
-.. _cursusbeheerder oplossingen overzicht:
+Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om een :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`.
+
+.. TODO:screenshot-missing: weergave van feedbackpagina waarop de herhaalknop wordt aangeduid
 
 .. TODO:feature-missing: link in sidebar die overzicht geeft van alle oplossingen die ingediend werden (bij cursusgebruikers zijn dit hun eigen oplossingen over alle cursussen heen, bij cursusbeheerders wordt dit aangevuld met oplossingen van alle gebruikers van cursussen die ze beheren; bij zeus zijn dit alle oplossingen)
 .. TODO:feature-missing: link in navigatiebalk van cursus die overzicht geeft van alle oplossingen die in cursus ingediend werden (bij cursusgebruikers zijn dit enkel hun eigen oplossingen)
@@ -696,7 +704,7 @@ Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedb
 Navigeren naar oplossingen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Voor :ref:`cursusbeheerders <cursusbeheerder>` bevat elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de context van de :ref:`cursus <cursus>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
+Elk overzicht met :ref:`oplossingen <oplossing>` van de :ref:`cursus <cursus>` bevat voor :ref:`cursusbeheerders <cursusbeheerder>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
 .. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
 
