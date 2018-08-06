@@ -141,9 +141,9 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die bovenaan de :ref:`cursuspagina <cursuspagina>` wordt weergegeven. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown gebruiken>`.
+    Een optionele beschrijving die bovenaan de :ref:`cursuspagina <cursuspagina>` wordt weergegeven. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <beschrijving markdown>`.
 
-    .. _markdown gebruiken:
+    .. _beschrijving markdown:
 
     .. important::
 
@@ -374,7 +374,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Beschrijving`
 
-    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks in het :ref:`leerpad <leerpad>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <markdown gebruiken>`.
+    Een optionele beschrijving die gebruikers te zien krijgen bij de weergave van de oefeningenreeks in het :ref:`leerpad <leerpad>`. Voor het opmaken van de beschrijving kan je gebruikmaken van :ref:`Markdown <beschrijving markdown>`.
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oefeningenreeks` om de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` effectief aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
 
