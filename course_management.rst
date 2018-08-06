@@ -156,13 +156,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van de :ref:`cursus <cursus>` werd automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <verborgen cursus>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
 
     .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een niet-geregistreerde gebruiker geen of een ongeldig token gebruikt om naar de cursuspagina te navigeren
 
     .. _cursus registratielink gebruiken:
 
-    Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee alle gebruikers naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor niet-geregistreerde gebruikers.
+    Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee alle gebruikers naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor :ref:`niet-geregistreerde <cursus registreren>` gebruikers. Het gebruik van de registratielink heeft dus als voordeel dat gebruikers de cursus niet zelf moeten opzoeken in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te registreren als ze dat nog niet gedaan hadden.
 
     .. TODO:screenshot-missing: screenshot van niet-geregistreerde gebruiker waarvoor automatisch de registratieprocedure voor de cursus wordt opgestart bij gebruik van de registratielink
 
@@ -182,6 +182,18 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
     Druk op de vernieuwknop naast de :ref:`registratielink <cursus registratielink>` om de :ref:`cursus <cursus>` opnieuw te :ref:`verbergen <cursus verborgen>` nadat de registratielink gedeeld werd. Daardoor wordt een nieuw :ref:`token <cursus token>` gegenereerd en wordt het oude token onbruikbaar gemaakt. De registratielink wordt meteen ook aangepast aan het nieuwe token.
 
     .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van cursus worden ingesteld, waarbij vernieuwknop naast registratielink wordt aangeduid
+
+    De :ref:`registratielink <registratielink>` wordt ook weergegeven op de :ref:`cursuspagina <cursuspagina>`.
+
+    .. TODO:feature-update: eigenlijk is het overbodig om de registratielink op de cursuspagina te zetten; als we die daar weghalen, dan mogen deze twee paragrafen ook weg
+
+    .. image:: images/staff.registration_link.nl.png
+
+    .. _registratielink kopiëren:
+
+    Druk op de kopieerknop naast de :ref:`registratielink <registratielink>` om de registratielink naar het klembord te kopiëren.
+
+    .. image:: images/staff.registration_link_copy.nl.png
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
 
@@ -224,156 +236,6 @@ Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om 
 Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar de :ref:`cursuspagina` waar de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` onmiddellijk van toepassing zijn.
 
 .. image:: images/staff.course_after_edit.nl.png
-
-
-.. _registratielink:
-.. _cursusgebruikers uitnodigen:
-
-Uitnodigen van cursusgebruikers
--------------------------------
-
-Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **registratielink** gegenereerd. Als afschermingsmechanisme bevat de registratielink een token dat gebruikers nodig hebben om toegang te krijgen tot de cursus als die door een cursusbeheerder verborgen werd. Zonder dit token kunnen ze niet :ref:`navigeren <cursus navigeren>` naar de :ref:`cursuspagina <cursuspagina>`.
-
-.. TODO:screenshot-missing: screenshot van de cursuspagina van een gesloten cursus die bezocht wordt zonder token
-
-Als :ref:`cursusbeheer <cursusbeheerder>` kan je de :ref:`registratielink <registratielink>` delen om gebruikers uit te nodigen om zich voor de cursus te :ref:`registreren <cursus registreren>`. Als gebruikers de registratielink volgen dan :ref:`navigeren <cursus navigeren>` ze rechtstreeks naar de cursus zonder dat ze die zelf moeten :ref:`zoeken <cursus zoeken>` in het :ref:`cursusoverzicht <cursusoverzicht>`. Als ze nog niet geregistereerd waren dan krijgen ze bovendien meteen een verzoek om de zich voor de cursus te registreren.
-
-.. TODO:screenshot-missing: screenshot van registratieverzoek dat gebruiker te zien krijgt als hij de registratielink volgt voor een cursus waarvoor hij nog niet geregistreerd was
-
-Als :ref:`cursusbeheer <cursusbeheerder>` vind je de :ref:`registratielink <registratielink>` bovenaan de :ref:`cursuspagina <cursuspagina>`.
-
-.. image:: images/staff.registration_link.nl.png
-
-.. _registratielink kopiëren:
-
-Druk op de kopieerknop naast de :ref:`registratielink <registratielink>` om de registratielink naar het klembord te kopiëren.
-
-.. image:: images/staff.registration_link_copy.nl.png
-
-.. _registratielink vernieuwen:
-
-Een :ref:`verborgen <cursus zichtbaarheid>` :ref:`cursus <cursus>` kan enkel gevonden worden door gebruikers die de :ref:`registratielink <registratielink>` kennen. Nadat de registratielink gedeeld werd kan je bij het :ref:`instellen <cursuseigenschappen instellen>` van de :ref:`eigenschappen <cursuseigenschappen>` van de cursus echter een nieuwe registratielink laten genereren om daarmee de cursus opnieuw te verbergen. Druk daarvoor op de vernieuwknop naast de registratielink.
-
-.. image:: images/registration_link_renew.nl.png
-
-.. TODO:feature-update: omdat de identifiers oplopend genummerd worden en ook gebruikt worden in de URL van een cursus, is het vrij eenvoudig om verborgen cursussen te vinden; heeft het vernieuwen van een registratielink dan wel zin als een manier om de cursus opnieuw te verbergen? ofwel mis ik nog iets om te begrijpen waardoor het opnieuw genereren van de registratielink de cursus opnieuw verbergt
-
-
-.. _cursusgebruiker:
-.. _cursusgebruikersoverzicht:
-.. _cursusgebruikers beheren:
-
-Beheren van cursusgebruikers
-----------------------------
-
-Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
-
-.. image:: images/staff.course_users.nl.png
-
-.. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
-
-.. _cursus beheersrechten icoontje:
-.. _cursusgebruiker voortgangsstatistieken:
-
-Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <gebruiker beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
-
-.. image:: images/staff.course_users_admin.nl.png
-
-.. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
-
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
-
-.. _registratiestatus:
-.. _registratiestatus aanpassen:
-
-Aanpassen van de registratiestatus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :ref:`cursusgebruikers <cursusgebruiker>` gegroepeerd op basis van hun **registratiestatus**. De cursusgebruikers van elke groep worden in een afzonderlijke tab opgelijst:
-
-.. list-table::
-  :header-rows: 1
-
-  * - tab
-    - groep
-
-  * - :guilabel:`Geregistreerd`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <cursus registreren>` zijn voor de :ref:`cursus <cursus>`
-
-  * - :guilabel:`Uitgeschreven`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <cursus registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn voor de cursus
-
-  * - :guilabel:`Op de wachtlijst`
-    - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
-
-.. _registratieverzoek afkeuren:
-.. _registratieverzoek goedkeuren:
-.. _registratieverzoeken afhandelen:
-
-Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers aan te passen:
-
-.. list-table::
-  :header-rows: 1
-
-  * - tab
-    - knop
-    - actie
-
-  * - :guilabel:`Geregistreerd`
-    - .. image:: images/staff_registration_icons/unregister.png
-    - cursusgebruiker uitschrijven uit de cursus
-
-      .. TODO:feature-missing: cursusbeheerders kunnen geen (andere) cursusbeheerders uitschrijven uit de cursus; is dat de bedoeling, of zou dat wel moeten kunnen zolang op die manier niet de laatste cursusbeheerder uit de cursus verdwijnt als een cursusbeheerder zichzelf uitschrijft
-      .. TODO:feature-missing: als cursusbeheerder kan je enkel bestaande cursusgebruikers registreren, en heb je niet de mogelijkheid om andere gebruikers te registren voor een cursus, behalve dan het gebruikersaccount van de gebruiker overnemen en in naam van de gebruiker de registratie uitvoeren (als dit kan); dit zou eventueel een manier zijn om als cursusbeheerder een gebruiker in te schrijven voor een cursus die werkt met gesloten registratie
-
-  * - :guilabel:`Uitgeschreven`
-    - .. image:: images/staff_registration_icons/register.png
-    - cursusgebruiker terug registreren voor de cursus
-
-  * - :guilabel:`Registratieverzoeken`
-    - .. image:: images/staff_registration_icons/approve.png
-    - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <cursus registreren>` wordt voor de cursus
-
-  * - :guilabel:`Registratieverzoeken`
-    - .. image:: images/staff_registration_icons/decline.png
-    - afkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`uitgeschreven <cursus uitschrijven>` wordt uit de cursus
-
-.. TODO:update-feature: cursusbeheerder mogelijkheid geven om een reden op te geven waarom een registratieverzoek wordt afgekeurd
-.. TODO:update-feature: notification/email sturen naar de gebruiker wanneer een registratieverzoek wordt goedgekeurd/afgekeurd
-
-.. TODO:tutorial-missing: wat zijn de regels voor het uitschrijven als de laatste cursusbeheerder zich uit een cursus wil uitschrijven
-
-
-.. _cursusbeheerders aanduiden:
-
-Aanduiden van cursusbeheerders
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. _cursusbeheerder:
-
-Onder de :ref:`geregistreerde <cursus registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
-
-In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
-
-.. list-table::
-  :header-rows: 1
-
-  * - knop
-    - actie
-
-  * - .. image:: images/staff_registration_icons/make_course_admin.png
-    - student promoveren tot cursusbeheerder
-
-  * - .. image:: images/staff_registration_icons/make_student.png
-    - cursusbeheerder degraderen tot student
-
-.. important::
-
-    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
-
-.. TODO:update-feature: het bovenstaande statement is op dit moment niet het geval voor wat betreft het feit dat een cursusbeheerder zijn status verliest als hij zich uitschrijft in Dodona, maar dat zou wel zo moeten zijn
-
-.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursusbeheerspagina
 
 
 .. _leerpad:
@@ -677,6 +539,123 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
     :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die binnen de :ref:`cursus <cursus>` werden :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
 
 .. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden; dit maak het vorige menu-item overbodig, omdat de oplossingen dan via het menu van het overzicht kunnen geherevalueerd worden
+
+
+.. _cursusgebruiker:
+.. _cursusgebruikersoverzicht:
+.. _cursusgebruikers beheren:
+
+Beheren van cursusgebruikers
+----------------------------
+
+Als :ref:`cursusbeheerder <cursusbeheerder>` van een :ref:`cursus <cursus>` zie je onderaan de :ref:`cursuspagina <cursuspagina>` een **cursusgebruikersoverzicht** waarin de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <cursusgebruiker voortgangsstatistieken>` opgelijst worden uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle **cursusgebruikers**. Dit zijn alle gebruikers die ooit voor de cursus :ref:`geregistreerd <cursus registreren>` geweest zijn of die ooit een :ref:`registratieverzoek <registratieverzoek>` voor de cursus ingediend hebben.
+
+.. image:: images/staff.course_users.nl.png
+
+.. TODO:tutorial-missing: uitleggen van de betekenis van de voortgangsstatistieken
+
+.. _cursus beheersrechten icoontje:
+.. _cursusgebruiker voortgangsstatistieken:
+
+Het :ref:`zoeken <gebruiker zoeken>`, :ref:`selecteren <gebruiker selecteren>` en :ref:`bewerken <gebruikersprofiel bewerken>` van gebruikers verloopt op dezelfde manier als in het :ref:`gebruikersoverzicht <gebruikersoverzicht>`. Naast de gebruikelijke :ref:`icoontjes <gebruiker beheersrechten icoontje>` die de lesgevers en beheerders aangeven, gebruikt het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` een bijkomend icoontje om de cursusbeheerders aan te geven.
+
+.. image:: images/staff.course_users_admin.nl.png
+
+.. TODO:update-feature: plaats icoontje van cursusbeheerders voor het icoontje van lesgevers en beheerders, omdat de sortering van gebruikers eerst gebeurt op cursusbeheerstatus, dan op beheerstatus en dan alfabetisch (op gebruikersnaam !! kan dit op naam ??)
+
+In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de :ref:`registratiestatus <registratiestatus>` van :ref:`cursusgebruikers <cursusgebruiker>` :ref:`aanpassen <registratiestatus aanpassen>` en :ref:`cursusbeheerders <cursusbeheerder>` :ref:`aanduiden <cursusbeheerders aanduiden>`.
+
+.. _registratiestatus:
+.. _registratiestatus aanpassen:
+
+Aanpassen van de registratiestatus
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` worden de :ref:`cursusgebruikers <cursusgebruiker>` gegroepeerd op basis van hun **registratiestatus**. De cursusgebruikers van elke groep worden in een afzonderlijke tab opgelijst:
+
+.. list-table::
+  :header-rows: 1
+
+  * - tab
+    - groep
+
+  * - :guilabel:`Geregistreerd`
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die :ref:`geregistreerd <cursus registreren>` zijn voor de :ref:`cursus <cursus>`
+
+  * - :guilabel:`Uitgeschreven`
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` die ooit :ref:`geregistreerd <cursus registreren>` waren voor de :ref:`cursus <cursus>`, maar die ondertussen :ref:`uitgeschreven <cursus uitschrijven>` zijn voor de cursus
+
+  * - :guilabel:`Op de wachtlijst`
+    - alle :ref:`cursusgebruikers <cursusgebruiker>` waarvoor er nog een :ref:`registratieverzoek <registratieverzoek>` openstaat dat wacht op :ref:`afhandeling <registratieverzoek afhandelen>` van een :ref:`cursusbeheerder <cursusbeheerder>`
+
+.. _registratieverzoek afkeuren:
+.. _registratieverzoek goedkeuren:
+.. _registratieverzoeken afhandelen:
+
+Elke tab van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` heeft eigen actieknoppen om de :ref:`registratiestatus <registratiestatus>` van gebruikers aan te passen:
+
+.. list-table::
+  :header-rows: 1
+
+  * - tab
+    - knop
+    - actie
+
+  * - :guilabel:`Geregistreerd`
+    - .. image:: images/staff_registration_icons/unregister.png
+    - cursusgebruiker uitschrijven uit de cursus
+
+      .. TODO:feature-missing: cursusbeheerders kunnen geen (andere) cursusbeheerders uitschrijven uit de cursus; is dat de bedoeling, of zou dat wel moeten kunnen zolang op die manier niet de laatste cursusbeheerder uit de cursus verdwijnt als een cursusbeheerder zichzelf uitschrijft
+      .. TODO:feature-missing: als cursusbeheerder kan je enkel bestaande cursusgebruikers registreren, en heb je niet de mogelijkheid om andere gebruikers te registren voor een cursus, behalve dan het gebruikersaccount van de gebruiker overnemen en in naam van de gebruiker de registratie uitvoeren (als dit kan); dit zou eventueel een manier zijn om als cursusbeheerder een gebruiker in te schrijven voor een cursus die werkt met gesloten registratie
+
+  * - :guilabel:`Uitgeschreven`
+    - .. image:: images/staff_registration_icons/register.png
+    - cursusgebruiker terug registreren voor de cursus
+
+  * - :guilabel:`Registratieverzoeken`
+    - .. image:: images/staff_registration_icons/approve.png
+    - goedkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`geregistreerd <cursus registreren>` wordt voor de cursus
+
+  * - :guilabel:`Registratieverzoeken`
+    - .. image:: images/staff_registration_icons/decline.png
+    - afkeuren van het :ref:`registratieverzoek <registratieverzoek>` dat door de gebruiker werd :ref:`ingediend <registratieverzoek indienen>`, waardoor de gebruiker :ref:`uitgeschreven <cursus uitschrijven>` wordt uit de cursus
+
+.. TODO:update-feature: cursusbeheerder mogelijkheid geven om een reden op te geven waarom een registratieverzoek wordt afgekeurd
+.. TODO:update-feature: notification/email sturen naar de gebruiker wanneer een registratieverzoek wordt goedgekeurd/afgekeurd
+
+.. TODO:tutorial-missing: wat zijn de regels voor het uitschrijven als de laatste cursusbeheerder zich uit een cursus wil uitschrijven
+
+
+.. _cursusbeheerders aanduiden:
+
+Aanduiden van cursusbeheerders
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _cursusbeheerder:
+
+Onder de :ref:`geregistreerde <cursus registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en **cursusbeheerders**, waarbij enkel cursusbeheerders een bestaande cursus kunnen beheren. De lesgever die de cursus heeft aangemaakt wordt automatisch geregistreerd voor de cursus en wordt meteen ook de eerste cursusbeheerder ervan. Lesgevers kunnen echter geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
+
+In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cursusgebruikersoverzicht>` kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te duiden:
+
+.. list-table::
+  :header-rows: 1
+
+  * - knop
+    - actie
+
+  * - .. image:: images/staff_registration_icons/make_course_admin.png
+    - student promoveren tot cursusbeheerder
+
+  * - .. image:: images/staff_registration_icons/make_student.png
+    - cursusbeheerder degraderen tot student
+
+.. important::
+
+    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder voor de een cursus. Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven uit de cursus en kan hij zichzelf binnen de cursus dan ook niet degraderen tot student.
+
+.. TODO:update-feature: het bovenstaande statement is op dit moment niet het geval voor wat betreft het feit dat een cursusbeheerder zijn status verliest als hij zich uitschrijft in Dodona, maar dat zou wel zo moeten zijn
+
+.. TODO:feature-update: verhuis overzicht en beheer van cursusgebruikers naar de cursusbeheerspagina
 
 
 .. _oplossingen beheren:
