@@ -19,7 +19,7 @@ Handleiding: Dodona
    for_students
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Lesgevers
 
    user_management
