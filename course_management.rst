@@ -107,36 +107,33 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratie`
 
-    Deze :ref:`cursuseigenschap <cursuseigenschappen>` bepaalt de **registratieprocedure** waarmee gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`:
+    .. TODO:feature-update: vervang de term "registratie" door "registratieprocedure" als naam voor de eigenschap
+
+    De **registratieprocedure** bepaalt of en hoe gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
 
     .. _open registratieprocedure:
+
+    :guilabel:`Open`
+
+        Gebruikers kunnen zich voor de :ref:`cursus <cursus>` :ref:`registreren <cursus registreren>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`.
+
     .. _gemodereerde registratieprocedure:
+
+    :guilabel:`Gemodereerd`
+
+        Gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <cursus registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`.
+
     .. _gesloten registratieprocedure:
 
-    .. list-table::
-      :header-rows: 1
+    :guilabel:`Gesloten`
 
-      * - optie
-        - registratieprocedure
-        - beschrijving
+        Gebruikers kunnen zich niet meer voor de :ref:`cursus <cursus>` :ref:`registreren <cursus registreren>`.
 
-      * - :guilabel:`Open`
-        - open
-        - alle gebruikers kunnen zich :ref:`registreren <cursus registreren>` voor de :ref:`cursus <cursus>` zonder expliciete goedkeuring van een :ref:`cursusbeheerder <cursusbeheerder>`
-
-      * - :guilabel:`Gemodereerd`
-        - gemodereerd
-        - alle gebruikers kunnen een :ref:`registratieverzoek <registratieverzoek>` :ref:`indienen <registratieverzoek indienen>` voor de :ref:`cursus <cursus>` maar zijn pas :ref:`geregistreerd <cursus registreren>` als een :ref:`cursusbeheerder <cursusbeheerder>` hun registratieverzoek heeft :ref:`goedgekeurd <registratieverzoek goedkeuren>`
-
-      * - :guilabel:`Gesloten`
-        - gesloten
-        - gebruikers kunnen zich niet meer :ref:`registreren <cursus registreren>` voor de :ref:`cursus <cursus>`
-
-          .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
+        .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
     .. important::
 
-        Als je deze :ref:`cursuseigenschap <cursuseigenschap>` aanpast dan blijven bestaande :ref:`registraties <cursus registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
+        Als je de registratieprocedure aanpast dan blijven bestaande :ref:`registraties <cursus registreren>` voor de :ref:`cursus <cursus>` gelden en blijven openstaande :ref:`registratieverzoeken <registratieverzoek>` voor de cursus bestaan.
 
     .. TODO:feature-update: bijkomende mogelijkheden voorzien, bijvoorbeeld selectief automatisch goedkeuren van alle gebruikers van bepaalde instellingen; op die manier kan je die cursus openzetten voor bepaalde instellingen en registratieverzoeken van andere gebruikers modereren
 
@@ -663,7 +660,7 @@ In de tab :guilabel:`Geregistreerd` van het :ref:`cursusgebruikersoverzicht <cur
 Beheren van oplossingen
 -----------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben binnen de context van de :ref:`cursus <cursus>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot de :ref:`oplossingen <oplossing>` die alle :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben binnen de context van de :ref:`cursus <cursus>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
 
 
 .. _oplossing herevalueren:
@@ -694,7 +691,7 @@ Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedb
 Navigeren naar oplossingen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de context van de :ref:`cursus <cursus>` bevat de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom bevat het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
+Voor :ref:`cursusbeheerders <cursusbeheerder>` bevat elk overzicht van :ref:`oplossingen <oplossing>` die :ref:`ingediend <oplossing indienen>` werden binnen de context van de :ref:`cursus <cursus>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
 .. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
 
