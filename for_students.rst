@@ -340,7 +340,7 @@ Mogelijke weergaven van je :ref:`indienstatus <oefeningenreeks oefening indienst
 
   * - :guilabel:`deadline gemist` (rood)
     - .. image:: images/course_exercise_status_icons/red_check.png
-    - als je na de :ref:`deadline <oefeningenreeeks deadline>` een correcte oplossing hebt ingediend
+    - als je na de :ref:`deadline <oefeningenreeks deadline>` een correcte oplossing hebt ingediend
 
 .. important::
 
@@ -348,7 +348,7 @@ Mogelijke weergaven van je :ref:`indienstatus <oefeningenreeks oefening indienst
 
     .. _waarschuwingssymbool:
 
-    Dodona toont een **waarschuwingssymbool** naast je :ref:`indienstatus <oefening status>` van een :ref:`oefening <oefening>` in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst :ref:`ingediende <oplossing indienen>` :ref:`oplossing <oplossing>` voor de oefening vóór de :ref:`deadline <oefeningenreeks deadline>` van de oefeningenreeks een :ref:`status <oplossing status>` heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kunt eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
+    Dodona toont een **waarschuwingssymbool** naast je :ref:`indienstatus <oefeningenreeks oefening indienstatus>` van een :ref:`oefening <oefening>` in een :ref:`oefeningenreeks <oefeningenreeks>` en in de lijst met :ref:`recente oefeningen <recente oefeningen>` op je :ref:`startpagina <startpagina>` als je laatst :ref:`ingediende <oplossing indienen>` :ref:`oplossing <oplossing>` voor de oefening vóór de :ref:`deadline <oefeningenreeks deadline>` van de oefeningenreeks een :ref:`status <oplossing status>` heeft die slechter is dan de status van een oplossing voor de oefening die je daarvoor hebt ingediend. Je kunt eventueel een voorgaande oplossing selecteren en :ref:`opnieuw indienen <oplossing opnieuw indienen>`.
 
     .. image:: images/student.deadline_series_warning.nl.png
 
@@ -364,7 +364,7 @@ In het menu van een :ref:`oefeningenreeks <oefeningenreeks>` vind je de volgende
 
 :guilabel:`Toon overzicht`
 
-    Toont een overzicht waarin de namen en beschrijvingen van alle :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefenigenreeks>` netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`indienstatus <oefening status>` voor de oefening. Als je op de indienstatus drukt dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om de indienstatus te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
+    Toont een overzicht waarin de namen en beschrijvingen van alle :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` netjes onder elkaar staan. Onder elke beschrijving staat ook je :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor de oefening. Als je op de indienstatus drukt dan navigeer je naar de :ref:`oplossing <oplossing>` die gebruikt werd om de indienstatus te bepalen (als je effectief een oplossing hebt :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
 
     .. _oefeningenreeks afdrukken:
 
@@ -395,14 +395,14 @@ Als je :ref:`navigeert <cursus navigeren>` naar een :ref:`cursus <cursus>` waarv
 
 .. TODO:feature-update: toon het registratiepaneel over de volledige breedte aan de bovenkant van de cursuspagina (boven de beschrijving)
 
-* De :ref:`cursus <cursus>` werkt met een :ref:`open <open registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
+* De :ref:`cursus <cursus>` werkt met een :ref:`open <cursus open>` :ref:`registratieprocedure <cursus registratieprocedure>`, wat betekent dat iedereen voor de cursus kan registreren zonder expliciete goedkeuring van een cursusbeheerder. Druk op de knop :guilabel:`REGISTREREN` om je voor de cursus te registreren.
 
   .. image:: images/register.nl.png
 
 * .. _registratieverzoek:
   .. _registratieverzoek indienen:
 
-  De :ref:`cursus <cursus>` werkt met een :ref:`gemodereerde <gemodereerde registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
+  De :ref:`cursus <cursus>` werkt met een :ref:`gemodereerde <cursus gemodereerd>` :ref:`registratieprocedure <cursus registratieprocedure>`, wat betekent dat je een **registratieverzoek** kunt indienen dat daarna dient goedgekeurd of afgekeurd te worden door een cursusbeheerder. Pas wanneer je registratieverzoek wordt goedgekeurd, ben je ook effectief geregistreerd voor de cursus. Druk op de knop :guilabel:`REGISTRATIEVERZOEK INDIENEN` om een registratieverzoek voor de cursus in te dienen.
 
   .. image:: images/moderated_register.nl.png
 
@@ -410,7 +410,7 @@ Als je :ref:`navigeert <cursus navigeren>` naar een :ref:`cursus <cursus>` waarv
 
   .. image:: images/moderated_waiting.nl.png
 
-* De :ref:`cursus <cursus>` werkt met een :ref:`gesloten <gesloten registratieprocedure>` :ref:`registratieprocedure <registratieprocedure>`, wat betekent dat je geen :ref:`registratieverzoek <registratieverzoek>` kunt indienen voor de cursus.
+* De :ref:`cursus <cursus>` werkt met een :ref:`gesloten <gesloten registratieprocedure>` :ref:`registratieprocedure <cursus registratieprocedure>`, wat betekent dat je geen :ref:`registratieverzoek <registratieverzoek>` kunt indienen voor de cursus.
 
   .. image:: images/closed_registration.nl.png
 
@@ -433,9 +433,9 @@ Zodra je voor een :ref:`cursus <cursus>` :ref:`geregistreerd <cursus registreren
 .. TODO:tutorial-missing: behandeling van deadlines moet ergens ander staan.
 .. Als er deadlines zijn voor de cursussen waar je bent voor ingeschreven zullen deze ook op de startpagina te zien zijn.
 
-.. _registratielink volgen:
+.. _cursus registratielink gebruiken:
 
-Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de :ref:`registratieprocedure <registratieprocedure>` te doorlopen, bestaat ook de mogelijkheid dat je een :ref:`registratielink <registratielink>` ontvangt van een :ref:`cursusbeheerder` (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met een :ref:`open <open registratieprocedure>`, een :ref:`gemodereerde <gemodereerde registratieprocedure>` of een :ref:`gesloten <gesloten registratieprocedure>` registratieprocedure.
+Naast de mogelijkheid om zelf naar een :ref:`cursus <cursus>` te navigeren en op de :ref:`cursuspagina <cursuspagina>` de :ref:`registratieprocedure <cursus registratieprocedure>` te doorlopen, bestaat ook de mogelijkheid dat je een :ref:`registratielink <cursus registratielink>` ontvangt van een :ref:`cursusbeheerder <cursusbeheerder>` (bijvoorbeeld per email van een lesgever). Door op de registratielink te drukken, wordt de registratieprocedure opgestart voor een specifieke cursus en hoef je dus zelf niet meer naar de cursus te navigeren. De registratieprocedure blijft net zoals bij :ref:`manuele registratie <manuele registratieprocedure>` wel afhankelijk van het feit of de cursus werkt met een :ref:`open <open registratieprocedure>`, een :ref:`gemodereerde <gemodereerde registratieprocedure>` of een :ref:`gesloten <gesloten registratieprocedure>` registratieprocedure.
 
 .. TODO:feature-update: in de registratielink wordt standaard de geselecteerde taal ingesteld; meestal is dit wat een lesgever ook wil (als alle studenten dezelfde taal hebben), maar soms wil hij ook een taal-agnostische versie van de registratielink verspreiden als hij de voorkeurstaal die de gebruikers hebben ingesteld niet wil overrulen; we zouden dus ook kunnen overwegen om een optie te maken waarmee de lesgever een taal-agnostische versie van de registratielink kan genereren (als alternatief voor het handmatig wissen van de taal uit de URL)
 

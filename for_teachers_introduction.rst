@@ -45,7 +45,7 @@ de aanvullende mogelijkheid om zelf oefeningen toe te voegen aan Dodona, en deze
 ook met je collega’s te delen.
 
 Meer informatie over het maken van een cursus kan je
-:ref:`hier <creating_a_course>` vinden.
+:ref:`hier <cursus beheren>` vinden.
 
 Zelf oefeningen toevoegen en delen op basis van een bestaande judge
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

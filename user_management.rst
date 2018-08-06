@@ -9,7 +9,7 @@ Gebruikersbeheer
 
 .. TODO:tutorial-update: eigenlijk moet hier eerst en vooral de uitleg staan van wat een gebruiker is; dit is dan ook de definitie waar de term "cursus" naar linkt in de handleiding van Dodona
 
-Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebruikersprofiel <gebruikersprofiel>` beheren. Voor sommige acties heb je echter bijkomende :ref:`beheersrechten <beheersrechten>` nodig. Onder gebruikers onderscheiden we daarom :ref:`studenten <student>`, :ref:`lesgevers <lesgever>` en :ref:`beheerders <beheerder>` afhankelijk van de beheersrechten die aan hen :ref:`toegewezen <beheersrechten toewijzen>` werden. Als lesgever kan je zelf ook andere lesgevers aanduiden.
+Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebruikersprofiel <gebruikersprofiel>` beheren. Voor sommige acties heb je echter bijkomende :ref:`beheersrechten <beheersrechten>` nodig. Onder gebruikers onderscheiden we daarom :ref:`studenten <student>`, :ref:`lesgevers <lesgever>` en :ref:`beheerders <beheerder>` afhankelijk van de beheersrechten die aan hen :ref:`toegewezen <beheersrechten instellen>` werden. Als lesgever kan je zelf ook andere lesgevers aanduiden.
 
 .. _beheersmenu:
 
@@ -21,7 +21,7 @@ Alle **gebruikers** kunnen zich :ref:`aanmelden <aanmelden>` en hun :ref:`gebrui
 
 .. important::
 
-    Onder de :ref:`geregistreerde <registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor de cursus. Enkel cursusbeheerders kunnen een cursus beheren. Het :ref:`beheren <cursusgebruikers beheren>` van :ref:`cursusgebruikers <cursusgebruiker>` en het :ref:`aanduiden <cursusbeheerders aanduiden>` van cursusbeheerders wordt behandeld in :ref:`cursusbeheer`.
+    Onder de :ref:`geregistreerde <cursus registreren>` gebruikers van een :ref:`cursus <cursus>` onderscheiden we studenten en :ref:`cursusbeheerders <cursusbeheerder>` afhankelijk van de :ref:`beheersrechten <beheersrechten>` die ze gekregen hebben voor de cursus. Enkel cursusbeheerders kunnen een cursus beheren. Het :ref:`beheren <cursusgebruikers beheren>` van :ref:`cursusgebruikers <cursusgebruiker>` en het :ref:`aanduiden <cursusbeheerders aanduiden>` van cursusbeheerders wordt behandeld in :ref:`cursus beheren`.
 
 .. TODO:tutorial-update: lijkt eventueel aangewezen om informatie over aanmelden, afmelden, natuurlijke taal instellen en gebruikersprofiel bewerken naar dit hoofdstuk te verplaatsen; valt nog te bekijken of het instellen van het gebruikersprofiel niet moet gediversifieerd worden tussen studenten en lesgevers; als we dat doen, dan moeten we in de inleiding best ook twee paragrafen voorzien: één voor het gebruikersbeheer van studenten en één voor het gebruikersbeheer van lesgevers; de rest van "Dodona voor studenten" kunnen we dan eventueel opsplitsen in "werken met cursussen", "werken met oefeningen" en eventueel "werken met oplossingen" al kan dit laatste misschien ook in "werken" met oefeningen"
 
@@ -37,7 +37,7 @@ Als :ref:`lesgever <lesgever>` navigeer je naar het :ref:`gebruikersoverzicht <g
 
 .. _gebruikersoverzicht:
 
-In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <gebruiker voortgangsstatistieken>` opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke :ref:`lesgever <lesgever>` en :ref:`beheerder <beheerder>` staat een :ref:`icoontje <gebruiker beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten toewijzen>` werden.
+In het **gebruikersoverzicht** worden de gebruikersnaam, de naam, het emailadres en :ref:`voortgangsstatistieken <gebruiker voortgangsstatistieken>` opgelijst uit het :ref:`gebruikersprofiel <gebruikersprofiel>` van alle gebruikers. Vóór elke :ref:`lesgever <lesgever>` en :ref:`beheerder <beheerder>` staat een :ref:`icoontje <gebruiker beheersrechten icoontje>` dat correspondeert met de :ref:`beheersrechten <beheersrechten>` die aan de gebruiker :ref:`toegewezen <beheersrechten instellen>` werden.
 
 .. image:: images/staff.users.nl.png
 
@@ -95,8 +95,8 @@ Aan gebruikers kunnen de volgende :ref:`beheersrechten <beheersrechten>` toegeke
     - permissies
 
   * - :guilabel:`Student`
-    -
-    - :ref:`studenten <student>` kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bewerken <gebruikersprofiel bewerken>`, kunnen zich :ref:`registreren <registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
+    - *geen*
+    - :ref:`studenten <student>` kunnen hun :ref:`gebruikersprofiel <gebruikersprofiel>` :ref:`bewerken <gebruikersprofiel bewerken>`, kunnen zich :ref:`registreren <cursus registreren>` voor :ref:`cursussen <cursus>` en kunnen :ref:`oplossingen <oplossing>` :ref:`indienen <oplossing indienen>` voor :ref:`oefeningen <oefening>`
 
   * - :guilabel:`Staff`
     - .. image:: images/role_icons/staff.png
@@ -140,7 +140,7 @@ Overnemen van een gebruikersaccount
 
 .. TODO:feature-update: misschien mogen enkel cursusbeheerders de account van een cursusgebruiker overnemen, en dan nog alleen maar binnen de context van de cursus
 
-Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <registreren>` voor een :ref:`cursus <cursus>` of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
+Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` overnemen. Daardoor krijg je de gepersonaliseerde versie van Dodona te zien door de ogen van de student. Dit kan interessant zijn voor het beantwoorden van vragen over iets wat een student waarneemt in Dodona of over een actie die ze in Dodona wil uitvoeren. Bovendien laat het je ook toe om zelf acties uit te voeren in naam van de student, zoals het :ref:`registreren <cursus registreren>` voor een :ref:`cursus <cursus>` of het :ref:`indienen <oplossing indienen>` van een :ref:`oplossing <oplossing>` voor een :ref:`oefening <oefening>`.
 
 .. TODO:feature-update: waarom heeft de knop "account overnemen" een andere vorm dan de bewerkknop en staat die op een andere positie; voor consistentie zouden beide knoppen dezelfde vorm moeten hebben en op dezelfde plaats moeten staan
 
@@ -148,7 +148,7 @@ Als :ref:`lesgever <lesgever>` kan je tijdelijk de :ref:`gebruikersaccount <gebr
 
 .. important::
 
-    Als je :ref:`registreert <registreren>` voor een :ref:`cursus <cursus>` of een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees je er dus van bewust of je deze acties in naam van de student wilt uitvoeren of dat je eerst wilt :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om daarna de acties onder eigen naam uit te voeren.
+    Als je :ref:`registreert <cursus registreren>` voor een :ref:`cursus <cursus>` of een :ref:`oplossing <oplossing>` :ref:`indient <oplossing indienen>` voor een :ref:`oefening <oefening>` terwijl je de :ref:`gebruikersaccount <gebruikersaccount>` van een :ref:`student <student>` aan het :ref:`overnemen <gebruikersaccount overnemen>` bent, dan hebben deze acties hetzelfde effect alsof ze door de student zelf zouden uitgevoerd worden. Wees je er dus van bewust of je deze acties in naam van de student wilt uitvoeren of dat je eerst wilt :ref:`terugkeren <eigen gebruikersaccount herstellen>` naar je eigen gebruikersaccount om daarna de acties onder eigen naam uit te voeren.
 
 Druk op de knop :guilabel:`Account overnemen` op de :ref:`profielpagina <profielpagina>` van een student om haar :ref:`gebruikersaccount <gebruikersaccount>` tijdelijk :ref:`over te nemen <gebruikersaccount overnemen>`.
 
