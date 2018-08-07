@@ -38,7 +38,7 @@ In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursusei
 
 Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
 
-.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de knop "Dodona" wordt aangeduid
+.. image:: images/staff.cancel_new_course.nl.png
 
 .. _cursuseigenschappen:
 
@@ -97,13 +97,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
         .. TODO:tutorial-update: nagaan wie een verborgen cursus kan zien in het cursusoverzicht: enkel geregistreerde gebruikers? enkel cursusbeheerders? vermoedelijk zien geregistreerde gebruikers de cursus wel in hun startpagina? gebruikt die dan een token-link om naar de cursus te navigeren of wordt de vereiste voor de token-link niet gebruikt voor geregistreerde gebruikers?
 
-        .. TODO:screenshot-missing: screenshot van verborgen cursus in het cursusoverzicht van een cursusbeheerder, waarbij het icoontje wordt aangeduid
+        .. image:: images/staff.courses_hidden_course.nl.png
 
         Alleen :ref:`geregistreerde <cursus registreren>` gebruikers kunnen naar de :ref:`cursuspagina <cursuspagina>` navigeren. :ref:`Cursusbeheerders <cursusbeheerder>` zien een duidelijke mededeling op de cursuspagina om hen er op te wijzen dat niet-geregistreerde gebruikers niet naar de cursuspagina kunnen navigeren en zich enkel voor de :ref:`cursus <cursus>` kunnen registreren als ze de :ref:`registratielink <cursus registratielink>` gebruiken.
 
-        .. TODO:screenshot-missing: screenshot van cursuspagina voor verborgen cursus waarop cursusbeheerder een mededeling ziet
+        .. image:: images/staff.hidden_course_message.nl.png
 
-        .. TODO:screenshot-missing: screenshot van cursuspagina voor verborgen cursus waarop niet-geregistreerde gebruiker een mededeling ziet
+        .. image:: images/staff.hidden_course_unregistered_link_message.nl.png
 
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
@@ -161,13 +161,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
 
-    .. TODO:screenshot-missing: screenshot dat aangeeft wat er gebeurt als een niet-geregistreerde gebruiker geen of een ongeldig token gebruikt om naar de cursuspagina te navigeren
+    .. image:: images/student.hidden_course_unregistered_denied_message.nl.png
 
     .. _cursus registratielink gebruiken:
 
     Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee gebruikers altijd naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor :ref:`niet-geregistreerde <cursus registreren>` gebruikers. Het gebruik van de registratielink heeft dus als voordeel dat gebruikers de cursus niet zelf moeten opzoeken in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te registreren als ze dat nog niet gedaan hadden.
 
-    .. TODO:screenshot-missing: screenshot van niet-geregistreerde gebruiker waarvoor automatisch de registratieprocedure voor de cursus wordt opgestart bij gebruik van de registratielink
+    .. image:: images/student.hidden_course_unregistered_link_message.nl.png
 
     .. TODO:feature-update: niet-geregistreerdee cursusgebruikers zouden ook een stub op de cursuspagina kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de cursuspagina wel weergegeven (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van tokenlink heeft dan hetzelfde effect als het invullen van het token bij de stub van de cursus
 
@@ -177,14 +177,14 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. TODO:feature-update: eigenlijk zou dit een "geheime registratielink" moeten heten, met de opties om er enkel een "geheime link" of enkel een "registratielink" van te maken, en ook om de taal uit de link te schrappen indien je die niet wilt opleggen aan de gebruikers die je uitnodigt
 
-    .. TODO:screenshot-missing: screenshot van cursuseigenschappen van een verborgen cursus, waarbij de kopieerknop naast registratielink wordt aangeduid
+    .. image:: images/staff.hidden_course_registration_link.nl.png
 
     .. _cursus token vernieuwen:
     .. _cursus registratielink vernieuwen:
 
     Druk op de vernieuwknop naast de :ref:`registratielink <cursus registratielink>` om de :ref:`cursus <cursus>` opnieuw te :ref:`verbergen <cursus verborgen>` nadat de registratielink gedeeld werd. Daardoor wordt een nieuw :ref:`token <cursus token>` gegenereerd en wordt het oude token onbruikbaar gemaakt. De registratielink wordt meteen ook aangepast aan het nieuwe token.
 
-    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van cursus worden ingesteld, waarbij vernieuwknop naast registratielink wordt aangeduid
+    .. image:: images/staff.registration_link_renew.nl.png
 
     De :ref:`registratielink <cursus registratielink>` wordt ook weergegeven op de :ref:`cursuspagina <cursuspagina>`.
 
@@ -200,7 +200,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe cursus` om het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` met de opgegeven :ref:`eigenschappen <cursuseigenschappen>` effectief door te voeren.
 
-.. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de afwerkknop wordt aangeduid
+.. image:: images/staff.new_course_submit.nl.png
 
 Na het aanmaken van de nieuwe cursus navigeer je naar de :ref:`cursuspagina <cursuspagina>`, waar je kunt vaststellen dat je automatisch :ref:`geregistreerd <cursus registreren>` bent als :ref:`cursusgebruiker <cursusgebruiker>` en dat je :ref:`aangeduid <cursusbeheerders aanduiden>` bent als :ref:`cursusbeheerder <cursusbeheerder>`.
 
@@ -220,13 +220,13 @@ Bewerken van een cursus
 
 Als :ref:`cursusbeheerder <cursusbeheerder>` kan je de :ref:`eigenschappen <cursuseigenschappen>` van een :ref:`cursus <cursus>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`cursuspagina <cursuspagina>`.
 
-.. TODO:screenshot-missing: screenshot van cursuspagina waarop de bewerkknop wordt aangeduid
+.. image:: images/staff.course_edit_button.nl.png
 
 .. _cursuseigenschappen aanpassen annuleren:
 
 Druk op de :ref:`cursus <cursus>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
 
-.. TODO:screenshot-missing: screenshot van cursus bewerken waarbij de cursus in de navigatiebalk wordt aangeduid
+.. image:: images/staff.course_edit_cancel.nl.png
 
 .. _cursuseigenschappen aanpassen afwerken:
 
@@ -260,7 +260,7 @@ Toevoegen van oefeningenreeksen
 
 Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`REEKS TOEVOEGEN` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
 
-.. TODO:screenshot-missing: screenshot van cursuspagina waarop al een aantal oefeningenreeksen te zien zijn, en waar de knop "REEKS TOEVOEGEN" wordt aangeduid
+.. image:: images/staff.course_series_new_link.nl.png
 
 .. _oefeningenreeks eigenschappen instellen:
 
@@ -268,13 +268,13 @@ In het paneel :guilabel:`Nieuwe oefeningenreeks` stel je de :ref:`eigenschappen 
 
 .. TODO:feature-update: vervang de titel "Reeks aanmaken" door de titel "Nieuwe oefeningenreeks"
 
-.. TODO:screenshot-missing: screenshot van formulier "Nieuwe oefeningenreeks"
+.. image:: images/staff.course_series_new.nl.png
 
 .. _oefeningenreeks eigenschappen instellen annuleren:
 
 Druk op de :ref:`cursus <cursus>` in de :ref:`navigatiebalk <navigatiebalk>` om het :ref:`toevoegen <oefeningenreeks toevoegen>` van de oefeningenreeks te annuleren.
 
-.. TODO:screenshot-missing: screenshot van formulier voor nieuwe oefeningenreeks waarin de cursus in navigatiebalk wordt aangeduid
+.. image:: images/staff.course_series_new_cancel.nl.png
 
 .. _oefeningenreeks eigenschappen:
 
@@ -302,11 +302,11 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Klik op het invulveld of druk op de kalenderknop om de datum en het tijdstip van de deadline in te stellen. Selecteer de deadline in de :ref:`tijdzone <gebruikersprofiel tijdzone>` die je hebt :ref:`ingesteld <persoonlijke voorkeuren instellen>` in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Andere gebruikers krijgen de deadline te zien in de tijdzone die ze in hun gebruikersprofiel hebben ingesteld.
 
-    .. TODO:screenshot-missing: screenshot van uitgeklapte date picker waarbij de kalenderknop wordt aangeduid
+    .. image:: images/staff.course_series_calendar_open.nl.png
 
     Druk op de verwijderknop om een ingestelde deadline te wissen.
 
-    .. TODO:screenshot-missing: screenshot van ingestelde deadline waarbij de verwijderknop wordt aangeduid
+    .. image:: images/staff.course_series_calendar_clear.nl.png
 
 .. _oefeningenreeks zichtbaarheid:
 
@@ -328,7 +328,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks enkel kunnen zien als ze de :ref:`geheime link <oefeningenreeks geheime link>` gebruiken.
 
-        .. TODO:screenshot-missing: screenshot van weergave van verborgen oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
+        .. image:: images/staff.course_series_hidden_info.nl.png
 
     .. _oefeningenreeks gesloten:
 
@@ -338,7 +338,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
         Alleen :ref:`cursusbeheerders <cursusbeheerder>` zien de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Er staat een duidelijke mededeling bij om hen er op te wijzen dat andere gebruikers de oefeningenreeks daar niet kunnen zien.
 
-    .. TODO:screenshot-missing: screenshot van weergave van gesloten oefeningenreeks voor een cursusbeheerder, waarop de mededeling wordt aangeduid
+    .. image:: images/staff.course_series_closed_info.nl.png
 
 .. _oefeningenreeks token:
 .. _oefeningenreeks geheime link:
@@ -347,7 +347,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van een :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
 
-    .. TODO:screenshot-missing: weergave van verborgen oefeningenreeks als gebruikers er zonder geldig token naar navigeren
+    .. image:: images/student.hidden_series_denies_message.nl.png
 
     .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
     .. TODO:screenshot-update: indien we een stub zouden tonen voor een verborgen oefeningenreeks, dan kan hier een screenshot geplaatst worden van hoe die stub wordt weergegeven
@@ -359,20 +359,20 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     Daarom zit het :ref:`token <oefeningenreeks token>` vervat in een **geheime link** waarmee gebruikers de oefeningenreeks ook te zien krijgen als die verborgen werd.
 
-    .. TODO:screenshot-missing: screenshot van cursusgebruiker die verborgen oefeningenreeks zichtbaar gemaakt heeft met behulp van de geheime link
+    .. image:: images/staff.series_hidden_link.nl.png
 
     .. _oefeningenreeks geheime link kopiëren:
 
     Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de geheime link enkel te delen met andere gebruikers die de oefeningenreeks mogen zien. Druk op de kopieerknop naast de geheime link om de geheime link naar het klembord te kopiëren.
 
-    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij kopieerknop naast geheime link wordt aangeduid
+    .. image:: images/staff.series_hidden_link_copy.nl.png
 
     .. _oefeningenreeks token vernieuwen:
     .. _oefeningenreeks geheime link vernieuwen:
 
     Druk op de vernieuwknop naast de :ref:`geheime link <oefeningenreeks geheime link>` om de :ref:`oefeningenreeks <oefeningenreeks>` opnieuw te :ref:`verbergen <oefeningenreeks verborgen>` nadat de geheime link gedeeld werd. Daardoor wordt een nieuw :ref:`token <oefeningenreeks token>` gegenereerd en wordt het oude token onbruikbaar gemaakt. De geheime link wordt meteen ook aangepast aan het nieuwe token.
 
-    .. TODO:screenshot-missing: screenshot van formulier waarop eigenschappen van oefeningenreeks worden ingesteld, waarbij vernieuwknop naast geheime link wordt aangeduid
+    .. image:: images/staff.series_hidden_link_reset.nl.png
 
 .. _oefeningenreeks beschrijving:
 
@@ -382,7 +382,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oefeningenreeks` om de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` effectief aan het :ref:`leerpad <leerpad>` :ref:`toe te voegen <oefeningenreeks toevoegen>`.
 
-.. TODO:screenshot-missing: screenshot van formulier voor nieuwe cursus waarin de afwerkknop wordt aangeduid
+.. image:: images/staff.course_series_new_submit.nl.png
 
 Na het afwerken navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Daarbij zie je dat de nieuwe oefeningenreeks aan de bovenkant van het leerpad toegevoegd werd. Op die manier wordt het leerpad in omgekeerde chronologische volgorde (eerste oefeningenreeks onderaan) aangeboden op de cursuspagina.
 
@@ -417,25 +417,25 @@ Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle 
 .. TODO:feature-update: verdeel alle beschikbare oefeningen over drie tabs met hoofdingen "standaard" (beschikbare oefeningen die als standaardoefeningen zijn opgenomen in de oefeningenreeks), "extra" (beschikbare oefeningen die als extra oefeningen zijn opgenomen in de oefeningenreeks)" en "beschikbaar" (beschikbare oefeningen die niet opgenomen zijn in de oefeningenreeks); op die manier is er meer ruimte om de oefeningen met wat bijkomende info weer te geven (bijvoorbeeld programmeertaal); zoek beschikbare oefeningen op in de tab "beschikbaar" en voeg die via actieknopppen toe aan de standaard of extra oefeningen; gebruik actieknoppen om oefeningen tussen de tabs te verplaatsen; gebruik dynamische queries om oefeningen aan de verschillende tabs toe te wijzen, bijvoorbeeld "alle 'Python'-oefeningen uit repository 'xxx' met tag 'lussen' of uit pad 'reeks04/moeilijk'"
 .. TODO:feature-update: mogelijk bieden om te zoeken in de beschrijving van de oefening (traag, zeker als verplaatst naar bestandssysteem)
 
-.. TODO:screenshot-missing: screenshot waarin gezocht wordt naar oefeningen
+.. image:: images/staff.series_search_exercies.nl.png
 
 .. _oefeningenreeks oefening toevoegen:
 
 Druk op de toevoegknop aan de rechterkant van een :ref:`oefening <oefening>` om de oefening aan de :ref:`oefeningenreeks <oefeningenreeks>` toe te voegen.
 
-.. TODO:screenshot-missing: screenshot waarin het toevoegen van een oefening aan een oefeningenreeks geïllustreerd wordt
+.. image:: images/staff.series_add_exercise.nl.png
 
 .. _oefeningenreeks oefening verwijderen:
 
 Druk op de verwijderknop aan de rechterkant van een :ref:`oefening <oefening>` om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
 
-.. TODO:screenshot-missing: screenshot waarin het verwijderen van een oefening uit een oefeningenreeks geïllustreerd wordt
+.. image:: images/staff.series_remove_exercise.nl.png
 
 .. _oefeningenreeks oefeningen herschikken:
 
 Gebruik de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` om hun volgorde aan te passen. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
 
-.. TODO:screenshot-missing: screenshot waarin het verplaatsen van oefeningen in een oefeningenreeks geïllustreerd wordt
+.. image:: images/staff.series_move_exercise.nl.png
 
 .. TODO:feature-missing: mogelijkheid bieden om oefeningen in een vaste volgorde aan te bieden of in een dynamische volgorde (bijvoorbeeld alfabetisch, stijgende moeilijkheidsgraad, ...)
 
@@ -445,7 +445,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel om de koppeling van 
 
 .. TODO:feature-update: de vorige zin zou eigenlijk moeten eindigen met "... effectief in te stellen"
 
-.. TODO:screenshot-missing: screenshot van formulier voor het bewerken van de oefeningen van een oefeningenreeks waarin de afwerkknop wordt aangeduid
+.. image:: images/staff.series_edit_submit.nl.png
 
 Na het afwerken navigeer je terug naar de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
 
@@ -466,7 +466,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
     Toont een pagina waarop de :ref:`eigenschappen <oefeningenreeks eigenschappen>` en de :ref:`koppeling <oefeningenreeks oefeningen koppelen>` van :ref:`oefeningen <oefening>` kunnen aangepast worden.
 
-    .. TODO:screenshot-missing: screenshot van pagina waarop instellingen van oefeningenreeks kunnen gewijzigd worden
+    .. image:: images/staff.series_edit.nl.png
 
     .. TODO:feature-update: ook hier zou het instellen van de eigenschappen en het koppelen van oefeningen moeten ontkoppeld worden
 
@@ -474,13 +474,13 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
     Druk op de :ref:`oefeningenreeks <oefeningenreeks>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
 
-    .. TODO:screenshot-missing: screenshot van oefeningenreeks bewerken waarbij de oefeningenreeks in de navigatiebalk wordt aangeduid
+    .. image:: images/staff.series_edit_cancel.nl.png
 
     .. _oefeningenreeks eigenschappen aanpassen afwerken:
 
     Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om de nieuwe :ref:`eigenschappen <oefeningenreeks eigenschappen>` effectief in te stellen.
 
-    .. TODO:screenshot-missing: screenshot van oefeningenreeks bewerken waarbij de afwerkknop wordt aangeduid
+    .. image:: images/staff.series_edit_submit.nl.png
 
     Na het :ref:`aanpassen <oefeningenreeks eigenschappen aanpassen>` navigeer je terug naar de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar de nieuwe :ref:`eigenschappen <oefeningenreeks eigenschappen>` onmiddellijk van toepassing zijn.
 
