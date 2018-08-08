@@ -607,18 +607,20 @@ In het :ref:`menu <oefeningenreeks menu>` van een :ref:`oefeningenreeks <oefenin
 
     .. TODO:tutorial-missing: wordt de indienstatus hier bepaald met of zonder de deadline van de oefeningenreeks in rekening te brengen; zelfde voor de selectie van de oefening waarop de indienstatus gebaseerd is
 
+    .. image:: images/staff.scoresheet.nl.png
+
     .. TODO:screenshot-missing: screenshot van statusoverzicht
     .. TODO:screenshot-missing: nl.staff.course_new.series_new.exercises.solutions._submit_state.png
 
     Druk op de naam van een :ref:`cursusgebruiker <cursusgebruiker>` om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
 
-    .. TODO:screenshot-missing: screenshot van statusoverzicht waarop naam van gebruiker wordt aangeduid
+    .. image:: images/staff.scoresheet_user_link.nl.png
 
     .. TODO:screenshot-missing: nl.staff.course_new.series_new.exercises.solutions._submit_state.user.png
 
     Druk op het :ref:`icoontje <oefeningenreeks oefening indienstatus icoontje>` van een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` om naar de :ref:`oplossing <oplossing>` te navigeren die gebruikt werd om de :ref:`indienstatus <oefeningenreeks oefening indienstatus>` te bepalen (als de cursusgebruiker effectief een oplossing heeft :ref:`ingediend <oplossing indienen>` op basis waarvan de indienstatus kon bepaald worden).
 
-    .. TODO:screenshot-missing: screenshot van statusoverzicht waarop icoontje wordt aangeduid
+    .. image:: images/staff.scoresheet_status_icon.nl.png
 
     .. TODO:screenshot-missing: nl.staff.course_new.series_new.exercises.solutions._submit_state.solution.png
 
@@ -812,7 +814,8 @@ Bij het herevalueren van een oplossing wordt het :ref:`beoordelingsproces <oplos
 
 Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedbackpagina>` om een :ref:`oplossing <oplossing>` te :ref:`herevalueren <oplossing herevalueren>`.
 
-.. TODO:screenshot-missing: weergave van feedbackpagina waarop de herhaalknop wordt aangeduid
+.. image:: images/staff.feedback_evaluate.nl.png
+
 .. TODO:screenshot-rename: nl.staff.solution.evaluate.png
 
 .. TODO:feature-missing: link in sidebar die overzicht geeft van alle oplossingen die ingediend werden (bij cursusgebruikers zijn dit hun eigen oplossingen over alle cursussen heen, bij cursusbeheerders wordt dit aangevuld met oplossingen van alle gebruikers van cursussen die ze beheren; bij zeus zijn dit alle oplossingen)
@@ -828,14 +831,15 @@ Navigeren naar oplossingen
 
 Elk overzicht met :ref:`oplossingen <oplossing>` die in de :ref:`cursus <cursus>` ingediend werden, bevat voor :ref:`cursusbeheerders <cursusbeheerder>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
-.. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
+.. image:: images/staff.exercise_submissions_user_link.nl.png
+
 .. TODO:screenshot-rename: nl.staff.course.solutions.user.png
 
 .. TODO:feature-update: vervang de gebruikersnaam in het overzicht door de naam van de gebruiker; eigenlijk kunnen we in alle overzichten de gebruikersnamen vervangen door de namen van de gebruikers (met ellipsis bij de weergave); op die manier worden gebruikersnamen vermoedelijk niet meer gebruikt in Dodona, wat natuurlijke evolutie is van de migratie naar meerdere identity providers; gebruikersnamen hebben immers enkel lokaal binnen de onderwijs- of onderzoeksinstelling een betekenis; elke object (gebruiker, cursus, oefeningenreeks, oplossing (met icoontje)) zou een korte omschrijving moeten hebben op basis van de eigenschappen (bv. naam, academiejaar, ...) die kan gebruikt worden om naar het object te linken en die een link toevoegt naar het object als de gebruiker gemachtigd is om het te zien
 
 Als je zoekt naar specifieke :ref:`oplossingen <oplossing>` met de zoekbalk aan de bovenkant van het :ref:`overzicht <cursusbeheerder oplossingen overzicht>`, dan wordt ook gezocht op de :ref:`naam <persoonsgegevens>` van gebruikers.
 
-.. TODO:screenshot-missing: weergave van overzicht van oplossingen uit een cursus waarin de zoekbalk gebruikt wordt om te zoeken naar oplossingen met de naam van een gebruiker
+.. image:: images/staff.exercise_submissions_search.nl.png
 .. TODO:screenshot-rename: nl.staff.course.solutions.search.png
 
 .. TODO:feature-update: nagaan of zowel op gebruikersnaam als op de naam van de gebruiker gezocht wordt

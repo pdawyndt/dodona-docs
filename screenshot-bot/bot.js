@@ -168,7 +168,7 @@ class Wizard {
     predicate = predicate || (() => true);
     const elements = await this.page.$$(selector);
     for (const element of elements) {
-      if (this.page.evaluate(predicate, element, predicateArg)) {
+      if (await this.page.evaluate(predicate, element, predicateArg)) {
         await element.click();
         return;
       }
@@ -978,6 +978,10 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.screenshot(`../images/student.exercise_feedback_incorrect_tab.${language}.png`);
 
+    await wizard.click('a[href="#score-1"]');
+    await wait(500);
+    await wizard.screenshot(`../images/student.exercise_feedback_visual.${language}.png`);
+
     await wizard.navigate(course_urls.OPEN[language]);
     await wizard.scrollToBottom();
     await wizard.screenshot(`../images/student.deadline_series.${language}.png`);
@@ -1024,6 +1028,13 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.click('#editor-process-btn');
     await wait(20000);
+    submissions++;
+
+    await wizard.click('a[href="#code-1"]');
+    await wait(500);
+    await wizard.scrollToBottom();
+    await wizard.screenshot(`../images/student.exercise_lint_error.${language}.png`);
+
     await wizard.navigate(course_urls.OPEN[language]);
     await wizard.screenshot(`../images/student.deadline_series_warning.${language}.png`);
   }
@@ -1091,6 +1102,64 @@ async function enterPythonFile(wizard, filename) {
   await wizard.screenshot('../images/course_exercise_status_icons/green_check.png', {
     cropSelector: '.glyphicon-ok.colored-correct'
   });
+
+  await wizard.navigate('http://localhost:3000/nl/users/stop_impersonating/');
+  await wizard.navigate('http://localhost:3000/nl/users/2/impersonate/');
+
+  for (const language of LANGUAGES) {
+    await wizard.navigate(`${series_urls[language]['open']}scoresheet/`);
+
+    await wizard.screenshot(`../images/staff.scoresheet.${language}.png`);
+
+    await wizard.screenshot(`../images/staff.scoresheet_user_link.${language}.png`, {
+      pointToSelectors: ['a[href$="/users/3/submissions/"]'],
+    });
+
+    await wizard.screenshot(`../images/staff.scoresheet_status_icon.${language}.png`, {
+      pointToSelectors: [`a[href^="/${language}/submissions/"]`],
+      pointPredicate: elem => {
+        if (!/\/submissions\/\d+\/$/.test(elem.href)) {
+          return false;
+        }
+        if (document.first) {
+          return false;
+        }
+        document.first = true;
+        return true;
+      }
+    });
+
+    await wizard.click(`a[href^="/${language}/submissions/"]`,
+      elem => {
+        if (!/\/submissions\/\d+\/$/.test(elem.href)) {
+          return false;
+        }
+        if (document.second) {
+          return false;
+        }
+        document.second = true;
+        return true;
+      });
+    await wizard.waitForNavigation();
+
+    await wizard.screenshot(`../images/staff.feedback_evaluate.${language}.png`, {
+      pointToSelectors: [`a[href$="/evaluate/"]`],
+    });
+
+    await wizard.navigate(`${course_urls.OPEN[language]}exercises/${exerciseNamesToIDs[language]['ISBN']}/submissions/`);
+    await wizard.typeIn(`input#filter-query`, 'rpurple');
+    await wizard.screenshot(`../images/staff.exercise_submissions_search.${language}.png`);
+    await wizard.screenshot(`../images/staff.exercise_submissions_user_link.${language}.png`, {
+      pointToSelectors: [`a[href$="/users/3/submissions/"]`],
+      pointPredicate: () => {
+        if (document.first) {
+          return false;
+        }
+        document.first = true;
+        return true;
+      }
+    });
+  }
 
   await wizard.close();
 
