@@ -18,7 +18,7 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippele
 Aanmaken van een cursus
 -----------------------
 
-Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de knop :guilabel:`Nieuwe cursus` te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de knop :guilabel:`NIEUWE CURSUS` te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
 .. TODO:feature-update: vervang de term "Alle cursussen" door "Cursusoverzicht"
 .. TODO:feature-update: vervang de term "Cursus aanmaken" door "Nieuwe cursus"; op dezelfde plaats staat bij het bewerken immers ook overal de naam van de nieuwe cursus
@@ -103,7 +103,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
         .. image:: images/staff.hidden_course_message.nl.png
 
-        .. image:: images/staff.hidden_course_unregistered_link_message.nl.png
+        .. image:: images/student.hidden_course_unregistered_link_message.nl.png
 
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
@@ -114,7 +114,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. TODO:feature-update: vervang de term "Registratie" door "Registratieprocedure" als naam voor de eigenschap
 
-    De **registratieprocedure** bepaalt of en hoe gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
+    De registratieprocedure bepaalt of en hoe gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
 
     .. _cursus open:
 
@@ -159,21 +159,23 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Registratielink`
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren.
+    .. TODO:feature-update: eigenschap "Registratielink" plaatsen onder eigenschap "Registratieprocedure" omdat ze samen horen
+
+    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren. Als ze toch naar de :ref:`cursuspagina` proberen te navigeren, dan krijgen ze een melding te zien dat ze niet de geen toegangsrechten hebben voor de cursus.
 
     .. image:: images/student.hidden_course_unregistered_denied_message.nl.png
 
     .. _cursus registratielink gebruiken:
 
-    Daarom zit het :ref:`token <cursus token>` vervat in een **registratielink** waarmee gebruikers altijd naar de :ref:`cursuspagina <cursuspagina>` kunnen navigeren en waarmee de :ref:`registratieprocedure <cursus registratieprocedure>` automatisch wordt opgestart voor :ref:`niet-geregistreerde <cursus registreren>` gebruikers. Het gebruik van de registratielink heeft dus als voordeel dat gebruikers de cursus niet zelf moeten opzoeken in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te registreren als ze dat nog niet gedaan hadden.
+    Voor een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` kunnen gebruikers zich enkel :ref:`registreren <cursus registreren>` als ze gebruikmaken van de **registratielink** van de cursus. De registratielink bevat het :ref:`token <cursus token>` dat hen toegang geeft tot de cursus. Bovendien navigeren :ref:`niet-geregistreerde <cursus registreren>` gebruikers niet rechtstreeks naar de :ref:`cursuspagina <cursuspagina>`, maar worden ze verzocht om zich voor de cursus te registreren als de :ref:`registratieprocedure <cursus registratieprocedure>` dat toelaat.
 
     .. image:: images/student.hidden_course_unregistered_link_message.nl.png
 
-    .. TODO:feature-update: niet-geregistreerdee cursusgebruikers zouden ook een stub op de cursuspagina kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de cursuspagina wel weergegeven (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van tokenlink heeft dan hetzelfde effect als het invullen van het token bij de stub van de cursus
+    .. TODO:feature-update: niet-geregistreerde cursusgebruikers zouden ook een stub op de cursuspagina kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de cursuspagina wel weergegeven (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van tokenlink heeft dan hetzelfde effect als het invullen van het token bij de stub van de cursus
 
     .. _cursus registratielink kopiëren:
 
-    Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de :ref:`registratielink <cursus registratielink>` enkel te delen met :ref:`niet-geregistreerde <cursus registreren>` gebruikers die zich voor een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` mogen :ref:`registreren <cursus registreren>`. Druk op de kopieerknop naast de registratielink om de registratielink naar het klembord te kopiëren.
+    De :ref:`registratielink <cursus registratielink>` heeft dus als voordeel dat gebruikers de :ref:`cursus <cursus>` niet zelf moeten :ref:`zoeken <cursus navigeren>` in het :ref:`cursusoverzicht <cursusoverzicht>` en dat ze meteen een verzoek krijgen om zich voor de cursus te :ref:`registreren <registreren>` als ze dat nog niet gedaan hadden. Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de registratielink enkel te delen met niet-geregistreerde gebruikers die zich voor een :ref:`verborgen <cursus verborgen>` cursus mogen registreren. Druk op de kopieerknop naast de registratielink om de registratielink naar het klembord te kopiëren.
 
     .. TODO:feature-update: eigenlijk zou dit een "geheime registratielink" moeten heten, met de opties om er enkel een "geheime link" of enkel een "registratielink" van te maken, en ook om de taal uit de link te schrappen indien je die niet wilt opleggen aan de gebruikers die je uitnodigt
 
@@ -236,7 +238,7 @@ Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om 
 
 .. TODO:feature-update: de term "registration link" is niet vertaald naar "registratielink" op het formulier waar de cursuseigenschappen kunnen ingesteld worden
 
-Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar de :ref:`cursuspagina <cursuspagina>` waar de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` onmiddellijk van toepassing zijn.
+Na het afwerken navigeer je terug naar de :ref:`cursuspagina <cursuspagina>` waar de nieuwe :ref:`cursuseigenschappen <cursuseigenschappen>` onmiddellijk van toepassing zijn.
 
 .. image:: images/staff.course_after_edit.nl.png
 
@@ -248,7 +250,7 @@ Na het :ref:`aanpassen <cursuseigenschappen aanpassen>` navigeer je terug naar d
 Uitstippelen van een leerpad
 ----------------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen dat weergegeven wordt onder de hoofding :guilabel:`Oefeningenreeksen` op de :ref:`cursuspagina <cursuspagina>`. Aan het leerpad kan je :ref:`oefeningenreeksen <oefeningenreeks>` :ref:`toevoegen <oefeningenreeks toevoegen>` en aan oefeningenreeksen kan je :ref:`oefeningen <oefening>` :ref:`koppelen <oefeningenreeks oefeningen koppelen>`.
+Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus>` een **leerpad** uitstippelen. Het leerpad wordt op de :ref:`cursuspagina <cursuspagina>` weergegeven onder de hoofding :guilabel:`Oefeningenreeksen`. Aan het leerpad kan je :ref:`oefeningenreeksen <oefeningenreeks>` :ref:`toevoegen <oefeningenreeks toevoegen>` waaraan je :ref:`oefeningen <oefening>` kunt :ref:`koppelen <oefeningenreeks oefeningen koppelen>`.
 
 .. TODO:feature-update: overwegen op de hoofding "Oefeningenreeksen" op de cursuspagina te vervangen door de term "Leerpad"
 
@@ -258,7 +260,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus
 Toevoegen van oefeningenreeksen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`REEKS TOEVOEGEN` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
+Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`NIEUWE REEKS` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
 
 .. image:: images/staff.course_series_new_link.nl.png
 
@@ -298,7 +300,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. important::
 
-        Als de deadline aangepast wordt dan krijgen cursusgebruikers meteen een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor oefeningen uit de oefeningenreeks die aangepast is aan de nieuwe deadline.
+        Als de :ref:`deadline <oefeningenreeks deadline>` aangepast wordt dan krijgen :ref:`cursusgebruikers <cursusgebruiker>` meteen ook een :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` uit de :ref:`oefeningenreeks <oefeningenreeks>` die aangepast is aan de nieuwe deadline.
 
     Klik op het invulveld of druk op de kalenderknop om de datum en het tijdstip van de deadline in te stellen. Selecteer de deadline in de :ref:`tijdzone <gebruikersprofiel tijdzone>` die je hebt :ref:`ingesteld <persoonlijke voorkeuren instellen>` in je :ref:`gebruikersprofiel <gebruikersprofiel>`. Andere gebruikers krijgen de deadline te zien in de tijdzone die ze in hun gebruikersprofiel hebben ingesteld.
 
@@ -345,9 +347,11 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Geheime link`
 
+    .. TODO:feature-update: plaats de eigenschap "Geheime link" onder de eigenschap "Zichtbaarheid" omdat die samenhoren
+
     Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van een :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
 
-    .. image:: images/student.hidden_series_denies_message.nl.png
+    .. image:: images/student.hidden_series_denied_message.nl.png
 
     .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
     .. TODO:screenshot-update: indien we een stub zouden tonen voor een verborgen oefeningenreeks, dan kan hier een screenshot geplaatst worden van hoe die stub wordt weergegeven
