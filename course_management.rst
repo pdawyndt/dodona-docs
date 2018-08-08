@@ -18,8 +18,10 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippele
 Aanmaken van een cursus
 -----------------------
 
-Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de aanmaakknop te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de knop :guilabel:`Nieuwe cursus` te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
+.. TODO:feature-update: vervang de term "Alle cursussen" door "Cursusoverzicht"
+.. TODO:feature-update: vervang de term "Cursus aanmaken" door "Nieuwe cursus"; op dezelfde plaats staat bij het bewerken immers ook overal de naam van de nieuwe cursus
 .. TODO:feature-missing: lesgevers zouden evengoed ook een nieuwe cursus kunnen aanmaken vanop hun startpagina; deze ziet er bovendien in de toekomst vrij gelijkaardig uit aan het cursusoverzicht
 
 .. image:: images/staff.courses_new_link.nl.png
@@ -54,6 +56,8 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     Het academiejaar waarin de :ref:`cursus <cursus>` wordt aangeboden. Gebruik het formaat ``jjjj-jjjj`` om ervoor te zorgen dat de cursus correct gesorteerd wordt op de :ref:`startpagina <startpagina>` en in het :ref:`cursusoverzicht <cursusoverzicht>`.
 
+    .. TODO:feature-update: plaats eigenschap "Academiejaar" onder eigenschap "Naam" omdat ze samen genoemd worden in korte omschrijving van cursus
+
      .. tip::
 
         Als op het platform naar een :ref:`cursus <cursus>` wordt verwezen dan wordt de :ref:`naam <cursus naam>` van de cursus altijd in één adem genoemd met het :ref:`academiejaar <cursus academiejaar>` waarin de cursus wordt aangeboden. Op die manier kunnen cursussen die jaarlijks aangeboden worden makkelijk van elkaar onderscheiden worden.
@@ -63,10 +67,11 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 .. _cursus lesgever:
 
-:guilabel:`Lesgever`
+:guilabel:`Lesgevers`
 
     De namen van de lesgevers van de :ref:`cursus <cursus>`. Gebruik een komma om namen te scheiden als er meerdere lesgevers zijn.
 
+    .. TODO:feature-update: Vervang de term "Lesgever" door "Lesgevers"
     .. TODO:feature-update: Markdown toelaten zodat eventueel ook emailadressen kunnen gekoppeld worden aan de namen van de lesgevers
     .. TODO:feature-update: overwegen om cursusgebruikers te selecteren als lesgevers van een cursus; dan kunnen hun namen aan hun profielpagina gekoppeld worden
 
@@ -105,9 +110,9 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 .. _cursus registratie:
 .. _cursus registratieprocedure:
 
-:guilabel:`Registratie`
+:guilabel:`Registratieprocedure`
 
-    .. TODO:feature-update: vervang de term "registratie" door "registratieprocedure" als naam voor de eigenschap
+    .. TODO:feature-update: vervang de term "Registratie" door "Registratieprocedure" als naam voor de eigenschap
 
     De **registratieprocedure** bepaalt of en hoe gebruikers zich voor de :ref:`cursus <cursus>` kunnen :ref:`registreren <cursus registreren>`. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
 
