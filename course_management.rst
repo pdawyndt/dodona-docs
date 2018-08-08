@@ -1,3 +1,49 @@
+.. TODO:screenshot-update: structured format for naming screenshots
+
+.. [<platform state>.][<user state>.]<object>[_<state>][.<action>[_state]][<subobject>[_<state>][.<action>[_state]] ...] ...].png
+
+.. examples:
+..   nl.staff.courses_all.create_start (show where new course can be created on the course overview)
+..   nl.course_admin.course_new.create.registration_link.copy_start
+..   nl.course_user.course_open.register_start
+
+.. platform states (languages):
+..   nl: Dutch
+..   en: English
+
+.. user states (roles):
+..   user: user outside course context or not enrolled for course
+..   course_user: user enrolled for course (within course context)
+..   course_admin: admin for course (within course context)
+..   staff: object creator for platform
+..   zeus: admin for platform
+
+.. object states:
+..   course
+..     .no state.: general demo course (visibility:visible; registration procedure:open)
+..     visible: visible course
+..     hidden: hidden course
+..     open: open course
+..     closed: closed course
+..     moderated: moderated course
+..     new: course created in Dodona manual ()
+..   courses
+..     .no state.: my courses (start page)
+..     all: all courses (course overview)
+
+.. common actions:
+..   create: create a new object
+..   .no action.: view an object (see how it is displayed; read action)
+..   update: update an object
+..   delete: delete an object
+
+.. action states:
+..   .no state.: action is ongoing
+..   start: action is about to be started
+..   cancel: action is about to be cancelled
+..   confirm: action is about to be confirmed
+..   done: action has been performed
+
 .. _cursus beheren:
 
 Cursusbeheer
@@ -163,13 +209,13 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
     .. TODO:feature-update: eigenschap "Registratielink" plaatsen onder eigenschap "Registratieprocedure" omdat ze samen horen
 
-    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren. Als ze toch naar de :ref:`cursuspagina` proberen te navigeren, dan krijgen ze een melding te zien dat ze niet de geen toegangsrechten hebben voor de cursus.
+    Bij het :ref:`aanmaken <cursus aanmaken>` van een :ref:`cursus <cursus>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <cursus verborgen>` cursussen. Zonder dit token kunnen :ref:`niet-geregistreerde <cursus registreren>` gebruikers de :ref:`cursuspagina <cursuspagina>` van een :ref:`verborgen <cursus verborgen>` cursus niet zien en zich daar dus ook niet registreren. Als ze toch naar de cursus proberen te navigeren, dan zien ze enkel een melding dat ze niet de geen toegangsrechten hebben voor de cursus.
 
     .. image:: images/student.hidden_course_unregistered_denied_message.nl.png
 
     .. _cursus registratielink gebruiken:
 
-    Voor een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` kunnen gebruikers zich enkel :ref:`registreren <cursus registreren>` als ze gebruikmaken van de **registratielink** van de cursus. De registratielink bevat het :ref:`token <cursus token>` dat hen toegang geeft tot de cursus. Bovendien navigeren :ref:`niet-geregistreerde <cursus registreren>` gebruikers niet rechtstreeks naar de :ref:`cursuspagina <cursuspagina>`, maar worden ze verzocht om zich voor de cursus te registreren als de :ref:`registratieprocedure <cursus registratieprocedure>` dat toelaat.
+    Gebruikers kunnen zich enkel :ref:`registreren <cursus registreren>` voor een :ref:`verborgen <cursus verborgen>` :ref:`cursus <cursus>` als ze gebruikmaken van de **registratielink** voor de cursus. De registratielink bevat het :ref:`token <cursus token>` dat hen toegang geeft tot de cursus. Bovendien navigeren :ref:`niet-geregistreerde <cursus registreren>` gebruikers niet rechtstreeks naar de :ref:`cursuspagina <cursuspagina>`, maar worden ze verzocht om zich voor de cursus te registreren als de :ref:`registratieprocedure <cursus registratieprocedure>` dat toelaat.
 
     .. image:: images/student.hidden_course_unregistered_link_message.nl.png
 
@@ -351,9 +397,11 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. TODO:feature-update: plaats de eigenschap "Geheime link" onder de eigenschap "Zichtbaarheid" omdat die samenhoren
 
-    Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van een :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien.
+    Bij het :ref:`toevoegen <oefeningenreeks toevoegen>` van een :ref:`oefeningenreeks <oefeningenreeks>` wordt automatisch een **token** gegenereerd als afschermingsmechanisme van :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeksen. Zonder dit token kunnen gebruikers een :ref:`verborgen <oefeningenreeks verborgen>` oefeningenreeks niet zien in het leerpad. Als ze toch naar de oefeningenreeks proberen te navigeren, dan zien ze enkel een melding dat ze geen toegangsrechten hebben voor de oefeningenreeks.
 
     .. image:: images/student.hidden_series_denied_message.nl.png
+
+    .. TODO:screenshot-missing: vorige screenshot staat nog niet in de repo
 
     .. TODO:feature-update: cursusgebruikers zouden initieel ook een stub voor de oefeningenreeks kunnen te zien krijgen, met de mogelijkheid om die te ontsluiten door het token in te vullen; na het invullen van het token (of bij gebruik van de tokenlink) wordt de oefeningenreeks wel weergegeven op de cursuspagina (moet dan in cookies opgeslagen worden, zodat gebruiker die niet telkens opnieuw moet invullen). Gebruiken van geheime link heeft dan hetzelfde effect als het invullen van het token bij de stub van de oefeningenreeks
     .. TODO:screenshot-update: indien we een stub zouden tonen voor een verborgen oefeningenreeks, dan kan hier een screenshot geplaatst worden van hoe die stub wordt weergegeven
@@ -363,13 +411,13 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
     .. _oefeningenreeks geheime link gebruiken:
 
-    Daarom zit het :ref:`token <oefeningenreeks token>` vervat in een **geheime link** waarmee gebruikers de oefeningenreeks ook te zien krijgen als die verborgen werd.
+    Gebruikers kunnen een :ref:`verborgen <oefeningenreeks verborgen>` :ref:`oefeningenreeks <oefeningenreeks>` enkel zien als ze gebruikmaken van de **geheime link** voor de cursus. De geheime link bevat het :ref:`token <oefeningenreeks token>` waarmee ze de oefeningenreeks ook te zien krijgen als die verborgen werd.
 
     .. image:: images/staff.series_hidden_link.nl.png
 
     .. _oefeningenreeks geheime link kopiëren:
 
-    Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de :ref:`geheime link <geheime link>` enkel te delen met andere gebruikers die de :ref:`oefeningenreeks <oefeningenreeks>` mogen zien. Druk op de kopieerknop naast de geheime link om de geheime link naar het klembord te kopiëren.
+    Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je de verantwoordelijkheid om de :ref:`geheime link <oefeningenreeks geheime link>` enkel te delen met andere gebruikers die de :ref:`oefeningenreeks <oefeningenreeks>` mogen zien. Druk op de kopieerknop naast de geheime link om de geheime link naar het klembord te kopiëren.
 
     .. image:: images/staff.series_hidden_link_copy.nl.png
 
@@ -390,11 +438,13 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe oe
 
 .. image:: images/staff.course_series_new_submit.nl.png
 
-Na het afwerken navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Daarbij zie je dat de nieuwe oefeningenreeks aan de bovenkant van het leerpad toegevoegd werd. Op die manier wordt het leerpad in omgekeerde chronologische volgorde (eerste oefeningenreeks onderaan) aangeboden op de cursuspagina.
+Na het afwerken navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` van de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`. Daarbij zie je dat de nieuwe oefeningenreeks aan de bovenkant van het leerpad toegevoegd werd. Op die manier worden de oefeningenreeksen van het leerpad in omgekeerde chronologische volgorde (eerste oefeningenreeks onderaan) weergegeven op de :ref:`cursuspagina <cursuspagina>`.
 
-.. TODO:feature-missing: cursuseigenschap toevoegen die weergave van oefeningenreeksen op cursuspagina bepaalt (eerste onderaan of eerste bovenaan)
+.. TODO:feature-missing: cursuseigenschap toevoegen die weergave van oefeningenreeksen op cursuspagina bepaalt (eerste onderaan, eerste bovenaan of dynamisch: meest relevante bovenaan, bijvoorbeeld in functie van deadlines)
 .. TODO:feature-missing: mogelijkheid aanbieden om een oefeningenreeks op een willekeurige plaats aan te maken in het leerpad (bovenaan, onderaan of in het midden), bijvoorbeeld door de knop "REEKS TOEVOEGEN" zowel bovenaan als onderaan te zetten, en tussen twee panelen de knop ook dynamisch weer te geven als er over gehooverd wordt
 .. TODO:feature-missing: mogelijkheid aanbieden om oefeningenreeksen te verplaatsen binnen het leerpad
+
+.. TODO:screenshot-missing: weergave van nieuw aangemaakte oefeningenreeks aan de bovenkant van het leerpad; zorg ervoor dat vooral enkele oefeningenreeksen onder de nieuwe oefeningenreeks weergegeven wordt, zodat duidelijk is dat de nieuwe oefeningenreeks bovenaan het leerpad toegevoegd werd
 
 .. TODO:tutorial-missing: plaats hier de info over de manier waarop de oefeningenreeksen worden weergegeven en het feit dat je hier de oefeningenreeks kunt bewerken, oefeningen kunt koppelen, ...
 
@@ -405,9 +455,11 @@ Na het afwerken navigeer je naar de :ref:`weergave <oefeningenreeks weergeven>` 
 Koppelen van oefeningen
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`instellen <oefeningenreeks eigenschappen instellen>` van :ref:`eigenschappen <oefeningenreeks eigenschappen>` ook oefeningen kunt koppelen aan de :ref:`oefeningenreeks <oefeningenreeks>`.
-
 .. TODO:feature-update: instellen van eigenschappen voor oefeningenreeks zou op een andere pagina moeten gebeuren dan de pagina waar er oefeningen aan de oefeningenreeks gekoppeld worden; dit kan dan later uitgebreid worden met een pagina voor de oefeningenreeks waarop de learning analytics voor de oefeningenreeks te zien zijn; dan kan deze sectie helemaal losgekoppeld worden van de vorige sectie, en kan er aangegeven worden hoe je de oefeningen van een oefeningenreeks begint te bewerken
+
+Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`instellen <oefeningenreeks eigenschappen instellen>` van :ref:`eigenschappen <oefeningenreeks eigenschappen>` ook oefeningen kunt koppelen aan de :ref:`oefeningenreeks <oefeningenreeks>`. Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle beschikbare oefeningen en onder de hoofding :guilabel:`Oefeningen in deze reeks` staat een overzicht van alle oefeningen die aan de oefeningenreeks gekoppeld werden.
+
+.. TODO:feature-missing: screenshot van paneel waar oefeningen een oefeningenreeks kunnen gekoppeld worden
 
 .. important::
 
@@ -416,7 +468,7 @@ Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`inste
 .. _oefeningenoverzicht:
 .. _oefeningenreeks oefeningen zoeken:
 
-Onder de hoofding :guilabel:`Oefeningen toevoegen` staat een overzicht van alle beschikbare oefeningen. Gebruik de zoekbalk om te zoeken naar specifieke :ref:`oefeningen <oefening>` op basis van een naam of een padnaam. Hierbij wordt gezocht in alle beschikbare vertalingen voor de naam van de oefeningen.
+Onder de hoofding :guilabel:`Oefeningen toevoegen` kan je de zoekbalk gebruiken om te zoeken naar specifieke :ref:`oefeningen <oefening>` op basis van een naam of een padnaam. Hierbij wordt gezocht in alle beschikbare vertalingen voor de naam van de oefeningen.
 
 .. TODO:tutorial-update: aangeven wat er bedoeld wordt met "alle beschikbare oefeningen"
 
@@ -433,13 +485,14 @@ Druk op de toevoegknop aan de rechterkant van een :ref:`oefening <oefening>` om 
 
 .. _oefeningenreeks oefening verwijderen:
 
-Druk op de verwijderknop aan de rechterkant van een :ref:`oefening <oefening>` om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
+Onder de hoofding :guilabel:`Oefeningen in deze reeks`
+kan je aan de rechterkant van een :ref:`oefening <oefening>` op de verwijderknop drukken om de oefening uit de :ref:`oefeningenreeks <oefeningenreeks>` te verwijderen.
 
 .. image:: images/staff.series_remove_exercise.nl.png
 
 .. _oefeningenreeks oefeningen herschikken:
 
-Gebruik de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` om hun volgorde aan te passen. De volgorde waarin de oefeningen gerangschikt worden, is ook de volgorde waarin de oefeningen zullen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
+Versleep de verplaatsknop aan de linkerkant van de :ref:`oefeningen <oefening>` om de volgorde van de oefeningen aan te passen. De volgorde waarin de oefeningen onder de hoofding :guilabel:`Oefeningen in deze reeks` gerangschikt worden, is immers ook de volgorde waarin de oefeningen :ref:`weergegeven <oefeningenreeks weergeven>` worden in de oefeningenreeks.
 
 .. image:: images/staff.series_move_exercise.nl.png
 
@@ -455,6 +508,8 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel om de koppeling van 
 
 Na het afwerken navigeer je terug naar de :ref:`oefeningenreeks <oefeningenreeks>` in het :ref:`leerpad <leerpad>`, waar je kunt vaststellen dat de nieuwe koppeling van de :ref:`oefeningen <oefening>` meteen van toepassing is.
 
+.. TODO:screenshot-missing: screenshot met de weergave van de oefeningenreeks waarin de gekoppelde oefeningen zichtbaar zijn
+
 
 .. _oefeningenreeks beheren:
 
@@ -463,7 +518,9 @@ Beheren van oefeningenreeksen
 
 .. _oefeningenreeks menu cursusbeheerder:
 
-In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeningenreeks>` staan enkele bijkomende opties die corresponderen met acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`:
+In het :ref:`menu <oefeningenreeks menu>` van een :ref:`oefeningenreeks <oefeningenreeks>` staan enkele bijkomende opties die corresponderen met acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`.
+
+.. TODO:screenshot-missing: screenshot met weergave van oefeningenreeks in het leerpad, waarbij het menu wordt aangeduid (indien mogelijk opengeklapt)
 
 .. _oefeningenreeks bewerken:
 .. _oefeningenreeks eigenschappen aanpassen:
@@ -494,7 +551,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 :guilabel:`Reeks verwijderen`
 
-    Verwijdert de :ref:`oefeningenreeks <oefeningenreeks>` uit het :ref:`leerpad <leerpad>` van de :ref:`cursus <cursus>`.
+    Verwijdert de :ref:`oefeningenreeks <oefeningenreeks>` uit het :ref:`leerpad <leerpad>`.
 
 .. _oefeningenreeks geheime link gebruiken cursusbeheerder:
 
@@ -515,7 +572,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht
 
-    Druk op de naam van een cursusgebruiker om naar de profielpagina van de gebruiker te navigeren.
+    Druk op de naam van een :ref:`cursusgebruiker <cursusgebruiker>` om naar de :ref:`profielpagina <profielpagina>` van de gebruiker te navigeren.
 
     .. TODO:screenshot-missing: screenshot van statusoverzicht waarop naam van gebruiker wordt aangeduid
 
@@ -544,7 +601,7 @@ In het :ref:`menu <oefeningenreeks menu>` van :ref:`oefeningenreeksen <oefeninge
 
 :guilabel:`Oplossingen herevalueren`
 
-    :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` hebben :ref:`ingediend <oplossing indienen>` voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
+    :ref:`Herevalueert <oplossing herevalueren>` alle :ref:`oplossingen <oplossing>` die :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben voor :ref:`oefeningen <oefening>` van de :ref:`oefeningenreeks <oefeningenreeks>`.
 
 .. TODO:feature-missing: overzicht van alle oplossingen die binnen een cursus ingediend werden voor de oefeningen uit een oefeningenreeks ontbreekt in het menu van de oefeningenreeks voor de cursusbeheerder; voor de volledigheid kan deze optie toegevoegd worden; dit maak het vorige menu-item overbodig, omdat de oplossingen dan via het menu van het overzicht kunnen geherevalueerd worden
 
@@ -642,7 +699,7 @@ Aanduiden van cursusbeheerders
 
 .. _cursusbeheerder:
 
-Een **cursusbeheerder** is een :ref:`geregistreerde <cursus registreren>` :ref:`cursusgebruiker` met beheersrechten voor de :ref:`cursus <cursus>`. Een :ref:`lesgever <lesgever>` die een nieuwe cursus aanmaakt wordt er automatisch voor geregistreerd en wordt er meteen ook de eerste cursusbeheerder van. Lesgever hebben voor het beheren van cursussen echter geen bijkomende rechten ten opzichte van andere :ref:`cursusbeheerders` en kunnen ook geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
+Een **cursusbeheerder** is een :ref:`geregistreerde <cursus registreren>` :ref:`cursusgebruiker <cursusgebruiker>` met beheersrechten voor de :ref:`cursus <cursus>`. Een :ref:`lesgever <lesgever>` die een nieuwe cursus aanmaakt wordt er automatisch voor geregistreerd en wordt er meteen ook de eerste cursusbeheerder van. Lesgever hebben voor het beheren van cursussen echter geen bijkomende rechten ten opzichte van andere :ref:`cursusbeheerders` en kunnen ook geen cursussen beheren waarvoor ze geen cursusbeheerder zijn.
 
 .. _cursusbeheerder icoontje:
 
@@ -663,7 +720,7 @@ In de tab kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te d
     - actie
 
   * - .. image:: images/staff_registration_icons/make_course_admin.png
-    - cursusgebruiker promoveren tot cursusbeheerder
+    - cursusgebruiker zonder beheersrechten voor de cursus promoveren tot cursusbeheerder
 
   * - .. image:: images/staff_registration_icons/make_student.png
     - cursusbeheerder degraderen tot cursusgebruiker zonder beheersrechten voor de cursus
@@ -672,11 +729,14 @@ In de tab kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te d
 
 .. important::
 
-    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit de :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder.
+    Een :ref:`cursusbeheerder <cursusbeheerder>` die zich :ref:`uitschrijft <cursus uitschrijven>` uit een :ref:`cursus <cursus>` verliest zijn status van cursusbeheerder.
 
     Om ervoor te zorgen dat een cursus altijd minstens één cursusbeheerder heeft, kan de laatste cursusbeheerder zich niet uitschrijven en kan hij zichzelf ook niet degraderen tot cursusgebruiker zonder beheersrechten voor de cursus.
 
     Na het aanmaken van een cursus kan een lesgever zich uitschrijven als hij andere cursusbeheerders aangeduid heeft. Hij kan door andere cursusbeheerders ook gedegradeerd worden tot cursusgebruiker zonder beheersrechten voor de cursus.
+
+.. TODO:feature-update: actieknop voor degraderen van cursusbeheerder niet tonen als er maar één cursusbeheerder is in de cursus
+.. TODO:feature-update: actieknop voor uitschrijven van cursusbeheerder niet tonen als er maar één cursusbeheerder is in de cursus
 
 
 .. _oplossingen beheren:
@@ -684,19 +744,21 @@ In de tab kan je de volgende actieknoppen gebruiken om cursusbeheerders aan te d
 Beheren van oplossingen
 -----------------------
 
-Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle :ref:`oplossingen <oplossing>` die de :ref:`cursusgebruikers <cursusgebruiker>` hebben :ref:`ingediend <oplossing indienen>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
+Als :ref:`cursusbeheerder <cursusbeheerder>` krijg je toegang tot alle :ref:`oplossingen <oplossing>` die de :ref:`cursusgebruikers <cursusgebruiker>` :ref:`ingediend <oplossing indienen>` hebben in de :ref:`cursus <cursus>`. Je kunt de oplossingen :ref:`herevalueren <oplossing herevalueren>` en er zijn verschillende plaatsen op de :ref:`cursuspagina <cursuspagina>` waar je een overzicht kunt krijgen van (een deel van) de oplossingen.
 
 
 .. _oplossing herevalueren:
 
-Herevalueren van oplossingen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Herevalueren van een oplossing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Bij het herevalueren van een oplossing wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw :ref:`ingediend <oplossing indienen>` moet worden. Op die manier blijft het originele :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wel wijzigen.
+Bij het herevalueren van een oplossing wordt het :ref:`beoordelingsproces <oplossing beoordelingsproces>` opnieuw uitgevoerd zonder dat de oplossing opnieuw moet :ref:`ingediend <oplossing indienen>` worden. Op die manier blijft het originele :ref:`tijdstip <oplossing tijdstip>` van indienen behouden. Als de configuratie van de :ref:`oefening <oefening>` aangepast werd sinds de vorige beoordeling van de oplossing, dan kan de :ref:`status <oplossing status>` van de oplossing wijzigen door het herevalueren.
 
 .. important::
 
     Bij het :ref:`herevalueren <oplossing herevalueren>` krijgen :ref:`oplossingen <oplossing>` een lagere prioriteit in de :ref:`wachtrij <oplossing wachtrij>` dan oplossingen die nieuw :ref:`ingediend <oplossing indienen>` worden. Op die manier ondervindt het beoordelen van oplossingen die gebruikers indienen minimale vertaging, maar kan het herevalueren wel langer duren.
+
+.. important::
 
     Gebruikers krijgen geen melding van het platform als hun :ref:`oplossingen <oplossing>` :ref:`geherevalueerd <oplossing herevalueren>` worden. Als je beslist om oplossingen te herevalueren, is het belangrijk om gebruikers te informeren dat er zowel wijzigingen kunnen zijn van de :ref:`status <oplossing status>` van :ref:`oplossingen <oplossing>` die ze vroeger :ref:`ingediend <oplossing indienen>` hebben als van hun :ref:`indienstatus <oefeningenreeks oefening indienstatus>` voor :ref:`oefeningen <oefening>` in de :ref:`oefeningenreeksen <oefeningenreeks>` van de cursus.
 
@@ -715,13 +777,13 @@ Druk op de herhaalknop in de rechterbovenhoek van de :ref:`feedbackpagina <feedb
 Navigeren naar oplossingen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Elk overzicht met :ref:`oplossingen <oplossing>` van de :ref:`cursus <cursus>` bevat voor :ref:`cursusbeheerders <cursusbeheerder>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
+Elk overzicht met :ref:`oplossingen <oplossing>` die in de :ref:`cursus <cursus>` ingediend werden, bevat voor :ref:`cursusbeheerders <cursusbeheerder>` de oplossingen van alle :ref:`cursusgebruikers <cursusgebruiker>`. Daarom heeft het overzicht een extra kolom met de naam van de gebruiker die de :ref:`oplossing <oplossing>` heeft :ref:`ingediend <oplossing indienen>`. Druk op de naam van de gebruiker om naar het :ref:`gebruikersprofiel <gebruikersprofiel>` te navigeren.
 
 .. TODO:screenshot-missing: weergave van overzicht van oplossingen waarin de naam van de gebruiker wordt aangeduid
 
 .. TODO:feature-update: vervang de gebruikersnaam in het overzicht door de naam van de gebruiker; eigenlijk kunnen we in alle overzichten de gebruikersnamen vervangen door de namen van de gebruikers (met ellipsis bij de weergave); op die manier worden gebruikersnamen vermoedelijk niet meer gebruikt in Dodona, wat natuurlijke evolutie is van de migratie naar meerdere identity providers; gebruikersnamen hebben immers enkel lokaal binnen de onderwijs- of onderzoeksinstelling een betekenis; elke object (gebruiker, cursus, oefeningenreeks, oplossing (met icoontje)) zou een korte omschrijving moeten hebben op basis van de eigenschappen (bv. naam, academiejaar, ...) die kan gebruikt worden om naar het object te linken en die een link toevoegt naar het object als de gebruiker gemachtigd is om het te zien
 
-Als je gebruikmaakt van de zoekbalk aan de bovenkant van het :ref:`overzicht <cursusbeheerder oplossingen overzicht>` om te zoeken naar specifieke :ref:`oplossingen <oplossing>`, dan wordt ook gezocht op de :ref:`naam <persoonsgegevens>` van gebruikers.
+Als je zoekt naar specifieke :ref:`oplossingen <oplossing>` met de zoekbalk aan de bovenkant van het :ref:`overzicht <cursusbeheerder oplossingen overzicht>`, dan wordt ook gezocht op de :ref:`naam <persoonsgegevens>` van gebruikers.
 
 .. TODO:screenshot-missing: weergave van overzicht van oplossingen uit een cursus waarin de zoekbalk gebruikt wordt om te zoeken naar oplossingen met de naam van een gebruiker
 
@@ -729,7 +791,7 @@ Als je gebruikmaakt van de zoekbalk aan de bovenkant van het :ref:`overzicht <cu
 
 .. _cursusbeheerder oplossingen overzicht menu:
 
-Het overzicht heeft nu ook een :ref:`menu <oefeningenreeks menu>` met filters en acties die voorbehouden zijn voor :ref:`cursusbeheerders <cursusbeheerder>`:
+Het overzicht heeft voor :ref:`cursusbeheerders <cursusbeheerder>` ook een :ref:`menu <oefeningenreeks menu>` met filters en acties die voor hen voorbehouden zijn:
 
 .. TODO:feature-update: term "Filter opties" moet in één woord geschreven worden; kan misschien beperkt worden tot "Filters" omwille van de consistentie, want anders zou er ook moeten staan "Actie-opties"
 .. TODO:feature-update: menu met filteropties en acties wordt maar deels weergegeven als er bijvoorbeeld nog geen oplossingen ingediend zijn voor de oefening; Z-level van menu verhogen
