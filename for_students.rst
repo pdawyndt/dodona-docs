@@ -253,8 +253,6 @@ Cursusbeheerders kunnen :ref:`cursussen <cursus>` opbouwen uit :ref:`oefeningen 
 
   .. image:: images/student.courses.nl.png
 
-  .. TODO:screenshot-update: werk met volwaardige cursussen in plaats van dummy cursussen
-
   .. TODO:tutorial-missing: uitleg over gebruikte symbolen op kaartje van een cursus in het cursusoverzicht en op je startpagina
 
 .. _cursuspagina:
@@ -481,9 +479,9 @@ Lesgevers kunnen **oefeningen** opstellen waarvoor je :ref:`oplossingen <oplossi
 
 Na :ref:`selectie <oefening selecteren>` van een :ref:`oefening <oefening>` navigeer je naar de **oefeningpagina**. Bovenaan staat een paneel met de naam en de beschrijving van de oefening. De weergave van deze componenten is afhankelijk van de geselecteerde :ref:`taal <taal>`. Als bij het opstellen van de oefening een vertaling voorzien werd van de naam en de beschrijving in de geselecteerde taal, dan zullen deze componenten van de oefening ook in die taal weergegeven worden.
 
-.. image:: images/student.exercise_start.nl.png
+.. figure:: images/student.exercise_start.nl.png
 
-.. TODO:screenshot-update: bijschrift toevoegen aan figuur met link naar oefening op Dodona
+   De `ISBN <https://dodona.ugent.be/en/exercises/910319224/>`_ oefening op Dodona.
 
 .. tip::
 
@@ -706,13 +704,13 @@ Aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>` staan de volgende
 
 Daaronder staat meer gedetailleerde :ref:`feedback <feedback>` die de :ref:`judge <judge>` kan uitgesplitst hebben over meerdere **tabs**. Naast de naam van een tab kan aan de rechterkant een **badge** staan met daarin een getal. Het getal geeft aan hoeveel fouten de judge gevonden heeft bij het uitvoeren van de testen waarover hij rapporteert onder de tab. Het staat de judge vrij om te beslissen of en op welke manier deze fouten geteld worden. Raadpleeg de documentatie van de judge voor meer details over de specifieke procedure die hij gebruikt om de waarde voor de badge te bepalen.
 
-.. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij minstens één van de tabs een badge count heeft
+.. image:: images/student.exercise_feedback_incorrect_tab.nl.png
 
 .. _feedback tab code:
 
 De laatste :ref:`tab <feedback tab>` heeft altijd de naam :guilabel:`Code` en bevat de broncode van de :ref:`oplossing <oplossing>`. Op bepaalde plaatsen in de broncode kan de :ref:`judge <judge>` opmerkingen toegevoegd hebben (bijvoorbeeld over de programmeerstijl) die ook kunnen motiveren waarom hij een bepaalde :ref:`status <oplossing status>` aan de oplossing toegekend heeft.
 
-.. TODO:screenshot-missing: screenshot van feedbackpagina met meerdere tabs, waarbij de tab "Code" geselecteerd werd en waarin annotaties op de code zichtbaar zijn
+.. image:: images/student.exercise_lint_error.nl.png
 
 .. TODO:feature-missing: een judge kan een tab al dan niet aanvaarden (accepted), maar dit wordt momenteel niet visueel weergegeven via een kleur of een symbool bij de tab zoals dat bij andere niveau's wel het geval is; nadenken of we dit toch niet moeten introduceren
 
@@ -776,8 +774,8 @@ Als de :ref:`judge <judge>` binnen een :ref:`testgeval <feedback testgeval>` rap
 
     .. TODO:tutorial-comment: technisch gezien kunnen hier meerdere mededelingen onder elkaar staan; Dodona gebruikt echter geen visuele manier om deze mededelingen van elkaar te onderscheiden, waardoor gebruikers geen verschil zien tussen één of meerdere mededelingen; omwille van de eenvoud spreken we hier dus slechts van één optionele mededeling, en we benoemen die met de term "feedback"
 
-    .. TODO:screenshot-missing: screenshot van test met tekstuele feedback
-    .. TODO:screenshot-missing: screenshot van test met grafische feedback (curling)
+    .. image:: images/student.exercise_feedback_incorrect_tab.nl.png
+.. image:: images/student.exercise_feedback_visual.nl.png
 
 De :ref:`judge <judge>` kan niet enkel algemene :ref:`feedback <feedback>` geven over individuele :ref:`testen <feedback test>`, maar ook over individuele :ref:`testgevallen <feedback testgeval>`, individuele :ref:`contexten <feedback context>` en de volledige :ref:`oplossing <oplossing>`. De algemene feedback over de volledige oplossing staat aan de bovenkant van de :ref:`feedbackpagina <feedbackpagina>`, tussen de gegevens van de oplossing en de tabs. De algemene feedback over een tab staat boven de weergave van de contexten onder de tab. De algemene feedback over een context staat onder de weergave van de testgevallen van de context. De algemene feedback over een testgeval staat onder de weergave van de testen van het testgeval.
 
