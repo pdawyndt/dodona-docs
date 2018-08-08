@@ -39,6 +39,11 @@ Alle oefeningen in Dodona komen van een git repository. Ook lege repositorie kun
 Publiceren van oefeningen
 -------------------------
 
+.. image:: images/git_pull_protocol.png
+
+.. image:: images/git_pull_protocol.png
+
+
 Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
 aanmaken. Dit kan je doen op de `UGent GitHub <https://github.ugent.be>`_ of op
 de `publieke GitHub <https://github.com>`_.
