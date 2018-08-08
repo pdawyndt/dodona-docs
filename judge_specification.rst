@@ -1,8 +1,7 @@
-.. _creating_a_judge:
+.. _oplossingen automatisch beoordelen:
 
-======================
-Een nieuwe judge maken
-======================
+Oplossingen automatisch beoordelen
+==================================
 
 Voor elke judge in Dodona is er een git repository. Deze git repository moet aan
 een :ref:`voorgeschreven structuur <judge_repo_structure>` voldoen en de judge
