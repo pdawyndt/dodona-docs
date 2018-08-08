@@ -103,7 +103,9 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
         .. image:: images/staff.hidden_course_message.nl.png
 
-        .. image:: images/student.hidden_course_unregistered_link_message.nl.png
+        .. image:: images/staff.hidden_course_unregistered_link_message.nl.png
+
+    .. TODO:screenshot-update: vorige afbeelding zou prefix "user" moeten hebben, niet "staff"
 
     .. TODO:feature-update: vervang de term "vakken" door "cursussen" in de omschrijving van dit veld op Dodona
 
