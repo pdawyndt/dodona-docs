@@ -41,7 +41,7 @@ Publiceren van oefeningen
 
 .. image:: images/git_pull_protocol.png
 
-.. image:: images/git_pull_protocol.png
+.. image:: images/git_push_protocol.png
 
 
 Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
