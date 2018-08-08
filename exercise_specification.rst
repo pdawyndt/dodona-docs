@@ -1,27 +1,43 @@
-.. _oefeningen toevoegen:
+.. _oefeningen beheren:
 
+Oefeningen beheren
 ==================
-Een oefening maken
-==================
+
+.. _oefening:
+
+Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien. In dit hoofdstuk bespreken we de specificatie voor het opstellen van oefeningen. Deze specificatie legt vast hoe de opdracht van een oefening moet beschreven worden en hoe de automatische beoordeling voor een oefening moet geconfigureerd worden. De specificatie voor het schrijven van judges voor Dodona wordt besproken in `oplossingen automatisch beoordelen`.
+
+Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
+
+.. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
+
+.. _repository:
+
+Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe git repository publiceren op Dodona. Daarvoor moet hij Dodona koppelen met de externe git repository en Dodona de toestemming geven om de externe git repository te beheren. Als de externe git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
+
+.. TODO:feature-update: aangezien de term "repository" beladen is, zouden we beter zoeken naar een specifiekere term voor een "collectie oefeningen uit een externe git repository die aan Dodona gekoppeld is"
+
+.. TODO:feature-missing: alle Dodona-objecten die geconfigureerd worden in externe repositories zouden gebruik kunnen maken van een generieke "repository"-component die deels instaat voor het interne beheer van de objecten (koppeling van beheerders); dit zou op termijn ook moeten toelaten op cursussen aan git repo's te koppelens
+
+.. Een :ref:`lesgever <lesgever>` kan alle beschikbare oefeningen op Dodona beheren. Voorlopig ga ik hier over zwijgen, want dit zou enkel moeten kunnen als hij beheerder is van de repository waaruit de oefeningen komen.
+
+.. TODO:feature-missing: het beheren van repositories en oefeningen in Dodona moet fijnmaziger gemaakt worden, en zou analoog kunnen gebeuren aan het beheren van cursussen; lesgevers kunnen repositories koppelen, worden er meteen voor geregistreerd en als beheerder aangeduid; ze kunnen ook andere beheerders aanduiden voor de repository; een beheerder bepaalt welke andere gebruikers en welke cursussen gebruik kunnen maken van de oefeningen uit de repository (dit kan niet afzonderlijk voor de oefeningen uit de repository)
+
+.. Lesgevers kunnen oefeningen toevoegen en delen
+
+.. Het definiëren van judges en oefeningen – die voor hun automatische beoordeling gebruikmaken van deze judges – gebeurt via GitHub repositories die automatisch gesynchroniseerd worden met de webapplicatie.
+
 
 .. note::
 
-   Om oefeningen aan Dodona toe te voegen moet je `git <https://git-scm.org>`_
-   gebruiken. Als je hier weinig of geen ervaring mee hebt lees je best `dit
-   boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij
-   nuttig.
+    Om oefeningen aan Dodona toe te voegen moet je `git <https://git-scm.org>`_ gebruiken. Als je hier weinig of geen ervaring mee hebt lees je best `dit boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij nuttig.
 
-.. TODO:feature-discuss: oefeningen worden niet rechtstreeks toegevoegd aan Dodona maar via git repository
-
-Alle oefeningen in Dodona komen van een git repository. Ook lege repositories
-kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de
-oefeningen correct te identificeren en parsen moet de repository aan een
-:ref:`voorgedefinieerde structuur <predefined_structure>` voldoen.
+Alle oefeningen in Dodona komen van een git repository. Ook lege repositorie kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de oefeningen correct te identificeren en parsen moet de repository aan een :ref:`voorgedefinieerde structuur <predefined_structure>` voldoen.
 
 .. _adding_a_repository:
 
-Een repository toevoegen
-------------------------
+Publiceren van oefeningen
+-------------------------
 
 Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
 aanmaken. Dit kan je doen op de `UGent GitHub <https://github.ugent.be>`_ of op
@@ -62,9 +78,10 @@ kunnen studenten de repository vinden en deze oplossingen of oefeningen
 bekijken.
 
 .. _predefined_structure:
+.. _structuur van een repository:
 
-Structuur van de repository
----------------------------
+Organiseren van oefeningen
+--------------------------
 
 .. warning::
 
@@ -144,8 +161,8 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
 
 .. _exercise_configuration:
 
-Configuratie
-------------
+Opstellen van oefeningen
+------------------------
 
 Het configuratie bestand van een oefening moet de volgende velden bevatten:
 
@@ -207,8 +224,8 @@ Het configuratie bestand van een oefening moet de volgende velden bevatten:
 
 .. _describing_an_exercise:
 
-Beschrijving
-------------
+Beschrijven van de opdracht
+---------------------------
 
 Beschrijvingen van oefeningen worden gerenderd met `Bootstrap
 <http://getbootstrap.com/>`_ CSS, componenten en JavaScript. Beschrijvingen

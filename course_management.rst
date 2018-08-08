@@ -480,7 +480,7 @@ Je ziet nu een uitgebreide versie van het paneel waarin je naast het :ref:`inste
 
 .. important::
 
-    We veronderstellen hier dat de :ref:`oefeningen <oefening>` die aan de :ref:`oefeningenreeks <oefeningenreeks>` moeten gekoppeld worden reeds beschikbaar zijn in Dodona. In :ref:`oefeningen toevoegen` bespreken we hoe het toevoegen van :ref:`oefeningen <oefening>` verloopt.
+    We veronderstellen hier dat de :ref:`oefeningen <oefening>` die aan de :ref:`oefeningenreeks <oefeningenreeks>` moeten gekoppeld worden reeds beschikbaar zijn in Dodona. Het opstellen, publiceren en delen van :ref:`oefeningen <oefening>` wordt besproken in :ref:`oefeningen beheren`.
 
 .. _oefeningenoverzicht:
 .. _oefeningenreeks oefeningen zoeken:
