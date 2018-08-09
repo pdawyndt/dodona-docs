@@ -40,7 +40,7 @@ In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursusei
 
 .. _cursuseigenschappen instellen annuleren:
 
-Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de cursus te annuleren.
+Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de :ref:`cursus <cursus>` te annuleren.
 
 .. image:: images/staff.cancel_new_course.nl.png
 

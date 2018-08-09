@@ -1,5 +1,7 @@
 .. _oplossingen automatisch beoordelen:
 
+.. TODO:feature-missing: beschrijving toevoegen aan judge waarin bijvoorbeeld een omschrijving kan staan van staan van wat er aan modules beschikbaar is in de docker (we zouden ook Docker objecten kunnen hebben die zelf deze beschrijving geven, zodat judges kunnen losgekoppeld worden van docker en meerdere judges dezelfde docker kunnen gebruiken); opteren om ook een URL met de handleiding voor de judge (kan ook in de beschrijving)
+
 Oplossingen automatisch beoordelen
 ==================================
 

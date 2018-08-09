@@ -7,86 +7,218 @@ Oefeningen beheren
 
 Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien. In dit hoofdstuk bespreken we de specificatie voor het opstellen van oefeningen. Deze specificatie legt vast hoe de opdracht van een oefening moet beschreven worden en hoe de automatische beoordeling voor een oefening moet geconfigureerd worden. De specificatie voor het schrijven van judges voor Dodona wordt besproken in `oplossingen automatisch beoordelen`.
 
-Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
+Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke Git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
 .. _repository:
 
-Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe git repository publiceren op Dodona. Daarvoor moet hij Dodona koppelen met de externe git repository en Dodona de toestemming geven om de externe git repository te beheren. Als de externe git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
+Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe Git repository publiceren op Dodona. Daarvoor moet hij Dodona aanhaken aan de externe Git repository en Dodona de toestemming geven om de externe Git repository te beheren. Als de externe Git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
 
 .. TODO:feature-update: aangezien de term "repository" beladen is, zouden we beter zoeken naar een specifiekere term voor een "collectie oefeningen uit een externe git repository die aan Dodona gekoppeld is"
 
-.. TODO:feature-missing: alle Dodona-objecten die geconfigureerd worden in externe repositories zouden gebruik kunnen maken van een generieke "repository"-component die deels instaat voor het interne beheer van de objecten (koppeling van beheerders); dit zou op termijn ook moeten toelaten op cursussen aan git repo's te koppelens
+.. TODO:feature-missing: alle Dodona-objecten die geconfigureerd worden in externe repositories zouden gebruik kunnen maken van een generieke "repository"-component die deels instaat voor het interne beheer van de objecten (koppeling van beheerders); dit zou op termijn ook moeten toelaten op cursussen aan git repo's te haken
 
 .. Een :ref:`lesgever <lesgever>` kan alle beschikbare oefeningen op Dodona beheren. Voorlopig ga ik hier over zwijgen, want dit zou enkel moeten kunnen als hij beheerder is van de repository waaruit de oefeningen komen.
 
-.. TODO:feature-missing: het beheren van repositories en oefeningen in Dodona moet fijnmaziger gemaakt worden, en zou analoog kunnen gebeuren aan het beheren van cursussen; lesgevers kunnen repositories koppelen, worden er meteen voor geregistreerd en als beheerder aangeduid; ze kunnen ook andere beheerders aanduiden voor de repository; een beheerder bepaalt welke andere gebruikers en welke cursussen gebruik kunnen maken van de oefeningen uit de repository (dit kan niet afzonderlijk voor de oefeningen uit de repository)
+.. TODO:feature-missing: het beheren van repositories en oefeningen in Dodona moet fijnmaziger gemaakt worden, en zou analoog kunnen gebeuren aan het beheren van cursussen; lesgevers kunnen repositories aanhaken, worden er meteen voor geregistreerd en als beheerder aangeduid; ze kunnen ook andere beheerders aanduiden voor de repository; een beheerder bepaalt welke andere gebruikers en welke cursussen gebruik kunnen maken van de oefeningen uit de repository (dit kan niet afzonderlijk voor de oefeningen uit de repository)
 
 .. Lesgevers kunnen oefeningen toevoegen en delen
 
 .. Het definiëren van judges en oefeningen – die voor hun automatische beoordeling gebruikmaken van deze judges – gebeurt via GitHub repositories die automatisch gesynchroniseerd worden met de webapplicatie.
 
 
+.. note: Om oefeningen aan Dodona toe te voegen moet je `git <https://git-scm.org>`_ gebruiken. Als je hier weinig of geen ervaring mee hebt lees je best `dit boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij nuttig.
+
+.. Alle oefeningen in Dodona komen van een git repository. Ook lege repositorie kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de oefeningen correct te identificeren en parsen moet de repository aan een :ref:`voorgedefinieerde structuur <predefined_structure>` voldoen.
+
+.. _repository aanmaken:
+.. _oefeningen publiceren:
+
+Publiceren van een collectie oefeningen
+---------------------------------------
+
+Als :ref:`lesgever <lesgever>` kan je een collectie oefeningen publiceren die opgesteld zijn in een externe Git repository. Dit kan enkel als je de nodige beheersrechten hebt voor de externe Git repository die toelaten om Dodona aan te haken en om Dodona schrijfrechten te kunnen geven.
+
 .. note::
 
-    Om oefeningen aan Dodona toe te voegen moet je `git <https://git-scm.org>`_ gebruiken. Als je hier weinig of geen ervaring mee hebt lees je best `dit boek <https://git-scm.com/book>`_. Vooral hoofdstukken 1, 2 en 6 zijn hierbij nuttig.
+    We gaan er hier van uit dat de collectie oefeningen die je wilt publiceren opgesteld is in een externe Git repository waarvoor je de nodige beheersrechten hebt.
 
-Alle oefeningen in Dodona komen van een git repository. Ook lege repositorie kunnen :ref:`toegevoegd worden aan Dodona <adding_a_repository>` maar om de oefeningen correct te identificeren en parsen moet de repository aan een :ref:`voorgedefinieerde structuur <predefined_structure>` voldoen.
+    Als je nog moet beginnen met het opstellen van de oefeningen dan maak je daar in eerste instantie een nieuwe Git repository voor aan. Een lege Git repository geldt immers als geldige collectie zonder oefeningen. Verderop bespreken we hoe een collectie oefeningen moet georganiseerd worden en hoe oefeningen moeten opgesteld worden.
 
-.. _adding_a_repository:
+.. tip::
 
-Publiceren van oefeningen
--------------------------
+    In onderstaande screencast tonen we hoe je letterlijk in een paar klikken een nieuwe Git repository kunt aanmaken op `GitHub <https://github.com>`_. Raadpleeg de `GitHub documentatie <https://guides.github.com/>`_ om meer te leren over het configureren en beheren van repositories op GitHub.
 
-.. image:: images/git_pull_protocol.png
+    .. image:: create-repository.gif
 
-.. image:: images/git_push_protocol.png
+Voor het publiceren van een collectie oefeningen maakt het niet uit of je eerst alle oefeningen opstelt in een externe Git repository en ze pas daarna publiceert, of dat je start met het publiceren van een collectie zonder oefeningen die je daarna stelselmatig aanvult met nieuwe oefeningen. Na het publiceren worden alle wijzigingen aan de collectie immers meteen ook doorgevoerd in Dodona. Onder wijzigingen aan de collectie verstaan we hierbij het reorganiseren van de collectie, het toevoegen van nieuwe oefeningen aan de collectie, het aanpassen van bestaande oefeningen uit de collectie en het verwijderen van oefeningen uit de collectie.
+
+Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd wordt in de externe Git repository:
+
+    .. TODO:feature-update: reorganiseren van de collectie kan op dit moment nog niet, maar zou wel moeten kunnen
+    .. TODO:feature-update: verwijderen van oefeningen uit een collectie wordt op dit moment nog niet ideaal opgevangen; over dit scenatio moet nog verder nagedacht worden
+
+.. image:: images/exercise_update_from_git.png
+
+1. Een persoon `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ of `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ wijzigingen aan de collectie oefeningen in de externe Git repository. Dit is Git lingo voor het vastleggen van wijzigingen in een Git repository.
+
+2. Dodona wordt op de hoogte gebracht van de wijzigingen als gevolg van het aanhaken aan de externe Git repository.
+
+3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen en maakt de nieuwe versie beschikbaar.
+
+4. Bij het verwerken van wijzigingen aan de collectie oefeningen kan het gebeuren dat Dodona er zelf ook wijzigingen aan doorvoert. Bijvoorbeeld door ontbrekende informatie aan te vullen. In dat geval `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ Dodona deze wijzigingen naar de externe Git repository.
+
+Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd wordt in Dodona:
+
+.. image:: images/exercise_update_from_dodona.png
+
+1. Een gebruiker wijzigt de collectie oefeningen in Dodona.
+
+2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ de gewijzigde collecie oefeningen naar de externe Git repository.
+
+Op het einde van beide scenario's is de meest recente versie van de collectie oefeningen zowel beschikbaar op Dodona als in de externe Git repository. Om deze scenario's te realiseren moet je de volgende stappen uitvoeren.
+
+.. TODO:feature-missing: als we op termijn overwegen om oefeningen rechtreeks aan Dodona toe te voegen via de web interface, dan zouden we dit kunnen doen in lokale Git repositories (op de Dodona servers) waarvoor we de repositorybeheerders een clone URL aanbieden zodat ze de repo daar ook kunnen klonen (desnoods enkel pull, maar indien ook push dan is GitHub als tussenstation niet langer nodig maar dan zijn we wel een hosting-platform geworden)
 
 
-Om oefeningen aan Dodona toe te voegen moet je eerst een git repository
-aanmaken. Dit kan je doen op de `UGent GitHub <https://github.ugent.be>`_ of op
-de `publieke GitHub <https://github.com>`_.
+Toegangsrechten geven aan Dodona
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: create-repository.gif
+De laatste twee stappen van het eerste scenario en de laatste stap van het tweede scenario vereisen dat Dodona collecties oefeningen moet kunnen **pullen** van en **pushen** naar de externe Git repository. Dodona maakt hiervoor gebruik `het SSH protocol <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_ voor Git. Het instellen van SSH toegangsrechten is afhankelijk van de manier waarop de externe Git repository gehost wordt:
 
-Daarna is het belangrijk om de account van Dodona toe te voegen als
-*collaborator* aan je repository. Op de UGent GitHub is dat **SA-GithubDodona**
-en op de publieke GitHub is dat **dodona-server**.
+`GitHub <https://github.com>`_
 
-.. image:: add-dodona-to-repository.gif
+    Dodona heeft een GitHub account met gebruikersnaam ``dodona-server`` en naam ``Dodona Server``. Voeg deze account toe als **collaborator** aan de externe Git repository. Onderstaande screencast toont hoe je dit kan doen.
 
-De volgende stap is de repository op Dodona registreren. Alle medewerkers op
-Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je
-naar een overzicht van de repositories die Dodona gebruikt als bronnen voor
-oefeningen. Klik op de ``+`` knop om een nieuwe repository toe te voegen.
+    .. image:: add-dodona-to-repository.gif
 
-Geef een naam, de git clone URL en de standaard :ref:`judge <list_of_judges>` in
-en klik op de knop rechtsboven om een nieuwe repository toe te voegen. Hierbij
-moet de git clone URL een SSH URL zijn.
+    .. TODO:screenshot-update: vervang voorgaande screencast door een screencast voor GitHub
 
-Als laatste moet je op GitHub een *webhook* instellen. De URL hiervoor kan je
-vinden op de detailpagina van je repository op Dodona. De *webhook* instellen
-kan je doen in de instellingen van je repository op GitHub.
+`GitHub@UGent <https://github.ugent.be>`_
 
-Klik tenslotte nog eens op "Alle oefeningen herwerken". Zo ben je zeker dat er
-geen oefeningen gemist zijn tussen het moment dat je de respository toevoegde en
-de *webhook* instelde.
+    Dodona heeft een GitHub@UGent account met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``. Voeg deze account toe als **collaborator** aan de externe Git repository. Onderstaande screencast toont hoe je dit kan doen.
 
-Moet ik mijn repository *private* of *public* maken?
-""""""""""""""""""""""""""""""""""""""""""""""""""""
+    .. image:: add-dodona-to-repository.gif
 
-Dit mag je zelf kiezen. Houd er wel rekening mee dat als je bijvoorbeeld
-voorbeeldoplossingen bij de oefeningen plaatst of als je de oefeningen voor
-examens gebruikt dat je de repository dan beter *private* maakt. Anders
-kunnen studenten de repository vinden en deze oplossingen of oefeningen
-bekijken.
+.. TODO:feature-update: moeten we ook niet de publieke SSH sleutel van Dodona beschikbaar stellen, zodat een alternatieve methode om Dodona toegang te geven aan de repository erin bestaat dat men een "git" gebruiker aanmaakt op de machine waarop de repository staat en de publieke SSH sleutel van Dodona toevoegt aan het ~/.ssh/authorized_keys bestand van die "git" gebruiker (https://git-scm.com/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen).
 
-.. _predefined_structure:
+.. TODO:tutorial-missing: contact opnemen met team Dodona om alternatieven te laten opzetten op aanvraag
+
+.. tip::
+
+    **Moet ik een Git repository publiek maken om oefeningen te publiceren op Dodona?**
+
+    De scenario's om een collectie oefeningen te synchroniseren tussen een externe Git repository en Dodona vereisen niet dat je de externe Git repository publiek moet maken. Dat is zelfs helemaal niet aangewezen als je eigen voorbeeldoplossingen mee opslaat in de repository of als je de oefeningen afgeschermd wil publiceren op Dodona.
+
+
+.. _repository aanmaken:
+
+Aanmaken van een repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. TODO:tutorial-update: Evert sprak hier over het "registreren van de externe Git repository op Dodona", dus nog overwegen om dit terminologie over te nemen
+.. De volgende stap is de repository op Dodona registreren. Alle medewerkers op Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je naar een overzicht van de repositories die Dodona gebruikt als bronnen voor oefeningen. Klik op de ``+`` knop om een nieuwe repository toe te voegen.
+
+.. _repositoriesoverzicht:
+
+Nadat Dodona SSH toegang gekregen heeft tot de externe Git repository, kan je als :ref:`lesgever <lesgever>` de externe Git repository koppelen aan Dodona. Selecteer :guilabel:`Repositories` in het :ref:`beheersmenu <beheersmenu>` om naar het **repositoriesoverzicht** te navigeren.
+
+.. TODO:tutorial-update: nagaan of het meervoud van "repository" in het Nederlands "repository's" is of "repositories" (in de Nederlandstalige versie van Pro Git wordt "repositories" gebruikt; op Dodona wordt "repository's" gebruikt in het menu en "repositories" in de titelbalk van het repositoryoverzicht
+
+.. TODO:screenshot-missing: screenshot waarin aangeduid wordt hoe je naar het repositoriesoverzicht kan navigeren via het beheersmenu.
+
+Het :ref:`repositoriesoverzicht <repositoriesoverzicht>` toont een overzicht van alle beschikbare repositories.
+
+.. TODO:tutorial-missing: hier nog aangeven hoe het repositoriesoverzicht er uitziet en hoe je naar een repository kan navigeren
+.. TODO:feature-missing: zoekfunctionaliteit toevoegen aan dit overzicht
+
+.. TODO:screenshot-missing: screenshot van het repositoriesoverzicht
+
+Druk op de aanmaakknop in de rechterbovenhoek van het :ref:`repositoriesoverzicht <repositoriesoverzicht>` om een nieuwe repository aan te maken.
+
+.. TODO:screenshot-missing: screenshot van het repositoriesoverzicht waarin de aanmaakknop wordt aangeduid
+
+In het paneel :guilabel:`Nieuwe repository` stel je de eigenschappen van de nieuwe repository in.
+
+.. TODO:screenshot-missing: screenshot van de pagina waarop de eigenschappen van de repository ingesteld worden.
+
+Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk` om het aanmaken van de nieuwe :ref:`repository <repository>` te annuleren.
+
+.. TODO:screenshot-missing: screenshot van de pagina waarop de eigenschappen van de repository ingesteld worden, en waarin Dodona aangeduid wordt in de navigatiebalk
+
+Voor een :ref:`repository <repository>` kunnen de volgende eigenschappen ingesteld worden:
+
+:guilabel:`Naam`
+
+    Een naam voor de collectie oefeningen op Dodona.
+
+:guilabel:`SSH URL`
+
+    De `URL <https://nl.wikipedia.org/wiki/Uniform_Resource_Locator>`_ waar Dodona toegang heeft tot de externe git repository via `SSH <https://nl.wikipedia.org/wiki/Secure_Shell>`_.
+
+    .. TODO:feature-update: zouden we deze eigenschap niet beter hernoemen naar "SSH URL"; dit is ook hoe ze door GitHub genoemd worden (https://help.github.com/enterprise/2.12/user/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls)
+    .. TODO:feature-update: wordt er een check uitgevoerd om ervoor te zorgen dat dezelfde git repo niet tweemaal gekoppeld wordt aan Dodona? we zouden in ieder geval kunnen controleren dat de SSH URL uniek is, en misschien moeten we ook een policy uitwerken rond het koppelen van meerdere branches van dezelfde repo (al lijkt dit wel een optie die zou moeten kunnen); als een repo oefeningen bevat waarvan de ID al in gebruik is in een andere repo, dan zouden we die oefeningen ook niet kunnen aanmaken (en een mail sturen naar de commiter dat er oefeningen zijn met ongeldige IDs); het niet aanmaken van een oefening met een ongeldige ID zou een algemene strategie kunnen zijn, in plaats van
+
+    .. tip::
+
+        In onderstaande screencast tonen we hoe je letterlijk in een paar klikken een nieuwe git repository kunt aanmaken op `GitHub <https://github.com>`_. Raadpleeg de `GitHub documentatie <https://guides.github.com/>`_ om meer te leren over het configureren en beheren van repositories op GitHub.
+
+        .. image:: add-dodona-to-repository.gif
+
+:guilabel:`Standaard judge`
+
+    De :ref:`judge <judge>` die standaard gekoppeld wordt aan alle oefeningen in de :ref:`repository <repository>`. Selecteer de judge uit de lijst van beschikbare judges.
+
+    .. TODO:feature-missing: dit zou uitgebreid moeten worden naar alle standaardinstellingen voor oefeningen in de repository, waardoor deze instellingen best ook ondergebracht worden onder een afzonderlijke hoofding
+    .. TODO:feature-missing: als de repository al een dodona.json heeft in de root van de repository --- en dat kunnen we op dit moment nog niet weten --- dan moeten we ervoor zorgen dat die niet overschreven wordt; het lijkt dus aangewezen om de defaults pas in te stellen in een tweede stap, nadat de repo aan Dodona werd gekoppeld maar voordat de collectie oefeningen uit de repository verwerkt wordt (dit laatste wordt beïnvloed door de default-instellingen in de root)
+    .. TODO:feature-missing: het selecteren van een judge moet op termijn uitgebreid worden met betere functionaliteit voor het zoeken naar een judge
+    .. TODO:feature-missing: voeg een beschrijving voor de collectie oefeningen
+
+    Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien.
+
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe repository` om het aanmaken van een repository met de opgegeven eigenschappen effectief door te voeren. Dit heeft als gevolg dat stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
+
+.. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de collectie oefeningen zichtbaar zijn
+
+.. TODO: tutorial-missing: omschrijven hoe de nieuw aangemaakte repository weergegeven wordt op Dodona
+
+.. TODO: tutorial-missing: "troubleshooting" informatie van de boodschap die getoond als Dodona niet de nodige toegangsrechten heeft om te pullen van en te pushen naar de git repo
+
+
+.. _repository aanhaken:
+
+Aanhaken van een repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. TODO: tutorial-update: is dit specifiek voor GitHub, of is er een generieke manier om een notificatie te krijgen van git repo's; ik vermoed dat dit wel iets anders is dan `Git Hooks <https://git-scm.com/book/nl/v2/Git-aanpassen-Git-Hooks>`_
+
+Om geïnformeerd te blijven over wijzigingen aan de collectie oefeningen die doorgevoerd worden in een externe Git repository, maakt Dodona gebruik van `Git Hooks <https://git-scm.com/book/nl/v2/Git-aanpassen-Git-Hooks>`_. Bij het aanmaken van een nieuwe repository werd een specifieke *webhook* gegenereerd waarvan je de URL kan zien in de weergave van de repository.
+
+.. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de webhook wordt aangeduid
+
+Druk op de kopieerknop naast de *hook* om de *hook* naar het klembord te kopiëren.
+
+.. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de kopieerknop naast de webhook wordt aangeduid
+
+Het installeren van de *hook* is afhankelijk van de manier waarop de externe Git repository gehost wordt:
+
+`GitHub <https://github.com>`_
+
+    Voeg de *hook* toe als `webhook <https://developer.github.com/webhooks/>`_ aan de GitHub repository. Onderstaande screencast toont hoe je dit kan doen.
+
+    .. TODO:screenshot-missing: screencast van het instellen van een webhook op GitHub
+
+.. tip::
+
+    Druk voor de zekerheid op de knop :guilabel:`Alle oefeningen herwerken` in de weergave van de repository als de mogelijkheid bestaat dat de externe Git repository gewijzigd werd tussen het :ref:`aanmaken <aanmaken>` en het :ref:`aanhaken <aanhaken>`. Hierdoor worden stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de recentste versie van de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
+
+
 .. _structuur van een repository:
+.. _collectie oefeningen organiseren:
 
-Organiseren van oefeningen
---------------------------
+Organiseren van een collectie oefeningen
+----------------------------------------
 
 .. warning::
 
@@ -164,10 +296,10 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
 
 .. TODO:feature-discuss: public folder
 
-.. _exercise_configuration:
+.. _oefening opstellen:
 
-Opstellen van oefeningen
-------------------------
+Opstellen van een oefening
+--------------------------
 
 Het configuratie bestand van een oefening moet de volgende velden bevatten:
 
