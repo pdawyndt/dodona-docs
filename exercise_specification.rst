@@ -67,7 +67,7 @@ Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd
 
 3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen en maakt de nieuwe versie beschikbaar.
 
-4. Bij het verwerken van wijzigingen aan de collectie oefeningen kan het gebeuren dat Dodona er zelf ook wijzigingen aan doorvoert. Bijvoorbeeld door ontbrekende informatie aan te vullen. In dat geval `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ Dodona deze wijzigingen naar de externe Git repository.
+4. Bij het verwerken van wijzigingen aan de collectie oefeningen kan het gebeuren dat Dodona er zelf ook wijzigingen aan doorvoert, bijvoorbeeld door er informatie voor intern beheer aan toe te voegen. In dat geval `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ Dodona deze wijzigingen naar de externe Git repository.
 
 Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd wordt in Dodona:
 
@@ -85,7 +85,7 @@ Op het einde van beide scenario's is de meest recente versie van de collectie oe
 Toegangsrechten geven aan Dodona
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-De laatste twee stappen van het eerste scenario en de laatste stap van het tweede scenario vereisen dat Dodona collecties oefeningen moet kunnen **pullen** van en **pushen** naar de externe Git repository. Dodona maakt hiervoor gebruik `het SSH protocol <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_ voor Git. Het instellen van SSH toegangsrechten is afhankelijk van de manier waarop de externe Git repository gehost wordt:
+De laatste twee stappen van het eerste scenario en de laatste stap van het tweede scenario vereisen dat Dodona collecties oefeningen moet kunnen **pullen** van en **pushen** naar de externe Git repository. Dodona maakt hiervoor gebruik van `het SSH protocol <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_ voor Git. Het instellen van SSH toegangsrechten is afhankelijk van de manier waarop de externe Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
@@ -97,9 +97,7 @@ De laatste twee stappen van het eerste scenario en de laatste stap van het tweed
 
 `GitHub@UGent <https://github.ugent.be>`_
 
-    Dodona heeft een GitHub@UGent account met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``. Voeg deze account toe als **collaborator** aan de externe Git repository. Onderstaande screencast toont hoe je dit kan doen.
-
-    .. image:: add-dodona-to-repository.gif
+    De procedure is dezelfde als voor `GitHub <https://github.com>`_, behalve dat Dodona op GitHub@UGent account heeft met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``.
 
 .. TODO:feature-update: moeten we ook niet de publieke SSH sleutel van Dodona beschikbaar stellen, zodat een alternatieve methode om Dodona toegang te geven aan de repository erin bestaat dat men een "git" gebruiker aanmaakt op de machine waarop de repository staat en de publieke SSH sleutel van Dodona toevoegt aan het ~/.ssh/authorized_keys bestand van die "git" gebruiker (https://git-scm.com/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen).
 
@@ -155,7 +153,7 @@ Voor een :ref:`repository <repository>` kunnen de volgende eigenschappen ingeste
 
 :guilabel:`SSH URL`
 
-    De `URL <https://nl.wikipedia.org/wiki/Uniform_Resource_Locator>`_ waar Dodona toegang heeft tot de externe git repository via `SSH <https://nl.wikipedia.org/wiki/Secure_Shell>`_.
+    De `URL <https://nl.wikipedia.org/wiki/Uniform_Resource_Locator>`_ waar Dodona via `SSH <https://nl.wikipedia.org/wiki/Secure_Shell>`_ toegang krijgt tot de externe git repository.
 
     .. TODO:feature-update: zouden we deze eigenschap niet beter hernoemen naar "SSH URL"; dit is ook hoe ze door GitHub genoemd worden (https://help.github.com/enterprise/2.12/user/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls)
     .. TODO:feature-update: wordt er een check uitgevoerd om ervoor te zorgen dat dezelfde git repo niet tweemaal gekoppeld wordt aan Dodona? we zouden in ieder geval kunnen controleren dat de SSH URL uniek is, en misschien moeten we ook een policy uitwerken rond het koppelen van meerdere branches van dezelfde repo (al lijkt dit wel een optie die zou moeten kunnen); als een repo oefeningen bevat waarvan de ID al in gebruik is in een andere repo, dan zouden we die oefeningen ook niet kunnen aanmaken (en een mail sturen naar de commiter dat er oefeningen zijn met ongeldige IDs); het niet aanmaken van een oefening met een ongeldige ID zou een algemene strategie kunnen zijn, in plaats van
