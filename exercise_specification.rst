@@ -5,7 +5,7 @@ Oefeningen beheren
 
 .. _oefening:
 
-Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien. In dit hoofdstuk bespreken we de specificatie voor het opstellen van oefeningen. Deze specificatie legt vast hoe de opdracht van een oefening moet beschreven worden en hoe de automatische beoordeling voor een oefening moet geconfigureerd worden. De specificatie voor het schrijven van judges voor Dodona wordt besproken in `oplossingen automatisch beoordelen`.
+Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien. In dit hoofdstuk bespreken we de specificatie voor het opstellen van oefeningen. Deze specificatie legt vast hoe de opdracht van een oefening moet beschreven worden en hoe de automatische beoordeling voor een oefening moet geconfigureerd worden. De specificatie voor het schrijven van judges voor Dodona wordt besproken in :ref:`oplossingen automatisch beoordelen`.
 
 Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke Git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
 
@@ -61,7 +61,7 @@ Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd
 
 .. image:: images/exercise_update_from_git.png
 
-1. Een persoon `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ of `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ wijzigingen aan de collectie oefeningen in de externe Git repository. Dit is Git lingo voor het vastleggen van wijzigingen in een Git repository.
+1. Een externe beheerder `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_  (Git lingo voor vastleggen van wijzigingen) of `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_  (Git lingo voor uploaden) wijzigingen aan de collectie oefeningen in de externe Git repository.
 
 2. Dodona wordt op de hoogte gebracht van de wijzigingen als gevolg van het aanhaken aan de externe Git repository.
 
@@ -75,7 +75,7 @@ Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd
 
 1. Een gebruiker wijzigt de collectie oefeningen in Dodona.
 
-2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ de gewijzigde collecie oefeningen naar de externe Git repository.
+2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ de gewijzigde collectie oefeningen naar de externe Git repository.
 
 Op het einde van beide scenario's is de meest recente versie van de collectie oefeningen zowel beschikbaar op Dodona als in de externe Git repository. Om deze scenario's te realiseren moet je de volgende stappen uitvoeren.
 
@@ -188,7 +188,7 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe re
 
 .. _repository aanhaken:
 
-Aanhaken van een repository
+Aanhaken aan een repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. TODO: tutorial-update: is dit specifiek voor GitHub, of is er een generieke manier om een notificatie te krijgen van git repo's; ik vermoed dat dit wel iets anders is dan `Git Hooks <https://git-scm.com/book/nl/v2/Git-aanpassen-Git-Hooks>`_
