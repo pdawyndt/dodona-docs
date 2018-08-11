@@ -231,7 +231,7 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
-Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` gewijzigd wordt. Als de synchronisatieprocedure probleemloos kon uitgevoerd worden, dan kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
+Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` gewijzigd wordt. Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte collectie waarin de oefeningen zichtbaar zijn
 
