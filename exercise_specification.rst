@@ -62,7 +62,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   Als de collectie oefeningen gewijzigd wordt in Dodona dan worden de wijzigingen als volgt gesynchroniseerd met de Git repository:
 
-    .. image:: images/nl.collection_update_in_dodona.png
+.. image:: images/nl.collection_update_in_dodona.png
 
   1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
@@ -72,7 +72,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   Als de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gewijzigd wordt in de :ref:`Git repository <git repository>` dan worden de wijzigingen als volgt gesynchroniseerd met Dodona:
 
-    .. image:: images/nl.collection_update_from_repository_webhook.png
+.. image:: images/nl.collection_update_from_repository_webhook.png
 
   1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
 
@@ -134,7 +134,7 @@ Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisat
 Aanmaken van een collectie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie` aanmaken waarin de oefeningen uit de :ref:`Git repository <git repository>` gepubliceerd worden en waarin de eigenschappen en de toegangsrechten van alle oefeningen uit de collectie kunnen ingesteld worden. Dit kan enkel nadat Dodona SSH toegang gekregen heeft tot de :ref:`Git repository <git repository>`.
+Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie` aanmaken waarin de oefeningen uit de :ref:`Git repository <git repository>` gepubliceerd worden en waarin de eigenschappen en de toegangsrechten van alle oefeningen uit de collectie kunnen ingesteld worden. Dit kan enkel nadat Dodona :ref:`SSH toegang <collectie SSH toegang>` gekregen heeft tot de :ref:`Git repository <git repository>`.
 
 .. _repositoriesoverzicht:
 
