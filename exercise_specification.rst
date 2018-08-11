@@ -9,6 +9,8 @@ Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>
 
 Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke Git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
 
+.. image:: images/nl.collection_synchronisation.png
+
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
 .. _repository:
@@ -59,7 +61,7 @@ Onderstaand schema omschrijft het scenario als de collectie oefeningen gewijzigd
     .. TODO:feature-update: reorganiseren van de collectie kan op dit moment nog niet, maar zou wel moeten kunnen
     .. TODO:feature-update: verwijderen van oefeningen uit een collectie wordt op dit moment nog niet ideaal opgevangen; over dit scenatio moet nog verder nagedacht worden
 
-.. image:: images/exercise_update_from_git.png
+.. image:: images/nl.collection_update_from_git_webhook.png
 
 1. Een externe beheerder `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_  (Git lingo voor vastleggen van wijzigingen) of `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_  (Git lingo voor uploaden) wijzigingen aan de collectie oefeningen in de externe Git repository.
 
@@ -173,8 +175,6 @@ Voor een :ref:`repository <repository>` kunnen de volgende eigenschappen ingeste
     .. TODO:feature-missing: het selecteren van een judge moet op termijn uitgebreid worden met betere functionaliteit voor het zoeken naar een judge
     .. TODO:feature-missing: voeg een beschrijving voor de collectie oefeningen
 
-    Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien.
-
 Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe repository` om het aanmaken van een repository met de opgegeven eigenschappen effectief door te voeren. Dit heeft als gevolg dat stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de collectie oefeningen zichtbaar zijn
@@ -184,26 +184,39 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe re
 .. TODO: tutorial-missing: "troubleshooting" informatie van de boodschap die getoond als Dodona niet de nodige toegangsrechten heeft om te pullen van en te pushen naar de git repo
 
 
+.. _repository webhook:
 .. _repository aanhaken:
 
 Aanhaken aan een repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO: tutorial-update: is dit specifiek voor GitHub, of is er een generieke manier om een notificatie te krijgen van git repo's; ik vermoed dat dit wel iets anders is dan `Git Hooks <https://git-scm.com/book/nl/v2/Git-aanpassen-Git-Hooks>`_
+Je kunt handmatig
 
-Om geïnformeerd te blijven over wijzigingen aan de collectie oefeningen die doorgevoerd worden in een externe Git repository, maakt Dodona gebruik van `Git Hooks <https://git-scm.com/book/nl/v2/Git-aanpassen-Git-Hooks>`_. Bij het aanmaken van een nieuwe repository werd een specifieke *webhook* gegenereerd waarvan je de URL kan zien in de weergave van de repository.
+.. image:: images/nl.collection_update_from_git_manual.png
+
+Je kunt Dodona informeren dat er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository door op de knop :guilabel:`Alle oefeningen herwerken` te drukken in de weergave van de repository.
+
+
+.. TODO:screenshot-missing: screenshot van de knop "Alle oefeningen herverwerken"
+
+Hierdoor worden stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de recentste versie van de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
+
+.. TODO:tutorial-update: misschien eerst aangeven dat je dit handmatig kan aangeven dat er een nieuwe versie beschikbaar is in de exteren Git repository die door Dodona mag gepubliceerd worden
+.. TODO:tutorial-update: is dit specifiek voor GitHub, of is er een generieke manier om een notificatie te krijgen van git repo's;
+
+Bij het aanmaken van een nieuwe repository wordt er telkens een specifieke **webhook** gegenereerd voor de repository. De webhook is een URL die elke keer aangesproken moet worden als er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository die op Dodona mag gepubliceerd worden. Als :ref:`lesgever <lesgever>` zie je de URL van deze webhook in de weergave van de repository. Navigeren naar de webhook betekent zoveel als het informeren
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de webhook wordt aangeduid
 
-Druk op de kopieerknop naast de *hook* om de *hook* naar het klembord te kopiëren.
+Druk op de kopieerknop naast de webhook om de webhook naar het klembord te kopiëren.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de kopieerknop naast de webhook wordt aangeduid
 
-Het installeren van de *hook* is afhankelijk van de manier waarop de externe Git repository gehost wordt:
+Het installeren van de webhook is afhankelijk van de manier waarop de externe Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
-    Voeg de *hook* toe als `webhook <https://developer.github.com/webhooks/>`_ aan de GitHub repository. Onderstaande screencast toont hoe je dit kan doen.
+    Voeg de webhook toe als `webhook <https://developer.github.com/webhooks/>`_ aan de GitHub repository. Onderstaande screencast toont hoe je dit kan doen.
 
     .. TODO:screenshot-missing: screencast van het instellen van een webhook op GitHub
 
