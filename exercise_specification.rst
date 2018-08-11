@@ -5,21 +5,36 @@ Oefeningen beheren
 
 .. _oefening:
 
-Aan Dodona kunnen **oefeningen** toegevoegd die bestaan uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden
-
-Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>` kunnen :ref:`ingediend <oplossing indienen>` worden en is gekoppeld aan een :ref:`judge <judge>` die de ingediende oplossingen automatisch kan beoordelen en van feedback voorzien. In dit hoofdstuk bespreken we de specificatie voor het opstellen van oefeningen. Deze specificatie legt vast hoe de opdracht van een oefening moet beschreven worden en hoe de automatische beoordeling voor een oefening moet geconfigureerd worden. De specificatie voor het schrijven van judges voor Dodona wordt besproken in :ref:`oplossingen automatisch beoordelen`.
-
-Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke Git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
-
-.. image:: images/nl.collection_permissions.png
+Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening altijd gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd worden. Voor het schrijven van judges verwijzen we naar het hoofdstuk :ref:`oplossingen automatisch beoordelen`.
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
-.. _repository:
+.. _collectie:
 
-Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe Git repository publiceren op Dodona. Daarvoor moet hij Dodona aanhaken aan de externe Git repository en Dodona de toestemming geven om de externe Git repository te beheren. Als de externe Git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
+:ref:`Oefeningen <oefening>` worden gebundeld in **collecties** van oefeningen die samen :ref:`beheerd <oefening beheren>` worden. Hierdoor kunnen de :ref:`eigenschappen <oefening eigenschappen>` en de :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen uit een collectie op verschillende niveau's ingesteld worden: voor de volledige collectie, voor een deel van de collectie of individueel per oefening.
+
+.. image:: images/nl.collection_permissions.png
+
+.. _externe server:
+.. _git repository:
+
+Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repository <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ op een **externe server**. Door de collectie aan de git repository te koppelen blijft het wijzigen van oefeningen in Dodona of in de git repository synchroon verlopen.
 
 .. image:: images/nl.collection_synchronisation.png
+
+Door te faciliteren dat :ref:`oefeningen <oefening>` kunnen :ref:`opgesteld <oefening opstellen>` worden in :ref:`git repositories <git repository>` die :ref:`extern gehost <externe server>` worden, maakt Dodona het eenvoudiger om grote :ref:`collecties <collectie>` oefeningen te :ref:`organiseren <collectie organiseren>` en te :ref:`beheren <collectie>` met een team van personen. Merk op dat het toekennen van toegangsrechten en beheersrechten voor de :ref:`git repository <git repository>` op de :ref:`externe server <externe server>` volledig gescheiden verloopt van het toekennen van :ref:`toegangsrechten <collectie toegangsrechten>` en :ref:`beheersrechten <collectie beheersrechten>` voor de gekoppelde :ref:`collectie <collectie>` op Dodona. Een deel van de toegangsrechten voor de oefeningen kan zowel in Dodona als in de git repository ingesteld worden.
+
+.. tip::
+
+    Als je nog niet hebt leren werken met `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ dan raden we alvast aan om de eerste twee hoofdstukken van het boek  `Pro Git <https://git-scm.com/book/nl/v2>`_ te lezen dat ook in het Nederlands beschikbaar is. Als we in deze handleiding voor het eerst gebruikmaken van typische Git terminologie, dan verwijzen we daarbij ook naar de corresponderende paragrafen in dit boek.
+
+.. _collectiebeheerder:
+
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`collecties <collectie>` :ref:`aanmaken <collectie aanmaken>` om de :ref:`oefeningen <oefening>` uit een :ref:`git repository <git repository>` op een :ref:`externe server <externe server>` te :ref:`publiceren <oefeningen publiceren>` op Dodona. Hij wordt automatisch **collectiebeheerder** van elke collectie die hij aanmaakt, maar kan geen collecties beheren waarvoor hij geen collectiebeheerder is.
+
+Een :ref:`collectiebeheerder <collectiebeheerder>` kan andere beheerders aanduiden om samen met hem een collectie te beheren. Hij kan de :ref:`eigenschappen <oefening eigenschappen>` en de :ref:`toegangsrechten <oefening toegangsrechten>` van alle oefeningen uit de :ref:`collectie <collectie>` instellen.
+
+.. Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe Git repository publiceren op Dodona. Daarvoor moet hij Dodona aanhaken aan de externe Git repository en Dodona de toestemming geven om de externe Git repository te beheren. Als de externe Git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
 
 .. TODO:feature-update: aangezien de term "repository" beladen is, zouden we beter zoeken naar een specifiekere term voor een "collectie oefeningen uit een externe git repository die aan Dodona gekoppeld is"
 
