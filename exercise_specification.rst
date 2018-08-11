@@ -101,8 +101,8 @@ Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>
 
 .. _collectie SSH toegang:
 
-Verlenen van toegang over SSH
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Verlenen van SSH toegang
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _collectie git repository ssh:
 
