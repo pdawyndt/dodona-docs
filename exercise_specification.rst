@@ -99,7 +99,7 @@ Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>
 .. Als :ref:`lesgever <lesgever>` kan je een collectie oefeningen publiceren die opgesteld zijn in een externe Git repository. Dit kan enkel als je de nodige beheersrechten hebt voor de externe Git repository die toelaten om Dodona aan te haken en om Dodona schrijfrechten te kunnen geven.
 
 
-.. _collectie git repository toegangsrechten:
+.. _collectie SSH toegang:
 
 Verlenen van toegang over SSH
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
