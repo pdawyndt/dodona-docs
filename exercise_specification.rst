@@ -5,7 +5,7 @@ Oefeningen beheren
 
 .. _oefening:
 
-Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`oplossingen automatisch beoordelen`_.
+Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`Oplossingen automatisch beoordelen <oplossingen automatisch beoordelen>`.
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
@@ -227,7 +227,7 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
    .. important::
 
-       In :ref:`Remediëren van synchronisatiefouten` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
+       In :ref:`Remediëren van synchronisatiefouten <synchronisatiefouten remediëren>` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
