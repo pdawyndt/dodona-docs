@@ -21,7 +21,7 @@ Een **collectie** bundelt meerdere :ref:`oefeningen <oefening>` die samen :ref:`
 .. _externe server:
 .. _git repository:
 
-Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een Git repository op een externe server. Via een koppeling van de collectie aan de Git repository blijft het wijzigen van oefeningen in Dodona of in de Git repository synchroon verlopen.
+Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een **Git repository** op een **externe server**. Via een koppeling van de collectie aan de Git repository blijft het wijzigen van oefeningen in Dodona of in de Git repository synchroon verlopen.
 
 .. image:: images/nl.collection_synchronisation.png
 
