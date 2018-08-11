@@ -18,7 +18,7 @@ Een :ref:`cursusbeheerder <cursusbeheerder>` :ref:`stippelt <leerpad uitstippele
 Aanmaken van een cursus
 -----------------------
 
-Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de knop :guilabel:`NIEUWE CURSUS` te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
+Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken door op de knop :guilabel:`CURSUS AANMAKEN` te drukken in de rechterbovenhoek van het :ref:`cursusoverzicht <cursusoverzicht>`.
 
 .. TODO:feature-update: vervang de term "Alle cursussen" door "Cursusoverzicht"
 .. TODO:feature-update: vervang de term "Cursus aanmaken" door "Nieuwe cursus"; op dezelfde plaats staat bij het bewerken immers ook overal de naam van de nieuwe cursus
@@ -30,7 +30,7 @@ Als :ref:`lesgever <lesgever>` kan je een nieuwe :ref:`cursus <cursus>` aanmaken
 
 .. _cursuseigenschappen instellen:
 
-In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` in.
+In het paneel :guilabel:`Nieuwe cursus` kan je de :ref:`eigenschappen <cursuseigenschappen>` van de nieuwe :ref:`cursus <cursus>` instellen.
 
 .. image:: images/staff.new_course.nl.png
 
@@ -40,7 +40,7 @@ In het paneel :guilabel:`Nieuwe cursus` stel je de :ref:`eigenschappen <cursusei
 
 .. _cursuseigenschappen instellen annuleren:
 
-Druk op de knop :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de :ref:`cursus <cursus>` te annuleren.
+Druk op :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de :ref:`cursus <cursus>` te annuleren.
 
 .. image:: images/staff.cancel_new_course.nl.png
 
@@ -299,7 +299,7 @@ Als :ref:`cursusbeheerder <cursusbeheerder>` kan je voor de :ref:`cursus <cursus
 Toevoegen van oefeningenreeksen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`NIEUWE REEKS` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
+Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`REEKS AANMAKEN` om een nieuwe oefeningenreeks aan het leerpad toe te voegen.
 
 .. image:: images/staff.course_series_new_link.nl.png
 
@@ -307,7 +307,7 @@ Druk in het :ref:`leerpad <leerpad>` op de knop :guilabel:`NIEUWE REEKS` om een 
 
 .. _oefeningenreeks eigenschappen instellen:
 
-In het paneel :guilabel:`Nieuwe oefeningenreeks` stel je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` in.
+In het paneel :guilabel:`Nieuwe oefeningenreeks` kan je de :ref:`eigenschappen <oefeningenreeks eigenschappen>` van de nieuwe :ref:`oefeningenreeks <oefeningenreeks>` instellen.
 
 .. TODO:feature-update: vervang de titel "Reeks aanmaken" door de titel "Nieuwe oefeningenreeks"
 
