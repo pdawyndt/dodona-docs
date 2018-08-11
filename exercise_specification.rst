@@ -5,7 +5,7 @@ Oefeningen beheren
 
 .. _oefening:
 
-Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`oplossingen automatisch beoordelen`.
+Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`oplossingen automatisch beoordelen`_.
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
@@ -219,11 +219,11 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe co
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe collectie" waarop de afwerkknop aangeduid word
 
-Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` wordt onmiddellijk een synchronisatieprocedure opgestart om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de procedure opvolgen. Daarbij worden de volgende stappen doorlopen:
+Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` zie je dat er een synchronisatieprocedure wordt uitgevoerd om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de synchronisatieprocedure opvolgen. Daarbij worden de volgende stappen doorlopen:
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
-1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
+1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>`_ en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
 
    .. important::
 
