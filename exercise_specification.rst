@@ -223,7 +223,7 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
-1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>`_ en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
+1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
 
    .. important::
 
