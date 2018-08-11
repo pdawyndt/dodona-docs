@@ -56,13 +56,14 @@ Voor het **publiceren** van een :ref:`collectie <collectie>` :ref:`oefeningen <o
 
 .. _collectie synchronisatieprocedures:
 
-Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:`publiceren <oefeningen publiceren>`, moet je eerst wat meer details kennen over het verloop van de synchronisatie tussen Dodona en de :ref:`Git repository <git repository>` nadat de publicatie gebeurd is. Daarbij zijn er twee mogelijke scenario's.
+Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:`publiceren <oefeningen publiceren>`, moet je eerst wat meer details kennen over het verloop van de synchronisatie tussen Dodona en de :ref:`Git repository <git repository>` nadat de publicatie gebeurd is. Daarbij zijn er twee mogelijke scenario's:
 
 - .. _collectie synchronisatie uit dodona:
 
   Als de collectie oefeningen gewijzigd wordt in Dodona dan worden de wijzigingen als volgt gesynchroniseerd met de Git repository:
 
   .. image:: images/nl.collection_update_in_dodona.png
+
 
   1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
@@ -73,6 +74,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
   Als de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gewijzigd wordt in de :ref:`Git repository <git repository>` dan worden de wijzigingen als volgt gesynchroniseerd met Dodona:
 
   .. image:: images/nl.collection_update_from_repository_webhook.png
+
 
   1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
 
