@@ -62,8 +62,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   Als de collectie oefeningen gewijzigd wordt in Dodona dan worden de wijzigingen als volgt gesynchroniseerd met de Git repository:
 
-  .. image:: images/nl.collection_update_in_dodona.png
-
+    .. image:: images/nl.collection_update_in_dodona.png
 
   1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
@@ -73,8 +72,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   Als de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gewijzigd wordt in de :ref:`Git repository <git repository>` dan worden de wijzigingen als volgt gesynchroniseerd met Dodona:
 
-  .. image:: images/nl.collection_update_from_repository_webhook.png
-
+    .. image:: images/nl.collection_update_from_repository_webhook.png
 
   1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
 
@@ -136,12 +134,11 @@ Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisat
 Aanmaken van een collectie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. TODO:tutorial-update: Evert sprak hier over het "registreren van de externe Git repository op Dodona", dus nog overwegen om dit terminologie over te nemen
-.. De volgende stap is de repository op Dodona registreren. Alle medewerkers op Dodona hebben een "Repositories" link in hun "Admin" dropdown. Dit brengt je naar een overzicht van de repositories die Dodona gebruikt als bronnen voor oefeningen. Klik op de ``+`` knop om een nieuwe repository toe te voegen.
+Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie` aanmaken waarin de oefeningen uit de :ref:`Git repository <git repository>` gepubliceerd worden en waarin de eigenschappen en de toegangsrechten van alle oefeningen uit de collectie kunnen ingesteld worden. Dit kan enkel nadat Dodona SSH toegang gekregen heeft tot de :ref:`Git repository <git repository>`.
 
 .. _repositoriesoverzicht:
 
-Nadat Dodona SSH toegang gekregen heeft tot de externe Git repository, kan je als :ref:`lesgever <lesgever>` de externe Git repository koppelen aan Dodona. Selecteer :guilabel:`Repositories` in het :ref:`beheersmenu <beheersmenu>` om naar het **repositoriesoverzicht** te navigeren.
+Selecteer :guilabel:`Repositories` in het :ref:`beheersmenu <beheersmenu>` om naar het **repositoriesoverzicht** te navigeren.
 
 .. TODO:tutorial-update: nagaan of het meervoud van "repository" in het Nederlands "repository's" is of "repositories" (in de Nederlandstalige versie van Pro Git wordt "repositories" gebruikt; op Dodona wordt "repository's" gebruikt in het menu en "repositories" in de titelbalk van het repositoryoverzicht
 
