@@ -21,7 +21,7 @@ Een **collectie** bundelt meerdere :ref:`oefeningen <oefening>` die samen :ref:`
 .. _externe server:
 .. _git repository:
 
-Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een **Git repository** op een **externe server**. Via een koppeling van de collectie aan de Git repository blijft het wijzigen van oefeningen in Dodona of in de Git repository synchroon verlopen.
+Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een Git repository op een externe server. Via een koppeling van de collectie aan de Git repository blijft het wijzigen van oefeningen in Dodona of in de Git repository synchroon verlopen.
 
 .. image:: images/nl.collection_synchronisation.png
 
@@ -54,29 +54,33 @@ Voor het **publiceren** van een :ref:`collectie <collectie>` :ref:`oefeningen <o
 .. TODO:feature-update: reorganiseren van de collectie kan op dit moment nog niet, maar zou wel moeten kunnen
 .. TODO:feature-update: verwijderen van oefeningen uit een collectie wordt op dit moment nog niet ideaal opgevangen; over dit scenatio moet nog verder nagedacht worden
 
-.. _oefeningen wijzigen in Dodona:
+.. _collectie synchronisatieprocedures:
 
-Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:`publiceren <oefeningen publiceren>`, moet je eerst wat meer details kennen over het verloop van de synchronisatie tussen Dodona en de :ref:`Git repository <git repository>` nadat de publicatie gebeurd is. Daarbij zijn er twee mogelijke scenario's. Als de collectie oefeningen gewijzigd wordt in Dodona dan worden de wijzigingen als volgt gesynchroniseerd met de Git repository:
+Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:`publiceren <oefeningen publiceren>`, moet je eerst wat meer details kennen over het verloop van de synchronisatie tussen Dodona en de :ref:`Git repository <git repository>` nadat de publicatie gebeurd is. Daarbij zijn er twee mogelijke scenario's.
 
-.. image:: images/nl.collection_update_in_dodona.png
+- .. _collectie synchronisatie uit dodona:
 
-1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
+  Als de collectie oefeningen gewijzigd wordt in Dodona dan worden de wijzigingen als volgt gesynchroniseerd met de Git repository:
 
-2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor uploaden) de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` naar de :ref:`Git repository <git repository>`.
+  .. image:: images/nl.collection_update_in_dodona.png
 
-.. _oefeningen wijzigen in git repository:
+  1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
-Als de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gewijzigd wordt in de :ref:`Git repository <git repository>` dan worden de wijzigingen als volgt gesynchroniseerd met Dodona:
+  2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor uploaden) de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` naar de :ref:`Git repository <git repository>`.
 
-.. image:: images/nl.collection_update_from_repository_webhook.png
+- .. _collectie synchronisatie uit git repository:
 
-1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
+  Als de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gewijzigd wordt in de :ref:`Git repository <git repository>` dan worden de wijzigingen als volgt gesynchroniseerd met Dodona:
 
-2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
+  .. image:: images/nl.collection_update_from_repository_webhook.png
 
-3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen van de :ref:`Git repository <git repository>`, controleert of de wijzigingen geldig zijn en stelt de nieuwe versie van de oefeningen beschikbaar als dat laatste het geval is. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+  1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
 
-4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
+  2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
+
+  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen van de :ref:`Git repository <git repository>`, controleert of de wijzigingen geldig zijn en stelt de nieuwe versie van de oefeningen beschikbaar als dat laatste het geval is. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+
+  4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
 Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zowel beschikbaar op Dodona als in de :ref:`Git repository <git repository>`. Nu je begrijpt hoe de synchronisatieprocedures werken, kan je de volgende stappen uitvoeren om oefeningen in een :ref:`Git repository <git repository>` te publiceren.
 
@@ -84,7 +88,7 @@ Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>
 
 .. tip::
 
-    Als je geen server hebt waarop je Git repositories voor collecties oefeningen kan hosten dan zijn `GitHub <https://github.com/>`_ en `GitLab <https://gitlab.com/>`_ de twee meest populaire aanbieders van serverruimte voor Git repositories. Beide diensten bieden gratis accounts aan voor educatieve doeleinden. Het `Pro Git <https://git-scm.com/book/nl/v2>`_ boek zet je alvast op weg om met `GitHub <https://git-scm.com/book/nl/v2/GitHub-Account-setup-en-configuratie>`_ en `GitLab <https://git-scm.com/book/nl/v2/Git-op-de-server-GitLab>`_ te leren werken als je er nog geen ervaring mee hebt.
+    Als je geen server hebt waarop je Git repositories voor :ref:`collecties <collectie>` :ref:`oefeningen <oefening>` kan hosten dan zijn `GitHub <https://github.com/>`_ en `GitLab <https://gitlab.com/>`_ de twee meest populaire aanbieders van serverruimte voor Git repositories. Beide diensten bieden gratis accounts aan voor educatieve doeleinden. Het `Pro Git <https://git-scm.com/book/nl/v2>`_ boek zet je alvast op weg om met `GitHub <https://git-scm.com/book/nl/v2/GitHub-Account-setup-en-configuratie>`_ en `GitLab <https://git-scm.com/book/nl/v2/Git-op-de-server-GitLab>`_ te leren werken als je er nog geen ervaring mee hebt.
 
     In onderstaande screencast tonen we hoe je letterlijk in een paar klikken een nieuwe Git repository kunt aanmaken op `GitHub <https://github.com>`_. Raadpleeg de `GitHub documentatie <https://guides.github.com/>`_ om meer te leren over het configureren en beheren van Git repositories op GitHub.
 
@@ -92,39 +96,37 @@ Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>
 
 .. TODO:feature-missing: als we op termijn overwegen om oefeningen rechtreeks aan Dodona toe te voegen via de web interface, dan zouden we dit kunnen doen in lokale Git repositories (op de Dodona servers) waarvoor we de repositorybeheerders een clone URL aanbieden zodat ze de repo daar ook kunnen klonen (desnoods enkel pull, maar indien ook push dan is GitHub als tussenstation niet langer nodig maar dan zijn we wel een hosting-platform geworden)
 
-
-.. _git repository toegangsrechten verlenen:
-
-Verlenen van toegangsrechten
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie <collectie>` :ref:`aanmaken <collectie aanmaken>` om de :ref:`oefeningen <oefening>` uit een :ref:`git repository <git repository>` op een :ref:`externe server <externe server>` te :ref:`publiceren <oefeningen publiceren>` op Dodona.
-
 .. Als :ref:`lesgever <lesgever>` kan je een collectie oefeningen publiceren die opgesteld zijn in een externe Git repository. Dit kan enkel als je de nodige beheersrechten hebt voor de externe Git repository die toelaten om Dodona aan te haken en om Dodona schrijfrechten te kunnen geven.
 
-De laatste twee stappen van het eerste scenario en de laatste stap van het tweede scenario vereisen dat Dodona collecties oefeningen moet kunnen **pullen** van en **pushen** naar de externe Git repository. Dodona maakt hiervoor gebruik van `het SSH protocol <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_ voor Git. Het instellen van SSH toegangsrechten is afhankelijk van de manier waarop de externe Git repository gehost wordt:
+
+.. _collectie git repository toegangsrechten:
+
+Verlenen van toegang over SSH
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _collectie git repository ssh:
+
+Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisatieprocedures>` moet Dodona de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` kunnen **pullen** van en **pushen** naar de :ref:`Git repository <git repository>`. Dodona gebruikt hiervoor het `SSH protocol voor Git <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_. De manier waarop de SSH toegangsrechten moeten ingesteld worden op de :ref:`externe server <externe server>` is afhankelijk van de externe server waarop de Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
-    Dodona heeft een GitHub account met gebruikersnaam ``dodona-server`` en naam ``Dodona Server``. Voeg deze account toe als **collaborator** aan de externe Git repository. Onderstaande screencast toont hoe je dit kan doen.
+    Dodona heeft een GitHub account met gebruikersnaam ``dodona-server`` en naam ``Dodona Server``. Voeg Dodona als **collaborator** toe aan de Git repository en zorg ervoor dat Dodona minstens toegangsniveau :guilabel:`Write` krijgt. Dit laat Dodona toe om de Git repository te pullen en er naar te pushen over SSH. Onderstaande screencast toont hoe je deze instellingen kan doen.
 
     .. image:: add-dodona-to-repository.gif
 
-    .. TODO:screenshot-update: vervang voorgaande screencast door een screencast voor GitHub
+    .. TODO:screenshot-update: vervang voorgaande screencast door een screencast voor GitHub; gebruik de repository waarin de demo's voor de handleiding staan als voorbeeld (deze repo moet nog aangemaakt worden in dezelfde organisatie waar ook de documentatie staat)
 
 `GitHub@UGent <https://github.ugent.be>`_
 
     De procedure is dezelfde als voor `GitHub <https://github.com>`_, behalve dat Dodona op GitHub@UGent account heeft met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``.
 
-.. TODO:feature-update: moeten we ook niet de publieke SSH sleutel van Dodona beschikbaar stellen, zodat een alternatieve methode om Dodona toegang te geven aan de repository erin bestaat dat men een "git" gebruiker aanmaakt op de machine waarop de repository staat en de publieke SSH sleutel van Dodona toevoegt aan het ~/.ssh/authorized_keys bestand van die "git" gebruiker (https://git-scm.com/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen).
-
-.. TODO:tutorial-missing: contact opnemen met team Dodona om alternatieven te laten opzetten op aanvraag
+.. TODO:feature-update: moeten we ook niet de publieke SSH sleutel van Dodona beschikbaar stellen, zodat een alternatieve methode om Dodona toegang te geven aan de Git repository erin bestaat dat men een "dodona-server" gebruiker aanmaakt op de externe server en de publieke SSH sleutel van Dodona toevoegt aan het ~/.ssh/authorized_keys bestand van die "dodona-server" gebruiker (https://git-scm.com/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen).
 
 .. tip::
 
-    **Moet ik een Git repository publiek maken om oefeningen te publiceren op Dodona?**
+    **Moet ik de Git repository publiek maken om de oefeningen te publiceren op Dodona?**
 
-    De scenario's om een collectie oefeningen te synchroniseren tussen een externe Git repository en Dodona vereisen niet dat je de externe Git repository publiek moet maken. Dat is zelfs helemaal niet aangewezen als je eigen voorbeeldoplossingen mee opslaat in de repository of als je de oefeningen afgeschermd wil publiceren op Dodona.
+    De procedures om de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te :ref:`synchroniseren <collectie synchronisatieprocedures>` tussen de Git repository en Dodona vereisen **niet** dat de :ref:`Git repository <git repository>` publiek moet zijn, enkel dat Dodona toegangsrechten moet hebben tot de Git repository. Het is zelfs helemaal niet aangewezen om de Git repository publiek te maken als je bijvoorbeeld eigen voorbeeldoplossingen mee opslaat in de Git repository of als je de oefeningen afgeschermd wil publiceren op Dodona.
 
 
 .. _collectie aanmaken:
