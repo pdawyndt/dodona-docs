@@ -9,13 +9,15 @@ Een **oefening** bestaat uit een opdracht waarvoor :ref:`oplossingen <oplossing>
 
 Het opstellen van :ref:`oefeningen <oefening>` gebeurt niet in Dodona, maar in externe `Git <https://nl.wikipedia.org/wiki/Git_(software)>`_ `repositories <https://en.wikipedia.org/wiki/Repository_(version_control)>`_ die aan Dodona gekoppeld worden. Elke Git repository wordt extern beheerd door één of meer personen, kan meerdere oefeningen bevatten en synchroniseert elke wijziging aan de oefeningen automatisch met Dodona. Dit zorgt ervoor dat grote collecties oefeningen eenvoudig kunnen beheerd worden, dat individuele oefeningen eenvoudig kunnen aangepast worden en dat wijzigingen meteen zichtbaar zijn op Dodona.
 
-.. image:: images/nl.collection_synchronisation.png
+.. image:: images/nl.collection_permissions.png
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
 .. _repository:
 
 Een :ref:`lesgever <lesgever>` kan oefeningen uit een externe Git repository publiceren op Dodona. Daarvoor moet hij Dodona aanhaken aan de externe Git repository en Dodona de toestemming geven om de externe Git repository te beheren. Als de externe Git repository een collectie oefeningen bevat die gestructureerde is volgens de daarvoor vastgelegde specificatie, dan worden de oefeningen daardoor beschikbaar op Dodona. Een collectie oefeningen die op deze manier gepubliceerd wordt, noemen we kortweg een **repository**.
+
+.. image:: images/nl.collection_synchronisation.png
 
 .. TODO:feature-update: aangezien de term "repository" beladen is, zouden we beter zoeken naar een specifiekere term voor een "collectie oefeningen uit een externe git repository die aan Dodona gekoppeld is"
 
