@@ -78,7 +78,7 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
 
-  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen van de :ref:`Git repository <git repository>`, controleert of de wijzigingen geldig zijn en stelt de nieuwe versie van de oefeningen beschikbaar als dat laatste het geval is. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de oefeningen van de :ref:`Git repository <git repository>` en controleert of de wijzigingen geldig zijn. Als dat laatste het geval is dan wordt de collectie bijgewerkt met de nieuwe versie van de oefeningen. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
 
   4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
@@ -197,6 +197,16 @@ Voor een :ref:`collectie <collectie>` kunnen de volgende eigenschappen ingesteld
     .. TODO:feature-update: testknop toevoegen om test te laten uitvoeren
     .. TODO:feature-update: wordt er een check uitgevoerd om ervoor te zorgen dat dezelfde repo niet tweemaal gekoppeld wordt aan Dodona? we zouden in ieder geval kunnen controleren dat de SSH URL uniek is; als een repo oefeningen bevat waarvan de ID al in gebruik is in een andere repo, dan zouden we die oefeningen ook niet kunnen aanmaken (en een mail sturen naar de commiter dat er oefeningen zijn met ongeldige IDs); NOTE: dit laatste zal het geval zijn als we tokens in de repository plaatsen die toelaten om de oefeningen te identificeren; onze policy laat immers geen twee oefeningen met hetzelfde token toe
 
+    .. TODO:tutorial-missing: omschrijven van onderstaande screenshot waarin alle testen geslaagd zijn
+    .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin alle testen geslaagd zijn
+
+    .. TODO:tutorial-missing: omschrijven van onderstaande screenshot waarin de toegangstest niet geslaagd is
+    .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin de test voor de toegangscontrole van de Git repository niet geslaagd is
+
+    .. TODO:feature-missing: naast het testen van de toegangscontrole tot de Git respository, zouden we ook de geldigheid van de Git repository kunnen testen en meteen aangeven of er fouten gevonden werden; alles zou in een mooi voortgangsrapport kunnen getoond worden
+    .. TODO:tutorial-missing: omschrijven van onderstaande screenshot waarin sommige testen voor de geldigheid van de Git repository niet geslaagd zijn
+    .. TODO:screenshot-missing: screenshot van paneel "Nieuwe cursus" waarin sommige testen voor de geldigheid van de Git repository niet geslaagd zijn
+
 :guilabel:`Standaard judge`
 
     De :ref:`judge <judge>` die standaard gekoppeld wordt aan alle oefeningen in de :ref:`repository <repository>`. Selecteer de judge uit de lijst van beschikbare judges.
@@ -205,18 +215,27 @@ Voor een :ref:`collectie <collectie>` kunnen de volgende eigenschappen ingesteld
     .. TODO:feature-missing: als de repository al een config.json heeft in de root van de repository --- en dat kunnen we op dit moment nog niet weten --- dan moeten we ervoor zorgen dat die niet overschreven wordt; het lijkt dus aangewezen om de defaults pas in te stellen in een tweede stap, nadat de repo aan Dodona werd gekoppeld maar voordat de collectie oefeningen uit de repository verwerkt wordt (dit laatste wordt beïnvloed door de default-instellingen in de root)
     .. TODO:feature-missing: het selecteren van een judge moet op termijn uitgebreid worden met betere functionaliteit voor het zoeken naar judges
 
-Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe collectie` om het :ref:`aanmaken <collectie aanmaken>` van een :ref:`collectie <collectie>` met de opgegeven :ref:`eigenschappen <collectie eigenschappen>` effectief door te voeren. Dit heeft als gevolg dat stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de collectie oefeningen uit de Git repository gepubliceerd wordt op Dodona.
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe collectie` om het :ref:`aanmaken <collectie aanmaken>` van een :ref:`collectie <collectie>` met de opgegeven :ref:`eigenschappen <collectie eigenschappen>` effectief door te voeren.
 
-1. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de gewijzigde collectie oefeningen van de :ref:`Git repository <git repository>`, controleert of de wijzigingen geldig zijn en stelt de nieuwe versie van de oefeningen beschikbaar als dat laatste het geval is. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+.. TODO:screenshot-missing: screenshot van paneel "Nieuwe collectie" waarop de afwerkknop aangeduid word
+
+Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` wordt onmiddellijk een synchronisatieprocedure opgestart om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de procedure opvolgen. Daarbij worden de volgende stappen doorlopen:
+
+.. image:: images/nl.collection_update_from_repository_manual.png
+
+1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
+
+   .. important::
+
+       In :ref:`Remediëren van synchronisatiefouten` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
+Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` gewijzigd wordt. Als de synchronisatieprocedure probleemloos kon uitgevoerd worden, dan kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
 
-.. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de collectie oefeningen zichtbaar zijn
+.. TODO:screenshot-missing: screenshot van nieuw aangemaakte collectie waarin de oefeningen zichtbaar zijn
 
 .. TODO: tutorial-missing: omschrijven hoe de nieuw aangemaakte repository weergegeven wordt op Dodona
-
-.. TODO: tutorial-missing: "troubleshooting" informatie van de boodschap die getoond als Dodona niet de nodige toegangsrechten heeft om te pullen van en te pushen naar de git repo
 
 
 .. _repository webhook:
@@ -888,3 +907,10 @@ HTML
 Dit ziet er dan uiteindelijk als volgt uit:
 
 .. image:: description-example.nl.png
+
+.. _synchronisatiefouten opsporen:
+
+Remediëren van synchronisatiefouten
+-----------------------------------
+
+.. TODO:tutorial-missing: volledige omschrijving van de controles die uitgevoerd worden, de fouten die gerapporteerd worden en hoe gebruikers hieraan kunnen remediëren; op die manier kunnen gebruikers het rapport of en de email met de fouten volledig begrijpen
