@@ -64,9 +64,9 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   .. image:: images/nl.collection_update_in_dodona.png
 
-  1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
+    1. Een gebruiker wijzigt de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
-  2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor uploaden) de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` naar de :ref:`Git repository <git repository>`.
+    2. Dodona `pusht <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor uploaden) de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` naar de :ref:`Git repository <git repository>`.
 
 - .. _collectie synchronisatie uit git repository:
 
@@ -74,13 +74,17 @@ Om een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te kunnen :ref:
 
   .. image:: images/nl.collection_update_from_repository_webhook.png
 
-  1. Een beheerder van de :ref:`Git repository <git repository>` `commit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ (Git lingo voor vastleggen van wijzigingen) of pusht wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in de Git repository.
+    1. Er worden wijzigingen aan de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` `gecommit <https://git-scm.com/book/nl/v2/Git-Basics-Wijzigingen-aan-de-repository-vastleggen>`_ in (Git lingo voor vastleggen van wijzigingen) of gepusht naar de :ref:`Git repository <git repository>` door een persoon met de nodige toegangsrechten voor Git repository.
 
-  2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
+     .. important::
 
-  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de oefeningen van de :ref:`Git repository <git repository>` en controleert of de wijzigingen geldig zijn. Als dat laatste het geval is dan wordt de collectie bijgewerkt met de nieuwe versie van de oefeningen. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+         Deze persoon hoeft zelfs geen gebruiker van Dodona te zijn. Hij heeft enkel toegangsrechten nodig om te kunnen committen in of te pushen naar de :ref:`Git repository <git repository>`. Deze toegangsrechten staan los van de toegangsrechten tot de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` in Dodona.
 
-  4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
+    2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
+
+    3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de oefeningen van de :ref:`Git repository <git repository>` en controleert of de wijzigingen geldig zijn. Als dat laatste het geval is dan wordt de collectie bijgewerkt met de nieuwe versie van de oefeningen. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+
+    4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
 Op het einde van de twee scenario's is de gewijzigde :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zowel beschikbaar op Dodona als in de :ref:`Git repository <git repository>`. Nu je begrijpt hoe de synchronisatieprocedures werken, kan je de volgende stappen uitvoeren om oefeningen in een :ref:`Git repository <git repository>` te publiceren.
 
@@ -223,13 +227,13 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
-1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
+    1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
 
-   .. important::
+       .. important::
 
-       In :ref:`Remediëren van synchronisatiefouten <synchronisatiefouten remediëren>` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
+           In :ref:`Remediëren van synchronisatiefouten <synchronisatiefouten remediëren>` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
 
-2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
+    2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
 Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` gewijzigd wordt. Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
 
