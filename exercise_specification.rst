@@ -340,21 +340,29 @@ De :ref:`oefeningen <oefening>` uit een :ref:`collectie <collectie>` kunnen geor
 
 .. image:: images/nl.exercise_structure.png
 
-Deze boomstructuur wordt gebruikt om de :ref:`eigenschappen <oefening eigenschappen>` van de :ref:`oefeningen <oefening>` uit de :ref:`collectie <collectie>` in te stellen. Deze eigenschappen omvatten ook een deel van de :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen. Het is mogelijk om de eigenschappen van alle oefeningen individueel in te stellen.
+De boomstructuur wordt gebruikt voor het instellen van de :ref:`eigenschappen <oefening eigenschappen>` van de :ref:`oefeningen <oefening>` uit de :ref:`collectie <collectie>`. Deze eigenschappen omvatten ook een deel van de :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen. Zo is het mogelijk om de eigenschappen van alle oefeningen individueel in te stellen.
 
 .. image:: images/nl.exercise_property.png
 
-Als we :ref:`oefeningen <oefening>` met gemeenschappelijke :ref:`eigenschappen <oefening eigenschappen>` groeperen in een :ref:`deelcollectie <oefening deelcollectie>`, dan kunnen de gemeenschappelijke eigenschappen ingesteld worden op het niveau van de deelcollectie. Alle eigenschappen van oefeningen die ingesteld worden voor een deelcollectie gelden immers voor alle oefeningen en andere deelcollecties in de deelcollectie.
+Als we :ref:`oefeningen <oefening>` met gemeenschappelijke :ref:`eigenschappen <oefening eigenschappen>` groeperen in een :ref:`deelcollectie <oefening deelcollectie>`, dan kunnen de gemeenschappelijke eigenschappen echter ook ingesteld worden op het niveau van de deelcollectie in plaats van voor alle oefeningen afzonderlijk. Alle eigenschappen van oefeningen die ingesteld worden voor een deelcollectie gelden immers voor alle oefeningen en andere deelcollecties van de deelcollectie.
 
 .. image:: images/nl.exercise_property_subcollection.png
 
-:ref:`Eigenschappen <oefening eigenschappen>` van :ref:`oefeningen <oefening>` die gelden voor alle oefeningen uit de :ref:`collectie <collectie>` kunnen ingesteld worden op het niveau van de collectie. Alle eigenschappen van oefeningen die ingesteld worden voor de collectie gelden immers voor alle oefeningen en deelcollecties in de collectie.
+:ref:`Eigenschappen <oefening eigenschappen>` van :ref:`oefeningen <oefening>` die gelden voor alle oefeningen uit de :ref:`collectie <collectie>` kunnen ingesteld worden op het niveau van de collectie. Alle eigenschappen van oefeningen die ingesteld worden voor de collectie gelden immers voor alle oefeningen en deelcollecties van de collectie.
 
 .. image:: images/nl.exercise_property_collection.png
 
-Voor een oefeningen wordt de waarde van een eigenschap bepaald door in eerste instantie te kijken of er voor de oefening zelf een waarde werd ingesteld voor die eigenschap. Als dat niet het geval is dan worden de bovenliggende deelcollecties in de boomstructuur één voor één afgelopen, tot er een deelcollectie gevonden wordt waarvoor er een waarde werd ingesteld voor de eigenschap. Dit is de waarde die de oefening voor de eigenschap zal krijgen. Als er voor geen enkele deelcollectie een waarde ingesteld werd voor de eigenschap, dan wordt uiteindelijk gekeken naar de waarde die ingesteld werd voor de volledige collectie.
+Voor een :ref:`oefening <oefening>` wordt de waarde van een :ref:`eigenschap <oefening eigenschappen>` bepaald door in eerste instantie te kijken of er voor de oefening zelf een waarde werd ingesteld voor die eigenschap. Als dat niet het geval is dan worden de bovenliggende :ref:`deelcollecties <oefening deelcollectie>` in de boomstructuur één voor één afgelopen, tot er een deelcollectie gevonden wordt waarvoor er een waarde werd ingesteld voor de eigenschap. Dit is de waarde die de oefening voor de eigenschap zal krijgen. Als er voor geen enkele deelcollectie een waarde ingesteld werd voor de eigenschap, dan wordt uiteindelijk gekeken naar de waarde die ingesteld werd voor de volledige :ref:`collectie <collectie>`.
 
 .. image:: images/nl.exercise_property_resolution.png
+
+De boomstructuur van oefeningen en deelcollecties wordt vastgelegd in de directorystructuur van de Git repository. Hierbij geldt dat:
+
+- Een directory met een bestand ``config.json`` correspondeert met een :ref:`oefening <oefeningen>`. In het bestand ``config.json`` kunnen eigenschappen van de oefening ingesteld worden. De rest van de oefening wordt :ref:`opgesteld <oefening opstellen>` onder de directory.
+- Een directory met subdirectories die corresponderen met oefeningen of deelcollecties, correspondeert zelf met een deelcollectie. In een bestand ``dirconfig.json`` onder de directory kunnen gemeenschappelijke eigenschappen van oefeningen ingesteld worden voor de deelcollectie.
+- De root correspondeert met de volledige collectie. In een bestand ``dirconfig.json`` onder de root kunnen gemeenschappelijke eigenschappen van oefeningen ingesteld worden voor de volledige collectie.
+
+.. TODO:tutorial-update: laten we toe om oefeningen binnen oefeningen te definiëren?
 
 In de repository mag je de mappen zelf organiseren zoals je wil. Om een map te
 markeren als een map waar een oefening in zit moet je er een ``config.json``
@@ -428,8 +436,8 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
 
 .. _oefening opstellen:
 
-Opstellen van een oefening
---------------------------
+Opstellen van oefeningen
+------------------------
 
 Het configuratie bestand van een oefening moet de volgende velden bevatten:
 
