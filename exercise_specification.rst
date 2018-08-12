@@ -458,7 +458,7 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
         .. warning::
 
-            Tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` hanteert Dodona de volgende vuistregels om de geldigheid van de nieuwe versie te controleren:
+            Tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` hanteert Dodona de volgende vuistregels om de geldigheid van een nieuwe versie te controleren:
 
             - **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.** Het is dus niet toegelaten om zelf tokens in te stellen in het ``config.json`` bestand van nieuwe oefeningen. Dodona zal tijdens het publiceren tokens toevoegen aan het ``config.json`` bestand van nieuwe oefeningen. Het is ook niet toegelaten om tokens van bestaande oefeningen aan te passen in het ``config.json`` bestand.
 
