@@ -429,6 +429,25 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
     .. TODO:feature-update: in JSON-bestanden heeft deze eigenschap de naam "names" maar dit zou enkelvoud moeten worden ("name") gezien de interpretatie die we hieronder zouden willen voorstellen
     .. TODO:feature-missing: meer generieke oplossing zoeken voor instelling van taalafhankelijke eigenschappen; voorstel is om taalafhankelijke eigenschappen in de databank ofwel op te slaan als string of als JSON-object waarvan de sleutels gevormd worden door ISO 639-1 codes voor de taal en de bijhorende waarde een string is in die taal; als de waarde een string is, dan geldt die waarde als taal-onafhankelijk (geen vertaling voorzien in Dodona); elk object met meertalige eigenschappen moet dan ook een vaste eigenschap "translations" hebben waarvan de waarde een lijst van strings is met de ISO 639-1 codes van de talen waarin het object beschikbaar is; de volgorde van de talen in de lijst wordt gebruikt voor het bepalen van de taal waarin het object wordt weergegeven (bij voorkeur zoveel mogelijk de taal waarin Dodona is ingesteld; gebruikers zouden ook een lijst van voorkeurstalen kunnen opgeven); dezelfde voorstelling kan dan ook in JSON-bestanden gebruikt worden; in de GUI betekent dit dat taal-afhankelijke componenten een reeks taalknoppen moeten krijgen (in de volgorde van de lijst van "translations") waarmee naar verschillende vertalingen van het object kan genavigeerd worden; met deze taalknoppen kunnen dan de verschillende vertalingen van de waarden ingesteld worden; strategie moet nog verder verfijnd om te zien hoe de resolutie moet gebeuren van taalafhankelijke eigenschappen die op verschillende niveau's kunnen ingesteld; bij het instellen van eigenschappen zou een vast icoontje kunnen aangeven welke eigenschappen taal-afhankelijk kunnen ingesteld worden; bij het zoeken in taal-afhankelijke eigenschappen kan dan meteen in het volledige veld gezocht worden
 
+.. _oefening token:
+
+:guilabel:`Token` ``token:string``
+
+    Bij het aanmaken van een oefening wordt een uniek token gegenereerd dat Dodona gebruikt om de identiteit van de oefening te bepalen in de :ref:`Git repository <git repository>`. Dit token maakt deel uit van de synchronisatie van oefening tussen Dodona en de :ref:`Git repository <git repository>` en zorgt er voor dat de oefeningen zonder problemen :ref:`gereorganiseerd <collectie organiseren>` kunnen verplaatst worden binnen of tussen Git repositories.
+
+    .. warning::
+
+        Tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` hanteert Dodona de volgende vuistregels om de geldigheid van de nieuwe versie te controleren:
+
+        - **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.** Het is dus niet toegelaten om zelf tokens in te stellen in het ``config.json`` bestand van nieuwe oefeningen. Dodona zal tijdens het publiceren tokens toevoegen aan de ``config.json`` bestanden van nieuwe oefeningenen. Het is ook niet toegelaten om tokens van bestaande oefeningen aan te passen in hun ``config.json`` bestanden.
+
+        - **Dodona aanvaardt nooit tokens die aan andere oefeningen toegekend zijn.** Wis dus het token uit de ``config.json`` bestanden als je nieuwe oefeningen maakt door directories van een bestaande oefeningen te kopiëren als vertrekbasis om aangepaste versies van die oefeningen te maken.
+
+        - **Dodona aanvaardt geen nieuwe oefeningen op locaties waar momenteel andere oefeningen staan.** Om oefeningen te wissen volstaat het dus niet om hun tokens te verwijderen uit het ``config.json`` bestand. Wissen lukt enkel als de ``config.json`` bestanden verwijderd of hernoemd worden, en dus ook als hun volledige directory (inclusief het ``config.json`` bestand) verwijderd wordt. Om oefeningen te wissen en op de vrijgekomen locaties andere oefeningen te zetten, moet eerst een versie gepubliceerd worden waarin oefeningen gewist worden en daarna nog een versie waarin oefeningen op de vrijgekomen plaatsen gezet worden.
+
+    .. TODO:tutorial-update: dit deel moet verder uitgewerkt worden in de "troubleshooting" sectie
+    .. TODO:tutorial-update: het token moet zichtbaar zijn voor collectiebeheerders zodat ze het token eventueel kunnen gebruiken om een oefening te herstellen als ze daar iets verkeerd mee gedaan hebben in de Git repository, en ook om gewiste oefeningen terug te herstellen
+
 :guilabel:`Collectie`
 
     Groep van :ref:`eigenschappen <oefening eigenschappen>` die gerelateerd zijn aan de :ref:`collectie <collectie>` waartoe de oefening behoort. Deze eigenschappen kunnen niet aangepast worden.
@@ -449,25 +468,6 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
         .. TODO:feature-missing: kan eventueel uitgebreid worden met de naam van de collectie zelf (als worten), waardoor de vorige eigenschap overbodig wordt
         .. TODO:feature-missing: kan later gebruikt worden als anker om de oefeningen binnen de collectie te verplaatsen naar een andere locatie
-
-    .. _oefening token:
-
-    :guilabel:`Token` ``token:string``
-
-        Bij het aanmaken van een oefening wordt een uniek token gegenereerd dat Dodona gebruikt om de identiteit van de oefening te bepalen in de :ref:`Git repository <git repository>`. Dit token maakt deel uit van de synchronisatie van oefening tussen Dodona en de :ref:`Git repository <git repository>` en zorgt er voor dat de oefeningen zonder problemen :ref:`gereorganiseerd <collectie organiseren>` kunnen verplaatst worden binnen of tussen Git repositories.
-
-        .. warning::
-
-            Tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` hanteert Dodona de volgende vuistregels om de geldigheid van de nieuwe versie te controleren:
-
-            - **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.** Het is dus niet toegelaten om zelf tokens in te stellen in het ``config.json`` bestand van nieuwe oefeningen. Dodona zal tijdens het publiceren tokens toevoegen aan de ``config.json`` bestanden van nieuwe oefeningenen. Het is ook niet toegelaten om tokens van bestaande oefeningen aan te passen in hun ``config.json`` bestanden.
-
-            - **Dodona aanvaardt nooit tokens die aan andere oefeningen toegekend zijn.** Wis dus het token uit de ``config.json`` bestanden als je nieuwe oefeningen maakt door directories van een bestaande oefeningen te kopiëren als vertrekbasis om aangepaste versies van die oefeningen te maken.
-
-            - **Dodona aanvaardt geen nieuwe oefeningen op locaties waar momenteel andere oefeningen staan.** Om oefeningen te wissen volstaat het dus niet om hun tokens te verwijderen uit het ``config.json`` bestand. Wissen lukt enkel als de ``config.json`` bestanden verwijderd of hernoemd worden, en dus ook als hun volledige directory (inclusief het ``config.json`` bestand) verwijderd wordt. Om oefeningen te wissen en op de vrijgekomen locaties andere oefeningen te zetten, moet eerst een versie gepubliceerd worden waarin oefeningen gewist worden en daarna nog een versie waarin oefeningen op de vrijgekomen plaatsen gezet worden.
-
-        .. TODO:tutorial-update: dit deel moet verder uitgewerkt worden in de "troubleshooting" sectie
-        .. TODO:tutorial-update: het token moet zichtbaar zijn voor collectiebeheerders zodat ze het token eventueel kunnen gebruiken om een oefening te herstellen als ze daar iets verkeerd mee gedaan hebben in de Git repository, en ook om gewiste oefeningen terug te herstellen
 
 .. _oefening zichtbaarheid:
 
