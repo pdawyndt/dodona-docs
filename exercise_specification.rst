@@ -270,21 +270,21 @@ Hierdoor wordt de nieuwe versie van de :ref:`oefeningen <oefening>` uit de :ref:
 
 .. _collectie automatisch publiceren:
 .. _externe server webhaak:
-.. _collectie publicatiehaak:
+.. _collectie publiceerhaak:
 
-Het is meestal echter de bedoeling om elke nieuwe versie van de :ref:`oefeningen <oefening>` in de :ref:`Git repository <git repository>` automatisch te laten publiceren in de :ref:`collectie`. Daarvoor kan op de :ref:`externe server <externe server>` een **webhaak** ingesteld worden die in gang gezet wordt telkens er wijzigingen gecommit worden in de :ref:`Git repository <git repository>` of er naar gepusht worden. Het instellen van de webhaak moet gebeuren met de **publicatiehaak** van de :ref:`collectie`: een specifieke URL die gegeneerd werd bij het aanmaken van de collectie. Als :ref:`collectiebeheerder <collectiebeheerder>` zie je publicatiehaak in de weergave van de collectie.
+Het is meestal echter de bedoeling om elke nieuwe versie van de :ref:`oefeningen <oefening>` in de :ref:`Git repository <git repository>` automatisch te laten publiceren in de :ref:`collectie`. Daarvoor kan op de :ref:`externe server <externe server>` een **webhaak** ingesteld worden die in gang gezet wordt telkens er wijzigingen gecommit worden in de :ref:`Git repository <git repository>` of er naar gepusht worden. Het instellen van de webhaak moet gebeuren met de **publiceerhaak** van de :ref:`collectie`: een specifieke URL die gegeneerd werd bij het aanmaken van de collectie. Als :ref:`collectiebeheerder <collectiebeheerder>` zie je publiceerhaak in de weergave van de collectie.
 
-.. TODO:screenshot-missing: weergave van collectie waarop de publicatiehaak wordt aangeduid
+.. TODO:screenshot-missing: weergave van collectie waarop de publiceerhaak wordt aangeduid
 
-Druk op de kopieerknop naast de :ref:`publicatiehaak <publicatiehaak>` om de publicatiehaak naar het klembord te kopiëren.
+Druk op de kopieerknop naast de :ref:`publiceerhaak <publiceerhaak>` om de publiceerhaak naar het klembord te kopiëren.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de kopieerknop naast de webhook wordt aangeduid
 
-Stel op de :ref:`externe server <externe server>` de :ref:`publicatiehaak <publicatiehaak>` in voor een :ref:`webhaak <externe server webhaak>` die in gang gezet wordt bij het committen en pushen in de :ref:`Git repository <git repository>`. Hoe dit precies moet gebeuren is afhankelijk van de externe server waarop de Git repository gehost wordt:
+Stel op de :ref:`externe server <externe server>` de :ref:`publiceerhaak <publiceerhaak>` in voor een :ref:`webhaak <externe server webhaak>` die in gang gezet wordt bij het committen en pushen in de :ref:`Git repository <git repository>`. Hoe dit precies moet gebeuren is afhankelijk van de externe server waarop de Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
-    Druk in de navigatiebalk van de :ref:`Git repository <git repository>` op :guilabel:`Settings`. Onder :guilabel:`Hooks` druk je op de knop :guilabel:`Add webhook`. Plak de :ref:`publicatiehaak <publicatiehaak>` in het eigenschap :guilabel:`Payload URL`. De andere eigenschappen staan reeds correct ingesteld. Druk op de knop :guilabel:`Add webhook` om de webhaak effectief in te stellen.
+    Druk in de navigatiebalk van de :ref:`Git repository <git repository>` op :guilabel:`Settings`. Onder :guilabel:`Hooks` druk je op de knop :guilabel:`Add webhook`. Plak de :ref:`publiceerhaak <publiceerhaak>` in het eigenschap :guilabel:`Payload URL`. De andere eigenschappen staan reeds correct ingesteld. Druk op de knop :guilabel:`Add webhook` om de webhaak effectief in te stellen.
 
     .. TODO:screenshot-missing: screencast van het instellen van een webhook op GitHub
 
@@ -296,7 +296,7 @@ Daarmee is het scenario om wijzigingen in de :ref:`Git repository <git repositor
 
 .. tip::
 
-    Druk na het instellen van de :ref:`publicatiehaak <publicatiehaak>` voor de zekerheid nog eens op de knop :guilabel:`Publiceren` in de weergave van de collectie. Als de externe Git repository gewijzigd werd tussen het :ref:`aanmaken <aanmaken>` en het :ref:`aanhaken <aanhaken>` van de collectie, dan wordt daardoor de recentste versie van de oefeningen in de Git repository gepubliceerd.
+    Druk na het instellen van de :ref:`publiceerhaak <publiceerhaak>` voor de zekerheid nog eens op de knop :guilabel:`Publiceren` in de weergave van de collectie. Als de externe Git repository gewijzigd werd tussen het :ref:`aanmaken <aanmaken>` en het :ref:`aanhaken <aanhaken>` van de collectie, dan wordt daardoor de recentste versie van de oefeningen in de Git repository gepubliceerd.
 
 .. _collectie bewerken:
 
@@ -330,17 +330,21 @@ Na het afwerken navigeer je terug naar de :ref:`collectiepagina <collectiepagina
     Als de :ref:`Git repository <git repository>` met de :ref:`oefeningen <oefening>` van een :ref:`collectie <collectie>` verplaatst werd, dan hoef je daarvoor geen nieuwe collectie aan te maken. Het volstaat om de :ref:`SSH URL <collectie SSH URL>` van de collectie in te stellen met de nieuwe locatie van de Git repository. Vergeet ook niet om de collectie :ref:`aan te haken <collectie aanhaken>` aan de nieuwe Git repository.
 
 
-.. _collectie deelcollectie:
-.. _collectie organiseren:
+.. _oefeningen deelcollectie:
+.. _oefeningen organiseren:
 
-Organiseren van een collectie
------------------------------
+Organiseren van oefeningen
+--------------------------
 
-.. warning::
+.. image:: images/nl.exercise_structure.png
 
-   Denk op voorhand goed na over hoe je je repository wil organiseren. Dodona
-   kan er namelijk (nog) niet mee om dat oefeningen verplaatst of verwijderd
-   worden.
+.. image:: images/nl.exercise_property.png
+
+.. image:: images/nl.exercise_property_subcollection.png
+
+.. image:: images/nl.exercise_property_collection.png
+
+.. image:: images/nl.exercise_property_resolution.png
 
 In de repository mag je de mappen zelf organiseren zoals je wil. Om een map te
 markeren als een map waar een oefening in zit moet je er een ``config.json``
