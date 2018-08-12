@@ -82,7 +82,11 @@ Om :ref:`oefeningen <oefening>` te kunnen :ref:`publiceren <oefeningen publicere
 
   2. De externe server gebruikt een `webhook <https://en.wikipedia.org/wiki/Webhook>`_ om Dodona te informeren over de wijzigingen in de :ref:`Git repository <git repository>`.
 
-  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de oefeningen van de :ref:`Git repository <git repository>` en controleert of de wijzigingen geldig zijn. Als dat laatste het geval is dan wordt de collectie bijgewerkt met de nieuwe versie van de oefeningen. Anders wordt er een email verstuurd naar de beheerder die de wijzigingen in stap (1) gecommit of gepusht heeft, met informatie over fouten in de wijzigingen die aangebracht werden in de Git repository. Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te laten doorvoeren op Dodona.
+  3. Dodona `pullt <https://git-scm.com/book/nl/v2/Git-Basics-Werken-met-remotes>`_ (Git lingo voor downloaden) de oefeningen van de :ref:`Git repository <git repository>` en of ze geldig zijn. Als alle oefeningen geldig zijn dan worden ze gekoppeld aan de :ref:`collectie <collectie>` en beschikbaar gesteld op Dodona. Anders wordt de synchronisatieprocedure afgebroken en wordt er een email verstuurd naar de persoon die de wijzigingen in stap (1) gecommit of gepusht heeft, met een overzicht van alle foute oefeningen in de Git repository.
+
+     .. important::
+
+         Na het corrigeren van de fouten kan de Git repository opnieuw gecommit of gepusht worden om de wijzigingen alsnog te synchroniseren met Dodona. Daarbij wordt deze procedure opnieuw uitgevoerd.
 
   4. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
@@ -110,7 +114,7 @@ Verlenen van SSH toegang
 
 .. _collectie git repository ssh:
 
-Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisatieprocedures>` moet Dodona de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` kunnen **pullen** van en **pushen** naar de :ref:`Git repository <git repository>`. Dodona gebruikt hiervoor het `SSH protocol voor Git <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_. De manier waarop de SSH toegangsrechten moeten ingesteld is afhankelijk van de :ref:`externe server <externe server>` waarop de Git repository gehost wordt:
+Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisatieprocedures>` moet Dodona de :ref:`oefeningen <oefening>` kunnen **pullen** van en **pushen** naar de :ref:`Git repository <git repository>`. Dodona gebruikt hiervoor het `SSH protocol voor Git <https://git-scm.com/book/nl/v2/Git-op-de-server-De-protocollen>`_. De manier waarop SSH toegangsrechten moeten ingesteld worden, is afhankelijk van de :ref:`externe server <externe server>` waarop de Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
@@ -122,7 +126,7 @@ Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisat
 
 `GitHub@UGent <https://github.ugent.be>`_
 
-    De procedure is dezelfde als voor `GitHub <https://github.com>`_, behalve dat Dodona op GitHub@UGent account heeft met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``.
+    De procedure is dezelfde als voor `GitHub <https://github.com>`_, behalve dat Dodona op GitHub@UGent een account heeft met gebruikersnaam ``SA-GithubDodona`` en naam ``Dodona Server``.
 
 .. TODO:feature-update: moeten we ook niet de publieke SSH sleutel van Dodona beschikbaar stellen, zodat een alternatieve methode om Dodona toegang te geven aan de Git repository erin bestaat dat men een "dodona-server" gebruiker aanmaakt op de externe server en de publieke SSH sleutel van Dodona toevoegt aan het ~/.ssh/authorized_keys bestand van die "dodona-server" gebruiker (https://git-scm.com/book/nl/v2/Git-op-de-server-Git-op-een-server-krijgen).
 
@@ -130,7 +134,7 @@ Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisat
 
     **Moet ik de Git repository publiek maken om de oefeningen te publiceren op Dodona?**
 
-    De procedures om de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` te :ref:`synchroniseren <collectie synchronisatieprocedures>` tussen de Git repository en Dodona vereisen **niet** dat de :ref:`Git repository <git repository>` publiek moet zijn, enkel dat Dodona toegangsrechten moet hebben tot de Git repository. Het is zelfs helemaal niet aangewezen om de Git repository publiek te maken als je bijvoorbeeld eigen voorbeeldoplossingen mee opslaat in de Git repository of als je de oefeningen afgeschermd wil publiceren op Dodona.
+    De procedures om :ref:`oefeningen <oefening>` te :ref:`synchroniseren <collectie synchronisatieprocedures>` tussen de Git repository en Dodona vereisen **niet** dat de :ref:`Git repository <git repository>` publiek moet zijn, enkel dat Dodona toegangsrechten moet hebben tot de Git repository. Het is zelfs helemaal niet aangewezen om de Git repository publiek te maken als je bijvoorbeeld eigen voorbeeldoplossingen mee opslaat in de Git repository of als je de oefeningen afgeschermd wil publiceren op Dodona.
 
 
 .. _collectie aanmaken:
@@ -138,13 +142,11 @@ Voor het uitvoeren van de :ref:`synchronisatieprocedures <collectie synchronisat
 Aanmaken van een collectie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie` aanmaken waarin de oefeningen uit de :ref:`Git repository <git repository>` gepubliceerd worden en waarin de eigenschappen en de toegangsrechten van al die oefeningen kunnen ingesteld worden. Dit kan enkel nadat Dodona :ref:`SSH toegang <collectie SSH toegang>` gekregen heeft tot de Git repository.
+Als :ref:`lesgever <lesgever>` kan je een :ref:`collectie` aanmaken waaraan de oefeningen uit de :ref:`Git repository <git repository>` gekoppeld worden en waarin de eigenschappen en de toegangsrechten van deze oefeningen kunnen ingesteld worden. Dit kan enkel nadat Dodona :ref:`SSH toegang <collectie SSH toegang>` gekregen heeft tot de Git repository.
 
 .. _collectie-overzicht:
 
 Selecteer :guilabel:`Collecties` in het :ref:`beheersmenu <beheersmenu>` om naar het **collectie-overzicht** te navigeren.
-
-.. TODO:tutorial-update: nagaan of het meervoud van "repository" in het Nederlands "repository's" is of "repositories" (in de Nederlandstalige versie van Pro Git wordt "repositories" gebruikt; op Dodona wordt "repository's" gebruikt in het menu en "repositories" in de titelbalk van het repositoryoverzicht
 
 .. TODO:screenshot-missing: screenshot waarin aangeduid wordt hoe je naar het repositoriesoverzicht kan navigeren via het beheersmenu.
 
@@ -164,7 +166,7 @@ In het paneel :guilabel:`Nieuwe collectie` kan je de eigenschappen van de nieuwe
 
 .. TODO:screenshot-missing: screenshot van de pagina waarop de eigenschappen van de repository ingesteld worden.
 
-Druk op :guilabel:`Dodona` in de :ref:`navigatiebalk` om het aanmaken van de nieuwe :ref:`collectie <collectie>` te annuleren.
+Druk op :guilabel:`Dodona` in de :ref:`navigatiebalk <navigatiebalk>` om het aanmaken van de nieuwe :ref:`collectie <collectie>` te annuleren.
 
 .. TODO:screenshot-missing: screenshot van de pagina waarop de eigenschappen van de collectie ingesteld worden, en waarin Dodona aangeduid wordt in de navigatiebalk
 
@@ -194,7 +196,7 @@ Voor een :ref:`collectie <collectie>` kunnen de volgende eigenschappen ingesteld
 
     .. tip::
 
-        Het aanmaken van de nieuwe collectie zal enkel lukken als Dodona :ref:`SSH toegang <collectie SSH toegang>` gekregen heeft tot de :ref:`Git repository <git repository>`. Druk op de testknop naast de SSH URL om een test te laten uitvoeren die nagaat of de nodige :ref:`toegangsrechten <collectie SSH toegang>` verleend werden voor de Git repository die ingesteld werd.
+        Het aanmaken van de nieuwe collectie zal enkel lukken als Dodona :ref:`SSH toegang <collectie SSH toegang>` heeft tot de :ref:`Git repository <git repository>`. Druk op de testknop naast de SSH URL om te laten testen of Dodona SSH toegang heeft tot de Git repository.
 
     .. TODO:feature-update: zouden we deze eigenschap niet beter hernoemen naar "SSH URL"; dit is ook hoe ze door GitHub genoemd worden (https://help.github.com/enterprise/2.12/user/articles/which-remote-url-should-i-use/#cloning-with-ssh-urls)
     .. TODO:feature-update: zet deze eigenschap onder een afzonderlijke hoofding "Git repository"; daar zou ook de publieke sleutel van Dodona kunnen gezet worden
@@ -219,13 +221,14 @@ Voor een :ref:`collectie <collectie>` kunnen de volgende eigenschappen ingesteld
     .. TODO:feature-missing: als de repository al een config.json heeft in de root van de repository --- en dat kunnen we op dit moment nog niet weten --- dan moeten we ervoor zorgen dat die niet overschreven wordt; het lijkt dus aangewezen om de defaults pas in te stellen in een tweede stap, nadat de repo aan Dodona werd gekoppeld maar voordat de collectie oefeningen uit de repository verwerkt wordt (dit laatste wordt beïnvloed door de default-instellingen in de root)
     .. TODO:feature-missing: het selecteren van een judge moet op termijn uitgebreid worden met betere functionaliteit voor het zoeken naar judges
 
-Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe collectie` om het :ref:`aanmaken <collectie aanmaken>` van een :ref:`collectie <collectie>` met de opgegeven :ref:`eigenschappen <collectie eigenschappen>` effectief door te voeren.
+Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe collectie` om het :ref:`aanmaken <collectie aanmaken>` van een :ref:`collectie <collectie>` met de opgegeven :ref:`eigenschappen <collectie eigenschappen>` effectief te laten doorvoeren. Je wordt meteen ook aangesteld als de eerste :ref:`collectiebeheerder <collectiebeheerder>`.
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe collectie" waarop de afwerkknop aangeduid word
 
+
 .. _publiceren:
 
-Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` zie je dat er automatisch een procedure opgestart wordt om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` toe te voegen aan de collectie. Het uitvoeren van deze procedure is wat we aanduiden met de term **publiceren**. Tijdens het publiceren wordt er gerapporteerd over de status van de opeenvolgende stappen van de uitgevoerde procedure:
+Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` wordt er automatisch een procedure opgestart wordt om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` toe te voegen aan de collectie. Het uitvoeren van deze procedure is wat we aanduiden met de term **publiceren**. Tijdens het publiceren wordt er gerapporteerd over de status van de opeenvolgende stappen van de uitgevoerde procedure:
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
@@ -237,7 +240,11 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
-Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` later gewijzigd wordt. Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
+Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` later gewijzigd wordt. Het enige verschil is dat foute oefeningen in de Git repository onmiddellijk zichtbaar zijn in het voortgangsrapport en niet per email verstuurd worden.
+
+.. TODO:screenshot-missing: screenshot van weergave van voortgangsrapport met fouten
+
+Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie gekoppeld werden.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte collectie waarin de oefeningen zichtbaar zijn
 
@@ -251,53 +258,83 @@ Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatiepr
 Aanhaken van een collectie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _collectie publiceren manueel:
+.. _collectie handmatig publiceren:
 
-Als er een nieuwe versie van de oefeningen beschikbaar is in de :ref:`Git repository <git repository>` dan kan je die publiceren door op de knop :guilabel:`Publiceren` te drukken in de weergave van de :ref:`collectie <collectie>`.
+Als er een nieuwe versie van de oefeningen beschikbaar is in de :ref:`Git repository <git repository>` dan kan je die als :ref:`collectiebeheerder <collectiebeheerder>` publiceren in de :ref:`collectie` door op de knop :guilabel:`Publiceren` te drukken in de weergave van de collectie.
 
 .. TODO:feature-update: vervang de naam van de knop "Alle oefeningen herverwerken" door "Publiceren"
 
 .. TODO:screenshot-missing: screenshot van weergave van de collectie waarin de knop "Publiceren" aangeduid wordt
 
-Hierdoor wordt er een synchronisatieprocedure uitgevoerd om de nieuwe versie van de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de synchronisatieprocedure opvolgen. Daarbij worden de volgende stappen doorlopen:
+Hierdoor wordt de nieuwe versie van de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` gepubliceerd met dezelfde procedure die uitgevoerd werd bij het aanmaken van de collectie. Tijdens het publiceren wordt er gerapporteerd over de status van de opeenvolgende stappen van de uitgevoerde procedure.
 
-.. image:: images/nl.collection_update_from_repository_manual.png
+.. _collectie automatisch publiceren:
+.. _externe server webhaak:
+.. _collectie publicatiehaak:
 
+Het is meestal echter de bedoeling om elke nieuwe versie van de :ref:`oefeningen <oefening>` in de :ref:`Git repository <git repository>` automatisch te laten publiceren in de :ref:`collectie`. Daarvoor kan op de :ref:`externe server <externe server>` een **webhaak** ingesteld worden die in gang gezet wordt telkens er wijzigingen gecommit worden in de :ref:`Git repository <git repository>` of er naar gepusht worden. Het instellen van de webhaak moet gebeuren met de **publicatiehaak** van de :ref:`collectie`: een specifieke URL die gegeneerd werd bij het aanmaken van de collectie. Als :ref:`collectiebeheerder <collectiebeheerder>` zie je publicatiehaak in de weergave van de collectie.
 
+.. TODO:screenshot-missing: weergave van collectie waarop de publicatiehaak wordt aangeduid
 
-.. TODO:screenshot-missing: screenshot van de knop "Alle oefeningen herverwerken"
-
-Hierdoor worden stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de recentste versie van de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
-
-.. TODO:tutorial-update: misschien eerst aangeven dat je dit handmatig kan aangeven dat er een nieuwe versie beschikbaar is in de exteren Git repository die door Dodona mag gepubliceerd worden
-.. TODO:tutorial-update: is dit specifiek voor GitHub, of is er een generieke manier om een notificatie te krijgen van git repo's;
-
-Bij het aanmaken van een nieuwe repository wordt er telkens een specifieke **webhook** gegenereerd voor de repository. De webhook is een URL die elke keer aangesproken moet worden als er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository die op Dodona mag gepubliceerd worden. Als :ref:`lesgever <lesgever>` zie je de URL van deze webhook in de weergave van de repository. Navigeren naar de webhook betekent zoveel als het informeren
-
-.. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de webhook wordt aangeduid
-
-Druk op de kopieerknop naast de webhook om de webhook naar het klembord te kopiëren.
+Druk op de kopieerknop naast de :ref:`publicatiehaak <publicatiehaak>` om de publicatiehaak naar het klembord te kopiëren.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte repository waarin de kopieerknop naast de webhook wordt aangeduid
 
-Het installeren van de webhook is afhankelijk van de manier waarop de externe Git repository gehost wordt:
+Stel op de :ref:`externe server <externe server>` de :ref:`publicatiehaak <publicatiehaak>` in voor een :ref:`webhaak <externe server webhaak>` die in gang gezet wordt bij het committen en pushen in de :ref:`Git repository <git repository>`. Hoe dit precies moet gebeuren is afhankelijk van de externe server waarop de Git repository gehost wordt:
 
 `GitHub <https://github.com>`_
 
-    Voeg de webhook toe als `webhook <https://developer.github.com/webhooks/>`_ aan de GitHub repository. Onderstaande screencast toont hoe je dit kan doen.
+    Druk in de navigatiebalk van de :ref:`Git repository <git repository>` op :guilabel:`Settings`. Onder :guilabel:`Hooks` druk je op de knop :guilabel:`Add webhook`. Plak de :ref:`publicatiehaak <publicatiehaak>` in het eigenschap :guilabel:`Payload URL`. De andere eigenschappen staan reeds correct ingesteld. Druk op de knop :guilabel:`Add webhook` om de webhaak effectief in te stellen.
 
     .. TODO:screenshot-missing: screencast van het instellen van een webhook op GitHub
 
+    In het `Pro Git <https://git-scm.com/book/nl/v2>`_ boek lees je meer details over het `instellen van webhaken <https://git-scm.com/book/nl/v2/GitHub-GitHub-Scripten>`_.
+
+Daarmee is het scenario om wijzigingen in de :ref:`Git repository <git repository>` automatisch te synchroniseren met Dodona volledig gerealiseerd.
+
+.. image:: images/nl.collection_update_from_repository_webhook.png
+
 .. tip::
 
-    Druk voor de zekerheid op de knop :guilabel:`Alle oefeningen herwerken` in de weergave van de repository als de mogelijkheid bestaat dat de externe Git repository gewijzigd werd tussen het :ref:`aanmaken <aanmaken>` en het :ref:`aanhaken <aanhaken>`. Hierdoor worden stappen (3) en (4) van het eerste scenario uitgevoerd worden, waardoor de recentste versie van de collectie oefeningen uit de externe Git repository gepubliceerd wordt op Dodona.
+    Druk na het instellen van de :ref:`publicatiehaak <publicatiehaak>` voor de zekerheid nog eens op de knop :guilabel:`Publiceren` in de weergave van de collectie. Als de externe Git repository gewijzigd werd tussen het :ref:`aanmaken <aanmaken>` en het :ref:`aanhaken <aanhaken>` van de collectie, dan wordt daardoor de recentste versie van de oefeningen in de Git repository gepubliceerd.
+
+.. _collectie bewerken:
+
+Bewerken van een collectie
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. _collectie eigenschappen aanpassen:
+
+Als :ref:`collectiebeheerder <collectiebeheerder>` kan je de :ref:`eigenschappen <collectie eigenschappen>` van een :ref:`collectie <collectie>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`collectiepagina <collectiepagina>`.
+
+.. TODO:screenshot-missing: screenshot van collectiepagina (nieuwe collectie) waarin de bewerkknop aangeduid wordt
+
+.. _collectie eigenschappen aanpassen annuleren:
+
+Druk op de :ref:`collectie <collectie>` in de :ref:`navigatiebalk <navigatiebalk>` om het aanpassen te annuleren.
+
+.. TODO:screenshot-missing: screenshot van bewerken van de collectiepagina (nieuwe collectie) waarin de navigatiebalk wordt aangeduid voor annuleren
+
+.. _collectie eigenschappen aanpassen afwerken:
+
+Druk na het aanpassen op de afwerkknop in de rechterbovenhoek van het paneel om de nieuwe :ref:`eigenschappen <collectie eigenschappen>` effectief in te stellen.
+
+.. TODO:screenshot-missing: screenshot van bewerken van de collectiepagina (nieuwe collectie) waarin de afwerkknop wordt aangeduid
+
+Na het afwerken navigeer je terug naar de :ref:`collectiepagina <collectiepagina>` waar de nieuwe :ref:`eigenschappen <collectie eigenschappen>` onmiddellijk van toepassing zijn.
+
+.. TODO:screenshot-rename: screenshot van nieuwe collectie na het bewerken
+
+.. tip::
+
+    Als de :ref:`Git repository <git repository>` met de :ref:`oefeningen <oefening>` van een :ref:`collectie <collectie>` verplaatst werd, dan hoef je daarvoor geen nieuwe collectie aan te maken. Het volstaat om de :ref:`SSH URL <collectie SSH URL>` van de collectie in te stellen met de nieuwe locatie van de Git repository. Vergeet ook niet om de collectie :ref:`aan te haken <collectie aanhaken>` aan de nieuwe Git repository.
 
 
-.. _structuur van een repository:
-.. _collectie oefeningen organiseren:
+.. _collectie deelcollectie:
+.. _collectie organiseren:
 
-Organiseren van een collectie oefeningen
-----------------------------------------
+Organiseren van een collectie
+-----------------------------
 
 .. warning::
 
