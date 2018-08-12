@@ -460,23 +460,11 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
             Tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` hanteert de volgende vuistregels om te controleren of de nieuwe versie geldig is:
 
-            - **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.**
+            - **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.** Het is dus niet toegelaten om zelf tokens in te stellen in het ``config.json`` bestand van nieuwe oefeningen. Dodona zal tijdens het publiceren tokens toevoegen aan het ``config.json`` bestand van nieuwe oefeningen. Het is ook niet toegelaten om tokens van bestaande oefeningen aan te passen in het ``config.json`` bestand.
 
-              Stel dus nooit zelf een token in als je nieuwe oefeningen toevoegt aan een Git repository. Dodona zal zelf een token toevoegen aan het ``config.json`` bestand van nieuwe oefeningen.
+            - **Dodona aanvaardt nooit tokens die aan andere oefeningen toegekend zijn.** Wis dus het token uit het ``config.json`` bestand als je nieuwe oefeningen maakt door directories van een bestaande oefeningen te kopiëren als vertrekbasis om aangepaste versies van die oefeningen te maken.
 
-              Pas ook nooit het token van bestaande oefeningen aan in het ``config.json`` bestand.
-
-            - **Dodona aanvaardt nooit tokens die aan andere oefeningen toegekend zijn.**
-
-              Wis het token uit het ``config.json`` bestand als je een nieuwe oefening aanmaakt door de directory van een bestaande oefening te kopiëren als vertrekbasis om die oefening aan te passen.
-
-            - **Dodona wist oefeningen waarvan het token verwijderd werd.**
-
-              Je kan een oefening dus wissen door ofwel het token te verwijderen, het ``config.json`` bestand te verwijderen of te hernoemen of door de volledige directory van de oefening (inclusief het ``config.json`` bestand) te verwijderen.
-
-            - **Dodona aanvaardt geen nieuwe oefeningen op locaties waar momenteel andere oefening staan.**
-
-              Als je een oefening wilt wissen en op dezelfde locatie een andere oefening wilt zetten, dan moet je eerst een versie publiceren waarin de oefening gewist wordt en daarna nog een versie waarin de andere oefening op zijn plaats gezet wordt.
+            - **Dodona aanvaardt geen nieuwe oefeningen op locaties waar momenteel andere oefeningen staan.** Om oefeningen te wissen volstaat het dus niet om hun tokens te verwijderen uit het ``config.json`` bestand. Wissen lukt enkel als de ``config.json`` bestanden verwijderd of hernoemd worden, en dus ook als de volledige directory (inclusief het ``config.json`` bestand) verwijderd wordt. Om oefeningen te wissen en op dezelfde locaties andere oefeningen te zetten, moet eerst een versie gepubliceerd worden waarin de oefening gewist werden en daarna nog een versie waarin de andere oefeningen op hun plaats gezet worden.
 
         .. TODO:tutorial-update: dit deel moet verder uitgewerkt worden in de "troubleshooting" sectie
         .. TODO:tutorial-update: het token moet zichtbaar zijn voor collectiebeheerders zodat ze het token eventueel kunnen gebruiken om een oefening te herstellen als ze daar iets verkeerd mee gedaan hebben in de Git repository, en ook om gewiste oefeningen terug te herstellen
