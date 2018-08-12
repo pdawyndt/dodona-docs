@@ -367,35 +367,35 @@ Alle bestanden en directories die niet corresponderen met oefeningen of deelcoll
 
 .. code-block:: text
 
-    +-- dirconfig.json                 # eigenschappen voor collectie
-    +-- deel_1                         # deelcollectie "deel_1"
-    |   +-- dirconfig.json             # eigenschappen voor "deel_1"
-    |   +-- oef_1_1                    # oefening "oef_1_1"
-    |   |   +-- config.json            # eigenschappen van "oef_1_1"
-    |   |   `-- ...                    # specificatie van "oef_1_1"
-    |   +-- oef_1_2                    # oefening "oef_1_2"
-    |   |   +-- config.json            # eigenschappen van "oef_1_2"
-    |   :   `-- ...                    # specificatie van "oef_1_2"
+    +-- dirconfig.json                    # eigenschappen voor collectie
+    +-- deel_1                            # deelcollectie "deel_1"
+    |   +-- dirconfig.json                # eigenschappen voor "deel_1"
+    |   +-- oef_1_1                       # oefening "oef_1_1"
+    |   |   +-- config.json               # eigenschappen van "oef_1_1"
+    |   |   `-- ...                       # specificatie van "oef_1_1"
+    |   +-- oef_1_2                       # oefening "oef_1_2"
+    |   |   +-- config.json               # eigenschappen van "oef_1_2"
+    |   :   `-- ...                       # specificatie van "oef_1_2"
     |   `-- ...
-    +-- deel_2                         # deelcollectie "deel_2"
-    |   +-- dirconfig.json             # eigenschappen voor "deel_2"
-    |   +-- deel_2_1                   # deelcollectie "deel_2_1"
-    |   |   |   +-- dirconfig.json     # eigenschappen voor "deel_2_1"
-    |   |   |   +-- oef_2_1_1          # oefening "oef_2_1_1"
-    |   |   |   |   +-- config.json    # eigenschappen van "oef_2_1_1"
-    |   |   |   |   `-- ...            # specificatie van "oef_2_1_1"
-    |   |   |   +-- oef_2_1_2          # oefening "oef_2_1_2"
-    |   |   |   |   +-- config.json    # eigenschappen van "oef_2_1_2"
-    |   |   |   |   `-- ...            # specificatie van "oef_2_1_2"
+    +-- deel_2                            # deelcollectie "deel_2"
+    |   +-- dirconfig.json                # eigenschappen voor "deel_2"
+    |   +-- deel_2_1                      # deelcollectie "deel_2_1"
+    |   |   |   +-- dirconfig.json        # eigenschappen voor "deel_2_1"
+    |   |   |   +-- oef_2_1_1             # oefening "oef_2_1_1"
+    |   |   |   |   +-- config.json       # eigenschappen van "oef_2_1_1"
+    |   |   |   |   `-- ...               # specificatie van "oef_2_1_1"
+    |   |   |   +-- oef_2_1_2             # oefening "oef_2_1_2"
+    |   |   |   |   +-- config.json       # eigenschappen van "oef_2_1_2"
+    |   |   |   |   `-- ...               # specificatie van "oef_2_1_2"
     |   |   |   `-- ...
     |   :   `-- ...
     :   `-- ...
-    |   +-- deel_2_2                   # deelcollectie "oef_2_2"
-    |   |   :   +-- dirconfig.json     # eigenschappen voor "deel_2_2"
+    |   +-- deel_2_2                      # deelcollectie "oef_2_2"
+    |   |   :   +-- dirconfig.json        # eigenschappen voor "deel_2_2"
     |   :   `-- ...
     :   `-- ...
-    +-- README.md                      # genegeerd
-    +-- dir_1                          # genegeerd
+    +-- README.md                         # genegeerd
+    +-- dir_1                             # genegeerd
     :   `-- ...
     `-- ...
 
@@ -409,19 +409,95 @@ De eigenschappen van een oefening kunnen zowel in de :ref:`Git repository <git r
 
   In onderstaande beschrijving van de eigenschappen gebruiken we de notatie ``eigenschap`` voor namen van eigenschappen in JSON configuratiebestanden. In de JSON configuratiebestanden worden Engelstalige namen gebruikt voor de eigenschappen.
 
- tot de In de :ref:`Git repository <git repository>` worden de eigenschappen ingesteld in de JSON bestanden ``config.json`` of ``dirconfig.json``. Dit kan enkel door personen die voldoende toegangsrechten hebben tot de Git repository.
-
 - .. _oefening bewerken:
 
   Als :ref:`collectiebeheerder <collectiebeheerder>` kan je de eigenschappen van een :ref:`oefening <oefening>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`oefeningpagina`.
 
   In onderstaande beschrijving van de eigenschappen gebruiken we de notatie :guilabel:`eigenschap` voor namen van een eigenschappen in Dodona. In Dodona worden namen van de eigenschappen aangepast aan de :ref:`geselecteerde <taal selecteren>`  :ref:`taal <taal>`.
 
+.. _oefening eigenschappen:
+
+Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld worden:
+
+.. _oefening naam:
+
+:guilabel:`Naam` (``name:string``)
+
+    De naam van de :ref:`oefening <oefening>`. Verschillende oefeningen kunnen dezelfde naam hebben. Om de oefeningen makkelijk te kunnen terugvinden is het echter aangeraden om ze zoveel mogelijk een unieke naam te geven.
+
+    .. TODO:feature-update: in JSON-bestanden zit deze eigenschap in de description, maar die hoort daar niet thuis; elke oefening zal een naam hebben, ongeacht de manier waarop de oefening beschreven wordt (als we later nog andere manieren toelaten om de opdracht van de oefening te beschrijving)
+    .. TODO:feature-update: in JSON-bestanden heeft deze eigenschap de naam "names" maar dit zou enkelvoud moeten worden ("name") gezien de interpretatie die we hieronder zouden willen voorstellen
+    .. TODO:feature-missing: meer generieke oplossing zoeken voor instelling van taalafhankelijke eigenschappen; voorstel is om taalafhankelijke eigenschappen in de databank ofwel op te slaan als string of als JSON-object waarvan de sleutels gevormd worden door ISO 639-1 codes voor de taal en de bijhorende waarde een string is in die taal; als de waarde een string is, dan geldt die waarde als taal-onafhankelijk (geen vertaling voorzien in Dodona); elk object met meertalige eigenschappen moet dan ook een vaste eigenschap "translations" hebben waarvan de waarde een lijst van strings is met de ISO 639-1 codes van de talen waarin het object beschikbaar is; de volgorde van de talen in de lijst wordt gebruikt voor het bepalen van de taal waarin het object wordt weergegeven (bij voorkeur zoveel mogelijk de taal waarin Dodona is ingesteld; gebruikers zouden ook een lijst van voorkeurstalen kunnen opgeven); dezelfde voorstelling kan dan ook in JSON-bestanden gebruikt worden; in de GUI betekent dit dat taal-afhankelijke componenten een reeks taalknoppen moeten krijgen (in de volgorde van de lijst van "translations") waarmee naar verschillende vertalingen van het object kan genavigeerd worden; met deze taalknoppen kunnen dan de verschillende vertalingen van de waarden ingesteld worden; strategie moet nog verder verfijnd om te zien hoe de resolutie moet gebeuren van taalafhankelijke eigenschappen die op verschillende niveau's kunnen ingesteld; bij het instellen van eigenschappen zou een vast icoontje kunnen aangeven welke eigenschappen taal-afhankelijk kunnen ingesteld worden; bij het zoeken in taal-afhankelijke eigenschappen kan dan meteen in het volledige veld gezocht worden
+
+:guilabel:`Collectie`
+
+    Groep van :ref:`eigenschappen <oefening eigenschappen>` die gerelateerd zijn aan de :ref:`collectie <collectie>` waartoe de oefening behoort. Deze eigenschappen kunnen niet aangepast worden.
+
+    .. _oefening collectie naam:
+
+    :guilabel:`Naam`
+
+        De naam van de :ref:`collectie <collectie>` waartoe deze oefening behoort. Druk op de naam van de collectie om naar de collectiepagina te navigeren.
+
+        .. TODO:feature-missing: kan later gebruikt worden als anker om de oefeningen naar een andere collectie te verplaatsen (collectiebeheerder moet dan wel beheerder zijn van beide collecties)
+
+    .. _oefening collectie pad:
+
+    :guilabel:`Pad`
+
+    Pad van :ref:`deelcollecties <oefening deelcollectie>` vanaf de wortel van de :ref:`collectie <collectie>` tot aan de :ref:`oefening <oefening>`. Druk op de naam van een deelcollectie om naar de :ref:`pagina` van de deelcollectie te navigeren.
+
+        .. TODO:feature-missing: kan eventueel uitgebreid worden met de naam van de collectie zelf (als worten), waardoor de vorige eigenschap overbodig wordt
+        .. TODO:feature-missing: kan later gebruikt worden als anker om de oefeningen binnen de collectie te verplaatsen naar een andere locatie
+
+    .. _oefening token:
+
+    :guilabel:`Token` ``token:string``
+
+    Bij het aanmaken van een oefening wordt een uniek token gegenereerd dat Dodona gebruikt om de identiteit van de oefening te bepalen in de :ref:`Git repository <git repository>`. Dit token maakt deel uit van de synchronisatie van oefening tussen Dodona en de :ref:`Git repository <git repository>` en zorgt er voor dat de oefeningen zonder problemen :ref:`gereorganiseerd <collectie organiseren>` kunnen verplaatst worden binnen of tussen Git repositories.
+
+    .. warning::
+
+        **Dodona aanvaardt nooit tokens die niet door Dodona zelf gegenereerd werden.**
+
+        Stel dus nooit zelf een token in als je nieuwe oefeningen toevoegt aan een Git repository. Dodona zal zelf een token toevoegen aan het ``config.json`` bestand van nieuwe oefeningen.
+
+        Pas ook nooit het token van bestaande oefeningen aan in het ``config.json`` bestand.
+
+        **Dodona aanvaardt nooit tokens die aan andere oefeningen toegekend zijn.**
+
+        Wis het token uit het ``config.json`` bestand als je een nieuwe oefening aanmaakt door de directory van een bestaande oefening te kopiëren als vertrekbasis om die oefening aan te passen.
+
+        **Dodona wist oefeningen waarvan het token verwijderd werd.**
+
+        Je kan een oefening dus wissen door ofwel het token te verwijderen, het ``config.json`` bestand te verwijderen of te hernoemen of door de volledige directory van de oefening (inclusief het ``config.json`` bestand) te verwijderen.
+
+        **Dodona aanvaardt geen nieuwe oefeningen op locaties waar momenteel andere oefening staan.**
+
+        Als je een oefening wilt wissen en op dezelfde locatie een andere oefening wilt zetten, dan moet je eerst een nieuwe versie publiceren waarin de oefening gewist wordt en daarna nog een nieuwe versie waarin de andere oefening op zijn plaats gezet wordt.
+
+    .. TODO:tutorial-update: dit deel moet verder uitgewerkt worden in de "troubleshooting" sectie
+    .. TODO:tutorial-update: het token moet zichtbaar zijn voor collectiebeheerders zodat ze het token eventueel kunnen gebruiken om een oefening te herstellen als ze daar iets verkeerd mee gedaan hebben in de Git repository, en ook om gewiste oefeningen terug te herstellen
+
+.. _oefening zichtbaarheid:
+
+:guilabel:`Zichtbaarheid` ``visibility:string``
+
+    De zichtbaarheid bepaalt welke gebruikers de :ref:`oefening <oefening>` kunnen zien. Voor deze eigenschap kunnen de volgende waarden ingesteld worden:
+
+    :guilabel:`Open` ``open``
+
+        Alle gebruikers kunnen de oefening zien in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>.`
+
+    :guilabel:`Verborgen` ``hidden``
+
+        Enkel de :ref:`beheerders <collectiebeheerders>` Alle gebruikers kunnen de oefening zien in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>.`
+
+    :guilabel:`Gesloten` ``closed``
 
 
-In onderstaande beschrijving van de eigenschappen gebruiken we de notatie :guilabel:`eigenschap` voor de naam van de eigenschap in Dodona en de notatie ``eigenschap`` voor de naam van de eigenschap
+    Oftewel , ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is kan iedereen de oefening vinden door er naar te zoeken. Als de waarde ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe. Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening bekijken.
 
-Het configuratie bestand van een oefening moet de volgende velden bevatten:
 
 ``description``
   Een JSON object met drie velden:
@@ -472,12 +548,6 @@ Het configuratie bestand van een oefening moet de volgende velden bevatten:
     Een lijst van strings die de aanvaardbare programmeertalen voorstellen. (Of
     een enkele string als er maar één aanvaardbare programmeertaal is.)
 
-``visibility``
-  Oftewel ``"open"``, ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is
-  kan iedereen de oefening vinden door er naar te zoeken. Als de waarde
-  ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe.
-  Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening
-  bekijken.
 
 
 .. _oefening opstellen:
