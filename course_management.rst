@@ -54,7 +54,7 @@ Voor een :ref:`cursus <cursus>` kunnen de volgende eigenschappen ingesteld worde
 
 :guilabel:`Naam`
 
-    De naam van de :ref:`cursus <cursus>`.
+    Een naam voor de :ref:`cursus <cursus>`. Verschillende curssen kunnen dezelfde naam hebben. Het is echter aangeraden om cursussen zoveel mogelijk een unieke naam te geven.
 
 .. _cursus academiejaar:
 
@@ -333,7 +333,7 @@ Voor een :ref:`oefeningenreeks <oefeningenreeks>` kunnen de volgende eigenschapp
 
 :guilabel:`Naam`
 
-    De naam van de :ref:`oefeningenreeks <oefeningenreeks>`. Binnen een :ref:`leerpad <leerpad>` kunnen verschillende oefeningenreeksen dezelfde naam hebben. Het is echter aangeraden om alle oefeningenreeksen van het leerpad een unieke naam te geven.
+    Een naam voor de :ref:`oefeningenreeks <oefeningenreeks>`. Binnen een :ref:`leerpad <leerpad>` kunnen verschillende oefeningenreeksen dezelfde naam hebben. Het is echter aangeraden om alle oefeningenreeksen van het leerpad een unieke naam te geven.
 
 .. _oefeningenreeks deadline:
 

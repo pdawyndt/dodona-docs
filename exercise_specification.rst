@@ -176,7 +176,7 @@ Voor een :ref:`collectie <collectie>` kunnen de volgende eigenschappen ingesteld
 
 :guilabel:`Naam`
 
-    Een naam voor de collectie oefeningen op Dodona.
+    Een naam voor de collectie oefeningen. Verschillende collecties mogen dezelfde naam hebben. Het is echter aangeraden om collecties zoveel mogelijk een unieke naam te geven.
 
 .. _collectie beschrijving:
 
@@ -421,9 +421,9 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
 .. _oefening naam:
 
-:guilabel:`Naam` (``name:string``)
+:guilabel:`Naam` ``name:string``
 
-    De naam van de :ref:`oefening <oefening>`. Verschillende oefeningen kunnen dezelfde naam hebben. Om de oefeningen makkelijk te kunnen terugvinden is het echter aangeraden om ze zoveel mogelijk een unieke naam te geven.
+    Een naam voor de :ref:`oefening <oefening>`. Verschillende oefeningen kunnen dezelfde naam hebben. Het is echter aangeraden om oefeningen zoveel mogelijk een unieke naam te geven.
 
     .. TODO:feature-update: in JSON-bestanden zit deze eigenschap in de description, maar die hoort daar niet thuis; elke oefening zal een naam hebben, ongeacht de manier waarop de oefening beschreven wordt (als we later nog andere manieren toelaten om de opdracht van de oefening te beschrijving)
     .. TODO:feature-update: in JSON-bestanden heeft deze eigenschap de naam "names" maar dit zou enkelvoud moeten worden ("name") gezien de interpretatie die we hieronder zouden willen voorstellen
