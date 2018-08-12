@@ -225,7 +225,6 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe co
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe collectie" waarop de afwerkknop aangeduid word
 
-
 .. _publiceren:
 
 Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` wordt er automatisch een procedure opgestart wordt om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` toe te voegen aan de collectie. Het uitvoeren van deze procedure is wat we aanduiden met de term **publiceren**. Tijdens het publiceren wordt er gerapporteerd over de status van de opeenvolgende stappen van de uitgevoerde procedure:
@@ -356,13 +355,135 @@ Voor een :ref:`oefening <oefening>` wordt de waarde van een :ref:`eigenschap <oe
 
 .. image:: images/nl.exercise_property_resolution.png
 
-De boomstructuur van oefeningen en deelcollecties wordt vastgelegd in de directorystructuur van de Git repository. Hierbij geldt dat:
+De boomstructuur van oefeningen en deelcollecties wordt vastgelegd in de directorystructuur van de :ref:`Git repository <git repository>`. Hierbij geldt dat:
 
-- Een directory met een bestand ``config.json`` correspondeert met een :ref:`oefening <oefeningen>`. In het bestand ``config.json`` kunnen eigenschappen van de oefening ingesteld worden. De rest van de oefening wordt :ref:`opgesteld <oefening opstellen>` onder de directory.
-- Een directory met subdirectories die corresponderen met oefeningen of deelcollecties, correspondeert zelf met een deelcollectie. In een bestand ``dirconfig.json`` onder de directory kunnen gemeenschappelijke eigenschappen van oefeningen ingesteld worden voor de deelcollectie.
-- De root correspondeert met de volledige collectie. In een bestand ``dirconfig.json`` onder de root kunnen gemeenschappelijke eigenschappen van oefeningen ingesteld worden voor de volledige collectie.
+- Een directory met een bestand ``config.json`` correspondeert met een :ref:`oefening <oefeningen>`. In het bestand ``config.json`` kunnen eigenschappen ingesteld worden die enkel gelden voor de oefening. De rest van de oefening wordt :ref:`opgesteld <oefening opstellen>` onder de directory.
+- Een directory met subdirectories die corresponderen met oefeningen of deelcollecties, correspondeert zelf met een deelcollectie. In een bestand ``dirconfig.json`` onder de directory kunnen gemeenschappelijke eigenschappen ingesteld worden van oefeningen in de deelcollectie.
+- De root correspondeert met de volledige collectie. In een bestand ``dirconfig.json`` onder de root kunnen gemeenschappelijke eigenschappen ingesteld worden van oefeningen in de collectie.
 
 .. TODO:tutorial-update: laten we toe om oefeningen binnen oefeningen te definiëren?
+
+Alle bestanden en directories die niet corresponderen met oefeningen of deelcollecties worden door Dodona genegeerd om de boomstructuur van oefeningen en deelcollecties te bepalen. Op die manier kan je zonder problemen bijkomende informatie opslaan in de :ref:`Git repository <git repository>`.
+
+.. code-block:: text
+
+    +-- dirconfig.json                 # eigenschappen voor collectie
+    +-- deel_1                         # deelcollectie "deel_1"
+    |   +-- dirconfig.json             # eigenschappen voor "deel_1"
+    |   +-- oef_1_1                    # oefening "oef_1_1"
+    |   |   +-- config.json            # eigenschappen van "oef_1_1"
+    |   |   `-- ...                    # specificatie van "oef_1_1"
+    |   +-- oef_1_2                    # oefening "oef_1_2"
+    |   |   +-- config.json            # eigenschappen van "oef_1_2"
+    |   :   `-- ...                    # specificatie van "oef_1_2"
+    |   `-- ...
+    +-- deel_2                         # deelcollectie "deel_2"
+    |   +-- dirconfig.json             # eigenschappen voor "deel_2"
+    |   +-- deel_2_1                   # deelcollectie "deel_2_1"
+    |   |   |   +-- dirconfig.json     # eigenschappen voor "deel_2_1"
+    |   |   |   +-- oef_2_1_1          # oefening "oef_2_1_1"
+    |   |   |   |   +-- config.json    # eigenschappen van "oef_2_1_1"
+    |   |   |   |   `-- ...            # specificatie van "oef_2_1_1"
+    |   |   |   +-- oef_2_1_2          # oefening "oef_2_1_2"
+    |   |   |   |   +-- config.json    # eigenschappen van "oef_2_1_2"
+    |   |   |   |   `-- ...            # specificatie van "oef_2_1_2"
+    |   |   |   `-- ...
+    |   :   `-- ...
+    :   `-- ...
+    |   +-- deel_2_2                   # deelcollectie "oef_2_2"
+    |   |   :   +-- dirconfig.json     # eigenschappen voor "deel_2_2"
+    |   :   `-- ...
+    :   `-- ...
+    +-- README.md                      # genegeerd
+    +-- dir_1                          # genegeerd
+    :   `-- ...
+    `-- ...
+
+.. TODO:feature-discuss: public folder
+
+.. _oefening eigenschappen:
+
+De eigenschappen van een oefening kunnen zowel in de :ref:`Git repository <git repository>` als in Dodona ingesteld worden:
+
+- Als je voldoende toegang hebt om te committen of te pushen in de :ref:`Git repository <git repository>` dan kan je de eigenschappen instellen in JSON configuratiebestanden (``config.json`` of ``dirconfig.json``).
+
+  In onderstaande beschrijving van de eigenschappen gebruiken we de notatie ``eigenschap`` voor namen van eigenschappen in JSON configuratiebestanden. In de JSON configuratiebestanden worden Engelstalige namen gebruikt voor de eigenschappen.
+
+ tot de In de :ref:`Git repository <git repository>` worden de eigenschappen ingesteld in de JSON bestanden ``config.json`` of ``dirconfig.json``. Dit kan enkel door personen die voldoende toegangsrechten hebben tot de Git repository.
+
+- .. _oefening bewerken:
+
+  Als :ref:`collectiebeheerder <collectiebeheerder>` kan je de eigenschappen van een :ref:`oefening <oefening>` aanpassen door op de bewerkknop te drukken in de rechterbovenhoek van de :ref:`oefeningpagina`.
+
+  In onderstaande beschrijving van de eigenschappen gebruiken we de notatie :guilabel:`eigenschap` voor namen van een eigenschappen in Dodona. In Dodona worden namen van de eigenschappen aangepast aan de :ref:`geselecteerde <taal selecteren>`  :ref:`taal <taal>`.
+
+
+
+In onderstaande beschrijving van de eigenschappen gebruiken we de notatie :guilabel:`eigenschap` voor de naam van de eigenschap in Dodona en de notatie ``eigenschap`` voor de naam van de eigenschap
+
+Het configuratie bestand van een oefening moet de volgende velden bevatten:
+
+``description``
+  Een JSON object met drie velden:
+
+  ``difficulty``
+    Een optionele numerieke inschatting van de moeilijkheid van de oefening.
+
+  ``handler``
+    Momenteel is hier enkel ``default`` als waarde mogelijk.
+
+  ``names``
+    Een JSON object met ``en`` en/of ``nl`` als keys. De values zijn de naam van
+    de oefening in de verschillende talen.
+
+``evaluation``
+  Een JSON object met vier velden:
+
+  ``handler``
+    De naam van de judge gebruikt voor de evaluatie.
+
+  ``time_limit``
+    Een geheel getal dat de maximale tijd aanduid om de evaluatie te draaien.
+
+  ``memory_limit``
+    Een geheel getal dat het maximale geheugen in bytes aanduid dat gebruikt mag
+    worden tijdens de evaluatie.
+
+  ``network_enabled``
+    Een (optionele) boolean die aanduid of het netwerk ingeschakeld moet zijn.
+    Standaard is de waarde ``false``.
+
+``programming_language``
+  Een string die de programmeertaal aangeeft. Dit wordt momenteel enkel gebruikt
+  voor syntax highlighting.
+
+``submission``
+  Een object dat de specificatie voor de indienprocedure voorstelt. Dit wordt
+  momenteel nog niet gebruikt.
+
+  ``handler``
+    Naam van de handler voor het indienen.
+
+  ``size_limit``
+    Een geheel getal dat de maximale grootte van ingediende code in bytes
+    voorstelt.
+
+  ``supported_programming_languages``
+    Een lijst van strings die de aanvaardbare programmeertalen voorstellen. (Of
+    een enkele string als er maar één aanvaardbare programmeertaal is.)
+
+``visibility``
+  Oftewel ``"open"``, ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is
+  kan iedereen de oefening vinden door er naar te zoeken. Als de waarde
+  ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe.
+  Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening
+  bekijken.
+
+
+.. _oefening opstellen:
+
+Opstellen van oefeningen
+------------------------
 
 In de repository mag je de mappen zelf organiseren zoals je wil. Om een map te
 markeren als een map waar een oefening in zit moet je er een ``config.json``
@@ -434,73 +555,10 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
 
 .. TODO:feature-discuss: public folder
 
-.. _oefening opstellen:
-
-Opstellen van oefeningen
-------------------------
-
-Het configuratie bestand van een oefening moet de volgende velden bevatten:
-
-``description``
-  Een JSON object met drie velden:
-
-  ``difficulty``
-    Een optionele numerieke inschatting van de moeilijkheid van de oefening.
-
-  ``handler``
-    Momenteel is hier enkel ``default`` als waarde mogelijk.
-
-  ``names``
-    Een JSON object met ``en`` en/of ``nl`` als keys. De values zijn de naam van
-    de oefening in de verschillende talen.
-
-``evaluation``
-  Een JSON object met vier velden:
-
-  ``handler``
-    De naam van de judge gebruikt voor de evaluatie.
-
-  ``time_limit``
-    Een geheel getal dat de maximale tijd aanduid om de evaluatie te draaien.
-
-  ``memory_limit``
-    Een geheel getal dat het maximale geheugen in bytes aanduid dat gebruikt mag
-    worden tijdens de evaluatie.
-
-  ``network_enabled``
-    Een (optionele) boolean die aanduid of het netwerk ingeschakeld moet zijn.
-    Standaard is de waarde ``false``.
-
-``programming_language``
-  Een string die de programmeertaal aangeeft. Dit wordt momenteel enkel gebruikt
-  voor syntax highlighting.
-
-``submission``
-  Een object dat de specificatie voor de indienprocedure voorstelt. Dit wordt
-  momenteel nog niet gebruikt.
-
-  ``handler``
-    Naam van de handler voor het indienen.
-
-  ``size_limit``
-    Een geheel getal dat de maximale grootte van ingediende code in bytes
-    voorstelt.
-
-  ``supported_programming_languages``
-    Een lijst van strings die de aanvaardbare programmeertalen voorstellen. (Of
-    een enkele string als er maar één aanvaardbare programmeertaal is.)
-
-``visibility``
-  Oftewel ``"open"``, ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is
-  kan iedereen de oefening vinden door er naar te zoeken. Als de waarde
-  ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe.
-  Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening
-  bekijken.
-
 .. _describing_an_exercise:
 
-Beschrijven van de opdracht
----------------------------
+Beschrijven van opdrachten
+--------------------------
 
 Beschrijvingen van oefeningen worden gerenderd met `Bootstrap
 <http://getbootstrap.com/>`_ CSS, componenten en JavaScript. Beschrijvingen
