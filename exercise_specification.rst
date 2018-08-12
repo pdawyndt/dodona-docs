@@ -336,13 +336,23 @@ Na het afwerken navigeer je terug naar de :ref:`collectiepagina <collectiepagina
 Organiseren van oefeningen
 --------------------------
 
+De :ref:`oefeningen <oefening>` uit een :ref:`collectie <collectie>` kunnen georganiseerd worden door **deelcollecties** te vormen. Deelcollecties bevatten altijd een deel van de oefeningen en/of andere deelcollecties. Daarbij zit elke oefening in hoogstens één deelcollectie en zit elke deelcollectie in hoogstens één andere deelcollectie. Op die manier ontstaat een boomstructuur waarvan de wortel correspondeert met de volledige collectie, de takken met de deelcollecties en de bladeren met de oefeningen.
+
 .. image:: images/nl.exercise_structure.png
+
+Deze boomstructuur wordt gebruikt om de :ref:`eigenschappen <oefening eigenschappen>` van de :ref:`oefeningen <oefening>` uit de :ref:`collectie <collectie>` in te stellen. Deze eigenschappen omvatten ook een deel van de :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen. Het is mogelijk om de eigenschappen van alle oefeningen individueel in te stellen.
 
 .. image:: images/nl.exercise_property.png
 
+Als we :ref:`oefeningen <oefening>` met gemeenschappelijke :ref:`eigenschappen <oefening eigenschappen>` groeperen in een :ref:`deelcollectie <oefening deelcollectie>`, dan kunnen de gemeenschappelijke eigenschappen ingesteld worden op het niveau van de deelcollectie. Alle eigenschappen van oefeningen die ingesteld worden voor een deelcollectie gelden immers voor alle oefeningen en andere deelcollecties in de deelcollectie.
+
 .. image:: images/nl.exercise_property_subcollection.png
 
+:ref:`Eigenschappen <oefening eigenschappen>` van :ref:`oefeningen <oefening>` die gelden voor alle oefeningen uit de :ref:`collectie <collectie>` kunnen ingesteld worden op het niveau van de collectie. Alle eigenschappen van oefeningen die ingesteld worden voor de collectie gelden immers voor alle oefeningen en deelcollecties in de collectie.
+
 .. image:: images/nl.exercise_property_collection.png
+
+Voor een oefeningen wordt de waarde van een eigenschap bepaald door in eerste instantie te kijken of er voor de oefening zelf een waarde werd ingesteld voor die eigenschap. Als dat niet het geval is dan worden de bovenliggende deelcollecties in de boomstructuur één voor één afgelopen, tot er een deelcollectie gevonden wordt waarvoor er een waarde werd ingesteld voor de eigenschap. Dit is de waarde die de oefening voor de eigenschap zal krijgen. Als er voor geen enkele deelcollectie een waarde ingesteld werd voor de eigenschap, dan wordt uiteindelijk gekeken naar de waarde die ingesteld werd voor de volledige collectie.
 
 .. image:: images/nl.exercise_property_resolution.png
 
