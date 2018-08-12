@@ -223,15 +223,15 @@ Druk op de afwerkknop in de rechterbovenhoek van het paneel :guilabel:`Nieuwe co
 
 .. TODO:screenshot-missing: screenshot van paneel "Nieuwe collectie" waarop de afwerkknop aangeduid word
 
-Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` zie je dat er een synchronisatieprocedure wordt uitgevoerd om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de synchronisatieprocedure opvolgen. Daarbij worden de volgende stappen doorlopen:
+Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` zie je dat er een synchronisatieprocedure opgestart wordt om de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren wordt er gerapporteerd over de status van de opeenvolgende stappen van de synchronisatieprocedure:
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
-1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en wordt een overzicht getoond van alle foute oefeningen in de Git repository.
+1. Dodona pullt de oefeningen van de :ref:`Git repository <git repository>` en controleert of ze geldig zijn. Anders wordt de synchronisatieprocedure afgebroken en bevat het voortgangsrapport een overzicht van alle foute oefeningen in de Git repository.
 
    .. important::
 
-       In :ref:`Remediëren van synchronisatiefouten <synchronisatiefouten remediëren>` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens de synchronisatie met een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
+       In :ref:`Remediëren van publicatiefouten <publicatiefouten remediëren>` worden alle mogelijke fouten besproken die zich kunnen voordoen tijdens het publiceren van oefeningen uit een :ref:`Git repository <git repository>` en wordt aangegeven hoe ze kunnen rechtgezet worden.
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
@@ -244,20 +244,20 @@ Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatiepr
 
 
 .. _repository webhook:
-.. _repository aanhaken:
+.. _collectie aanhaken:
 
 Aanhaken van de collectie
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _collectie publiceren manueel:
 
-Als er een nieuwe versie van de oefeningen beschikbaar is in de :ref:`Git repository <git repository>` dan kan je Dodona daarover zelf informeren door op de knop :guilabel:`Opnieuw publiceren` te drukken in de weergave van de :ref:`collectie <collectie>`.
+Als er een nieuwe versie van de oefeningen beschikbaar is in de :ref:`Git repository <git repository>` dan kan je die publiceren door op de knop :guilabel:`Publiceren` te drukken in de weergave van de :ref:`collectie <collectie>`.
 
-.. TODO:feature-update: vervang de naam van de knop "Alle oefeningen herverwerken" door "Opnieuw publiceren"
+.. TODO:feature-update: vervang de naam van de knop "Alle oefeningen herverwerken" door "Publiceren"
 
-.. TODO:screenshot-missing: screenshot van weergave van de collectie waarin de knop "Alle oefeningen herwerken"
+.. TODO:screenshot-missing: screenshot van weergave van de collectie waarin de knop "Publiceren" aangeduid wordt
 
-Je kunt Dodona informeren dat er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository door op de knop :guilabel:`Alle oefeningen herwerken` te drukken in de weergave van de repository.
+Hierdoor wordt er een synchronisatieprocedure uitgevoerd om de nieuwe versie van de :ref:`oefeningen <oefening>` uit de :ref:`Git repository <git repository>` te :ref:`publiceren <oefeningen publiceren>`. Tijdens het uitvoeren kan je de voortgang van de synchronisatieprocedure opvolgen. Daarbij worden de volgende stappen doorlopen:
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
@@ -920,9 +920,9 @@ Dit ziet er dan uiteindelijk als volgt uit:
 
 .. image:: description-example.nl.png
 
-.. _synchronisatiefouten opsporen:
+.. _publicatiefouten remediëren:
 
-Remediëren van synchronisatiefouten
------------------------------------
+Remediëren van publicatietiefouten
+----------------------------------
 
 .. TODO:tutorial-missing: volledige omschrijving van de controles die uitgevoerd worden, de fouten die gerapporteerd worden en hoe gebruikers hieraan kunnen remediëren; op die manier kunnen gebruikers het rapport of en de email met de fouten volledig begrijpen
