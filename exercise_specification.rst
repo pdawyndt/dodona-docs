@@ -450,7 +450,7 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
 :guilabel:`Collectie`
 
-    Groep van :ref:`eigenschappen <oefening eigenschappen>` die gerelateerd zijn aan de :ref:`collectie <collectie>` waartoe de oefening behoort. Deze eigenschappen kunnen niet aangepast worden.
+    Groep van :ref:`eigenschappen <oefening eigenschappen>` die gerelateerd zijn aan de :ref:`collectie <collectie>` waartoe de oefening behoort. Deze eigenschappen kunnen niet aangepast worden in Dodona en kunnen niet ingesteld worden in de :ref:`Git repository <git repository>`.
 
     .. _oefening collectie naam:
 
@@ -477,17 +477,23 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
     :guilabel:`Open` ``open``
 
-        Alle gebruikers kunnen de oefening zien in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>.`
+        Gebruikers kunnen de oefening zien in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
+
+        :ref:`Cursusbeheerders <cursusbeheerder>` kunnen de oefening koppelen aan het :ref:`leerpad <leerpad>` van de :ref:`cursus <cursus>`.
 
     :guilabel:`Verborgen` ``hidden``
 
-        Enkel de :ref:`beheerders <collectiebeheerders>` Alle gebruikers kunnen de oefening zien in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>.`
+        Gebruikers kunnen de oefening enkel zien in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>` als de cursus toestemming heeft om de oefening te gebruiken.
+
+        :ref:`Cursusbeheerders <cursusbeheerder>` kunnen de oefening enkel koppelen aan het :ref:`leerpad <leerpad>` van de :ref:`cursus <cursus>` als ze ook :ref:`collectiebeheerder <beheerders>` zijn of als de cursus toestemming heeft om de oefening te gebruiken. Als een collectiebeheerder de oefening wil koppelen aan het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>` die geen toestemming heeft om de oefening te gebruiken, dan wordt hem eerst gevraagd om de cursus toestemming te geven.
+
+        Enkel :ref:`beheerders <beheerders>` van de :ref:`collectie <collectie>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>`.
 
     :guilabel:`Gesloten` ``closed``
 
+        Enkel :ref:`beheerders <beheerders>` van de :ref:`collectie <collectie>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
 
-    Oftewel , ``"hidden"`` of ``"closed"``. Als de waarde ``"open"`` is kan iedereen de oefening vinden door er naar te zoeken. Als de waarde ``"hidden"`` is, is de oefening enkel beschikbaar via een link er naar toe. Als de waarde ``"closed"`` is kunnen enkel medewerkers van Dodona de oefening bekijken.
-
+        De oefening kan niet langer gekoppeld worden aan het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
 
 ``description``
   Een JSON object met drie velden:
