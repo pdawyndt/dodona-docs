@@ -235,24 +235,32 @@ Na het :ref:`aanmaken <collectie aanmaken>` van de :ref:`collectie <collectie>` 
 
 2. Dodona genereert :ref:`tokens <oefening token>` voor elke nieuwe :ref:`oefening <oefening>` en pusht die naar de :ref:`Git repository <git repository>` om ervoor te zorgen dat de :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` zonder problemen kan :ref:`gereorganiseerd <collectie organiseren>` worden in Dodona en in de Git repository.
 
-Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` gewijzigd wordt. Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
+Dit is een licht gewijzigde versie van stappen (3) en (4) in de synchronisatieprocedure die zal uitgevoerd worden als de :ref:`Git repository <git repository>` later gewijzigd wordt. Van zodra de synchronisatieprocedure volledig uitgevoerd werd, kan je vaststellen dat alle oefeningen aan de collectie toegevoegd werden.
 
 .. TODO:screenshot-missing: screenshot van nieuw aangemaakte collectie waarin de oefeningen zichtbaar zijn
 
 .. TODO: tutorial-missing: omschrijven hoe de nieuw aangemaakte repository weergegeven wordt op Dodona
+.. TODO: feature-missing: naast een list-view van de oefeningen in de collectie, zouden we ook een tree-view van de oefeningen kunnen geven waarin duidelijk de structuur van de deelcollecties (directories die oefeningen bevatten (zelf of in één van hun subdirectories))
 
 
 .. _repository webhook:
 .. _repository aanhaken:
 
-Aanhaken aan een repository
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aanhaken van de collectie
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Je kunt handmatig
+.. _collectie publiceren manueel:
+
+Als er een nieuwe versie van de oefeningen beschikbaar is in de :ref:`Git repository <git repository>` dan kan je Dodona daarover zelf informeren door op de knop :guilabel:`Opnieuw publiceren` te drukken in de weergave van de :ref:`collectie <collectie>`.
+
+.. TODO:feature-update: vervang de naam van de knop "Alle oefeningen herverwerken" door "Opnieuw publiceren"
+
+.. TODO:screenshot-missing: screenshot van weergave van de collectie waarin de knop "Alle oefeningen herwerken"
+
+Je kunt Dodona informeren dat er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository door op de knop :guilabel:`Alle oefeningen herwerken` te drukken in de weergave van de repository.
 
 .. image:: images/nl.collection_update_from_repository_manual.png
 
-Je kunt Dodona informeren dat er een nieuwe versie van de collectie oefeningen beschikbaar is in de externe Git repository door op de knop :guilabel:`Alle oefeningen herwerken` te drukken in de weergave van de repository.
 
 
 .. TODO:screenshot-missing: screenshot van de knop "Alle oefeningen herverwerken"
