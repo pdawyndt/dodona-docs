@@ -643,13 +643,15 @@ Afbeeldingen
 
 Dodona installeert automatisch lightbox ondersteuning op alle afbeeldingen in de beschrijving. Het is mogelijk om een caption te specifiëren voor een afbeelding en om een alternatieve bron in te stellen die in de lightbox getoond zal worden.
 
+.. TODO:tutorial-missing: expliciet nog een warning geven dat de afbeeldingen in de media-folder moeten staan
+
 HTML
 
   Een caption kan ingesteld worden met het ``data-caption`` attribuut. Als er geen ``data-caption`` attribuut is zal Dodona als caption de eerste waarde van de volgende attributen nemen: ``alt`` en ``src``.
 
   .. code-block:: html
 
-     <img src="image.jpg" data-caption="Caption onder de afbeelding" title="Caption onder de afbeelding" alt="Caption onder de afbeelding" />
+     <img src="media/image.jpg" data-caption="Caption onder de afbeelding" title="Caption onder de afbeelding" alt="Caption onder de afbeelding" />
 
   Een alternatieve bron voor een hoge-resolutie versie van de afbeelding kan
   toegevoegd worden via het ``data-large`` attribuut. Deze versie zal getoond
@@ -658,7 +660,7 @@ HTML
 
   .. code-block:: html
 
-     <img src="image.jpg" data-large="large-image.jpg"/>
+     <img src="media/image.jpg" data-large="large-image.jpg"/>
 
 Markdown
   Om via markdown een caption in te stellen kan ook het ``data-caption``
@@ -668,14 +670,14 @@ Markdown
 
   .. code-block:: text
 
-     ![alt text](image.jpg "title text"){:data-caption="Caption onder de afbeelding"}
+     ![alt text](media/image.jpg "title text"){:data-caption="Caption onder de afbeelding"}
 
   Of in *reference style*:
 
   .. code-block:: text
 
      ![alt text][my-image]
-     [my-image]: image.jpg "title text"
+     [my-image]: media/image.jpg "title text"
      {:data-caption="Caption onder de afbeelding"}
 
   Een alternatieve bron voor een hoge-resolutie versie van de afbeelding kan
@@ -683,15 +685,15 @@ Markdown
 
   .. code-block:: text
 
-     ![alt text](image.jpg "title text"){:data-large="large-image.jpg"}
+     ![alt text](media/image.jpg "title text"){:data-large="media/large-image.jpg"}
 
   Of in *reference style*:
 
   .. code-block:: text
 
      ![alt text][my-image]
-     [my-image]: image.jpg "title text"
-     {:data-large="large-image.jpg"}
+     [my-image]: media/image.jpg "title text"
+     {:data-large="media/large-image.jpg"}
 
 Tabellen
 ^^^^^^^^
