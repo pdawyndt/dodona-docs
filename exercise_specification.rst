@@ -639,11 +639,12 @@ van oefeningen. Volg deze instructies om de features een consistente Dodona
 stijl te geven.
 
 Afbeeldingen
-""""""""""""
+^^^^^^^^^^^^
 
 Dodona installeert automatisch lightbox ondersteuning op alle afbeeldingen in de beschrijving. Het is mogelijk om een caption te specifiëren voor een afbeelding en om een alternatieve bron in te stellen die in de lightbox getoond zal worden.
 
 HTML
+
   Een caption kan ingesteld worden met het ``data-caption`` attribuut. Als er geen ``data-caption`` attribuut is zal Dodona als caption de eerste waarde van de volgende attributen nemen: ``alt`` en ``src``.
 
   .. code-block:: html
@@ -693,7 +694,7 @@ Markdown
      {:data-large="large-image.jpg"}
 
 Tabellen
-""""""""
+^^^^^^^^
 
 HTML
   In HTML voeg je best de volgende *classes* toe aan je tabel: ``table``,
@@ -741,7 +742,7 @@ Markdown
      |-----------------+------------+-----------------+----------------|
 
 Gecentreerde groepen
-""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^
 
 Media (afbeeldingen, tabellen, videos, ...) in een groep worden naast elkaar
 getoond met wat spacing ertussen en de groep wordt gecentreerd.
@@ -771,7 +772,8 @@ Markdown
      ![alt text 2](image1.jpg "title text 2")
 
 YouTube
-"""""""
+^^^^^^^
+
 Om een YouTube-filmpje te embedden moet je eerst de embed code halen op YouTube. Dit zal iets van de volgende vorm zijn:
 
 .. code-block:: html
@@ -796,7 +798,8 @@ Markdown
      <iframe width="560" height="315" src="https://www.youtube.com/embed/lRKriSNJlyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Blockquotes
-"""""""""""
+^^^^^^^^^^^
+
 HTML
   In HTML moet je geen speciale dingen doen om blockquotes te gebruiken. Dit kan met andere woorden gewoon zo:
 
@@ -816,7 +819,8 @@ Markdown
      > This line is part of the same quote.
 
 Code snippets
-"""""""""""""
+^^^^^^^^^^^^^
+
 HTML
   Om broncode te tonen in de beschrijving maak je best gebruik van de
   ``highlighter-rouge``, ``language-<lang>`` en ``highlight`` *classes*. Hierbij
@@ -855,7 +859,8 @@ Markdown
   waarvoor je syntax highlighting wilt.
 
 Wiskundige snippets
-"""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^
+
 HTML
   Om in HTML mooi gerenderde wiskunde te krijgen wordt gebruik gemaakt van `MathJax <https://www.mathjax.org/>`_.
 
@@ -903,7 +908,7 @@ Markdown
      meer tekst
 
 Callouts
-""""""""
+^^^^^^^^
 
 Callouts zijn enkel mogelijk in HTML. Dit kan als volgt:
 
@@ -924,7 +929,7 @@ schrijven.
 
 
 Voorbeeld
-"""""""""
+^^^^^^^^^
 
 Markdown
 
