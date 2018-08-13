@@ -599,25 +599,66 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
 
 .. code-block:: text
 
-   +-- README.md                      # Beschrijft de repository
-   +-- dirconfig.json                 # Gedeelde configuratie voor alle oefeningen in deze repository
-   +-- week01                         # Oefeningen kunnen bijvoorbeeld per week opgedeeld worden
-   |   +-- intsum                     # Korte naam voor de oefening
-   |   |   +-- config.json            # Configuratie voor de oefening
-   |   |   +-- evaluation             #
-   |   |   |   `-- intsum_test.hs     # Een Haskell test bestand
-   |   |   +-- description            #
-   |   |   |   +-- description.nl.md  # De beschrijving in het Nederlands
-   |   |   |   +-- description.en.md  # De beschrijving in het Engels
-   |   |   |   +-- media              #
-   |   |   |   |   `-- some_image.png # Een afbeelding die in de beschrijving gebruikt wordt
-   |   |   |   `-- boilerplate        #
-   |   |   |       +-- boilerplate    # Default standaardtekst
-   |   |   |       `-- boilerplate.en # Standaardtekst in het Engels
-   |   |   `-- workdir                #
-   |   |       `-- intlines.txt       # Een bestand beschikbaar voor de code van de student
-   |   :
-   :
+    +-- oefening                          # bestanden voor het opstellen van de oefening
+    |   +-- config.json                   # specifieke eigenschappen van de oefening
+    |   +-- description                   # bestanden voor het beschrijven van de opdracht
+    |   |   +-- description.nl.md         # beschrijving in het Nederlands (Markdown)
+    |   |   +-- description.en.html       # beschrijving in het Engels (HTML)
+    |   |   +-- media                     # zichtbare bestanden voor beschrijvingen
+    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijvingen
+    |   |   |   `-- gegevens.csv          # gegevensbestand voor beschrijvingen
+    |   |   :   `-- ...
+    |   |   +-- boilerplate               # bestanden voor het indienen van oplossingen
+    |   |   |   +-- boilerplate           # standaard indiensjabloon
+    |   |   |   +-- boilerplate.nl        # indiensjabloon in het Nederlands
+    |   |   |   +-- boilerplate.en        # indiensjabloon in het Engels
+    |   |   :   `-- ...
+    |   :   `-- ...
+    |   +-- evaluation                    # bestanden voor het beoordelen van oplossingen (judge)
+    |   |   +-- test.js                   # testen voor JavaScript oplossingen
+    |   |   +-- test.hs                   # testen voor Haskell oplossingen
+    |   :   `-- ...
+    |   +-- workdir                       # zichtbare bestanden voor oplossingen
+    |   |   +-- gegevens.csv              # gegevensbestand voor oplossingen
+    |   :   `-- ...
+    |   +-- README.md                     # genegeerd
+    |   +-- directory                     # genegeerd
+    |   :   `-- ...
+    :   `-- ...
+    `-- ...
+
+**voorstel om te herorganiseren naar**
+
+.. code-block:: text
+
+    +-- oefening                          # bestanden voor het opstellen van de oefening
+    |   +-- config.json                   # specifieke eigenschappen van de oefening
+    |   +-- description                   # bestanden voor het beschrijven van de opdracht
+    |   |   +-- description.nl.md         # beschrijving in het Nederlands (Markdown)
+    |   |   +-- description.en.html       # beschrijving in het Engels (HTML)
+    |   |   +-- media                     # zichtbare bestanden voor beschrijvingen
+    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijvingen
+    |   |   |   +-- gegevens.csv          # gegevensbestand voor beschrijvingen
+    |   |   :   `-- ...
+    |   :   `-- ...
+    |   +-- submission                    # bestanden voor het indienen van oplossingen
+    |   |   +-- boilerplate               # standaard indiensjabloon
+    |   |   +-- boilerplate.nl            # indiensjabloon in het Nederlands
+    |   |   +-- boilerplate.en            # indiensjabloon in het Engels
+    |   :   `-- ...
+    |   +-- evaluation                    # bestanden voor het beoordelen van oplossingen (judge)
+    |   |   +-- test.js                   # testen voor JavaScript oplossingen
+    |   |   +-- test.hs                   # testen voor Haskell oplossingen
+    |   |   +-- workdir                   # zichtbare bestanden voor oplossingen
+    |   |   |   +-- gegevens.csv          # gegevensbestand voor oplossingen
+    |   |   |   `-- ...
+    |   :   `-- ...
+    |   +-- README.md                     # genegeerd
+    |   +-- directory                     # genegeerd
+    |   :   `-- ...
+    :   `-- ...
+    `-- ...
+
 
 .. TODO:feature-discuss: public folder
 
