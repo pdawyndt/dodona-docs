@@ -5,13 +5,13 @@ Oefeningen beheren
 
 .. _oefening:
 
-Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien wordt een oefening gekoppeld aan een :ref:`judge <judge>` die elke ingediende oplossing voor de oefening automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`Oplossingen automatisch beoordelen <oplossingen automatisch beoordelen>`.
+Een **oefening** bestaat uit een opdracht waarvoor gebruikers :ref:`oplossingen <oplossing>` kunnen :ref:`indienen <oplossing indienen>`. Bovendien kan de oefening gekoppeld worden aan een :ref:`judge <judge>` die elke ingediende oplossing automatisch beoordeelt en van feedback voorziet. In dit hoofdstuk leggen we uit hoe oefeningen opgesteld en beheerd moeten worden. Voor het schrijven van judges verwijzen we naar hoofdstuk :ref:`Oplossingen automatisch beoordelen <oplossingen automatisch beoordelen>`.
 
 .. TODO:feature-missing: een oefening zou generiek moeten kunnen vastleggen i) hoe de opdracht van de oefening beschreven wordt (laat gegeneerde opdrachten toe), ii) hoe oplossingen voor de opdracht er uitzien en hoe ze kunnen ingediend worden (laat generieke indienscenario's toe) en iii) hoe ingediende oplossingen kunnen beoordeeld en van feedback voorzien worden (lijkt nu al vrij generiek te zijn, behalve dan misschien dat de feedback-spec te eng is en dat er nog interventie nodig is om Dockers op te laden)
 
 .. _collectie:
 
-Een **collectie** bundelt meerdere :ref:`oefeningen <oefening>` die samen :ref:`beheerd <oefening beheren>` worden. Hierdoor kunnen sommige :ref:`eigenschappen <oefening eigenschappen>` en :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen uit de collectie op verschillende niveau's ingesteld worden: voor de volledige collectie, voor een deel van de collectie of individueel per oefening.
+Een **collectie** bundelt meerdere :ref:`oefeningen <oefening>` die samen opgesteld en :ref:`beheerd <oefening beheren>` worden, en laat toe om de oefeningen te organiseren in deelcollecties. Hierdoor kunnen gemeenschappelijke :ref:`eigenschappen <oefening eigenschappen>` en :ref:`toegangsrechten <oefening toegangsrechten>` van de oefeningen op verschillende niveau's ingesteld worden: voor de volledige collectie, voor een deel van de collectie of individueel per oefening.
 
 .. TODO:feature-update: aangezien het gebruik van de term "repository" verwijst naar een implementatiedetail en verwarring zaait tussen een "repository in Dodona" en een "Git repository op een externe server", is het voorstel om binnen Dodona de term "collectie" te gebruiken voor een verzameling oefeningen die samen beheerd worden
 .. TODO:feature-missing: alle Dodona-objecten die geconfigureerd worden in externe repositories zouden gebruik kunnen maken van een generieke "repository"-component die deels instaat voor het interne beheer van de objecten (koppeling van beheerders); dit zou op termijn ook moeten toelaten op cursussen aan Git repo's te haken
@@ -21,7 +21,7 @@ Een **collectie** bundelt meerdere :ref:`oefeningen <oefening>` die samen :ref:`
 .. _externe server:
 .. _git repository:
 
-Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een **Git repository** op een **externe server**. Via een koppeling van de collectie aan de Git repository blijft het wijzigen van oefeningen in Dodona of in de Git repository synchroon verlopen.
+Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organiseren>` van een :ref:`collectie <collectie>` :ref:`oefeningen <oefening>` gebeurt niet rechtstreeks in Dodona, maar in een **Git repository** op een **externe server**. De collectie wordt aan de Git repository gekoppeld zodat het aanpassen van de oefeningen in Dodona en in de Git repository gesynchroniseerd wordt. Door de koppeling worden de oefeningen uit de Git repository beschikbaar op Dodona. Een proces dat we we het :ref:`publiceren <oefeningen publiceren>` van oefeningen noemen.
 
 .. image:: images/nl.collection_synchronisation.png
 
@@ -29,13 +29,13 @@ Het :ref:`opstellen <oefening opstellen>` en :ref:`organiseren <collectie organi
 
     In deze handleiding verwijzen we telkens naar de Nederlandstalige versie van het `Pro Git <https://git-scm.com/book/nl/v2>`_ boek als we voor het eerst gebruikmaken van typische Git terminologie. Als je nog nooit met Git gewerkt hebt dan raden we alvast aan om de eerste twee hoofdstukken van het boek te lezen. Leren werken met Git heeft een zekere leercurve, maar als programmeur loont het meer dan de moeite om over de nodige Git vaardigheden te beschikken.
 
-Door te faciliteren dat :ref:`oefeningen <oefening>` :ref:`opgesteld <oefening opstellen>` kunnen worden in :ref:`Git repositories <git repository>` die :ref:`extern gehost <externe server>` worden, maakt Dodona het eenvoudiger om grote :ref:`collecties <collectie>` oefeningen te :ref:`organiseren <collectie organiseren>` en te :ref:`beheren <collectie>` met een team van personen. Merk daarbij op dat het toekennen van toegangsrechten en beheersrechten voor de :ref:`Git repository <git repository>` volledig gescheiden verloopt van het toekennen van :ref:`toegangsrechten <collectie toegangsrechten>` en :ref:`beheersrechten <collectie beheersrechten>` voor de gekoppelde :ref:`collectie <collectie>` op Dodona. Een deel van de toegangsrechten voor de oefeningen zelf kan echter zowel in Dodona als in de Git repository ingesteld worden.
+Door te faciliteren dat :ref:`collecties <collectie>` :ref:`oefeningen <oefening>` :ref:`opgesteld <oefening opstellen>` en :ref:`georganiseerd <collectie organiseren>` kunnen worden in :ref:`Git repositories <git repository>` die :ref:`extern gehost <externe server>` worden, wordt het eenvoudiger om grote collecties oefeningen te :ref:`beheren <collectie>` met een team van personen. Merk daarbij op dat het toekennen van toegangsrechten en beheersrechten voor de :ref:`Git repository <git repository>` volledig gescheiden verloopt van het toekennen van :ref:`toegangsrechten <collectie toegangsrechten>` en :ref:`beheersrechten <collectie beheersrechten>` voor de gekoppelde :ref:`collectie <collectie>` op Dodona. Een deel van de toegangsrechten voor de oefeningen zelf kan echter zowel in Dodona als in de Git repository ingesteld worden.
 
 .. _collectiebeheerder:
 
-Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`collecties <collectie>` :ref:`aanmaken <collectie aanmaken>` om de :ref:`oefeningen <oefening>` uit een :ref:`Git repository <Git repository>` te :ref:`publiceren <oefeningen publiceren>` op Dodona. Hij wordt automatisch **collectiebeheerder** van elke collectie die hij aanmaakt, maar kan verder geen collecties beheren waarvoor hij geen collectiebeheerder is.
+Een :ref:`lesgever <lesgever>` kan onbeperkt :ref:`collecties <collectie>` :ref:`aanmaken <collectie aanmaken>` om :ref:`oefeningen <oefening>` uit :ref:`Git repositories <Git repository>` te :ref:`publiceren <oefeningen publiceren>` op Dodona. Hij wordt automatisch **collectiebeheerder** van elke collectie die hij aanmaakt, maar kan verder geen collecties beheren waarvoor hij geen collectiebeheerder is.
 
-Een :ref:`collectiebeheerder <collectiebeheerder>` kan andere beheerders aanduiden om samen met hem de collectie te beheren. Hij kan de :ref:`eigenschappen <oefening eigenschappen>` en de :ref:`toegangsrechten <oefening toegangsrechten>` van alle oefeningen uit de :ref:`collectie <collectie>` instellen.
+Een :ref:`collectiebeheerder <collectiebeheerder>` kan andere beheerders aanduiden om samen met hem de collectie te beheren. Hij kan de :ref:`eigenschappen <oefening eigenschappen>` en de :ref:`toegangsrechten <oefening toegangsrechten>` van alle oefeningen uit de :ref:`collectie <collectie>` instellen, en zo meehelpen met het opstellen en organiseren van de oefeningen uit de collectie.
 
 .. TODO:feature-missing collectiebeheerders zouden ook collecties moeten kunnen reorganiseren
 .. TODO:feature-missing collectiebeheerders zouden ook oefeningen moeten kunnen verplaatsen tussen twee collecties waarvan ze beheerder zijn
@@ -485,13 +485,13 @@ Voor een :ref:`oefening <oefening>` kunnen de volgende eigenschappen ingesteld w
 
         Gebruikers kunnen de oefening enkel zien in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>` als de cursus toestemming heeft om de oefening te gebruiken.
 
-        :ref:`Cursusbeheerders <cursusbeheerder>` kunnen de oefening enkel koppelen aan het :ref:`leerpad <leerpad>` van de :ref:`cursus <cursus>` als ze ook :ref:`collectiebeheerder <beheerders>` zijn of als de cursus toestemming heeft om de oefening te gebruiken. Als een collectiebeheerder de oefening wil koppelen aan het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>` die geen toestemming heeft om de oefening te gebruiken, dan wordt hem eerst gevraagd om de cursus toestemming te geven.
+        :ref:`Cursusbeheerders <cursusbeheerder>` kunnen de oefening enkel koppelen aan het :ref:`leerpad <leerpad>` van de :ref:`cursus <cursus>` als ze ook :ref:`collectiebeheerder <collectiebeheerder>` zijn of als de cursus toestemming heeft om de oefening te gebruiken. Als een collectiebeheerder de oefening wil koppelen aan het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>` die geen toestemming heeft om de oefening te gebruiken, dan wordt hem eerst gevraagd om de cursus toestemming te geven.
 
-        Enkel :ref:`beheerders <beheerders>` van de :ref:`collectie <collectie>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>`.
+        Enkel :ref:`collectiebeheerders <collectiebeheerder>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>`.
 
     :guilabel:`Gesloten` ``closed``
 
-        Enkel :ref:`beheerders <beheerders>` van de :ref:`collectie <collectie>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
+        Enkel :ref:`collectiebeheerders <collectiebeheerder>` zien de oefening in het :ref:`oefeningenoverzicht <oefeningenoverzicht>` en in het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
 
         De oefening kan niet langer gekoppeld worden aan het :ref:`leerpad <leerpad>` van een :ref:`cursus <cursus>`.
 
