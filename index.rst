@@ -9,8 +9,8 @@ Handleiding: Dodona
    :maxdepth: 2
    :caption: Inleiding
 
-   introduction
-   for_teachers_introduction
+   .. introduction
+   .. for_teachers_introduction
 
 .. toctree::
    :maxdepth: 2

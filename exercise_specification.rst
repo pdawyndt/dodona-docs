@@ -1,7 +1,7 @@
-.. _oefeningen beheren:
+.. _collecties oefeningen beheren:
 
-Oefeningen beheren
-==================
+Collecties oefeningen beheren
+=============================
 
 .. _oefening:
 
