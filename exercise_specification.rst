@@ -604,9 +604,9 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
     |   +-- description                   # bestanden voor het beschrijven van de opdracht
     |   |   +-- description.nl.md         # beschrijving in het Nederlands (Markdown)
     |   |   +-- description.en.html       # beschrijving in het Engels (HTML)
-    |   |   +-- media                     # zichtbare bestanden voor beschrijvingen
-    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijvingen
-    |   |   |   `-- gegevens.csv          # gegevensbestand voor beschrijvingen
+    |   |   +-- media                     # zichtbare bestanden voor beschrijving en feedback
+    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijving
+    |   |   |   `-- gegevens.csv          # gegevensbestand voor beschrijving
     |   |   :   `-- ...
     |   |   +-- boilerplate               # bestanden voor het indienen van oplossingen
     |   |   |   +-- boilerplate           # standaard indiensjabloon
@@ -636,9 +636,9 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
     |   +-- description                   # bestanden voor het beschrijven van de opdracht
     |   |   +-- description.nl.md         # beschrijving in het Nederlands (Markdown)
     |   |   +-- description.en.html       # beschrijving in het Engels (HTML)
-    |   |   +-- media                     # zichtbare bestanden voor beschrijvingen
-    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijvingen
-    |   |   |   +-- gegevens.csv          # gegevensbestand voor beschrijvingen
+    |   |   +-- media                     # zichtbare bestanden voor beschrijving en feedback
+    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijving/feedback
+    |   |   |   +-- gegevens.csv          # gegevensbestand voor beschrijving/feedback
     |   |   :   `-- ...
     |   :   `-- ...
     |   +-- submission                    # bestanden voor het indienen van oplossingen
