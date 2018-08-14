@@ -659,32 +659,38 @@ Elke afbeelding krijgt automatisch `Lightbox-ondersteuning <https://en.wikipedia
 
 .. TODO:screenshot-missing: voorbeeld van schermvullende weergave van een afbeelding waarin het onderschrift wordt weergegeven
 
-.. warning:
+.. warning::
 
     Vergeet niet dat een beschrijving enkel kan verwijzen naar afbeeldingen die onder de directory ``description/media/`` staan.
 
 .. TODO:feature-update: data-attribuut toevoegen waarmee Lightbox-ondersteuning kan uitgeschakeld worden voor een afbeelding
 .. TODO:feature-update: data-attribuut toevoegen waarmee onderschrift ook wordt weergegeven in de beschrijving zelf of waarmee geen onderschrift staat bij de schermvullende weergave
 
-`HTML <https://getbootstrap.com/docs/4.1/content/images>`_
-
-    Gebruik het `data-attribuut <https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`_ ``data-caption`` in een ``img`` element om een onderschrift in te stellen dat gebruikt wordt bij de schermvullende weergave van de afbeelding. Zonder dit data-attribuut wordt achtereenvolgens gezocht naar de attributen ``title``,  ``alt`` en ``src`` om de waarde van het onderschrift te bepalen.
+Stel met het `data-attribuut <https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes>`_ ``data-caption`` van de afbeelding een onderschrift in dat gebruikt wordt bij de schermvullende weergave. Zonder dit data-attribuut wordt achtereenvolgens gezocht naar de attributen ``title``,  ``alt`` en ``src`` om de waarde van het onderschrift te bepalen.
 
 .. TODO:tutorial-update: waarom suggereren we niet om het HTML <figure> element te gebruiken met een <figcaption> element; dit is hier specifiek voor voorzien (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
 
-    .. code-block:: html
+Stel met het data-attribuut ``data-large`` van de afbeelding een alternatieve afbeelding in die gebruikt wordt bij de schermvullende weergave. Dit kan bijvoorbeeld gebruikt worden om een versie met hogere resolutie te laten weergeven. Zonder dit data-attribuut gebruikt de schermvullende weergave de afbeelding uit het ``src`` attribuut.
 
-        <img src="media/afbeelding.png" data-caption="Onderschrift voor afbeelding." title="Titel van afbeelding" alt="Vervangtekst voor afbeelding." />
+`HTML <https://getbootstrap.com/docs/4.1/content/images>`_
+**********************************************************
 
-    Gebruik het data-attribuut ``data-large`` in een ``img`` element om een alternatieve afbeelding in te stellen die gebruikt wordt bij de schermvullende weergave. Dit kan bijvoorbeeld gebruikt worden om een versie met hogere resolutie te laten weergeven. Zonder dit data-attribuut gebruikt de schermvullende weergave de afbeelding uit het ``src`` attribuut.
+**Lightbox: onderschrift** (``data-caption``)
 
-    .. code-block:: html
+.. code-block:: html
 
-        <img src="media/afbeelding.png" data-large="media/grote-afbeelding.png" />
+    <img src="media/afbeelding.png" data-caption="Onderschrift voor afbeelding." title="Titel van afbeelding" alt="Vervangtekst voor afbeelding." />
+
+**Lightbox: alternatieve afbeelding** (``data-large``)
+
+.. code-block:: html
+
+    <img src="media/afbeelding.png" data-large="media/grote-afbeelding.png" />
 
 `Markdown <https://kramdown.gettalong.org/syntax.html#images>`_
+***************************************************************
 
-    Gebruik het `data-attribuut <https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`_ ``data-caption`` om een onderschrift in te stellen dat gebruikt wordt bij de schermvullende weergave van de afbeelding. Zonder dit data-attribuut wordt achtereenvolgens gezocht naar de attributen ``title``,  ``alt`` en ``src`` om de waarde van het onderschrift te bepalen.
+**Lightbox: onderschrift** (``data-caption``)
 
     *inline style*
 
@@ -692,7 +698,7 @@ Elke afbeelding krijgt automatisch `Lightbox-ondersteuning <https://en.wikipedia
 
             ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-caption="Onderschrift voor afbeelding."}
 
-        *reference style*
+    *reference style*
 
         .. code-block:: text
 
@@ -700,7 +706,7 @@ Elke afbeelding krijgt automatisch `Lightbox-ondersteuning <https://en.wikipedia
             [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
             {:data-caption="Onderschrift voor afbeelding."}
 
-    Gebruik het data-attribuut ``data-large`` om een alternatieve afbeelding in te stellen die gebruikt wordt bij de schermvullende weergave. Dit kan bijvoorbeeld gebruikt worden om een versie met hogere resolutie te laten weergeven. Zonder dit data-attribuut gebruikt de schermvullende weergave de afbeelding uit het ``src`` attribuut.
+**Lightbox: alternatieve afbeelding** (``data-large``)
 
     *inline style*
 
@@ -717,8 +723,9 @@ Elke afbeelding krijgt automatisch `Lightbox-ondersteuning <https://en.wikipedia
             {:data-large="media/grote-afbeelding.png"}
 
 Voorbeeld
+*********
 
-     `ISBN <https://dodona.ugent.be/exercises/620641000/>`_ (`git <https://dodona.ugent.be/exercises/620641000/>`_)
+`ISBN <https://dodona.ugent.be/exercises/620641000/>`_ (`git <https://dodona.ugent.be/exercises/620641000/>`_)
 
 
 Tabellen
