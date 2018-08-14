@@ -609,9 +609,9 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
     |   |   |   `-- gegevens.csv          # gegevensbestand voor beschrijving
     |   |   :   `-- ...
     |   |   +-- boilerplate               # bestanden voor het indienen van oplossingen
-    |   |   |   +-- boilerplate           # standaard indiensjabloon
-    |   |   |   +-- boilerplate.nl        # indiensjabloon in het Nederlands
-    |   |   |   +-- boilerplate.en        # indiensjabloon in het Engels
+    |   |   |   +-- boilerplate           # sjabloon voor oplossing
+    |   |   |   +-- boilerplate.nl        # sjabloon voor Nederlandstalige oplossing
+    |   |   |   +-- boilerplate.en        # sjabloon voor Engelstalige oplossing
     |   |   :   `-- ...
     |   :   `-- ...
     |   +-- evaluation                    # bestanden voor het beoordelen van oplossingen (judge)
@@ -642,12 +642,14 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
     |   |   :   `-- ...
     |   :   `-- ...
     |   +-- submission                    # bestanden voor het indienen van oplossingen
-    |   |   +-- boilerplate               # standaard indiensjabloon
-    |   |   +-- boilerplate.nl            # indiensjabloon in het Nederlands
-    |   |   +-- boilerplate.en            # indiensjabloon in het Engels
+    |   |   +-- solution                  # sjabloon voor oplossing (weg ???)
+    |   |   +-- solution.nl               # sjabloon voor Nederlandstalige oplossing
+    |   |   +-- solution.en               # sjabloon voor Engelstalige oplossing
+    |   |   +-- solution.en.py            # sjabloon voor Engelstalige Python oplossing
+    |   |   +-- solution.en.hs            # sjabloon voor Engelstalige Haskell oplossing
     |   :   `-- ...
     |   +-- evaluation                    # bestanden voor het beoordelen van oplossingen (judge)
-    |   |   +-- test.js                   # testen voor JavaScript oplossingen
+    |   |   +-- test.py                   # testen voor Python oplossingen
     |   |   +-- test.hs                   # testen voor Haskell oplossingen
     |   |   +-- workdir                   # zichtbare bestanden voor oplossingen
     |   |   |   +-- gegevens.csv          # gegevensbestand voor oplossingen
