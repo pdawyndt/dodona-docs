@@ -692,35 +692,35 @@ Stel met het data-attribuut ``data-large`` van de afbeelding een alternatieve af
 
 **Lightbox: onderschrift** (``data-caption``)
 
-    *inline style*
+*inline style*
 
-    .. code-block:: text
+.. code-block:: text
 
-        ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-caption="Onderschrift voor afbeelding."}
+    ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-caption="Onderschrift voor afbeelding."}
 
-    *reference style*
+*reference style*
 
-    .. code-block:: text
+.. code-block:: text
 
-        ![Vervangtekst voor afbeelding.][mijn-afbeelding]
-        [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
-        {:data-caption="Onderschrift voor afbeelding."}
+    ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+    [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
+    {:data-caption="Onderschrift voor afbeelding."}
 
 **Lightbox: alternatieve afbeelding** (``data-large``)
 
-    *inline style*
+*inline style*
 
-    .. code-block:: text
+.. code-block:: text
 
-        ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-large="media/grote-afbeelding.png"}
+    ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-large="media/grote-afbeelding.png"}
 
-    *reference style*
+*reference style*
 
-    .. code-block:: text
+.. code-block:: text
 
-        ![Vervangtekst voor afbeelding.][mijn-afbeelding]
-        [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
-        {:data-large="media/grote-afbeelding.png"}
+    ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+    [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
+    {:data-large="media/grote-afbeelding.png"}
 
 Voorbeeld
 *********
