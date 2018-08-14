@@ -627,47 +627,12 @@ Een voorbeeld van een geldige structuur kan hier gevonden worden:
     :   `-- ...
     `-- ...
 
-**voorstel om te herorganiseren naar**
-
-.. code-block:: text
-
-    +-- oefening                          # bestanden voor het opstellen van de oefening
-    |   +-- config.json                   # specifieke eigenschappen van de oefening
-    |   +-- description                   # bestanden voor het beschrijven van de opdracht
-    |   |   +-- description.nl.md         # beschrijving in het Nederlands (Markdown)
-    |   |   +-- description.en.html       # beschrijving in het Engels (HTML)
-    |   |   +-- media                     # zichtbare bestanden voor beschrijving en feedback
-    |   |   |   +-- afbeelding.png        # afbeelding voor beschrijving/feedback
-    |   |   |   +-- gegevens.csv          # gegevensbestand voor beschrijving/feedback
-    |   |   :   `-- ...
-    |   :   `-- ...
-    |   +-- submission                    # bestanden voor het indienen van oplossingen
-    |   |   +-- solution                  # sjabloon voor oplossing (weg ???)
-    |   |   +-- solution.nl               # sjabloon voor Nederlandstalige oplossing
-    |   |   +-- solution.en               # sjabloon voor Engelstalige oplossing
-    |   |   +-- solution.en.py            # sjabloon voor Engelstalige Python oplossing
-    |   |   +-- solution.en.hs            # sjabloon voor Engelstalige Haskell oplossing
-    |   :   `-- ...
-    |   +-- evaluation                    # bestanden voor het beoordelen van oplossingen (judge)
-    |   |   +-- test.py                   # testen voor Python oplossingen
-    |   |   +-- test.hs                   # testen voor Haskell oplossingen
-    |   |   +-- workdir                   # zichtbare bestanden voor oplossingen
-    |   |   |   +-- gegevens.csv          # gegevensbestand voor oplossingen
-    |   |   |   `-- ...
-    |   :   `-- ...
-    |   +-- README.md                     # genegeerd
-    |   +-- directory                     # genegeerd
-    |   :   `-- ...
-    :   `-- ...
-    `-- ...
-
-
 .. TODO:feature-discuss: public folder
 
 .. _describing_an_exercise:
 
-Beschrijven van opdrachten
---------------------------
+Beschrijven van een opdracht
+----------------------------
 
 Beschrijvingen van oefeningen worden gerenderd met `Bootstrap
 <http://getbootstrap.com/>`_ CSS, componenten en JavaScript. Beschrijvingen
@@ -681,62 +646,80 @@ Hieronder volgt een lijst van standaard features die voorkomen in beschrijvingen
 van oefeningen. Volg deze instructies om de features een consistente Dodona
 stijl te geven.
 
+- voorbeeld van oefening
+  - link naar oefening op Dodona
+  - link naar description op demo repository waar oefening opgesteld is
+- link naar kramdown documentatie voor component
+- link naar bootstrap documentatie voor component
+
 Afbeeldingen
 ^^^^^^^^^^^^
 
-Dodona installeert automatisch lightbox ondersteuning op alle afbeeldingen in de beschrijving. Het is mogelijk om een caption te specifiëren voor een afbeelding en om een alternatieve bron in te stellen die in de lightbox getoond zal worden.
+Elke afbeelding krijgt automatisch `Lightbox-ondersteuning <https://en.wikipedia.org/wiki/Lightbox_(JavaScript)>`_ die een schermvullende weergave toont en de rest van de pagina dimt als op de afbeelding geklikt wordt. Voor de schermvullende weergave kan een onderschrift en een alternatieve afbeelding ingesteld worden.
 
-.. TODO:tutorial-missing: expliciet nog een warning geven dat de afbeeldingen in de media-folder moeten staan
+.. TODO:screenshot-missing: voorbeeld van schermvullende weergave van een afbeelding waarin het onderschrift wordt weergegeven
 
-HTML
+.. warning:
 
-  Een caption kan ingesteld worden met het ``data-caption`` attribuut. Als er geen ``data-caption`` attribuut is zal Dodona als caption de eerste waarde van de volgende attributen nemen: ``alt`` en ``src``.
+    Vergeet niet dat een beschrijving enkel kan verwijzen naar afbeeldingen die onder de directory ``description/media/`` staan.
 
-  .. code-block:: html
+.. TODO:feature-update: data-attribuut toevoegen waarmee Lightbox-ondersteuning kan uitgeschakeld worden voor een afbeelding
+.. TODO:feature-update: data-attribuut toevoegen waarmee onderschrift ook wordt weergegeven in de beschrijving zelf of waarmee geen onderschrift staat bij de schermvullende weergave
 
-     <img src="media/image.jpg" data-caption="Caption onder de afbeelding" title="Caption onder de afbeelding" alt="Caption onder de afbeelding" />
+`HTML <https://getbootstrap.com/docs/4.1/content/images>`_
 
-  Een alternatieve bron voor een hoge-resolutie versie van de afbeelding kan
-  toegevoegd worden via het ``data-large`` attribuut. Deze versie zal getoond
-  worden in de lightbox in plaats van de afbeelding die inline in de
-  beschrijving getoond wordt.
+    Gebruik het `data-attribuut <https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`_ ``data-caption`` in een ``img`` element om een onderschrift in te stellen dat gebruikt wordt bij de schermvullende weergave van de afbeelding. Zonder dit data-attribuut wordt achtereenvolgens gezocht naar de attributen ``title``,  ``alt`` en ``src`` om de waarde van het onderschrift te bepalen.
 
-  .. code-block:: html
+.. TODO:tutorial-update: waarom suggereren we niet om het HTML <figure> element te gebruiken met een <figcaption> element; dit is hier specifiek voor voorzien (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure)
 
-     <img src="media/image.jpg" data-large="large-image.jpg"/>
+    .. code-block:: html
 
-Markdown
-  Om via markdown een caption in te stellen kan ook het ``data-caption``
-  attribuut gebruikt worden. Als dit niet aanwezig is zal Dodona kijken naar de
-  eerste waarde van de volgende attributen: ``title text`` en ``alt text``. In
-  de *inline style* ziet dat er zo uit:
+        <img src="media/afbeelding.png" data-caption="Onderschrift voor afbeelding." title="Titel van afbeelding" alt="Vervangtekst voor afbeelding." />
 
-  .. code-block:: text
+    Gebruik het data-attribuut ``data-large`` in een ``img`` element om een alternatieve afbeelding in te stellen die gebruikt wordt bij de schermvullende weergave. Dit kan bijvoorbeeld gebruikt worden om een versie met hogere resolutie te laten weergeven. Zonder dit data-attribuut gebruikt de schermvullende weergave de afbeelding uit het ``src`` attribuut.
 
-     ![alt text](media/image.jpg "title text"){:data-caption="Caption onder de afbeelding"}
+    .. code-block:: html
 
-  Of in *reference style*:
+        <img src="media/afbeelding.png" data-large="media/grote-afbeelding.png" />
 
-  .. code-block:: text
+`Markdown <https://kramdown.gettalong.org/syntax.html#images>`_
 
-     ![alt text][my-image]
-     [my-image]: media/image.jpg "title text"
-     {:data-caption="Caption onder de afbeelding"}
+    Gebruik het `data-attribuut <https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes`_ ``data-caption`` om een onderschrift in te stellen dat gebruikt wordt bij de schermvullende weergave van de afbeelding. Zonder dit data-attribuut wordt achtereenvolgens gezocht naar de attributen ``title``,  ``alt`` en ``src`` om de waarde van het onderschrift te bepalen.
 
-  Een alternatieve bron voor een hoge-resolutie versie van de afbeelding kan
-  weer toegevoegd worden via het ``data-large`` attribuut. In de *inline style* ziet dat er zo uit:
+    *inline style*
 
-  .. code-block:: text
+        .. code-block:: text
 
-     ![alt text](media/image.jpg "title text"){:data-large="media/large-image.jpg"}
+            ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-caption="Onderschrift voor afbeelding."}
 
-  Of in *reference style*:
+        *reference style*
 
-  .. code-block:: text
+        .. code-block:: text
 
-     ![alt text][my-image]
-     [my-image]: media/image.jpg "title text"
-     {:data-large="media/large-image.jpg"}
+            ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+            [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
+            {:data-caption="Onderschrift voor afbeelding."}
+
+    Gebruik het data-attribuut ``data-large`` om een alternatieve afbeelding in te stellen die gebruikt wordt bij de schermvullende weergave. Dit kan bijvoorbeeld gebruikt worden om een versie met hogere resolutie te laten weergeven. Zonder dit data-attribuut gebruikt de schermvullende weergave de afbeelding uit het ``src`` attribuut.
+
+    *inline style*
+
+        .. code-block:: text
+
+            ![Vervangtekst voor afbeelding.](media/afbeelding.png "Titel van afbeelding"){:data-large="media/grote-afbeelding.png"}
+
+    *reference style*
+
+        .. code-block:: text
+
+            ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+            [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
+            {:data-large="media/grote-afbeelding.png"}
+
+Voorbeeld
+
+     `ISBN <https://dodona.ugent.be/exercises/620641000/>`_ (`git <https://dodona.ugent.be/exercises/620641000/>`_)
+
 
 Tabellen
 ^^^^^^^^
