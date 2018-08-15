@@ -679,13 +679,13 @@ Stel met het data-attribuut ``data-large`` van de afbeelding een alternatieve af
 
 .. code-block:: html
 
-    <img src="media/afbeelding.png" data-caption="Onderschrift voor afbeelding." title="Titel van afbeelding" alt="Vervangtekst voor afbeelding." />
+    <img data-caption="Onderschrift voor afbeelding." title="Titel van afbeelding" alt="Vervangtekst voor afbeelding." src="media/afbeelding.png" />
 
 **Lightbox: alternatieve afbeelding** (``data-large``)
 
 .. code-block:: html
 
-    <img src="media/afbeelding.png" data-large="media/grote-afbeelding.png" />
+    <img data-large="media/grote-afbeelding.png" src="media/afbeelding.png" />
 
 `Markdown <https://kramdown.gettalong.org/syntax.html#images>`_
 ***************************************************************
@@ -703,6 +703,7 @@ Stel met het data-attribuut ``data-large`` van de afbeelding een alternatieve af
 .. code-block:: text
 
     ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+
     [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
     {:data-caption="Onderschrift voor afbeelding."}
 
@@ -719,6 +720,7 @@ Stel met het data-attribuut ``data-large`` van de afbeelding een alternatieve af
 .. code-block:: text
 
     ![Vervangtekst voor afbeelding.][mijn-afbeelding]
+
     [mijn-afbeelding]: media/afbeelding.png "Titel van afbeelding"
     {:data-large="media/grote-afbeelding.png"}
 
