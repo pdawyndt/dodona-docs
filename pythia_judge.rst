@@ -692,6 +692,11 @@ van het bestand.
      </OUTPUTPROCESSOR>
      This is the content of text.txt.
 
+Om het gebruik van de Python Tutor toe te laten voor oefeningen met bestanden
+moet een ``FILE`` tag gebruikt worden. Als het geen ingebed bestand is moet 
+er ook een (geldig) ``href`` attribuut aanwezig zijn. In dit laatste geval zal 
+de Python Tutor ook enkel werken als de oefening publiek is.
+
 .. _execution_contexts:
 
 Uitvoeringscontext
