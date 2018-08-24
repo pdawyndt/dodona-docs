@@ -661,7 +661,7 @@ van het bestand.
      </FILE>
 
   Met de eerste vorm, zoals hierboven getoond, kan je je bestanden inbedden in
-  de testdefinities. In plaats van deze code zal ``filesting = StringIO("""This
+  de testdefinities. In plaats van deze code zal ``filestring = StringIO("""This
   is the content of text.txt""").read()`` uitgevoerd worden. Voor de student
   wordt de originele code nog getoond worden.
 
@@ -679,7 +679,7 @@ van het bestand.
 
 * Open nieuw bestand
 
-  Deze vorm maakt eenbestand aan met als inhoud de tekst van de tag. Dan wordt het op dezelfde manier als hierboven gebruikt.
+  Deze vorm maakt een bestand aan met als inhoud de tekst van de tag. Dan wordt het op dezelfde manier als hierboven gebruikt.
 
   .. code-block:: python
 
