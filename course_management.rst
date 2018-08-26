@@ -1,5 +1,7 @@
 .. _cursus beheren:
 
+.. TODO:tutorial-missing: downloaden van scoresheet
+
 Cursusbeheer
 ============
 

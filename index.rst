@@ -6,20 +6,20 @@ Handleiding: Dodona
 ===================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Inleiding
 
    .. introduction
    .. for_teachers_introduction
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Studenten
 
    for_students
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Lesgevers
 
    user_management
@@ -28,13 +28,13 @@ Handleiding: Dodona
    judge_specification
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Referentie
 
    judge_output_format_schema
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Judges
 
    list_of_judges
