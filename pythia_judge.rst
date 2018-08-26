@@ -661,7 +661,7 @@ van het bestand.
      </FILE>
 
   Met de eerste vorm, zoals hierboven getoond, kan je je bestanden inbedden in
-  de testdefinities. In plaats van deze code zal ``filesting = StringIO("""This
+  de testdefinities. In plaats van deze code zal ``filestring = StringIO("""This
   is the content of text.txt""").read()`` uitgevoerd worden. Voor de student
   wordt de originele code nog getoond worden.
 
@@ -679,7 +679,7 @@ van het bestand.
 
 * Open nieuw bestand
 
-  Deze vorm maakt eenbestand aan met als inhoud de tekst van de tag. Dan wordt het op dezelfde manier als hierboven gebruikt.
+  Deze vorm maakt een bestand aan met als inhoud de tekst van de tag. Dan wordt het op dezelfde manier als hierboven gebruikt.
 
   .. code-block:: python
 
@@ -691,6 +691,11 @@ van het bestand.
      OutputProcessor(expected_type=str)
      </OUTPUTPROCESSOR>
      This is the content of text.txt.
+
+Om het gebruik van de Python Tutor toe te laten voor oefeningen met bestanden
+moet een ``FILE`` tag gebruikt worden. Als het geen ingebed bestand is moet 
+er ook een (geldig) ``href`` attribuut aanwezig zijn. In dit laatste geval zal 
+de Python Tutor ook enkel werken als de oefening publiek is.
 
 .. _execution_contexts:
 
