@@ -42,7 +42,7 @@ Het ``run`` programma moet JSON object accepteren waar de volgende waarden zulle
 
 ``memory_limit``
     Een geheel getal dat de geheugenlimiet in bytes voorstelt. De docker
-    container zal afgesloten worden wanner de interne processen deze limiet
+    container zal afgesloten worden wanneer de interne processen deze limiet
     overschrijden. De judge kan deze waarde gebruiken om de testen vroegtijdig
     te stoppen, zodat er meer feedback naar de student kan gegeven worden dan de
     standaard boodschap "Geheugenlimiet overschreden".
@@ -255,7 +255,7 @@ Een ``Status`` string geeft de status van de ingediende oplossing aan. Deze stat
         De judge is gestopt met een niet-nul status code.
     ``"unknown"``
         Er is iets misgelopen.
-  
+
 .. image:: judge-output.png
 
 
