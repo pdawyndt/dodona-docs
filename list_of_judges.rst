@@ -4,7 +4,7 @@
 Lijst van bestaande judges
 ==========================
 
-Een judges is een programma dat door Dodona wordt gebruikt om de ingediende oplossingen voor een oefening te evalueren.
+Een judge is een programma dat door Dodona wordt gebruikt om de ingediende oplossingen voor een oefening te evalueren.
 Momenteel zijn de volgende judges beschikbaar in het systeem:
 
  * :ref:`Pythia, stabiel, wordt gebruikt in meerdere vakken <pythia_judge>`
