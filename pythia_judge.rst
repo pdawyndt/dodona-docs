@@ -338,7 +338,7 @@ veranderd worden. Zie het volgende voorbeeld:
      They don't even appear in the feedback.
    ZeroDivisionError: division by zero
 
-Er bestaat één speciale optie vlag die gebruikt wordt wanner de representatie
+Er bestaat één speciale optie vlag die gebruikt wordt wanneer de representatie
 van een zelf-gedefinieerd object gebruikt wordt. Dit is enkel het geval wanneer
 deze representatie werd overschreven. Wanneer de vlag geactiveerd wordt zal de
 (representatie van het object) van de returnwaarde vergeleken worden met de
