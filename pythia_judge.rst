@@ -599,7 +599,7 @@ moet echter wel gedetecteerd worden. De gededecteerde taal is de taal met de
 meeste woorden in de globale scope als er een met meer dan 0. Als er geen
 woorden gevonden worden wordt er geen vertaling of selectie uitgevoerd.
 
-Selectie is het proces dat er rekening mee houd dat niet alles met korte zinnetjes vertaald kan worden. Of soms wil je sommige dingen enkel uitvoeren voor gebruikers van een bepaalde taal. Het volgende voorbeeld brengt meer duidelijkheid:
+Selectie is het proces dat er rekening mee houdt dat niet alles met korte zinnetjes vertaald kan worden. Of soms wil je sommige dingen enkel uitvoeren voor gebruikers van een bepaalde taal. Het volgende voorbeeld brengt meer duidelijkheid:
 
 .. code-block:: python
 
