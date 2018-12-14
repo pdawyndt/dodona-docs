@@ -418,7 +418,7 @@ om hun werking en parameters uit te leggen. In het algemeen:
 
 ``FileContentChecker``
   Kijkt of een bestand met een gegeven naam bestaat op het lokale file system en
-  of de inhoud correspondeert et dat van een ander bestand. Dit tweede bestand
+  of de inhoud correspondeert met dat van een ander bestand. Dit tweede bestand
   kan zich in het lokale file system bevinden of de inhoud kan van het block
   gehaald worden (waarbij deze laatste optie voorrang heeft).
 
