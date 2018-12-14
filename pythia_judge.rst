@@ -427,7 +427,7 @@ om hun werking en parameters uit te leggen. In het algemeen:
      worden.
 
 ``ImageRenderer``
-  Deze output processr rendert 2-dimensionale matrices als gekleurde
+  Deze output processor rendert 2-dimensionale matrices als gekleurde
   afbeeldingen. Als de output correct is zal de matrix getoond worden in de
   feedbacktabel.
 
