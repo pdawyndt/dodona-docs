@@ -1,0 +1,19 @@
+{
+  "description": {
+    "difficulty": 1.0,
+    "names": {
+      "en": "Mad Libs",
+      "nl": "Mad Libs"
+    }
+  },
+  "evaluation": {
+  },
+  "internals": {
+    "token": "EPXsPwKO66pyj7lxjr62NGo0sOGhLzjKQjh43XSCfc03gxZwEkAzRyxagbatq4I1",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  },
+  "access": "public",
+  "labels": [
+
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "description": {
+    "difficulty": 1.0,
+    "names": {
+      "nl": "Echo",
+      "en": "Echo"
+    }
+  },
+  "evaluation": {
+  },
+  "internals": {
+    "token": "ckz7kwcJWTxCLEGgH9akGbQxBmtsBlHkYiY4XZG5HHp2ntb3mJNKSdniJGnSb1cN",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  },
+  "access": "public",
+  "labels": [
+
+  ]
+}
