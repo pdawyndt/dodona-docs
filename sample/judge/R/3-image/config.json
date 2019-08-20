@@ -1,0 +1,15 @@
+{
+  "description": {
+    "names": {
+      "en": "Plot",
+      "nl": "Plot"
+    }
+  },
+  "labels": [
+
+  ],
+  "internals": {
+    "token": "0qDSrBWH4RjuDUHdrJZTVQpSfOQbF9FrMQmQOevZOscWfIkAPKYX4dto9OUSyhwx",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
+}
