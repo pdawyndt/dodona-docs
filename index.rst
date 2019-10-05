@@ -5,6 +5,8 @@
 Handleiding: Dodona
 ===================
 
+Deze pagina bevat documentatie voor het Dodona project. Deze documentatie wordt op dit moment gemigreerd naar https://dodona-edu.github.io. Voorlopig blijft de oude documentatie hier beschikbaar.
+
 .. toctree::
    :maxdepth: 1
    :caption: Inleiding
