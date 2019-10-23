@@ -8,5 +8,5 @@
   "evaluation": {
     "pythia_judge": "doctest"
   },
-  "visibility": "open"
+  "visibility": "public"
 }
