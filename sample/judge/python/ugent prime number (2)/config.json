@@ -8,5 +8,6 @@
   "evaluation": {
     "pythia_judge": "output"
   },
-  "access": "public"
+  "access": "public",
+  "author": "Team Dodona <dodona@ugent.be>"
 }
