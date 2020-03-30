@@ -5,11 +5,5 @@
       "nl": "Echo"
     }
   },
-  "internals": {
-    "token": "TQ0jkhSWAoGvYwemBnsmXD1zaOIlo2EMtJ4rS82XuFHHAZGIewKL6+AiTRffXrV/",
-    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
-  },
-  "labels": [
-
-  ]
+  "labels": []
 }

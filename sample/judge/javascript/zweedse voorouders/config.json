@@ -1,19 +1,11 @@
 {
   "description": {
-    "difficulty": 1.0,
     "names": {
       "en": "Swedish ancestors",
       "nl": "Zweedse voorouders"
     }
   },
-  "evaluation": {
-  },
-  "internals": {
-    "token": "QCsgXF+LU5EwWZSitIyxRyWiwwZxPEKK1U6H9GIA0svTa40akRa4/25YyO3LIBUe",
-    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
-  },
+  "evaluation": {},
   "access": "public",
-  "labels": [
-
-  ]
+  "labels": []
 }
