@@ -133,9 +133,14 @@ class Image {
     return this;
   }
 
-  async drawArrow(x, y) {
-    const arrow = await Jimp.read('./arrow.png');
-    await this.toDrawOn.composite(arrow, x - 90, y);
+  async drawArrow(x, y, mirror = false) {
+    let arrow = await Jimp.read('./arrow.png');
+    let dx = -90;
+    if (mirror) {
+      arrow = arrow.flip(true, false);
+      dx = 45;
+    }
+    await this.toDrawOn.composite(arrow, x + dx, y);
   }
 
   async close() {
@@ -230,6 +235,7 @@ class Wizard {
       cropSelector: null, // crops image for the specific element only
       cropPredicate: () => true,
       cropPredicateArg: null,
+      mirror: false,
     }, options);
 
     const locations = [];
@@ -284,7 +290,7 @@ class Wizard {
 
     const image = await new Image(imagePath).load();
     for (const location of locations) {
-      await image.drawArrow(location[3].x, location[3].y);
+      await image.drawArrow(location[3].x, location[3].y, options.mirror);
     }
     await image.close();
     await wait(1000);
@@ -379,24 +385,36 @@ async function enterPythonFile(wizard, filename) {
   // STAFF
   // =========================================================
 
-  console.log('staff repositories');
-  await wizard.navigate('users/2/token/staff');
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${language}/repositories/new`);
-    await wizard.screenshot('staff.repository_create.png');
-    await wizard.typeIn('#repository_name', `Example exercises ${Math.floor(Math.random() * 100).toString()}`);
-    await wizard.typeIn('#repository_remote', 'git@github.com:dodona-edu/example-exercises.git');
-    await wizard.click('button[form="new_repository"]');
-    await wait(8000); // cloning takes a while
-    await wizard.screenshot('staff.repository_created.png');
-  }
-
-
-  // console.log(`staff user management`);
-
+  // console.log('staff repositories');
+  // await wizard.navigate('users/2/token/staff');
   // for (const language of LANGUAGES) {
-  //   await wizard.navigate(`${language}/`);
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${language}/repositories/new`);
+  //   await wizard.screenshot('staff.repository_create.png');
+  //   await wizard.typeIn('#repository_name', `Example exercises ${Math.floor(Math.random() * 100).toString()}`);
+  //   await wizard.typeIn('#repository_remote', 'git@github.com:dodona-edu/example-exercises.git');
+  //   await wizard.click('button[form="new_repository"]');
+  //   await wait(8000); // cloning takes a while
+  //   await wizard.screenshot('staff.repository_created.png');
+  // }
+
+
+  console.log(`staff user management`);
+  await wizard.navigate('users/2/token/staff');
+
+   for (const language of LANGUAGES) {
+     wizard.setLanguage(language);
+     await wizard.navigate(`${language}/`);
+     await wait(1000);
+     await wizard.screenshot('staff.admin_menu_location.png',
+     {
+       pointToSelectors: ['button[aria-controls="drawer"]'],
+       mirror: true
+     });
+     await wait(1000);
+     await wizard.click('button[aria-controls="drawer"]');
+     await wait(1000);
+     await wizard.screenshot('staff.admin_menu.png');
 
   //   await wizard.screenshot(`../images/staff.admin_menu.${language}.png`, {
   //     pointToSelectors: [`a.dropdown-toggle`],
@@ -447,7 +465,7 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.screenshot(`../images/staff.user_edit_permission.${language}.png`, {
   //     pointToSelectors: ['select#user_permission'],
   //   });
-  // }
+  }
 
   // await wizard.navigate(`nl/users/`);
   // await wizard.page.evaluate(() => {
