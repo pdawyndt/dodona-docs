@@ -49,35 +49,35 @@ const SERIES = {
       deadline: null,
       exercises: [
         'Echo',
-        'Alfabetisch',
+        'ISBN',
       ]
     },
     {
-      title: 'Loops',
+      title: 'Lussen',
       visibility: 'hidden',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'Klinkers tellen',
-        'Algoritme van Euclides',
+        'Echo JS',
+        'Echo bash',
       ]
     },
     {
-      title: 'Control structures',
+      title: 'Controlestructuren',
       visibility: 'open',
       deadline: '2018-08-01 12:00',
       exercises: [
-        'reeks02/ISBN',
-        'Four-card problem',
+        'Echo',
+        'Echo R',
       ],
     },
     {
-      title: 'Expressions',
+      title: 'Expressies',
       visibility: 'open',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'reeks01/ISBN',
-        'Curling',
-        'Som van twee getallen',
+        'Echo Java',
+        'Echo Haskell',
+        'Echo Prolog',
       ],
     },
   ],
@@ -88,7 +88,7 @@ const SERIES = {
       deadline: null,
       exercises: [
         'Echo',
-        'Alphabetical',
+        'ISBN',
       ]
     },
     {
@@ -96,8 +96,8 @@ const SERIES = {
       visibility: 'hidden',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'Counting vowels',
-        'Euclidean algorithm',
+        'Echo JS',
+        'Echo bash',
       ]
     },
     {
@@ -105,8 +105,8 @@ const SERIES = {
       visibility: 'open',
       deadline: '2018-08-01 12:00',
       exercises: [
-        'reeks02/ISBN',
-        'Vierkaartenprobleem',
+        'Echo',
+        'Echo R',
       ],
     },
     {
@@ -114,9 +114,9 @@ const SERIES = {
       visibility: 'open',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'reeks01/ISBN',
-        'Curling',
-        'Sum of two integers',
+        'Echo Java',
+        'Echo Haskell',
+        'Echo Prolog',
       ],
     },
   ]
@@ -588,147 +588,145 @@ async function enterPythonFile(wizard, filename) {
      });
   }
 
-  // console.log('staff series');
+  console.log('staff series');
+  //await wizard.navigate('users/2/token/staff');
+  const series_urls = {
+     nl: {},
+     en: {},
+  };
 
-  // const series_urls = {
-  //   nl: {},
-  //   en: {},
-  // };
-
-  // for (const language of LANGUAGES) {
-  //   for (const series of SERIES[language]) {
-  //     await wizard.navigate(course_urls.OPEN[language] + 'series/new/');
-  //     await wizard.typeIn(`input#series_name`, series.title);
-  //     await wizard.select(`select#series_visibility`, series.visibility);
-  //     await wizard.page.evaluate((deadline) => {
-  //       document.querySelector('input#series_deadline').value = deadline;
-  //     }, series.deadline);
-
-
-  //     await wizard.click('button[form="new_series"]');
-  //     await wizard.waitForNavigation();
-
-  //     series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
-
-  //     for (const exercise of series.exercises) {
-  //       await wizard.page.evaluate(() => document.querySelector('#filter-query').value = '');
-  //       await wizard.typeIn('#filter-query', exercise);
-  //       await wait(500);
-  //       await wizard.click('a.add-exercise');
-  //     }
-
-  //     await wizard.click('button[form^="edit_series_"]');
-  //     await wizard.waitForNavigation();
-  //   }
-
-  //   await wizard.navigate(course_urls.OPEN[language]);
-  //   await wizard.screenshot(`../images/staff.course_series_new_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/series/new/"]`],
-  //   });
-
-  //   await wizard.scrollToBottom();
-  //   await wizard.screenshot(`../images/staff.course_series_hidden_info.${language}.png`, {
-  //     pointToSelectors: [`div.alert-info`],
-  //     pointPredicate: (elem, content) => elem.innerHTML === content,
-  //     pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_HIDDEN_INFO,
-  //   });
-
-  //   await wizard.scrollToBottom();
-  //   await wizard.screenshot(`../images/staff.course_series_closed_info.${language}.png`, {
-  //     pointToSelectors: [`div.alert-info`],
-  //     pointPredicate: (elem, content) => elem.innerHTML === content,
-  //     pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_CLOSED_INFO,
-  //   });
-
-  //   await wizard.navigate(series_urls[language]['hidden'] + 'edit/');
-  //   await wizard.scrollTo(`a[href$="/reset_token/?type=access_token"]`);
-
-  //   await wizard.screenshot(`../images/staff.series_hidden_link.${language}.png`, {
-  //     pointToSelectors: ['input#access_token'],
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_hidden_link_copy.${language}.png`, {
-  //     pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_hidden_link_reset.${language}.png`, {
-  //     pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
-  //   });
-
-  //   await wizard.navigate(series_urls[language]['open'] + 'edit/');
-  //   await wizard.scrollToBottom();
-  //   await wizard.typeIn('input#filter-query', 'Body-mass index');
-  //   await wait(500);
-  //   await wizard.screenshot(`../images/staff.series_search_exercises.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.series_add_exercise.${language}.png`, {
-  //     pointToSelectors: [`a.add-exercise`],
-  //     pointPredicate: () => {
-  //       if (document.first) {
-  //         return false;
-  //       }
-  //       document.first = true;
-  //       return true;
-  //     }
-  //   });
-  //   await wait(300);
-  //   await wizard.screenshot(`../images/staff.series_remove_exercise.${language}.png`, {
-  //     pointToSelectors: [`a.remove-exercise`],
-  //     pointPredicate: () => {
-  //       if (document.second) {
-  //         return false;
-  //       }
-  //       document.second = true;
-  //       return true;
-  //     }
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_move_exercise.${language}.png`, {
-  //     pointToSelectors: ['div.drag-handle'],
-  //     pointPredicate: () => {
-  //       if (document.third) {
-  //         return false;
-  //       }
-  //       document.third = true;
-  //       return true;
-  //     }
-  //   });
-
-  //   await wizard.navigate(course_urls.OPEN[language] + 'series/new/');
-
-  //   await wizard.screenshot(`../images/staff.course_series_new.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.course_series_new_cancel.${language}.png`, {
-  //     pointToSelectors: [`a[href="${course_urls.OPEN[language].replace('http://dodona.localhost:3000', '')}"]`],
-  //   });
-
-  //   await wizard.screenshot(`../images/staff.course_series_new_submit.${language}.png`, {
-  //     pointToSelectors: [`button[form="new_series"]`],
-  //   });
-
-  //   await wizard.click(`button[data-toggle=""]`, elem => !!elem.querySelector('span.glyphicon-calendar'));
-  //   await wait(200);
-  //   await wizard.screenshot(`../images/staff.course_series_calendar_open.${language}.png`, {
-  //     pointToSelectors: [`button[data-toggle=""] span.glyphicon-calendar`],
-  //   });
-
-  //   await wizard.click('span.flatpickr-day.today');
-  //   await wait(200);
-
-  //   await wizard.screenshot(`../images/staff.course_series_calendar_clear.${language}.png`, {
-  //     pointToSelectors: [`button[data-clear=""] span.glyphicon-remove`],
-  //   });
-
-  //   await wizard.navigate(`${series_urls[language]['open']}/edit`);
-
-  //   await wizard.screenshot(`../images/staff.series_edit_submit.${language}.png`, {
-  //     pointToSelectors: [`button[form^="edit_series_"]`]
-  //   });
-
-  //   await wizard.screenshot(`../images/staff.series_edit.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.series_edit_cancel.${language}.png`, {
-  //     pointToSelectors: ['div.crumb a[href*="/series/"]'],
-  //   });
-
-  //   await wizard.navigate(course_urls.OPEN[language]);
+  for (const language of LANGUAGES) {
+     for (const series of SERIES[language]) {
+       await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
+       await wizard.typeIn(`input#series_name`, series.title);
+       await wizard.select(`select#series_visibility`, series.visibility);
+       await wizard.page.evaluate((deadline) => {
+         document.querySelector('input#series_deadline').value = deadline;
+       }, series.deadline);
 
 
-  // }
+       await wizard.click('button[form="new_series"]');
+       await wait(2000);
+
+       series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
+
+       for (const exercise of series.exercises) {
+         await wizard.page.evaluate(() => document.querySelector('#filter-query').value = '');
+         await wizard.typeIn('#filter-query-tokenfield', exercise);
+         await wait(500);
+         await wizard.click('a.add-activity');
+       }
+
+       await wizard.click('button[form^="edit_series_"]');
+       await wait(2000);
+    }
+
+    await wizard.navigate(course_urls.OPEN[language]);
+    await wizard.screenshot(`staff.course_series_new_link.png`, {
+       pointToSelectors: [`a[href$="/manage_series/"]`],
+    });
+
+    await wizard.scrollToBottom();
+    await wizard.screenshot(`staff.course_series_hidden_info.png`, {
+       pointToSelectors: [`div.alert-info`],
+       pointPredicate: (elem, content) => elem.innerHTML.startsWith(content),
+       pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_HIDDEN_INFO,
+    });
+
+    await wizard.scrollToBottom();
+    await wizard.screenshot(`staff.course_series_closed_info.png`, {
+       pointToSelectors: [`div.alert-info`],
+       pointPredicate: (elem, content) => elem.innerHTML === content,
+       pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_CLOSED_INFO,
+    });
+
+    await wizard.navigate(series_urls[language]['hidden'] + 'edit/');
+    await wizard.scrollTo(`#access_token]`);
+
+    await wizard.screenshot(`staff.series_hidden_link.png`, {
+       pointToSelectors: ['#access_token'],
+    });
+    await wizard.screenshot(`staff.series_hidden_link_copy.png`, {
+       pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
+     });
+    await wizard.screenshot(`staff.series_hidden_link_reset.png`, {
+       pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
+    });
+
+    await wizard.navigate(series_urls[language]['open'] + 'edit/');
+    await wizard.scrollToBottom();
+    await wizard.typeIn('input#filter-query-token', 'Body-mass index');
+    await wait(500);
+    await wizard.screenshot(`staff.series_search_exercises.png`);
+    await wizard.screenshot(`staff.series_add_exercise.png`, {
+      pointToSelectors: [`a.add-exercise`],
+      pointPredicate: () => {
+        if (document.first) {
+          return false;
+        }
+        document.first = true;
+        return true;
+      }
+    });
+    await wait(300);
+    await wizard.screenshot(`staff.series_remove_exercise.png`, {
+    pointToSelectors: [`a.remove-exercise`],
+    pointPredicate: () => {
+         if (document.second) {
+           return false;
+         }
+         document.second = true;
+         return true;
+       }
+   });
+   await wizard.screenshot(`staff.series_move_exercise.png`, {
+     pointToSelectors: ['div.drag-handle'],
+     pointPredicate: () => {
+        if (document.third) {
+            return false;
+        }
+        document.third = true;
+        return true;
+      }
+    });
+
+    await wizard.navigate(course_urls.OPEN[language] + 'series/new/');
+
+    await wizard.screenshot(`staff.course_series_new.png`);
+    await wizard.screenshot(`staff.course_series_new_cancel.png`, {
+        pointToSelectors: [`a[href="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
+    });
+
+    await wizard.screenshot(`staff.course_series_new_submit.${language}.png`, {
+        pointToSelectors: [`button[form="new_series"]`],
+    });
+
+    await wizard.click(`button[data-toggle=""]`, elem => !!elem.querySelector('i.mdi-calendar'));
+    await wait(200);
+    await wizard.screenshot(`staff.course_series_calendar_open.png`, {
+      pointToSelectors: [`button[data-toggle=""] i.mdi-calendar`],
+    });
+
+    await wizard.click('span.flatpickr-day.today');
+    await wait(200);
+
+    await wizard.screenshot(`staff.course_series_calendar_clear.png`, {
+        pointToSelectors: [`button[data-clear=""] i.mdi-remove`],
+    });
+
+    await wizard.navigate(`${series_urls[language]['open']}/edit`);
+
+    await wizard.screenshot(`staff.series_edit_submit.png`, {
+        pointToSelectors: [`button[form^="edit_series_"]`]
+    });
+
+    await wizard.screenshot('staff.series_edit.png');
+    await wizard.screenshot('staff.series_edit_cancel.png', {
+        pointToSelectors: ['div.crumb a[href*="/series/"]'],
+    });
+
+    await wizard.navigate(course_urls.OPEN[language], useBase = false);
+  }
 
   // =========================================================
   // STUDENT
