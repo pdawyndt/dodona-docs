@@ -522,7 +522,6 @@ async function enterPythonFile(wizard, filename) {
   //       .join('');
   // });
 
-  // await wait(1000);
 
   // await wizard.screenshot('staff_registration_icons/make_course_admin.png', {
   //    cropSelector: 'i.mdi-school :not(.mdi-icons-strikethrough)'
@@ -734,9 +733,9 @@ async function enterPythonFile(wizard, filename) {
   // =========================================================
   // STUDENT
   // =========================================================
-
+  // await wizard.navigate('nl/users/1/token/zeus');
+  // await wizard.navigate('nl/users/stop_impersonating/');
   // await wizard.navigate('nl/users/3/impersonate');
-
   // console.log('homepage');
 
   // for (const language of LANGUAGES) {
@@ -745,36 +744,32 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.screenshot(`../images/student.homepage.${language}.png`);
 
   //   await wizard.screenshot(`../images/student.navigate_to_homepage.${language}.png`, {
-  //     pointToSelectors: ['a.navbar-brand'],
+  //     pointToSelectors: ['a.brand'],
   //   });
 
   //   await wizard.screenshot(`../images/student.explore_courses.${language}.png`, {
   //     pointToSelectors: ['a[href$="/courses/"]'],
   //   });
 
-  //   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+  //   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
   //   await wizard.screenshot(`../images/student.user_menu.${language}.png`, {
-  //     pointToSelectors: ['li.dropdown ul.dropdown-menu'],
-  //     pointPredicate: elem => !!elem.querySelector('a[href*="/users/sign_out/"]'),
+  //     pointToSelectors: ['ul.dropdown-menu'],
+  //     pointPredicate: elem => !!elem.querySelector('a[href*="/sign_out/"]'),
   //   });
 
   //   await wizard.screenshot(`../images/student.user_menu_my_profile.${language}.png`, {
-  //     pointToSelectors: ['li.dropdown ul.dropdown-menu a[href$="/users/3/"]'],
+  //     pointToSelectors: [`li.dropdown ul.dropdown-menu a[href$="/${language}/users/3/"]`],
   //   });
 
   //   await wizard.screenshot(`../images/student.sign_out.${language}.png`, {
-  //     pointToSelectors: ['a[href*="/users/sign_out/"]'],
+  //     pointToSelectors: ['a[href*="/sign_out/"]'],
   //   });
-
   // }
-
-  // console.log('profile');
 
   // for (const language of LANGUAGES) {
   //   await wizard.navigate(`${language}/users/3/`);
   //   await wizard.screenshot(`../images/student.edit_profile.${language}.png`, {
-  //     pointToSelectors: ['a[href$="/users/3/edit/"]'],
-  //     pointPredicate: elem => !!elem.querySelector('span.glyphicon-pencil'),
+  //     pointToSelectors: [`a[href$="/${language}/users/3/edit/"]`],
   //   });
 
   //   await wizard.navigate(`${language}/users/3/edit/`);
@@ -782,10 +777,6 @@ async function enterPythonFile(wizard, filename) {
   //     pointToSelectors: ['select#user_time_zone']
   //   });
   // }
-
-  // await wizard.page.evaluate(() => {
-  //   document.querySelector('select#user_time_zone').value = 'Seoul';
-  // });
 
   // await wizard.click('button.btn-primary[form*="edit_user_"]');
   // await wait(1000);
@@ -810,7 +801,7 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.navigate(`${language}/courses/`);
   //   await wizard.screenshot(`../images/student.courses.${language}.png`);
 
-  //   await wizard.navigate(`${course_urls.OPEN[language]}`);
+  //   await wizard.navigate(`${course_urls.OPEN[language]}`, true);
   //   await wizard.screenshot(`../images/student.course.${language}.png`);
 
   //   await wizard.screenshot(`../images/student.breadcrumb_course.${language}.png`, {
@@ -867,7 +858,7 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.screenshot(`../images/student.homepage_after_registration.${language}.png`);
 
   //   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
-  //   await new Promise(resolve => setTimeout(resolve, 1000));
+  //   await wait(1000);
   //   await wizard.screenshot(`../images/student.my_courses.${language}.png`, {
   //     pointToSelectors: ['li.dropdown-header'],
   //     pointPredicate: (elem, content) => elem.textContent === content,
@@ -941,7 +932,7 @@ async function enterPythonFile(wizard, filename) {
   //     pointToSelectors: ['a#exercise-submission-link'],
   //   });
 
-  //   await wizard.navigate(`${language}/submissions/${submissions}/`);
+  //   await wizard.navigate(`http://dodona.localhost:3000/${language}/submissions/${submissions}/`);
   //   await wizard.screenshot(`../images/student.exercise_feedback_correct_page.${language}.png`);
 
   //   await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Curling']}/`);
@@ -961,7 +952,7 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.scrollToBottom();
   //   await wizard.screenshot(`../images/student.deadline_series.${language}.png`);
 
-  //   await wizard.navigate(`?locale=${language}`);
+  //   await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`);
   //   await wizard.screenshot(`../images/student.course_submissions.${language}.png`, {
   //     pointToSelectors: ['a[href*="submissions/?course_id="]'],
   //   });
@@ -987,7 +978,7 @@ async function enterPythonFile(wizard, filename) {
   //     },
   //   });
 
-  //   await wizard.navigate(`${language}/submissions/`);
+  //   await wizard.navigate(`http://dodona.localhost:3000/${language}/submissions/`);
   //   await wizard.screenshot(`../images/student.all_submissions.${language}.png`);
 
   //   await wizard.screenshot(`../images/student.submissions_to_exercise_feedback.${language}.png`, {
@@ -1014,7 +1005,7 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.screenshot(`../images/student.deadline_series_warning.${language}.png`);
   // }
 
-  // await wizard.navigate('nl/submissions');
+  // await wizard.navigate('http://dodona.localhost:3000/nl/submissions');
   // await wizard.page.evaluate(() => {
   //   document.querySelector('body').innerHTML =
   //     '<p><span class="submission-status glyphicon glyphicon-minus colored-default"></span></p>' +
@@ -1078,8 +1069,8 @@ async function enterPythonFile(wizard, filename) {
   //   cropSelector: '.glyphicon-ok.colored-correct'
   // });
 
-  // await wizard.navigate('nl/users/stop_impersonating/');
-  // await wizard.navigate('nl/users/2/impersonate/');
+  // await wizard.navigate('http://dodona.localhost:3000/nl/users/stop_impersonating/');
+  // await wizard.navigate('http://dodona.localhost:3000/nl/users/2/impersonate/');
 
   // for (const language of LANGUAGES) {
   //   await wizard.navigate(`${series_urls[language]['open']}scoresheet/`);
@@ -1120,6 +1111,21 @@ async function enterPythonFile(wizard, filename) {
   //   await wizard.screenshot(`../images/staff.feedback_evaluate.${language}.png`, {
   //     pointToSelectors: [`a[href$="/evaluate/"]`],
   //   });
+
+  //   await wizard.navigate(`${course_urls.OPEN[language]}exercises/${exerciseNamesToIDs[language]['ISBN']}/submissions/`);
+  //   await wizard.typeIn(`input#filter-query`, 'rpurple');
+  //   await wizard.screenshot(`../images/staff.exercise_submissions_search.${language}.png`);
+  //   await wizard.screenshot(`../images/staff.exercise_submissions_user_link.${language}.png`, {
+  //     pointToSelectors: [`a[href$="/users/3/submissions/"]`],
+  //     pointPredicate: () => {
+  //       if (document.first) {
+  //         return false;
+  //       }
+  //       document.first = true;
+  //       return true;
+  //     }
+  //   });
+  // }
 
   //   await wizard.navigate(`${course_urls.OPEN[language]}exercises/${exerciseNamesToIDs[language]['ISBN']}/submissions/`);
   //   await wizard.typeIn(`input#filter-query`, 'rpurple');
