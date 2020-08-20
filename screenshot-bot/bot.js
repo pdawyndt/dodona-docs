@@ -3,6 +3,8 @@ const Jimp = require('jimp');
 const process = require('process');
 const fs = require('fs');
 
+const BASE_URL = 'http://dodona.localhost:3000/';
+const IMAGE_FOLDER_PATH = '../images/';
 const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   nl: {
@@ -347,13 +349,12 @@ async function enterPythonFile(wizard, filename) {
 }
 
 (async () => {
-  console.log('Make sure Dodona is running locally on port 3000 with a clean database\n' +
-    'and the production stylesheet and that the user is logged in by default (as admin).\n');
-  //await waitForInput();
+  console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database\n'
+    and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
-  const wizard = await new Wizard('http://dodona.localhost:3000/', '../images/').launch();
+  const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
-  wizard.blockElement('footer.footer');
+  wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
 
   // // =========================================================
   // // SIGNED OUT
@@ -486,7 +487,7 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.screenshot(`staff.course_edit.png`);
 
-    await wizard.screenshot(`staff.course_edit_cancel.${language}.png`, {
+    await wizard.screenshot(`staff.course_edit_cancel.png`, {
        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
     });
 
@@ -509,7 +510,7 @@ async function enterPythonFile(wizard, filename) {
     });
 
     await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`staff.courses_hidden_course.${language}.png`, {
+    await wizard.screenshot(`staff.courses_hidden_course.png`, {
       pointToSelectors: ['i.mdi-eye-off-outline']
     });
   }
@@ -588,7 +589,6 @@ async function enterPythonFile(wizard, filename) {
      });
   }
 
-  console.log(course_urls);
   console.log('staff series');
   //await wizard.navigate('users/2/token/staff');
   const series_urls = {
@@ -611,7 +611,6 @@ async function enterPythonFile(wizard, filename) {
 
        series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
        await wait(1000);
-       console.log(series_urls);
        for (const exercise of series.exercises) {
          await wizard.page.evaluate(() => document.querySelector('#filter-query-tokenfield').value = '');
          await wizard.typeIn('#filter-query-tokenfield', exercise);
@@ -681,10 +680,10 @@ async function enterPythonFile(wizard, filename) {
         pointToSelectors: [`button[form="new_series"]`],
     });
 
-    await wizard.click(`i.mdi-calendar-blank`);
+    await wizard.click('button.btn-default[data-toggle]');
     await wait(200);
     await wizard.screenshot(`staff.course_series_calendar_open.png`, {
-      pointToSelectors: [`i.mdi-calendar-blank`],
+      pointToSelectors: ['button.btn-default[data-toggle]'],
     });
 
     await wizard.click('span.flatpickr-day.today');
