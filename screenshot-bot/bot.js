@@ -674,6 +674,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`staff.course_series_new.png`);
     await wizard.screenshot(`staff.course_series_new_cancel.png`, {
         pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
+        mirror: true,
     });
 
     await wizard.screenshot(`staff.course_series_new_submit.png`, {
