@@ -49,35 +49,35 @@ const SERIES = {
       deadline: null,
       exercises: [
         'Echo',
-        'Alfabetisch',
+        'ISBN',
       ]
     },
     {
-      title: 'Loops',
+      title: 'Lussen',
       visibility: 'hidden',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'Klinkers tellen',
-        'Algoritme van Euclides',
+        'Echo JS',
+        'Echo bash',
       ]
     },
     {
-      title: 'Control structures',
+      title: 'Controlestructuren',
       visibility: 'open',
       deadline: '2018-08-01 12:00',
       exercises: [
-        'reeks02/ISBN',
-        'Four-card problem',
+        'Echo',
+        'Echo R',
       ],
     },
     {
-      title: 'Expressions',
+      title: 'Expressies',
       visibility: 'open',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'reeks01/ISBN',
-        'Curling',
-        'Som van twee getallen',
+        'Echo Java',
+        'Echo Haskell',
+        'Echo Prolog',
       ],
     },
   ],
@@ -88,7 +88,7 @@ const SERIES = {
       deadline: null,
       exercises: [
         'Echo',
-        'Alphabetical',
+        'ISBN',
       ]
     },
     {
@@ -96,8 +96,8 @@ const SERIES = {
       visibility: 'hidden',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'Counting vowels',
-        'Euclidean algorithm',
+        'Echo JS',
+        'Echo bash',
       ]
     },
     {
@@ -105,8 +105,8 @@ const SERIES = {
       visibility: 'open',
       deadline: '2018-08-01 12:00',
       exercises: [
-        'reeks02/ISBN',
-        'Vierkaartenprobleem',
+        'Echo',
+        'Echo R',
       ],
     },
     {
@@ -114,9 +114,9 @@ const SERIES = {
       visibility: 'open',
       deadline: '2018-10-10 12:00',
       exercises: [
-        'reeks01/ISBN',
-        'Curling',
-        'Sum of two integers',
+        'Echo Java',
+        'Echo Haskell',
+        'Echo Prolog',
       ],
     },
   ]
@@ -133,9 +133,14 @@ class Image {
     return this;
   }
 
-  async drawArrow(x, y) {
-    const arrow = await Jimp.read('./arrow.png');
-    await this.toDrawOn.composite(arrow, x - 90, y);
+  async drawArrow(x, y, mirror = false) {
+    let arrow = await Jimp.read('./arrow.png');
+    let dx = -90;
+    if (mirror) {
+      arrow = arrow.flip(true, false);
+      dx = 45;
+    }
+    await this.toDrawOn.composite(arrow, x + dx, y);
   }
 
   async close() {
@@ -204,8 +209,8 @@ class Wizard {
   async navigate(url, useBase = true) {
     const finalUrl = useBase ? this.baseUrl + url : url;
     await this.page.goto(finalUrl);
-    await wait(1000);
     await this.removeBlockedElements();
+    await wait(1000);
   }
 
   async scrollTo(selector) {
@@ -229,6 +234,7 @@ class Wizard {
       cropSelector: null, // crops image for the specific element only
       cropPredicate: () => true,
       cropPredicateArg: null,
+      mirror: false,
     }, options);
 
     const locations = [];
@@ -282,7 +288,7 @@ class Wizard {
 
     const image = await new Image(imagePath).load();
     for (const location of locations) {
-      await image.drawArrow(location[3].x, location[3].y);
+      await image.drawArrow(location[3].x, location[3].y, options.mirror);
     }
     await image.close();
   }
@@ -388,77 +394,6 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.repository_created.png');
   }
 
-
-  // console.log(`staff user management`);
-
-  // for (const language of LANGUAGES) {
-  //   await wizard.navigate(`${language}/`);
-
-  //   await wizard.screenshot(`../images/staff.admin_menu.${language}.png`, {
-  //     pointToSelectors: [`a.dropdown-toggle`],
-  //     pointPredicate: (elem, content) => elem.innerText === content + ' ',
-  //     pointPredicateArg: TRANSLATIONS[language]['ADMIN'],
-  //   });
-
-  //   await wizard.click('li.dropdown',
-  //     (elem, content) =>
-  //       !!elem.querySelector('a.dropdown-toggle') && elem.querySelector('a.dropdown-toggle').innerText === content + ' ',
-  //     TRANSLATIONS[language]['ADMIN'],
-  //   );
-
-  //   await wizard.screenshot(`../images/staff.admin_menu_users.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/users/"]`],
-  //   });
-
-  //   await wizard.navigate(`${language}/users/`);
-
-  //   await wizard.screenshot(`../images/staff.users.${language}.png`);
-
-  //   await wizard.typeIn(`input#filter-query`, 'rebecca');
-
-  //   await wait(2000);
-
-  //   await wizard.screenshot(`../images/staff.users_filtered.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.users_filtered_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/users/3/"]`],
-  //   });
-  //   await wizard.screenshot(`../images/staff.users_filtered_edit_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/users/3/edit/"]`],
-  //   });
-  //   await wizard.screenshot(`../images/staff.users_filtered_impersonate_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/users/3/impersonate/"]`]
-  //   });
-
-  //   await wizard.navigate(`${language}/users/3/`);
-  //   await wizard.screenshot(`../images/staff.user_edit_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/users/3/edit/"]`],
-  //   });
-
-  //   await wizard.screenshot(`../images/staff.user_impersonate_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/impersonate/"]`],
-  //   });
-
-  //   await wizard.navigate(`${language}/users/3/edit/`);
-
-  //   await wizard.screenshot(`../images/staff.user_edit_permission.${language}.png`, {
-  //     pointToSelectors: ['select#user_permission'],
-  //   });
-  // }
-
-  // await wizard.navigate(`nl/users/`);
-  // await wizard.page.evaluate(() => {
-  //   document.querySelector('body').innerHTML =
-  //     '<p><span class="glyphicon glyphicon-king"></span></p>' +
-  //     '<p><span class="glyphicon glyphicon-queen"></span></p>';
-  // });
-
-  // await wizard.screenshot('../images/role_icons/zeus.png', {
-  //   cropSelector: '.glyphicon-king'
-  // });
-  // await wizard.screenshot('../images/role_icons/staff.png', {
-  //   cropSelector: '.glyphicon-queen'
-  // });
-
   console.log('staff course management');
 
   await wizard.navigate('users/2/token/staff')
@@ -531,15 +466,16 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.click(`button[form="new_course"]`);
     await wait(1000);
+
     course_urls.OPEN[language] = wizard.page.target().url();
     await wizard.screenshot(`staff.created_course.png`);
 
     await wizard.navigate(course_urls.HIDDEN[language], useBase = false);
 
-
     await wizard.screenshot(`staff.course_edit_button.png`, {
        pointToSelectors: ['a[href$="/edit/"]'],
     });
+
     await wizard.navigate(course_urls.OPEN[language] + 'edit/', useBase = false);
 
     await wizard.screenshot(`staff.course_edit.png`);
@@ -604,147 +540,162 @@ async function enterPythonFile(wizard, filename) {
      cropSelector: 'i.mdi-delete'
   });
 
-  // console.log('staff series');
+  console.log(`staff user management`);
+  const SEEDED_MODERATED_COURSE_URL = "/courses/3/"
+  const STAFF_USERNAME = "Stijn Taff"
+  // await wizard.navigate('users/2/token/staff');
 
-  // const series_urls = {
-  //   nl: {},
-  //   en: {},
-  // };
+   for (const language of LANGUAGES) {
+     wizard.setLanguage(language);
+     await wizard.navigate(`${language}/`);
+     await wait(1000);
+     await wizard.screenshot('staff.admin_menu_location.png',
+     {
+       pointToSelectors: ['button[aria-controls="drawer"]'],
+       mirror: true
+     });
+     await wait(1000);
+     await wizard.click('button[aria-controls="drawer"]');
+     await wait(1000);
+     await wizard.screenshot('staff.admin_menu.png');
 
-  // for (const language of LANGUAGES) {
-  //   for (const series of SERIES[language]) {
-  //     await wizard.navigate(course_urls.OPEN[language] + 'series/new/');
-  //     await wizard.typeIn(`input#series_name`, series.title);
-  //     await wizard.select(`select#series_visibility`, series.visibility);
-  //     await wizard.page.evaluate((deadline) => {
-  //       document.querySelector('input#series_deadline').value = deadline;
-  //     }, series.deadline);
+     await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL);
+     await wizard.screenshot('staff.course_users.png',
+     {
+       pointToSelectors: ['i.mdi.mdi-24.mdi-account-multiple']
+     })
 
+     await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL + 'members/');
+     await wizard.screenshot('staff.users.png');
+     await wizard.typeIn(`input#filter-query-tokenfield`, 'Stijn');
 
-  //     await wizard.click('button[form="new_series"]');
-  //     await wizard.waitForNavigation();
+     await wait(2000);
+     await wizard.screenshot(`staff.users_filtered.png`);
+     await wizard.screenshot(`staff.users_filtered_link.png`, 
+     {
+       pointToSelectors: [`a[title="${STAFF_USERNAME}"]`]
+     });
+  }
 
-  //     series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
+  console.log(course_urls);
+  console.log('staff series');
+  //await wizard.navigate('users/2/token/staff');
+  const series_urls = {
+     nl: {},
+     en: {},
+  };
 
-  //     for (const exercise of series.exercises) {
-  //       await wizard.page.evaluate(() => document.querySelector('#filter-query').value = '');
-  //       await wizard.typeIn('#filter-query', exercise);
-  //       await wait(500);
-  //       await wizard.click('a.add-exercise');
-  //     }
-
-  //     await wizard.click('button[form^="edit_series_"]');
-  //     await wizard.waitForNavigation();
-  //   }
-
-  //   await wizard.navigate(course_urls.OPEN[language]);
-  //   await wizard.screenshot(`../images/staff.course_series_new_link.${language}.png`, {
-  //     pointToSelectors: [`a[href$="/series/new/"]`],
-  //   });
-
-  //   await wizard.scrollToBottom();
-  //   await wizard.screenshot(`../images/staff.course_series_hidden_info.${language}.png`, {
-  //     pointToSelectors: [`div.alert-info`],
-  //     pointPredicate: (elem, content) => elem.innerHTML === content,
-  //     pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_HIDDEN_INFO,
-  //   });
-
-  //   await wizard.scrollToBottom();
-  //   await wizard.screenshot(`../images/staff.course_series_closed_info.${language}.png`, {
-  //     pointToSelectors: [`div.alert-info`],
-  //     pointPredicate: (elem, content) => elem.innerHTML === content,
-  //     pointPredicateArg: TRANSLATIONS[language].COURSE_SERIES_CLOSED_INFO,
-  //   });
-
-  //   await wizard.navigate(series_urls[language]['hidden'] + 'edit/');
-  //   await wizard.scrollTo(`a[href$="/reset_token/?type=access_token"]`);
-
-  //   await wizard.screenshot(`../images/staff.series_hidden_link.${language}.png`, {
-  //     pointToSelectors: ['input#access_token'],
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_hidden_link_copy.${language}.png`, {
-  //     pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_hidden_link_reset.${language}.png`, {
-  //     pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
-  //   });
-
-  //   await wizard.navigate(series_urls[language]['open'] + 'edit/');
-  //   await wizard.scrollToBottom();
-  //   await wizard.typeIn('input#filter-query', 'Body-mass index');
-  //   await wait(500);
-  //   await wizard.screenshot(`../images/staff.series_search_exercises.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.series_add_exercise.${language}.png`, {
-  //     pointToSelectors: [`a.add-exercise`],
-  //     pointPredicate: () => {
-  //       if (document.first) {
-  //         return false;
-  //       }
-  //       document.first = true;
-  //       return true;
-  //     }
-  //   });
-  //   await wait(300);
-  //   await wizard.screenshot(`../images/staff.series_remove_exercise.${language}.png`, {
-  //     pointToSelectors: [`a.remove-exercise`],
-  //     pointPredicate: () => {
-  //       if (document.second) {
-  //         return false;
-  //       }
-  //       document.second = true;
-  //       return true;
-  //     }
-  //   });
-  //   await wizard.screenshot(`../images/staff.series_move_exercise.${language}.png`, {
-  //     pointToSelectors: ['div.drag-handle'],
-  //     pointPredicate: () => {
-  //       if (document.third) {
-  //         return false;
-  //       }
-  //       document.third = true;
-  //       return true;
-  //     }
-  //   });
-
-  //   await wizard.navigate(course_urls.OPEN[language] + 'series/new/');
-
-  //   await wizard.screenshot(`../images/staff.course_series_new.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.course_series_new_cancel.${language}.png`, {
-  //     pointToSelectors: [`a[href="${course_urls.OPEN[language].replace('http://dodona.localhost:3000', '')}"]`],
-  //   });
-
-  //   await wizard.screenshot(`../images/staff.course_series_new_submit.${language}.png`, {
-  //     pointToSelectors: [`button[form="new_series"]`],
-  //   });
-
-  //   await wizard.click(`button[data-toggle=""]`, elem => !!elem.querySelector('span.glyphicon-calendar'));
-  //   await wait(200);
-  //   await wizard.screenshot(`../images/staff.course_series_calendar_open.${language}.png`, {
-  //     pointToSelectors: [`button[data-toggle=""] span.glyphicon-calendar`],
-  //   });
-
-  //   await wizard.click('span.flatpickr-day.today');
-  //   await wait(200);
-
-  //   await wizard.screenshot(`../images/staff.course_series_calendar_clear.${language}.png`, {
-  //     pointToSelectors: [`button[data-clear=""] span.glyphicon-remove`],
-  //   });
-
-  //   await wizard.navigate(`${series_urls[language]['open']}/edit`);
-
-  //   await wizard.screenshot(`../images/staff.series_edit_submit.${language}.png`, {
-  //     pointToSelectors: [`button[form^="edit_series_"]`]
-  //   });
-
-  //   await wizard.screenshot(`../images/staff.series_edit.${language}.png`);
-  //   await wizard.screenshot(`../images/staff.series_edit_cancel.${language}.png`, {
-  //     pointToSelectors: ['div.crumb a[href*="/series/"]'],
-  //   });
-
-  //   await wizard.navigate(course_urls.OPEN[language]);
+  for (const language of LANGUAGES) {
+     for (const series of SERIES[language]) {
+       await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
+       await wizard.typeIn(`input#series_name`, series.title);
+       await wizard.select(`select#series_visibility`, series.visibility);
+       await wizard.page.evaluate((deadline) => {
+         document.querySelector('input#series_deadline').value = deadline;
+       }, series.deadline);
 
 
-  // }
+       await wizard.click('button[form="new_series"]');
+       await wait(2000);
+
+       series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
+       await wait(1000);
+       console.log(series_urls);
+       for (const exercise of series.exercises) {
+         await wizard.page.evaluate(() => document.querySelector('#filter-query-tokenfield').value = '');
+         await wizard.typeIn('#filter-query-tokenfield', exercise);
+         await wait(2000);
+         await wizard.click('a.add-activity');
+       }
+
+       await wizard.click('button[form^="edit_series_"]');
+       await wait(2000);
+    }
+    await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    await wizard.screenshot(`staff.course_series_new_link.png`, {
+       pointToSelectors: [`a[href$="/manage_series/"]`],
+    });
+
+    await wizard.scrollToBottom();
+    await wait(1000);
+    await wizard.screenshot(`staff.course_series_hidden_info.png`, {
+       pointToSelectors: [`div.alert.alert-info.hidden-print`]
+    });
+
+    await wizard.scrollToBottom();
+    await wait(1000);
+    await wizard.screenshot(`staff.course_series_closed_info.png`, {
+       pointToSelectors: [`div.alert.alert-info.hidden-print`],
+    });
+
+    await wizard.navigate(series_urls[language]['hidden'] + 'edit/', useBase = false);
+    await wizard.scrollTo(`#access_token`);
+
+    await wizard.screenshot(`staff.series_hidden_link.png`, {
+       pointToSelectors: ['#access_token'],
+    });
+    await wizard.screenshot(`staff.series_hidden_link_copy.png`, {
+       pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
+     });
+    await wizard.screenshot(`staff.series_hidden_link_reset.png`, {
+       pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
+    });
+
+    await wizard.navigate(series_urls[language]['open'] + 'edit/', useBase = false);
+    await wizard.scrollTo('input#filter-query-tokenfield');
+    await wait(1000);
+    await wizard.typeIn('input#filter-query-tokenfield', 'Echo Java');
+    await wait(500);
+    await wizard.screenshot(`staff.series_search_exercises.png`);
+    await wizard.screenshot(`staff.series_add_exercise.png`, {
+      pointToSelectors: [`a.add-activity`],
+    });
+    await wait(300);
+    await wizard.screenshot(`staff.series_remove_exercise.png`, {
+    pointToSelectors: [`a.remove-activity`],
+    });
+   await wizard.screenshot(`staff.series_move_exercise.png`, {
+     pointToSelectors: ['div.drag-handle'],
+     mirror: true,
+    });
+
+    await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
+
+    await wizard.screenshot(`staff.course_series_new.png`);
+    await wizard.screenshot(`staff.course_series_new_cancel.png`, {
+        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
+    });
+
+    await wizard.screenshot(`staff.course_series_new_submit.png`, {
+        pointToSelectors: [`button[form="new_series"]`],
+    });
+
+    await wizard.click(`i.mdi.mdi-calendar-blank.mdi-18`);
+    await wait(200);
+    await wizard.screenshot(`staff.course_series_calendar_open.png`, {
+      pointToSelectors: [`i.mdi-calendar-blank`],
+    });
+
+    await wizard.click('span.flatpickr-day.today');
+    await wait(200);
+
+    await wizard.screenshot(`staff.course_series_calendar_clear.png`, {
+        pointToSelectors: [`i.mdi-close`],
+    });
+
+    await wizard.navigate(`${series_urls[language]['open']}/edit`, useBase = false);
+
+    await wizard.screenshot(`staff.series_edit_submit.png`, {
+        pointToSelectors: [`button[form^="edit_series_"]`]
+    });
+
+    await wizard.screenshot('staff.series_edit.png');
+    await wizard.screenshot('staff.series_edit_cancel.png', {
+        pointToSelectors: ['div.crumb a[href*="/#series"]'],
+    });
+
+    await wizard.navigate(course_urls.OPEN[language], useBase = false);
+  }
 
   // =========================================================
   // STUDENT
@@ -879,7 +830,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`student.my_courses.${language}.png`, {
       pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
       pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
-      // mirror: true, TODO: uncomment after merge with winnie's branch
+      mirror: true, // TODO: uncomment after merge with winnie's branch
     });
 
     await wizard.navigate(`${language}/users/3/`);
