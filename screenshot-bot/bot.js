@@ -3,6 +3,8 @@ const Jimp = require('jimp');
 const process = require('process');
 const fs = require('fs');
 
+const BASE_URL = 'http://dodona.localhost:3000/';
+const IMAGE_FOLDER_PATH = '../images/';
 const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   nl: {
@@ -344,13 +346,12 @@ async function enterPythonFile(wizard, filename) {
 }
 
 (async () => {
-  console.log('Make sure Dodona is running locally on port 3000 with a clean database\n' +
-    'and the production stylesheet and that the user is logged in by default (as admin).\n');
-  //await waitForInput();
+  console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database\n'
+    and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
-  const wizard = await new Wizard('http://dodona.localhost:3000/', '../images/').launch();
+  const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
-  wizard.blockElement('footer.footer');
+  wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
 
   // // =========================================================
   // // SIGNED OUT
@@ -480,7 +481,7 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.screenshot(`staff.course_edit.png`);
 
-    await wizard.screenshot(`staff.course_edit_cancel.${language}.png`, {
+    await wizard.screenshot(`staff.course_edit_cancel.png`, {
        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
     });
 
@@ -502,7 +503,7 @@ async function enterPythonFile(wizard, filename) {
     });
 
     await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`staff.courses_hidden_course.${language}.png`, {
+    await wizard.screenshot(`staff.courses_hidden_course.png`, {
       pointToSelectors: ['i.mdi-eye-off-outline']
     });
   }
@@ -577,7 +578,6 @@ async function enterPythonFile(wizard, filename) {
      });
   }
 
-  console.log(course_urls);
   console.log('staff series');
   //await wizard.navigate('users/2/token/staff');
   const series_urls = {
@@ -600,7 +600,6 @@ async function enterPythonFile(wizard, filename) {
 
        series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
        await wait(1000);
-       console.log(series_urls);
        for (const exercise of series.exercises) {
          await wizard.page.evaluate(() => document.querySelector('#filter-query-tokenfield').value = '');
          await wizard.typeIn('#filter-query-tokenfield', exercise);
@@ -664,16 +663,17 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`staff.course_series_new.png`);
     await wizard.screenshot(`staff.course_series_new_cancel.png`, {
         pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
+        mirror: true,
     });
 
     await wizard.screenshot(`staff.course_series_new_submit.png`, {
         pointToSelectors: [`button[form="new_series"]`],
     });
 
-    await wizard.click(`i.mdi.mdi-calendar-blank.mdi-18`);
+    await wizard.click('button.btn-default[data-toggle]');
     await wait(200);
     await wizard.screenshot(`staff.course_series_calendar_open.png`, {
-      pointToSelectors: [`i.mdi-calendar-blank`],
+      pointToSelectors: ['button.btn-default[data-toggle]'],
     });
 
     await wizard.click('span.flatpickr-day.today');
@@ -842,17 +842,18 @@ async function enterPythonFile(wizard, filename) {
   }
 
   console.log('exercises');
-
+  course_urls.OPEN['en'] = 'http://dodona.localhost:3000/en/courses/216/';
+  course_urls.OPEN['nl'] = 'http://dodona.localhost:3000/nl/courses/216/';
   const exerciseNamesToIDs = {
     nl: {},
     en: {},
   };
 
   for (const language of LANGUAGES) {
-    await wizard.navigate(course_urls.OPEN[language]);
+    await wizard.navigate(course_urls.OPEN[language], false);
     exerciseNamesToIDs[language] = await wizard.page.evaluate((url) => {
-      const table = document.querySelector('.exercise-table');
-      const exercise_links = table.querySelectorAll('a[href*="/exercises/"]');
+      const table = document.querySelector('div#series-listing');
+      const exercise_links = table.querySelectorAll('a[href*="/activities/"]');
       const result = {};
       for (const link of exercise_links) {
         if (link.href.includes(`${url}series/`)) {
@@ -868,10 +869,10 @@ async function enterPythonFile(wizard, filename) {
   for (const language of LANGUAGES) {
     await wizard.navigate(course_urls.OPEN[language]);
     await wizard.screenshot(`student.course_exercise_selection.${language}.png`, {
-      pointToSelectors: [`a[href$="/exercises/${exerciseNamesToIDs[language]['ISBN']}/"]`],
+      pointToSelectors: [`a[href*="/activities/${exerciseNamesToIDs[language]['Echo Java']}/"]`],
     });
 
-    await wizard.click(`a[href$="/exercises/${exerciseNamesToIDs[language]['ISBN']}/"]`);
+    await wizard.click(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo Java']}/"]`);
     await wizard.waitForNavigation();
     await wait(500); // MathJax takes a while to initialize
     await wizard.screenshot(`student.exercise_start.${language}.png`);
@@ -900,7 +901,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: ['a#exercise-submission-link'],
     });
 
-    await wizard.navigate(`http://dodona.localhost:3000/${language}/submissions/${submissions}/`);
+    await wizard.navigate(`http://dodona.localhost:3000/${language}/submissions/${submissions}/`, false);
     await wizard.screenshot(`student.exercise_feedback_correct_page.${language}.png`);
 
     await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Curling']}/`);
@@ -1055,8 +1056,8 @@ async function enterPythonFile(wizard, filename) {
     cropSelector: '.mdi-check'
   });
 
-  await wizard.navigate('http://dodona.localhost:3000/nl/users/stop_impersonating/');
-  await wizard.navigate('http://dodona.localhost:3000/nl/users/2/impersonate/');
+  await wizard.navigate('/nl/users/stop_impersonating/');
+  await wizard.navigate('/nl/users/2/impersonate/');
 
   for (const language of LANGUAGES) {
     await wizard.navigate(`${series_urls[language]['open']}scoresheet/`);
