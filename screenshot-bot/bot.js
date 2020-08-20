@@ -7,7 +7,7 @@ const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
-    COURSES: 'Cursussen',
+    COURSES: 'Mijn Cursussen',
     COURSE_TEACHER: 'Laura Esgever',
     COURSE_SERIES_CLOSED_INFO: 'Deze reeks is niet toegankelijk voor studenten!',
     COURSE_SERIES_HIDDEN_INFO: 'Deze reeks is enkel zichtbaar voor studenten via de geheime link!',
@@ -15,7 +15,7 @@ const TRANSLATIONS = {
     HIDDEN_COURSE_NAME_INPUT: 'Geavanceerde Javascript',
     MODERATED_COURSE_DESCRIPTION_INPUT: 'Welkom op de Dodona-cursus van het opleidingsonderdeel **Algoritmen en Datastructuren**.',
     MODERATED_COURSE_NAME_INPUT: 'Algoritmen en Datastructuren',
-    MY_COURSES: 'Mijn vakken',
+    MY_COURSES: 'Cursussen',
     OPEN_COURSE_DESCRIPTION_INPUT: 'Welkom op de Dodona-cursus van het opleidingsonderdeel **Programmeren**. Deze cursus ' +
       'bevat een groot aantal Python programmeeroefeningen die voorzien zijn van automatische feedback. De oefeningen ' +
       'zijn per programmeertechniek ingedeeld in tien reeksen.',
@@ -24,7 +24,7 @@ const TRANSLATIONS = {
   },
   en: {
     ADMIN: 'Admin',
-    COURSES: 'Courses',
+    COURSES: 'My courses',
     COURSE_TEACHER: 'Timothy Eacher',
     COURSE_SERIES_CLOSED_INFO: 'This series is not accessible for students!',
     COURSE_SERIES_HIDDEN_INFO: 'This series is only visible for students using the secret link!',
@@ -505,6 +505,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.typeIn('input#course_name', TRANSLATIONS[language]['MODERATED_COURSE_NAME_INPUT']);
     await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
     await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['MODERATED_COURSE_DESCRIPTION_INPUT']);
+    await wizard.click('#course_visibility_visible_for_all');
     await wizard.click('#course_moderated_true');
 
     await wizard.click(`button[form="new_course"]`);
@@ -539,7 +540,6 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`staff.course_edit_button.png`, {
        pointToSelectors: ['a[href$="/edit/"]'],
     });
-    console.log(course_urls.OPEN[language])
     await wizard.navigate(course_urls.OPEN[language] + 'edit/', useBase = false);
 
     await wizard.screenshot(`staff.course_edit.png`);
@@ -581,11 +581,11 @@ async function enterPythonFile(wizard, filename) {
 
 
   await wizard.screenshot('staff_registration_icons/make_course_admin.png', {
-     cropSelector: 'i.mdi-school :not(.mdi-icons-strikethrough)'
+     cropSelector: 'i.mdi-school:not(.mdi-icons-strikethrough)'
   });
 
   await wizard.screenshot('staff_registration_icons/make_student.png', {
-     cropSelector: 'i.mdi-school mdi-icons-strikethrough'
+     cropSelector: 'i.mdi-school.mdi-icons-strikethrough'
   });
 
   await wizard.screenshot('staff_registration_icons/register.png', {
@@ -752,6 +752,7 @@ async function enterPythonFile(wizard, filename) {
   await wizard.navigate('nl/users/1/token/zeus');
   await wizard.navigate('nl/users/stop_impersonating/');
   await wizard.navigate('nl/users/3/impersonate');
+  wizard.blockElement('div.alert-info');
   console.log('homepage');
 
   for (const language of LANGUAGES) {
@@ -864,7 +865,7 @@ async function enterPythonFile(wizard, filename) {
       cropPredicate: elem => !!elem.querySelector('p'),
     });
 
-    await wizard.navigate(`${language}/courses/4/`);
+    await wizard.navigate(`${language}/courses/5/`);
     await wizard.screenshot(`closed_registration.${language}.png`, {
       cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
       cropPredicate: elem => !!elem.querySelector('p'),
@@ -873,18 +874,18 @@ async function enterPythonFile(wizard, filename) {
     await wizard.navigate(`?locale=${language}`);
     await wizard.screenshot(`student.homepage_after_registration.${language}.png`);
 
-    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/users/sign_out/"]'));
+    await wizard.click('button.drawer-toggle');
     await new Promise(resolve => setTimeout(resolve, 1000));
     await wizard.screenshot(`student.my_courses.${language}.png`, {
-      pointToSelectors: ['li.dropdown-header'],
-      pointPredicate: (elem, content) => elem.textContent === content,
+      pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
       pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
+      // mirror: true, TODO: uncomment after merge with winnie's branch
     });
 
     await wizard.navigate(`${language}/users/3/`);
     await wizard.screenshot(`student.profile_courses.${language}.png`, {
-      pointToSelectors: ['p'],
-      pointPredicate: (elem, content) => elem.innerText === (content + ':'),
+      pointToSelectors: ['h4'],
+      pointPredicate: (elem, content) => elem.innerText === content,
       pointPredicateArg: TRANSLATIONS[language]['COURSES'],
     });
   }
@@ -1021,68 +1022,86 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`student.deadline_series_warning.${language}.png`);
   }
 
-  await wizard.navigate('http://dodona.localhost:3000/nl/submissions');
+  await wizard.navigate('/nl/submissions');
   await wizard.page.evaluate(() => {
-    document.querySelector('body').innerHTML =
-      '<p><span class="submission-status glyphicon glyphicon-minus colored-default"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-ok colored-correct"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-remove colored-wrong"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-time colored-wrong"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-hourglass colored-default"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-flash colored-wrong"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-wrench colored-wrong"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-hdd colored-wrong"></span></p>' +
-      '<p><span class="submission-status glyphicon glyphicon-alert colored-warning"></span></p>';
-  });
+    document.querySelector('body').innerHTML = 
+        [
+          'mdi mdi-check colored-correct',              // correct
+          'mdi mdi-close colored-wrong',                // wrong
+          'mdi mdi-alarm colored-wrong',                // time limit exceeded
+          'mdi mdi-timer-sand-empty colored-default',   // running & queued
+          'mdi mdi-flash colored-wrong',                // runtime error
+          'mdi mdi-flash-circle colored-wrong',         // compilation error
+          'mdi mdi-memory colored-wrong',               // memory limit exceeded
+          'mdi mdi-script-text colored-wrong',          // output limit exceeded
+          'mdi mdi-alert colored-warning',              // internal error
+        ]
+          .map(icon => `<p><i class="mdi ${icon} mdi-18"></i></p>`)
+          .join('');
+    });
 
-  await wizard.screenshot('submission_icons/default.png', {
-    cropSelector: '.glyphicon-minus'
-  });
+  // Default has no icon in current implementation
+  // await wizard.screenshot('submission_icons/default.png', { 
+  //   cropSelector: '.glyphicon-minus'
+  // });
+
   await wizard.screenshot('submission_icons/correct.png', {
-    cropSelector: '.glyphicon-ok'
+    cropSelector: '.mdi-check'
   });
   await wizard.screenshot('submission_icons/wrong.png', {
-    cropSelector: '.glyphicon-remove'
+    cropSelector: '.mdi-close'
   });
   await wizard.screenshot('submission_icons/time_limit_exceeded.png', {
-    cropSelector: '.glyphicon-time'
+    cropSelector: '.mdi-alarm'
   });
   await wizard.screenshot('submission_icons/running.png', {
-    cropSelector: '.glyphicon-hourglass'
+    cropSelector: '.mdi-timer-sand-empty'
   });
   await wizard.screenshot('submission_icons/queued.png', {
-    cropSelector: '.glyphicon-hourglass'
+    cropSelector: '.mdi-timer-sand-empty'
   });
   await wizard.screenshot('submission_icons/runtime_error.png', {
-    cropSelector: '.glyphicon-flash'
+    cropSelector: '.mdi-flash'
   });
   await wizard.screenshot('submission_icons/compilation_error.png', {
-    cropSelector: '.glyphicon-wrench'
+    cropSelector: '.mdi-flash-circle'
   });
   await wizard.screenshot('submission_icons/memory_limit_exceeded.png', {
-    cropSelector: '.glyphicon-hdd'
+    cropSelector: '.mdi-memory'
+  });
+  await wizard.screenshot('submission_icons/output_limit_exceeded.png', {
+    cropSelector: '.mdi-script-text'
   });
   await wizard.screenshot('submission_icons/internal_error.png', {
-    cropSelector: '.glyphicon-alert'
+    cropSelector: '.mdi-alert'
   });
 
   await wizard.page.evaluate(() => {
-    document.querySelector('body').innerHTML =
-      '<p><span class="glyphicon glyphicon-ok colored-correct"></span></p>' +
-      '<p><span class="glyphicon glyphicon-remove colored-wrong"></span></p>' +
-      '<p><span class="glyphicon glyphicon-ok colored-wrong"></span></p>';
+    document.querySelector('body').innerHTML = 
+        [
+          'mdi mdi-close colored-wrong',         // wrong
+          'mdi mdi-alarm-off colored-wrong',     // Deadline gemist
+          'mdi mdi-alarm-check colored-correct', // Deadline gehaald
+          'mdi mdi-check colored-correct'        // correct
+        ]
+          .map(icon => `<p><i class="mdi ${icon} mdi-18"></i></p>`)
+          .join('');
+    });
+
+  await wizard.screenshot('course_exercise_status_icons/wrong.png', {
+    cropSelector: '.mdi-close'
   });
 
-  await wizard.screenshot('course_exercise_status_icons/red_cross.png', {
-    cropSelector: '.glyphicon-remove'
+  await wizard.screenshot('course_exercise_status_icons/after_deadline.png', {
+    cropSelector: '.mdi-alarm-off'
   });
 
-  await wizard.screenshot('course_exercise_status_icons/red_check.png', {
-    cropSelector: '.glyphicon-ok.colored-wrong'
+  await wizard.screenshot('course_exercise_status_icons/before_deadline.png', {
+    cropSelector: '.mdi-alarm-check'
   });
 
-  await wizard.screenshot('course_exercise_status_icons/green_check.png', {
-    cropSelector: '.glyphicon-ok.colored-correct'
+  await wizard.screenshot('course_exercise_status_icons/correct.png', {
+    cropSelector: '.mdi-check'
   });
 
   await wizard.navigate('http://dodona.localhost:3000/nl/users/stop_impersonating/');
