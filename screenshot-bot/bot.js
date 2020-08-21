@@ -357,27 +357,27 @@ async function enterPythonFile(wizard, filename) {
   // // SIGNED OUT
   // // =========================================================
 
-  // console.log('signed out pages');
+  console.log('signed out pages');
 
-  // for (const language of LANGUAGES) {
-  //   await wizard.navigate(`https://dodona.ugent.be/${language}`);
-  //   await wizard.screenshot(`../images/landingpage.${language}.png`);
-  //   await wizard.screenshot(`../images/login.${language}.png`, {
-  //     pointToSelectors: [`a[href="/${language}/sign_in/"]`]
-  //   });
+  for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
+    await wizard.navigate(language);
+    await wizard.screenshot('landingpage.png');
+    await wizard.screenshot('login.png', {
+      pointToSelectors: [`a[href$="/${language}/sign_in/"]`]
+    });
 
-  //   await wizard.click('li.dropdown', elem => !!elem.querySelector('span.glyphicon-globe'));
-  //   await wait(100);
-  //   await wizard.screenshot(`../images/choose_language.${language}.png`, {
-  //     pointToSelectors: ['ul.dropdown-menu']
-  //   });
+    await wizard.click('a[data-toggle="dropdown"]');
+    await wait(500);
+    await wizard.screenshot(`choose_language.png`, {
+      pointToSelectors: ['ul.dropdown-menu']
+    });
 
-  //   await wizard.navigate(`https://dodona.ugent.be/${language}/sign_in`);
-  //   await wizard.screenshot(`../images/institution.${language}.png`);
-
-  //   await wizard.navigate(`https://dodona.ugent.be/${language}/contact/`);
-  //   await wizard.screenshot(`../images/contact.${language}.png`);
-  // }
+    for (const page of ['sign_in', 'data', 'privacy', 'contact']) {
+      await wizard.navigate(`${language}/${page}`);
+      await wizard.screenshot(`${page}.png`);
+    }
+  }
 
   // =========================================================
   // STAFF
