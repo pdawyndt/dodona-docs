@@ -373,7 +373,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: ['ul.dropdown-menu']
     });
 
-    for (const page of ['sign_in', 'data', 'privacy', 'contact']) {
+    for (const page of ['sign_in', 'data', 'privacy', 'contact', 'about']) {
       await wizard.navigate(`${language}/${page}`);
       await wizard.screenshot(`${page}.png`);
     }
