@@ -612,6 +612,7 @@ async function enterPythonFile(wizard, filename) {
   };
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
      for (const series of SERIES[language]) {
        await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
        await wizard.typeIn(`input#series_name`, series.title);
@@ -638,7 +639,7 @@ async function enterPythonFile(wizard, filename) {
     }
 
     // manage series
-    await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL, useBase = false);
     await wizard.screenshot(`staff.course_manage_series_button.png`, {
        pointToSelectors: [`a[href$="/manage_series/"]`],
     });
@@ -661,7 +662,7 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.click('a[href$="type=submitted"]');
     await wait(1000);
-    await wizard.screenshot('staff.series_evaluate_start', {
+    await wizard.screenshot('staff.series_evaluate_start.png', {
       pointToSelectors: [`a[href^="/${language}/evaluations"]`]
     });
     await wizard.click('`a[href^="/${language}/evaluations"]`');
@@ -833,6 +834,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${language}/users/3/`);
     await wizard.screenshot(`student.edit_profile.${language}.png`, {
       pointToSelectors: [`a[href$="/${language}/users/3/edit/"]`],
@@ -849,6 +851,7 @@ async function enterPythonFile(wizard, filename) {
   await wizard.navigate('?locale=nl');
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`?locale=${language}`);
     await wizard.screenshot(`student.wrong_timezone.${language}.png`);
   }
