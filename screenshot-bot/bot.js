@@ -257,6 +257,7 @@ class Wizard {
       }
       if (!used) {
         console.warn(`UNUSED SELECTOR: ${selector}`);
+        return;
       }
     }
 
@@ -298,16 +299,18 @@ class Wizard {
   }
 
   async getNested(selectors){
-    let element = await this.page.$selector(selectors[0]);
-    let i = 1;
-    while(element !== null && i < selectors.length){
-      element = element.querySelector(selectors[i]);
-      i++;
+    for (let element of await this.page.$$(selectors[0])) {
+      let i = 1;
+      while(element !== null && i < selectors.length){
+        element = element.querySelector(selectors[i]);
+        i++;
+      }
+      if(element){
+        return element;
+      }
     }
-    if(!element){
-      console.warn(`Following selectors did not yield a valid element: ${selectors.join(', ')}`);
-    }
-    return element;
+    console.warn(`Following selectors did not yield a valid element: ${selectors.join(', ')}`);
+    return null;
   }
 
   async press(selector, key) {
@@ -361,7 +364,7 @@ async function enterPythonFile(wizard, filename) {
 }
 
 (async () => {
-  console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database\n'
+  console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database
     and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
@@ -517,12 +520,12 @@ async function enterPythonFile(wizard, filename) {
     // course submissions page
     await wizard.navigate(SEEDED_COURSE_URL + 'submissions', useBase = false);
     await wizard.screenshot('staff.course_submissions.png');
-    await wizard.screenshot('staff.course_submissions_filter', {
+    await wizard.screenshot('staff.course_submissions_filter.png', {
       pointToSelectors: ['i.mdi-filter-outline'],
     })
     await wizard.click('i.mdi-filter-outline');
     await wait(500);
-    await wizard.screenshot('staff.course_submissions_filtered');
+    await wizard.screenshot('staff.course_submissions_filtered.png');
 
 
     await wizard.navigate(`${language}/courses/`);
@@ -653,7 +656,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('button[form="new_evaluation"]');
     await wait(1000);
     // select users and go to real evaluation
-    await wizard.screenshot('staff.series_evaluate_select_users', {
+    await wizard.screenshot('staff.series_evaluate_select_users.png', {
       pointToSelectors: ['a[href$="type="submitted'],
     });
     await wizard.click('a[href$="type=submitted"]');
@@ -663,23 +666,41 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.click('`a[href^="/${language}/evaluations"]`');
     await wait(1500);
+    const evaluation_url = wizard.page.target().url();
+    await wizard.screenshot('staff.series_evaluate_page.png');
+  
+    //release feedback button performs a patch
+    await wizard.screenshot('staff.series_evaluate_release_feedback.png', {
+      pointToSelectors: ['a[data-method="patch"]']
+    })
 
-    await wizard.screenshot('staff.series_evaluation_page.png');
+    await wizard.scrollToBottom();
+    await wizard.screenshot('staff.series_evaluate_detail_overview.png');
     // give feedback to a user
-    await wizard.screenshot('staff.series_evaluation_goto_give_feedback.png', {
+    await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
       pointToSelectors: ['i.mdi-comment-outline'],
     });
     await wizard.click('i.mdi-comment-outline');
     await wait(2000);
-    await wizard.screenshot('staff.series_evaluation_give_feedback.png');
-    await wizard.screenshot('staff.series_evaluation_next.png', {
+    await wizard.screenshot('staff.series_evaluate_give_feedback.png');
+    await wizard.screenshot('staff.series_evaluate_next.png', {
       pointToSelectors: ['#next-feedback-button'],
     })
-    // todo select nested
-    //document.querySelector('div.user-feedback-row').querySelector('i[class^="mdi mdi-comment"]');
-
+    await wizard.screenshot('staff.series_evaluate_feedback_row.png', {
+      pointToSelectors: 'div.user-feedback-row',
+      pointPredicate: elem => !!elem.querySelector('i[class^="mdi mdi-comment"]'),
+    });
+    await wizard.screenshot('staff.series_evaluate_return.png', {
+      pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
+    });
 
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    // open manage series menu
+    await wizard.getNested(['div.card-subtitle-actions', 'a']).click();
+    await wait(500);
+    // menu action should have changed
+    await wizard.screenshot('staff.series_actions_check_evaluation.png');
+
     await wizard.scrollToBottom();
     await wait(1000);
     await wizard.screenshot(`staff.course_series_hidden_info.png`, {
