@@ -213,8 +213,8 @@ class Wizard {
     useBase = useBase && !url.startsWith('http'); // in case you forget the useBase flag while giving a valid url
     const finalUrl = useBase ? this.baseUrl + url : url;
     await this.page.goto(finalUrl);
-    await this.removeBlockedElements();
     await wait(1000);
+    await this.removeBlockedElements();
   }
 
   async scrollTo(selector) {
@@ -940,8 +940,8 @@ async function enterPythonFile(wizard, filename) {
   }
 
   console.log('exercises');
-  course_urls.OPEN['en'] = 'http://dodona.localhost:3000/en/courses/216/';
-  course_urls.OPEN['nl'] = 'http://dodona.localhost:3000/nl/courses/216/';
+  // course_urls.OPEN['en'] = 'http://dodona.localhost:3000/en/courses/216/';
+  // course_urls.OPEN['nl'] = 'http://dodona.localhost:3000/nl/courses/216/';
   const exerciseNamesToIDs = {
     nl: {},
     en: {},
