@@ -645,8 +645,11 @@ async function enterPythonFile(wizard, filename) {
     });
     // open manage series menu
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(500);
+    await wait(1000);
     await wizard.screenshot('staff.series_actions_menu.png');
+    await wizard.screenshot('staff.series_export_action.png', {
+      pointToSelectors: [`a[href^="/${language}/exports/"]`],
+    });
     // start evaluation
     await wizard.click(`a[href^="/${language}/evaluations/new"`);
     await wait(1000);
@@ -793,7 +796,28 @@ async function enterPythonFile(wizard, filename) {
         pointToSelectors: ['div.crumb a[href*="/#series"]'],
     });
 
+    // series export
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
+    await wait(1000);
+    await wizard.screenshot('staff.series_export_action.png', {
+      pointToSelectors: [`a[href^="/${language}/exports/"]`],
+    });
+    await wizard.click(`a[href^="/${language}/exports/"]`);
+    await wait(1000);
+    await wizard.screenshot('staff.series_export_exercise_choice.png');
+    await wizard.click('#check-all');
+    await wizard.screenshot('staff.series_export_exercises_chosen.png', {
+      pointToSelectors: ['#next-step'],
+    });
+    await wizard.scrollToBottom();
+    await wizard.screenshot('staff.series_export_options.png');
+    await wizard.screenshot('staff.series_export_start.png', {
+      pointToSelectors: ['button[form="download_submissions"]'],
+    });
+    await wizard.click('button[form="download_submissions"]');
+    await wait(1500);
+    await wizard.screenshot('staff.series_export_started.png');
   }
 
   // =========================================================
