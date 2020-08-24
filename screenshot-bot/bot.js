@@ -302,7 +302,7 @@ class Wizard {
     for (let element of await this.page.$$(selectors[0])) {
       let i = 1;
       while(element !== null && i < selectors.length){
-        element = element.querySelector(selectors[i]);
+        element = await element.$(selectors[i]);
         i++;
       }
       if(element){
@@ -643,7 +643,7 @@ async function enterPythonFile(wizard, filename) {
        pointToSelectors: [`a[href$="/manage_series/"]`],
     });
     // open manage series menu
-    await wizard.getNested(['div.card-subtitle-actions', 'a']).click();
+    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(500);
     await wizard.screenshot('staff.series_actions_menu.png');
     // start evaluation
@@ -657,7 +657,7 @@ async function enterPythonFile(wizard, filename) {
     await wait(1000);
     // select users and go to real evaluation
     await wizard.screenshot('staff.series_evaluate_select_users.png', {
-      pointToSelectors: ['a[href$="type="submitted'],
+      pointToSelectors: ['a[href$="type=submitted"]'],
     });
     await wizard.click('a[href$="type=submitted"]');
     await wait(1000);
@@ -696,7 +696,7 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
     // open manage series menu
-    await wizard.getNested(['div.card-subtitle-actions', 'a']).click();
+    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(500);
     // menu action should have changed
     await wizard.screenshot('staff.series_actions_check_evaluation.png');
