@@ -6,7 +6,7 @@ const fs = require('fs');
 const BASE_URL = 'http://dodona.localhost:3000/';
 const IMAGE_FOLDER_PATH = '../images/';
 const SEEDED_COURSE_URL = BASE_URL + 'courses/5/';
-const LANGUAGES = ['nl', 'en'];
+const LANGUAGES = ['nl'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
@@ -235,6 +235,7 @@ class Wizard {
     options = Object.assign({
       pointToSelectors: [], // pointTo => arrow pointing to element specified by selector
       pointPredicate: () => true,
+      pointMulti: true,
       pointPredicateArg: null,
       cropSelector: null, // crops image for the specific element only
       cropPredicate: () => true,
@@ -252,6 +253,9 @@ class Wizard {
           if (boxModel !== null) {
             locations.push(boxModel.content);
             used = true;
+            if (!options.pointMulti) {
+              break;
+            }
           }
         }
       }
@@ -444,6 +448,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('#course_visibility_hidden');
 
     await wizard.click(`button[form="new_course"]`);
+    await wizard.removeBlockedElements();
     await wait(3000);
     await wizard.screenshot(`staff.hidden_course_message.png`);
 
@@ -466,6 +471,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('#course_moderated_true');
 
     await wizard.click(`button[form="new_course"]`);
+    await wizard.removeBlockedElements();
     await wizard.screenshot(`staff.moderated_course.png`);
     course_urls.MODERATED[language] = wizard.page.target().url();
 
@@ -486,6 +492,7 @@ async function enterPythonFile(wizard, filename) {
     });
 
     await wizard.click(`button[form="new_course"]`);
+    await wizard.removeBlockedElements();
     await wait(1000);
     course_urls.OPEN[language] = wizard.page.target().url();
     await wizard.screenshot(`staff.created_course.png`);
@@ -508,6 +515,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: [`a[href$="/reset_token/"]`],
     });
     await wizard.click(`button[form*="edit_course"]`);
+    await wizard.removeBlockedElements();
     await wizard.screenshot(`staff.course_after_edit.png`);
 
     // course members page
@@ -522,6 +530,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.course_submissions.png');
     await wizard.screenshot('staff.course_submissions_filter.png', {
       pointToSelectors: ['i.mdi-filter-outline'],
+      pointMulti: false,
     })
     await wizard.click('i.mdi-filter-outline');
     await wait(500);
@@ -648,24 +657,28 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_actions_menu.png');
     // start evaluation
     await wizard.click(`a[href^="/${language}/evaluations/new"]`);
+    await wizard.removeBlockedElements();
     await wait(1000);
     await wizard.screenshot('staff.series_evaluate.png');
     await wizard.screenshot('staff.series_evaluate_start.png', {
       pointToSelectors: ['button[form="new_evaluation"]']
     });
     await wizard.click('button[form="new_evaluation"]');
-    await wait(1000);
+    await wait(2000);
+    await wizard.removeBlockedElements();
     // select users and go to real evaluation
     await wizard.screenshot('staff.series_evaluate_select_users.png', {
       pointToSelectors: ['a[href$="type=submitted"] > div.button.btn-text'],
     });
     await wizard.click('a[href$="type=submitted"]');
     await wait(1000);
+    await wizard.removeBlockedElements();
     await wizard.screenshot('staff.series_evaluate_start.png', {
       pointToSelectors: ['a.btn-primary']
     });
     await wizard.click('a.btn-primary');
     await wait(1500);
+    await wizard.removeBlockedElements();
     const evaluation_url = wizard.page.target().url();
     await wizard.screenshot('staff.series_evaluate_page.png');
   
@@ -682,6 +695,7 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.click('a', el => !!el.querySelector('i.mdi-comment-outline'));
     await wait(2000);
+    await wizard.removeBlockedElements();
     await wizard.screenshot('staff.series_evaluate_give_feedback.png');
     await wizard.screenshot('staff.series_evaluate_next.png', {
       pointToSelectors: ['#next-feedback-button'],
@@ -800,6 +814,7 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.click(`a[href^="/${language}/exports/series"]`);
     await wait(1000);
+    await wizard.removeBlockedElements();
     await wizard.screenshot('staff.series_export_exercise_choice.png');
     await wizard.click('#check-all');
     await wizard.screenshot('staff.series_export_exercises_chosen.png', {
@@ -813,6 +828,7 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.click('button[form="download_submissions"]');
     await wait(1500);
+    await wizard.removeBlockedElements();
     await wizard.screenshot('staff.series_export_started.png');
   }
 
@@ -988,8 +1004,8 @@ async function enterPythonFile(wizard, filename) {
   }
 
   // Number of submissions on a freshly seeded database.
-  let first_submission = 2308;
-  let submissions = first_submission;
+  let submissions = 2308;
+  let first_submission = 2308 + 1;
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(course_urls.OPEN[language]);
