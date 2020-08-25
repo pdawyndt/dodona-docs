@@ -125,11 +125,6 @@ const SERIES = {
   ]
 };
 
-async function elementVisible(element){
-  const boxModel = await element.boxModel();
-  return boxModel !== null;
-}
-
 class Image {
   constructor(path) {
     this.toDrawOn = null;
@@ -193,7 +188,7 @@ class Wizard {
     predicate = predicate || (() => true);
     const elements = await this.page.$$(selector);
     for (const element of elements) {
-      if (await this.page.evaluate(predicate, element, predicateArg) && await isVisible(element)) {
+      if (await this.page.evaluate(predicate, element, predicateArg)) {
         await element.click();
         await wait(1000);
         return;
@@ -295,7 +290,7 @@ class Wizard {
       path: imagePath,
       clip
     });
-
+    await wait(1000);
     const image = await new Image(imagePath).load();
     for (const location of locations) {
       await image.drawArrow(location[3].x, location[3].y, options.mirror);
