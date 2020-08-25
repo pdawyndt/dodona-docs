@@ -4,9 +4,9 @@ const process = require('process');
 const fs = require('fs');
 
 const BASE_URL = 'http://dodona.localhost:3000/';
-const IMAGE_FOLDER_PATH = './images/';
+const IMAGE_FOLDER_PATH = '../images/';
 const SEEDED_COURSE_URL = BASE_URL + 'courses/5/';
-const LANGUAGES = ['nl'];
+const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
