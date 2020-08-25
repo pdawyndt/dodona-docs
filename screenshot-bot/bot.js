@@ -213,8 +213,9 @@ class Wizard {
     useBase = useBase && !url.startsWith('http'); // in case you forget the useBase flag while giving a valid url
     const finalUrl = useBase ? this.baseUrl + url : url;
     await this.page.goto(finalUrl);
-    await wait(1000);
+    await wait(1500);
     await this.removeBlockedElements();
+    await wait(1000);
   }
 
   async scrollTo(selector) {
@@ -794,11 +795,9 @@ async function enterPythonFile(wizard, filename) {
 
     // series export
     await wizard.navigate(SEEDED_COURSE_URL, useBase = false);
-    await wait(5000);
-    await wizard.screenshot('testNav.png');
-    await wait(3000);
+    await wait(2000);
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(3000);
+    await wait(1000);
     await wizard.screenshot('staff.series_export_action.png', {
       pointToSelectors: [`a[href^="/${language}/exports/series"]`],
     });
@@ -807,8 +806,9 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_export_exercise_choice.png');
     await wizard.click('#check-all');
     await wizard.screenshot('staff.series_export_exercises_chosen.png', {
-      pointToSelectors: ['#next-step'],
+      pointToSelectors: ['#next_step'],
     });
+    await wizard.click('#next_step');
     await wizard.scrollToBottom();
     await wizard.screenshot('staff.series_export_options.png');
     await wizard.screenshot('staff.series_export_start.png', {
