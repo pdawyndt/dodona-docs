@@ -646,9 +646,6 @@ async function enterPythonFile(wizard, filename) {
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(1000);
     await wizard.screenshot('staff.series_actions_menu.png');
-    await wizard.screenshot('staff.series_export_action.png', {
-      pointToSelectors: [`a[href^="/${language}/exports/"]`],
-    });
     // start evaluation
     await wizard.click(`a[href^="/${language}/evaluations/new"]`);
     await wait(1000);
@@ -690,7 +687,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: ['#next-feedback-button'],
     })
     await wizard.screenshot('staff.series_evaluate_feedback_row.png', {
-      pointToSelectors: 'div.user-feedback-row',
+      pointToSelectors: ['div.user-feedback-row'],
       pointPredicate: elem => !!elem.querySelector('i[class^="mdi mdi-comment"]'),
     });
     await wizard.screenshot('staff.series_evaluate_return.png', {
@@ -797,6 +794,9 @@ async function enterPythonFile(wizard, filename) {
 
     // series export
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    await wait(1500);
+    await wizard.screenshot('testNav.png');
+    await wait(1000);
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(1000);
     await wizard.screenshot('staff.series_export_action.png', {
