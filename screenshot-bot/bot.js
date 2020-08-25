@@ -6,7 +6,7 @@ const fs = require('fs');
 const BASE_URL = 'http://dodona.localhost:3000/';
 const IMAGE_FOLDER_PATH = '../images/';
 const SEEDED_COURSE_URL = BASE_URL + 'courses/5/';
-const LANGUAGES = ['nl', 'en'];
+const LANGUAGES = ['nl'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
@@ -793,12 +793,12 @@ async function enterPythonFile(wizard, filename) {
     });
 
     // series export
-    await wizard.navigate(course_urls.OPEN[language], useBase = false);
-    await wait(1500);
+    await wizard.navigate(SEEDED_COURSE_URL, useBase = false);
+    await wait(5000);
     await wizard.screenshot('testNav.png');
-    await wait(1000);
+    await wait(3000);
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(1000);
+    await wait(3000);
     await wizard.screenshot('staff.series_export_action.png', {
       pointToSelectors: [`a[href^="/${language}/exports/"]`],
     });
