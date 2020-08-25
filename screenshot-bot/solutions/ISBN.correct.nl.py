@@ -1,4 +1,1 @@
-s = 0
-for i in range(1, 10):
-    s += i * int(input())
-print(s % 11)
+print(input())
