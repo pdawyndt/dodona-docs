@@ -213,8 +213,9 @@ class Wizard {
     useBase = useBase && !url.startsWith('http'); // in case you forget the useBase flag while giving a valid url
     const finalUrl = useBase ? this.baseUrl + url : url;
     await this.page.goto(finalUrl);
-    await wait(1000);
+    await wait(1500);
     await this.removeBlockedElements();
+    await wait(1000);
   }
 
   async scrollTo(selector) {
@@ -987,7 +988,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   // Number of submissions on a freshly seeded database.
-  let first_submission = 2318;
+  let first_submission = 2308;
   let submissions = first_submission;
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
