@@ -605,7 +605,6 @@ async function enterPythonFile(wizard, filename) {
   }
 
   console.log('staff series');
-  //await wizard.navigate('users/2/token/staff');
   const series_urls = {
      nl: {},
      en: {},
@@ -651,7 +650,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: [`a[href^="/${language}/exports/"]`],
     });
     // start evaluation
-    await wizard.click(`a[href^="/${language}/evaluations/new"`);
+    await wizard.click(`a[href^="/${language}/evaluations/new"]`);
     await wait(1000);
     await wizard.screenshot('staff.series_evaluate.png');
     await wizard.screenshot('staff.series_evaluate_start.png', {
@@ -668,7 +667,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_evaluate_start.png', {
       pointToSelectors: [`a[href^="/${language}/evaluations"]`]
     });
-    await wizard.click('`a[href^="/${language}/evaluations"]`');
+    await wizard.click(`div.card-actions.card-border a[href^="/${language}/evaluations"]`);
     await wait(1500);
     const evaluation_url = wizard.page.target().url();
     await wizard.screenshot('staff.series_evaluate_page.png');
@@ -678,7 +677,7 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: ['a[data-method="patch"]']
     })
 
-    await wizard.scrollToBottom();
+    await wizard.scrollTo('i.mdi-comment-outline');
     await wizard.screenshot('staff.series_evaluate_detail_overview.png');
     // give feedback to a user
     await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
@@ -823,13 +822,14 @@ async function enterPythonFile(wizard, filename) {
   // =========================================================
   // STUDENT
   // =========================================================
-  await wizard.navigate('nl/users/1/token/zeus');
+
   await wizard.navigate('nl/users/stop_impersonating/');
   await wizard.navigate('nl/users/3/impersonate');
   wizard.blockElement('div.alert-info');
   console.log('homepage');
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`, false);
 
     await wizard.screenshot(`student.homepage.${language}.png`);
@@ -873,13 +873,14 @@ async function enterPythonFile(wizard, filename) {
   await wizard.click('button.btn-primary[form*="edit_user_"]');
   await wait(200);
   await wizard.navigate('?locale=nl');
-
+  // Screenshot the wrong timezone warning
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(`?locale=${language}`);
     await wizard.screenshot(`student.wrong_timezone.${language}.png`);
   }
 
+  // Set the right timezone to get rid of the warning without accidentally hiding other warnings.
   await wizard.navigate(`nl/users/3/edit/`);
   await wizard.page.evaluate(() => {
     document.querySelector('select#user_time_zone').value = 'Brussels';
@@ -891,6 +892,7 @@ async function enterPythonFile(wizard, filename) {
   console.log('courses');
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${language}/courses/`);
     await wizard.screenshot(`student.courses.${language}.png`);
 
@@ -918,6 +920,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${course_urls.OPEN[language]}subscribe`, false);
 
     await wizard.navigate(course_urls.OPEN[language], false);
@@ -933,6 +936,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${course_urls.MODERATED[language]}subscribe/`, false);
 
     await wizard.navigate(course_urls.MODERATED[language], false);
@@ -990,8 +994,10 @@ async function enterPythonFile(wizard, filename) {
     }, course_urls.OPEN[language].replace('http://dodona.localhost:3000', ''));
   }
 
-  let submissions = 0;
+  // Number of submissions on a freshly seeded database.
+  let submissions = 2318;
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(course_urls.OPEN[language]);
     await wizard.screenshot(`student.course_exercise_selection.${language}.png`, {
       pointToSelectors: [`a[href*="/activities/${exerciseNamesToIDs[language]['Echo Java']}/"]`],
@@ -1081,6 +1087,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['ISBN']}/`);
 
     await wizard.scrollToBottom();
@@ -1157,6 +1164,7 @@ async function enterPythonFile(wizard, filename) {
     document.querySelector('body').innerHTML = 
         [
           'mdi mdi-close colored-wrong',         // wrong
+          'mdi mdi-alarm',     // Deadline gemist
           'mdi mdi-alarm-off colored-wrong',     // Deadline gemist
           'mdi mdi-alarm-check colored-correct', // Deadline gehaald
           'mdi mdi-check colored-correct'        // correct
@@ -1185,6 +1193,7 @@ async function enterPythonFile(wizard, filename) {
   await wizard.navigate('/nl/users/2/impersonate/');
 
   for (const language of LANGUAGES) {
+    wizard.setLanguage(language);
     await wizard.navigate(`${series_urls[language]['open']}scoresheet/`);
 
     await wizard.screenshot(`staff.scoresheet.${language}.png`);
