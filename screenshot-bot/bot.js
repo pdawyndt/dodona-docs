@@ -800,9 +800,9 @@ async function enterPythonFile(wizard, filename) {
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(3000);
     await wizard.screenshot('staff.series_export_action.png', {
-      pointToSelectors: [`a[href^="/${language}/exports/"]`],
+      pointToSelectors: [`a[href^="/${language}/exports/series"]`],
     });
-    await wizard.click(`a[href^="/${language}/exports/"]`);
+    await wizard.click(`a[href^="/${language}/exports/series"]`);
     await wait(1000);
     await wizard.screenshot('staff.series_export_exercise_choice.png');
     await wizard.click('#check-all');
