@@ -660,14 +660,14 @@ async function enterPythonFile(wizard, filename) {
     await wait(1000);
     // select users and go to real evaluation
     await wizard.screenshot('staff.series_evaluate_select_users.png', {
-      pointToSelectors: ['a[href$="type=submitted"]'],
+      pointToSelectors: ['a[href$="type=submitted"] > div.button.btn-text'],
     });
     await wizard.click('a[href$="type=submitted"]');
     await wait(1000);
     await wizard.screenshot('staff.series_evaluate_start.png', {
-      pointToSelectors: [`a[href^="/${language}/evaluations"]`]
+      pointToSelectors: ['a.btn-primary']
     });
-    await wizard.click(`div.card-actions.card-border a[href^="/${language}/evaluations"]`);
+    await wizard.click('a.btn-primary');
     await wait(1500);
     const evaluation_url = wizard.page.target().url();
     await wizard.screenshot('staff.series_evaluate_page.png');
@@ -683,7 +683,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
       pointToSelectors: ['i.mdi-comment-outline'],
     });
-    await wizard.click('i.mdi-comment-outline');
+    await wizard.click('a', el => !!el.querySelector('i.mdi-comment-outline'));
     await wait(2000);
     await wizard.screenshot('staff.series_evaluate_give_feedback.png');
     await wizard.screenshot('staff.series_evaluate_next.png', {
