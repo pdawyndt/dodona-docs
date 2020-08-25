@@ -4,9 +4,9 @@ const process = require('process');
 const fs = require('fs');
 
 const BASE_URL = 'http://dodona.localhost:3000/';
-const IMAGE_FOLDER_PATH = '../images/';
+const IMAGE_FOLDER_PATH = './images/';
 const SEEDED_COURSE_URL = BASE_URL + 'courses/5/';
-const LANGUAGES = ['nl', 'en'];
+const LANGUAGES = ['nl'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
@@ -370,7 +370,6 @@ async function enterPythonFile(wizard, filename) {
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
-
   // // =========================================================
   // // SIGNED OUT
   // // =========================================================
@@ -693,6 +692,18 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_evaluate_return.png', {
       pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
     });
+
+    await wizard.navigate(evaluation_url, useBase = false);
+
+    await wizard.click('a > i.mdi-dots-vertical');
+    await wizard.screenshot('staff.series_evaluate_delete.png', {
+      pointToSelectors: [`a[data-method="delete"][href^="/${language}/evaluations/"]`],
+    });
+    // prevent page confirmation prompt to block deletion
+    await wizard.page.evaluate(
+      element => element.querySelector(`a[data-method="delete"][href^="/${language}/evaluations/"]`).setAttribute('data-confirm', ''), 
+      await wizard.page.$(`a[data-method="delete"][href^="/${language}/evaluations/"]`));
+    await wizard.click(`a[data-method="delete"][href^="/${language}/evaluations/"]`);
 
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
     // open manage series menu
