@@ -5,8 +5,8 @@ const fs = require('fs');
 
 const BASE_URL = 'http://dodona.localhost:3000/';
 const IMAGE_FOLDER_PATH = '../images/';
-const SEEDED_COURSE_URL = BASE_URL + 'courses/5/';
-const LANGUAGES = ['nl'];
+const SEEDED_COURSE_URL = language => `${BASE_URL}${language}/courses/5/`;
+const LANGUAGES = ['nl', 'en'];
 const TRANSLATIONS = {
   nl: {
     ADMIN: 'Admin',
@@ -372,12 +372,12 @@ async function enterPythonFile(wizard, filename) {
     and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
+  await wizard.navigate('users/1/token/zeus');
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
   // // =========================================================
   // // SIGNED OUT
   // // =========================================================
-
   console.log('signed out pages');
 
   for (const language of LANGUAGES) {
@@ -525,7 +525,7 @@ async function enterPythonFile(wizard, filename) {
     });
 
     // course submissions page
-    await wizard.navigate(SEEDED_COURSE_URL + 'submissions', useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL(language) + 'submissions', useBase = false);
     await wizard.screenshot('staff.course_submissions.png');
     await wizard.screenshot('staff.course_submissions_filter.png', {
       pointToSelectors: ['i.mdi-filter-outline'],
@@ -645,10 +645,11 @@ async function enterPythonFile(wizard, filename) {
        await wait(2000);
     }
 
+    wizard.setLanguage(language);
     // manage series
-    await wizard.navigate(SEEDED_COURSE_URL, useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
     await wizard.screenshot(`staff.course_manage_series_button.png`, {
-       pointToSelectors: [`a[href$="/manage_series/"]`],
+      pointToSelectors: [`a[href$="/manage_series/"]`],
     });
     // open manage series menu
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
@@ -656,6 +657,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.series_actions_menu.png');
     // start evaluation
     await wizard.click(`a[href^="/${language}/evaluations/new"]`);
+    await wait(1000);
     await wizard.removeBlockedElements();
     await wait(1000);
     await wizard.screenshot('staff.series_evaluate.png');
@@ -679,8 +681,6 @@ async function enterPythonFile(wizard, filename) {
     await wait(1500);
     await wizard.removeBlockedElements();
     const evaluation_url = wizard.page.target().url();
-    await wizard.screenshot('staff.series_evaluate_page.png');
-  
     //release feedback button performs a patch
     await wizard.screenshot('staff.series_evaluate_release_feedback.png', {
       pointToSelectors: ['a[data-method="patch"]']
@@ -707,18 +707,6 @@ async function enterPythonFile(wizard, filename) {
       pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
     });
 
-    await wizard.navigate(evaluation_url, useBase = false);
-
-    await wizard.click('a > i.mdi-dots-vertical');
-    await wizard.screenshot('staff.series_evaluate_delete.png', {
-      pointToSelectors: [`a[data-method="delete"][href^="/${language}/evaluations/"]`],
-    });
-    // prevent page confirmation prompt to block deletion
-    await wizard.page.evaluate(
-      element => element.querySelector(`a[data-method="delete"][href^="/${language}/evaluations/"]`).setAttribute('data-confirm', ''), 
-      await wizard.page.$(`a[data-method="delete"][href^="/${language}/evaluations/"]`));
-    await wizard.click(`a[data-method="delete"][href^="/${language}/evaluations/"]`);
-
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
     // open manage series menu
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
@@ -726,6 +714,26 @@ async function enterPythonFile(wizard, filename) {
     // menu action should have changed
     await wizard.screenshot('staff.series_actions_check_evaluation.png');
 
+    await wizard.navigate(evaluation_url, useBase = false);
+    await wait(2000);
+    await wizard.click('a', elem => !!elem.querySelector('i.mdi-dots-vertical'));
+    await wizard.screenshot('staff.series_evaluate_delete.png', {
+      pointToSelectors: [`a[data-method="delete"][href^="/${language}/evaluations/"]`],
+    });
+
+    const deleteButtonSelector = `a[data-method="delete"][href^="/${language}/evaluations/"]`;
+    // prevent page confirmation prompt to block deletion
+    await wizard.page.evaluate(
+      (element) => element.setAttribute('data-confirm', ''), 
+      await wizard.page.$(deleteButtonSelector));
+    await wizard.click(deleteButtonSelector);
+
+    // give time to perform deletion and navigation
+    await wait(3000);
+
+    
+
+    await wizard.navigate(course_urls.OPEN[language], useBase = false);
     await wizard.scrollToBottom();
     await wait(1000);
     await wizard.screenshot(`staff.course_series_hidden_info.png`, {
@@ -817,7 +825,7 @@ async function enterPythonFile(wizard, filename) {
         pointToSelectors: ['div.crumb a[href*="/#series"]'],
     });
     // series export
-    await wizard.navigate(SEEDED_COURSE_URL, useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(1000);
     await wizard.screenshot('staff.series_export_action.png', {
@@ -1273,6 +1281,7 @@ async function enterPythonFile(wizard, filename) {
       }
     });
   }
+  
 
   await wizard.close();
 
