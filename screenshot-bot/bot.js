@@ -552,7 +552,7 @@ read_submissions = () => {
     await wizard.screenshot(`staff.course_users_admin.png`, {
        pointToSelectors: ['i.mdi-school'],
     });
-    await wizard.page.$$('a.ellipsis-overflow[href^="/nl/courses"]').then(elements => elements[2].click());
+    await wizard.page.$$(`a.ellipsis-overflow[href^="/${language}/courses"]`).then(elements => elements[2].click());
     await wait(2000);
     await wizard.screenshot('staff.user_course_overview.png');
 
