@@ -551,9 +551,10 @@ read_submissions = () => {
     await wizard.screenshot(`staff.course_users.png`);
     await wizard.screenshot(`staff.course_users_admin.png`, {
        pointToSelectors: ['i.mdi-school'],
+       pointMulti: false,
     });
     await wizard.page.$$(`a.ellipsis-overflow[href^="/${language}/courses"]`).then(elements => elements[2].click());
-    await wait(2000);
+    await wait(10000); // Wait for graphs
     await wizard.screenshot('staff.user_course_overview.png');
 
     // course submissions page
@@ -723,6 +724,7 @@ read_submissions = () => {
     // give feedback to a user
     await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
       pointToSelectors: ['i.mdi-comment-outline'],
+      pointMulti: false,
     });
     await wizard.click('a', el => !!el.querySelector('i.mdi-comment-outline'));
     await wait(2000);
@@ -785,6 +787,7 @@ read_submissions = () => {
     })
     await wizard.screenshot('staff.series_delete.png', {
       pointToSelectors: ['i.mdi-delete'],
+      pointMulti: false,
     });
     await wizard.screenshot('staff.series_edit.png', {
       pointToSelectors: ['i.mdi-pencil'],
@@ -797,10 +800,10 @@ read_submissions = () => {
        pointToSelectors: ['#access_token'],
     });
     await wizard.screenshot(`staff.series_hidden_link_copy.png`, {
-       pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
+      pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
      });
     await wizard.screenshot(`staff.series_hidden_link_reset.png`, {
-       pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
+      pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
     });
 
     await wizard.navigate(series_urls[language]['open'] + 'edit/', useBase = false);
@@ -811,14 +814,17 @@ read_submissions = () => {
     await wizard.screenshot(`staff.series_search_exercises.png`);
     await wizard.screenshot(`staff.series_add_exercise.png`, {
       pointToSelectors: [`a.add-activity`],
+      pointMulti: false,
     });
     await wait(300);
     await wizard.screenshot(`staff.series_remove_exercise.png`, {
     pointToSelectors: [`a.remove-activity`],
+      pointMulti: false,
     });
    await wizard.screenshot(`staff.series_move_exercise.png`, {
-     pointToSelectors: ['div.drag-handle'],
-     mirror: true,
+      pointToSelectors: ['div.drag-handle'],
+      mirror: true,
+      pointMulti: false,
     });
 
     await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
