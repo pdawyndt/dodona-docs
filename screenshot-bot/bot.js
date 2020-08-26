@@ -529,10 +529,10 @@ read_submissions = () => {
     await wizard.screenshot(`staff.course_edit_button.png`, {
        pointToSelectors: ['a[href$="/edit/"]'],
     });
-    await wizard.screenshot('staff.course_submissions.png', {
-      pointToSelectors: ['a[href$="/submissions/"]'],
+    await wizard.screenshot('staff.course_submissions_link.png', {
+      // duplicate invisible element so had to be really specifici
+      pointToSelectors: ['div.center > div > ul > li > a > i.submissions'],
     })
-
     await wizard.navigate(course_urls.OPEN[language] + 'edit/', useBase = false);
     await wizard.screenshot(`staff.course_edit.png`);
     await wizard.screenshot(`staff.course_edit_cancel.png`, {
