@@ -539,7 +539,7 @@ read_submissions = () => {
        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
     });
     await wizard.scrollToBottom();
-    await wizard.screenshot(`staff.registration_link_renew.png`, {
+    await wizard.screenshot(`staff.hidden_course_registration_link_renew.png`, {
       pointToSelectors: [`a[href$="/reset_token/"]`],
     });
     await wizard.click(`button[form*="edit_course"]`);
