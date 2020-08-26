@@ -372,7 +372,6 @@ async function enterPythonFile(wizard, filename) {
     and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
-  await wizard.navigate('users/1/token/zeus');
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
   // // =========================================================
@@ -447,6 +446,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('#course_visibility_hidden');
 
     await wizard.click(`button[form="new_course"]`);
+    await wait(1000);
     await wizard.removeBlockedElements();
     await wait(3000);
     await wizard.screenshot(`staff.hidden_course_message.png`);
@@ -470,6 +470,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('#course_moderated_true');
 
     await wizard.click(`button[form="new_course"]`);
+    await wait(2000);
     await wizard.removeBlockedElements();
     await wizard.screenshot(`staff.moderated_course.png`);
     course_urls.MODERATED[language] = wizard.page.target().url();
@@ -491,6 +492,7 @@ async function enterPythonFile(wizard, filename) {
     });
 
     await wizard.click(`button[form="new_course"]`);
+    await wait(1000);
     await wizard.removeBlockedElements();
     await wait(1000);
     course_urls.OPEN[language] = wizard.page.target().url();
