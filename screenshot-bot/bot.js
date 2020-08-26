@@ -371,12 +371,21 @@ async function enterPythonFile(wizard, filename) {
   console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database
     and the production stylesheet and that the user is logged in by default (as admin).\n`);
 
+  let submissions;
+  let stdin = process.openStdin();
+  stdin.addListener("data", function(d) {
+    // note:  d is an object, and when converted to a string it will
+    // end with a linefeed.  so we (rather crudely) account for that  
+    // with toString() and then trim() 
+    console.log(`you entered: ${d.toString().trim()}`);
+    submissions = parseInt(d);
+  });
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
-  // // =========================================================
-  // // SIGNED OUT
-  // // =========================================================
+  // =========================================================
+  // SIGNED OUT
+  // =========================================================
   console.log('signed out pages');
 
   for (const language of LANGUAGES) {
@@ -852,6 +861,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.removeBlockedElements();
     await wizard.screenshot('staff.series_export_started.png');
   }
+  console.log(series_urls);
 
   // =========================================================
   // STUDENT
@@ -1025,8 +1035,7 @@ async function enterPythonFile(wizard, filename) {
   }
 
   // Number of submissions on a freshly seeded database.
-  let submissions = 2308;
-  let first_submission = 2308 + 1;
+  let first_submission = submissions + 1;
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(course_urls.OPEN[language]);
