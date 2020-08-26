@@ -843,27 +843,27 @@ async function enterPythonFile(wizard, filename) {
     wizard.setLanguage(language);
     await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`, false);
 
-    await wizard.screenshot(`student.homepage.${language}.png`);
+    await wizard.screenshot(`student.homepage.png`);
 
-    await wizard.screenshot(`student.navigate_to_homepage.${language}.png`, {
+    await wizard.screenshot(`student.navigate_to_homepage.png`, {
       pointToSelectors: ['a.brand'],
     });
 
-    await wizard.screenshot(`student.explore_courses.${language}.png`, {
+    await wizard.screenshot(`student.explore_courses.png`, {
       pointToSelectors: [`a[href$="/${language}/courses/"]`],
     });
 
     await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
-    await wizard.screenshot(`student.user_menu.${language}.png`, {
+    await wizard.screenshot(`student.user_menu.png`, {
       pointToSelectors: ['ul.dropdown-menu'],
       pointPredicate: elem => !!elem.querySelector('a[href*="/sign_out/"]'),
     });
 
-    await wizard.screenshot(`student.user_menu_my_profile.${language}.png`, {
+    await wizard.screenshot(`student.user_menu_my_profile.png`, {
       pointToSelectors: [`li.dropdown ul.dropdown-menu a[href$="/${language}/users/3/"]`],
     });
 
-    await wizard.screenshot(`student.sign_out.${language}.png`, {
+    await wizard.screenshot(`student.sign_out.png`, {
       pointToSelectors: ['a[href*="/sign_out/"]'],
     });
   }
@@ -871,12 +871,12 @@ async function enterPythonFile(wizard, filename) {
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(`${language}/users/3/`);
-    await wizard.screenshot(`student.edit_profile.${language}.png`, {
+    await wizard.screenshot(`student.edit_profile.png`, {
       pointToSelectors: [`a[href$="/${language}/users/3/edit/"]`],
     });
 
     await wizard.navigate(`${language}/users/3/edit/`);
-    await wizard.screenshot(`student.edit_timezone.${language}.png`, {
+    await wizard.screenshot(`student.edit_timezone.png`, {
       pointToSelectors: ['select#user_time_zone']
     });
   }
@@ -888,7 +888,7 @@ async function enterPythonFile(wizard, filename) {
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(`?locale=${language}`);
-    await wizard.screenshot(`student.wrong_timezone.${language}.png`);
+    await wizard.screenshot(`student.wrong_timezone.png`);
   }
 
   // Set the right timezone to get rid of the warning without accidentally hiding other warnings.
@@ -905,29 +905,29 @@ async function enterPythonFile(wizard, filename) {
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
     await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`student.courses.${language}.png`);
+    await wizard.screenshot(`student.courses.png`);
 
     await wizard.navigate(`${course_urls.OPEN[language]}`, false);
-    await wizard.screenshot(`student.course.${language}.png`);
+    await wizard.screenshot(`student.course.png`);
 
-    await wizard.screenshot(`student.breadcrumb_course.${language}.png`, {
+    await wizard.screenshot(`student.breadcrumb_course.png`, {
       pointToSelectors: ['div.crumb a[href="#"]'],
     });
 
-    await wizard.screenshot(`register.${language}.png`, {
+    await wizard.screenshot(`register.png`, {
       cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
       cropPredicate: (elem, url) => !!elem.querySelector(`a[href="${url}subscribe/"]`),
       cropPredicateArg: course_urls.OPEN[language].replace('http://dodona.localhost:3000', ''),
     });
 
     await wizard.navigate(course_urls.HIDDEN[language], false);
-    await wizard.screenshot(`student.hidden_course_unregistered_denied_message.${language}.png`);
+    await wizard.screenshot(`student.hidden_course_unregistered_denied_message.png`);
 
     await wizard.navigate(course_urls.HIDDEN_REGISTRATION[language], false);
-    await wizard.screenshot(`student.hidden_course_unregistered_link_message.${language}.png`);
+    await wizard.screenshot(`student.hidden_course_unregistered_link_message.png`);
 
     await wizard.navigate(series_urls[language]['hidden'], false);
-    await wizard.screenshot(`student.hidden_series_denied_message.${language}.png`)
+    await wizard.screenshot(`student.hidden_series_denied_message.png`)
   }
 
   for (const language of LANGUAGES) {
@@ -935,12 +935,12 @@ async function enterPythonFile(wizard, filename) {
     await wizard.navigate(`${course_urls.OPEN[language]}subscribe`, false);
 
     await wizard.navigate(course_urls.OPEN[language], false);
-    await wizard.screenshot(`student.unregister.${language}.png`, {
+    await wizard.screenshot(`student.unregister.png`, {
       pointToSelectors: ['form[action$="/unsubscribe/"] input[type="submit"]'],
     });
 
     await wizard.navigate(course_urls.MODERATED[language], false);
-    await wizard.screenshot(`moderated_register.${language}.png`, {
+    await wizard.screenshot(`moderated_register.png`, {
       cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
       cropPredicate: elem => !!elem.querySelector('a[href$="/subscribe/"]'),
     });
@@ -951,30 +951,30 @@ async function enterPythonFile(wizard, filename) {
     await wizard.navigate(`${course_urls.MODERATED[language]}subscribe/`, false);
 
     await wizard.navigate(course_urls.MODERATED[language], false);
-    await wizard.screenshot(`moderated_waiting.${language}.png`, {
+    await wizard.screenshot(`moderated_waiting.png`, {
       cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
       cropPredicate: elem => !!elem.querySelector('p'),
     });
 
     await wizard.navigate(`${language}/courses/5/`);
-    await wizard.screenshot(`closed_registration.${language}.png`, {
+    await wizard.screenshot(`closed_registration.png`, {
       cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
       cropPredicate: elem => !!elem.querySelector('p'),
     });
 
     await wizard.navigate(`?locale=${language}`);
-    await wizard.screenshot(`student.homepage_after_registration.${language}.png`);
+    await wizard.screenshot(`student.homepage_after_registration.png`);
 
     await wizard.click('button.drawer-toggle');
     await new Promise(resolve => setTimeout(resolve, 1000));
-    await wizard.screenshot(`student.my_courses.${language}.png`, {
+    await wizard.screenshot(`student.my_courses.png`, {
       pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
       pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
       mirror: true, // TODO: uncomment after merge with winnie's branch
     });
 
     await wizard.navigate(`${language}/users/3/`);
-    await wizard.screenshot(`student.profile_courses.${language}.png`, {
+    await wizard.screenshot(`student.profile_courses.png`, {
       pointToSelectors: ['h4'],
       pointPredicate: (elem, content) => elem.innerText === content,
       pointPredicateArg: TRANSLATIONS[language]['COURSES'],
@@ -1010,22 +1010,22 @@ async function enterPythonFile(wizard, filename) {
     wizard.setLanguage(language);
     await wizard.navigate(course_urls.OPEN[language]);
     await wizard.scrollTo(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/"]`)
-    await wizard.screenshot(`student.course_exercise_selection.${language}.png`, {
+    await wizard.screenshot(`student.course_exercise_selection.png`, {
       pointToSelectors: [`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/"]`],
     });
 
     await wizard.click(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/"]`);
     await wait(500); // MathJax takes a while to initialize
-    await wizard.screenshot(`student.exercise_start.${language}.png`);
+    await wizard.screenshot(`student.exercise_start.png`);
 
-    await wizard.screenshot(`student.exercise_crumbs.${language}.png`, {
+    await wizard.screenshot(`student.exercise_crumbs.png`, {
       pointToSelectors: ['.crumb a']
     });
 
     await wizard.scrollToBottom();
     await enterPythonFile(wizard, `./solutions/ISBN.correct.${language}.py`);
 
-    await wizard.screenshot(`student.exercise_before_submit.${language}.png`, {
+    await wizard.screenshot(`student.exercise_before_submit.png`, {
       pointToSelectors: ['#editor-process-btn'],
     });
 
@@ -1033,17 +1033,17 @@ async function enterPythonFile(wizard, filename) {
     await wait(20000);
     submissions++;
 
-    await wizard.screenshot(`student.exercise_feedback_correct_tab.${language}.png`);
+    await wizard.screenshot(`student.exercise_feedback_correct_tab.png`);
 
     await wizard.click('a#activity-submission-link');
     await wait(1000);
 
-    await wizard.screenshot(`student.exercise_submissions_tab.${language}.png`, {
+    await wizard.screenshot(`student.exercise_submissions_tab.png`, {
       pointToSelectors: ['a#activity-submission-link'],
     });
 
     await wizard.navigate(`http://dodona.localhost:3000/${language}/submissions/${submissions}/`, false);
-    await wizard.screenshot(`student.exercise_feedback_correct_page.${language}.png`);
+    await wizard.screenshot(`student.exercise_feedback_correct_page.png`);
 
     // TODO: Add curling exercise to repo for fancy feedback screenshot. 
     // await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Curling']}/`);
@@ -1055,33 +1055,33 @@ async function enterPythonFile(wizard, filename) {
     await wait(20000);
     submissions++;
 
-    await wizard.screenshot(`student.exercise_feedback_incorrect_tab.${language}.png`);
+    await wizard.screenshot(`student.exercise_feedback_incorrect_tab.png`);
 
     // await wizard.click('a[href="#score-1"]');
     // await wait(500);
-    // await wizard.screenshot(`student.exercise_feedback_visual.${language}.png`);
+    // await wizard.screenshot(`student.exercise_feedback_visual.png`);
 
     await wizard.navigate(course_urls.OPEN[language], false);
     await wizard.scrollToBottom();
-    await wizard.screenshot(`student.deadline_series.${language}.png`);
+    await wizard.screenshot(`student.deadline_series.png`);
 
     await wizard.navigate(`?locale=${language}`);
-    await wizard.screenshot(`student.course_submissions.${language}.png`, {
+    await wizard.screenshot(`student.course_submissions.png`, {
       pointToSelectors: [`div.course a.card-title-link[href*="/submissions/"]`],
     });
 
-    await wizard.screenshot(`student.exercise_all_submissions_page.${language}.png`, {
+    await wizard.screenshot(`student.exercise_all_submissions_page.png`, {
       pointToSelectors: [`a[href$="/activities/${exerciseNamesToIDs[language]['Echo']}/submissions/"]`],
     });
 
     await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
-    await wizard.screenshot(`student.all_submissions_link.${language}.png`, {
+    await wizard.screenshot(`student.all_submissions_link.png`, {
       pointToSelectors: [`a[href^="/${language}/submissions/"]`],
     });
 
     await wizard.navigate(course_urls.OPEN[language], false);
     await wizard.scrollTo(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/submissions/"]`);
-    await wizard.screenshot(`student.exercise_course_submissions_page.${language}.png`, {
+    await wizard.screenshot(`student.exercise_course_submissions_page.png`, {
       pointToSelectors: [`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/submissions/"]`],
       pointPredicate: () => {
         if (!document.first) {
@@ -1093,9 +1093,9 @@ async function enterPythonFile(wizard, filename) {
     });
 
     await wizard.navigate(`/${language}/submissions/`);
-    await wizard.screenshot(`student.all_submissions.${language}.png`);
+    await wizard.screenshot(`student.all_submissions.png`);
 
-    await wizard.screenshot(`student.submissions_to_exercise_feedback.${language}.png`, {
+    await wizard.screenshot(`student.submissions_to_exercise_feedback.png`, {
       pointToSelectors: [`a[href$="/submissions/${first_submission}/"]`],
     });
   }
@@ -1114,10 +1114,10 @@ async function enterPythonFile(wizard, filename) {
     await wizard.click('a[href="#code-1"]');
     await wait(500);
     await wizard.scrollToBottom();
-    await wizard.screenshot(`student.exercise_lint_error.${language}.png`);
+    await wizard.screenshot(`student.exercise_lint_error.png`);
 
     await wizard.navigate(course_urls.OPEN[language], false);
-    await wizard.screenshot(`student.deadline_series_warning.${language}.png`);
+    await wizard.screenshot(`student.deadline_series_warning.png`);
   }
 
   wizard.setLanguage('');
@@ -1210,13 +1210,13 @@ async function enterPythonFile(wizard, filename) {
     wizard.setLanguage(language);
     await wizard.navigate(`${series_urls[language]['open']}scoresheet/`, false);
 
-    await wizard.screenshot(`staff.scoresheet.${language}.png`);
+    await wizard.screenshot(`staff.scoresheet.png`);
 
-    await wizard.screenshot(`staff.scoresheet_user_link.${language}.png`, {
+    await wizard.screenshot(`staff.scoresheet_user_link.png`, {
       pointToSelectors: ['a[href$="/members/3/"]'],
     });
 
-    await wizard.screenshot(`staff.scoresheet_status_icon.${language}.png`, {
+    await wizard.screenshot(`staff.scoresheet_status_icon.png`, {
       pointToSelectors: [`a[href^="/${language}/submissions/"]`],
       pointPredicate: elem => {
         if (!/\/submissions\/\d+\/$/.test(elem.href)) {
@@ -1243,15 +1243,15 @@ async function enterPythonFile(wizard, filename) {
       });
     await wait(1000);
 
-    await wizard.screenshot(`staff.feedback_evaluate.${language}.png`, {
+    await wizard.screenshot(`staff.feedback_evaluate.png`, {
       pointToSelectors: [`a[href$="/evaluate/"]`],
     });
 
     await wizard.navigate(`${course_urls.OPEN[language]}activities/${exerciseNamesToIDs[language]['Echo']}/submissions/`, false);
     await wait(1000);
     await wizard.typeIn(`input#filter-query`, 'j');
-    await wizard.screenshot(`staff.exercise_submissions_search.${language}.png`);
-    await wizard.screenshot(`staff.exercise_submissions_user_link.${language}.png`, {
+    await wizard.screenshot(`staff.exercise_submissions_search.png`);
+    await wizard.screenshot(`staff.exercise_submissions_user_link.png`, {
       pointToSelectors: [`a[href^="/${language}/submissions/"]`],
       pointPredicate: () => {
         if (document.first) {
