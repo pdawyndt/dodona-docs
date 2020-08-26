@@ -520,7 +520,7 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`staff.course_after_edit.png`);
 
     // course members page
-    await wizard.navigate(course_urls.OPEN[language] + '/members', useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL(language) + '/members', useBase = false);
     await wizard.screenshot(`staff.course_users.png`);
     await wizard.screenshot(`staff.course_users_admin.png`, {
        pointToSelectors: ['i.mdi-school'],
@@ -753,10 +753,10 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot('staff.course_new_series_button.png', {
       pointToSelectors: ['a[href$="/series/new/"]'],
     })
-    await wizard.screenshot('staff.course_series_delete.png', {
+    await wizard.screenshot('staff.series_delete.png', {
       pointToSelectors: ['i.mdi-delete'],
     });
-    await wizard.screenshot('staff.course_series_edit.png', {
+    await wizard.screenshot('staff.series_edit.png', {
       pointToSelectors: ['i.mdi-pencil'],
     })
 
@@ -793,26 +793,26 @@ async function enterPythonFile(wizard, filename) {
 
     await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
 
-    await wizard.screenshot(`staff.course_series_new.png`);
-    await wizard.screenshot(`staff.course_series_new_cancel.png`, {
+    await wizard.screenshot(`staff.series_new.png`);
+    await wizard.screenshot(`staff.series_new_cancel.png`, {
         pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
         mirror: true,
     });
 
-    await wizard.screenshot(`staff.course_series_new_submit.png`, {
+    await wizard.screenshot(`staff.series_new_submit.png`, {
         pointToSelectors: [`button[form="new_series"]`],
     });
 
     await wizard.click('button.btn-default[data-toggle]');
     await wait(200);
-    await wizard.screenshot(`staff.course_series_calendar_open.png`, {
+    await wizard.screenshot(`staff.series_calendar_open.png`, {
       pointToSelectors: ['button.btn-default[data-toggle]'],
     });
 
     await wizard.click('span.flatpickr-day.today');
     await wait(200);
 
-    await wizard.screenshot(`staff.course_series_calendar_clear.png`, {
+    await wizard.screenshot(`staff.series_calendar_clear.png`, {
         pointToSelectors: [`i.mdi-close`],
     });
 
