@@ -525,6 +525,9 @@ async function enterPythonFile(wizard, filename) {
     await wizard.screenshot(`staff.course_users_admin.png`, {
        pointToSelectors: ['i.mdi-school'],
     });
+    await wizard.page.$$('a.ellipsis-overflow[href^="/nl/courses"]').then(elements => elements[2].click());
+    await wait(2000);
+    await wizard.screenshot('staff.user_course_overview');
 
     // course submissions page
     await wizard.navigate(SEEDED_COURSE_URL(language) + 'submissions', useBase = false);
