@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const Jimp = require('jimp');
 const process = require('process');
 const fs = require('fs');
+const readline = require('readline');
 
 const BASE_URL = 'http://dodona.localhost:3000/';
 const IMAGE_FOLDER_PATH = '../images/';
@@ -367,19 +368,36 @@ async function enterPythonFile(wizard, filename) {
   }
 }
 
+let submissions;
+read_submissions = () => {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    prompt: 'To continue type the total number of submissions in the database: '
+  });
+  let response;
+  rl.prompt();
+  return new Promise((resolve , _) => {
+    rl.on('line', (line) => {
+      submissions = parseInt(line.trim());
+      rl.close()
+    });
+
+    rl.on('close', () => {
+      resolve(response)
+    })
+  });
+};
+
+
 (async () => {
   console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database
-    and the production stylesheet and that the user is logged in by default (as admin).\n`);
-
-  let submissions;
-  let stdin = process.openStdin();
-  stdin.addListener("data", function(d) {
-    // note:  d is an object, and when converted to a string it will
-    // end with a linefeed.  so we (rather crudely) account for that  
-    // with toString() and then trim() 
-    console.log(`you entered: ${d.toString().trim()}`);
-    submissions = parseInt(d);
+  and the production stylesheet and that the user is logged in by default (as admin).\n`); 
+  
+  await read_submissions().then(await function() {
+    console.log(`Number of submissions: ${submissions}`);
   });
+
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
@@ -536,7 +554,7 @@ async function enterPythonFile(wizard, filename) {
     });
     await wizard.page.$$('a.ellipsis-overflow[href^="/nl/courses"]').then(elements => elements[2].click());
     await wait(2000);
-    await wizard.screenshot('staff.user_course_overview');
+    await wizard.screenshot('staff.user_course_overview.png');
 
     // course submissions page
     await wizard.navigate(SEEDED_COURSE_URL(language) + 'submissions', useBase = false);
