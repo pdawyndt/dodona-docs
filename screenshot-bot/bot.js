@@ -489,7 +489,7 @@ read_submissions = () => {
     await wizard.navigate(`${language}/courses/new/`);
     await wizard.click('#copy-course');
     await wizard.click('tr.copy-course-row');
-    await wizard.screenshot('staff.new.course_new_copy.png');
+    await wizard.screenshot('staff.course_new_copy.png');
     await wizard.typeIn('input#course_name', TRANSLATIONS[language]['MODERATED_COURSE_NAME_INPUT']);
     await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
     await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['MODERATED_COURSE_DESCRIPTION_INPUT']);
