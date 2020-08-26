@@ -476,13 +476,13 @@ read_submissions = () => {
     await wait(1000);
     await wizard.removeBlockedElements();
     await wait(3000);
-    await wizard.screenshot(`staff.hidden_course_message.png`);
+    await wizard.screenshot(`staff.course_hidden_message.png`);
 
     course_urls.HIDDEN[language] = wizard.page.target().url();
     await wizard.navigate(course_urls.HIDDEN[language] + '/edit', false);
     course_urls.HIDDEN_REGISTRATION[language] = await wizard.page.evaluate(() => document.querySelector('#hidden_show_link').value);
     await wizard.click('button[data-clipboard-target="#hidden_show_link"]'); // scroll it into view by clicking it
-    await wizard.screenshot(`staff.hidden_course_registration_link.png`, {
+    await wizard.screenshot(`staff.course_hidden_registration_link.png`, {
        pointToSelectors: ['button[data-clipboard-target="#hidden_show_link"]'],
     });
 
@@ -499,12 +499,12 @@ read_submissions = () => {
     await wizard.click(`button[form="new_course"]`);
     await wait(2000);
     await wizard.removeBlockedElements();
-    await wizard.screenshot(`staff.moderated_course.png`);
+    await wizard.screenshot(`staff.course_moderated.png`);
     course_urls.MODERATED[language] = wizard.page.target().url();
 
 
     await wizard.navigate(`${language}/courses/new/`);
-    await wizard.screenshot('staff.cancel_new_course.png', {
+    await wizard.screenshot('staff.course_new_cancel.png', {
        pointToSelectors: [`a[href$="?locale=${language}"]`],
     });
     
@@ -514,7 +514,7 @@ read_submissions = () => {
     await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
     await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['OPEN_COURSE_DESCRIPTION_INPUT']);
 
-    await wizard.screenshot(`staff.new_course_submit.png`, {
+    await wizard.screenshot(`staff.course_new_submit.png`, {
        pointToSelectors: [`button[form="new_course"]`]
     });
 
@@ -523,7 +523,7 @@ read_submissions = () => {
     await wizard.removeBlockedElements();
     await wait(1000);
     course_urls.OPEN[language] = wizard.page.target().url();
-    await wizard.screenshot(`staff.created_course.png`);
+    await wizard.screenshot(`staff.course_created.png`);
 
     await wizard.navigate(course_urls.HIDDEN[language], useBase = false);
     await wizard.screenshot(`staff.course_edit_button.png`, {
@@ -539,7 +539,7 @@ read_submissions = () => {
        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
     });
     await wizard.scrollToBottom();
-    await wizard.screenshot(`staff.hidden_course_registration_link_renew.png`, {
+    await wizard.screenshot(`staff.course_hidden_registration_link_renew.png`, {
       pointToSelectors: [`a[href$="/reset_token/"]`],
     });
     await wizard.click(`button[form*="edit_course"]`);
@@ -570,7 +570,7 @@ read_submissions = () => {
 
 
     await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`staff.courses_hidden_course.png`, {
+    await wizard.screenshot(`staff.course_hidden.png`, {
       pointToSelectors: ['i.mdi-eye-off-outline']
     });
   }
