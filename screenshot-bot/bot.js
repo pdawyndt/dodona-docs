@@ -1270,6 +1270,7 @@ read_submissions = () => {
 
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
+    console.log(`${series_urls[language]['open']}scoresheet/`);
     await wizard.navigate(`${series_urls[language]['open']}scoresheet/`, false);
 
     await wizard.screenshot(`staff.scoresheet.png`);
