@@ -77,7 +77,7 @@ const SERIES = {
     {
       title: 'Expressies',
       visibility: 'open',
-      deadline: '2018-10-10 12:00',
+      deadline: '2021-10-10 12:00',
       exercises: [
         'Echo Java',
         'Echo Haskell',
@@ -116,7 +116,7 @@ const SERIES = {
     {
       title: 'Expressions',
       visibility: 'open',
-      deadline: '2018-10-10 12:00',
+      deadline: '2021-10-10 12:00',
       exercises: [
         'Echo Java',
         'Echo Haskell',
@@ -604,7 +604,7 @@ read_submissions = () => {
      cropSelector: 'i.mdi-check'
   });
 
-  await wizard.screenshot('../images/staff_registration_icons/decline.png', {
+  await wizard.screenshot('staff_registration_icons/decline.png', {
      cropSelector: 'i.mdi-delete'
   });
 
