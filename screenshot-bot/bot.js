@@ -784,7 +784,8 @@ read_submissions = () => {
       pointMulti: false,
     });
     await wizard.screenshot('staff.series_edit.png', {
-      pointToSelectors: ['i.mdi-pencil'],
+      pointToSelectors: ['a[href*="series"] > i.mdi-pencil'],
+      pointMulti: false,
     })
 
     await wizard.navigate(series_urls[language]['hidden'] + 'edit/', useBase = false);
