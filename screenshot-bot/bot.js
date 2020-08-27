@@ -746,7 +746,11 @@ read_submissions = () => {
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(500);
     // menu action should have changed
-    await wizard.screenshot('staff.series_actions_check_evaluation.png');
+    await wizard.screenshot('staff.series_actions_check_evaluation.png', {
+      pointMulti: false,
+      pointToSelectors: ['i.mdi-message-draw'],
+    });
+    await wait(3000);
 
     await wizard.navigate(evaluation_url, useBase = false);
     await wait(2000);
