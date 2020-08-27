@@ -1262,6 +1262,11 @@ read_submissions = () => {
   });
 
   await wizard.navigate('users/2/token/staff')
+  
+  const titles = {
+    en: "Wrong",
+    nl: "Fout"
+  }
 
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
@@ -1274,30 +1279,14 @@ read_submissions = () => {
     });
 
     await wizard.screenshot(`staff.scoresheet_status_icon.png`, {
-      pointToSelectors: [`a[href^="/${language}/submissions/"]`],
-      pointPredicate: elem => {
-        if (!/\/submissions\/\d+\/$/.test(elem.href)) {
-          return false;
-        }
-        if (document.first) {
-          return false;
-        }
-        document.first = true;
-        return true;
-      }
+      pointToSelectors: [`a[href^="/${language}/submission"] i.mdi-close`],
     });
 
-    await wizard.click(`a[href^="/${language}/submissions/"]`,
-      elem => {
-        if (!/\/submissions\/\d+\/$/.test(elem.href)) {
-          return false;
-        }
-        if (document.second) {
-          return false;
-        }
-        document.second = true;
-        return true;
-      });
+    // This does the same as clicking on the icon representing the
+    // submission status in the scoresheet of a series.
+    let elem = await wizard.page.$(`a[title="${titles[language]}"]`);
+    let href = (await (await elem.getProperty("href")).jsonValue());
+    await wizard.navigate(href, false);
     await wait(1000);
 
     await wizard.screenshot(`staff.feedback_evaluate.png`, {
@@ -1309,14 +1298,8 @@ read_submissions = () => {
     await wizard.typeIn(`input#filter-query`, 'j');
     await wizard.screenshot(`staff.exercise_submissions_search.png`);
     await wizard.screenshot(`staff.exercise_submissions_user_link.png`, {
-      pointToSelectors: [`a[href^="/${language}/submissions/"]`],
-      pointPredicate: () => {
-        if (document.first) {
-          return false;
-        }
-        document.first = true;
-        return true;
-      }
+      pointToSelectors: [`a[href$="/members/3/"]`],
+      pointMulti: false
     });
   }
   
