@@ -746,7 +746,11 @@ read_submissions = () => {
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(500);
     // menu action should have changed
-    await wizard.screenshot('staff.series_actions_check_evaluation.png');
+    await wizard.screenshot('staff.series_actions_check_evaluation.png', {
+      pointMulti: false,
+      pointToSelectors: ['i.mdi-message-draw'],
+    });
+    await wait(3000);
 
     await wizard.navigate(evaluation_url, useBase = false);
     await wait(2000);
@@ -770,14 +774,8 @@ read_submissions = () => {
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
     await wizard.scrollToBottom();
     await wait(1000);
-    await wizard.screenshot(`staff.course_series_hidden_info.png`, {
+    await wizard.screenshot(`staff.course_series_info_message.png`, {
        pointToSelectors: [`div.alert.alert-info.hidden-print`]
-    });
-
-    await wizard.scrollToBottom();
-    await wait(1000);
-    await wizard.screenshot(`staff.course_series_closed_info.png`, {
-       pointToSelectors: [`div.alert.alert-info.hidden-print`],
     });
 
     await wizard.navigate(course_urls.OPEN[language] + 'manage_series/', useBase = false);
@@ -790,7 +788,8 @@ read_submissions = () => {
       pointMulti: false,
     });
     await wizard.screenshot('staff.series_edit.png', {
-      pointToSelectors: ['i.mdi-pencil'],
+      pointToSelectors: ['a[href*="series"] > i.mdi-pencil'],
+      pointMulti: false,
     })
 
     await wizard.navigate(series_urls[language]['hidden'] + 'edit/', useBase = false);
