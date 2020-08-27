@@ -770,14 +770,8 @@ read_submissions = () => {
     await wizard.navigate(course_urls.OPEN[language], useBase = false);
     await wizard.scrollToBottom();
     await wait(1000);
-    await wizard.screenshot(`staff.course_series_hidden_info.png`, {
+    await wizard.screenshot(`staff.course_series_info_message.png`, {
        pointToSelectors: [`div.alert.alert-info.hidden-print`]
-    });
-
-    await wizard.scrollToBottom();
-    await wait(1000);
-    await wizard.screenshot(`staff.course_series_closed_info.png`, {
-       pointToSelectors: [`div.alert.alert-info.hidden-print`],
     });
 
     await wizard.navigate(course_urls.OPEN[language] + 'manage_series/', useBase = false);
