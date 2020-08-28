@@ -548,7 +548,6 @@ read_submissions = () => {
 
     // course members page
     await wizard.navigate(SEEDED_COURSE_URL(language) + '/members', useBase = false);
-    await wizard.screenshot(`staff.course_users.png`);
     await wizard.screenshot(`staff.course_users_admin.png`, {
        pointToSelectors: ['i.mdi-school'],
        pointMulti: false,
@@ -635,6 +634,10 @@ read_submissions = () => {
 
      await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL + 'members/');
      await wizard.screenshot('staff.users.png');
+     await wizard.screenshot('staff.users_edit_permissions.png', {
+      pointMulti: false,
+      pointToSelectors: ['i.mdi-school.mdi-icons-strikethrough'],
+     })
      await wizard.typeIn(`input#filter-query-tokenfield`, 'Stijn');
 
      await wait(2000);
@@ -643,6 +646,7 @@ read_submissions = () => {
      {
        pointToSelectors: [`a[title="${STAFF_USERNAME}"]`]
      });
+
   }
 
   console.log('staff series');
