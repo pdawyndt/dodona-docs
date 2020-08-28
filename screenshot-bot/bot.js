@@ -1072,6 +1072,7 @@ read_submissions = () => {
 
     await wizard.click(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/"]`);
     await wait(500); // MathJax takes a while to initialize
+    await wizard.removeBlockedElements()
     await wizard.screenshot(`student.exercise_start.png`);
 
     await wizard.screenshot(`student.exercise_crumbs.png`, {
@@ -1079,7 +1080,7 @@ read_submissions = () => {
     });
 
     await wizard.scrollToBottom();
-    await enterPythonFile(wizard, `./solutions/ISBN.correct.py`);
+    await enterPythonFile(wizard, `./solutions/Echo.correct.py`);
 
     await wizard.screenshot(`student.exercise_before_submit.png`, {
       pointToSelectors: ['#editor-process-btn'],
@@ -1105,7 +1106,7 @@ read_submissions = () => {
     // await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Curling']}/`);
     // await enterPythonFile(wizard, `./solutions/Curling.incorrect.${language}.py`);
     await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Echo']}/`);
-    await enterPythonFile(wizard, `./solutions/ISBN.incorrect.py`);
+    await enterPythonFile(wizard, `./solutions/Echo.incorrect.py`);
 
     await wizard.click('#editor-process-btn');
     await wait(20000);
@@ -1161,7 +1162,7 @@ read_submissions = () => {
     await wizard.navigate(`${course_urls.OPEN[language]}/exercises/${exerciseNamesToIDs[language]['Echo']}/`, false);
 
     await wizard.scrollToBottom();
-    await enterPythonFile(wizard, `./solutions/ISBN.lintingError.py`);
+    await enterPythonFile(wizard, `./solutions/Echo.lintingError.py`);
 
     await wizard.click('#editor-process-btn');
     await wait(20000);
@@ -1269,7 +1270,6 @@ read_submissions = () => {
 
   for (const language of LANGUAGES) {
     wizard.setLanguage(language);
-    console.log(`${series_urls[language]['open']}scoresheet/`);
     await wizard.navigate(`${series_urls[language]['open']}scoresheet/`, false);
 
     await wizard.screenshot(`staff.scoresheet.png`);
