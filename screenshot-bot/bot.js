@@ -941,7 +941,12 @@ read_submissions = () => {
       pointToSelectors: ['select#user_time_zone']
     });
   }
-
+  
+  // Set the wrong timezone
+  await wizard.navigate(`nl/users/3/edit/`);
+  await wizard.page.evaluate(() => {
+    document.querySelector('select#user_time_zone').value = 'Seoul';
+  });
   await wizard.click('button.btn-primary[form*="edit_user_"]');
   await wait(200);
   await wizard.navigate('?locale=nl');
