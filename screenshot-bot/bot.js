@@ -745,7 +745,7 @@ read_submissions = () => {
       pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
     });
 
-    await wizard.navigate(course_urls.OPEN[language], useBase = false);
+    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
     // open manage series menu
     await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
     await wait(500);
