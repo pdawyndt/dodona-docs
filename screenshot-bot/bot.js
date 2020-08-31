@@ -368,24 +368,19 @@ async function enterPythonFile(wizard, filename) {
   }
 }
 
-let submissions;
-read_submissions = () => {
+async function read_submissions(){
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
     prompt: 'To continue type the total number of submissions in the database: '
   });
-  let response;
   rl.prompt();
-  return new Promise((resolve , _) => {
+  return new Promise((resolve , _reject) => {
     rl.on('line', (line) => {
-      submissions = parseInt(line.trim());
-      rl.close()
+      const submissions = parseInt(line.trim());
+      rl.close();
+      return resolve(submissions);
     });
-
-    rl.on('close', () => {
-      resolve(response)
-    })
   });
 };
 
@@ -394,9 +389,8 @@ read_submissions = () => {
   console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database
   and the production stylesheet and that the user is logged in by default (as admin).\n`); 
   
-  await read_submissions().then(await function() {
-    console.log(`Number of submissions: ${submissions}`);
-  });
+  const submissions = await read_submissions();
+  console.log(`Number of submissions: ${submissions}`);
 
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
@@ -488,6 +482,11 @@ read_submissions = () => {
 
     await wizard.navigate(`${language}/courses/new/`);
     await wizard.click('#copy-course');
+    await wait(1000);
+    await wizard.screenshot('staff.course_new_copy_course_options.png', {
+      pointToSelectors: ['tr.copy-course-row'],
+      pointMulti: false,
+    })
     await wizard.click('tr.copy-course-row');
     await wizard.screenshot('staff.course_new_copy.png');
     await wizard.typeIn('input#course_name', TRANSLATIONS[language]['MODERATED_COURSE_NAME_INPUT']);
