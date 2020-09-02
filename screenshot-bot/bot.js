@@ -479,6 +479,9 @@ async function read_submissions(){
     await wizard.screenshot(`staff.course_hidden_registration_link.png`, {
        pointToSelectors: ['button[data-clipboard-target="#hidden_show_link"]'],
     });
+    await wizard.screenshot(`staff.course_hidden_registration_link_renew.png`, {
+      pointToSelectors: [`a[href$="/reset_token/"]`],
+    });
 
     await wizard.navigate(`${language}/courses/new/`);
     await wizard.click('#copy-course');
@@ -538,9 +541,6 @@ async function read_submissions(){
        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
     });
     await wizard.scrollToBottom();
-    await wizard.screenshot(`staff.course_hidden_registration_link_renew.png`, {
-      pointToSelectors: [`a[href$="/reset_token/"]`],
-    });
     await wizard.click(`button[form*="edit_course"]`);
     await wizard.removeBlockedElements();
     await wizard.screenshot(`staff.course_after_edit.png`);
