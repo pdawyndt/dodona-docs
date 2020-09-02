@@ -569,7 +569,8 @@ async function read_submissions(){
 
     await wizard.navigate(`${language}/courses/`);
     await wizard.screenshot(`staff.course_hidden.png`, {
-      pointToSelectors: ['i.mdi-eye-off-outline']
+      pointToSelectors: ['i.mdi-eye-off-outline'],
+      pointMulti: false,
     });
   }
   console.log(course_urls);
