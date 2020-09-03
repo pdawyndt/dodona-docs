@@ -906,21 +906,11 @@ async function read_submissions(){
     wizard.setLanguage(language);
     await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`, false);
 
-    await wizard.screenshot(`student.homepage.png`);
-
-    await wizard.screenshot(`student.navigate_to_homepage.png`, {
-      pointToSelectors: ['a.brand'],
-    });
-
     await wizard.screenshot(`student.explore_courses.png`, {
       pointToSelectors: [`a[href$="/${language}/courses/"]`],
     });
 
     await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
-    await wizard.screenshot(`student.user_menu.png`, {
-      pointToSelectors: ['ul.dropdown-menu'],
-      pointPredicate: elem => !!elem.querySelector('a[href*="/sign_out/"]'),
-    });
 
     await wizard.screenshot(`student.user_menu_my_profile.png`, {
       pointToSelectors: [`li.dropdown ul.dropdown-menu a[href$="/${language}/users/3/"]`],
@@ -1031,21 +1021,6 @@ async function read_submissions(){
 
     await wizard.navigate(`?locale=${language}`);
     await wizard.screenshot(`student.homepage_after_registration.png`);
-
-    await wizard.click('button.drawer-toggle');
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    await wizard.screenshot(`student.my_courses.png`, {
-      pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
-      pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
-      mirror: true, // TODO: uncomment after merge with winnie's branch
-    });
-
-    await wizard.navigate(`${language}/users/3/`);
-    await wizard.screenshot(`student.profile_courses.png`, {
-      pointToSelectors: ['h4'],
-      pointPredicate: (elem, content) => elem.innerText === content,
-      pointPredicateArg: TRANSLATIONS[language]['COURSES'],
-    });
   }
 
   console.log('exercises');
@@ -1128,10 +1103,6 @@ async function read_submissions(){
     // await wait(500);
     // await wizard.screenshot(`student.exercise_feedback_visual.png`);
 
-    await wizard.navigate(course_urls.OPEN[language], false);
-    await wizard.scrollToBottom();
-    await wizard.screenshot(`student.deadline_series.png`);
-
     await wizard.navigate(`?locale=${language}`);
     await wizard.screenshot(`student.course_submissions.png`, {
       pointToSelectors: [`div.course a.card-title-link[href*="/submissions/"]`],
@@ -1144,19 +1115,6 @@ async function read_submissions(){
     await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
     await wizard.screenshot(`student.all_submissions_link.png`, {
       pointToSelectors: [`a[href^="/${language}/submissions/"]`],
-    });
-
-    await wizard.navigate(course_urls.OPEN[language], false);
-    await wizard.scrollTo(`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/submissions/"]`);
-    await wizard.screenshot(`student.exercise_course_submissions_page.png`, {
-      pointToSelectors: [`a[href*="/activities/${exerciseNamesToIDs[language]['Echo']}/submissions/"]`],
-      pointPredicate: () => {
-        if (!document.first) {
-          document.first = true;
-          return true;
-        }
-        return false;
-      },
     });
 
     await wizard.navigate(`/${language}/submissions/`);
