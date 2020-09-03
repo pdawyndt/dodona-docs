@@ -389,663 +389,683 @@ async function read_submissions(){
   console.log(`Make sure Dodona is running locally on ${BASE_URL} with a clean database
   and the production stylesheet and that the user is logged in by default (as admin).\n`); 
   
-  const submissions = await read_submissions();
+  let submissions = await read_submissions();
   console.log(`Number of submissions: ${submissions}`);
 
   const wizard = await new Wizard(BASE_URL, IMAGE_FOLDER_PATH).launch();
   await wizard.navigate('?pp=disable'); // disable Rack::MiniProfiler as not relevant for screenshots
   wizard.blockElement('footer.footer'); // footer is always the same and not relevant either
+  wizard.blockElement('div.profiler-results'); // footer is always the same and not relevant either
   // =========================================================
   // SIGNED OUT
   // =========================================================
-  console.log('signed out pages');
+  // console.log('signed out pages');
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(language);
-    await wizard.screenshot('landingpage.png');
-    await wizard.screenshot('login.png', {
-      pointToSelectors: [`a[href$="/${language}/sign_in/"]`]
-    });
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(language);
+  //   await wizard.screenshot('landingpage.png');
+  //   await wizard.screenshot('login.png', {
+  //     pointToSelectors: [`a[href$="/${language}/sign_in/"]`]
+  //   });
 
-    await wizard.click('a[data-toggle="dropdown"]');
-    await wait(500);
-    await wizard.screenshot(`choose_language.png`, {
-      pointToSelectors: ['ul.dropdown-menu']
-    });
+  //   await wizard.click('a[data-toggle="dropdown"]');
+  //   await wait(500);
+  //   await wizard.screenshot(`choose_language.png`, {
+  //     pointToSelectors: ['ul.dropdown-menu']
+  //   });
 
-    for (const page of ['sign_in', 'data', 'privacy', 'contact', 'about']) {
-      await wizard.navigate(`${language}/${page}`);
-      await wizard.screenshot(`${page}.png`);
-    }
-  }
+  //   for (const page of ['sign_in', 'data', 'privacy', 'contact', 'about']) {
+  //     await wizard.navigate(`${language}/${page}`);
+  //     await wizard.screenshot(`${page}.png`);
+  //   }
+  // }
 
   // =========================================================
   // STAFF
   // =========================================================
 
-  console.log('staff repositories');
-  await wizard.navigate('users/2/token/staff');
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${language}/repositories/new`);
-    await wizard.screenshot('staff.repository_create.png');
-    await wizard.typeIn('#repository_name', `Example exercises ${Math.floor(Math.random() * 100).toString()}`);
-    await wizard.typeIn('#repository_remote', 'git@github.com:dodona-edu/example-exercises.git');
-    await wizard.click('button[form="new_repository"]');
-    await wizard.screenshot('staff.repository_created.png');
-  }
+  // console.log('staff repositories');
+  // await wizard.navigate('users/2/token/staff');
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${language}/repositories/new`);
+  //   await wizard.screenshot('staff.repository_create.png');
+  //   await wizard.typeIn('#repository_name', `Example exercises ${Math.floor(Math.random() * 100).toString()}`);
+  //   await wizard.typeIn('#repository_remote', 'git@github.com:dodona-edu/example-exercises.git');
+  //   await wizard.click('button[form="new_repository"]');
+  //   await wizard.screenshot('staff.repository_created.png');
+  // }
 
-  console.log('staff course management');
+  // console.log('staff course management');
 
-  await wizard.navigate('users/2/token/staff')
+  // await wizard.navigate('users/2/token/staff')
 
   const course_urls = {
-    OPEN: {},
-    HIDDEN: {},
-    HIDDEN_REGISTRATION: {},
-    MODERATED: {},
-  };
-
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${language}/courses?page=1`);
-    await wizard.screenshot(`staff.courses_new_link.png`, {
-      pointToSelectors: [`a[href$="/${language}/courses/new/"]`],
-    });
-
-    await wizard.typeIn('#filter-query-tokenfield', 'course');
-    await wizard.screenshot('staff.courses_filtered.png');
-
-    await wizard.navigate(`${language}/courses/new/`);
-    await wizard.screenshot('staff.course_new_options.png');
-    await wizard.click('#new-course');
-    await wizard.screenshot('staff.course_new_empty.png');
-    await wizard.typeIn('input#course_name', TRANSLATIONS[language]['HIDDEN_COURSE_NAME_INPUT']);
-    await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
-    await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['HIDDEN_COURSE_DESCRIPTION_INPUT']);
-    await wizard.click('#course_visibility_hidden');
-
-    await wizard.click(`button[form="new_course"]`);
-    await wait(1000);
-    await wizard.removeBlockedElements();
-    await wait(3000);
-    await wizard.screenshot(`staff.course_hidden_message.png`);
-
-    course_urls.HIDDEN[language] = wizard.page.target().url();
-    await wizard.navigate(course_urls.HIDDEN[language] + '/edit', false);
-    course_urls.HIDDEN_REGISTRATION[language] = await wizard.page.evaluate(() => document.querySelector('#hidden_show_link').value);
-    await wizard.click('button[data-clipboard-target="#hidden_show_link"]'); // scroll it into view by clicking it
-    await wizard.screenshot(`staff.course_hidden_registration_link.png`, {
-       pointToSelectors: ['button[data-clipboard-target="#hidden_show_link"]'],
-    });
-    await wizard.screenshot(`staff.course_hidden_registration_link_renew.png`, {
-      pointToSelectors: [`a[href$="/reset_token/"]`],
-    });
-
-    await wizard.navigate(`${language}/courses/new/`);
-    await wizard.click('#copy-course');
-    await wait(1000);
-    await wizard.screenshot('staff.course_new_copy_course_options.png', {
-      pointToSelectors: ['tr.copy-course-row'],
-      pointMulti: false,
-    })
-    await wizard.click('tr.copy-course-row');
-    await wizard.screenshot('staff.course_new_copy.png');
-    await wizard.typeIn('input#course_name', TRANSLATIONS[language]['MODERATED_COURSE_NAME_INPUT']);
-    await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
-    await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['MODERATED_COURSE_DESCRIPTION_INPUT']);
-    await wizard.click('#course_visibility_visible_for_all');
-    await wizard.click('#course_moderated_true');
-
-    await wizard.click(`button[form="new_course"]`);
-    await wait(2000);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot(`staff.course_moderated.png`);
-    course_urls.MODERATED[language] = wizard.page.target().url();
-
-
-    await wizard.navigate(`${language}/courses/new/`);
-    await wizard.screenshot('staff.course_new_cancel.png', {
-       pointToSelectors: [`a[href$="?locale=${language}"]`],
-    });
-    
-    await wizard.navigate(`${language}/courses/new`);
-    await wizard.click('#new-course');
-    await wizard.typeIn('input#course_name', TRANSLATIONS[language]['OPEN_COURSE_NAME_INPUT']);
-    await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
-    await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['OPEN_COURSE_DESCRIPTION_INPUT']);
-
-    await wizard.screenshot(`staff.course_new_submit.png`, {
-       pointToSelectors: [`button[form="new_course"]`]
-    });
-
-    await wizard.click(`button[form="new_course"]`);
-    await wait(1000);
-    await wizard.removeBlockedElements();
-    await wait(1000);
-    course_urls.OPEN[language] = wizard.page.target().url();
-    await wizard.screenshot(`staff.course_created.png`);
-
-    await wizard.navigate(course_urls.HIDDEN[language], useBase = false);
-    await wizard.screenshot(`staff.course_edit_button.png`, {
-       pointToSelectors: ['a[href$="/edit/"]'],
-    });
-    await wizard.screenshot('staff.course_submissions_link.png', {
-      // duplicate invisible element so had to be really specifici
-      pointToSelectors: ['div.center > div > ul > li > a > i.submissions'],
-    })
-    await wizard.navigate(course_urls.OPEN[language] + 'edit/', useBase = false);
-    await wizard.screenshot(`staff.course_edit.png`);
-    await wizard.screenshot(`staff.course_edit_cancel.png`, {
-       pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
-    });
-    await wizard.scrollToBottom();
-    await wizard.click(`button[form*="edit_course"]`);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot(`staff.course_after_edit.png`);
-
-    // course members page
-    await wizard.navigate(SEEDED_COURSE_URL(language) + '/members', useBase = false);
-    await wizard.screenshot(`staff.course_users_admin.png`, {
-       pointToSelectors: ['i.mdi-school'],
-       pointMulti: false,
-    });
-    await wizard.page.$$(`a.ellipsis-overflow[href^="/${language}/courses"]`).then(elements => elements[2].click());
-    await wait(10000); // Wait for graphs
-    await wizard.screenshot('staff.user_course_overview.png');
-
-    // course submissions page
-    await wizard.navigate(SEEDED_COURSE_URL(language) + 'submissions', useBase = false);
-    await wizard.screenshot('staff.course_submissions.png');
-    await wizard.screenshot('staff.course_submissions_filter.png', {
-      pointToSelectors: ['i.mdi-filter-outline'],
-      pointMulti: false,
-    })
-    await wizard.click('i.mdi-filter-outline');
-    await wait(500);
-    await wizard.screenshot('staff.course_submissions_filtered.png');
-
-
-    await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`staff.course_hidden.png`, {
-      pointToSelectors: ['i.mdi-eye-off-outline'],
-      pointMulti: false,
-    });
-  }
-  console.log(course_urls);
-  wizard.setLanguage(''); // icons are language independent
-  await wizard.page.evaluate(() => {
-     document.querySelector('body').innerHTML = 
-     ['mdi-school mdi-icons-strikethrough', 'mdi-school', 'mdi-account-plus', 'mdi-delete', 'mdi-check']
-        .map(icon => `<p><i class="mdi ${icon} mdi-18"></i></p>`)
-        .join('');
-  });
-
-
-  await wizard.screenshot('staff_registration_icons/make_course_admin.png', {
-     cropSelector: 'i.mdi-school:not(.mdi-icons-strikethrough)'
-  });
-
-  await wizard.screenshot('staff_registration_icons/make_student.png', {
-     cropSelector: 'i.mdi-school.mdi-icons-strikethrough'
-  });
-
-  await wizard.screenshot('staff_registration_icons/register.png', {
-     cropSelector: 'i.mdi-account-plus'
-  });
-
-  await wizard.screenshot('staff_registration_icons/unregister.png', {
-     cropSelector: 'i.mdi-delete'
-  });
-
-  await wizard.screenshot('staff_registration_icons/approve.png', {
-     cropSelector: 'i.mdi-check'
-  });
-
-  await wizard.screenshot('staff_registration_icons/decline.png', {
-     cropSelector: 'i.mdi-delete'
-  });
-
-  console.log(`staff user management`);
-  const SEEDED_MODERATED_COURSE_URL = "/courses/3/"
-  const STAFF_USERNAME = "Stijn Taff"
-  // await wizard.navigate('users/2/token/staff');
-
-   for (const language of LANGUAGES) {
-     wizard.setLanguage(language);
-     await wizard.navigate(`${language}/`);
-     await wait(1000);
-     await wizard.screenshot('staff.admin_menu_location.png',
-     {
-       pointToSelectors: ['button[aria-controls="drawer"]'],
-       mirror: true
-     });
-     await wait(1000);
-     await wizard.click('button[aria-controls="drawer"]');
-     await wait(1000);
-     await wizard.screenshot('staff.admin_menu.png');
-
-     await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL);
-     await wizard.screenshot('staff.course_users.png',
-     {
-       pointToSelectors: ['i.mdi.mdi-24.mdi-account-multiple']
-     })
-
-     await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL + 'members/');
-     await wizard.screenshot('staff.users.png');
-     await wizard.screenshot('staff.users_edit_permissions.png', {
-      pointMulti: false,
-      pointToSelectors: ['i.mdi-school.mdi-icons-strikethrough'],
-     })
-     await wizard.typeIn(`input#filter-query-tokenfield`, 'Stijn');
-
-     await wait(2000);
-     await wizard.screenshot(`staff.users_filtered.png`);
-     await wizard.screenshot(`staff.users_filtered_link.png`, 
-     {
-       pointToSelectors: [`a[title="${STAFF_USERNAME}"]`]
-     });
-
-  }
-
-  console.log('staff series');
-  const series_urls = {
-    nl: {},
-    en: {}
-  };
-
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    for (const series of SERIES[language]) {
-       await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
-       await wizard.typeIn(`input#series_name`, series.title);
-       await wizard.select(`select#series_visibility`, series.visibility);
-       await wizard.page.evaluate((deadline) => {
-         document.querySelector('input#series_deadline').value = deadline;
-       }, series.deadline);
-
-
-       await wizard.click('button[form="new_series"]');
-       await wait(2000);
-
-       series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
-       await wait(1000);
-       for (const exercise of series.exercises) {
-         await wizard.page.evaluate(() => document.querySelector('#filter-query-tokenfield').value = '');
-         await wizard.typeIn('#filter-query-tokenfield', exercise);
-         await wait(2000);
-         await wizard.click('a.add-activity');
-       }
-
-       await wizard.click('button[form^="edit_series_"]');
-       await wait(2000);
+    OPEN: {
+      nl: 'http://dodona.localhost:3000/nl/courses/11/',
+      en: 'http://dodona.localhost:3000/en/courses/14/'
+    },
+    HIDDEN: {
+      nl: 'http://dodona.localhost:3000/nl/courses/9/',
+      en: 'http://dodona.localhost:3000/en/courses/12/'
+    },
+    HIDDEN_REGISTRATION: {
+      nl: 'http://dodona.localhost:3000/nl/courses/9/?secret=9d6Fy',
+      en: 'http://dodona.localhost:3000/en/courses/12/?secret=AX9Zn'
+    },
+    MODERATED: {
+      nl: 'http://dodona.localhost:3000/nl/courses/10/',
+      en: 'http://dodona.localhost:3000/en/courses/13/'
     }
+  };
 
-    wizard.setLanguage(language);
-    // manage series
-    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
-    await wizard.screenshot(`staff.course_manage_series_button.png`, {
-      pointToSelectors: [`a[href$="/manage_series/"]`],
-    });
-    // open manage series menu
-    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(1000);
-    await wizard.screenshot('staff.series_actions_menu.png');
-    // start evaluation
-    await wizard.click(`a[href^="/${language}/evaluations/new"]`);
-    await wait(1000);
-    await wizard.removeBlockedElements();
-    await wait(1000);
-    await wizard.screenshot('staff.series_evaluate.png');
-    await wizard.screenshot('staff.series_evaluate_start.png', {
-      pointToSelectors: ['button[form="new_evaluation"]']
-    });
-    await wizard.click('button[form="new_evaluation"]');
-    await wait(2000);
-    await wizard.removeBlockedElements();
-    // select users and go to real evaluation
-    await wizard.screenshot('staff.series_evaluate_select_users.png', {
-      pointToSelectors: ['a[href$="type=submitted"] > div.button.btn-text'],
-    });
-    await wizard.click('a[href$="type=submitted"]');
-    await wait(1000);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot('staff.series_evaluate_start.png', {
-      pointToSelectors: ['a.btn-primary']
-    });
-    await wizard.click('a.btn-primary');
-    await wait(1500);
-    await wizard.removeBlockedElements();
-    const evaluation_url = wizard.page.target().url();
-    //release feedback button performs a patch
-    await wizard.screenshot('staff.series_evaluate_release_feedback.png', {
-      pointToSelectors: ['a[data-method="patch"]']
-    })
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${language}/courses?page=1`);
+  //   await wizard.screenshot(`staff.courses_new_link.png`, {
+  //     pointToSelectors: [`a[href$="/${language}/courses/new/"]`],
+  //   });
 
-    await wizard.scrollTo('i.mdi-comment-outline');
-    await wizard.screenshot('staff.series_evaluate_detail_overview.png');
-    // give feedback to a user
-    await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
-      pointToSelectors: ['i.mdi-comment-outline'],
-      pointMulti: false,
-    });
-    await wizard.click('a', el => !!el.querySelector('i.mdi-comment-outline'));
-    await wait(2000);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot('staff.series_evaluate_give_feedback.png');
-    await wizard.screenshot('staff.series_evaluate_next.png', {
-      pointToSelectors: ['#next-feedback-button'],
-    })
-    await wizard.screenshot('staff.series_evaluate_feedback_row.png', {
-      pointToSelectors: ['div.user-feedback-row'],
-      pointPredicate: elem => !!elem.querySelector('i[class^="mdi mdi-comment"]'),
-    });
-    await wizard.screenshot('staff.series_evaluate_return.png', {
-      pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
-    });
+  //   await wizard.typeIn('#filter-query-tokenfield', 'course');
+  //   await wizard.screenshot('staff.courses_filtered.png');
 
-    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
-    // open manage series menu
-    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(500);
-    // menu action should have changed
-    await wizard.screenshot('staff.series_actions_check_evaluation.png', {
-      pointMulti: false,
-      pointToSelectors: ['i.mdi-message-draw'],
-    });
-    await wait(3000);
+  //   await wizard.navigate(`${language}/courses/new/`);
+  //   await wizard.screenshot('staff.course_new_options.png');
+  //   await wizard.click('#new-course');
+  //   await wizard.screenshot('staff.course_new_empty.png');
+  //   await wizard.typeIn('input#course_name', TRANSLATIONS[language]['HIDDEN_COURSE_NAME_INPUT']);
+  //   await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
+  //   await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['HIDDEN_COURSE_DESCRIPTION_INPUT']);
+  //   await wizard.click('#course_visibility_hidden');
 
-    await wizard.navigate(evaluation_url, useBase = false);
-    await wait(2000);
-    await wizard.click('a', elem => !!elem.querySelector('i.mdi-dots-vertical'));
-    await wizard.screenshot('staff.series_evaluate_delete.png', {
-      pointToSelectors: [`a[data-method="delete"][href^="/${language}/evaluations/"]`],
-    });
+  //   await wizard.click(`button[form="new_course"]`);
+  //   await wait(1000);
+  //   await wizard.removeBlockedElements();
+  //   await wait(3000);
+  //   await wizard.screenshot(`staff.course_hidden_message.png`);
 
-    const deleteButtonSelector = `a[data-method="delete"][href^="/${language}/evaluations/"]`;
-    // prevent page confirmation prompt to block deletion
-    await wizard.page.evaluate(
-      (element) => element.setAttribute('data-confirm', ''), 
-      await wizard.page.$(deleteButtonSelector));
-    await wizard.click(deleteButtonSelector);
+  //   course_urls.HIDDEN[language] = wizard.page.target().url();
+  //   await wizard.navigate(course_urls.HIDDEN[language] + '/edit', false);
+  //   course_urls.HIDDEN_REGISTRATION[language] = await wizard.page.evaluate(() => document.querySelector('#hidden_show_link').value);
+  //   await wizard.click('button[data-clipboard-target="#hidden_show_link"]'); // scroll it into view by clicking it
+  //   await wizard.screenshot(`staff.course_hidden_registration_link.png`, {
+  //      pointToSelectors: ['button[data-clipboard-target="#hidden_show_link"]'],
+  //   });
+  //   await wizard.screenshot(`staff.course_hidden_registration_link_renew.png`, {
+  //     pointToSelectors: [`a[href$="/reset_token/"]`],
+  //   });
 
-    // give time to perform deletion and navigation
-    await wait(3000);
+  //   await wizard.navigate(`${language}/courses/new/`);
+  //   await wizard.click('#copy-course');
+  //   await wait(1000);
+  //   await wizard.screenshot('staff.course_new_copy_course_options.png', {
+  //     pointToSelectors: ['tr.copy-course-row'],
+  //     pointMulti: false,
+  //   })
+  //   await wizard.click('tr.copy-course-row');
+  //   await wizard.screenshot('staff.course_new_copy.png');
+  //   await wizard.typeIn('input#course_name', TRANSLATIONS[language]['MODERATED_COURSE_NAME_INPUT']);
+  //   await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
+  //   await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['MODERATED_COURSE_DESCRIPTION_INPUT']);
+  //   await wizard.click('#course_visibility_visible_for_all');
+  //   await wizard.click('#course_moderated_true');
+
+  //   await wizard.click(`button[form="new_course"]`);
+  //   await wait(2000);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot(`staff.course_moderated.png`);
+  //   course_urls.MODERATED[language] = wizard.page.target().url();
+
+
+  //   await wizard.navigate(`${language}/courses/new/`);
+  //   await wizard.screenshot('staff.course_new_cancel.png', {
+  //      pointToSelectors: [`a[href$="?locale=${language}"]`],
+  //   });
+    
+  //   await wizard.navigate(`${language}/courses/new`);
+  //   await wizard.click('#new-course');
+  //   await wizard.typeIn('input#course_name', TRANSLATIONS[language]['OPEN_COURSE_NAME_INPUT']);
+  //   await wizard.typeIn('input#course_teacher', TRANSLATIONS[language]['COURSE_TEACHER']);
+  //   await wizard.typeIn('textarea#course_description', TRANSLATIONS[language]['OPEN_COURSE_DESCRIPTION_INPUT']);
+
+  //   await wizard.screenshot(`staff.course_new_submit.png`, {
+  //      pointToSelectors: [`button[form="new_course"]`]
+  //   });
+
+  //   await wizard.click(`button[form="new_course"]`);
+  //   await wait(1000);
+  //   await wizard.removeBlockedElements();
+  //   await wait(1000);
+  //   course_urls.OPEN[language] = wizard.page.target().url();
+  //   await wizard.screenshot(`staff.course_created.png`);
+
+  //   await wizard.navigate(course_urls.HIDDEN[language], useBase = false);
+  //   await wizard.screenshot(`staff.course_edit_button.png`, {
+  //      pointToSelectors: ['a[href$="/edit/"]'],
+  //   });
+  //   await wizard.screenshot('staff.course_submissions_link.png', {
+  //     // duplicate invisible element so had to be really specifici
+  //     pointToSelectors: ['div.center > div > ul > li > a > i.submissions'],
+  //   })
+  //   await wizard.navigate(course_urls.OPEN[language] + 'edit/', useBase = false);
+  //   await wizard.screenshot(`staff.course_edit.png`);
+  //   await wizard.screenshot(`staff.course_edit_cancel.png`, {
+  //      pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(language + '/', '').replace(wizard.baseUrl, '')}"]`],
+  //   });
+  //   await wizard.scrollToBottom();
+  //   await wizard.click(`button[form*="edit_course"]`);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot(`staff.course_after_edit.png`);
+
+  //   // course members page
+  //   await wizard.navigate(SEEDED_COURSE_URL(language) + '/members', useBase = false);
+  //   await wizard.screenshot(`staff.course_users_admin.png`, {
+  //      pointToSelectors: ['i.mdi-school'],
+  //      pointMulti: false,
+  //   });
+  //   await wizard.page.$$(`a.ellipsis-overflow[href^="/${language}/courses"]`).then(elements => elements[2].click());
+  //   await wait(10000); // Wait for graphs
+  //   await wizard.screenshot('staff.user_course_overview.png');
+
+  //   // course submissions page
+  //   await wizard.navigate(SEEDED_COURSE_URL(language) + 'submissions', useBase = false);
+  //   await wizard.screenshot('staff.course_submissions.png');
+  //   await wizard.screenshot('staff.course_submissions_filter.png', {
+  //     pointToSelectors: ['i.mdi-filter-outline'],
+  //     pointMulti: false,
+  //   })
+  //   await wizard.click('i.mdi-filter-outline');
+  //   await wait(500);
+  //   await wizard.screenshot('staff.course_submissions_filtered.png');
+
+
+  //   await wizard.navigate(`${language}/courses/`);
+  //   await wizard.screenshot(`staff.course_hidden.png`, {
+  //     pointToSelectors: ['i.mdi-eye-off-outline'],
+  //     pointMulti: false,
+  //   });
+  // }
+  // console.log(course_urls);
+  // wizard.setLanguage(''); // icons are language independent
+  // await wizard.page.evaluate(() => {
+  //    document.querySelector('body').innerHTML = 
+  //    ['mdi-school mdi-icons-strikethrough', 'mdi-school', 'mdi-account-plus', 'mdi-delete', 'mdi-check']
+  //       .map(icon => `<p><i class="mdi ${icon} mdi-18"></i></p>`)
+  //       .join('');
+  // });
+
+
+  // await wizard.screenshot('staff_registration_icons/make_course_admin.png', {
+  //    cropSelector: 'i.mdi-school:not(.mdi-icons-strikethrough)'
+  // });
+
+  // await wizard.screenshot('staff_registration_icons/make_student.png', {
+  //    cropSelector: 'i.mdi-school.mdi-icons-strikethrough'
+  // });
+
+  // await wizard.screenshot('staff_registration_icons/register.png', {
+  //    cropSelector: 'i.mdi-account-plus'
+  // });
+
+  // await wizard.screenshot('staff_registration_icons/unregister.png', {
+  //    cropSelector: 'i.mdi-delete'
+  // });
+
+  // await wizard.screenshot('staff_registration_icons/approve.png', {
+  //    cropSelector: 'i.mdi-check'
+  // });
+
+  // await wizard.screenshot('staff_registration_icons/decline.png', {
+  //    cropSelector: 'i.mdi-delete'
+  // });
+
+  // console.log(`staff user management`);
+  // const SEEDED_MODERATED_COURSE_URL = "/courses/3/"
+  // const STAFF_USERNAME = "Stijn Taff"
+  // // await wizard.navigate('users/2/token/staff');
+
+  //  for (const language of LANGUAGES) {
+  //    wizard.setLanguage(language);
+  //    await wizard.navigate(`${language}/`);
+  //    await wait(1000);
+  //    await wizard.screenshot('staff.admin_menu_location.png',
+  //    {
+  //      pointToSelectors: ['button[aria-controls="drawer"]'],
+  //      mirror: true
+  //    });
+  //    await wait(1000);
+  //    await wizard.click('button[aria-controls="drawer"]');
+  //    await wait(1000);
+  //    await wizard.screenshot('staff.admin_menu.png');
+
+  //    await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL);
+  //    await wizard.screenshot('staff.course_users.png',
+  //    {
+  //      pointToSelectors: ['i.mdi.mdi-24.mdi-account-multiple']
+  //    })
+
+  //    await wizard.navigate(language + SEEDED_MODERATED_COURSE_URL + 'members/');
+  //    await wizard.screenshot('staff.users.png');
+  //    await wizard.screenshot('staff.users_edit_permissions.png', {
+  //     pointMulti: false,
+  //     pointToSelectors: ['i.mdi-school.mdi-icons-strikethrough'],
+  //    })
+  //    await wizard.typeIn(`input#filter-query-tokenfield`, 'Stijn');
+
+  //    await wait(2000);
+  //    await wizard.screenshot(`staff.users_filtered.png`);
+  //    await wizard.screenshot(`staff.users_filtered_link.png`, 
+  //    {
+  //      pointToSelectors: [`a[title="${STAFF_USERNAME}"]`]
+  //    });
+
+  // }
+
+  // console.log('staff series');
+  const series_urls = {
+    nl: {
+      closed: 'http://dodona.localhost:3000/nl/series/170/',
+      hidden: 'http://dodona.localhost:3000/nl/series/171/',
+      open: 'http://dodona.localhost:3000/nl/series/173/'
+    },
+    en: {
+      closed: 'http://dodona.localhost:3000/en/series/174/',
+      hidden: 'http://dodona.localhost:3000/en/series/175/',
+      open: 'http://dodona.localhost:3000/en/series/177/'
+    }
+  };
+
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   for (const series of SERIES[language]) {
+  //      await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
+  //      await wizard.typeIn(`input#series_name`, series.title);
+  //      await wizard.select(`select#series_visibility`, series.visibility);
+  //      await wizard.page.evaluate((deadline) => {
+  //        document.querySelector('input#series_deadline').value = deadline;
+  //      }, series.deadline);
+
+
+  //      await wizard.click('button[form="new_series"]');
+  //      await wait(2000);
+
+  //      series_urls[language][series.visibility] = await wizard.page.target().url().replace('edit/', '');
+  //      await wait(1000);
+  //      for (const exercise of series.exercises) {
+  //        await wizard.page.evaluate(() => document.querySelector('#filter-query-tokenfield').value = '');
+  //        await wizard.typeIn('#filter-query-tokenfield', exercise);
+  //        await wait(2000);
+  //        await wizard.click('a.add-activity');
+  //      }
+
+  //      await wizard.click('button[form^="edit_series_"]');
+  //      await wait(2000);
+  //   }
+
+  //   wizard.setLanguage(language);
+  //   // manage series
+  //   await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
+  //   await wizard.screenshot(`staff.course_manage_series_button.png`, {
+  //     pointToSelectors: [`a[href$="/manage_series/"]`],
+  //   });
+  //   // open manage series menu
+  //   await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
+  //   await wait(1000);
+  //   await wizard.screenshot('staff.series_actions_menu.png');
+  //   // start evaluation
+  //   await wizard.click(`a[href^="/${language}/evaluations/new"]`);
+  //   await wait(1000);
+  //   await wizard.removeBlockedElements();
+  //   await wait(1000);
+  //   await wizard.screenshot('staff.series_evaluate.png');
+  //   await wizard.screenshot('staff.series_evaluate_start.png', {
+  //     pointToSelectors: ['button[form="new_evaluation"]']
+  //   });
+  //   await wizard.click('button[form="new_evaluation"]');
+  //   await wait(2000);
+  //   await wizard.removeBlockedElements();
+  //   // select users and go to real evaluation
+  //   await wizard.screenshot('staff.series_evaluate_select_users.png', {
+  //     pointToSelectors: ['a[href$="type=submitted"] > div.button.btn-text'],
+  //   });
+  //   await wizard.click('a[href$="type=submitted"]');
+  //   await wait(1000);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot('staff.series_evaluate_start.png', {
+  //     pointToSelectors: ['a.btn-primary']
+  //   });
+  //   await wizard.click('a.btn-primary');
+  //   await wait(1500);
+  //   await wizard.removeBlockedElements();
+  //   const evaluation_url = wizard.page.target().url();
+  //   //release feedback button performs a patch
+  //   await wizard.screenshot('staff.series_evaluate_release_feedback.png', {
+  //     pointToSelectors: ['a[data-method="patch"]']
+  //   })
+
+  //   await wizard.scrollTo('i.mdi-comment-outline');
+  //   await wizard.screenshot('staff.series_evaluate_detail_overview.png');
+  //   // give feedback to a user
+  //   await wizard.screenshot('staff.series_evaluate_goto_give_feedback.png', {
+  //     pointToSelectors: ['i.mdi-comment-outline'],
+  //     pointMulti: false,
+  //   });
+  //   await wizard.click('a', el => !!el.querySelector('i.mdi-comment-outline'));
+  //   await wait(2000);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot('staff.series_evaluate_give_feedback.png');
+  //   await wizard.screenshot('staff.series_evaluate_next.png', {
+  //     pointToSelectors: ['#next-feedback-button'],
+  //   })
+  //   await wizard.screenshot('staff.series_evaluate_feedback_row.png', {
+  //     pointToSelectors: ['div.user-feedback-row'],
+  //     pointPredicate: elem => !!elem.querySelector('i[class^="mdi mdi-comment"]'),
+  //   });
+  //   await wizard.screenshot('staff.series_evaluate_return.png', {
+  //     pointToSelectors: [`a[href$="${evaluation_url.replace(wizard.baseUrl, '')}"]`]
+  //   });
+
+  //   await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
+  //   // open manage series menu
+  //   await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
+  //   await wait(500);
+  //   // menu action should have changed
+  //   await wizard.screenshot('staff.series_actions_check_evaluation.png', {
+  //     pointMulti: false,
+  //     pointToSelectors: ['i.mdi-message-draw'],
+  //   });
+  //   await wait(3000);
+
+  //   await wizard.navigate(evaluation_url, useBase = false);
+  //   await wait(2000);
+  //   await wizard.click('a', elem => !!elem.querySelector('i.mdi-dots-vertical'));
+  //   await wizard.screenshot('staff.series_evaluate_delete.png', {
+  //     pointToSelectors: [`a[data-method="delete"][href^="/${language}/evaluations/"]`],
+  //   });
+
+  //   const deleteButtonSelector = `a[data-method="delete"][href^="/${language}/evaluations/"]`;
+  //   // prevent page confirmation prompt to block deletion
+  //   await wizard.page.evaluate(
+  //     (element) => element.setAttribute('data-confirm', ''), 
+  //     await wizard.page.$(deleteButtonSelector));
+  //   await wizard.click(deleteButtonSelector);
+
+  //   // give time to perform deletion and navigation
+  //   await wait(3000);
 
     
 
-    await wizard.navigate(course_urls.OPEN[language], useBase = false);
-    await wizard.scrollToBottom();
-    await wait(1000);
-    await wizard.screenshot(`staff.course_series_info_message.png`, {
-       pointToSelectors: [`div.alert.alert-info.hidden-print`]
-    });
+  //   await wizard.navigate(course_urls.OPEN[language], useBase = false);
+  //   await wizard.scrollToBottom();
+  //   await wait(1000);
+  //   await wizard.screenshot(`staff.course_series_info_message.png`, {
+  //      pointToSelectors: [`div.alert.alert-info.hidden-print`]
+  //   });
 
-    await wizard.navigate(course_urls.OPEN[language] + 'manage_series/', useBase = false);
-    await wizard.screenshot('staff.course_manage_series_page.png');
-    await wizard.screenshot('staff.course_new_series_button.png', {
-      pointToSelectors: ['a[href$="/series/new/"]'],
-    })
-    await wizard.screenshot('staff.series_delete.png', {
-      pointToSelectors: ['i.mdi-delete'],
-      pointMulti: false,
-    });
-    await wizard.screenshot('staff.series_edit.png', {
-      pointToSelectors: ['a[href*="series"] > i.mdi-pencil'],
-      pointMulti: false,
-    })
+  //   await wizard.navigate(course_urls.OPEN[language] + 'manage_series/', useBase = false);
+  //   await wizard.screenshot('staff.course_manage_series_page.png');
+  //   await wizard.screenshot('staff.course_new_series_button.png', {
+  //     pointToSelectors: ['a[href$="/series/new/"]'],
+  //   })
+  //   await wizard.screenshot('staff.series_delete.png', {
+  //     pointToSelectors: ['i.mdi-delete'],
+  //     pointMulti: false,
+  //   });
+  //   await wizard.screenshot('staff.series_edit.png', {
+  //     pointToSelectors: ['a[href*="series"] > i.mdi-pencil'],
+  //     pointMulti: false,
+  //   })
 
-    await wizard.navigate(series_urls[language]['hidden'] + 'edit/', useBase = false);
-    await wizard.scrollTo(`#access_token`);
+  //   await wizard.navigate(series_urls[language]['hidden'] + 'edit/', useBase = false);
+  //   await wizard.scrollTo(`#access_token`);
 
-    await wizard.screenshot(`staff.series_hidden_link.png`, {
-       pointToSelectors: ['#access_token'],
-    });
-    await wizard.screenshot(`staff.series_hidden_link_copy.png`, {
-      pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
-     });
-    await wizard.screenshot(`staff.series_hidden_link_reset.png`, {
-      pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
-    });
+  //   await wizard.screenshot(`staff.series_hidden_link.png`, {
+  //      pointToSelectors: ['#access_token'],
+  //   });
+  //   await wizard.screenshot(`staff.series_hidden_link_copy.png`, {
+  //     pointToSelectors: ['button[data-clipboard-target="#access_token"]'],
+  //    });
+  //   await wizard.screenshot(`staff.series_hidden_link_reset.png`, {
+  //     pointToSelectors: ['a[href$="/reset_token/?type=access_token"]'],
+  //   });
 
-    await wizard.navigate(series_urls[language]['open'] + 'edit/', useBase = false);
-    await wizard.scrollTo('input#filter-query-tokenfield');
-    await wait(1000);
-    await wizard.typeIn('input#filter-query-tokenfield', 'Echo Java');
-    await wait(500);
-    await wizard.screenshot(`staff.series_search_exercises.png`);
-    await wizard.screenshot(`staff.series_add_exercise.png`, {
-      pointToSelectors: [`a.add-activity`],
-      pointMulti: false,
-    });
-    await wait(300);
-    await wizard.screenshot(`staff.series_remove_exercise.png`, {
-    pointToSelectors: [`a.remove-activity`],
-      pointMulti: false,
-    });
-   await wizard.screenshot(`staff.series_move_exercise.png`, {
-      pointToSelectors: ['div.drag-handle'],
-      mirror: true,
-      pointMulti: false,
-    });
+  //   await wizard.navigate(series_urls[language]['open'] + 'edit/', useBase = false);
+  //   await wizard.scrollTo('input#filter-query-tokenfield');
+  //   await wait(1000);
+  //   await wizard.typeIn('input#filter-query-tokenfield', 'Echo Java');
+  //   await wait(500);
+  //   await wizard.screenshot(`staff.series_search_exercises.png`);
+  //   await wizard.screenshot(`staff.series_add_exercise.png`, {
+  //     pointToSelectors: [`a.add-activity`],
+  //     pointMulti: false,
+  //   });
+  //   await wait(300);
+  //   await wizard.screenshot(`staff.series_remove_exercise.png`, {
+  //   pointToSelectors: [`a.remove-activity`],
+  //     pointMulti: false,
+  //   });
+  //  await wizard.screenshot(`staff.series_move_exercise.png`, {
+  //     pointToSelectors: ['div.drag-handle'],
+  //     mirror: true,
+  //     pointMulti: false,
+  //   });
 
-    await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
+  //   await wizard.navigate(course_urls.OPEN[language] + 'series/new/', useBase = false);
 
-    await wizard.screenshot(`staff.series_new.png`);
-    await wizard.screenshot(`staff.series_new_cancel.png`, {
-        pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
-        mirror: true,
-    });
+  //   await wizard.screenshot(`staff.series_new.png`);
+  //   await wizard.screenshot(`staff.series_new_cancel.png`, {
+  //       pointToSelectors: [`a[href$="${course_urls.OPEN[language].replace(wizard.baseUrl, '')}"]`],
+  //       mirror: true,
+  //   });
 
-    await wizard.screenshot(`staff.series_new_submit.png`, {
-        pointToSelectors: [`button[form="new_series"]`],
-    });
+  //   await wizard.screenshot(`staff.series_new_submit.png`, {
+  //       pointToSelectors: [`button[form="new_series"]`],
+  //   });
 
-    await wizard.click('button.btn-default[data-toggle]');
-    await wait(200);
-    await wizard.screenshot(`staff.series_calendar_open.png`, {
-      pointToSelectors: ['button.btn-default[data-toggle]'],
-    });
+  //   await wizard.click('button.btn-default[data-toggle]');
+  //   await wait(200);
+  //   await wizard.screenshot(`staff.series_calendar_open.png`, {
+  //     pointToSelectors: ['button.btn-default[data-toggle]'],
+  //   });
 
-    await wizard.click('span.flatpickr-day.today');
-    await wait(200);
+  //   await wizard.click('span.flatpickr-day.today');
+  //   await wait(200);
 
-    await wizard.screenshot(`staff.series_calendar_clear.png`, {
-        pointToSelectors: [`i.mdi-close`],
-    });
+  //   await wizard.screenshot(`staff.series_calendar_clear.png`, {
+  //       pointToSelectors: [`i.mdi-close`],
+  //   });
 
-    await wizard.navigate(`${series_urls[language]['open']}/edit`, useBase = false);
+  //   await wizard.navigate(`${series_urls[language]['open']}/edit`, useBase = false);
 
-    await wizard.screenshot(`staff.series_edit_submit.png`, {
-        pointToSelectors: [`button[form^="edit_series_"]`]
-    });
+  //   await wizard.screenshot(`staff.series_edit_submit.png`, {
+  //       pointToSelectors: [`button[form^="edit_series_"]`]
+  //   });
 
-    await wizard.screenshot('staff.series_edit.png');
-    await wizard.screenshot('staff.series_edit_cancel.png', {
-        pointToSelectors: ['div.crumb a[href*="/#series"]'],
-    });
-    // series export
-    await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
-    await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
-    await wait(1000);
-    await wizard.screenshot('staff.series_export_action.png', {
-      pointToSelectors: [`a[href^="/${language}/exports/series"]`],
-    });
-    await wizard.click(`a[href^="/${language}/exports/series"]`);
-    await wait(1000);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot('staff.series_export_exercise_choice.png');
-    await wizard.click('#check-all');
-    await wizard.screenshot('staff.series_export_exercises_chosen.png', {
-      pointToSelectors: ['#next_step'],
-    });
-    await wizard.click('#next_step');
-    await wizard.scrollToBottom();
-    await wizard.screenshot('staff.series_export_options.png');
-    await wizard.screenshot('staff.series_export_start.png', {
-      pointToSelectors: ['button[form="download_submissions"]'],
-    });
-    await wizard.click('button[form="download_submissions"]');
-    await wait(1500);
-    await wizard.removeBlockedElements();
-    await wizard.screenshot('staff.series_export_started.png');
-  }
-  console.log(series_urls);
+  //   await wizard.screenshot('staff.series_edit.png');
+  //   await wizard.screenshot('staff.series_edit_cancel.png', {
+  //       pointToSelectors: ['div.crumb a[href*="/#series"]'],
+  //   });
+  //   // series export
+  //   await wizard.navigate(SEEDED_COURSE_URL(language), useBase = false);
+  //   await wizard.getNested(['div.card-subtitle-actions', 'a']).then(elem => elem.click());
+  //   await wait(1000);
+  //   await wizard.screenshot('staff.series_export_action.png', {
+  //     pointToSelectors: [`a[href^="/${language}/exports/series"]`],
+  //   });
+  //   await wizard.click(`a[href^="/${language}/exports/series"]`);
+  //   await wait(1000);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot('staff.series_export_exercise_choice.png');
+  //   await wizard.click('#check-all');
+  //   await wizard.screenshot('staff.series_export_exercises_chosen.png', {
+  //     pointToSelectors: ['#next_step'],
+  //   });
+  //   await wizard.click('#next_step');
+  //   await wizard.scrollToBottom();
+  //   await wizard.screenshot('staff.series_export_options.png');
+  //   await wizard.screenshot('staff.series_export_start.png', {
+  //     pointToSelectors: ['button[form="download_submissions"]'],
+  //   });
+  //   await wizard.click('button[form="download_submissions"]');
+  //   await wait(1500);
+  //   await wizard.removeBlockedElements();
+  //   await wizard.screenshot('staff.series_export_started.png');
+  // }
+  // console.log(series_urls);
 
   // =========================================================
   // STUDENT
   // =========================================================
 
   await wizard.navigate('/nl/users/3/token/student');
-  console.log('homepage');
+  // console.log('homepage');
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`, false);
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`http://dodona.localhost:3000/?locale=${language}`, false);
 
-    await wizard.screenshot(`student.homepage.png`);
+  //   await wizard.screenshot(`student.homepage.png`);
 
-    await wizard.screenshot(`student.navigate_to_homepage.png`, {
-      pointToSelectors: ['a.brand'],
-    });
+  //   await wizard.screenshot(`student.navigate_to_homepage.png`, {
+  //     pointToSelectors: ['a.brand'],
+  //   });
 
-    await wizard.screenshot(`student.explore_courses.png`, {
-      pointToSelectors: [`a[href$="/${language}/courses/"]`],
-    });
+  //   await wizard.screenshot(`student.explore_courses.png`, {
+  //     pointToSelectors: [`a[href$="/${language}/courses/"]`],
+  //   });
 
-    await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
-    await wizard.screenshot(`student.user_menu.png`, {
-      pointToSelectors: ['ul.dropdown-menu'],
-      pointPredicate: elem => !!elem.querySelector('a[href*="/sign_out/"]'),
-    });
+  //   await wizard.click('li.dropdown', elem => !!elem.querySelector('a[href*="/sign_out/"]'));
+  //   await wizard.screenshot(`student.user_menu.png`, {
+  //     pointToSelectors: ['ul.dropdown-menu'],
+  //     pointPredicate: elem => !!elem.querySelector('a[href*="/sign_out/"]'),
+  //   });
 
-    await wizard.screenshot(`student.user_menu_my_profile.png`, {
-      pointToSelectors: [`li.dropdown ul.dropdown-menu a[href$="/${language}/users/3/"]`],
-    });
+  //   await wizard.screenshot(`student.user_menu_my_profile.png`, {
+  //     pointToSelectors: [`li.dropdown ul.dropdown-menu a[href$="/${language}/users/3/"]`],
+  //   });
 
-    await wizard.screenshot(`student.sign_out.png`, {
-      pointToSelectors: ['a[href*="/sign_out/"]'],
-    });
-  }
+  //   await wizard.screenshot(`student.sign_out.png`, {
+  //     pointToSelectors: ['a[href*="/sign_out/"]'],
+  //   });
+  // }
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${language}/users/3/`);
-    await wizard.screenshot(`student.edit_profile.png`, {
-      pointToSelectors: [`a[href$="/${language}/users/3/edit/"]`],
-    });
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${language}/users/3/`);
+  //   await wizard.screenshot(`student.edit_profile.png`, {
+  //     pointToSelectors: [`a[href$="/${language}/users/3/edit/"]`],
+  //   });
 
-    await wizard.navigate(`${language}/users/3/edit/`);
-    await wizard.screenshot(`student.edit_timezone.png`, {
-      pointToSelectors: ['select#user_time_zone']
-    });
-  }
+  //   await wizard.navigate(`${language}/users/3/edit/`);
+  //   await wizard.screenshot(`student.edit_timezone.png`, {
+  //     pointToSelectors: ['select#user_time_zone']
+  //   });
+  // }
   
-  // Set the wrong timezone
-  await wizard.navigate(`nl/users/3/edit/`);
-  await wizard.page.evaluate(() => {
-    document.querySelector('select#user_time_zone').value = 'Seoul';
-  });
-  await wizard.click('button.btn-primary[form*="edit_user_"]');
-  await wait(200);
-  await wizard.navigate('?locale=nl');
-  // Screenshot the wrong timezone warning
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`?locale=${language}`);
-    await wizard.screenshot(`student.wrong_timezone.png`);
-  }
+  // // Set the wrong timezone
+  // await wizard.navigate(`nl/users/3/edit/`);
+  // await wizard.page.evaluate(() => {
+  //   document.querySelector('select#user_time_zone').value = 'Seoul';
+  // });
+  // await wizard.click('button.btn-primary[form*="edit_user_"]');
+  // await wait(200);
+  // await wizard.navigate('?locale=nl');
+  // // Screenshot the wrong timezone warning
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`?locale=${language}`);
+  //   await wizard.screenshot(`student.wrong_timezone.png`);
+  // }
 
-  // Set the right timezone to get rid of the warning without accidentally hiding other warnings.
-  await wizard.navigate(`nl/users/3/edit/`);
-  await wizard.page.evaluate(() => {
-    document.querySelector('select#user_time_zone').value = 'Brussels';
-  });
-  await wizard.click('button.btn-primary[form*="edit_user_"]');
-  await wait(200);
-  await wizard.navigate('?locale=nl');
+  // // Set the right timezone to get rid of the warning without accidentally hiding other warnings.
+  // await wizard.navigate(`nl/users/3/edit/`);
+  // await wizard.page.evaluate(() => {
+  //   document.querySelector('select#user_time_zone').value = 'Brussels';
+  // });
+  // await wizard.click('button.btn-primary[form*="edit_user_"]');
+  // await wait(200);
+  // await wizard.navigate('?locale=nl');
 
-  console.log('courses');
+  // console.log('courses');
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${language}/courses/`);
-    await wizard.screenshot(`student.courses.png`);
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${language}/courses/`);
+  //   await wizard.screenshot(`student.courses.png`);
 
-    await wizard.navigate(`${course_urls.OPEN[language]}`, false);
-    await wizard.screenshot(`student.course.png`);
+  //   await wizard.navigate(`${course_urls.OPEN[language]}`, false);
+  //   await wizard.screenshot(`student.course.png`);
 
-    await wizard.screenshot(`student.breadcrumb_course.png`, {
-      pointToSelectors: ['div.crumb a[href="#"]'],
-    });
+  //   await wizard.screenshot(`student.breadcrumb_course.png`, {
+  //     pointToSelectors: ['div.crumb a[href="#"]'],
+  //   });
 
-    await wizard.screenshot(`register.png`, {
-      cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
-      cropPredicate: (elem, url) => !!elem.querySelector(`a[href="${url}subscribe/"]`),
-      cropPredicateArg: course_urls.OPEN[language].replace('http://dodona.localhost:3000', ''),
-    });
+  //   await wizard.screenshot(`register.png`, {
+  //     cropSelector: ['div.col-sm-6.col-xs-12'],
+  //     cropPredicate: (elem) => !!elem.querySelector('div.callout'),
+  //   });
 
-    await wizard.navigate(course_urls.HIDDEN[language], false);
-    await wizard.screenshot(`student.hidden_course_unregistered_denied_message.png`);
+  //   await wizard.navigate(course_urls.HIDDEN[language], false);
+  //   await wizard.screenshot(`student.hidden_course_unregistered_denied_message.png`);
 
-    await wizard.navigate(course_urls.HIDDEN_REGISTRATION[language], false);
-    await wizard.screenshot(`student.hidden_course_unregistered_link_message.png`);
+  //   await wizard.navigate(course_urls.HIDDEN_REGISTRATION[language], false);
+  //   await wizard.screenshot(`student.hidden_course_unregistered_link_message.png`);
 
-    await wizard.navigate(series_urls[language]['hidden'], false);
-    await wizard.screenshot(`student.hidden_series_denied_message.png`)
-  }
+  //   await wizard.navigate(series_urls[language]['hidden'], false);
+  //   await wizard.screenshot(`student.hidden_series_denied_message.png`)
+  // }
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${course_urls.OPEN[language]}subscribe`, false);
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${course_urls.OPEN[language]}subscribe`, false);
 
-    await wizard.navigate(course_urls.OPEN[language], false);
-    await wizard.screenshot(`student.unregister.png`, {
-      pointToSelectors: ['form[action$="/unsubscribe/"] input[type="submit"]'],
-    });
+  //   await wizard.navigate(course_urls.OPEN[language], false);
+  //   await wizard.screenshot(`student.unregister.png`, {
+  //     pointToSelectors: ['form[action$="/unsubscribe/"] input[type="submit"]'],
+  //   });
 
-    await wizard.navigate(course_urls.MODERATED[language], false);
-    await wizard.screenshot(`moderated_register.png`, {
-      cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
-      cropPredicate: elem => !!elem.querySelector('a[href$="/subscribe/"]'),
-    });
-  }
+  //   await wizard.navigate(course_urls.MODERATED[language], false);
+  //   await wizard.screenshot(`moderated_register.png`, {
+  //     cropSelector: ['div.col-sm-6.col-xs-12'],
+  //     cropPredicate: elem => !!elem.querySelector('div.callout'),
+  //   });
+  // }
 
-  for (const language of LANGUAGES) {
-    wizard.setLanguage(language);
-    await wizard.navigate(`${course_urls.MODERATED[language]}subscribe/`, false);
+  // for (const language of LANGUAGES) {
+  //   wizard.setLanguage(language);
+  //   await wizard.navigate(`${course_urls.MODERATED[language]}subscribe/`, false);
 
-    await wizard.navigate(course_urls.MODERATED[language], false);
-    await wizard.screenshot(`moderated_waiting.png`, {
-      cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
-      cropPredicate: elem => !!elem.querySelector('p'),
-    });
+  //   await wizard.navigate(course_urls.MODERATED[language], false);
+  //   await wizard.screenshot(`moderated_waiting.png`, {
+  //     cropSelector: ['div.col-sm-6.col-xs-12'],
+  //     cropPredicate: elem => !!elem.querySelector('div.callout'),
+  //   });
 
-    await wizard.navigate(`${language}/courses/5/`);
-    await wizard.screenshot(`closed_registration.png`, {
-      cropSelector: ['div.col-sm-6.col-xs-12 div.callout'],
-      cropPredicate: elem => !!elem.querySelector('p'),
-    });
+  //   await wizard.navigate(`${language}/courses/5/`);
+  //   await wizard.screenshot(`closed_registration.png`, {
+  //     cropSelector: ['div.col-sm-6.col-xs-12'],
+  //     cropPredicate: elem => !!elem.querySelector('div.callout'),
+  //   });
 
-    await wizard.navigate(`?locale=${language}`);
-    await wizard.screenshot(`student.homepage_after_registration.png`);
+  //   await wizard.navigate(`?locale=${language}`);
+  //   await wizard.screenshot(`student.homepage_after_registration.png`);
 
-    await wizard.click('button.drawer-toggle');
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    await wizard.screenshot(`student.my_courses.png`, {
-      pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
-      pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
-      mirror: true, // TODO: uncomment after merge with winnie's branch
-    });
+  //   await wizard.click('button.drawer-toggle');
+  //   await new Promise(resolve => setTimeout(resolve, 1000));
+  //   await wizard.screenshot(`student.my_courses.png`, {
+  //     pointToSelectors: ['div.drawer-group h1.drawer-group-title'],
+  //     pointPredicateArg: TRANSLATIONS[language]['MY_COURSES'],
+  //     mirror: true, // TODO: uncomment after merge with winnie's branch
+  //   });
 
-    await wizard.navigate(`${language}/users/3/`);
-    await wizard.screenshot(`student.profile_courses.png`, {
-      pointToSelectors: ['h4'],
-      pointPredicate: (elem, content) => elem.innerText === content,
-      pointPredicateArg: TRANSLATIONS[language]['COURSES'],
-    });
-  }
+  //   await wizard.navigate(`${language}/users/3/`);
+  //   await wizard.screenshot(`student.profile_courses.png`, {
+  //     pointToSelectors: ['h4'],
+  //     pointPredicate: (elem, content) => elem.innerText === content,
+  //     pointPredicateArg: TRANSLATIONS[language]['COURSES'],
+  //   });
+  // }
 
   console.log('exercises');
   const exerciseNamesToIDs = {
