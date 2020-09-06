@@ -5,39 +5,4 @@
 Handleiding: Dodona
 ===================
 
-Deze pagina bevat documentatie voor het Dodona project. Deze documentatie wordt op dit moment gemigreerd naar https://dodona-edu.github.io. Voorlopig blijft de oude documentatie hier beschikbaar.
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Inleiding
-
-   .. introduction
-   .. for_teachers_introduction
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Studenten
-
-   for_students
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Lesgevers
-
-   user_management
-   course_management
-   exercise_specification
-   judge_specification
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Referentie
-
-   judge_output_format_schema
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Judges
-
-   list_of_judges
-   pythia_judge
+De documentatie voor Dodona werd verhuisd naar https://dodona-edu.github.io.
